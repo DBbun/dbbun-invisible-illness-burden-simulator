@@ -84,6 +84,12 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .payerTable td:first-child{font-weight:700;white-space:nowrap}
 .lensBar{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px;margin:0 0 18px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
 .lensBar[hidden]{display:none}
+.lensPanel{flex:1 1 100%;margin-top:6px;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.lensPanel h3{margin:0 0 6px;font-size:15px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.lensPanel p{margin:0 0 8px;font-size:17px;line-height:1.5}
+.lensPanel h4{margin:10px 0 4px;font-size:15px}
+.lensPanel ul{margin:0;padding-left:20px}
+.lensPanel li{margin:3px 0;font-size:16px}
 .lensBarLabel{flex:1 1 100%;margin:0;font-size:16px;color:var(--muted)}
 .lensBarLabel b{color:var(--ink)}
 .lensCard{flex:1 1 200px;width:auto;text-align:left;padding:12px 14px;border:2px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);cursor:pointer;font:inherit}
@@ -2244,15 +2250,17 @@ function renderDecisionSupport(s){
     }
     lensBar.hidden=false;
     const lens=takeaway[currentLens]?currentLens:Object.keys(takeaway)[0];
-    text('h3','What this could support · '+(audienceLabels[lens]||'a general audience'),box);
-    text('p',takeaway[lens],box);
+    const panel=document.createElement('div');panel.className='lensPanel';panel.setAttribute('aria-live','polite');
+    text('h3','What this could support \u00b7 '+(audienceLabels[lens]||'a general audience'),panel);
+    text('p',takeaway[lens],panel);
     const actionList=(actions&&typeof actions==='object'&&!Array.isArray(actions))?actions[lens]:null;
     if(actionList?.length){
-      text('h4','Discussion prompts and possible next steps',box);
+      text('h4','Discussion prompts and possible next steps',panel);
       const ul=document.createElement('ul');
       for(const a of actionList){const li=document.createElement('li');li.textContent=a;ul.appendChild(li)}
-      box.appendChild(ul);
+      panel.appendChild(ul);
     }
+    lensBar.appendChild(panel);
     const printAll=document.createElement('div');printAll.className='printAllLenses';
     for(const key of ['patient','care','policy']){
       if(!(key in takeaway))continue;
