@@ -1,0 +1,103 @@
+line_list_no_geography_2022_2023__cdc_9mtj-y2ba.csv
+SOURCE: cdc/lyme_surveillance/line_list_no_geography_2022_2023__cdc_9mtj-y2ba.csv
+SHA-256: 121cea47698893b5b81dcc4951644ec82583608e1f1503af804026a407e9e835
+CONDITION SCOPE: lyme
+ROLE: lyme_surveillance_population_context
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+FINDING AND ECONOMIC INTERPRETATION
+This file contains 152,018 reported-case rows spanning 2022–2023. It supports reported-case workload and coverage analysis. A confirmed/probable surveillance case is not the same denominator as a diagnosed-and-treated insurance episode. It supplies no treatment cost, diagnostic delay, navigation uptake or preventable fraction. A growing count cannot by itself justify a growing causal cost estimate.
+
+COMPARABILITY DECISION
+Keep this file paired with its era-specific definition. The 2022 surveillance definition/reporting break must remain visible. The geographic and non-geographic releases overlap; choose one counting representation for each analysis. Do not add their totals or infer suppressed categories from differences.
+
+ANNUAL REPORTED-CASE ACCOUNTING
+Sum frequency once per aggregate row, or count line-list rows once. These two file formats describe overlapping surveillance cases, not independent samples.
+year: 2022 | case_status: Confirmed | retained_reported_cases: 2192
+year: 2022 | case_status: Probable | retained_reported_cases: 60357
+year: 2023 | case_status: Confirmed | retained_reported_cases: 3531
+year: 2023 | case_status: Probable | retained_reported_cases: 85938
+
+AVAILABLE DEMOGRAPHIC AND CLINICAL DESCRIPTORS
+Public line-list descriptors only; Unknown and Suppressed are not negative findings. No released person IDs or geography; do not link to identified patients.
+field: sex | response: Male | unweighted_records: 85759
+field: sex | response: Female | unweighted_records: 63547
+field: sex | response: Unknown | unweighted_records: 1550
+field: sex | response: Suppressed | unweighted_records: 1162
+field: age_cat_yrs | response: 65-69 | unweighted_records: 15349
+field: age_cat_yrs | response: 60-64 | unweighted_records: 15146
+field: age_cat_yrs | response: 70-74 | unweighted_records: 13284
+field: age_cat_yrs | response: 55-59 | unweighted_records: 12874
+field: age_cat_yrs | response: 50-54 | unweighted_records: 10150
+field: age_cat_yrs | response: 75-79 | unweighted_records: 9400
+field: age_cat_yrs | response: 5-9 | unweighted_records: 8274
+field: age_cat_yrs | response: 40-44 | unweighted_records: 8154
+field: age_cat_yrs | response: 45-49 | unweighted_records: 8115
+field: age_cat_yrs | response: 35-39 | unweighted_records: 7530
+field: age_cat_yrs | response: 10-14 | unweighted_records: 7217
+field: age_cat_yrs | response: 30-34 | unweighted_records: 6783
+field: age_cat_yrs | response: 15-19 | unweighted_records: 5829
+field: age_cat_yrs | response: 25-29 | unweighted_records: 5559
+field: age_cat_yrs | response: 20-24 | unweighted_records: 5460
+field: age_cat_yrs | response: 80-84 | unweighted_records: 5458
+field: age_cat_yrs | response: 85+ | unweighted_records: 3308
+field: age_cat_yrs | response: 0-4 | unweighted_records: 2780
+field: age_cat_yrs | response: Suppressed | unweighted_records: 767
+field: age_cat_yrs | response: Unknown | unweighted_records: 581
+field: onset_month | response: Unknown | unweighted_records: 144722
+field: onset_month | response: 7 | unweighted_records: 2147
+field: onset_month | response: 6 | unweighted_records: 1727
+field: onset_month | response: 8 | unweighted_records: 927
+field: onset_month | response: 5 | unweighted_records: 703
+field: onset_month | response: 9 | unweighted_records: 421
+field: onset_month | response: 10 | unweighted_records: 358
+field: onset_month | response: 4 | unweighted_records: 244
+field: onset_month | response: 11 | unweighted_records: 204
+field: onset_month | response: 3 | unweighted_records: 186
+field: onset_month | response: 12 | unweighted_records: 140
+field: onset_month | response: 1 | unweighted_records: 132
+field: onset_month | response: 2 | unweighted_records: 94
+field: onset_month | response: Suppressed | unweighted_records: 13
+field: em | response: Unknown | unweighted_records: 148199
+field: em | response: Yes | unweighted_records: 2316
+field: em | response: No | unweighted_records: 1503
+field: arthritis | response: Unknown | unweighted_records: 148639
+field: arthritis | response: No | unweighted_records: 1711
+field: arthritis | response: Yes | unweighted_records: 1668
+field: facial_palsy | response: Unknown | unweighted_records: 148723
+field: facial_palsy | response: No | unweighted_records: 2696
+field: facial_palsy | response: Yes | unweighted_records: 599
+field: race | response: White | unweighted_records: 78830
+field: race | response: Unknown | unweighted_records: 65737
+field: race | response: Suppressed | unweighted_records: 2882
+field: race | response: Other | unweighted_records: 2287
+field: race | response: Black | unweighted_records: 1299
+field: race | response: Asian/Pacific Islander | unweighted_records: 902
+field: race | response: Native American/Alaska Native | unweighted_records: 81
+field: ethnicity | response: Unknown | unweighted_records: 87014
+field: ethnicity | response: Non-Hispanic | unweighted_records: 60457
+field: ethnicity | response: Hispanic | unweighted_records: 2673
+field: ethnicity | response: Suppressed | unweighted_records: 1874
+
+TRACEABLE FINDINGS
+f1: Retained reported cases 2022 = 62549 reported cases [CSV all rows where year=2022; row count]
+f2: Retained reported cases 2023 = 89469 reported cases [CSV all rows where year=2023; row count]
+c1: First-to-last retained reported-case change = 0.43038258 relative change; relative_change(f1, f2). Reporting, definition and availability changes can drive this descriptive difference; not disease-incidence growth.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use as community-level context, not a diagnosis or estimate of your own costs.
+Care delivery: Check whether the catchment state and year are represented before using a reported-case workload benchmark.
+Payers and policy: Use reported surveillance counts only with an explicitly matched cost population; obtain a justified transport model before applying claims episode costs.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme-attributable expenditure, out-of-pocket cost or employment loss.
+Separate confirmation is needed for reporting completeness and changes across years.
+No causal evidence that a proposed intervention changes diagnosis stage.
+
+DO NOT USE FOR
+Adding aggregate and line-list totals; treating absent state-years as zero; converting reporting changes to infection growth.
+Recovering suppressed small cells or identifying patients.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

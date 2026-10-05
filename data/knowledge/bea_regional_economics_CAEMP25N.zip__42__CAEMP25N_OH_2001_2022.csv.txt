@@ -1,0 +1,329 @@
+CAEMP25N.zip
+SOURCE: bea/regional_economics/CAEMP25N.zip :: CAEMP25N_OH_2001_2022.csv
+SHA-256: b36723a57080fce5a1020e63f898f2ceaa35d06bb01a454d4f643722cf6dca6b
+CONDITION SCOPE: general
+ROLE: regional_economic_context
+
+PROCESSING AND INTERPRETATION STATUS
+focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Population, definitions, units and overlap need verification before modeling.
+
+FILE-SPECIFIC FINDING
+CAEMP25N_OH_2001_2022.csv contains 2,937 geographic-measure records across 89 geographic identifiers. For Ohio, Total employment (number of jobs) moves from 6,725,753 Number of jobs in 2001 to 7,305,177 in 2022. The accompanying measure table distinguishes the units rather than blending dollars, jobs, people and indexes.
+
+ECONOMIC INTERPRETATION
+Employment is a count of jobs, not necessarily unique workers. It can describe the scale and industrial composition of exposure to work disruption, but cannot supply lost hours, illness prevalence or a wage per hour. Proprietor and wage/salary employment have different valuation needs.
+
+HOW TO USE THIS FILE
+Use the exact geography and 2001–2022 coverage in this file for context, not a live estimate. State-specific and ALL_AREAS members overlap; retrieving both must not double their economic totals. Ranges describe available rows and exclude nonnumeric disclosure/availability markers, not zero-valued observations.
+
+SELECTED WITHIN-FILE GEOGRAPHIC SERIES
+Focus: Ohio. Years and units are preserved from each source row. Not disease-attributable amounts.
+geography: Ohio | line_code: 10 | description: Total employment (number of jobs) | unit: Number of jobs | first_year: 2001 | first: 6,725,753 | last_year: 2022 | last: 7,305,177 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 20 | description: Wage and salary employment | unit: Number of jobs | first_year: 2001 | first: 5,709,552 | last_year: 2022 | last: 5,632,510 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 40 | description: Proprietors employment | unit: Number of jobs | first_year: 2001 | first: 1,016,201 | last_year: 2022 | last: 1,672,667 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 50 | description: Farm proprietors employment | unit: Number of jobs | first_year: 2001 | first: 80,527 | last_year: 2022 | last: 68,865 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 60 | description: Nonfarm proprietors employment 2/ | unit: Number of jobs | first_year: 2001 | first: 935,674 | last_year: 2022 | last: 1,603,802 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 70 | description: Farm employment | unit: Number of jobs | first_year: 2001 | first: 98,289 | last_year: 2022 | last: 82,352 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 80 | description: Nonfarm employment | unit: Number of jobs | first_year: 2001 | first: 6,627,464 | last_year: 2022 | last: 7,222,825 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 90 | description: Private nonfarm employment | unit: Number of jobs | first_year: 2001 | first: 5,793,049 | last_year: 2022 | last: 6,439,050 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | first_year: 2001 | first: 10,286 | last_year: 2022 | last: 16,031 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | first_year: 2001 | first: 21,512 | last_year: 2022 | last: 21,374 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 300 | description: Utilities | unit: Number of jobs | first_year: 2001 | first: 24,866 | last_year: 2022 | last: 18,700 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 400 | description: Construction | unit: Number of jobs | first_year: 2001 | first: 358,380 | last_year: 2022 | last: 374,433 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 500 | description: Manufacturing | unit: Number of jobs | first_year: 2001 | first: 972,326 | last_year: 2022 | last: 713,899 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 600 | description: Wholesale trade | unit: Number of jobs | first_year: 2001 | first: 264,216 | last_year: 2022 | last: 262,256 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 700 | description: Retail trade | unit: Number of jobs | first_year: 2001 | first: 778,247 | last_year: 2022 | last: 679,397 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 800 | description: Transportation and warehousing | unit: Number of jobs | first_year: 2001 | first: 215,525 | last_year: 2022 | last: 427,615 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 900 | description: Information | unit: Number of jobs | first_year: 2001 | first: 119,935 | last_year: 2022 | last: 93,128 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1000 | description: Finance and insurance | unit: Number of jobs | first_year: 2001 | first: 294,795 | last_year: 2022 | last: 412,030 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1100 | description: Real estate and rental and leasing | unit: Number of jobs | first_year: 2001 | first: 202,213 | last_year: 2022 | last: 346,409 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | first_year: 2001 | first: 348,633 | last_year: 2022 | last: 433,417 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | first_year: 2001 | first: 88,895 | last_year: 2022 | last: 150,890 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1400 | description: Administrative and support and waste management and remediation services | unit: Number of jobs | first_year: 2001 | first: 383,672 | last_year: 2022 | last: 427,579 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1500 | description: Educational services | unit: Number of jobs | first_year: 2001 | first: 108,925 | last_year: 2022 | last: 146,698 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | first_year: 2001 | first: 688,661 | last_year: 2022 | last: 890,100 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1700 | description: Arts, entertainment, and recreation | unit: Number of jobs | first_year: 2001 | first: 113,114 | last_year: 2022 | last: 144,046 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1800 | description: Accommodation and food services | unit: Number of jobs | first_year: 2001 | first: 436,779 | last_year: 2022 | last: 502,271 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 1900 | description: Other services (except government and government enterprises) | unit: Number of jobs | first_year: 2001 | first: 362,069 | last_year: 2022 | last: 378,777 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 2000 | description: Government and government enterprises | unit: Number of jobs | first_year: 2001 | first: 834,415 | last_year: 2022 | last: 783,775 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 2001 | description: Federal civilian | unit: Number of jobs | first_year: 2001 | first: 80,502 | last_year: 2022 | last: 79,824 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 2002 | description: Military | unit: Number of jobs | first_year: 2001 | first: 37,067 | last_year: 2022 | last: 33,566 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 2010 | description: State and local | unit: Number of jobs | first_year: 2001 | first: 716,846 | last_year: 2022 | last: 670,385 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 2011 | description: State government | unit: Number of jobs | first_year: 2001 | first: 177,166 | last_year: 2022 | last: 165,260 | numeric_years: 22 | years_in_file: 22
+geography: Ohio | line_code: 2012 | description: Local government | unit: Number of jobs | first_year: 2001 | first: 539,680 | last_year: 2022 | last: 505,125 | numeric_years: 22 | years_in_file: 22
+
+WITHIN-FILE VARIATION BY ECONOMIC MEASURE
+Unweighted ranges/medians of retained geography rows, not national estimates; national/state/county/metro records may overlap. Disclosure markers remain missing.
+line_code: 10 | description: Total employment (number of jobs) | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 3,772 | maximum: 7,305,177 | unweighted_median: 29,521
+line_code: 20 | description: Wage and salary employment | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 2,448 | maximum: 5,632,510 | unweighted_median: 22,323
+line_code: 40 | description: Proprietors employment | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 1,324 | maximum: 1,672,667 | unweighted_median: 6,798
+line_code: 50 | description: Farm proprietors employment | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 89 | maximum: 68,865 | unweighted_median: 764
+line_code: 60 | description: Nonfarm proprietors employment 2/ | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 1,114 | maximum: 1,603,802 | unweighted_median: 5,976
+line_code: 70 | description: Farm employment | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 173 | maximum: 82,352 | unweighted_median: 917
+line_code: 80 | description: Nonfarm employment | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 3,548 | maximum: 7,222,825 | unweighted_median: 28,329
+line_code: 90 | description: Private nonfarm employment | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 2,849 | maximum: 6,439,050 | unweighted_median: 25,061
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 38 | minimum: 76 | maximum: 16,031 | unweighted_median: 185.5
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 48 | minimum: 1 | maximum: 21,374 | unweighted_median: 235.5
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 57 | minimum: 8 | maximum: 18,700 | unweighted_median: 126
+line_code: 400 | description: Construction | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 281 | maximum: 374,433 | unweighted_median: 1,622
+line_code: 500 | description: Manufacturing | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 87 | minimum: 186 | maximum: 713,899 | unweighted_median: 4,757
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 73 | minimum: 97 | maximum: 262,256 | unweighted_median: 1,044
+line_code: 700 | description: Retail trade | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 304 | maximum: 679,397 | unweighted_median: 3,072
+line_code: 800 | description: Transportation and warehousing | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 73 | minimum: 195 | maximum: 427,615 | unweighted_median: 1,768
+line_code: 900 | description: Information | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 87 | minimum: 41 | maximum: 93,128 | unweighted_median: 215
+line_code: 1000 | description: Finance and insurance | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 87 | minimum: 164 | maximum: 412,030 | unweighted_median: 1,082
+line_code: 1100 | description: Real estate and rental and leasing | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 87 | minimum: 130 | maximum: 346,409 | unweighted_median: 1,359
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 67 | minimum: 108 | maximum: 433,417 | unweighted_median: 1,410
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 58 | minimum: 0 | maximum: 150,890 | unweighted_median: 365
+line_code: 1400 | description: Administrative and support and waste management and remediation services | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 78 | minimum: 98 | maximum: 427,579 | unweighted_median: 1,505.5
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 69 | minimum: 11 | maximum: 146,698 | unweighted_median: 506
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 69 | minimum: 340 | maximum: 890,100 | unweighted_median: 4,963
+line_code: 1700 | description: Arts, entertainment, and recreation | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 83 | minimum: 52 | maximum: 144,046 | unweighted_median: 426
+line_code: 1800 | description: Accommodation and food services | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 84 | minimum: 276 | maximum: 502,271 | unweighted_median: 2,100.5
+line_code: 1900 | description: Other services (except government and government enterprises) | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 87 | minimum: 286 | maximum: 378,777 | unweighted_median: 1,639
+line_code: 2000 | description: Government and government enterprises | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 699 | maximum: 783,775 | unweighted_median: 3,003
+line_code: 2001 | description: Federal civilian | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 16 | maximum: 79,824 | unweighted_median: 117
+line_code: 2002 | description: Military | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 27 | maximum: 33,566 | unweighted_median: 134
+line_code: 2010 | description: State and local | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 633 | maximum: 670,385 | unweighted_median: 2,709
+line_code: 2011 | description: State government | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 37 | maximum: 165,260 | unweighted_median: 235
+line_code: 2012 | description: Local government | unit: Number of jobs | latest_reported_year: 2022 | geography_rows: 89 | minimum: 548 | maximum: 505,125 | unweighted_median: 2,424
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 2 | minimum: 105 | maximum: 126 | unweighted_median: 115.5
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 3 | minimum: 21 | maximum: 67 | unweighted_median: 56
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 3 | minimum: 11 | maximum: 49 | unweighted_median: 33
+line_code: 1400 | description: Administrative and support and waste management and remediation services | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 2 | minimum: 178 | maximum: 353 | unweighted_median: 265.5
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 6 | minimum: 72 | maximum: 487 | unweighted_median: 122.5
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 7 | minimum: 32 | maximum: 195 | unweighted_median: 71
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2015 | geography_rows: 1 | minimum: 146 | maximum: 146 | unweighted_median: 146
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2016 | geography_rows: 5 | minimum: 18 | maximum: 531 | unweighted_median: 65
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 3 | minimum: 84 | maximum: 173 | unweighted_median: 92
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 3 | minimum: 1 | maximum: 210 | unweighted_median: 112
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2019 | geography_rows: 5 | minimum: 41 | maximum: 205 | unweighted_median: 103
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 4 | minimum: 1 | maximum: 57 | unweighted_median: 48.5
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2004 | geography_rows: 3 | minimum: 36 | maximum: 185 | unweighted_median: 39
+line_code: 800 | description: Transportation and warehousing | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 3 | minimum: 364 | maximum: 3,546 | unweighted_median: 555
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2016 | geography_rows: 4 | minimum: 278 | maximum: 596 | unweighted_median: 336.5
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2016 | geography_rows: 4 | minimum: 36 | maximum: 197 | unweighted_median: 45
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2018 | geography_rows: 3 | minimum: 17 | maximum: 119 | unweighted_median: 47
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2018 | geography_rows: 2 | minimum: 139 | maximum: 195 | unweighted_median: 167
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2018 | geography_rows: 1 | minimum: 344 | maximum: 344 | unweighted_median: 344
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2018 | geography_rows: 1 | minimum: 33 | maximum: 33 | unweighted_median: 33
+line_code: 1400 | description: Administrative and support and waste management and remediation services | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 4 | minimum: 292 | maximum: 580 | unweighted_median: 350.5
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 1 | minimum: 32 | maximum: 32 | unweighted_median: 32
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 1 | minimum: 858 | maximum: 858 | unweighted_median: 858
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2014 | geography_rows: 1 | minimum: 604 | maximum: 604 | unweighted_median: 604
+line_code: 1400 | description: Administrative and support and waste management and remediation services | unit: Number of jobs | latest_reported_year: 2018 | geography_rows: 1 | minimum: 685 | maximum: 685 | unweighted_median: 685
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2006 | geography_rows: 2 | minimum: 6 | maximum: 132 | unweighted_median: 69
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2006 | geography_rows: 1 | minimum: 2,204 | maximum: 2,204 | unweighted_median: 2,204
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2002 | geography_rows: 1 | minimum: 31 | maximum: 31 | unweighted_median: 31
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2005 | geography_rows: 1 | minimum: 913 | maximum: 913 | unweighted_median: 913
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2016 | geography_rows: 1 | minimum: 110 | maximum: 110 | unweighted_median: 110
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2016 | geography_rows: 1 | minimum: 1,203 | maximum: 1,203 | unweighted_median: 1,203
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2015 | geography_rows: 1 | minimum: 407 | maximum: 407 | unweighted_median: 407
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2015 | geography_rows: 1 | minimum: 113 | maximum: 113 | unweighted_median: 113
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2010 | geography_rows: 1 | minimum: 37 | maximum: 37 | unweighted_median: 37
+line_code: 800 | description: Transportation and warehousing | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 2 | minimum: 80 | maximum: 713 | unweighted_median: 396.5
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 3 | minimum: 66 | maximum: 771 | unweighted_median: 265
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2004 | geography_rows: 1 | minimum: 16 | maximum: 16 | unweighted_median: 16
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2015 | geography_rows: 1 | minimum: 42 | maximum: 42 | unweighted_median: 42
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2015 | geography_rows: 2 | minimum: 410 | maximum: 570 | unweighted_median: 490
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2007 | geography_rows: 2 | minimum: 16 | maximum: 399 | unweighted_median: 207.5
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2007 | geography_rows: 2 | minimum: 1,138 | maximum: 2,241 | unweighted_median: 1,689.5
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2004 | geography_rows: 2 | minimum: 131 | maximum: 133 | unweighted_median: 132
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2002 | geography_rows: 2 | minimum: 539 | maximum: 742 | unweighted_median: 640.5
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2009 | geography_rows: 1 | minimum: 23 | maximum: 23 | unweighted_median: 23
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2014 | geography_rows: 1 | minimum: 182 | maximum: 182 | unweighted_median: 182
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2014 | geography_rows: 1 | minimum: 2,204 | maximum: 2,204 | unweighted_median: 2,204
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2006 | geography_rows: 2 | minimum: 79 | maximum: 110 | unweighted_median: 94.5
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2006 | geography_rows: 2 | minimum: 16 | maximum: 45 | unweighted_median: 30.5
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 3 | minimum: 1 | maximum: 20 | unweighted_median: 13
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 1 | minimum: 556 | maximum: 556 | unweighted_median: 556
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 1 | minimum: 234 | maximum: 234 | unweighted_median: 234
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2019 | geography_rows: 2 | minimum: 71 | maximum: 169 | unweighted_median: 120
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2019 | geography_rows: 3 | minimum: 11 | maximum: 94 | unweighted_median: 85
+line_code: 1400 | description: Administrative and support and waste management and remediation services | unit: Number of jobs | latest_reported_year: 2019 | geography_rows: 3 | minimum: 175 | maximum: 538 | unweighted_median: 511
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2012 | geography_rows: 2 | minimum: 50 | maximum: 102 | unweighted_median: 76
+line_code: 1000 | description: Finance and insurance | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 1 | minimum: 146 | maximum: 146 | unweighted_median: 146
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 3 | minimum: 327 | maximum: 969 | unweighted_median: 481
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2019 | geography_rows: 1 | minimum: 352 | maximum: 352 | unweighted_median: 352
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2012 | geography_rows: 1 | minimum: 329 | maximum: 329 | unweighted_median: 329
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 1 | minimum: 15 | maximum: 15 | unweighted_median: 15
+line_code: 800 | description: Transportation and warehousing | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 1 | minimum: 139 | maximum: 139 | unweighted_median: 139
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 2 | minimum: 226 | maximum: 330 | unweighted_median: 278
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2016 | geography_rows: 2 | minimum: 103 | maximum: 124 | unweighted_median: 113.5
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2016 | geography_rows: 2 | minimum: 1,350 | maximum: 1,785 | unweighted_median: 1,567.5
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2016 | geography_rows: 3 | minimum: 71 | maximum: 389 | unweighted_median: 129
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2014 | geography_rows: 2 | minimum: 26 | maximum: 81 | unweighted_median: 53.5
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2014 | geography_rows: 2 | minimum: 1,099 | maximum: 3,136 | unweighted_median: 2,117.5
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2014 | geography_rows: 2 | minimum: 39 | maximum: 121 | unweighted_median: 80
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2010 | geography_rows: 1 | minimum: 161 | maximum: 161 | unweighted_median: 161
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2010 | geography_rows: 1 | minimum: 1,600 | maximum: 1,600 | unweighted_median: 1,600
+line_code: 500 | description: Manufacturing | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 2 | minimum: 111 | maximum: 205 | unweighted_median: 158
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 2 | minimum: 158 | maximum: 302 | unweighted_median: 230
+line_code: 1700 | description: Arts, entertainment, and recreation | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 1 | minimum: 60 | maximum: 60 | unweighted_median: 60
+line_code: 1800 | description: Accommodation and food services | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 1 | minimum: 447 | maximum: 447 | unweighted_median: 447
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2019 | geography_rows: 2 | minimum: 14 | maximum: 135 | unweighted_median: 74.5
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2019 | geography_rows: 2 | minimum: 491 | maximum: 1,859 | unweighted_median: 1,175
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2003 | geography_rows: 1 | minimum: 128 | maximum: 128 | unweighted_median: 128
+line_code: 900 | description: Information | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 1 | minimum: 30 | maximum: 30 | unweighted_median: 30
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 1 | minimum: 53 | maximum: 53 | unweighted_median: 53
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 1 | minimum: 320 | maximum: 320 | unweighted_median: 320
+line_code: 1700 | description: Arts, entertainment, and recreation | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 1 | minimum: 29 | maximum: 29 | unweighted_median: 29
+line_code: 1800 | description: Accommodation and food services | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 1 | minimum: 245 | maximum: 245 | unweighted_median: 245
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2011 | geography_rows: 3 | minimum: 71 | maximum: 132 | unweighted_median: 120
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 1 | minimum: 21 | maximum: 21 | unweighted_median: 21
+line_code: 1700 | description: Arts, entertainment, and recreation | unit: Number of jobs | latest_reported_year: 2011 | geography_rows: 1 | minimum: 25 | maximum: 25 | unweighted_median: 25
+line_code: 1800 | description: Accommodation and food services | unit: Number of jobs | latest_reported_year: 2011 | geography_rows: 1 | minimum: 222 | maximum: 222 | unweighted_median: 222
+line_code: 800 | description: Transportation and warehousing | unit: Number of jobs | latest_reported_year: 2003 | geography_rows: 1 | minimum: 301 | maximum: 301 | unweighted_median: 301
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2003 | geography_rows: 2 | minimum: 77 | maximum: 90 | unweighted_median: 83.5
+line_code: 1100 | description: Real estate and rental and leasing | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 1 | minimum: 172 | maximum: 172 | unweighted_median: 172
+line_code: 1400 | description: Administrative and support and waste management and remediation services | unit: Number of jobs | latest_reported_year: 2005 | geography_rows: 1 | minimum: 46 | maximum: 46 | unweighted_median: 46
+line_code: 1700 | description: Arts, entertainment, and recreation | unit: Number of jobs | latest_reported_year: 2013 | geography_rows: 1 | minimum: 29 | maximum: 29 | unweighted_median: 29
+line_code: 1800 | description: Accommodation and food services | unit: Number of jobs | latest_reported_year: 2013 | geography_rows: 1 | minimum: 259 | maximum: 259 | unweighted_median: 259
+line_code: 1900 | description: Other services (except government and government enterprises) | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 1 | minimum: 262 | maximum: 262 | unweighted_median: 262
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2009 | geography_rows: 1 | minimum: 476 | maximum: 476 | unweighted_median: 476
+line_code: 1500 | description: Educational services | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 3 | minimum: 110 | maximum: 214 | unweighted_median: 118
+line_code: 1600 | description: Health care and social assistance | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 3 | minimum: 1,020 | maximum: 2,055 | unweighted_median: 1,913
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 2 | minimum: 0 | maximum: 12 | unweighted_median: 6
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 3 | minimum: 41 | maximum: 55 | unweighted_median: 53
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 3 | minimum: 489 | maximum: 5,070 | unweighted_median: 623
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2013 | geography_rows: 1 | minimum: 242 | maximum: 242 | unweighted_median: 242
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2012 | geography_rows: 1 | minimum: 404 | maximum: 404 | unweighted_median: 404
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2012 | geography_rows: 1 | minimum: 11 | maximum: 11 | unweighted_median: 11
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2007 | geography_rows: 1 | minimum: 36 | maximum: 36 | unweighted_median: 36
+line_code: 800 | description: Transportation and warehousing | unit: Number of jobs | latest_reported_year: 2007 | geography_rows: 1 | minimum: 1,851 | maximum: 1,851 | unweighted_median: 1,851
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2011 | geography_rows: 2 | minimum: 57 | maximum: 64 | unweighted_median: 60.5
+line_code: 800 | description: Transportation and warehousing | unit: Number of jobs | latest_reported_year: 2011 | geography_rows: 1 | minimum: 609 | maximum: 609 | unweighted_median: 609
+line_code: 1700 | description: Arts, entertainment, and recreation | unit: Number of jobs | latest_reported_year: 2021 | geography_rows: 1 | minimum: 259 | maximum: 259 | unweighted_median: 259
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2011 | geography_rows: 1 | minimum: 309 | maximum: 309 | unweighted_median: 309
+line_code: 1300 | description: Management of companies and enterprises | unit: Number of jobs | latest_reported_year: 2007 | geography_rows: 2 | minimum: 30 | maximum: 42 | unweighted_median: 36
+line_code: 300 | description: Utilities | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 1 | minimum: 15 | maximum: 15 | unweighted_median: 15
+line_code: 600 | description: Wholesale trade | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 1 | minimum: 44 | maximum: 44 | unweighted_median: 44
+line_code: 900 | description: Information | unit: Number of jobs | latest_reported_year: 2019 | geography_rows: 1 | minimum: 10 | maximum: 10 | unweighted_median: 10
+line_code: 1000 | description: Finance and insurance | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 1 | minimum: 165 | maximum: 165 | unweighted_median: 165
+line_code: 1100 | description: Real estate and rental and leasing | unit: Number of jobs | latest_reported_year: 2020 | geography_rows: 1 | minimum: 91 | maximum: 91 | unweighted_median: 91
+line_code: 1700 | description: Arts, entertainment, and recreation | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 1 | minimum: 16 | maximum: 16 | unweighted_median: 16
+line_code: 1800 | description: Accommodation and food services | unit: Number of jobs | latest_reported_year: 2008 | geography_rows: 1 | minimum: 121 | maximum: 121 | unweighted_median: 121
+line_code: 1900 | description: Other services (except government and government enterprises) | unit: Number of jobs | latest_reported_year: 2017 | geography_rows: 1 | minimum: 210 | maximum: 210 | unweighted_median: 210
+line_code: 100 | description: Forestry, fishing, and related activities | unit: Number of jobs | latest_reported_year: 2013 | geography_rows: 1 | minimum: 128 | maximum: 128 | unweighted_median: 128
+line_code: 200 | description: Mining, quarrying, and oil and gas extraction | unit: Number of jobs | latest_reported_year: 2013 | geography_rows: 1 | minimum: 65 | maximum: 65 | unweighted_median: 65
+line_code: 1200 | description: Professional, scientific, and technical services | unit: Number of jobs | latest_reported_year: 2007 | geography_rows: 1 | minimum: 481 | maximum: 481 | unweighted_median: 481
+
+TRACEABLE FINDINGS
+f1: Ohio / Total employment (number of jobs) 2001 = 6,725,753 Number of jobs [CSV record 1; GeoFIPS=39000; LineCode=10; column=2001]
+f2: Ohio / Total employment (number of jobs) 2022 = 7,305,177 Number of jobs [CSV record 1; GeoFIPS=39000; LineCode=10; column=2022]
+f3: Ohio / Wage and salary employment 2001 = 5,709,552 Number of jobs [CSV record 2; GeoFIPS=39000; LineCode=20; column=2001]
+f4: Ohio / Wage and salary employment 2022 = 5,632,510 Number of jobs [CSV record 2; GeoFIPS=39000; LineCode=20; column=2022]
+f5: Ohio / Proprietors employment 2001 = 1,016,201 Number of jobs [CSV record 3; GeoFIPS=39000; LineCode=40; column=2001]
+f6: Ohio / Proprietors employment 2022 = 1,672,667 Number of jobs [CSV record 3; GeoFIPS=39000; LineCode=40; column=2022]
+f7: Ohio / Farm proprietors employment 2001 = 80,527 Number of jobs [CSV record 4; GeoFIPS=39000; LineCode=50; column=2001]
+f8: Ohio / Farm proprietors employment 2022 = 68,865 Number of jobs [CSV record 4; GeoFIPS=39000; LineCode=50; column=2022]
+f9: Ohio / Nonfarm proprietors employment 2/ 2001 = 935,674 Number of jobs [CSV record 5; GeoFIPS=39000; LineCode=60; column=2001]
+f10: Ohio / Nonfarm proprietors employment 2/ 2022 = 1,603,802 Number of jobs [CSV record 5; GeoFIPS=39000; LineCode=60; column=2022]
+f11: Ohio / Farm employment 2001 = 98,289 Number of jobs [CSV record 6; GeoFIPS=39000; LineCode=70; column=2001]
+f12: Ohio / Farm employment 2022 = 82,352 Number of jobs [CSV record 6; GeoFIPS=39000; LineCode=70; column=2022]
+f13: Ohio / Nonfarm employment 2001 = 6,627,464 Number of jobs [CSV record 7; GeoFIPS=39000; LineCode=80; column=2001]
+f14: Ohio / Nonfarm employment 2022 = 7,222,825 Number of jobs [CSV record 7; GeoFIPS=39000; LineCode=80; column=2022]
+f15: Ohio / Private nonfarm employment 2001 = 5,793,049 Number of jobs [CSV record 8; GeoFIPS=39000; LineCode=90; column=2001]
+f16: Ohio / Private nonfarm employment 2022 = 6,439,050 Number of jobs [CSV record 8; GeoFIPS=39000; LineCode=90; column=2022]
+f17: Ohio / Forestry, fishing, and related activities 2001 = 10,286 Number of jobs [CSV record 9; GeoFIPS=39000; LineCode=100; column=2001]
+f18: Ohio / Forestry, fishing, and related activities 2022 = 16,031 Number of jobs [CSV record 9; GeoFIPS=39000; LineCode=100; column=2022]
+f19: Ohio / Mining, quarrying, and oil and gas extraction 2001 = 21,512 Number of jobs [CSV record 10; GeoFIPS=39000; LineCode=200; column=2001]
+f20: Ohio / Mining, quarrying, and oil and gas extraction 2022 = 21,374 Number of jobs [CSV record 10; GeoFIPS=39000; LineCode=200; column=2022]
+f21: Ohio / Utilities 2001 = 24,866 Number of jobs [CSV record 11; GeoFIPS=39000; LineCode=300; column=2001]
+f22: Ohio / Utilities 2022 = 18,700 Number of jobs [CSV record 11; GeoFIPS=39000; LineCode=300; column=2022]
+f23: Ohio / Construction 2001 = 358,380 Number of jobs [CSV record 12; GeoFIPS=39000; LineCode=400; column=2001]
+f24: Ohio / Construction 2022 = 374,433 Number of jobs [CSV record 12; GeoFIPS=39000; LineCode=400; column=2022]
+f25: Ohio / Manufacturing 2001 = 972,326 Number of jobs [CSV record 13; GeoFIPS=39000; LineCode=500; column=2001]
+f26: Ohio / Manufacturing 2022 = 713,899 Number of jobs [CSV record 13; GeoFIPS=39000; LineCode=500; column=2022]
+f27: Ohio / Wholesale trade 2001 = 264,216 Number of jobs [CSV record 14; GeoFIPS=39000; LineCode=600; column=2001]
+f28: Ohio / Wholesale trade 2022 = 262,256 Number of jobs [CSV record 14; GeoFIPS=39000; LineCode=600; column=2022]
+f29: Ohio / Retail trade 2001 = 778,247 Number of jobs [CSV record 15; GeoFIPS=39000; LineCode=700; column=2001]
+f30: Ohio / Retail trade 2022 = 679,397 Number of jobs [CSV record 15; GeoFIPS=39000; LineCode=700; column=2022]
+f31: Ohio / Transportation and warehousing 2001 = 215,525 Number of jobs [CSV record 16; GeoFIPS=39000; LineCode=800; column=2001]
+f32: Ohio / Transportation and warehousing 2022 = 427,615 Number of jobs [CSV record 16; GeoFIPS=39000; LineCode=800; column=2022]
+f33: Ohio / Information 2001 = 119,935 Number of jobs [CSV record 17; GeoFIPS=39000; LineCode=900; column=2001]
+f34: Ohio / Information 2022 = 93,128 Number of jobs [CSV record 17; GeoFIPS=39000; LineCode=900; column=2022]
+f35: Ohio / Finance and insurance 2001 = 294,795 Number of jobs [CSV record 18; GeoFIPS=39000; LineCode=1000; column=2001]
+f36: Ohio / Finance and insurance 2022 = 412,030 Number of jobs [CSV record 18; GeoFIPS=39000; LineCode=1000; column=2022]
+f37: Ohio / Real estate and rental and leasing 2001 = 202,213 Number of jobs [CSV record 19; GeoFIPS=39000; LineCode=1100; column=2001]
+f38: Ohio / Real estate and rental and leasing 2022 = 346,409 Number of jobs [CSV record 19; GeoFIPS=39000; LineCode=1100; column=2022]
+f39: Ohio / Professional, scientific, and technical services 2001 = 348,633 Number of jobs [CSV record 20; GeoFIPS=39000; LineCode=1200; column=2001]
+f40: Ohio / Professional, scientific, and technical services 2022 = 433,417 Number of jobs [CSV record 20; GeoFIPS=39000; LineCode=1200; column=2022]
+f41: Ohio / Management of companies and enterprises 2001 = 88,895 Number of jobs [CSV record 21; GeoFIPS=39000; LineCode=1300; column=2001]
+f42: Ohio / Management of companies and enterprises 2022 = 150,890 Number of jobs [CSV record 21; GeoFIPS=39000; LineCode=1300; column=2022]
+f43: Ohio / Administrative and support and waste management and remediation services 2001 = 383,672 Number of jobs [CSV record 22; GeoFIPS=39000; LineCode=1400; column=2001]
+f44: Ohio / Administrative and support and waste management and remediation services 2022 = 427,579 Number of jobs [CSV record 22; GeoFIPS=39000; LineCode=1400; column=2022]
+f45: Ohio / Educational services 2001 = 108,925 Number of jobs [CSV record 23; GeoFIPS=39000; LineCode=1500; column=2001]
+f46: Ohio / Educational services 2022 = 146,698 Number of jobs [CSV record 23; GeoFIPS=39000; LineCode=1500; column=2022]
+f47: Ohio / Health care and social assistance 2001 = 688,661 Number of jobs [CSV record 24; GeoFIPS=39000; LineCode=1600; column=2001]
+f48: Ohio / Health care and social assistance 2022 = 890,100 Number of jobs [CSV record 24; GeoFIPS=39000; LineCode=1600; column=2022]
+f49: Ohio / Arts, entertainment, and recreation 2001 = 113,114 Number of jobs [CSV record 25; GeoFIPS=39000; LineCode=1700; column=2001]
+f50: Ohio / Arts, entertainment, and recreation 2022 = 144,046 Number of jobs [CSV record 25; GeoFIPS=39000; LineCode=1700; column=2022]
+f51: Ohio / Accommodation and food services 2001 = 436,779 Number of jobs [CSV record 26; GeoFIPS=39000; LineCode=1800; column=2001]
+f52: Ohio / Accommodation and food services 2022 = 502,271 Number of jobs [CSV record 26; GeoFIPS=39000; LineCode=1800; column=2022]
+f53: Ohio / Other services (except government and government enterprises) 2001 = 362,069 Number of jobs [CSV record 27; GeoFIPS=39000; LineCode=1900; column=2001]
+f54: Ohio / Other services (except government and government enterprises) 2022 = 378,777 Number of jobs [CSV record 27; GeoFIPS=39000; LineCode=1900; column=2022]
+f55: Ohio / Government and government enterprises 2001 = 834,415 Number of jobs [CSV record 28; GeoFIPS=39000; LineCode=2000; column=2001]
+f56: Ohio / Government and government enterprises 2022 = 783,775 Number of jobs [CSV record 28; GeoFIPS=39000; LineCode=2000; column=2022]
+f57: Ohio / Federal civilian 2001 = 80,502 Number of jobs [CSV record 29; GeoFIPS=39000; LineCode=2001; column=2001]
+f58: Ohio / Federal civilian 2022 = 79,824 Number of jobs [CSV record 29; GeoFIPS=39000; LineCode=2001; column=2022]
+f59: Ohio / Military 2001 = 37,067 Number of jobs [CSV record 30; GeoFIPS=39000; LineCode=2002; column=2001]
+f60: Ohio / Military 2022 = 33,566 Number of jobs [CSV record 30; GeoFIPS=39000; LineCode=2002; column=2022]
+f61: Ohio / State and local 2001 = 716,846 Number of jobs [CSV record 31; GeoFIPS=39000; LineCode=2010; column=2001]
+f62: Ohio / State and local 2022 = 670,385 Number of jobs [CSV record 31; GeoFIPS=39000; LineCode=2010; column=2022]
+f63: Ohio / State government 2001 = 177,166 Number of jobs [CSV record 32; GeoFIPS=39000; LineCode=2011; column=2001]
+f64: Ohio / State government 2022 = 165,260 Number of jobs [CSV record 32; GeoFIPS=39000; LineCode=2011; column=2022]
+f65: Ohio / Local government 2001 = 539,680 Number of jobs [CSV record 33; GeoFIPS=39000; LineCode=2012; column=2001]
+f66: Ohio / Local government 2022 = 505,125 Number of jobs [CSV record 33; GeoFIPS=39000; LineCode=2012; column=2022]
+c1: Total employment (number of jobs) endpoint difference = 579,424 Number of jobs; difference(f2, f1). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c2: Wage and salary employment endpoint difference = -77,042 Number of jobs; difference(f4, f3). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c3: Proprietors employment endpoint difference = 656,466 Number of jobs; difference(f6, f5). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c4: Farm proprietors employment endpoint difference = -11,662 Number of jobs; difference(f8, f7). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c5: Nonfarm proprietors employment 2/ endpoint difference = 668,128 Number of jobs; difference(f10, f9). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c6: Farm employment endpoint difference = -15,937 Number of jobs; difference(f12, f11). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c7: Nonfarm employment endpoint difference = 595,361 Number of jobs; difference(f14, f13). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c8: Private nonfarm employment endpoint difference = 646,001 Number of jobs; difference(f16, f15). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c9: Forestry, fishing, and related activities endpoint difference = 5,745 Number of jobs; difference(f18, f17). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c10: Mining, quarrying, and oil and gas extraction endpoint difference = -138 Number of jobs; difference(f20, f19). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c11: Utilities endpoint difference = -6,166 Number of jobs; difference(f22, f21). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c12: Construction endpoint difference = 16,053 Number of jobs; difference(f24, f23). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c13: Manufacturing endpoint difference = -258,427 Number of jobs; difference(f26, f25). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c14: Wholesale trade endpoint difference = -1,960 Number of jobs; difference(f28, f27). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c15: Retail trade endpoint difference = -98,850 Number of jobs; difference(f30, f29). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c16: Transportation and warehousing endpoint difference = 212,090 Number of jobs; difference(f32, f31). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c17: Information endpoint difference = -26,807 Number of jobs; difference(f34, f33). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c18: Finance and insurance endpoint difference = 117,235 Number of jobs; difference(f36, f35). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c19: Real estate and rental and leasing endpoint difference = 144,196 Number of jobs; difference(f38, f37). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c20: Professional, scientific, and technical services endpoint difference = 84,784 Number of jobs; difference(f40, f39). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c21: Management of companies and enterprises endpoint difference = 61,995 Number of jobs; difference(f42, f41). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c22: Administrative and support and waste management and remediation services endpoint difference = 43,907 Number of jobs; difference(f44, f43). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c23: Educational services endpoint difference = 37,773 Number of jobs; difference(f46, f45). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c24: Health care and social assistance endpoint difference = 201,439 Number of jobs; difference(f48, f47). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c25: Arts, entertainment, and recreation endpoint difference = 30,932 Number of jobs; difference(f50, f49). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c26: Accommodation and food services endpoint difference = 65,492 Number of jobs; difference(f52, f51). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c27: Other services (except government and government enterprises) endpoint difference = 16,708 Number of jobs; difference(f54, f53). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c28: Government and government enterprises endpoint difference = -50,640 Number of jobs; difference(f56, f55). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c29: Federal civilian endpoint difference = -678 Number of jobs; difference(f58, f57). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c30: Military endpoint difference = -3,501 Number of jobs; difference(f60, f59). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c31: State and local endpoint difference = -46,461 Number of jobs; difference(f62, f61). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c32: State government endpoint difference = -11,906 Number of jobs; difference(f64, f63). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c33: Local government endpoint difference = -34,555 Number of jobs; difference(f66, f65). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Compare the local income or price context with your own documented spending rather than treating an area average as your income.
+Care delivery: Use the regional economic measure to assess affordability or workforce context; obtain actual care utilization separately.
+Payers and policy: Match units and geographic scope before using this benchmark. Separate observed economic scale from the illness-attribution and intervention-effect evidence still needed.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme or Long COVID patient indicator or causal burden estimate.
+No measured fraction of work loss or spending recoverable through a proposed intervention.
+Full-area and geographic subsets share observations; they are not independent estimates.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

@@ -1,0 +1,111 @@
+ed2017-stata.zip
+SOURCE: cdc/nhamcs_ed_2016_2022/2017/ed2017-stata.zip :: readme2017-ed-stata.txt
+SHA-256: 1c2ef8fb29e24d6e7ce2c455c830e9fa994e335dba139df30ff11bbfdb6162a4
+CONDITION SCOPE: both
+ROLE: documentation_or_literature_not_yet_parameterized
+
+PROCESSING AND INTERPRETATION STATUS
+extracted_requires_semantic_review. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Visits are not patients. Apply survey weights/design and small-sample presentation standards before national estimation; diagnoses alone do not establish attributable utilization.
+
+DOCUMENT IDENTITY AND SCOPE
+readme2017-ed-stata.txt: USING STATA There are two ways to read the 2017 NHAMCS Emergency Department public-use data file into Stata: Option 1 - Use the zipped file ED2017-stata.zip in the Stata folder on the FTP server to open a complete Stata dataset of the 2017 NHAMCS Emergency Department public use file. The steps for this option are as follows: 1) Create a new folder on your local workstation, for example, C:\MYFILES\ED2017 2) Download to the new folder the file ED2017-stata.zip from the FTP server: ftp://ftp.cdc.g
+2 source passage blocks matched decision/definition concepts. This is a document-specific evidence extraction, not a completed study appraisal or an inferred financial model.
+
+WHAT NEEDS A DECISION
+Visits are not patients. Apply survey weights/design and small-sample presentation standards before national estimation; diagnoses alone do not establish attributable utilization. Resolve population, measured outcome, timeframe, comparison group and uncertainty from the cited passages before choosing any number. For a dictionary/import program, the decision is how to interpret another data file, not whether the program supplies a new observation. No source code is executed.
+
+SOURCE PASSAGES FOR TARGETED REVIEW
+Verbatim extraction with locators. No extracted number is approved as a model parameter; PDF table structure and context require review before numerical reuse.
+location: lines 1-40 | source_text:                                   USING STATA
+    
+  There are two ways to read the 2017 NHAMCS Emergency Department public-use data file into Stata:
+
+  Option 1 - Use the zipped file ED2017-stata.zip in the Stata folder on 
+  the FTP server to open a complete Stata dataset of the 2017 NHAMCS Emergency Department public use file.
+
+  The steps for this option are as follows:
+
+  1) Create a new folder on your local workstation, for example, C:\MYFILES\ED2017
+
+  2) Download to the new folder the file ED2017-stata.zip from the FTP server: 
+     ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/dataset_documentation/nhamcs/stata
+
+  3) ED2017-stata.zip is a compressed file which you must unzip prior to use. 
+     In order to do this, double click on the file name in your directory screen; 
+     an option to unzip the file should appear. A new folder, ED2017-stata, will probably 
+     be created, depending on the software your system uses. The unzipped file ED2017.dta 
+     will be within that folder. This is the Stata dataset. You can then 
+     move the file to your preferred location.
+
+     Alternately, you can right-click on the name of the compressed file from your directory screen. 
+     On the pop-up menu, there should be an option to extract the file to a location of your choosing.
+
+
+  Option 2 - Use the DO file (*.do) and dictionary file (*.dct) provided in 
+  the �Stata Documentation� section of the Ambulatory Health Care Data website, 
+  (under Public Use File Documentation) along with the flat data file (*.zip) 
+  in the �Downloadable data files� section, to create a Stata dataset. The file that
+  is created should be identical to the file described in Option 1 above. 
+
+  The steps for this option are as follows:
+
+  1) Create a new folder on your local workstation, for example, C:\MYFILES\ED2017
+
+  2) Download to the new folder the 2017 NHAMCS Emergency Department dataset (ED2017.zip) from the FTP server: 
+     ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/datasets/nhamcs
+
+  3) ED2017.zip is a compressed file which must be unzipped prior to use.
+
+location: lines 41-73 | source_text:      In order to do this, double click on the file name in your directory screen; 
+     an option to unzip the file should appear. A new folder, ED2017, will probably 
+     be created, depending on the software your system uses. The unzipped file ED2017 
+     with no extension will be within that folder. This is the NHAMCS Emergency Department ASCII 
+     dataset. You can then move the file to your preferred location. 
+
+     IMPORTANT: Stata requires a file extension to recognize this as a data file, 
+     so simply rename it as ED2017.raw.
+
+  4) Download to the new folder the ED2017.do and eddict2017.dct files from the FTP server:
+     ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/dataset_documentation/nhamcs/stata
+
+  4) Open Stata, then open "New Do-file Editor" from the taskbar and enter the following script, making
+     sure to point to the folder on your local workstation where you have saved the Stata files:
+  
+     cd C:\MYFILES\ED2017\
+     do ED2017
+
+     Once this script is in the editor, you can Run Stata from the taskbar.
+ 
+     A note on labels:
+
+     It should be pointed out that Stata will not allow value labels for 
+     character (string) format variables.  In the case of NAMCS and NHAMCS data, 
+     there are a number of character or string variables, such as DIAG1 (physician's 
+     first-listed diagnosis), etc.  For some character variables, we have been able 
+     to redefine them as numeric without changing their basic structure and the 
+     labels should work.  However, for the diagnosis variables (DIAG1, DIAG2, DIAG3, etc.) which 
+     actually contain alpha characters in the string, this was not able to be done.  
+
+     If data users experience difficulties or have suggestions for future releases of these 
+     products, please contact the Ambulatory and Hospital Care Statistics Branch at 
+     301-458-4600 or email at ambcare@cdc.gov.
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+Manual semantic review is still required: association versus causation, cost components, price year, denominator and uncertainty.
+No numerical model input is approved solely because it appears in an extracted passage.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

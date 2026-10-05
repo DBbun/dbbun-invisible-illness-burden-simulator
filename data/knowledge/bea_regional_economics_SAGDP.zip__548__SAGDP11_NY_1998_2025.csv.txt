@@ -1,0 +1,504 @@
+SAGDP.zip
+SOURCE: bea/regional_economics/SAGDP.zip :: SAGDP11_NY_1998_2025.csv
+SHA-256: 5a90e0e6e03082089048d8f78e8a4df9993465c4f34f9de471258fed2a908183
+CONDITION SCOPE: general
+ROLE: regional_economic_context
+
+PROCESSING AND INTERPRETATION STATUS
+focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Population, definitions, units and overlap need verification before modeling.
+
+FILE-SPECIFIC FINDING
+SAGDP11_NY_1998_2025.csv contains 92 geographic-measure records across 1 geographic identifiers. For New York, All industry total moves from 2.4 Percent change in 1998 to 2.9 in 2025. The accompanying measure table distinguishes the units rather than blending dollars, jobs, people and indexes.
+
+ECONOMIC INTERPRETATION
+GDP is production value, not a household wage or insurer payment. Current-dollar, real/chained-dollar, growth and contribution measures must remain distinct. Chained-dollar industry series are not generally additive. No fraction of GDP is attributed to either illness here.
+
+HOW TO USE THIS FILE
+Use the exact geography and 1998–2025 coverage in this file for context, not a live estimate. State-specific and ALL_AREAS members overlap; retrieving both must not double their economic totals. Ranges describe available rows and exclude nonnumeric disclosure/availability markers, not zero-valued observations.
+
+SELECTED WITHIN-FILE GEOGRAPHIC SERIES
+Focus: New York. Years and units are preserved from each source row. Not disease-attributable amounts.
+geography: New York | line_code: 1 | description: All industry total | unit: Percent change | first_year: 1998 | first: 2.4 | last_year: 2025 | last: 2.9 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 2 | description: Private industries | unit: Percentage points | first_year: 1998 | first: 2.15 | last_year: 2025 | last: 2.94 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 3 | description: Agriculture, forestry, fishing and hunting | unit: Percentage points | first_year: 1998 | first: 0.04 | last_year: 2025 | last: -0.02 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 4 | description: Farms | unit: Percentage points | first_year: 1998 | first: 0.04 | last_year: 2024 | last: 0.02 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 5 | description: Forestry, fishing, and related activities | unit: Percentage points | first_year: 1998 | first: -0.01 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 6 | description: Mining, quarrying, and oil and gas extraction | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2025 | last: 0 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 7 | description: Oil and gas extraction | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 8 | description: Mining (except oil and gas) | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 9 | description: Support activities for mining | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 10 | description: Utilities | unit: Percentage points | first_year: 1998 | first: -0.07 | last_year: 2025 | last: -0.03 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 11 | description: Construction | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2025 | last: -0.05 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 12 | description: Manufacturing | unit: Percentage points | first_year: 1998 | first: 0.4 | last_year: 2025 | last: -0.11 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 13 | description: Durable goods manufacturing | unit: Percentage points | first_year: 1998 | first: 0.49 | last_year: 2025 | last: 0.01 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 14 | description: Wood product manufacturing | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 15 | description: Nonmetallic mineral product manufacturing | unit: Percentage points | first_year: 1998 | first: -0.01 | last_year: 2024 | last: -0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 16 | description: Primary metal manufacturing | unit: Percentage points | first_year: 1998 | first: 0.04 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 17 | description: Fabricated metal product manufacturing | unit: Percentage points | first_year: 1998 | first: 0.02 | last_year: 2024 | last: -0.02 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 18 | description: Machinery manufacturing | unit: Percentage points | first_year: 1998 | first: 0.12 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 19 | description: Computer and electronic product manufacturing | unit: Percentage points | first_year: 1998 | first: 0.29 | last_year: 2024 | last: -0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 20 | description: Electrical equipment, appliance, and component manufacturing | unit: Percentage points | first_year: 1998 | first: -0.08 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 21 | description: Motor vehicles, bodies and trailers, and parts manufacturing | unit: Percentage points | first_year: 1998 | first: 0.09 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 22 | description: Other transportation equipment manufacturing | unit: Percentage points | first_year: 1998 | first: 0.02 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 23 | description: Furniture and related product manufacturing | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 24 | description: Miscellaneous manufacturing | unit: Percentage points | first_year: 1998 | first: -0.01 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 25 | description: Nondurable goods manufacturing | unit: Percentage points | first_year: 1998 | first: -0.09 | last_year: 2025 | last: -0.12 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 26 | description: Food and beverage and tobacco product manufacturing | unit: Percentage points | first_year: 1998 | first: -0.08 | last_year: 2024 | last: -0.03 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 27 | description: Textile mills and textile product mills | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 28 | description: Apparel, leather, and allied product manufacturing | unit: Percentage points | first_year: 1998 | first: -0.05 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 29 | description: Paper manufacturing | unit: Percentage points | first_year: 1998 | first: 0.02 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 30 | description: Printing and related support activities | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 31 | description: Petroleum and coal products manufacturing | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 32 | description: Chemical manufacturing | unit: Percentage points | first_year: 1998 | first: -0.02 | last_year: 2024 | last: 0.11 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 33 | description: Plastics and rubber products manufacturing | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2024 | last: -0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 34 | description: Wholesale trade | unit: Percentage points | first_year: 1998 | first: 0.4 | last_year: 2025 | last: 0.12 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 35 | description: Retail trade | unit: Percentage points | first_year: 1998 | first: 0.3 | last_year: 2025 | last: -0.03 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 36 | description: Transportation and warehousing | unit: Percentage points | first_year: 1998 | first: -0.07 | last_year: 2025 | last: -0.02 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 37 | description: Air transportation | unit: Percentage points | first_year: 1998 | first: -0.02 | last_year: 2024 | last: -0.03 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 38 | description: Rail transportation | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 39 | description: Water transportation | unit: Percentage points | first_year: 1998 | first: -0.01 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 40 | description: Truck transportation | unit: Percentage points | first_year: 1998 | first: -0.03 | last_year: 2024 | last: 0.02 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 41 | description: Transit and ground passenger transportation | unit: Percentage points | first_year: 1998 | first: -0.03 | last_year: 2024 | last: 0.15 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 42 | description: Pipeline transportation | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 43 | description: Other transportation and support activities | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2024 | last: -0.04 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 44 | description: Warehousing and storage | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0.02 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 45 | description: Information | unit: Percentage points | first_year: 1998 | first: 0.61 | last_year: 2025 | last: 0.64 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 46 | description: Publishing industries (except Internet) | unit: Percentage points | first_year: 1998 | first: 0.12 | last_year: 2024 | last: 0.06 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 47 | description: Motion picture and sound recording industries | unit: Percentage points | first_year: 1998 | first: 0.29 | last_year: 2024 | last: 0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 48 | description: Broadcasting (except Internet) and telecommunications | unit: Percentage points | first_year: 1998 | first: 0.15 | last_year: 2024 | last: 0.13 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 49 | description: Data processing, hosting, and other information services | unit: Percentage points | first_year: 1998 | first: 0.05 | last_year: 2024 | last: 0.3 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 50 | description: Finance, insurance, real estate, rental, and leasing | unit: Percentage points | first_year: 1998 | first: 0.51 | last_year: 2025 | last: 1.65 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 51 | description: Finance and insurance | unit: Percentage points | first_year: 1998 | first: 0.36 | last_year: 2025 | last: 1.31 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 52 | description: Monetary Authorities- central bank, credit intermediation, and related services | unit: Percentage points | first_year: 1998 | first: 0.4 | last_year: 2024 | last: 0.52 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 53 | description: Securities, commodity contracts, and other financial investments and related activities | unit: Percentage points | first_year: 1998 | first: -0.29 | last_year: 2024 | last: -0.03 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 54 | description: Insurance carriers and related activities | unit: Percentage points | first_year: 1998 | first: 0.11 | last_year: 2024 | last: 0.06 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 55 | description: Funds, trusts, and other financial vehicles | unit: Percentage points | first_year: 1998 | first: 0.15 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 56 | description: Real estate and rental and leasing | unit: Percentage points | first_year: 1998 | first: 0.15 | last_year: 2025 | last: 0.35 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 57 | description: Real estate | unit: Percentage points | first_year: 1998 | first: 0.19 | last_year: 2024 | last: 0.08 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 58 | description: Rental and leasing services and lessors of nonfinancial intangible assets | unit: Percentage points | first_year: 1998 | first: -0.04 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 59 | description: Professional and business services | unit: Percentage points | first_year: 1998 | first: 0.13 | last_year: 2025 | last: 0.52 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 60 | description: Professional, scientific, and technical services | unit: Percentage points | first_year: 1998 | first: -0.09 | last_year: 2025 | last: 0.39 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 61 | description: Legal services | unit: Percentage points | first_year: 1998 | first: -0.17 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 62 | description: Computer systems design and related services | unit: Percentage points | first_year: 1998 | first: 0.14 | last_year: 2024 | last: 0.14 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 63 | description: Miscellaneous professional, scientific, and technical services | unit: Percentage points | first_year: 1998 | first: -0.05 | last_year: 2024 | last: 0.07 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 64 | description: Management of companies and enterprises | unit: Percentage points | first_year: 1998 | first: 0.04 | last_year: 2025 | last: -0.01 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 65 | description: Administrative and support and waste management and remediation services | unit: Percentage points | first_year: 1998 | first: 0.18 | last_year: 2025 | last: 0.14 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 66 | description: Administrative and support services | unit: Percentage points | first_year: 1998 | first: 0.18 | last_year: 2024 | last: 0.04 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 67 | description: Waste management and remediation services | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2024 | last: 0 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 68 | description: Educational services, health care, and social assistance | unit: Percentage points | first_year: 1998 | first: -0.05 | last_year: 2025 | last: 0.27 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 69 | description: Educational services | unit: Percentage points | first_year: 1998 | first: 0.03 | last_year: 2025 | last: 0 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 70 | description: Health care and social assistance | unit: Percentage points | first_year: 1998 | first: -0.08 | last_year: 2025 | last: 0.27 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 71 | description: Ambulatory health care services | unit: Percentage points | first_year: 1998 | first: -0.06 | last_year: 2024 | last: 0.19 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 72 | description: Hospitals | unit: Percentage points | first_year: 1998 | first: -0.01 | last_year: 2024 | last: 0.08 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 73 | description: Nursing and residential care facilities | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2024 | last: 0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 74 | description: Social assistance | unit: Percentage points | first_year: 1998 | first: -0.02 | last_year: 2024 | last: 0.07 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 75 | description: Arts, entertainment, recreation, accommodation, and food services | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2025 | last: 0.06 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 76 | description: Arts, entertainment, and recreation | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2025 | last: 0.06 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 77 | description: Performing arts, spectator sports, museums, and related activities | unit: Percentage points | first_year: 1998 | first: 0.01 | last_year: 2024 | last: 0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 78 | description: Amusement, gambling, and recreation industries | unit: Percentage points | first_year: 1998 | first: -0.02 | last_year: 2024 | last: 0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 79 | description: Accommodation and food services | unit: Percentage points | first_year: 1998 | first: 0.02 | last_year: 2025 | last: 0 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 80 | description: Accommodation | unit: Percentage points | first_year: 1998 | first: 0.04 | last_year: 2024 | last: 0.01 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 81 | description: Food services and drinking places | unit: Percentage points | first_year: 1998 | first: -0.02 | last_year: 2024 | last: -0.02 | numeric_years: 27 | years_in_file: 28
+geography: New York | line_code: 82 | description: Other services (except government and government enterprises) | unit: Percentage points | first_year: 1998 | first: -0.07 | last_year: 2025 | last: -0.07 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 83 | description: Government and government enterprises | unit: Percentage points | first_year: 1998 | first: 0.28 | last_year: 2025 | last: 0.01 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 84 | description: Federal civilian | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2025 | last: -0.05 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 85 | description: Military | unit: Percentage points | first_year: 1998 | first: 0 | last_year: 2025 | last: -0.01 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 86 | description: State and local | unit: Percentage points | first_year: 1998 | first: 0.28 | last_year: 2025 | last: 0.07 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 87 | description: Natural resources and mining | unit: Percentage points | first_year: 1998 | first: 0.04 | last_year: 2025 | last: -0.02 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 88 | description: Trade | unit: Percentage points | first_year: 1998 | first: 0.7 | last_year: 2025 | last: 0.09 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 89 | description: Transportation and utilities | unit: Percentage points | first_year: 1998 | first: -0.14 | last_year: 2025 | last: -0.05 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 90 | description: Manufacturing and information | unit: Percentage points | first_year: 1998 | first: 1.02 | last_year: 2025 | last: 0.53 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 91 | description: Private goods-producing industries 2/ | unit: Percentage points | first_year: 1998 | first: 0.45 | last_year: 2025 | last: -0.18 | numeric_years: 28 | years_in_file: 28
+geography: New York | line_code: 92 | description: Private services-providing industries 3/ | unit: Percentage points | first_year: 1998 | first: 1.71 | last_year: 2025 | last: 3.12 | numeric_years: 28 | years_in_file: 28
+
+WITHIN-FILE VARIATION BY ECONOMIC MEASURE
+Unweighted ranges/medians of retained geography rows, not national estimates; national/state/county/metro records may overlap. Disclosure markers remain missing.
+line_code: 1 | description: All industry total | unit: Percent change | latest_reported_year: 2025 | geography_rows: 1 | minimum: 2.9 | maximum: 2.9 | unweighted_median: 2.9
+line_code: 2 | description: Private industries | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 2.94 | maximum: 2.94 | unweighted_median: 2.94
+line_code: 3 | description: Agriculture, forestry, fishing and hunting | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.02 | maximum: -0.02 | unweighted_median: -0.02
+line_code: 4 | description: Farms | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.02 | maximum: 0.02 | unweighted_median: 0.02
+line_code: 5 | description: Forestry, fishing, and related activities | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 6 | description: Mining, quarrying, and oil and gas extraction | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 7 | description: Oil and gas extraction | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 8 | description: Mining (except oil and gas) | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 9 | description: Support activities for mining | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 10 | description: Utilities | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.03 | maximum: -0.03 | unweighted_median: -0.03
+line_code: 11 | description: Construction | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.05 | maximum: -0.05 | unweighted_median: -0.05
+line_code: 12 | description: Manufacturing | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.11 | maximum: -0.11 | unweighted_median: -0.11
+line_code: 13 | description: Durable goods manufacturing | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 14 | description: Wood product manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 15 | description: Nonmetallic mineral product manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.01 | maximum: -0.01 | unweighted_median: -0.01
+line_code: 16 | description: Primary metal manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 17 | description: Fabricated metal product manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.02 | maximum: -0.02 | unweighted_median: -0.02
+line_code: 18 | description: Machinery manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 19 | description: Computer and electronic product manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.01 | maximum: -0.01 | unweighted_median: -0.01
+line_code: 20 | description: Electrical equipment, appliance, and component manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 21 | description: Motor vehicles, bodies and trailers, and parts manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 22 | description: Other transportation equipment manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 23 | description: Furniture and related product manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 24 | description: Miscellaneous manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 25 | description: Nondurable goods manufacturing | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.12 | maximum: -0.12 | unweighted_median: -0.12
+line_code: 26 | description: Food and beverage and tobacco product manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.03 | maximum: -0.03 | unweighted_median: -0.03
+line_code: 27 | description: Textile mills and textile product mills | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 28 | description: Apparel, leather, and allied product manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 29 | description: Paper manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 30 | description: Printing and related support activities | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 31 | description: Petroleum and coal products manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 32 | description: Chemical manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.11 | maximum: 0.11 | unweighted_median: 0.11
+line_code: 33 | description: Plastics and rubber products manufacturing | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.01 | maximum: -0.01 | unweighted_median: -0.01
+line_code: 34 | description: Wholesale trade | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.12 | maximum: 0.12 | unweighted_median: 0.12
+line_code: 35 | description: Retail trade | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.03 | maximum: -0.03 | unweighted_median: -0.03
+line_code: 36 | description: Transportation and warehousing | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.02 | maximum: -0.02 | unweighted_median: -0.02
+line_code: 37 | description: Air transportation | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.03 | maximum: -0.03 | unweighted_median: -0.03
+line_code: 38 | description: Rail transportation | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 39 | description: Water transportation | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 40 | description: Truck transportation | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.02 | maximum: 0.02 | unweighted_median: 0.02
+line_code: 41 | description: Transit and ground passenger transportation | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.15 | maximum: 0.15 | unweighted_median: 0.15
+line_code: 42 | description: Pipeline transportation | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 43 | description: Other transportation and support activities | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.04 | maximum: -0.04 | unweighted_median: -0.04
+line_code: 44 | description: Warehousing and storage | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.02 | maximum: 0.02 | unweighted_median: 0.02
+line_code: 45 | description: Information | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.64 | maximum: 0.64 | unweighted_median: 0.64
+line_code: 46 | description: Publishing industries (except Internet) | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.06 | maximum: 0.06 | unweighted_median: 0.06
+line_code: 47 | description: Motion picture and sound recording industries | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 48 | description: Broadcasting (except Internet) and telecommunications | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.13 | maximum: 0.13 | unweighted_median: 0.13
+line_code: 49 | description: Data processing, hosting, and other information services | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.3 | maximum: 0.3 | unweighted_median: 0.3
+line_code: 50 | description: Finance, insurance, real estate, rental, and leasing | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 1.65 | maximum: 1.65 | unweighted_median: 1.65
+line_code: 51 | description: Finance and insurance | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 1.31 | maximum: 1.31 | unweighted_median: 1.31
+line_code: 52 | description: Monetary Authorities- central bank, credit intermediation, and related services | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.52 | maximum: 0.52 | unweighted_median: 0.52
+line_code: 53 | description: Securities, commodity contracts, and other financial investments and related activities | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.03 | maximum: -0.03 | unweighted_median: -0.03
+line_code: 54 | description: Insurance carriers and related activities | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.06 | maximum: 0.06 | unweighted_median: 0.06
+line_code: 55 | description: Funds, trusts, and other financial vehicles | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 56 | description: Real estate and rental and leasing | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.35 | maximum: 0.35 | unweighted_median: 0.35
+line_code: 57 | description: Real estate | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.08 | maximum: 0.08 | unweighted_median: 0.08
+line_code: 58 | description: Rental and leasing services and lessors of nonfinancial intangible assets | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 59 | description: Professional and business services | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.52 | maximum: 0.52 | unweighted_median: 0.52
+line_code: 60 | description: Professional, scientific, and technical services | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.39 | maximum: 0.39 | unweighted_median: 0.39
+line_code: 61 | description: Legal services | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 62 | description: Computer systems design and related services | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.14 | maximum: 0.14 | unweighted_median: 0.14
+line_code: 63 | description: Miscellaneous professional, scientific, and technical services | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.07 | maximum: 0.07 | unweighted_median: 0.07
+line_code: 64 | description: Management of companies and enterprises | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.01 | maximum: -0.01 | unweighted_median: -0.01
+line_code: 65 | description: Administrative and support and waste management and remediation services | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.14 | maximum: 0.14 | unweighted_median: 0.14
+line_code: 66 | description: Administrative and support services | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.04 | maximum: 0.04 | unweighted_median: 0.04
+line_code: 67 | description: Waste management and remediation services | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 68 | description: Educational services, health care, and social assistance | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.27 | maximum: 0.27 | unweighted_median: 0.27
+line_code: 69 | description: Educational services | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 70 | description: Health care and social assistance | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.27 | maximum: 0.27 | unweighted_median: 0.27
+line_code: 71 | description: Ambulatory health care services | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.19 | maximum: 0.19 | unweighted_median: 0.19
+line_code: 72 | description: Hospitals | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.08 | maximum: 0.08 | unweighted_median: 0.08
+line_code: 73 | description: Nursing and residential care facilities | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 74 | description: Social assistance | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.07 | maximum: 0.07 | unweighted_median: 0.07
+line_code: 75 | description: Arts, entertainment, recreation, accommodation, and food services | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.06 | maximum: 0.06 | unweighted_median: 0.06
+line_code: 76 | description: Arts, entertainment, and recreation | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.06 | maximum: 0.06 | unweighted_median: 0.06
+line_code: 77 | description: Performing arts, spectator sports, museums, and related activities | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 78 | description: Amusement, gambling, and recreation industries | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 79 | description: Accommodation and food services | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0 | maximum: 0 | unweighted_median: 0
+line_code: 80 | description: Accommodation | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 81 | description: Food services and drinking places | unit: Percentage points | latest_reported_year: 2024 | geography_rows: 1 | minimum: -0.02 | maximum: -0.02 | unweighted_median: -0.02
+line_code: 82 | description: Other services (except government and government enterprises) | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.07 | maximum: -0.07 | unweighted_median: -0.07
+line_code: 83 | description: Government and government enterprises | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.01 | maximum: 0.01 | unweighted_median: 0.01
+line_code: 84 | description: Federal civilian | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.05 | maximum: -0.05 | unweighted_median: -0.05
+line_code: 85 | description: Military | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.01 | maximum: -0.01 | unweighted_median: -0.01
+line_code: 86 | description: State and local | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.07 | maximum: 0.07 | unweighted_median: 0.07
+line_code: 87 | description: Natural resources and mining | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.02 | maximum: -0.02 | unweighted_median: -0.02
+line_code: 88 | description: Trade | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.09 | maximum: 0.09 | unweighted_median: 0.09
+line_code: 89 | description: Transportation and utilities | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.05 | maximum: -0.05 | unweighted_median: -0.05
+line_code: 90 | description: Manufacturing and information | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 0.53 | maximum: 0.53 | unweighted_median: 0.53
+line_code: 91 | description: Private goods-producing industries 2/ | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: -0.18 | maximum: -0.18 | unweighted_median: -0.18
+line_code: 92 | description: Private services-providing industries 3/ | unit: Percentage points | latest_reported_year: 2025 | geography_rows: 1 | minimum: 3.12 | maximum: 3.12 | unweighted_median: 3.12
+
+TRACEABLE FINDINGS
+f1: New York / All industry total 1998 = 2.4 Percent change [CSV record 1; GeoFIPS=36000; LineCode=1; column=1998]
+f2: New York / All industry total 2025 = 2.9 Percent change [CSV record 1; GeoFIPS=36000; LineCode=1; column=2025]
+f3: New York / Private industries 1998 = 2.15 Percentage points [CSV record 2; GeoFIPS=36000; LineCode=2; column=1998]
+f4: New York / Private industries 2025 = 2.94 Percentage points [CSV record 2; GeoFIPS=36000; LineCode=2; column=2025]
+f5: New York / Agriculture, forestry, fishing and hunting 1998 = 0.04 Percentage points [CSV record 3; GeoFIPS=36000; LineCode=3; column=1998]
+f6: New York / Agriculture, forestry, fishing and hunting 2025 = -0.02 Percentage points [CSV record 3; GeoFIPS=36000; LineCode=3; column=2025]
+f7: New York / Farms 1998 = 0.04 Percentage points [CSV record 4; GeoFIPS=36000; LineCode=4; column=1998]
+f8: New York / Farms 2024 = 0.02 Percentage points [CSV record 4; GeoFIPS=36000; LineCode=4; column=2024]
+f9: New York / Forestry, fishing, and related activities 1998 = -0.01 Percentage points [CSV record 5; GeoFIPS=36000; LineCode=5; column=1998]
+f10: New York / Forestry, fishing, and related activities 2024 = 0 Percentage points [CSV record 5; GeoFIPS=36000; LineCode=5; column=2024]
+f11: New York / Mining, quarrying, and oil and gas extraction 1998 = 0.01 Percentage points [CSV record 6; GeoFIPS=36000; LineCode=6; column=1998]
+f12: New York / Mining, quarrying, and oil and gas extraction 2025 = 0 Percentage points [CSV record 6; GeoFIPS=36000; LineCode=6; column=2025]
+f13: New York / Oil and gas extraction 1998 = 0 Percentage points [CSV record 7; GeoFIPS=36000; LineCode=7; column=1998]
+f14: New York / Oil and gas extraction 2024 = 0 Percentage points [CSV record 7; GeoFIPS=36000; LineCode=7; column=2024]
+f15: New York / Mining (except oil and gas) 1998 = 0.01 Percentage points [CSV record 8; GeoFIPS=36000; LineCode=8; column=1998]
+f16: New York / Mining (except oil and gas) 2024 = 0.01 Percentage points [CSV record 8; GeoFIPS=36000; LineCode=8; column=2024]
+f17: New York / Support activities for mining 1998 = 0 Percentage points [CSV record 9; GeoFIPS=36000; LineCode=9; column=1998]
+f18: New York / Support activities for mining 2024 = 0 Percentage points [CSV record 9; GeoFIPS=36000; LineCode=9; column=2024]
+f19: New York / Utilities 1998 = -0.07 Percentage points [CSV record 10; GeoFIPS=36000; LineCode=10; column=1998]
+f20: New York / Utilities 2025 = -0.03 Percentage points [CSV record 10; GeoFIPS=36000; LineCode=10; column=2025]
+f21: New York / Construction 1998 = 0 Percentage points [CSV record 11; GeoFIPS=36000; LineCode=11; column=1998]
+f22: New York / Construction 2025 = -0.05 Percentage points [CSV record 11; GeoFIPS=36000; LineCode=11; column=2025]
+f23: New York / Manufacturing 1998 = 0.4 Percentage points [CSV record 12; GeoFIPS=36000; LineCode=12; column=1998]
+f24: New York / Manufacturing 2025 = -0.11 Percentage points [CSV record 12; GeoFIPS=36000; LineCode=12; column=2025]
+f25: New York / Durable goods manufacturing 1998 = 0.49 Percentage points [CSV record 13; GeoFIPS=36000; LineCode=13; column=1998]
+f26: New York / Durable goods manufacturing 2025 = 0.01 Percentage points [CSV record 13; GeoFIPS=36000; LineCode=13; column=2025]
+f27: New York / Wood product manufacturing 1998 = 0 Percentage points [CSV record 14; GeoFIPS=36000; LineCode=14; column=1998]
+f28: New York / Wood product manufacturing 2024 = 0 Percentage points [CSV record 14; GeoFIPS=36000; LineCode=14; column=2024]
+f29: New York / Nonmetallic mineral product manufacturing 1998 = -0.01 Percentage points [CSV record 15; GeoFIPS=36000; LineCode=15; column=1998]
+f30: New York / Nonmetallic mineral product manufacturing 2024 = -0.01 Percentage points [CSV record 15; GeoFIPS=36000; LineCode=15; column=2024]
+f31: New York / Primary metal manufacturing 1998 = 0.04 Percentage points [CSV record 16; GeoFIPS=36000; LineCode=16; column=1998]
+f32: New York / Primary metal manufacturing 2024 = 0 Percentage points [CSV record 16; GeoFIPS=36000; LineCode=16; column=2024]
+f33: New York / Fabricated metal product manufacturing 1998 = 0.02 Percentage points [CSV record 17; GeoFIPS=36000; LineCode=17; column=1998]
+f34: New York / Fabricated metal product manufacturing 2024 = -0.02 Percentage points [CSV record 17; GeoFIPS=36000; LineCode=17; column=2024]
+f35: New York / Machinery manufacturing 1998 = 0.12 Percentage points [CSV record 18; GeoFIPS=36000; LineCode=18; column=1998]
+f36: New York / Machinery manufacturing 2024 = 0 Percentage points [CSV record 18; GeoFIPS=36000; LineCode=18; column=2024]
+f37: New York / Computer and electronic product manufacturing 1998 = 0.29 Percentage points [CSV record 19; GeoFIPS=36000; LineCode=19; column=1998]
+f38: New York / Computer and electronic product manufacturing 2024 = -0.01 Percentage points [CSV record 19; GeoFIPS=36000; LineCode=19; column=2024]
+f39: New York / Electrical equipment, appliance, and component manufacturing 1998 = -0.08 Percentage points [CSV record 20; GeoFIPS=36000; LineCode=20; column=1998]
+f40: New York / Electrical equipment, appliance, and component manufacturing 2024 = 0 Percentage points [CSV record 20; GeoFIPS=36000; LineCode=20; column=2024]
+f41: New York / Motor vehicles, bodies and trailers, and parts manufacturing 1998 = 0.09 Percentage points [CSV record 21; GeoFIPS=36000; LineCode=21; column=1998]
+f42: New York / Motor vehicles, bodies and trailers, and parts manufacturing 2024 = 0 Percentage points [CSV record 21; GeoFIPS=36000; LineCode=21; column=2024]
+f43: New York / Other transportation equipment manufacturing 1998 = 0.02 Percentage points [CSV record 22; GeoFIPS=36000; LineCode=22; column=1998]
+f44: New York / Other transportation equipment manufacturing 2024 = 0 Percentage points [CSV record 22; GeoFIPS=36000; LineCode=22; column=2024]
+f45: New York / Furniture and related product manufacturing 1998 = 0.01 Percentage points [CSV record 23; GeoFIPS=36000; LineCode=23; column=1998]
+f46: New York / Furniture and related product manufacturing 2024 = 0 Percentage points [CSV record 23; GeoFIPS=36000; LineCode=23; column=2024]
+f47: New York / Miscellaneous manufacturing 1998 = -0.01 Percentage points [CSV record 24; GeoFIPS=36000; LineCode=24; column=1998]
+f48: New York / Miscellaneous manufacturing 2024 = 0 Percentage points [CSV record 24; GeoFIPS=36000; LineCode=24; column=2024]
+f49: New York / Nondurable goods manufacturing 1998 = -0.09 Percentage points [CSV record 25; GeoFIPS=36000; LineCode=25; column=1998]
+f50: New York / Nondurable goods manufacturing 2025 = -0.12 Percentage points [CSV record 25; GeoFIPS=36000; LineCode=25; column=2025]
+f51: New York / Food and beverage and tobacco product manufacturing 1998 = -0.08 Percentage points [CSV record 26; GeoFIPS=36000; LineCode=26; column=1998]
+f52: New York / Food and beverage and tobacco product manufacturing 2024 = -0.03 Percentage points [CSV record 26; GeoFIPS=36000; LineCode=26; column=2024]
+f53: New York / Textile mills and textile product mills 1998 = 0.01 Percentage points [CSV record 27; GeoFIPS=36000; LineCode=27; column=1998]
+f54: New York / Textile mills and textile product mills 2024 = 0 Percentage points [CSV record 27; GeoFIPS=36000; LineCode=27; column=2024]
+f55: New York / Apparel, leather, and allied product manufacturing 1998 = -0.05 Percentage points [CSV record 28; GeoFIPS=36000; LineCode=28; column=1998]
+f56: New York / Apparel, leather, and allied product manufacturing 2024 = 0 Percentage points [CSV record 28; GeoFIPS=36000; LineCode=28; column=2024]
+f57: New York / Paper manufacturing 1998 = 0.02 Percentage points [CSV record 29; GeoFIPS=36000; LineCode=29; column=1998]
+f58: New York / Paper manufacturing 2024 = 0 Percentage points [CSV record 29; GeoFIPS=36000; LineCode=29; column=2024]
+f59: New York / Printing and related support activities 1998 = 0.01 Percentage points [CSV record 30; GeoFIPS=36000; LineCode=30; column=1998]
+f60: New York / Printing and related support activities 2024 = 0 Percentage points [CSV record 30; GeoFIPS=36000; LineCode=30; column=2024]
+f61: New York / Petroleum and coal products manufacturing 1998 = 0.01 Percentage points [CSV record 31; GeoFIPS=36000; LineCode=31; column=1998]
+f62: New York / Petroleum and coal products manufacturing 2024 = 0.01 Percentage points [CSV record 31; GeoFIPS=36000; LineCode=31; column=2024]
+f63: New York / Chemical manufacturing 1998 = -0.02 Percentage points [CSV record 32; GeoFIPS=36000; LineCode=32; column=1998]
+f64: New York / Chemical manufacturing 2024 = 0.11 Percentage points [CSV record 32; GeoFIPS=36000; LineCode=32; column=2024]
+f65: New York / Plastics and rubber products manufacturing 1998 = 0 Percentage points [CSV record 33; GeoFIPS=36000; LineCode=33; column=1998]
+f66: New York / Plastics and rubber products manufacturing 2024 = -0.01 Percentage points [CSV record 33; GeoFIPS=36000; LineCode=33; column=2024]
+f67: New York / Wholesale trade 1998 = 0.4 Percentage points [CSV record 34; GeoFIPS=36000; LineCode=34; column=1998]
+f68: New York / Wholesale trade 2025 = 0.12 Percentage points [CSV record 34; GeoFIPS=36000; LineCode=34; column=2025]
+f69: New York / Retail trade 1998 = 0.3 Percentage points [CSV record 35; GeoFIPS=36000; LineCode=35; column=1998]
+f70: New York / Retail trade 2025 = -0.03 Percentage points [CSV record 35; GeoFIPS=36000; LineCode=35; column=2025]
+f71: New York / Transportation and warehousing 1998 = -0.07 Percentage points [CSV record 36; GeoFIPS=36000; LineCode=36; column=1998]
+f72: New York / Transportation and warehousing 2025 = -0.02 Percentage points [CSV record 36; GeoFIPS=36000; LineCode=36; column=2025]
+f73: New York / Air transportation 1998 = -0.02 Percentage points [CSV record 37; GeoFIPS=36000; LineCode=37; column=1998]
+f74: New York / Air transportation 2024 = -0.03 Percentage points [CSV record 37; GeoFIPS=36000; LineCode=37; column=2024]
+f75: New York / Rail transportation 1998 = 0.01 Percentage points [CSV record 38; GeoFIPS=36000; LineCode=38; column=1998]
+f76: New York / Rail transportation 2024 = 0 Percentage points [CSV record 38; GeoFIPS=36000; LineCode=38; column=2024]
+f77: New York / Water transportation 1998 = -0.01 Percentage points [CSV record 39; GeoFIPS=36000; LineCode=39; column=1998]
+f78: New York / Water transportation 2024 = 0 Percentage points [CSV record 39; GeoFIPS=36000; LineCode=39; column=2024]
+f79: New York / Truck transportation 1998 = -0.03 Percentage points [CSV record 40; GeoFIPS=36000; LineCode=40; column=1998]
+f80: New York / Truck transportation 2024 = 0.02 Percentage points [CSV record 40; GeoFIPS=36000; LineCode=40; column=2024]
+f81: New York / Transit and ground passenger transportation 1998 = -0.03 Percentage points [CSV record 41; GeoFIPS=36000; LineCode=41; column=1998]
+f82: New York / Transit and ground passenger transportation 2024 = 0.15 Percentage points [CSV record 41; GeoFIPS=36000; LineCode=41; column=2024]
+f83: New York / Pipeline transportation 1998 = 0.01 Percentage points [CSV record 42; GeoFIPS=36000; LineCode=42; column=1998]
+f84: New York / Pipeline transportation 2024 = 0 Percentage points [CSV record 42; GeoFIPS=36000; LineCode=42; column=2024]
+f85: New York / Other transportation and support activities 1998 = 0 Percentage points [CSV record 43; GeoFIPS=36000; LineCode=43; column=1998]
+f86: New York / Other transportation and support activities 2024 = -0.04 Percentage points [CSV record 43; GeoFIPS=36000; LineCode=43; column=2024]
+f87: New York / Warehousing and storage 1998 = 0.01 Percentage points [CSV record 44; GeoFIPS=36000; LineCode=44; column=1998]
+f88: New York / Warehousing and storage 2024 = 0.02 Percentage points [CSV record 44; GeoFIPS=36000; LineCode=44; column=2024]
+f89: New York / Information 1998 = 0.61 Percentage points [CSV record 45; GeoFIPS=36000; LineCode=45; column=1998]
+f90: New York / Information 2025 = 0.64 Percentage points [CSV record 45; GeoFIPS=36000; LineCode=45; column=2025]
+f91: New York / Publishing industries (except Internet) 1998 = 0.12 Percentage points [CSV record 46; GeoFIPS=36000; LineCode=46; column=1998]
+f92: New York / Publishing industries (except Internet) 2024 = 0.06 Percentage points [CSV record 46; GeoFIPS=36000; LineCode=46; column=2024]
+f93: New York / Motion picture and sound recording industries 1998 = 0.29 Percentage points [CSV record 47; GeoFIPS=36000; LineCode=47; column=1998]
+f94: New York / Motion picture and sound recording industries 2024 = 0.01 Percentage points [CSV record 47; GeoFIPS=36000; LineCode=47; column=2024]
+f95: New York / Broadcasting (except Internet) and telecommunications 1998 = 0.15 Percentage points [CSV record 48; GeoFIPS=36000; LineCode=48; column=1998]
+f96: New York / Broadcasting (except Internet) and telecommunications 2024 = 0.13 Percentage points [CSV record 48; GeoFIPS=36000; LineCode=48; column=2024]
+f97: New York / Data processing, hosting, and other information services 1998 = 0.05 Percentage points [CSV record 49; GeoFIPS=36000; LineCode=49; column=1998]
+f98: New York / Data processing, hosting, and other information services 2024 = 0.3 Percentage points [CSV record 49; GeoFIPS=36000; LineCode=49; column=2024]
+f99: New York / Finance, insurance, real estate, rental, and leasing 1998 = 0.51 Percentage points [CSV record 50; GeoFIPS=36000; LineCode=50; column=1998]
+f100: New York / Finance, insurance, real estate, rental, and leasing 2025 = 1.65 Percentage points [CSV record 50; GeoFIPS=36000; LineCode=50; column=2025]
+f101: New York / Finance and insurance 1998 = 0.36 Percentage points [CSV record 51; GeoFIPS=36000; LineCode=51; column=1998]
+f102: New York / Finance and insurance 2025 = 1.31 Percentage points [CSV record 51; GeoFIPS=36000; LineCode=51; column=2025]
+f103: New York / Monetary Authorities- central bank, credit intermediation, and related services 1998 = 0.4 Percentage points [CSV record 52; GeoFIPS=36000; LineCode=52; column=1998]
+f104: New York / Monetary Authorities- central bank, credit intermediation, and related services 2024 = 0.52 Percentage points [CSV record 52; GeoFIPS=36000; LineCode=52; column=2024]
+f105: New York / Securities, commodity contracts, and other financial investments and related activities 1998 = -0.29 Percentage points [CSV record 53; GeoFIPS=36000; LineCode=53; column=1998]
+f106: New York / Securities, commodity contracts, and other financial investments and related activities 2024 = -0.03 Percentage points [CSV record 53; GeoFIPS=36000; LineCode=53; column=2024]
+f107: New York / Insurance carriers and related activities 1998 = 0.11 Percentage points [CSV record 54; GeoFIPS=36000; LineCode=54; column=1998]
+f108: New York / Insurance carriers and related activities 2024 = 0.06 Percentage points [CSV record 54; GeoFIPS=36000; LineCode=54; column=2024]
+f109: New York / Funds, trusts, and other financial vehicles 1998 = 0.15 Percentage points [CSV record 55; GeoFIPS=36000; LineCode=55; column=1998]
+f110: New York / Funds, trusts, and other financial vehicles 2024 = 0 Percentage points [CSV record 55; GeoFIPS=36000; LineCode=55; column=2024]
+f111: New York / Real estate and rental and leasing 1998 = 0.15 Percentage points [CSV record 56; GeoFIPS=36000; LineCode=56; column=1998]
+f112: New York / Real estate and rental and leasing 2025 = 0.35 Percentage points [CSV record 56; GeoFIPS=36000; LineCode=56; column=2025]
+f113: New York / Real estate 1998 = 0.19 Percentage points [CSV record 57; GeoFIPS=36000; LineCode=57; column=1998]
+f114: New York / Real estate 2024 = 0.08 Percentage points [CSV record 57; GeoFIPS=36000; LineCode=57; column=2024]
+f115: New York / Rental and leasing services and lessors of nonfinancial intangible assets 1998 = -0.04 Percentage points [CSV record 58; GeoFIPS=36000; LineCode=58; column=1998]
+f116: New York / Rental and leasing services and lessors of nonfinancial intangible assets 2024 = 0 Percentage points [CSV record 58; GeoFIPS=36000; LineCode=58; column=2024]
+f117: New York / Professional and business services 1998 = 0.13 Percentage points [CSV record 59; GeoFIPS=36000; LineCode=59; column=1998]
+f118: New York / Professional and business services 2025 = 0.52 Percentage points [CSV record 59; GeoFIPS=36000; LineCode=59; column=2025]
+f119: New York / Professional, scientific, and technical services 1998 = -0.09 Percentage points [CSV record 60; GeoFIPS=36000; LineCode=60; column=1998]
+f120: New York / Professional, scientific, and technical services 2025 = 0.39 Percentage points [CSV record 60; GeoFIPS=36000; LineCode=60; column=2025]
+f121: New York / Legal services 1998 = -0.17 Percentage points [CSV record 61; GeoFIPS=36000; LineCode=61; column=1998]
+f122: New York / Legal services 2024 = 0 Percentage points [CSV record 61; GeoFIPS=36000; LineCode=61; column=2024]
+f123: New York / Computer systems design and related services 1998 = 0.14 Percentage points [CSV record 62; GeoFIPS=36000; LineCode=62; column=1998]
+f124: New York / Computer systems design and related services 2024 = 0.14 Percentage points [CSV record 62; GeoFIPS=36000; LineCode=62; column=2024]
+f125: New York / Miscellaneous professional, scientific, and technical services 1998 = -0.05 Percentage points [CSV record 63; GeoFIPS=36000; LineCode=63; column=1998]
+f126: New York / Miscellaneous professional, scientific, and technical services 2024 = 0.07 Percentage points [CSV record 63; GeoFIPS=36000; LineCode=63; column=2024]
+f127: New York / Management of companies and enterprises 1998 = 0.04 Percentage points [CSV record 64; GeoFIPS=36000; LineCode=64; column=1998]
+f128: New York / Management of companies and enterprises 2025 = -0.01 Percentage points [CSV record 64; GeoFIPS=36000; LineCode=64; column=2025]
+f129: New York / Administrative and support and waste management and remediation services 1998 = 0.18 Percentage points [CSV record 65; GeoFIPS=36000; LineCode=65; column=1998]
+f130: New York / Administrative and support and waste management and remediation services 2025 = 0.14 Percentage points [CSV record 65; GeoFIPS=36000; LineCode=65; column=2025]
+f131: New York / Administrative and support services 1998 = 0.18 Percentage points [CSV record 66; GeoFIPS=36000; LineCode=66; column=1998]
+f132: New York / Administrative and support services 2024 = 0.04 Percentage points [CSV record 66; GeoFIPS=36000; LineCode=66; column=2024]
+f133: New York / Waste management and remediation services 1998 = 0 Percentage points [CSV record 67; GeoFIPS=36000; LineCode=67; column=1998]
+f134: New York / Waste management and remediation services 2024 = 0 Percentage points [CSV record 67; GeoFIPS=36000; LineCode=67; column=2024]
+f135: New York / Educational services, health care, and social assistance 1998 = -0.05 Percentage points [CSV record 68; GeoFIPS=36000; LineCode=68; column=1998]
+f136: New York / Educational services, health care, and social assistance 2025 = 0.27 Percentage points [CSV record 68; GeoFIPS=36000; LineCode=68; column=2025]
+f137: New York / Educational services 1998 = 0.03 Percentage points [CSV record 69; GeoFIPS=36000; LineCode=69; column=1998]
+f138: New York / Educational services 2025 = 0 Percentage points [CSV record 69; GeoFIPS=36000; LineCode=69; column=2025]
+f139: New York / Health care and social assistance 1998 = -0.08 Percentage points [CSV record 70; GeoFIPS=36000; LineCode=70; column=1998]
+f140: New York / Health care and social assistance 2025 = 0.27 Percentage points [CSV record 70; GeoFIPS=36000; LineCode=70; column=2025]
+f141: New York / Ambulatory health care services 1998 = -0.06 Percentage points [CSV record 71; GeoFIPS=36000; LineCode=71; column=1998]
+f142: New York / Ambulatory health care services 2024 = 0.19 Percentage points [CSV record 71; GeoFIPS=36000; LineCode=71; column=2024]
+f143: New York / Hospitals 1998 = -0.01 Percentage points [CSV record 72; GeoFIPS=36000; LineCode=72; column=1998]
+f144: New York / Hospitals 2024 = 0.08 Percentage points [CSV record 72; GeoFIPS=36000; LineCode=72; column=2024]
+f145: New York / Nursing and residential care facilities 1998 = 0 Percentage points [CSV record 73; GeoFIPS=36000; LineCode=73; column=1998]
+f146: New York / Nursing and residential care facilities 2024 = 0.01 Percentage points [CSV record 73; GeoFIPS=36000; LineCode=73; column=2024]
+f147: New York / Social assistance 1998 = -0.02 Percentage points [CSV record 74; GeoFIPS=36000; LineCode=74; column=1998]
+f148: New York / Social assistance 2024 = 0.07 Percentage points [CSV record 74; GeoFIPS=36000; LineCode=74; column=2024]
+f149: New York / Arts, entertainment, recreation, accommodation, and food services 1998 = 0.01 Percentage points [CSV record 75; GeoFIPS=36000; LineCode=75; column=1998]
+f150: New York / Arts, entertainment, recreation, accommodation, and food services 2025 = 0.06 Percentage points [CSV record 75; GeoFIPS=36000; LineCode=75; column=2025]
+f151: New York / Arts, entertainment, and recreation 1998 = 0 Percentage points [CSV record 76; GeoFIPS=36000; LineCode=76; column=1998]
+f152: New York / Arts, entertainment, and recreation 2025 = 0.06 Percentage points [CSV record 76; GeoFIPS=36000; LineCode=76; column=2025]
+f153: New York / Performing arts, spectator sports, museums, and related activities 1998 = 0.01 Percentage points [CSV record 77; GeoFIPS=36000; LineCode=77; column=1998]
+f154: New York / Performing arts, spectator sports, museums, and related activities 2024 = 0.01 Percentage points [CSV record 77; GeoFIPS=36000; LineCode=77; column=2024]
+f155: New York / Amusement, gambling, and recreation industries 1998 = -0.02 Percentage points [CSV record 78; GeoFIPS=36000; LineCode=78; column=1998]
+f156: New York / Amusement, gambling, and recreation industries 2024 = 0.01 Percentage points [CSV record 78; GeoFIPS=36000; LineCode=78; column=2024]
+f157: New York / Accommodation and food services 1998 = 0.02 Percentage points [CSV record 79; GeoFIPS=36000; LineCode=79; column=1998]
+f158: New York / Accommodation and food services 2025 = 0 Percentage points [CSV record 79; GeoFIPS=36000; LineCode=79; column=2025]
+f159: New York / Accommodation 1998 = 0.04 Percentage points [CSV record 80; GeoFIPS=36000; LineCode=80; column=1998]
+f160: New York / Accommodation 2024 = 0.01 Percentage points [CSV record 80; GeoFIPS=36000; LineCode=80; column=2024]
+f161: New York / Food services and drinking places 1998 = -0.02 Percentage points [CSV record 81; GeoFIPS=36000; LineCode=81; column=1998]
+f162: New York / Food services and drinking places 2024 = -0.02 Percentage points [CSV record 81; GeoFIPS=36000; LineCode=81; column=2024]
+f163: New York / Other services (except government and government enterprises) 1998 = -0.07 Percentage points [CSV record 82; GeoFIPS=36000; LineCode=82; column=1998]
+f164: New York / Other services (except government and government enterprises) 2025 = -0.07 Percentage points [CSV record 82; GeoFIPS=36000; LineCode=82; column=2025]
+f165: New York / Government and government enterprises 1998 = 0.28 Percentage points [CSV record 83; GeoFIPS=36000; LineCode=83; column=1998]
+f166: New York / Government and government enterprises 2025 = 0.01 Percentage points [CSV record 83; GeoFIPS=36000; LineCode=83; column=2025]
+f167: New York / Federal civilian 1998 = 0 Percentage points [CSV record 84; GeoFIPS=36000; LineCode=84; column=1998]
+f168: New York / Federal civilian 2025 = -0.05 Percentage points [CSV record 84; GeoFIPS=36000; LineCode=84; column=2025]
+f169: New York / Military 1998 = 0 Percentage points [CSV record 85; GeoFIPS=36000; LineCode=85; column=1998]
+f170: New York / Military 2025 = -0.01 Percentage points [CSV record 85; GeoFIPS=36000; LineCode=85; column=2025]
+f171: New York / State and local 1998 = 0.28 Percentage points [CSV record 86; GeoFIPS=36000; LineCode=86; column=1998]
+f172: New York / State and local 2025 = 0.07 Percentage points [CSV record 86; GeoFIPS=36000; LineCode=86; column=2025]
+f173: New York / Natural resources and mining 1998 = 0.04 Percentage points [CSV record 87; GeoFIPS=36000; LineCode=87; column=1998]
+f174: New York / Natural resources and mining 2025 = -0.02 Percentage points [CSV record 87; GeoFIPS=36000; LineCode=87; column=2025]
+f175: New York / Trade 1998 = 0.7 Percentage points [CSV record 88; GeoFIPS=36000; LineCode=88; column=1998]
+f176: New York / Trade 2025 = 0.09 Percentage points [CSV record 88; GeoFIPS=36000; LineCode=88; column=2025]
+f177: New York / Transportation and utilities 1998 = -0.14 Percentage points [CSV record 89; GeoFIPS=36000; LineCode=89; column=1998]
+f178: New York / Transportation and utilities 2025 = -0.05 Percentage points [CSV record 89; GeoFIPS=36000; LineCode=89; column=2025]
+f179: New York / Manufacturing and information 1998 = 1.02 Percentage points [CSV record 90; GeoFIPS=36000; LineCode=90; column=1998]
+f180: New York / Manufacturing and information 2025 = 0.53 Percentage points [CSV record 90; GeoFIPS=36000; LineCode=90; column=2025]
+f181: New York / Private goods-producing industries 2/ 1998 = 0.45 Percentage points [CSV record 91; GeoFIPS=36000; LineCode=91; column=1998]
+f182: New York / Private goods-producing industries 2/ 2025 = -0.18 Percentage points [CSV record 91; GeoFIPS=36000; LineCode=91; column=2025]
+f183: New York / Private services-providing industries 3/ 1998 = 1.71 Percentage points [CSV record 92; GeoFIPS=36000; LineCode=92; column=1998]
+f184: New York / Private services-providing industries 3/ 2025 = 3.12 Percentage points [CSV record 92; GeoFIPS=36000; LineCode=92; column=2025]
+c1: All industry total endpoint difference = 0.5 Percent change; difference(f2, f1). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c2: Private industries endpoint difference = 0.79 Percentage points; difference(f4, f3). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c3: Agriculture, forestry, fishing and hunting endpoint difference = -0.06 Percentage points; difference(f6, f5). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c4: Farms endpoint difference = -0.02 Percentage points; difference(f8, f7). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c5: Forestry, fishing, and related activities endpoint difference = 0.01 Percentage points; difference(f10, f9). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c6: Mining, quarrying, and oil and gas extraction endpoint difference = -0.01 Percentage points; difference(f12, f11). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c7: Oil and gas extraction endpoint difference = 0 Percentage points; difference(f14, f13). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c8: Mining (except oil and gas) endpoint difference = 0 Percentage points; difference(f16, f15). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c9: Support activities for mining endpoint difference = 0 Percentage points; difference(f18, f17). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c10: Utilities endpoint difference = 0.04 Percentage points; difference(f20, f19). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c11: Construction endpoint difference = -0.05 Percentage points; difference(f22, f21). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c12: Manufacturing endpoint difference = -0.51 Percentage points; difference(f24, f23). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c13: Durable goods manufacturing endpoint difference = -0.48 Percentage points; difference(f26, f25). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c14: Wood product manufacturing endpoint difference = 0 Percentage points; difference(f28, f27). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c15: Nonmetallic mineral product manufacturing endpoint difference = 0 Percentage points; difference(f30, f29). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c16: Primary metal manufacturing endpoint difference = -0.04 Percentage points; difference(f32, f31). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c17: Fabricated metal product manufacturing endpoint difference = -0.04 Percentage points; difference(f34, f33). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c18: Machinery manufacturing endpoint difference = -0.12 Percentage points; difference(f36, f35). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c19: Computer and electronic product manufacturing endpoint difference = -0.3 Percentage points; difference(f38, f37). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c20: Electrical equipment, appliance, and component manufacturing endpoint difference = 0.08 Percentage points; difference(f40, f39). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c21: Motor vehicles, bodies and trailers, and parts manufacturing endpoint difference = -0.09 Percentage points; difference(f42, f41). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c22: Other transportation equipment manufacturing endpoint difference = -0.02 Percentage points; difference(f44, f43). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c23: Furniture and related product manufacturing endpoint difference = -0.01 Percentage points; difference(f46, f45). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c24: Miscellaneous manufacturing endpoint difference = 0.01 Percentage points; difference(f48, f47). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c25: Nondurable goods manufacturing endpoint difference = -0.03 Percentage points; difference(f50, f49). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c26: Food and beverage and tobacco product manufacturing endpoint difference = 0.05 Percentage points; difference(f52, f51). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c27: Textile mills and textile product mills endpoint difference = -0.01 Percentage points; difference(f54, f53). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c28: Apparel, leather, and allied product manufacturing endpoint difference = 0.05 Percentage points; difference(f56, f55). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c29: Paper manufacturing endpoint difference = -0.02 Percentage points; difference(f58, f57). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c30: Printing and related support activities endpoint difference = -0.01 Percentage points; difference(f60, f59). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c31: Petroleum and coal products manufacturing endpoint difference = 0 Percentage points; difference(f62, f61). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c32: Chemical manufacturing endpoint difference = 0.13 Percentage points; difference(f64, f63). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c33: Plastics and rubber products manufacturing endpoint difference = -0.01 Percentage points; difference(f66, f65). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c34: Wholesale trade endpoint difference = -0.28 Percentage points; difference(f68, f67). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c35: Retail trade endpoint difference = -0.33 Percentage points; difference(f70, f69). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c36: Transportation and warehousing endpoint difference = 0.05 Percentage points; difference(f72, f71). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c37: Air transportation endpoint difference = -0.01 Percentage points; difference(f74, f73). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c38: Rail transportation endpoint difference = -0.01 Percentage points; difference(f76, f75). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c39: Water transportation endpoint difference = 0.01 Percentage points; difference(f78, f77). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c40: Truck transportation endpoint difference = 0.05 Percentage points; difference(f80, f79). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c41: Transit and ground passenger transportation endpoint difference = 0.18 Percentage points; difference(f82, f81). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c42: Pipeline transportation endpoint difference = -0.01 Percentage points; difference(f84, f83). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c43: Other transportation and support activities endpoint difference = -0.04 Percentage points; difference(f86, f85). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c44: Warehousing and storage endpoint difference = 0.01 Percentage points; difference(f88, f87). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c45: Information endpoint difference = 0.03 Percentage points; difference(f90, f89). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c46: Publishing industries (except Internet) endpoint difference = -0.06 Percentage points; difference(f92, f91). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c47: Motion picture and sound recording industries endpoint difference = -0.28 Percentage points; difference(f94, f93). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c48: Broadcasting (except Internet) and telecommunications endpoint difference = -0.02 Percentage points; difference(f96, f95). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c49: Data processing, hosting, and other information services endpoint difference = 0.25 Percentage points; difference(f98, f97). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c50: Finance, insurance, real estate, rental, and leasing endpoint difference = 1.14 Percentage points; difference(f100, f99). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c51: Finance and insurance endpoint difference = 0.95 Percentage points; difference(f102, f101). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c52: Monetary Authorities- central bank, credit intermediation, and related services endpoint difference = 0.12 Percentage points; difference(f104, f103). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c53: Securities, commodity contracts, and other financial investments and related activities endpoint difference = 0.26 Percentage points; difference(f106, f105). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c54: Insurance carriers and related activities endpoint difference = -0.05 Percentage points; difference(f108, f107). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c55: Funds, trusts, and other financial vehicles endpoint difference = -0.15 Percentage points; difference(f110, f109). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c56: Real estate and rental and leasing endpoint difference = 0.2 Percentage points; difference(f112, f111). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c57: Real estate endpoint difference = -0.11 Percentage points; difference(f114, f113). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c58: Rental and leasing services and lessors of nonfinancial intangible assets endpoint difference = 0.04 Percentage points; difference(f116, f115). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c59: Professional and business services endpoint difference = 0.39 Percentage points; difference(f118, f117). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c60: Professional, scientific, and technical services endpoint difference = 0.48 Percentage points; difference(f120, f119). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c61: Legal services endpoint difference = 0.17 Percentage points; difference(f122, f121). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c62: Computer systems design and related services endpoint difference = 0 Percentage points; difference(f124, f123). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c63: Miscellaneous professional, scientific, and technical services endpoint difference = 0.12 Percentage points; difference(f126, f125). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c64: Management of companies and enterprises endpoint difference = -0.05 Percentage points; difference(f128, f127). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c65: Administrative and support and waste management and remediation services endpoint difference = -0.04 Percentage points; difference(f130, f129). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c66: Administrative and support services endpoint difference = -0.14 Percentage points; difference(f132, f131). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c67: Waste management and remediation services endpoint difference = 0 Percentage points; difference(f134, f133). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c68: Educational services, health care, and social assistance endpoint difference = 0.32 Percentage points; difference(f136, f135). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c69: Educational services endpoint difference = -0.03 Percentage points; difference(f138, f137). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c70: Health care and social assistance endpoint difference = 0.35 Percentage points; difference(f140, f139). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c71: Ambulatory health care services endpoint difference = 0.25 Percentage points; difference(f142, f141). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c72: Hospitals endpoint difference = 0.09 Percentage points; difference(f144, f143). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c73: Nursing and residential care facilities endpoint difference = 0.01 Percentage points; difference(f146, f145). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c74: Social assistance endpoint difference = 0.09 Percentage points; difference(f148, f147). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c75: Arts, entertainment, recreation, accommodation, and food services endpoint difference = 0.05 Percentage points; difference(f150, f149). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c76: Arts, entertainment, and recreation endpoint difference = 0.06 Percentage points; difference(f152, f151). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c77: Performing arts, spectator sports, museums, and related activities endpoint difference = 0 Percentage points; difference(f154, f153). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c78: Amusement, gambling, and recreation industries endpoint difference = 0.03 Percentage points; difference(f156, f155). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c79: Accommodation and food services endpoint difference = -0.02 Percentage points; difference(f158, f157). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c80: Accommodation endpoint difference = -0.03 Percentage points; difference(f160, f159). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c81: Food services and drinking places endpoint difference = 0 Percentage points; difference(f162, f161). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c82: Other services (except government and government enterprises) endpoint difference = 0 Percentage points; difference(f164, f163). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c83: Government and government enterprises endpoint difference = -0.27 Percentage points; difference(f166, f165). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c84: Federal civilian endpoint difference = -0.05 Percentage points; difference(f168, f167). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c85: Military endpoint difference = -0.01 Percentage points; difference(f170, f169). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c86: State and local endpoint difference = -0.21 Percentage points; difference(f172, f171). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c87: Natural resources and mining endpoint difference = -0.06 Percentage points; difference(f174, f173). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c88: Trade endpoint difference = -0.61 Percentage points; difference(f176, f175). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c89: Transportation and utilities endpoint difference = 0.09 Percentage points; difference(f178, f177). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c90: Manufacturing and information endpoint difference = -0.49 Percentage points; difference(f180, f179). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c91: Private goods-producing industries 2/ endpoint difference = -0.63 Percentage points; difference(f182, f181). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c92: Private services-providing industries 3/ endpoint difference = 1.41 Percentage points; difference(f184, f183). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Compare the local income or price context with your own documented spending rather than treating an area average as your income.
+Care delivery: Use the regional economic measure to assess affordability or workforce context; obtain actual care utilization separately.
+Payers and policy: Match units and geographic scope before using this benchmark. Separate observed economic scale from the illness-attribution and intervention-effect evidence still needed.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme or Long COVID patient indicator or causal burden estimate.
+No measured fraction of work loss or spending recoverable through a proposed intervention.
+Full-area and geographic subsets share observations; they are not independent estimates.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

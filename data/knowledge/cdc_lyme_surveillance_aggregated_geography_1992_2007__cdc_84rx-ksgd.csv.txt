@@ -1,0 +1,129 @@
+aggregated_geography_1992_2007__cdc_84rx-ksgd.csv
+SOURCE: cdc/lyme_surveillance/aggregated_geography_1992_2007__cdc_84rx-ksgd.csv
+SHA-256: f4c47c0b43cf583d3bd5c3ed8154cc60d903d1a351436c8e7caaf5c6c66d64bd
+CONDITION SCOPE: lyme
+ROLE: lyme_surveillance_population_context
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+FINDING AND ECONOMIC INTERPRETATION
+This file contains 13,180 aggregate cells spanning 1992–2007. It supports reported-case workload and coverage analysis. A confirmed/probable surveillance case is not the same denominator as a diagnosed-and-treated insurance episode. It supplies no treatment cost, diagnostic delay, navigation uptake or preventable fraction. A growing count cannot by itself justify a growing causal cost estimate.
+
+COMPARABILITY DECISION
+Keep this file paired with its era-specific definition. The 2022 surveillance definition/reporting break must remain visible. The geographic and non-geographic releases overlap; choose one counting representation for each analysis. Do not add their totals or infer suppressed categories from differences.
+
+ANNUAL REPORTED-CASE ACCOUNTING
+Sum frequency once per aggregate row, or count line-list rows once. These two file formats describe overlapping surveillance cases, not independent samples.
+year: 1992 | case_status: Confirmed | retained_reported_cases: 9908
+year: 1993 | case_status: Confirmed | retained_reported_cases: 8257
+year: 1994 | case_status: Confirmed | retained_reported_cases: 13043
+year: 1995 | case_status: Confirmed | retained_reported_cases: 11700
+year: 1996 | case_status: Confirmed | retained_reported_cases: 16455
+year: 1997 | case_status: Confirmed | retained_reported_cases: 12801
+year: 1998 | case_status: Confirmed | retained_reported_cases: 16802
+year: 1999 | case_status: Confirmed | retained_reported_cases: 16273
+year: 2000 | case_status: Confirmed | retained_reported_cases: 17730
+year: 2001 | case_status: Confirmed | retained_reported_cases: 17029
+year: 2002 | case_status: Confirmed | retained_reported_cases: 23763
+year: 2003 | case_status: Confirmed | retained_reported_cases: 21273
+year: 2004 | case_status: Confirmed | retained_reported_cases: 19804
+year: 2005 | case_status: Confirmed | retained_reported_cases: 23305
+year: 2006 | case_status: Confirmed | retained_reported_cases: 19931
+year: 2007 | case_status: Confirmed | retained_reported_cases: 27444
+
+LATEST-YEAR REPORTED COUNTS BY RETAINED STATE
+Year=2007. Includes the source suppression category if present; no attempt to recover suppressed geography.
+state: NY | reported_cases: 4165
+state: PA | reported_cases: 3994
+state: NJ | reported_cases: 3134
+state: CT | reported_cases: 3058
+state: MA | reported_cases: 2988
+state: MD | reported_cases: 2576
+state: WI | reported_cases: 1814
+state: MN | reported_cases: 1238
+state: VA | reported_cases: 959
+state: NH | reported_cases: 896
+state: DE | reported_cases: 715
+state: ME | reported_cases: 529
+state: RI | reported_cases: 177
+state: IL | reported_cases: 149
+state: VT | reported_cases: 138
+state: IA | reported_cases: 123
+state: DC | reported_cases: 116
+state: TX | reported_cases: 87
+state: WV | reported_cases: 84
+state: CA | reported_cases: 75
+state: Suppressed | reported_cases: 59
+state: IN | reported_cases: 55
+state: NC | reported_cases: 53
+state: MI | reported_cases: 51
+state: OH | reported_cases: 33
+state: TN | reported_cases: 31
+state: SC | reported_cases: 28
+state: FL | reported_cases: 26
+state: NV | reported_cases: 15
+state: AL | reported_cases: 12
+state: MO | reported_cases: 10
+state: ND | reported_cases: 10
+state: WA | reported_cases: 8
+state: GA | reported_cases: 8
+state: ID | reported_cases: 7
+state: KS | reported_cases: 7
+state: AK | reported_cases: 6
+state: NE | reported_cases: 5
+state: NM | reported_cases: 5
+
+REPORTING-COVERAGE CHECK
+Absence of a state-year is missing coverage, not zero incidence.
+year: 1992 | states_with_rows: 38 | MA_present: True
+year: 1993 | states_with_rows: 37 | MA_present: True
+year: 1994 | states_with_rows: 36 | MA_present: True
+year: 1995 | states_with_rows: 40 | MA_present: True
+year: 1996 | states_with_rows: 37 | MA_present: True
+year: 1997 | states_with_rows: 37 | MA_present: True
+year: 1998 | states_with_rows: 35 | MA_present: True
+year: 1999 | states_with_rows: 37 | MA_present: True
+year: 2000 | states_with_rows: 36 | MA_present: True
+year: 2001 | states_with_rows: 34 | MA_present: True
+year: 2002 | states_with_rows: 35 | MA_present: True
+year: 2003 | states_with_rows: 35 | MA_present: True
+year: 2004 | states_with_rows: 34 | MA_present: True
+year: 2005 | states_with_rows: 32 | MA_present: True
+year: 2006 | states_with_rows: 37 | MA_present: True
+year: 2007 | states_with_rows: 39 | MA_present: True
+
+TRACEABLE FINDINGS
+f1: Retained reported cases 1992 = 9908 reported cases [CSV all rows where year=1992; sum frequency]
+f2: Retained reported cases 1993 = 8257 reported cases [CSV all rows where year=1993; sum frequency]
+f3: Retained reported cases 1994 = 13043 reported cases [CSV all rows where year=1994; sum frequency]
+f4: Retained reported cases 1995 = 11700 reported cases [CSV all rows where year=1995; sum frequency]
+f5: Retained reported cases 1996 = 16455 reported cases [CSV all rows where year=1996; sum frequency]
+f6: Retained reported cases 1997 = 12801 reported cases [CSV all rows where year=1997; sum frequency]
+f7: Retained reported cases 1998 = 16802 reported cases [CSV all rows where year=1998; sum frequency]
+f8: Retained reported cases 1999 = 16273 reported cases [CSV all rows where year=1999; sum frequency]
+f9: Retained reported cases 2000 = 17730 reported cases [CSV all rows where year=2000; sum frequency]
+f10: Retained reported cases 2001 = 17029 reported cases [CSV all rows where year=2001; sum frequency]
+f11: Retained reported cases 2002 = 23763 reported cases [CSV all rows where year=2002; sum frequency]
+f12: Retained reported cases 2003 = 21273 reported cases [CSV all rows where year=2003; sum frequency]
+f13: Retained reported cases 2004 = 19804 reported cases [CSV all rows where year=2004; sum frequency]
+f14: Retained reported cases 2005 = 23305 reported cases [CSV all rows where year=2005; sum frequency]
+f15: Retained reported cases 2006 = 19931 reported cases [CSV all rows where year=2006; sum frequency]
+f16: Retained reported cases 2007 = 27444 reported cases [CSV all rows where year=2007; sum frequency]
+c1: First-to-last retained reported-case change = 1.7698829 relative change; relative_change(f1, f16). Reporting, definition and availability changes can drive this descriptive difference; not disease-incidence growth.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use as community-level context, not a diagnosis or estimate of your own costs.
+Care delivery: Check whether the catchment state and year are represented before using a reported-case workload benchmark.
+Payers and policy: Use reported surveillance counts only with an explicitly matched cost population; obtain a justified transport model before applying claims episode costs.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme-attributable expenditure, out-of-pocket cost or employment loss.
+Separate confirmation is needed for reporting completeness and changes across years.
+No causal evidence that a proposed intervention changes diagnosis stage.
+
+DO NOT USE FOR
+Adding aggregate and line-list totals; treating absent state-years as zero; converting reporting changes to infection growth.
+Recovering suppressed small cells or identifying patients.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

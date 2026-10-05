@@ -1,0 +1,71 @@
+CAINC1.zip
+SOURCE: bea/regional_economics/CAINC1.zip :: CAINC1_US_1969_2024.csv
+SHA-256: e1465c8b0e7e75f541241fe2fa64364b784dd6d2223901f9d576c4c5d49480b5
+CONDITION SCOPE: general
+ROLE: regional_economic_context
+
+PROCESSING AND INTERPRETATION STATUS
+focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Population, definitions, units and overlap need verification before modeling.
+
+FILE-SPECIFIC FINDING
+CAINC1_US_1969_2024.csv contains 180 geographic-measure records across 60 geographic identifiers. For United States, Personal income (thousands of dollars) moves from 7.91229e+08 Thousands of dollars in 1969 to 2.4897613e+10 in 2024. The accompanying measure table distinguishes the units rather than blending dollars, jobs, people and indexes.
+
+ECONOMIC INTERPRETATION
+Personal income, per-capita income and population have different denominators. Per-capita income is not an hourly wage and may include transfers and nonlabor income. It can contextualize affordability only alongside an independently measured household cost burden.
+
+HOW TO USE THIS FILE
+Use the exact geography and 1969–2024 coverage in this file for context, not a live estimate. State-specific and ALL_AREAS members overlap; retrieving both must not double their economic totals. Ranges describe available rows and exclude nonnumeric disclosure/availability markers, not zero-valued observations.
+
+SELECTED WITHIN-FILE GEOGRAPHIC SERIES
+Focus: United States, Massachusetts. Years and units are preserved from each source row. Not disease-attributable amounts.
+geography: United States | line_code: 1 | description: Personal income (thousands of dollars) | unit: Thousands of dollars | first_year: 1969 | first: 7.91229e+08 | last_year: 2024 | last: 2.4897613e+10 | numeric_years: 56 | years_in_file: 56
+geography: United States | line_code: 2 | description: Population (persons) 1/ | unit: Number of persons | first_year: 1969 | first: 2.01298e+08 | last_year: 2024 | last: 3.4011099e+08 | numeric_years: 56 | years_in_file: 56
+geography: United States | line_code: 3 | description: Per capita personal income (dollars) 2/ | unit: Dollars | first_year: 1969 | first: 3,931 | last_year: 2024 | last: 73,204 | numeric_years: 56 | years_in_file: 56
+geography: Massachusetts | line_code: 1 | description: Personal income (thousands of dollars) | unit: Thousands of dollars | first_year: 1969 | first: 24,041,879 | last_year: 2024 | last: 6.6799302e+08 | numeric_years: 56 | years_in_file: 56
+geography: Massachusetts | line_code: 2 | description: Population (persons) 1/ | unit: Number of persons | first_year: 1969 | first: 5,650,000 | last_year: 2024 | last: 7,136,171 | numeric_years: 56 | years_in_file: 56
+geography: Massachusetts | line_code: 3 | description: Per capita personal income (dollars) 2/ | unit: Dollars | first_year: 1969 | first: 4,255 | last_year: 2024 | last: 93,607 | numeric_years: 56 | years_in_file: 56
+
+WITHIN-FILE VARIATION BY ECONOMIC MEASURE
+Unweighted ranges/medians of retained geography rows, not national estimates; national/state/county/metro records may overlap. Disclosure markers remain missing.
+line_code: 1 | description: Personal income (thousands of dollars) | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 60 | minimum: 46,229,260 | maximum: 2.4897613e+10 | unweighted_median: 4.0467274e+08
+line_code: 2 | description: Population (persons) 1/ | unit: Number of persons | latest_reported_year: 2024 | geography_rows: 60 | minimum: 587,618 | maximum: 3.4011099e+08 | unweighted_median: 5,875,322
+line_code: 3 | description: Per capita personal income (dollars) 2/ | unit: Dollars | latest_reported_year: 2024 | geography_rows: 60 | minimum: 52,074 | maximum: 111,185 | unweighted_median: 69,814
+
+TRACEABLE FINDINGS
+f1: United States / Personal income (thousands of dollars) 1969 = 7.91229e+08 Thousands of dollars [CSV record 1; GeoFIPS=00000; LineCode=1; column=1969]
+f2: United States / Personal income (thousands of dollars) 2024 = 2.4897613e+10 Thousands of dollars [CSV record 1; GeoFIPS=00000; LineCode=1; column=2024]
+f3: United States / Population (persons) 1/ 1969 = 2.01298e+08 Number of persons [CSV record 2; GeoFIPS=00000; LineCode=2; column=1969]
+f4: United States / Population (persons) 1/ 2024 = 3.4011099e+08 Number of persons [CSV record 2; GeoFIPS=00000; LineCode=2; column=2024]
+f5: United States / Per capita personal income (dollars) 2/ 1969 = 3,931 Dollars [CSV record 3; GeoFIPS=00000; LineCode=3; column=1969]
+f6: United States / Per capita personal income (dollars) 2/ 2024 = 73,204 Dollars [CSV record 3; GeoFIPS=00000; LineCode=3; column=2024]
+f7: Massachusetts / Personal income (thousands of dollars) 1969 = 24,041,879 Thousands of dollars [CSV record 67; GeoFIPS=25000; LineCode=1; column=1969]
+f8: Massachusetts / Personal income (thousands of dollars) 2024 = 6.6799302e+08 Thousands of dollars [CSV record 67; GeoFIPS=25000; LineCode=1; column=2024]
+f9: Massachusetts / Population (persons) 1/ 1969 = 5,650,000 Number of persons [CSV record 68; GeoFIPS=25000; LineCode=2; column=1969]
+f10: Massachusetts / Population (persons) 1/ 2024 = 7,136,171 Number of persons [CSV record 68; GeoFIPS=25000; LineCode=2; column=2024]
+f11: Massachusetts / Per capita personal income (dollars) 2/ 1969 = 4,255 Dollars [CSV record 69; GeoFIPS=25000; LineCode=3; column=1969]
+f12: Massachusetts / Per capita personal income (dollars) 2/ 2024 = 93,607 Dollars [CSV record 69; GeoFIPS=25000; LineCode=3; column=2024]
+c1: Personal income (thousands of dollars) endpoint difference = 2.4106384e+10 Thousands of dollars; difference(f2, f1). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c2: Population (persons) 1/ endpoint difference = 1.3881299e+08 Number of persons; difference(f4, f3). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c3: Per capita personal income (dollars) 2/ endpoint difference = 69,273 Dollars; difference(f6, f5). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c4: Personal income (thousands of dollars) endpoint difference = 6.4395114e+08 Thousands of dollars; difference(f8, f7). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c5: Population (persons) 1/ endpoint difference = 1,486,171 Number of persons; difference(f10, f9). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c6: Per capita personal income (dollars) 2/ endpoint difference = 89,352 Dollars; difference(f12, f11). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Compare the local income or price context with your own documented spending rather than treating an area average as your income.
+Care delivery: Use the regional economic measure to assess affordability or workforce context; obtain actual care utilization separately.
+Payers and policy: Match units and geographic scope before using this benchmark. Separate observed economic scale from the illness-attribution and intervention-effect evidence still needed.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme or Long COVID patient indicator or causal burden estimate.
+No measured fraction of work loss or spending recoverable through a proposed intervention.
+Full-area and geographic subsets share observations; they are not independent estimates.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

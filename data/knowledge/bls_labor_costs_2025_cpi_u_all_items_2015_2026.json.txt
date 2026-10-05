@@ -1,0 +1,118 @@
+cpi_u_all_items_2015_2026.json
+SOURCE: bls/labor_costs_2025/cpi_u_all_items_2015_2026.json
+SHA-256: a5a2a838931643fd318cb17b9918bd3e72bcc09cd24f7f6aa2813be17c52e2c1
+CONDITION SCOPE: general
+ROLE: documentation_or_literature_not_yet_parameterized
+
+PROCESSING AND INTERPRETATION STATUS
+extracted_requires_semantic_review. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Retain industry, geography, ownership, aggregation level and year. Overlapping totals must not be added; wage bills are not illness-attributable losses.
+
+DOCUMENT IDENTITY AND SCOPE
+cpi_u_all_items_2015_2026.json: { "retrieved": "2026-08-14", "seriesID": "CUUR0000SA0", "responses": [ { "status": "REQUEST_SUCCEEDED", "responseTime": 109, "message": [ ], "Results": { "series": [ { "seriesID": "CUUR0000SA0", "data": [ { "year": "2024", "period": "M13", "periodName": "Annual", "value": "313.689", "footnotes": [ { } ] }, { "year": "2024", "period": "M12", "periodName": "December", "value": "315.605", "footnotes": [ { } ] }, { "year": "2024", "period": "M11",
+2 source passage blocks matched decision/definition concepts. This is a document-specific evidence extraction, not a completed study appraisal or an inferred financial model.
+
+WHAT NEEDS A DECISION
+Retain industry, geography, ownership, aggregation level and year. Overlapping totals must not be added; wage bills are not illness-attributable losses. Resolve population, measured outcome, timeframe, comparison group and uncertainty from the cited passages before choosing any number. For a dictionary/import program, the decision is how to interpret another data file, not whether the program supplies a new observation. No source code is executed.
+
+SOURCE PASSAGES FOR TARGETED REVIEW
+Verbatim extraction with locators. No extracted number is approved as a model parameter; PDF table structure and context require review before numerical reuse.
+location: lines 1-40 | source_text: {
+    "retrieved":  "2026-08-14",
+    "seriesID":  "CUUR0000SA0",
+    "responses":  [
+                      {
+                          "status":  "REQUEST_SUCCEEDED",
+                          "responseTime":  109,
+                          "message":  [
+
+                                      ],
+                          "Results":  {
+                                          "series":  [
+                                                         {
+                                                             "seriesID":  "CUUR0000SA0",
+                                                             "data":  [
+                                                                          {
+                                                                              "year":  "2024",
+                                                                              "period":  "M13",
+                                                                              "periodName":  "Annual",
+                                                                              "value":  "313.689",
+                                                                              "footnotes":  [
+                                                                                                {
+
+                                                                                                }
+                                                                                            ]
+                                                                          },
+                                                                          {
+                                                                              "year":  "2024",
+                                                                              "period":  "M12",
+                                                                              "periodName":  "December",
+                                                                              "value":  "315.605",
+                                                                              "footnotes":  [
+                                                                                                {
+
+                                                                                                }
+                                                                                            ]
+                                                                          },
+                                                                          {
+                                                                              "year":  "2024",
+                                                                              "period":  "M11",
+location: lines 41-80 | source_text:                                                                               "periodName":  "November",
+                                                                              "value":  "315.493",
+                                                                              "footnotes":  [
+                                                                                                {
+
+                                                                                                }
+                                                                                            ]
+                                                                          },
+                                                                          {
+                                                                              "year":  "2024",
+                                                                              "period":  "M10",
+                                                                              "periodName":  "October",
+                                                                              "value":  "315.664",
+                                                                              "footnotes":  [
+                                                                                                {
+
+                                                                                                }
+                                                                                            ]
+                                                                          },
+                                                                          {
+                                                                              "year":  "2024",
+                                                                              "period":  "M09",
+                                                                              "periodName":  "September",
+                                                                              "value":  "315.301",
+                                                                              "footnotes":  [
+                                                                                                {
+
+                                                                                                }
+                                                                                            ]
+                                                                          },
+                                                                          {
+                                                                              "year":  "2024",
+                                                                              "period":  "M08",
+                                                                              "periodName":  "August",
+                                                                              "value":  "314.796",
+                                                                              "footnotes":  [
+                                                                                                {
+
+                                                                                                }
+                                                                                            ]
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+Manual semantic review is still required: association versus causation, cost components, price year, denominator and uncertainty.
+No numerical model input is approved solely because it appears in an extracted passage.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

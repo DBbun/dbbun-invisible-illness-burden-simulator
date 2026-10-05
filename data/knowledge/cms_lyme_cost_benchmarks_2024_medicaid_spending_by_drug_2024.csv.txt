@@ -1,0 +1,369 @@
+medicaid_spending_by_drug_2024.csv
+SOURCE: cms/lyme_cost_benchmarks_2024/medicaid_spending_by_drug_2024.csv
+SHA-256: 29294c174ee7ad6cbe97008b85af3f2887ff2600e6bb95503064fd5f27ae6624
+CONDITION SCOPE: lyme
+ROLE: observed_all_indication_drug_spending_benchmark
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+AMOXICILLIN / AMOXICILLIN FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $61,081,114.59 to $151,236,856.87, claims from 8,932,313 to 13,836,225, and computed spending per claim from $6.8382 to $10.9305. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+AMOXICILLIN-CLAVULANATE POT ER / AMOXICILLIN/POTASSIUM CLAV FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $918,935.79 to $934,640.90, claims from 6,556 to 7,285, and computed spending per claim from $140.1671 to $128.2966. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+AMOXICILLIN-CLAVULANATE POTASS / AMOXICILLIN/POTASSIUM CLAV FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $54,240,624.72 to $95,743,036.98, claims from 3,626,895 to 6,084,519, and computed spending per claim from $14.9551 to $15.7355. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+AUGMENTIN / AMOXICILLIN/POTASSIUM CLAV FINANCIAL SIGNAL
+Between 2023 and 2024, retained gross spending moved from $780,319.27 to $457,396.78, claims from 732 to 502, and computed spending per claim from $1066.0099 to $911.1490. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+CEFTRIAXONE / CEFTRIAXONE IN IS-OSM DEXTROSE FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $4,167,472.02 to $4,511,932.05, claims from 55,542 to 53,430, and computed spending per claim from $75.0328 to $84.4457. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+CEFTRIAXONE* / CEFTRIAXONE SODIUM FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $44,116,114.60 to $55,429,215.25, claims from 1,063,479 to 1,230,730, and computed spending per claim from $41.4828 to $45.0377. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+CEFUROXIME / CEFUROXIME AXETIL FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $3,632,509.72 to $3,580,615.15, claims from 200,150 to 240,200, and computed spending per claim from $18.1489 to $14.9068. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+CEFUROXIME SODIUM* / CEFUROXIME SODIUM FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $563,544.47 to $416,870.31, claims from 1,252 to 1,369, and computed spending per claim from $450.1154 to $304.5072. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+DORYX MPC / DOXYCYCLINE HYCLATE FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $36,724.20 to $1,071,591.71, claims from 101 to 1,053, and computed spending per claim from $363.6059 to $1017.6559. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+DOXY 100 / DOXYCYCLINE HYCLATE FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $559,429.36 to $799,943.38, claims from 3,394 to 3,670, and computed spending per claim from $164.8289 to $217.9682. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+DOXYCYCLINE HYCLATE* / DOXYCYCLINE HYCLATE FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $26,986,661.54 to $38,147,981.67, claims from 1,439,479 to 2,704,950, and computed spending per claim from $18.7475 to $14.1030. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+DOXYCYCLINE IR-DR / DOXYCYCLINE MONOHYDRATE FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $967,364.36 to $1,525,102.99, claims from 1,861 to 2,503, and computed spending per claim from $519.8089 to $609.3100. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+DOXYCYCLINE MONOHYDRATE / DOXYCYCLINE MONOHYDRATE FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $11,550,715.42 to $16,151,352.90, claims from 818,417 to 973,019, and computed spending per claim from $14.1135 to $16.5992. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+ORACEA / DOXYCYCLINE MONOHYDRATE FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $201,396.04 to $10,885.37, claims from 264 to 11, and computed spending per claim from $762.8638 to $989.5791. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+ROCEPHIN / CEFTRIAXONE SODIUM FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $183,035.86 to $1,844.38, claims from 537 to 984, and computed spending per claim from $340.8489 to $1.8744. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+SCOPE AND OVERLAP
+The complete drug file is preserved, but this analysis deliberately filters the named antibiotic ingredients; other drugs are not analytically interpreted. A drug can be used for multiple indications. Part D gross expenditures include payer and beneficiary components and exclude undisclosed rebates. Medicaid aggregates are not a household cash price. Ceftriaxone J0696 is a 250 mg billing unit; no dose or course length is assumed.
+
+SELECTED PRODUCT HISTORY
+Part D/Medicaid manufacturer=Overall only; manufacturer subrows are excluded to avoid double counting. Years are nominal, not inflation-adjusted.
+product: Amoxicillin / Amoxicillin | year: 2020 | spending_usd: 61,081,115 | claims: 8,932,313 | usd_per_claim: 6.8382192 | csv_row: 974
+product: Amoxicillin / Amoxicillin | year: 2021 | spending_usd: 72,058,681 | claims: 10,386,308 | usd_per_claim: 6.9378533 | csv_row: 974
+product: Amoxicillin / Amoxicillin | year: 2022 | spending_usd: 1.0440321e+08 | claims: 12,855,402 | usd_per_claim: 8.1213496 | csv_row: 974
+product: Amoxicillin / Amoxicillin | year: 2023 | spending_usd: 1.5326368e+08 | claims: 15,459,819 | usd_per_claim: 9.9136789 | csv_row: 974
+product: Amoxicillin / Amoxicillin | year: 2024 | spending_usd: 1.5123686e+08 | claims: 13,836,225 | usd_per_claim: 10.9305 | csv_row: 974
+product: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav | year: 2020 | spending_usd: 918,935.79 | claims: 6,556 | usd_per_claim: 140.16714 | csv_row: 986
+product: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav | year: 2021 | spending_usd: 695,428.78 | claims: 5,049 | usd_per_claim: 137.73594 | csv_row: 986
+product: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav | year: 2022 | spending_usd: 996,061.94 | claims: 7,497 | usd_per_claim: 132.8614 | csv_row: 986
+product: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav | year: 2023 | spending_usd: 987,720.8 | claims: 7,592 | usd_per_claim: 130.10021 | csv_row: 986
+product: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav | year: 2024 | spending_usd: 934,640.9 | claims: 7,285 | usd_per_claim: 128.29662 | csv_row: 986
+product: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav | year: 2020 | spending_usd: 54,240,625 | claims: 3,626,895 | usd_per_claim: 14.955113 | csv_row: 988
+product: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav | year: 2021 | spending_usd: 61,684,593 | claims: 4,221,456 | usd_per_claim: 14.61216 | csv_row: 988
+product: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav | year: 2022 | spending_usd: 86,070,094 | claims: 5,611,813 | usd_per_claim: 15.337306 | csv_row: 988
+product: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav | year: 2023 | spending_usd: 99,203,070 | claims: 6,512,124 | usd_per_claim: 15.233597 | csv_row: 988
+product: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav | year: 2024 | spending_usd: 95,743,037 | claims: 6,084,519 | usd_per_claim: 15.735515 | csv_row: 988
+product: Augmentin / Amoxicillin/Potassium Clav | year: 2023 | spending_usd: 780,319.27 | claims: 732 | usd_per_claim: 1,066.0099 | csv_row: 1546
+product: Augmentin / Amoxicillin/Potassium Clav | year: 2024 | spending_usd: 457,396.78 | claims: 502 | usd_per_claim: 911.14896 | csv_row: 1546
+product: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose | year: 2020 | spending_usd: 4,167,472 | claims: 55,542 | usd_per_claim: 75.032804 | csv_row: 2991
+product: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose | year: 2021 | spending_usd: 3,933,002.1 | claims: 55,769 | usd_per_claim: 70.523088 | csv_row: 2991
+product: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose | year: 2022 | spending_usd: 4,902,507 | claims: 60,158 | usd_per_claim: 81.49385 | csv_row: 2991
+product: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose | year: 2023 | spending_usd: 5,178,393.8 | claims: 60,880 | usd_per_claim: 85.059031 | csv_row: 2991
+product: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose | year: 2024 | spending_usd: 4,511,932 | claims: 53,430 | usd_per_claim: 84.445668 | csv_row: 2991
+product: Ceftriaxone* / Ceftriaxone Sodium | year: 2020 | spending_usd: 44,116,115 | claims: 1,063,479 | usd_per_claim: 41.482826 | csv_row: 2994
+product: Ceftriaxone* / Ceftriaxone Sodium | year: 2021 | spending_usd: 46,172,417 | claims: 1,179,690 | usd_per_claim: 39.139449 | csv_row: 2994
+product: Ceftriaxone* / Ceftriaxone Sodium | year: 2022 | spending_usd: 46,706,443 | claims: 1,293,730 | usd_per_claim: 36.102156 | csv_row: 2994
+product: Ceftriaxone* / Ceftriaxone Sodium | year: 2023 | spending_usd: 61,931,367 | claims: 1,415,248 | usd_per_claim: 43.760081 | csv_row: 2994
+product: Ceftriaxone* / Ceftriaxone Sodium | year: 2024 | spending_usd: 55,429,215 | claims: 1,230,730 | usd_per_claim: 45.037673 | csv_row: 2994
+product: Cefuroxime / Cefuroxime Axetil | year: 2020 | spending_usd: 3,632,509.7 | claims: 200,150 | usd_per_claim: 18.148937 | csv_row: 3012
+product: Cefuroxime / Cefuroxime Axetil | year: 2021 | spending_usd: 3,768,842.8 | claims: 213,489 | usd_per_claim: 17.653569 | csv_row: 3012
+product: Cefuroxime / Cefuroxime Axetil | year: 2022 | spending_usd: 4,396,837.6 | claims: 240,421 | usd_per_claim: 18.288076 | csv_row: 3012
+product: Cefuroxime / Cefuroxime Axetil | year: 2023 | spending_usd: 3,988,660.4 | claims: 264,582 | usd_per_claim: 15.075328 | csv_row: 3012
+product: Cefuroxime / Cefuroxime Axetil | year: 2024 | spending_usd: 3,580,615.1 | claims: 240,200 | usd_per_claim: 14.906807 | csv_row: 3012
+product: Cefuroxime Sodium* / Cefuroxime Sodium | year: 2020 | spending_usd: 563,544.47 | claims: 1,252 | usd_per_claim: 450.11539 | csv_row: 3019
+product: Cefuroxime Sodium* / Cefuroxime Sodium | year: 2021 | spending_usd: 370,821.37 | claims: 1,959 | usd_per_claim: 189.29115 | csv_row: 3019
+product: Cefuroxime Sodium* / Cefuroxime Sodium | year: 2022 | spending_usd: 505,222.33 | claims: 1,700 | usd_per_claim: 297.18961 | csv_row: 3019
+product: Cefuroxime Sodium* / Cefuroxime Sodium | year: 2023 | spending_usd: 500,521.59 | claims: 1,426 | usd_per_claim: 350.99691 | csv_row: 3019
+product: Cefuroxime Sodium* / Cefuroxime Sodium | year: 2024 | spending_usd: 416,870.31 | claims: 1,369 | usd_per_claim: 304.50717 | csv_row: 3019
+product: Doryx Mpc / Doxycycline Hyclate | year: 2020 | spending_usd: 36,724.2 | claims: 101 | usd_per_claim: 363.60594 | csv_row: 5435
+product: Doryx Mpc / Doxycycline Hyclate | year: 2021 | spending_usd: 46,000.68 | claims: 112 | usd_per_claim: 410.72036 | csv_row: 5435
+product: Doryx Mpc / Doxycycline Hyclate | year: 2022 | spending_usd: 50,368.95 | claims: 131 | usd_per_claim: 384.4958 | csv_row: 5435
+product: Doryx Mpc / Doxycycline Hyclate | year: 2023 | spending_usd: 398,283.68 | claims: 504 | usd_per_claim: 790.2454 | csv_row: 5435
+product: Doryx Mpc / Doxycycline Hyclate | year: 2024 | spending_usd: 1,071,591.7 | claims: 1,053 | usd_per_claim: 1,017.6559 | csv_row: 5435
+product: Doxy 100 / Doxycycline Hyclate | year: 2020 | spending_usd: 559,429.36 | claims: 3,394 | usd_per_claim: 164.82892 | csv_row: 5541
+product: Doxy 100 / Doxycycline Hyclate | year: 2021 | spending_usd: 466,602.2 | claims: 3,918 | usd_per_claim: 119.09193 | csv_row: 5541
+product: Doxy 100 / Doxycycline Hyclate | year: 2022 | spending_usd: 626,347.46 | claims: 3,688 | usd_per_claim: 169.83391 | csv_row: 5541
+product: Doxy 100 / Doxycycline Hyclate | year: 2023 | spending_usd: 904,207.16 | claims: 4,655 | usd_per_claim: 194.24429 | csv_row: 5541
+product: Doxy 100 / Doxycycline Hyclate | year: 2024 | spending_usd: 799,943.38 | claims: 3,670 | usd_per_claim: 217.96822 | csv_row: 5541
+product: Doxycycline Hyclate* / Doxycycline Hyclate | year: 2020 | spending_usd: 26,986,662 | claims: 1,439,479 | usd_per_claim: 18.74752 | csv_row: 5545
+product: Doxycycline Hyclate* / Doxycycline Hyclate | year: 2021 | spending_usd: 37,868,860 | claims: 2,063,325 | usd_per_claim: 18.353318 | csv_row: 5545
+product: Doxycycline Hyclate* / Doxycycline Hyclate | year: 2022 | spending_usd: 47,423,708 | claims: 2,419,682 | usd_per_claim: 19.599149 | csv_row: 5545
+product: Doxycycline Hyclate* / Doxycycline Hyclate | year: 2023 | spending_usd: 44,101,186 | claims: 2,775,858 | usd_per_claim: 15.887407 | csv_row: 5545
+product: Doxycycline Hyclate* / Doxycycline Hyclate | year: 2024 | spending_usd: 38,147,982 | claims: 2,704,950 | usd_per_claim: 14.103027 | csv_row: 5545
+product: Doxycycline Ir-Dr / Doxycycline Monohydrate | year: 2020 | spending_usd: 967,364.36 | claims: 1,861 | usd_per_claim: 519.8089 | csv_row: 5577
+product: Doxycycline Ir-Dr / Doxycycline Monohydrate | year: 2021 | spending_usd: 968,654.49 | claims: 1,840 | usd_per_claim: 526.44266 | csv_row: 5577
+product: Doxycycline Ir-Dr / Doxycycline Monohydrate | year: 2022 | spending_usd: 1,353,183.8 | claims: 2,697 | usd_per_claim: 501.73666 | csv_row: 5577
+product: Doxycycline Ir-Dr / Doxycycline Monohydrate | year: 2023 | spending_usd: 1,360,823.9 | claims: 2,646 | usd_per_claim: 514.29477 | csv_row: 5577
+product: Doxycycline Ir-Dr / Doxycycline Monohydrate | year: 2024 | spending_usd: 1,525,103 | claims: 2,503 | usd_per_claim: 609.31002 | csv_row: 5577
+product: Doxycycline Monohydrate / Doxycycline Monohydrate | year: 2020 | spending_usd: 11,550,715 | claims: 818,417 | usd_per_claim: 14.113484 | csv_row: 5583
+product: Doxycycline Monohydrate / Doxycycline Monohydrate | year: 2021 | spending_usd: 14,329,627 | claims: 1,001,546 | usd_per_claim: 14.307507 | csv_row: 5583
+product: Doxycycline Monohydrate / Doxycycline Monohydrate | year: 2022 | spending_usd: 16,258,249 | claims: 1,083,537 | usd_per_claim: 15.004794 | csv_row: 5583
+product: Doxycycline Monohydrate / Doxycycline Monohydrate | year: 2023 | spending_usd: 15,156,245 | claims: 1,013,693 | usd_per_claim: 14.951514 | csv_row: 5583
+product: Doxycycline Monohydrate / Doxycycline Monohydrate | year: 2024 | spending_usd: 16,151,353 | claims: 973,019 | usd_per_claim: 16.599216 | csv_row: 5583
+product: Oracea / Doxycycline Monohydrate | year: 2020 | spending_usd: 201,396.04 | claims: 264 | usd_per_claim: 762.86379 | csv_row: 12868
+product: Oracea / Doxycycline Monohydrate | year: 2021 | spending_usd: 253,987.2 | claims: 338 | usd_per_claim: 751.44142 | csv_row: 12868
+product: Oracea / Doxycycline Monohydrate | year: 2022 | spending_usd: 316,177.58 | claims: 391 | usd_per_claim: 808.63831 | csv_row: 12868
+product: Oracea / Doxycycline Monohydrate | year: 2024 | spending_usd: 10,885.37 | claims: 11 | usd_per_claim: 989.57909 | csv_row: 12868
+product: Rocephin / Ceftriaxone Sodium | year: 2020 | spending_usd: 183,035.86 | claims: 537 | usd_per_claim: 340.8489 | csv_row: 15028
+product: Rocephin / Ceftriaxone Sodium | year: 2021 | spending_usd: 6,813.25 | claims: 321 | usd_per_claim: 21.225078 | csv_row: 15028
+product: Rocephin / Ceftriaxone Sodium | year: 2022 | spending_usd: 3,158.01 | claims: 723 | usd_per_claim: 4.3679253 | csv_row: 15028
+product: Rocephin / Ceftriaxone Sodium | year: 2023 | spending_usd: 7,485.22 | claims: 1,434 | usd_per_claim: 5.2198187 | csv_row: 15028
+product: Rocephin / Ceftriaxone Sodium | year: 2024 | spending_usd: 1,844.38 | claims: 984 | usd_per_claim: 1.8743699 | csv_row: 15028
+product: Voquezna Dual Pak / Vonoprazan/Amoxicillin | year: 2024 | spending_usd: 95,594.08 | claims: 122 | usd_per_claim: 783.55803 | csv_row: 17881
+product: Voquezna Triple Pak / Vonoprazan/Amoxicillin/Clarith | year: 2024 | spending_usd: 213,984.67 | claims: 271 | usd_per_claim: 789.61133 | csv_row: 17883
+
+TRACEABLE FINDINGS
+f1: Amoxicillin / Amoxicillin 2020 gross spending = 61,081,115 nominal USD [CSV row 974; Tot_Spndng_2020]
+f2: Amoxicillin / Amoxicillin 2020 claims = 8,932,313 claims [CSV row 974; Tot_Clms_2020]
+f3: Amoxicillin / Amoxicillin 2021 gross spending = 72,058,681 nominal USD [CSV row 974; Tot_Spndng_2021]
+f4: Amoxicillin / Amoxicillin 2021 claims = 10,386,308 claims [CSV row 974; Tot_Clms_2021]
+f5: Amoxicillin / Amoxicillin 2022 gross spending = 1.0440321e+08 nominal USD [CSV row 974; Tot_Spndng_2022]
+f6: Amoxicillin / Amoxicillin 2022 claims = 12,855,402 claims [CSV row 974; Tot_Clms_2022]
+f7: Amoxicillin / Amoxicillin 2023 gross spending = 1.5326368e+08 nominal USD [CSV row 974; Tot_Spndng_2023]
+f8: Amoxicillin / Amoxicillin 2023 claims = 15,459,819 claims [CSV row 974; Tot_Clms_2023]
+f9: Amoxicillin / Amoxicillin 2024 gross spending = 1.5123686e+08 nominal USD [CSV row 974; Tot_Spndng_2024]
+f10: Amoxicillin / Amoxicillin 2024 claims = 13,836,225 claims [CSV row 974; Tot_Clms_2024]
+f11: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2020 gross spending = 918,935.79 nominal USD [CSV row 986; Tot_Spndng_2020]
+f12: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2020 claims = 6,556 claims [CSV row 986; Tot_Clms_2020]
+f13: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2021 gross spending = 695,428.78 nominal USD [CSV row 986; Tot_Spndng_2021]
+f14: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2021 claims = 5,049 claims [CSV row 986; Tot_Clms_2021]
+f15: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2022 gross spending = 996,061.94 nominal USD [CSV row 986; Tot_Spndng_2022]
+f16: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2022 claims = 7,497 claims [CSV row 986; Tot_Clms_2022]
+f17: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2023 gross spending = 987,720.8 nominal USD [CSV row 986; Tot_Spndng_2023]
+f18: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2023 claims = 7,592 claims [CSV row 986; Tot_Clms_2023]
+f19: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2024 gross spending = 934,640.9 nominal USD [CSV row 986; Tot_Spndng_2024]
+f20: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2024 claims = 7,285 claims [CSV row 986; Tot_Clms_2024]
+f21: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2020 gross spending = 54,240,625 nominal USD [CSV row 988; Tot_Spndng_2020]
+f22: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2020 claims = 3,626,895 claims [CSV row 988; Tot_Clms_2020]
+f23: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2021 gross spending = 61,684,593 nominal USD [CSV row 988; Tot_Spndng_2021]
+f24: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2021 claims = 4,221,456 claims [CSV row 988; Tot_Clms_2021]
+f25: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2022 gross spending = 86,070,094 nominal USD [CSV row 988; Tot_Spndng_2022]
+f26: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2022 claims = 5,611,813 claims [CSV row 988; Tot_Clms_2022]
+f27: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2023 gross spending = 99,203,070 nominal USD [CSV row 988; Tot_Spndng_2023]
+f28: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2023 claims = 6,512,124 claims [CSV row 988; Tot_Clms_2023]
+f29: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2024 gross spending = 95,743,037 nominal USD [CSV row 988; Tot_Spndng_2024]
+f30: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2024 claims = 6,084,519 claims [CSV row 988; Tot_Clms_2024]
+f31: Augmentin / Amoxicillin/Potassium Clav 2023 gross spending = 780,319.27 nominal USD [CSV row 1546; Tot_Spndng_2023]
+f32: Augmentin / Amoxicillin/Potassium Clav 2023 claims = 732 claims [CSV row 1546; Tot_Clms_2023]
+f33: Augmentin / Amoxicillin/Potassium Clav 2024 gross spending = 457,396.78 nominal USD [CSV row 1546; Tot_Spndng_2024]
+f34: Augmentin / Amoxicillin/Potassium Clav 2024 claims = 502 claims [CSV row 1546; Tot_Clms_2024]
+f35: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2020 gross spending = 4,167,472 nominal USD [CSV row 2991; Tot_Spndng_2020]
+f36: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2020 claims = 55,542 claims [CSV row 2991; Tot_Clms_2020]
+f37: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2021 gross spending = 3,933,002.1 nominal USD [CSV row 2991; Tot_Spndng_2021]
+f38: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2021 claims = 55,769 claims [CSV row 2991; Tot_Clms_2021]
+f39: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2022 gross spending = 4,902,507 nominal USD [CSV row 2991; Tot_Spndng_2022]
+f40: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2022 claims = 60,158 claims [CSV row 2991; Tot_Clms_2022]
+f41: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2023 gross spending = 5,178,393.8 nominal USD [CSV row 2991; Tot_Spndng_2023]
+f42: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2023 claims = 60,880 claims [CSV row 2991; Tot_Clms_2023]
+f43: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2024 gross spending = 4,511,932 nominal USD [CSV row 2991; Tot_Spndng_2024]
+f44: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2024 claims = 53,430 claims [CSV row 2991; Tot_Clms_2024]
+f45: Ceftriaxone* / Ceftriaxone Sodium 2020 gross spending = 44,116,115 nominal USD [CSV row 2994; Tot_Spndng_2020]
+f46: Ceftriaxone* / Ceftriaxone Sodium 2020 claims = 1,063,479 claims [CSV row 2994; Tot_Clms_2020]
+f47: Ceftriaxone* / Ceftriaxone Sodium 2021 gross spending = 46,172,417 nominal USD [CSV row 2994; Tot_Spndng_2021]
+f48: Ceftriaxone* / Ceftriaxone Sodium 2021 claims = 1,179,690 claims [CSV row 2994; Tot_Clms_2021]
+f49: Ceftriaxone* / Ceftriaxone Sodium 2022 gross spending = 46,706,443 nominal USD [CSV row 2994; Tot_Spndng_2022]
+f50: Ceftriaxone* / Ceftriaxone Sodium 2022 claims = 1,293,730 claims [CSV row 2994; Tot_Clms_2022]
+f51: Ceftriaxone* / Ceftriaxone Sodium 2023 gross spending = 61,931,367 nominal USD [CSV row 2994; Tot_Spndng_2023]
+f52: Ceftriaxone* / Ceftriaxone Sodium 2023 claims = 1,415,248 claims [CSV row 2994; Tot_Clms_2023]
+f53: Ceftriaxone* / Ceftriaxone Sodium 2024 gross spending = 55,429,215 nominal USD [CSV row 2994; Tot_Spndng_2024]
+f54: Ceftriaxone* / Ceftriaxone Sodium 2024 claims = 1,230,730 claims [CSV row 2994; Tot_Clms_2024]
+f55: Cefuroxime / Cefuroxime Axetil 2020 gross spending = 3,632,509.7 nominal USD [CSV row 3012; Tot_Spndng_2020]
+f56: Cefuroxime / Cefuroxime Axetil 2020 claims = 200,150 claims [CSV row 3012; Tot_Clms_2020]
+f57: Cefuroxime / Cefuroxime Axetil 2021 gross spending = 3,768,842.8 nominal USD [CSV row 3012; Tot_Spndng_2021]
+f58: Cefuroxime / Cefuroxime Axetil 2021 claims = 213,489 claims [CSV row 3012; Tot_Clms_2021]
+f59: Cefuroxime / Cefuroxime Axetil 2022 gross spending = 4,396,837.6 nominal USD [CSV row 3012; Tot_Spndng_2022]
+f60: Cefuroxime / Cefuroxime Axetil 2022 claims = 240,421 claims [CSV row 3012; Tot_Clms_2022]
+f61: Cefuroxime / Cefuroxime Axetil 2023 gross spending = 3,988,660.4 nominal USD [CSV row 3012; Tot_Spndng_2023]
+f62: Cefuroxime / Cefuroxime Axetil 2023 claims = 264,582 claims [CSV row 3012; Tot_Clms_2023]
+f63: Cefuroxime / Cefuroxime Axetil 2024 gross spending = 3,580,615.1 nominal USD [CSV row 3012; Tot_Spndng_2024]
+f64: Cefuroxime / Cefuroxime Axetil 2024 claims = 240,200 claims [CSV row 3012; Tot_Clms_2024]
+f65: Cefuroxime Sodium* / Cefuroxime Sodium 2020 gross spending = 563,544.47 nominal USD [CSV row 3019; Tot_Spndng_2020]
+f66: Cefuroxime Sodium* / Cefuroxime Sodium 2020 claims = 1,252 claims [CSV row 3019; Tot_Clms_2020]
+f67: Cefuroxime Sodium* / Cefuroxime Sodium 2021 gross spending = 370,821.37 nominal USD [CSV row 3019; Tot_Spndng_2021]
+f68: Cefuroxime Sodium* / Cefuroxime Sodium 2021 claims = 1,959 claims [CSV row 3019; Tot_Clms_2021]
+f69: Cefuroxime Sodium* / Cefuroxime Sodium 2022 gross spending = 505,222.33 nominal USD [CSV row 3019; Tot_Spndng_2022]
+f70: Cefuroxime Sodium* / Cefuroxime Sodium 2022 claims = 1,700 claims [CSV row 3019; Tot_Clms_2022]
+f71: Cefuroxime Sodium* / Cefuroxime Sodium 2023 gross spending = 500,521.59 nominal USD [CSV row 3019; Tot_Spndng_2023]
+f72: Cefuroxime Sodium* / Cefuroxime Sodium 2023 claims = 1,426 claims [CSV row 3019; Tot_Clms_2023]
+f73: Cefuroxime Sodium* / Cefuroxime Sodium 2024 gross spending = 416,870.31 nominal USD [CSV row 3019; Tot_Spndng_2024]
+f74: Cefuroxime Sodium* / Cefuroxime Sodium 2024 claims = 1,369 claims [CSV row 3019; Tot_Clms_2024]
+f75: Doryx Mpc / Doxycycline Hyclate 2020 gross spending = 36,724.2 nominal USD [CSV row 5435; Tot_Spndng_2020]
+f76: Doryx Mpc / Doxycycline Hyclate 2020 claims = 101 claims [CSV row 5435; Tot_Clms_2020]
+f77: Doryx Mpc / Doxycycline Hyclate 2021 gross spending = 46,000.68 nominal USD [CSV row 5435; Tot_Spndng_2021]
+f78: Doryx Mpc / Doxycycline Hyclate 2021 claims = 112 claims [CSV row 5435; Tot_Clms_2021]
+f79: Doryx Mpc / Doxycycline Hyclate 2022 gross spending = 50,368.95 nominal USD [CSV row 5435; Tot_Spndng_2022]
+f80: Doryx Mpc / Doxycycline Hyclate 2022 claims = 131 claims [CSV row 5435; Tot_Clms_2022]
+f81: Doryx Mpc / Doxycycline Hyclate 2023 gross spending = 398,283.68 nominal USD [CSV row 5435; Tot_Spndng_2023]
+f82: Doryx Mpc / Doxycycline Hyclate 2023 claims = 504 claims [CSV row 5435; Tot_Clms_2023]
+f83: Doryx Mpc / Doxycycline Hyclate 2024 gross spending = 1,071,591.7 nominal USD [CSV row 5435; Tot_Spndng_2024]
+f84: Doryx Mpc / Doxycycline Hyclate 2024 claims = 1,053 claims [CSV row 5435; Tot_Clms_2024]
+f85: Doxy 100 / Doxycycline Hyclate 2020 gross spending = 559,429.36 nominal USD [CSV row 5541; Tot_Spndng_2020]
+f86: Doxy 100 / Doxycycline Hyclate 2020 claims = 3,394 claims [CSV row 5541; Tot_Clms_2020]
+f87: Doxy 100 / Doxycycline Hyclate 2021 gross spending = 466,602.2 nominal USD [CSV row 5541; Tot_Spndng_2021]
+f88: Doxy 100 / Doxycycline Hyclate 2021 claims = 3,918 claims [CSV row 5541; Tot_Clms_2021]
+f89: Doxy 100 / Doxycycline Hyclate 2022 gross spending = 626,347.46 nominal USD [CSV row 5541; Tot_Spndng_2022]
+f90: Doxy 100 / Doxycycline Hyclate 2022 claims = 3,688 claims [CSV row 5541; Tot_Clms_2022]
+f91: Doxy 100 / Doxycycline Hyclate 2023 gross spending = 904,207.16 nominal USD [CSV row 5541; Tot_Spndng_2023]
+f92: Doxy 100 / Doxycycline Hyclate 2023 claims = 4,655 claims [CSV row 5541; Tot_Clms_2023]
+f93: Doxy 100 / Doxycycline Hyclate 2024 gross spending = 799,943.38 nominal USD [CSV row 5541; Tot_Spndng_2024]
+f94: Doxy 100 / Doxycycline Hyclate 2024 claims = 3,670 claims [CSV row 5541; Tot_Clms_2024]
+f95: Doxycycline Hyclate* / Doxycycline Hyclate 2020 gross spending = 26,986,662 nominal USD [CSV row 5545; Tot_Spndng_2020]
+f96: Doxycycline Hyclate* / Doxycycline Hyclate 2020 claims = 1,439,479 claims [CSV row 5545; Tot_Clms_2020]
+f97: Doxycycline Hyclate* / Doxycycline Hyclate 2021 gross spending = 37,868,860 nominal USD [CSV row 5545; Tot_Spndng_2021]
+f98: Doxycycline Hyclate* / Doxycycline Hyclate 2021 claims = 2,063,325 claims [CSV row 5545; Tot_Clms_2021]
+f99: Doxycycline Hyclate* / Doxycycline Hyclate 2022 gross spending = 47,423,708 nominal USD [CSV row 5545; Tot_Spndng_2022]
+f100: Doxycycline Hyclate* / Doxycycline Hyclate 2022 claims = 2,419,682 claims [CSV row 5545; Tot_Clms_2022]
+f101: Doxycycline Hyclate* / Doxycycline Hyclate 2023 gross spending = 44,101,186 nominal USD [CSV row 5545; Tot_Spndng_2023]
+f102: Doxycycline Hyclate* / Doxycycline Hyclate 2023 claims = 2,775,858 claims [CSV row 5545; Tot_Clms_2023]
+f103: Doxycycline Hyclate* / Doxycycline Hyclate 2024 gross spending = 38,147,982 nominal USD [CSV row 5545; Tot_Spndng_2024]
+f104: Doxycycline Hyclate* / Doxycycline Hyclate 2024 claims = 2,704,950 claims [CSV row 5545; Tot_Clms_2024]
+f105: Doxycycline Ir-Dr / Doxycycline Monohydrate 2020 gross spending = 967,364.36 nominal USD [CSV row 5577; Tot_Spndng_2020]
+f106: Doxycycline Ir-Dr / Doxycycline Monohydrate 2020 claims = 1,861 claims [CSV row 5577; Tot_Clms_2020]
+f107: Doxycycline Ir-Dr / Doxycycline Monohydrate 2021 gross spending = 968,654.49 nominal USD [CSV row 5577; Tot_Spndng_2021]
+f108: Doxycycline Ir-Dr / Doxycycline Monohydrate 2021 claims = 1,840 claims [CSV row 5577; Tot_Clms_2021]
+f109: Doxycycline Ir-Dr / Doxycycline Monohydrate 2022 gross spending = 1,353,183.8 nominal USD [CSV row 5577; Tot_Spndng_2022]
+f110: Doxycycline Ir-Dr / Doxycycline Monohydrate 2022 claims = 2,697 claims [CSV row 5577; Tot_Clms_2022]
+f111: Doxycycline Ir-Dr / Doxycycline Monohydrate 2023 gross spending = 1,360,823.9 nominal USD [CSV row 5577; Tot_Spndng_2023]
+f112: Doxycycline Ir-Dr / Doxycycline Monohydrate 2023 claims = 2,646 claims [CSV row 5577; Tot_Clms_2023]
+f113: Doxycycline Ir-Dr / Doxycycline Monohydrate 2024 gross spending = 1,525,103 nominal USD [CSV row 5577; Tot_Spndng_2024]
+f114: Doxycycline Ir-Dr / Doxycycline Monohydrate 2024 claims = 2,503 claims [CSV row 5577; Tot_Clms_2024]
+f115: Doxycycline Monohydrate / Doxycycline Monohydrate 2020 gross spending = 11,550,715 nominal USD [CSV row 5583; Tot_Spndng_2020]
+f116: Doxycycline Monohydrate / Doxycycline Monohydrate 2020 claims = 818,417 claims [CSV row 5583; Tot_Clms_2020]
+f117: Doxycycline Monohydrate / Doxycycline Monohydrate 2021 gross spending = 14,329,627 nominal USD [CSV row 5583; Tot_Spndng_2021]
+f118: Doxycycline Monohydrate / Doxycycline Monohydrate 2021 claims = 1,001,546 claims [CSV row 5583; Tot_Clms_2021]
+f119: Doxycycline Monohydrate / Doxycycline Monohydrate 2022 gross spending = 16,258,249 nominal USD [CSV row 5583; Tot_Spndng_2022]
+f120: Doxycycline Monohydrate / Doxycycline Monohydrate 2022 claims = 1,083,537 claims [CSV row 5583; Tot_Clms_2022]
+f121: Doxycycline Monohydrate / Doxycycline Monohydrate 2023 gross spending = 15,156,245 nominal USD [CSV row 5583; Tot_Spndng_2023]
+f122: Doxycycline Monohydrate / Doxycycline Monohydrate 2023 claims = 1,013,693 claims [CSV row 5583; Tot_Clms_2023]
+f123: Doxycycline Monohydrate / Doxycycline Monohydrate 2024 gross spending = 16,151,353 nominal USD [CSV row 5583; Tot_Spndng_2024]
+f124: Doxycycline Monohydrate / Doxycycline Monohydrate 2024 claims = 973,019 claims [CSV row 5583; Tot_Clms_2024]
+f125: Oracea / Doxycycline Monohydrate 2020 gross spending = 201,396.04 nominal USD [CSV row 12868; Tot_Spndng_2020]
+f126: Oracea / Doxycycline Monohydrate 2020 claims = 264 claims [CSV row 12868; Tot_Clms_2020]
+f127: Oracea / Doxycycline Monohydrate 2021 gross spending = 253,987.2 nominal USD [CSV row 12868; Tot_Spndng_2021]
+f128: Oracea / Doxycycline Monohydrate 2021 claims = 338 claims [CSV row 12868; Tot_Clms_2021]
+f129: Oracea / Doxycycline Monohydrate 2022 gross spending = 316,177.58 nominal USD [CSV row 12868; Tot_Spndng_2022]
+f130: Oracea / Doxycycline Monohydrate 2022 claims = 391 claims [CSV row 12868; Tot_Clms_2022]
+f131: Oracea / Doxycycline Monohydrate 2024 gross spending = 10,885.37 nominal USD [CSV row 12868; Tot_Spndng_2024]
+f132: Oracea / Doxycycline Monohydrate 2024 claims = 11 claims [CSV row 12868; Tot_Clms_2024]
+f133: Rocephin / Ceftriaxone Sodium 2020 gross spending = 183,035.86 nominal USD [CSV row 15028; Tot_Spndng_2020]
+f134: Rocephin / Ceftriaxone Sodium 2020 claims = 537 claims [CSV row 15028; Tot_Clms_2020]
+f135: Rocephin / Ceftriaxone Sodium 2021 gross spending = 6,813.25 nominal USD [CSV row 15028; Tot_Spndng_2021]
+f136: Rocephin / Ceftriaxone Sodium 2021 claims = 321 claims [CSV row 15028; Tot_Clms_2021]
+f137: Rocephin / Ceftriaxone Sodium 2022 gross spending = 3,158.01 nominal USD [CSV row 15028; Tot_Spndng_2022]
+f138: Rocephin / Ceftriaxone Sodium 2022 claims = 723 claims [CSV row 15028; Tot_Clms_2022]
+f139: Rocephin / Ceftriaxone Sodium 2023 gross spending = 7,485.22 nominal USD [CSV row 15028; Tot_Spndng_2023]
+f140: Rocephin / Ceftriaxone Sodium 2023 claims = 1,434 claims [CSV row 15028; Tot_Clms_2023]
+f141: Rocephin / Ceftriaxone Sodium 2024 gross spending = 1,844.38 nominal USD [CSV row 15028; Tot_Spndng_2024]
+f142: Rocephin / Ceftriaxone Sodium 2024 claims = 984 claims [CSV row 15028; Tot_Clms_2024]
+f143: Voquezna Dual Pak / Vonoprazan/Amoxicillin 2024 gross spending = 95,594.08 nominal USD [CSV row 17881; Tot_Spndng_2024]
+f144: Voquezna Dual Pak / Vonoprazan/Amoxicillin 2024 claims = 122 claims [CSV row 17881; Tot_Clms_2024]
+f145: Voquezna Triple Pak / Vonoprazan/Amoxicillin/Clarith 2024 gross spending = 213,984.67 nominal USD [CSV row 17883; Tot_Spndng_2024]
+f146: Voquezna Triple Pak / Vonoprazan/Amoxicillin/Clarith 2024 claims = 271 claims [CSV row 17883; Tot_Clms_2024]
+c1: Amoxicillin / Amoxicillin 2020 spending per claim = 6.8382192 USD/claim; ratio(f1, f2). All indications; a claim is not a treatment course, patient or dose.
+c2: Amoxicillin / Amoxicillin 2021 spending per claim = 6.9378533 USD/claim; ratio(f3, f4). All indications; a claim is not a treatment course, patient or dose.
+c3: Amoxicillin / Amoxicillin 2022 spending per claim = 8.1213496 USD/claim; ratio(f5, f6). All indications; a claim is not a treatment course, patient or dose.
+c4: Amoxicillin / Amoxicillin 2023 spending per claim = 9.9136789 USD/claim; ratio(f7, f8). All indications; a claim is not a treatment course, patient or dose.
+c5: Amoxicillin / Amoxicillin 2024 spending per claim = 10.9305 USD/claim; ratio(f9, f10). All indications; a claim is not a treatment course, patient or dose.
+c6: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2020 spending per claim = 140.16714 USD/claim; ratio(f11, f12). All indications; a claim is not a treatment course, patient or dose.
+c7: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2021 spending per claim = 137.73594 USD/claim; ratio(f13, f14). All indications; a claim is not a treatment course, patient or dose.
+c8: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2022 spending per claim = 132.8614 USD/claim; ratio(f15, f16). All indications; a claim is not a treatment course, patient or dose.
+c9: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2023 spending per claim = 130.10021 USD/claim; ratio(f17, f18). All indications; a claim is not a treatment course, patient or dose.
+c10: Amoxicillin-Clavulanate Pot ER / Amoxicillin/Potassium Clav 2024 spending per claim = 128.29662 USD/claim; ratio(f19, f20). All indications; a claim is not a treatment course, patient or dose.
+c11: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2020 spending per claim = 14.955113 USD/claim; ratio(f21, f22). All indications; a claim is not a treatment course, patient or dose.
+c12: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2021 spending per claim = 14.61216 USD/claim; ratio(f23, f24). All indications; a claim is not a treatment course, patient or dose.
+c13: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2022 spending per claim = 15.337306 USD/claim; ratio(f25, f26). All indications; a claim is not a treatment course, patient or dose.
+c14: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2023 spending per claim = 15.233597 USD/claim; ratio(f27, f28). All indications; a claim is not a treatment course, patient or dose.
+c15: Amoxicillin-Clavulanate Potass / Amoxicillin/Potassium Clav 2024 spending per claim = 15.735515 USD/claim; ratio(f29, f30). All indications; a claim is not a treatment course, patient or dose.
+c16: Augmentin / Amoxicillin/Potassium Clav 2023 spending per claim = 1,066.0099 USD/claim; ratio(f31, f32). All indications; a claim is not a treatment course, patient or dose.
+c17: Augmentin / Amoxicillin/Potassium Clav 2024 spending per claim = 911.14896 USD/claim; ratio(f33, f34). All indications; a claim is not a treatment course, patient or dose.
+c18: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2020 spending per claim = 75.032804 USD/claim; ratio(f35, f36). All indications; a claim is not a treatment course, patient or dose.
+c19: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2021 spending per claim = 70.523088 USD/claim; ratio(f37, f38). All indications; a claim is not a treatment course, patient or dose.
+c20: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2022 spending per claim = 81.49385 USD/claim; ratio(f39, f40). All indications; a claim is not a treatment course, patient or dose.
+c21: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2023 spending per claim = 85.059031 USD/claim; ratio(f41, f42). All indications; a claim is not a treatment course, patient or dose.
+c22: Ceftriaxone / Ceftriaxone In Is-Osm Dextrose 2024 spending per claim = 84.445668 USD/claim; ratio(f43, f44). All indications; a claim is not a treatment course, patient or dose.
+c23: Ceftriaxone* / Ceftriaxone Sodium 2020 spending per claim = 41.482826 USD/claim; ratio(f45, f46). All indications; a claim is not a treatment course, patient or dose.
+c24: Ceftriaxone* / Ceftriaxone Sodium 2021 spending per claim = 39.139449 USD/claim; ratio(f47, f48). All indications; a claim is not a treatment course, patient or dose.
+c25: Ceftriaxone* / Ceftriaxone Sodium 2022 spending per claim = 36.102156 USD/claim; ratio(f49, f50). All indications; a claim is not a treatment course, patient or dose.
+c26: Ceftriaxone* / Ceftriaxone Sodium 2023 spending per claim = 43.760081 USD/claim; ratio(f51, f52). All indications; a claim is not a treatment course, patient or dose.
+c27: Ceftriaxone* / Ceftriaxone Sodium 2024 spending per claim = 45.037673 USD/claim; ratio(f53, f54). All indications; a claim is not a treatment course, patient or dose.
+c28: Cefuroxime / Cefuroxime Axetil 2020 spending per claim = 18.148937 USD/claim; ratio(f55, f56). All indications; a claim is not a treatment course, patient or dose.
+c29: Cefuroxime / Cefuroxime Axetil 2021 spending per claim = 17.653569 USD/claim; ratio(f57, f58). All indications; a claim is not a treatment course, patient or dose.
+c30: Cefuroxime / Cefuroxime Axetil 2022 spending per claim = 18.288076 USD/claim; ratio(f59, f60). All indications; a claim is not a treatment course, patient or dose.
+c31: Cefuroxime / Cefuroxime Axetil 2023 spending per claim = 15.075328 USD/claim; ratio(f61, f62). All indications; a claim is not a treatment course, patient or dose.
+c32: Cefuroxime / Cefuroxime Axetil 2024 spending per claim = 14.906807 USD/claim; ratio(f63, f64). All indications; a claim is not a treatment course, patient or dose.
+c33: Cefuroxime Sodium* / Cefuroxime Sodium 2020 spending per claim = 450.11539 USD/claim; ratio(f65, f66). All indications; a claim is not a treatment course, patient or dose.
+c34: Cefuroxime Sodium* / Cefuroxime Sodium 2021 spending per claim = 189.29115 USD/claim; ratio(f67, f68). All indications; a claim is not a treatment course, patient or dose.
+c35: Cefuroxime Sodium* / Cefuroxime Sodium 2022 spending per claim = 297.18961 USD/claim; ratio(f69, f70). All indications; a claim is not a treatment course, patient or dose.
+c36: Cefuroxime Sodium* / Cefuroxime Sodium 2023 spending per claim = 350.99691 USD/claim; ratio(f71, f72). All indications; a claim is not a treatment course, patient or dose.
+c37: Cefuroxime Sodium* / Cefuroxime Sodium 2024 spending per claim = 304.50717 USD/claim; ratio(f73, f74). All indications; a claim is not a treatment course, patient or dose.
+c38: Doryx Mpc / Doxycycline Hyclate 2020 spending per claim = 363.60594 USD/claim; ratio(f75, f76). All indications; a claim is not a treatment course, patient or dose.
+c39: Doryx Mpc / Doxycycline Hyclate 2021 spending per claim = 410.72036 USD/claim; ratio(f77, f78). All indications; a claim is not a treatment course, patient or dose.
+c40: Doryx Mpc / Doxycycline Hyclate 2022 spending per claim = 384.4958 USD/claim; ratio(f79, f80). All indications; a claim is not a treatment course, patient or dose.
+c41: Doryx Mpc / Doxycycline Hyclate 2023 spending per claim = 790.2454 USD/claim; ratio(f81, f82). All indications; a claim is not a treatment course, patient or dose.
+c42: Doryx Mpc / Doxycycline Hyclate 2024 spending per claim = 1,017.6559 USD/claim; ratio(f83, f84). All indications; a claim is not a treatment course, patient or dose.
+c43: Doxy 100 / Doxycycline Hyclate 2020 spending per claim = 164.82892 USD/claim; ratio(f85, f86). All indications; a claim is not a treatment course, patient or dose.
+c44: Doxy 100 / Doxycycline Hyclate 2021 spending per claim = 119.09193 USD/claim; ratio(f87, f88). All indications; a claim is not a treatment course, patient or dose.
+c45: Doxy 100 / Doxycycline Hyclate 2022 spending per claim = 169.83391 USD/claim; ratio(f89, f90). All indications; a claim is not a treatment course, patient or dose.
+c46: Doxy 100 / Doxycycline Hyclate 2023 spending per claim = 194.24429 USD/claim; ratio(f91, f92). All indications; a claim is not a treatment course, patient or dose.
+c47: Doxy 100 / Doxycycline Hyclate 2024 spending per claim = 217.96822 USD/claim; ratio(f93, f94). All indications; a claim is not a treatment course, patient or dose.
+c48: Doxycycline Hyclate* / Doxycycline Hyclate 2020 spending per claim = 18.74752 USD/claim; ratio(f95, f96). All indications; a claim is not a treatment course, patient or dose.
+c49: Doxycycline Hyclate* / Doxycycline Hyclate 2021 spending per claim = 18.353318 USD/claim; ratio(f97, f98). All indications; a claim is not a treatment course, patient or dose.
+c50: Doxycycline Hyclate* / Doxycycline Hyclate 2022 spending per claim = 19.599149 USD/claim; ratio(f99, f100). All indications; a claim is not a treatment course, patient or dose.
+c51: Doxycycline Hyclate* / Doxycycline Hyclate 2023 spending per claim = 15.887407 USD/claim; ratio(f101, f102). All indications; a claim is not a treatment course, patient or dose.
+c52: Doxycycline Hyclate* / Doxycycline Hyclate 2024 spending per claim = 14.103027 USD/claim; ratio(f103, f104). All indications; a claim is not a treatment course, patient or dose.
+c53: Doxycycline Ir-Dr / Doxycycline Monohydrate 2020 spending per claim = 519.8089 USD/claim; ratio(f105, f106). All indications; a claim is not a treatment course, patient or dose.
+c54: Doxycycline Ir-Dr / Doxycycline Monohydrate 2021 spending per claim = 526.44266 USD/claim; ratio(f107, f108). All indications; a claim is not a treatment course, patient or dose.
+c55: Doxycycline Ir-Dr / Doxycycline Monohydrate 2022 spending per claim = 501.73666 USD/claim; ratio(f109, f110). All indications; a claim is not a treatment course, patient or dose.
+c56: Doxycycline Ir-Dr / Doxycycline Monohydrate 2023 spending per claim = 514.29477 USD/claim; ratio(f111, f112). All indications; a claim is not a treatment course, patient or dose.
+c57: Doxycycline Ir-Dr / Doxycycline Monohydrate 2024 spending per claim = 609.31002 USD/claim; ratio(f113, f114). All indications; a claim is not a treatment course, patient or dose.
+c58: Doxycycline Monohydrate / Doxycycline Monohydrate 2020 spending per claim = 14.113484 USD/claim; ratio(f115, f116). All indications; a claim is not a treatment course, patient or dose.
+c59: Doxycycline Monohydrate / Doxycycline Monohydrate 2021 spending per claim = 14.307507 USD/claim; ratio(f117, f118). All indications; a claim is not a treatment course, patient or dose.
+c60: Doxycycline Monohydrate / Doxycycline Monohydrate 2022 spending per claim = 15.004794 USD/claim; ratio(f119, f120). All indications; a claim is not a treatment course, patient or dose.
+c61: Doxycycline Monohydrate / Doxycycline Monohydrate 2023 spending per claim = 14.951514 USD/claim; ratio(f121, f122). All indications; a claim is not a treatment course, patient or dose.
+c62: Doxycycline Monohydrate / Doxycycline Monohydrate 2024 spending per claim = 16.599216 USD/claim; ratio(f123, f124). All indications; a claim is not a treatment course, patient or dose.
+c63: Oracea / Doxycycline Monohydrate 2020 spending per claim = 762.86379 USD/claim; ratio(f125, f126). All indications; a claim is not a treatment course, patient or dose.
+c64: Oracea / Doxycycline Monohydrate 2021 spending per claim = 751.44142 USD/claim; ratio(f127, f128). All indications; a claim is not a treatment course, patient or dose.
+c65: Oracea / Doxycycline Monohydrate 2022 spending per claim = 808.63831 USD/claim; ratio(f129, f130). All indications; a claim is not a treatment course, patient or dose.
+c66: Oracea / Doxycycline Monohydrate 2024 spending per claim = 989.57909 USD/claim; ratio(f131, f132). All indications; a claim is not a treatment course, patient or dose.
+c67: Rocephin / Ceftriaxone Sodium 2020 spending per claim = 340.8489 USD/claim; ratio(f133, f134). All indications; a claim is not a treatment course, patient or dose.
+c68: Rocephin / Ceftriaxone Sodium 2021 spending per claim = 21.225078 USD/claim; ratio(f135, f136). All indications; a claim is not a treatment course, patient or dose.
+c69: Rocephin / Ceftriaxone Sodium 2022 spending per claim = 4.3679253 USD/claim; ratio(f137, f138). All indications; a claim is not a treatment course, patient or dose.
+c70: Rocephin / Ceftriaxone Sodium 2023 spending per claim = 5.2198187 USD/claim; ratio(f139, f140). All indications; a claim is not a treatment course, patient or dose.
+c71: Rocephin / Ceftriaxone Sodium 2024 spending per claim = 1.8743699 USD/claim; ratio(f141, f142). All indications; a claim is not a treatment course, patient or dose.
+c72: Voquezna Dual Pak / Vonoprazan/Amoxicillin 2024 spending per claim = 783.55803 USD/claim; ratio(f143, f144). All indications; a claim is not a treatment course, patient or dose.
+c73: Voquezna Triple Pak / Vonoprazan/Amoxicillin/Clarith 2024 spending per claim = 789.61133 USD/claim; ratio(f145, f146). All indications; a claim is not a treatment course, patient or dose.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Ask your insurer/pharmacist for your own covered payment; the national average per claim is not your bill.
+Care delivery: Use the exact product, route and billing unit for costing an already justified care pathway; do not choose treatment from spending data.
+Payers and policy: Compare spending, volume and per-claim changes separately. Apply a condition-attribution fraction only if supported by a separate compatible study.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No disease indication, patient-specific benefits or causal effectiveness in this table.
+No net-rebate adjustment or personal out-of-pocket decomposition.
+Long COVID-specific medication use cannot be inferred from an antibiotic benchmark.
+
+DO NOT USE FOR
+Adding manufacturer rows to Overall, combining the full and focused file as additional spending, or adding out-of-pocket amounts to gross spending.
+Treating a claim as a full treatment episode or prescribing a regimen from this table.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

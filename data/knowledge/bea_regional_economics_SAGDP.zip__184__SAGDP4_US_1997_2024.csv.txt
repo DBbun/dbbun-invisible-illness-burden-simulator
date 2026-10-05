@@ -1,0 +1,524 @@
+SAGDP.zip
+SOURCE: bea/regional_economics/SAGDP.zip :: SAGDP4_US_1997_2024.csv
+SHA-256: 5a90e0e6e03082089048d8f78e8a4df9993465c4f34f9de471258fed2a908183
+CONDITION SCOPE: general
+ROLE: regional_economic_context
+
+PROCESSING AND INTERPRETATION STATUS
+focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Population, definitions, units and overlap need verification before modeling.
+
+FILE-SPECIFIC FINDING
+SAGDP4_US_1997_2024.csv contains 96 geographic-measure records across 1 geographic identifiers. For United States *, All industry total moves from 4.71322e+09 Thousands of dollars in 1997 to 1.5049121e+10 in 2024. The accompanying measure table distinguishes the units rather than blending dollars, jobs, people and indexes.
+
+ECONOMIC INTERPRETATION
+GDP is production value, not a household wage or insurer payment. Current-dollar, real/chained-dollar, growth and contribution measures must remain distinct. Chained-dollar industry series are not generally additive. No fraction of GDP is attributed to either illness here.
+
+HOW TO USE THIS FILE
+Use the exact geography and 1997–2024 coverage in this file for context, not a live estimate. State-specific and ALL_AREAS members overlap; retrieving both must not double their economic totals. Ranges describe available rows and exclude nonnumeric disclosure/availability markers, not zero-valued observations.
+
+SELECTED WITHIN-FILE GEOGRAPHIC SERIES
+Focus: United States *. Years and units are preserved from each source row. Not disease-attributable amounts.
+geography: United States * | line_code: 1 | description: All industry total | unit: Thousands of dollars | first_year: 1997 | first: 4.71322e+09 | last_year: 2024 | last: 1.5049121e+10 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 2 | description: Private industries | unit: Thousands of dollars | first_year: 1997 | first: 3.823491e+09 | last_year: 2024 | last: 1.2463662e+10 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 3 | description: Agriculture, forestry, fishing and hunting | unit: Thousands of dollars | first_year: 1997 | first: 26,612,000 | last_year: 2024 | last: 80,082,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 4 | description: Farms | unit: Thousands of dollars | first_year: 1997 | first: 17,142,000 | last_year: 2024 | last: 44,527,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 5 | description: Forestry, fishing, and related activities | unit: Thousands of dollars | first_year: 1997 | first: 9,470,000 | last_year: 2024 | last: 35,555,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 6 | description: Mining, quarrying, and oil and gas extraction | unit: Thousands of dollars | first_year: 1997 | first: 35,121,000 | last_year: 2024 | last: 92,465,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 7 | description: Oil and gas extraction | unit: Thousands of dollars | first_year: 1997 | first: 12,295,000 | last_year: 2024 | last: 31,824,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 8 | description: Mining (except oil and gas) | unit: Thousands of dollars | first_year: 1997 | first: 13,837,000 | last_year: 2024 | last: 23,658,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 9 | description: Support activities for mining | unit: Thousands of dollars | first_year: 1997 | first: 8,989,000 | last_year: 2024 | last: 36,984,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 10 | description: Utilities | unit: Thousands of dollars | first_year: 1997 | first: 42,111,000 | last_year: 2024 | last: 1.03431e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 11 | description: Construction | unit: Thousands of dollars | first_year: 1997 | first: 2.28597e+08 | last_year: 2024 | last: 7.99308e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 12 | description: Manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 7.88978e+08 | last_year: 2024 | last: 1.359135e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 13 | description: Durable goods manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 5.14618e+08 | last_year: 2024 | last: 8.93038e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 14 | description: Wood product manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 19,184,000 | last_year: 2024 | last: 32,297,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 15 | description: Nonmetallic mineral product manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 22,083,000 | last_year: 2024 | last: 38,942,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 16 | description: Primary metal manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 32,433,000 | last_year: 2024 | last: 41,277,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 17 | description: Fabricated metal product manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 70,801,000 | last_year: 2024 | last: 1.28099e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 18 | description: Machinery manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 72,354,000 | last_year: 2024 | last: 1.20012e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 19 | description: Computer and electronic product manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 1.09732e+08 | last_year: 2024 | last: 1.87376e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 20 | description: Electrical equipment, appliance, and component manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 27,006,000 | last_year: 2024 | last: 47,290,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 21 | description: Motor vehicles, bodies and trailers, and parts manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 63,330,000 | last_year: 2024 | last: 96,593,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 22 | description: Other transportation equipment manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 46,559,000 | last_year: 2024 | last: 1.06326e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 23 | description: Furniture and related product manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 19,649,000 | last_year: 2024 | last: 25,178,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 24 | description: Miscellaneous manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 31,485,000 | last_year: 2024 | last: 69,647,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 25 | description: Nondurable goods manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 2.7436e+08 | last_year: 2024 | last: 4.66097e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 26 | description: Food and beverage and tobacco product manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 62,596,000 | last_year: 2024 | last: 1.60356e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 27 | description: Textile mills and textile product mills | unit: Thousands of dollars | first_year: 1997 | first: 20,287,000 | last_year: 2024 | last: 12,641,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 28 | description: Apparel, leather, and allied product manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 18,055,000 | last_year: 2024 | last: 7,740,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 29 | description: Paper manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 31,656,000 | last_year: 2024 | last: 36,515,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 30 | description: Printing and related support activities | unit: Thousands of dollars | first_year: 1997 | first: 32,053,000 | last_year: 2024 | last: 26,845,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 31 | description: Petroleum and coal products manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 10,586,000 | last_year: 2024 | last: 22,688,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 32 | description: Chemical manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 64,476,000 | last_year: 2024 | last: 1.36974e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 33 | description: Plastics and rubber products manufacturing | unit: Thousands of dollars | first_year: 1997 | first: 34,650,000 | last_year: 2024 | last: 62,338,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 34 | description: Wholesale trade | unit: Thousands of dollars | first_year: 1997 | first: 2.66144e+08 | last_year: 2024 | last: 7.33047e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 35 | description: Retail trade | unit: Thousands of dollars | first_year: 1997 | first: 3.38975e+08 | last_year: 2024 | last: 8.4609e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 36 | description: Transportation and warehousing | unit: Thousands of dollars | first_year: 1997 | first: 1.66945e+08 | last_year: 2024 | last: 5.7724e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 37 | description: Air transportation | unit: Thousands of dollars | first_year: 1997 | first: 29,767,000 | last_year: 2024 | last: 88,114,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 38 | description: Rail transportation | unit: Thousands of dollars | first_year: 1997 | first: 15,274,000 | last_year: 2024 | last: 26,365,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 39 | description: Water transportation | unit: Thousands of dollars | first_year: 1997 | first: 3,131,000 | last_year: 2024 | last: 9,882,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 40 | description: Truck transportation | unit: Thousands of dollars | first_year: 1997 | first: 49,401,000 | last_year: 2024 | last: 1.35191e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 41 | description: Transit and ground passenger transportation | unit: Thousands of dollars | first_year: 1997 | first: 8,521,000 | last_year: 2024 | last: 37,736,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 42 | description: Pipeline transportation | unit: Thousands of dollars | first_year: 1997 | first: 3,507,000 | last_year: 2024 | last: 10,719,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 43 | description: Other transportation and support activities | unit: Thousands of dollars | first_year: 1997 | first: 40,025,000 | last_year: 2024 | last: 1.47652e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 44 | description: Warehousing and storage | unit: Thousands of dollars | first_year: 1997 | first: 17,318,000 | last_year: 2024 | last: 1.21581e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 45 | description: Information | unit: Thousands of dollars | first_year: 1997 | first: 1.68967e+08 | last_year: 2024 | last: 5.93157e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 46 | description: Publishing industries (except Internet) | unit: Thousands of dollars | first_year: 1997 | first: 50,478,000 | last_year: 2024 | last: 1.8417e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 47 | description: Motion picture and sound recording industries | unit: Thousands of dollars | first_year: 1997 | first: 18,777,000 | last_year: 2024 | last: 42,580,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 48 | description: Broadcasting (except Internet) and telecommunications | unit: Thousands of dollars | first_year: 1997 | first: 77,600,000 | last_year: 2024 | last: 1.29892e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 49 | description: Data processing, hosting, and other information services | unit: Thousands of dollars | first_year: 1997 | first: 22,112,000 | last_year: 2024 | last: 2.36515e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 50 | description: Finance, insurance, real estate, rental, and leasing | unit: Thousands of dollars | first_year: 1997 | first: 3.76301e+08 | last_year: 2024 | last: 1.338953e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 51 | description: Finance and insurance | unit: Thousands of dollars | first_year: 1997 | first: 3.14877e+08 | last_year: 2024 | last: 1.115372e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 52 | description: Monetary Authorities- central bank, credit intermediation, and related services | unit: Thousands of dollars | first_year: 1997 | first: 1.09842e+08 | last_year: 2024 | last: 3.54009e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 53 | description: Securities, commodity contracts, and other financial investments and related activities | unit: Thousands of dollars | first_year: 1997 | first: 91,674,000 | last_year: 2024 | last: 3.64518e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 54 | description: Insurance carriers and related activities | unit: Thousands of dollars | first_year: 1997 | first: 1.12514e+08 | last_year: 2024 | last: 3.90088e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 55 | description: Funds, trusts, and other financial vehicles | unit: Thousands of dollars | first_year: 1997 | first: 846,000 | last_year: 2024 | last: 6,758,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 56 | description: Real estate and rental and leasing | unit: Thousands of dollars | first_year: 1997 | first: 61,424,000 | last_year: 2024 | last: 2.23581e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 57 | description: Real estate | unit: Thousands of dollars | first_year: 1997 | first: 42,277,000 | last_year: 2024 | last: 1.72074e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 58 | description: Rental and leasing services and lessors of nonfinancial intangible assets | unit: Thousands of dollars | first_year: 1997 | first: 19,147,000 | last_year: 2024 | last: 51,506,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 59 | description: Professional and business services | unit: Thousands of dollars | first_year: 1997 | first: 5.91808e+08 | last_year: 2024 | last: 2.726576e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 60 | description: Professional, scientific, and technical services | unit: Thousands of dollars | first_year: 1997 | first: 3.26887e+08 | last_year: 2024 | last: 1.606279e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 61 | description: Legal services | unit: Thousands of dollars | first_year: 1997 | first: 60,468,000 | last_year: 2024 | last: 1.88351e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 62 | description: Computer systems design and related services | unit: Thousands of dollars | first_year: 1997 | first: 64,145,000 | last_year: 2024 | last: 4.45176e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 63 | description: Miscellaneous professional, scientific, and technical services | unit: Thousands of dollars | first_year: 1997 | first: 2.02274e+08 | last_year: 2024 | last: 9.72752e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 64 | description: Management of companies and enterprises | unit: Thousands of dollars | first_year: 1997 | first: 1.05913e+08 | last_year: 2024 | last: 4.82843e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 65 | description: Administrative and support and waste management and remediation services | unit: Thousands of dollars | first_year: 1997 | first: 1.59007e+08 | last_year: 2024 | last: 6.37453e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 66 | description: Administrative and support services | unit: Thousands of dollars | first_year: 1997 | first: 1.46489e+08 | last_year: 2024 | last: 5.87967e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 67 | description: Waste management and remediation services | unit: Thousands of dollars | first_year: 1997 | first: 12,518,000 | last_year: 2024 | last: 49,486,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 68 | description: Educational services, health care, and social assistance | unit: Thousands of dollars | first_year: 1997 | first: 4.74538e+08 | last_year: 2024 | last: 2.03944e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 69 | description: Educational services | unit: Thousands of dollars | first_year: 1997 | first: 59,220,000 | last_year: 2024 | last: 2.68002e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 70 | description: Health care and social assistance | unit: Thousands of dollars | first_year: 1997 | first: 4.15317e+08 | last_year: 2024 | last: 1.771438e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 71 | description: Ambulatory health care services | unit: Thousands of dollars | first_year: 1997 | first: 1.89531e+08 | last_year: 2024 | last: 8.16417e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 72 | description: Hospitals | unit: Thousands of dollars | first_year: 1997 | first: 1.40606e+08 | last_year: 2024 | last: 5.61566e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 73 | description: Nursing and residential care facilities | unit: Thousands of dollars | first_year: 1997 | first: 53,258,000 | last_year: 2024 | last: 1.88682e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 74 | description: Social assistance | unit: Thousands of dollars | first_year: 1997 | first: 31,922,000 | last_year: 2024 | last: 2.04772e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 75 | description: Arts, entertainment, recreation, accommodation, and food services | unit: Thousands of dollars | first_year: 1997 | first: 1.77236e+08 | last_year: 2024 | last: 7.37085e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 76 | description: Arts, entertainment, and recreation | unit: Thousands of dollars | first_year: 1997 | first: 41,718,000 | last_year: 2024 | last: 1.70175e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 77 | description: Performing arts, spectator sports, museums, and related activities | unit: Thousands of dollars | first_year: 1997 | first: 20,011,000 | last_year: 2024 | last: 88,859,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 78 | description: Amusement, gambling, and recreation industries | unit: Thousands of dollars | first_year: 1997 | first: 21,707,000 | last_year: 2024 | last: 81,316,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 79 | description: Accommodation and food services | unit: Thousands of dollars | first_year: 1997 | first: 1.35518e+08 | last_year: 2024 | last: 5.6691e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 80 | description: Accommodation | unit: Thousands of dollars | first_year: 1997 | first: 37,591,000 | last_year: 2024 | last: 1.0816e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 81 | description: Food services and drinking places | unit: Thousands of dollars | first_year: 1997 | first: 97,927,000 | last_year: 2024 | last: 4.5875e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 82 | description: Other services (except government and government enterprises) | unit: Thousands of dollars | first_year: 1997 | first: 1.41158e+08 | last_year: 2024 | last: 4.37654e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 83 | description: Government and government enterprises | unit: Thousands of dollars | first_year: 1997 | first: 8.89729e+08 | last_year: 2024 | last: 2.585459e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 84 | description: Federal civilian | unit: Thousands of dollars | first_year: 1997 | first: 1.61498e+08 | last_year: 2024 | last: 4.66815e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 85 | description: Military | unit: Thousands of dollars | first_year: 1997 | first: 69,275,000 | last_year: 2024 | last: 2.13356e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 86 | description: State and local | unit: Thousands of dollars | first_year: 1997 | first: 6.58954e+08 | last_year: 2024 | last: 1.905288e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 87 | description: Natural resources and mining | unit: Thousands of dollars | first_year: 1997 | first: 61,733,000 | last_year: 2024 | last: 1.72548e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 88 | description: Trade | unit: Thousands of dollars | first_year: 1997 | first: 6.05119e+08 | last_year: 2024 | last: 1.579137e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 89 | description: Transportation and utilities | unit: Thousands of dollars | first_year: 1997 | first: 2.09056e+08 | last_year: 2024 | last: 6.80671e+08 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 90 | description: Manufacturing and information | unit: Thousands of dollars | first_year: 1997 | first: 9.57945e+08 | last_year: 2024 | last: 1.952291e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 91 | description: Private goods-producing industries 2/ | unit: Thousands of dollars | first_year: 1997 | first: 1.079308e+09 | last_year: 2024 | last: 2.330991e+09 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 92 | description: Private services-providing industries 3/ | unit: Thousands of dollars | first_year: 1997 | first: 2.744183e+09 | last_year: 2024 | last: 1.0132672e+10 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 100 | description: All industry total, overseas activity | unit: Thousands of dollars | first_year: 1997 | first: 11,377,000 | last_year: 2024 | last: 42,261,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 101 | description: Government and government enterprises, overseas activity | unit: Thousands of dollars | first_year: 1997 | first: 11,377,000 | last_year: 2024 | last: 42,261,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 102 | description: Federal civilian, overseas activity | unit: Thousands of dollars | first_year: 1997 | first: 2,897,000 | last_year: 2024 | last: 6,361,000 | numeric_years: 28 | years_in_file: 28
+geography: United States * | line_code: 103 | description: Military, overseas activity | unit: Thousands of dollars | first_year: 1997 | first: 8,480,000 | last_year: 2024 | last: 35,900,000 | numeric_years: 28 | years_in_file: 28
+
+WITHIN-FILE VARIATION BY ECONOMIC MEASURE
+Unweighted ranges/medians of retained geography rows, not national estimates; national/state/county/metro records may overlap. Disclosure markers remain missing.
+line_code: 1 | description: All industry total | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.5049121e+10 | maximum: 1.5049121e+10 | unweighted_median: 1.5049121e+10
+line_code: 2 | description: Private industries | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.2463662e+10 | maximum: 1.2463662e+10 | unweighted_median: 1.2463662e+10
+line_code: 3 | description: Agriculture, forestry, fishing and hunting | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 80,082,000 | maximum: 80,082,000 | unweighted_median: 80,082,000
+line_code: 4 | description: Farms | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 44,527,000 | maximum: 44,527,000 | unweighted_median: 44,527,000
+line_code: 5 | description: Forestry, fishing, and related activities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 35,555,000 | maximum: 35,555,000 | unweighted_median: 35,555,000
+line_code: 6 | description: Mining, quarrying, and oil and gas extraction | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 92,465,000 | maximum: 92,465,000 | unweighted_median: 92,465,000
+line_code: 7 | description: Oil and gas extraction | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 31,824,000 | maximum: 31,824,000 | unweighted_median: 31,824,000
+line_code: 8 | description: Mining (except oil and gas) | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 23,658,000 | maximum: 23,658,000 | unweighted_median: 23,658,000
+line_code: 9 | description: Support activities for mining | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 36,984,000 | maximum: 36,984,000 | unweighted_median: 36,984,000
+line_code: 10 | description: Utilities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.03431e+08 | maximum: 1.03431e+08 | unweighted_median: 1.03431e+08
+line_code: 11 | description: Construction | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 7.99308e+08 | maximum: 7.99308e+08 | unweighted_median: 7.99308e+08
+line_code: 12 | description: Manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.359135e+09 | maximum: 1.359135e+09 | unweighted_median: 1.359135e+09
+line_code: 13 | description: Durable goods manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 8.93038e+08 | maximum: 8.93038e+08 | unweighted_median: 8.93038e+08
+line_code: 14 | description: Wood product manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 32,297,000 | maximum: 32,297,000 | unweighted_median: 32,297,000
+line_code: 15 | description: Nonmetallic mineral product manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 38,942,000 | maximum: 38,942,000 | unweighted_median: 38,942,000
+line_code: 16 | description: Primary metal manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 41,277,000 | maximum: 41,277,000 | unweighted_median: 41,277,000
+line_code: 17 | description: Fabricated metal product manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.28099e+08 | maximum: 1.28099e+08 | unweighted_median: 1.28099e+08
+line_code: 18 | description: Machinery manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.20012e+08 | maximum: 1.20012e+08 | unweighted_median: 1.20012e+08
+line_code: 19 | description: Computer and electronic product manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.87376e+08 | maximum: 1.87376e+08 | unweighted_median: 1.87376e+08
+line_code: 20 | description: Electrical equipment, appliance, and component manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 47,290,000 | maximum: 47,290,000 | unweighted_median: 47,290,000
+line_code: 21 | description: Motor vehicles, bodies and trailers, and parts manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 96,593,000 | maximum: 96,593,000 | unweighted_median: 96,593,000
+line_code: 22 | description: Other transportation equipment manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.06326e+08 | maximum: 1.06326e+08 | unweighted_median: 1.06326e+08
+line_code: 23 | description: Furniture and related product manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 25,178,000 | maximum: 25,178,000 | unweighted_median: 25,178,000
+line_code: 24 | description: Miscellaneous manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 69,647,000 | maximum: 69,647,000 | unweighted_median: 69,647,000
+line_code: 25 | description: Nondurable goods manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 4.66097e+08 | maximum: 4.66097e+08 | unweighted_median: 4.66097e+08
+line_code: 26 | description: Food and beverage and tobacco product manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.60356e+08 | maximum: 1.60356e+08 | unweighted_median: 1.60356e+08
+line_code: 27 | description: Textile mills and textile product mills | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 12,641,000 | maximum: 12,641,000 | unweighted_median: 12,641,000
+line_code: 28 | description: Apparel, leather, and allied product manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 7,740,000 | maximum: 7,740,000 | unweighted_median: 7,740,000
+line_code: 29 | description: Paper manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 36,515,000 | maximum: 36,515,000 | unweighted_median: 36,515,000
+line_code: 30 | description: Printing and related support activities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 26,845,000 | maximum: 26,845,000 | unweighted_median: 26,845,000
+line_code: 31 | description: Petroleum and coal products manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 22,688,000 | maximum: 22,688,000 | unweighted_median: 22,688,000
+line_code: 32 | description: Chemical manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.36974e+08 | maximum: 1.36974e+08 | unweighted_median: 1.36974e+08
+line_code: 33 | description: Plastics and rubber products manufacturing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 62,338,000 | maximum: 62,338,000 | unweighted_median: 62,338,000
+line_code: 34 | description: Wholesale trade | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 7.33047e+08 | maximum: 7.33047e+08 | unweighted_median: 7.33047e+08
+line_code: 35 | description: Retail trade | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 8.4609e+08 | maximum: 8.4609e+08 | unweighted_median: 8.4609e+08
+line_code: 36 | description: Transportation and warehousing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 5.7724e+08 | maximum: 5.7724e+08 | unweighted_median: 5.7724e+08
+line_code: 37 | description: Air transportation | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 88,114,000 | maximum: 88,114,000 | unweighted_median: 88,114,000
+line_code: 38 | description: Rail transportation | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 26,365,000 | maximum: 26,365,000 | unweighted_median: 26,365,000
+line_code: 39 | description: Water transportation | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 9,882,000 | maximum: 9,882,000 | unweighted_median: 9,882,000
+line_code: 40 | description: Truck transportation | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.35191e+08 | maximum: 1.35191e+08 | unweighted_median: 1.35191e+08
+line_code: 41 | description: Transit and ground passenger transportation | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 37,736,000 | maximum: 37,736,000 | unweighted_median: 37,736,000
+line_code: 42 | description: Pipeline transportation | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 10,719,000 | maximum: 10,719,000 | unweighted_median: 10,719,000
+line_code: 43 | description: Other transportation and support activities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.47652e+08 | maximum: 1.47652e+08 | unweighted_median: 1.47652e+08
+line_code: 44 | description: Warehousing and storage | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.21581e+08 | maximum: 1.21581e+08 | unweighted_median: 1.21581e+08
+line_code: 45 | description: Information | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 5.93157e+08 | maximum: 5.93157e+08 | unweighted_median: 5.93157e+08
+line_code: 46 | description: Publishing industries (except Internet) | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.8417e+08 | maximum: 1.8417e+08 | unweighted_median: 1.8417e+08
+line_code: 47 | description: Motion picture and sound recording industries | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 42,580,000 | maximum: 42,580,000 | unweighted_median: 42,580,000
+line_code: 48 | description: Broadcasting (except Internet) and telecommunications | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.29892e+08 | maximum: 1.29892e+08 | unweighted_median: 1.29892e+08
+line_code: 49 | description: Data processing, hosting, and other information services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.36515e+08 | maximum: 2.36515e+08 | unweighted_median: 2.36515e+08
+line_code: 50 | description: Finance, insurance, real estate, rental, and leasing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.338953e+09 | maximum: 1.338953e+09 | unweighted_median: 1.338953e+09
+line_code: 51 | description: Finance and insurance | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.115372e+09 | maximum: 1.115372e+09 | unweighted_median: 1.115372e+09
+line_code: 52 | description: Monetary Authorities- central bank, credit intermediation, and related services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 3.54009e+08 | maximum: 3.54009e+08 | unweighted_median: 3.54009e+08
+line_code: 53 | description: Securities, commodity contracts, and other financial investments and related activities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 3.64518e+08 | maximum: 3.64518e+08 | unweighted_median: 3.64518e+08
+line_code: 54 | description: Insurance carriers and related activities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 3.90088e+08 | maximum: 3.90088e+08 | unweighted_median: 3.90088e+08
+line_code: 55 | description: Funds, trusts, and other financial vehicles | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 6,758,000 | maximum: 6,758,000 | unweighted_median: 6,758,000
+line_code: 56 | description: Real estate and rental and leasing | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.23581e+08 | maximum: 2.23581e+08 | unweighted_median: 2.23581e+08
+line_code: 57 | description: Real estate | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.72074e+08 | maximum: 1.72074e+08 | unweighted_median: 1.72074e+08
+line_code: 58 | description: Rental and leasing services and lessors of nonfinancial intangible assets | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 51,506,000 | maximum: 51,506,000 | unweighted_median: 51,506,000
+line_code: 59 | description: Professional and business services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.726576e+09 | maximum: 2.726576e+09 | unweighted_median: 2.726576e+09
+line_code: 60 | description: Professional, scientific, and technical services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.606279e+09 | maximum: 1.606279e+09 | unweighted_median: 1.606279e+09
+line_code: 61 | description: Legal services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.88351e+08 | maximum: 1.88351e+08 | unweighted_median: 1.88351e+08
+line_code: 62 | description: Computer systems design and related services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 4.45176e+08 | maximum: 4.45176e+08 | unweighted_median: 4.45176e+08
+line_code: 63 | description: Miscellaneous professional, scientific, and technical services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 9.72752e+08 | maximum: 9.72752e+08 | unweighted_median: 9.72752e+08
+line_code: 64 | description: Management of companies and enterprises | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 4.82843e+08 | maximum: 4.82843e+08 | unweighted_median: 4.82843e+08
+line_code: 65 | description: Administrative and support and waste management and remediation services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 6.37453e+08 | maximum: 6.37453e+08 | unweighted_median: 6.37453e+08
+line_code: 66 | description: Administrative and support services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 5.87967e+08 | maximum: 5.87967e+08 | unweighted_median: 5.87967e+08
+line_code: 67 | description: Waste management and remediation services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 49,486,000 | maximum: 49,486,000 | unweighted_median: 49,486,000
+line_code: 68 | description: Educational services, health care, and social assistance | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.03944e+09 | maximum: 2.03944e+09 | unweighted_median: 2.03944e+09
+line_code: 69 | description: Educational services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.68002e+08 | maximum: 2.68002e+08 | unweighted_median: 2.68002e+08
+line_code: 70 | description: Health care and social assistance | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.771438e+09 | maximum: 1.771438e+09 | unweighted_median: 1.771438e+09
+line_code: 71 | description: Ambulatory health care services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 8.16417e+08 | maximum: 8.16417e+08 | unweighted_median: 8.16417e+08
+line_code: 72 | description: Hospitals | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 5.61566e+08 | maximum: 5.61566e+08 | unweighted_median: 5.61566e+08
+line_code: 73 | description: Nursing and residential care facilities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.88682e+08 | maximum: 1.88682e+08 | unweighted_median: 1.88682e+08
+line_code: 74 | description: Social assistance | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.04772e+08 | maximum: 2.04772e+08 | unweighted_median: 2.04772e+08
+line_code: 75 | description: Arts, entertainment, recreation, accommodation, and food services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 7.37085e+08 | maximum: 7.37085e+08 | unweighted_median: 7.37085e+08
+line_code: 76 | description: Arts, entertainment, and recreation | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.70175e+08 | maximum: 1.70175e+08 | unweighted_median: 1.70175e+08
+line_code: 77 | description: Performing arts, spectator sports, museums, and related activities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 88,859,000 | maximum: 88,859,000 | unweighted_median: 88,859,000
+line_code: 78 | description: Amusement, gambling, and recreation industries | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 81,316,000 | maximum: 81,316,000 | unweighted_median: 81,316,000
+line_code: 79 | description: Accommodation and food services | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 5.6691e+08 | maximum: 5.6691e+08 | unweighted_median: 5.6691e+08
+line_code: 80 | description: Accommodation | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.0816e+08 | maximum: 1.0816e+08 | unweighted_median: 1.0816e+08
+line_code: 81 | description: Food services and drinking places | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 4.5875e+08 | maximum: 4.5875e+08 | unweighted_median: 4.5875e+08
+line_code: 82 | description: Other services (except government and government enterprises) | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 4.37654e+08 | maximum: 4.37654e+08 | unweighted_median: 4.37654e+08
+line_code: 83 | description: Government and government enterprises | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.585459e+09 | maximum: 2.585459e+09 | unweighted_median: 2.585459e+09
+line_code: 84 | description: Federal civilian | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 4.66815e+08 | maximum: 4.66815e+08 | unweighted_median: 4.66815e+08
+line_code: 85 | description: Military | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.13356e+08 | maximum: 2.13356e+08 | unweighted_median: 2.13356e+08
+line_code: 86 | description: State and local | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.905288e+09 | maximum: 1.905288e+09 | unweighted_median: 1.905288e+09
+line_code: 87 | description: Natural resources and mining | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.72548e+08 | maximum: 1.72548e+08 | unweighted_median: 1.72548e+08
+line_code: 88 | description: Trade | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.579137e+09 | maximum: 1.579137e+09 | unweighted_median: 1.579137e+09
+line_code: 89 | description: Transportation and utilities | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 6.80671e+08 | maximum: 6.80671e+08 | unweighted_median: 6.80671e+08
+line_code: 90 | description: Manufacturing and information | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.952291e+09 | maximum: 1.952291e+09 | unweighted_median: 1.952291e+09
+line_code: 91 | description: Private goods-producing industries 2/ | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 2.330991e+09 | maximum: 2.330991e+09 | unweighted_median: 2.330991e+09
+line_code: 92 | description: Private services-providing industries 3/ | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 1.0132672e+10 | maximum: 1.0132672e+10 | unweighted_median: 1.0132672e+10
+line_code: 100 | description: All industry total, overseas activity | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 42,261,000 | maximum: 42,261,000 | unweighted_median: 42,261,000
+line_code: 101 | description: Government and government enterprises, overseas activity | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 42,261,000 | maximum: 42,261,000 | unweighted_median: 42,261,000
+line_code: 102 | description: Federal civilian, overseas activity | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 6,361,000 | maximum: 6,361,000 | unweighted_median: 6,361,000
+line_code: 103 | description: Military, overseas activity | unit: Thousands of dollars | latest_reported_year: 2024 | geography_rows: 1 | minimum: 35,900,000 | maximum: 35,900,000 | unweighted_median: 35,900,000
+
+TRACEABLE FINDINGS
+f1: United States * / All industry total 1997 = 4.71322e+09 Thousands of dollars [CSV record 1; GeoFIPS=00000; LineCode=1; column=1997]
+f2: United States * / All industry total 2024 = 1.5049121e+10 Thousands of dollars [CSV record 1; GeoFIPS=00000; LineCode=1; column=2024]
+f3: United States * / Private industries 1997 = 3.823491e+09 Thousands of dollars [CSV record 2; GeoFIPS=00000; LineCode=2; column=1997]
+f4: United States * / Private industries 2024 = 1.2463662e+10 Thousands of dollars [CSV record 2; GeoFIPS=00000; LineCode=2; column=2024]
+f5: United States * / Agriculture, forestry, fishing and hunting 1997 = 26,612,000 Thousands of dollars [CSV record 3; GeoFIPS=00000; LineCode=3; column=1997]
+f6: United States * / Agriculture, forestry, fishing and hunting 2024 = 80,082,000 Thousands of dollars [CSV record 3; GeoFIPS=00000; LineCode=3; column=2024]
+f7: United States * / Farms 1997 = 17,142,000 Thousands of dollars [CSV record 4; GeoFIPS=00000; LineCode=4; column=1997]
+f8: United States * / Farms 2024 = 44,527,000 Thousands of dollars [CSV record 4; GeoFIPS=00000; LineCode=4; column=2024]
+f9: United States * / Forestry, fishing, and related activities 1997 = 9,470,000 Thousands of dollars [CSV record 5; GeoFIPS=00000; LineCode=5; column=1997]
+f10: United States * / Forestry, fishing, and related activities 2024 = 35,555,000 Thousands of dollars [CSV record 5; GeoFIPS=00000; LineCode=5; column=2024]
+f11: United States * / Mining, quarrying, and oil and gas extraction 1997 = 35,121,000 Thousands of dollars [CSV record 6; GeoFIPS=00000; LineCode=6; column=1997]
+f12: United States * / Mining, quarrying, and oil and gas extraction 2024 = 92,465,000 Thousands of dollars [CSV record 6; GeoFIPS=00000; LineCode=6; column=2024]
+f13: United States * / Oil and gas extraction 1997 = 12,295,000 Thousands of dollars [CSV record 7; GeoFIPS=00000; LineCode=7; column=1997]
+f14: United States * / Oil and gas extraction 2024 = 31,824,000 Thousands of dollars [CSV record 7; GeoFIPS=00000; LineCode=7; column=2024]
+f15: United States * / Mining (except oil and gas) 1997 = 13,837,000 Thousands of dollars [CSV record 8; GeoFIPS=00000; LineCode=8; column=1997]
+f16: United States * / Mining (except oil and gas) 2024 = 23,658,000 Thousands of dollars [CSV record 8; GeoFIPS=00000; LineCode=8; column=2024]
+f17: United States * / Support activities for mining 1997 = 8,989,000 Thousands of dollars [CSV record 9; GeoFIPS=00000; LineCode=9; column=1997]
+f18: United States * / Support activities for mining 2024 = 36,984,000 Thousands of dollars [CSV record 9; GeoFIPS=00000; LineCode=9; column=2024]
+f19: United States * / Utilities 1997 = 42,111,000 Thousands of dollars [CSV record 10; GeoFIPS=00000; LineCode=10; column=1997]
+f20: United States * / Utilities 2024 = 1.03431e+08 Thousands of dollars [CSV record 10; GeoFIPS=00000; LineCode=10; column=2024]
+f21: United States * / Construction 1997 = 2.28597e+08 Thousands of dollars [CSV record 11; GeoFIPS=00000; LineCode=11; column=1997]
+f22: United States * / Construction 2024 = 7.99308e+08 Thousands of dollars [CSV record 11; GeoFIPS=00000; LineCode=11; column=2024]
+f23: United States * / Manufacturing 1997 = 7.88978e+08 Thousands of dollars [CSV record 12; GeoFIPS=00000; LineCode=12; column=1997]
+f24: United States * / Manufacturing 2024 = 1.359135e+09 Thousands of dollars [CSV record 12; GeoFIPS=00000; LineCode=12; column=2024]
+f25: United States * / Durable goods manufacturing 1997 = 5.14618e+08 Thousands of dollars [CSV record 13; GeoFIPS=00000; LineCode=13; column=1997]
+f26: United States * / Durable goods manufacturing 2024 = 8.93038e+08 Thousands of dollars [CSV record 13; GeoFIPS=00000; LineCode=13; column=2024]
+f27: United States * / Wood product manufacturing 1997 = 19,184,000 Thousands of dollars [CSV record 14; GeoFIPS=00000; LineCode=14; column=1997]
+f28: United States * / Wood product manufacturing 2024 = 32,297,000 Thousands of dollars [CSV record 14; GeoFIPS=00000; LineCode=14; column=2024]
+f29: United States * / Nonmetallic mineral product manufacturing 1997 = 22,083,000 Thousands of dollars [CSV record 15; GeoFIPS=00000; LineCode=15; column=1997]
+f30: United States * / Nonmetallic mineral product manufacturing 2024 = 38,942,000 Thousands of dollars [CSV record 15; GeoFIPS=00000; LineCode=15; column=2024]
+f31: United States * / Primary metal manufacturing 1997 = 32,433,000 Thousands of dollars [CSV record 16; GeoFIPS=00000; LineCode=16; column=1997]
+f32: United States * / Primary metal manufacturing 2024 = 41,277,000 Thousands of dollars [CSV record 16; GeoFIPS=00000; LineCode=16; column=2024]
+f33: United States * / Fabricated metal product manufacturing 1997 = 70,801,000 Thousands of dollars [CSV record 17; GeoFIPS=00000; LineCode=17; column=1997]
+f34: United States * / Fabricated metal product manufacturing 2024 = 1.28099e+08 Thousands of dollars [CSV record 17; GeoFIPS=00000; LineCode=17; column=2024]
+f35: United States * / Machinery manufacturing 1997 = 72,354,000 Thousands of dollars [CSV record 18; GeoFIPS=00000; LineCode=18; column=1997]
+f36: United States * / Machinery manufacturing 2024 = 1.20012e+08 Thousands of dollars [CSV record 18; GeoFIPS=00000; LineCode=18; column=2024]
+f37: United States * / Computer and electronic product manufacturing 1997 = 1.09732e+08 Thousands of dollars [CSV record 19; GeoFIPS=00000; LineCode=19; column=1997]
+f38: United States * / Computer and electronic product manufacturing 2024 = 1.87376e+08 Thousands of dollars [CSV record 19; GeoFIPS=00000; LineCode=19; column=2024]
+f39: United States * / Electrical equipment, appliance, and component manufacturing 1997 = 27,006,000 Thousands of dollars [CSV record 20; GeoFIPS=00000; LineCode=20; column=1997]
+f40: United States * / Electrical equipment, appliance, and component manufacturing 2024 = 47,290,000 Thousands of dollars [CSV record 20; GeoFIPS=00000; LineCode=20; column=2024]
+f41: United States * / Motor vehicles, bodies and trailers, and parts manufacturing 1997 = 63,330,000 Thousands of dollars [CSV record 21; GeoFIPS=00000; LineCode=21; column=1997]
+f42: United States * / Motor vehicles, bodies and trailers, and parts manufacturing 2024 = 96,593,000 Thousands of dollars [CSV record 21; GeoFIPS=00000; LineCode=21; column=2024]
+f43: United States * / Other transportation equipment manufacturing 1997 = 46,559,000 Thousands of dollars [CSV record 22; GeoFIPS=00000; LineCode=22; column=1997]
+f44: United States * / Other transportation equipment manufacturing 2024 = 1.06326e+08 Thousands of dollars [CSV record 22; GeoFIPS=00000; LineCode=22; column=2024]
+f45: United States * / Furniture and related product manufacturing 1997 = 19,649,000 Thousands of dollars [CSV record 23; GeoFIPS=00000; LineCode=23; column=1997]
+f46: United States * / Furniture and related product manufacturing 2024 = 25,178,000 Thousands of dollars [CSV record 23; GeoFIPS=00000; LineCode=23; column=2024]
+f47: United States * / Miscellaneous manufacturing 1997 = 31,485,000 Thousands of dollars [CSV record 24; GeoFIPS=00000; LineCode=24; column=1997]
+f48: United States * / Miscellaneous manufacturing 2024 = 69,647,000 Thousands of dollars [CSV record 24; GeoFIPS=00000; LineCode=24; column=2024]
+f49: United States * / Nondurable goods manufacturing 1997 = 2.7436e+08 Thousands of dollars [CSV record 25; GeoFIPS=00000; LineCode=25; column=1997]
+f50: United States * / Nondurable goods manufacturing 2024 = 4.66097e+08 Thousands of dollars [CSV record 25; GeoFIPS=00000; LineCode=25; column=2024]
+f51: United States * / Food and beverage and tobacco product manufacturing 1997 = 62,596,000 Thousands of dollars [CSV record 26; GeoFIPS=00000; LineCode=26; column=1997]
+f52: United States * / Food and beverage and tobacco product manufacturing 2024 = 1.60356e+08 Thousands of dollars [CSV record 26; GeoFIPS=00000; LineCode=26; column=2024]
+f53: United States * / Textile mills and textile product mills 1997 = 20,287,000 Thousands of dollars [CSV record 27; GeoFIPS=00000; LineCode=27; column=1997]
+f54: United States * / Textile mills and textile product mills 2024 = 12,641,000 Thousands of dollars [CSV record 27; GeoFIPS=00000; LineCode=27; column=2024]
+f55: United States * / Apparel, leather, and allied product manufacturing 1997 = 18,055,000 Thousands of dollars [CSV record 28; GeoFIPS=00000; LineCode=28; column=1997]
+f56: United States * / Apparel, leather, and allied product manufacturing 2024 = 7,740,000 Thousands of dollars [CSV record 28; GeoFIPS=00000; LineCode=28; column=2024]
+f57: United States * / Paper manufacturing 1997 = 31,656,000 Thousands of dollars [CSV record 29; GeoFIPS=00000; LineCode=29; column=1997]
+f58: United States * / Paper manufacturing 2024 = 36,515,000 Thousands of dollars [CSV record 29; GeoFIPS=00000; LineCode=29; column=2024]
+f59: United States * / Printing and related support activities 1997 = 32,053,000 Thousands of dollars [CSV record 30; GeoFIPS=00000; LineCode=30; column=1997]
+f60: United States * / Printing and related support activities 2024 = 26,845,000 Thousands of dollars [CSV record 30; GeoFIPS=00000; LineCode=30; column=2024]
+f61: United States * / Petroleum and coal products manufacturing 1997 = 10,586,000 Thousands of dollars [CSV record 31; GeoFIPS=00000; LineCode=31; column=1997]
+f62: United States * / Petroleum and coal products manufacturing 2024 = 22,688,000 Thousands of dollars [CSV record 31; GeoFIPS=00000; LineCode=31; column=2024]
+f63: United States * / Chemical manufacturing 1997 = 64,476,000 Thousands of dollars [CSV record 32; GeoFIPS=00000; LineCode=32; column=1997]
+f64: United States * / Chemical manufacturing 2024 = 1.36974e+08 Thousands of dollars [CSV record 32; GeoFIPS=00000; LineCode=32; column=2024]
+f65: United States * / Plastics and rubber products manufacturing 1997 = 34,650,000 Thousands of dollars [CSV record 33; GeoFIPS=00000; LineCode=33; column=1997]
+f66: United States * / Plastics and rubber products manufacturing 2024 = 62,338,000 Thousands of dollars [CSV record 33; GeoFIPS=00000; LineCode=33; column=2024]
+f67: United States * / Wholesale trade 1997 = 2.66144e+08 Thousands of dollars [CSV record 34; GeoFIPS=00000; LineCode=34; column=1997]
+f68: United States * / Wholesale trade 2024 = 7.33047e+08 Thousands of dollars [CSV record 34; GeoFIPS=00000; LineCode=34; column=2024]
+f69: United States * / Retail trade 1997 = 3.38975e+08 Thousands of dollars [CSV record 35; GeoFIPS=00000; LineCode=35; column=1997]
+f70: United States * / Retail trade 2024 = 8.4609e+08 Thousands of dollars [CSV record 35; GeoFIPS=00000; LineCode=35; column=2024]
+f71: United States * / Transportation and warehousing 1997 = 1.66945e+08 Thousands of dollars [CSV record 36; GeoFIPS=00000; LineCode=36; column=1997]
+f72: United States * / Transportation and warehousing 2024 = 5.7724e+08 Thousands of dollars [CSV record 36; GeoFIPS=00000; LineCode=36; column=2024]
+f73: United States * / Air transportation 1997 = 29,767,000 Thousands of dollars [CSV record 37; GeoFIPS=00000; LineCode=37; column=1997]
+f74: United States * / Air transportation 2024 = 88,114,000 Thousands of dollars [CSV record 37; GeoFIPS=00000; LineCode=37; column=2024]
+f75: United States * / Rail transportation 1997 = 15,274,000 Thousands of dollars [CSV record 38; GeoFIPS=00000; LineCode=38; column=1997]
+f76: United States * / Rail transportation 2024 = 26,365,000 Thousands of dollars [CSV record 38; GeoFIPS=00000; LineCode=38; column=2024]
+f77: United States * / Water transportation 1997 = 3,131,000 Thousands of dollars [CSV record 39; GeoFIPS=00000; LineCode=39; column=1997]
+f78: United States * / Water transportation 2024 = 9,882,000 Thousands of dollars [CSV record 39; GeoFIPS=00000; LineCode=39; column=2024]
+f79: United States * / Truck transportation 1997 = 49,401,000 Thousands of dollars [CSV record 40; GeoFIPS=00000; LineCode=40; column=1997]
+f80: United States * / Truck transportation 2024 = 1.35191e+08 Thousands of dollars [CSV record 40; GeoFIPS=00000; LineCode=40; column=2024]
+f81: United States * / Transit and ground passenger transportation 1997 = 8,521,000 Thousands of dollars [CSV record 41; GeoFIPS=00000; LineCode=41; column=1997]
+f82: United States * / Transit and ground passenger transportation 2024 = 37,736,000 Thousands of dollars [CSV record 41; GeoFIPS=00000; LineCode=41; column=2024]
+f83: United States * / Pipeline transportation 1997 = 3,507,000 Thousands of dollars [CSV record 42; GeoFIPS=00000; LineCode=42; column=1997]
+f84: United States * / Pipeline transportation 2024 = 10,719,000 Thousands of dollars [CSV record 42; GeoFIPS=00000; LineCode=42; column=2024]
+f85: United States * / Other transportation and support activities 1997 = 40,025,000 Thousands of dollars [CSV record 43; GeoFIPS=00000; LineCode=43; column=1997]
+f86: United States * / Other transportation and support activities 2024 = 1.47652e+08 Thousands of dollars [CSV record 43; GeoFIPS=00000; LineCode=43; column=2024]
+f87: United States * / Warehousing and storage 1997 = 17,318,000 Thousands of dollars [CSV record 44; GeoFIPS=00000; LineCode=44; column=1997]
+f88: United States * / Warehousing and storage 2024 = 1.21581e+08 Thousands of dollars [CSV record 44; GeoFIPS=00000; LineCode=44; column=2024]
+f89: United States * / Information 1997 = 1.68967e+08 Thousands of dollars [CSV record 45; GeoFIPS=00000; LineCode=45; column=1997]
+f90: United States * / Information 2024 = 5.93157e+08 Thousands of dollars [CSV record 45; GeoFIPS=00000; LineCode=45; column=2024]
+f91: United States * / Publishing industries (except Internet) 1997 = 50,478,000 Thousands of dollars [CSV record 46; GeoFIPS=00000; LineCode=46; column=1997]
+f92: United States * / Publishing industries (except Internet) 2024 = 1.8417e+08 Thousands of dollars [CSV record 46; GeoFIPS=00000; LineCode=46; column=2024]
+f93: United States * / Motion picture and sound recording industries 1997 = 18,777,000 Thousands of dollars [CSV record 47; GeoFIPS=00000; LineCode=47; column=1997]
+f94: United States * / Motion picture and sound recording industries 2024 = 42,580,000 Thousands of dollars [CSV record 47; GeoFIPS=00000; LineCode=47; column=2024]
+f95: United States * / Broadcasting (except Internet) and telecommunications 1997 = 77,600,000 Thousands of dollars [CSV record 48; GeoFIPS=00000; LineCode=48; column=1997]
+f96: United States * / Broadcasting (except Internet) and telecommunications 2024 = 1.29892e+08 Thousands of dollars [CSV record 48; GeoFIPS=00000; LineCode=48; column=2024]
+f97: United States * / Data processing, hosting, and other information services 1997 = 22,112,000 Thousands of dollars [CSV record 49; GeoFIPS=00000; LineCode=49; column=1997]
+f98: United States * / Data processing, hosting, and other information services 2024 = 2.36515e+08 Thousands of dollars [CSV record 49; GeoFIPS=00000; LineCode=49; column=2024]
+f99: United States * / Finance, insurance, real estate, rental, and leasing 1997 = 3.76301e+08 Thousands of dollars [CSV record 50; GeoFIPS=00000; LineCode=50; column=1997]
+f100: United States * / Finance, insurance, real estate, rental, and leasing 2024 = 1.338953e+09 Thousands of dollars [CSV record 50; GeoFIPS=00000; LineCode=50; column=2024]
+f101: United States * / Finance and insurance 1997 = 3.14877e+08 Thousands of dollars [CSV record 51; GeoFIPS=00000; LineCode=51; column=1997]
+f102: United States * / Finance and insurance 2024 = 1.115372e+09 Thousands of dollars [CSV record 51; GeoFIPS=00000; LineCode=51; column=2024]
+f103: United States * / Monetary Authorities- central bank, credit intermediation, and related services 1997 = 1.09842e+08 Thousands of dollars [CSV record 52; GeoFIPS=00000; LineCode=52; column=1997]
+f104: United States * / Monetary Authorities- central bank, credit intermediation, and related services 2024 = 3.54009e+08 Thousands of dollars [CSV record 52; GeoFIPS=00000; LineCode=52; column=2024]
+f105: United States * / Securities, commodity contracts, and other financial investments and related activities 1997 = 91,674,000 Thousands of dollars [CSV record 53; GeoFIPS=00000; LineCode=53; column=1997]
+f106: United States * / Securities, commodity contracts, and other financial investments and related activities 2024 = 3.64518e+08 Thousands of dollars [CSV record 53; GeoFIPS=00000; LineCode=53; column=2024]
+f107: United States * / Insurance carriers and related activities 1997 = 1.12514e+08 Thousands of dollars [CSV record 54; GeoFIPS=00000; LineCode=54; column=1997]
+f108: United States * / Insurance carriers and related activities 2024 = 3.90088e+08 Thousands of dollars [CSV record 54; GeoFIPS=00000; LineCode=54; column=2024]
+f109: United States * / Funds, trusts, and other financial vehicles 1997 = 846,000 Thousands of dollars [CSV record 55; GeoFIPS=00000; LineCode=55; column=1997]
+f110: United States * / Funds, trusts, and other financial vehicles 2024 = 6,758,000 Thousands of dollars [CSV record 55; GeoFIPS=00000; LineCode=55; column=2024]
+f111: United States * / Real estate and rental and leasing 1997 = 61,424,000 Thousands of dollars [CSV record 56; GeoFIPS=00000; LineCode=56; column=1997]
+f112: United States * / Real estate and rental and leasing 2024 = 2.23581e+08 Thousands of dollars [CSV record 56; GeoFIPS=00000; LineCode=56; column=2024]
+f113: United States * / Real estate 1997 = 42,277,000 Thousands of dollars [CSV record 57; GeoFIPS=00000; LineCode=57; column=1997]
+f114: United States * / Real estate 2024 = 1.72074e+08 Thousands of dollars [CSV record 57; GeoFIPS=00000; LineCode=57; column=2024]
+f115: United States * / Rental and leasing services and lessors of nonfinancial intangible assets 1997 = 19,147,000 Thousands of dollars [CSV record 58; GeoFIPS=00000; LineCode=58; column=1997]
+f116: United States * / Rental and leasing services and lessors of nonfinancial intangible assets 2024 = 51,506,000 Thousands of dollars [CSV record 58; GeoFIPS=00000; LineCode=58; column=2024]
+f117: United States * / Professional and business services 1997 = 5.91808e+08 Thousands of dollars [CSV record 59; GeoFIPS=00000; LineCode=59; column=1997]
+f118: United States * / Professional and business services 2024 = 2.726576e+09 Thousands of dollars [CSV record 59; GeoFIPS=00000; LineCode=59; column=2024]
+f119: United States * / Professional, scientific, and technical services 1997 = 3.26887e+08 Thousands of dollars [CSV record 60; GeoFIPS=00000; LineCode=60; column=1997]
+f120: United States * / Professional, scientific, and technical services 2024 = 1.606279e+09 Thousands of dollars [CSV record 60; GeoFIPS=00000; LineCode=60; column=2024]
+f121: United States * / Legal services 1997 = 60,468,000 Thousands of dollars [CSV record 61; GeoFIPS=00000; LineCode=61; column=1997]
+f122: United States * / Legal services 2024 = 1.88351e+08 Thousands of dollars [CSV record 61; GeoFIPS=00000; LineCode=61; column=2024]
+f123: United States * / Computer systems design and related services 1997 = 64,145,000 Thousands of dollars [CSV record 62; GeoFIPS=00000; LineCode=62; column=1997]
+f124: United States * / Computer systems design and related services 2024 = 4.45176e+08 Thousands of dollars [CSV record 62; GeoFIPS=00000; LineCode=62; column=2024]
+f125: United States * / Miscellaneous professional, scientific, and technical services 1997 = 2.02274e+08 Thousands of dollars [CSV record 63; GeoFIPS=00000; LineCode=63; column=1997]
+f126: United States * / Miscellaneous professional, scientific, and technical services 2024 = 9.72752e+08 Thousands of dollars [CSV record 63; GeoFIPS=00000; LineCode=63; column=2024]
+f127: United States * / Management of companies and enterprises 1997 = 1.05913e+08 Thousands of dollars [CSV record 64; GeoFIPS=00000; LineCode=64; column=1997]
+f128: United States * / Management of companies and enterprises 2024 = 4.82843e+08 Thousands of dollars [CSV record 64; GeoFIPS=00000; LineCode=64; column=2024]
+f129: United States * / Administrative and support and waste management and remediation services 1997 = 1.59007e+08 Thousands of dollars [CSV record 65; GeoFIPS=00000; LineCode=65; column=1997]
+f130: United States * / Administrative and support and waste management and remediation services 2024 = 6.37453e+08 Thousands of dollars [CSV record 65; GeoFIPS=00000; LineCode=65; column=2024]
+f131: United States * / Administrative and support services 1997 = 1.46489e+08 Thousands of dollars [CSV record 66; GeoFIPS=00000; LineCode=66; column=1997]
+f132: United States * / Administrative and support services 2024 = 5.87967e+08 Thousands of dollars [CSV record 66; GeoFIPS=00000; LineCode=66; column=2024]
+f133: United States * / Waste management and remediation services 1997 = 12,518,000 Thousands of dollars [CSV record 67; GeoFIPS=00000; LineCode=67; column=1997]
+f134: United States * / Waste management and remediation services 2024 = 49,486,000 Thousands of dollars [CSV record 67; GeoFIPS=00000; LineCode=67; column=2024]
+f135: United States * / Educational services, health care, and social assistance 1997 = 4.74538e+08 Thousands of dollars [CSV record 68; GeoFIPS=00000; LineCode=68; column=1997]
+f136: United States * / Educational services, health care, and social assistance 2024 = 2.03944e+09 Thousands of dollars [CSV record 68; GeoFIPS=00000; LineCode=68; column=2024]
+f137: United States * / Educational services 1997 = 59,220,000 Thousands of dollars [CSV record 69; GeoFIPS=00000; LineCode=69; column=1997]
+f138: United States * / Educational services 2024 = 2.68002e+08 Thousands of dollars [CSV record 69; GeoFIPS=00000; LineCode=69; column=2024]
+f139: United States * / Health care and social assistance 1997 = 4.15317e+08 Thousands of dollars [CSV record 70; GeoFIPS=00000; LineCode=70; column=1997]
+f140: United States * / Health care and social assistance 2024 = 1.771438e+09 Thousands of dollars [CSV record 70; GeoFIPS=00000; LineCode=70; column=2024]
+f141: United States * / Ambulatory health care services 1997 = 1.89531e+08 Thousands of dollars [CSV record 71; GeoFIPS=00000; LineCode=71; column=1997]
+f142: United States * / Ambulatory health care services 2024 = 8.16417e+08 Thousands of dollars [CSV record 71; GeoFIPS=00000; LineCode=71; column=2024]
+f143: United States * / Hospitals 1997 = 1.40606e+08 Thousands of dollars [CSV record 72; GeoFIPS=00000; LineCode=72; column=1997]
+f144: United States * / Hospitals 2024 = 5.61566e+08 Thousands of dollars [CSV record 72; GeoFIPS=00000; LineCode=72; column=2024]
+f145: United States * / Nursing and residential care facilities 1997 = 53,258,000 Thousands of dollars [CSV record 73; GeoFIPS=00000; LineCode=73; column=1997]
+f146: United States * / Nursing and residential care facilities 2024 = 1.88682e+08 Thousands of dollars [CSV record 73; GeoFIPS=00000; LineCode=73; column=2024]
+f147: United States * / Social assistance 1997 = 31,922,000 Thousands of dollars [CSV record 74; GeoFIPS=00000; LineCode=74; column=1997]
+f148: United States * / Social assistance 2024 = 2.04772e+08 Thousands of dollars [CSV record 74; GeoFIPS=00000; LineCode=74; column=2024]
+f149: United States * / Arts, entertainment, recreation, accommodation, and food services 1997 = 1.77236e+08 Thousands of dollars [CSV record 75; GeoFIPS=00000; LineCode=75; column=1997]
+f150: United States * / Arts, entertainment, recreation, accommodation, and food services 2024 = 7.37085e+08 Thousands of dollars [CSV record 75; GeoFIPS=00000; LineCode=75; column=2024]
+f151: United States * / Arts, entertainment, and recreation 1997 = 41,718,000 Thousands of dollars [CSV record 76; GeoFIPS=00000; LineCode=76; column=1997]
+f152: United States * / Arts, entertainment, and recreation 2024 = 1.70175e+08 Thousands of dollars [CSV record 76; GeoFIPS=00000; LineCode=76; column=2024]
+f153: United States * / Performing arts, spectator sports, museums, and related activities 1997 = 20,011,000 Thousands of dollars [CSV record 77; GeoFIPS=00000; LineCode=77; column=1997]
+f154: United States * / Performing arts, spectator sports, museums, and related activities 2024 = 88,859,000 Thousands of dollars [CSV record 77; GeoFIPS=00000; LineCode=77; column=2024]
+f155: United States * / Amusement, gambling, and recreation industries 1997 = 21,707,000 Thousands of dollars [CSV record 78; GeoFIPS=00000; LineCode=78; column=1997]
+f156: United States * / Amusement, gambling, and recreation industries 2024 = 81,316,000 Thousands of dollars [CSV record 78; GeoFIPS=00000; LineCode=78; column=2024]
+f157: United States * / Accommodation and food services 1997 = 1.35518e+08 Thousands of dollars [CSV record 79; GeoFIPS=00000; LineCode=79; column=1997]
+f158: United States * / Accommodation and food services 2024 = 5.6691e+08 Thousands of dollars [CSV record 79; GeoFIPS=00000; LineCode=79; column=2024]
+f159: United States * / Accommodation 1997 = 37,591,000 Thousands of dollars [CSV record 80; GeoFIPS=00000; LineCode=80; column=1997]
+f160: United States * / Accommodation 2024 = 1.0816e+08 Thousands of dollars [CSV record 80; GeoFIPS=00000; LineCode=80; column=2024]
+f161: United States * / Food services and drinking places 1997 = 97,927,000 Thousands of dollars [CSV record 81; GeoFIPS=00000; LineCode=81; column=1997]
+f162: United States * / Food services and drinking places 2024 = 4.5875e+08 Thousands of dollars [CSV record 81; GeoFIPS=00000; LineCode=81; column=2024]
+f163: United States * / Other services (except government and government enterprises) 1997 = 1.41158e+08 Thousands of dollars [CSV record 82; GeoFIPS=00000; LineCode=82; column=1997]
+f164: United States * / Other services (except government and government enterprises) 2024 = 4.37654e+08 Thousands of dollars [CSV record 82; GeoFIPS=00000; LineCode=82; column=2024]
+f165: United States * / Government and government enterprises 1997 = 8.89729e+08 Thousands of dollars [CSV record 83; GeoFIPS=00000; LineCode=83; column=1997]
+f166: United States * / Government and government enterprises 2024 = 2.585459e+09 Thousands of dollars [CSV record 83; GeoFIPS=00000; LineCode=83; column=2024]
+f167: United States * / Federal civilian 1997 = 1.61498e+08 Thousands of dollars [CSV record 84; GeoFIPS=00000; LineCode=84; column=1997]
+f168: United States * / Federal civilian 2024 = 4.66815e+08 Thousands of dollars [CSV record 84; GeoFIPS=00000; LineCode=84; column=2024]
+f169: United States * / Military 1997 = 69,275,000 Thousands of dollars [CSV record 85; GeoFIPS=00000; LineCode=85; column=1997]
+f170: United States * / Military 2024 = 2.13356e+08 Thousands of dollars [CSV record 85; GeoFIPS=00000; LineCode=85; column=2024]
+f171: United States * / State and local 1997 = 6.58954e+08 Thousands of dollars [CSV record 86; GeoFIPS=00000; LineCode=86; column=1997]
+f172: United States * / State and local 2024 = 1.905288e+09 Thousands of dollars [CSV record 86; GeoFIPS=00000; LineCode=86; column=2024]
+f173: United States * / Natural resources and mining 1997 = 61,733,000 Thousands of dollars [CSV record 87; GeoFIPS=00000; LineCode=87; column=1997]
+f174: United States * / Natural resources and mining 2024 = 1.72548e+08 Thousands of dollars [CSV record 87; GeoFIPS=00000; LineCode=87; column=2024]
+f175: United States * / Trade 1997 = 6.05119e+08 Thousands of dollars [CSV record 88; GeoFIPS=00000; LineCode=88; column=1997]
+f176: United States * / Trade 2024 = 1.579137e+09 Thousands of dollars [CSV record 88; GeoFIPS=00000; LineCode=88; column=2024]
+f177: United States * / Transportation and utilities 1997 = 2.09056e+08 Thousands of dollars [CSV record 89; GeoFIPS=00000; LineCode=89; column=1997]
+f178: United States * / Transportation and utilities 2024 = 6.80671e+08 Thousands of dollars [CSV record 89; GeoFIPS=00000; LineCode=89; column=2024]
+f179: United States * / Manufacturing and information 1997 = 9.57945e+08 Thousands of dollars [CSV record 90; GeoFIPS=00000; LineCode=90; column=1997]
+f180: United States * / Manufacturing and information 2024 = 1.952291e+09 Thousands of dollars [CSV record 90; GeoFIPS=00000; LineCode=90; column=2024]
+f181: United States * / Private goods-producing industries 2/ 1997 = 1.079308e+09 Thousands of dollars [CSV record 91; GeoFIPS=00000; LineCode=91; column=1997]
+f182: United States * / Private goods-producing industries 2/ 2024 = 2.330991e+09 Thousands of dollars [CSV record 91; GeoFIPS=00000; LineCode=91; column=2024]
+f183: United States * / Private services-providing industries 3/ 1997 = 2.744183e+09 Thousands of dollars [CSV record 92; GeoFIPS=00000; LineCode=92; column=1997]
+f184: United States * / Private services-providing industries 3/ 2024 = 1.0132672e+10 Thousands of dollars [CSV record 92; GeoFIPS=00000; LineCode=92; column=2024]
+f185: United States * / All industry total, overseas activity 1997 = 11,377,000 Thousands of dollars [CSV record 93; GeoFIPS=00000; LineCode=100; column=1997]
+f186: United States * / All industry total, overseas activity 2024 = 42,261,000 Thousands of dollars [CSV record 93; GeoFIPS=00000; LineCode=100; column=2024]
+f187: United States * / Government and government enterprises, overseas activity 1997 = 11,377,000 Thousands of dollars [CSV record 94; GeoFIPS=00000; LineCode=101; column=1997]
+f188: United States * / Government and government enterprises, overseas activity 2024 = 42,261,000 Thousands of dollars [CSV record 94; GeoFIPS=00000; LineCode=101; column=2024]
+f189: United States * / Federal civilian, overseas activity 1997 = 2,897,000 Thousands of dollars [CSV record 95; GeoFIPS=00000; LineCode=102; column=1997]
+f190: United States * / Federal civilian, overseas activity 2024 = 6,361,000 Thousands of dollars [CSV record 95; GeoFIPS=00000; LineCode=102; column=2024]
+f191: United States * / Military, overseas activity 1997 = 8,480,000 Thousands of dollars [CSV record 96; GeoFIPS=00000; LineCode=103; column=1997]
+f192: United States * / Military, overseas activity 2024 = 35,900,000 Thousands of dollars [CSV record 96; GeoFIPS=00000; LineCode=103; column=2024]
+c1: All industry total endpoint difference = 1.0335901e+10 Thousands of dollars; difference(f2, f1). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c2: Private industries endpoint difference = 8.640171e+09 Thousands of dollars; difference(f4, f3). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c3: Agriculture, forestry, fishing and hunting endpoint difference = 53,470,000 Thousands of dollars; difference(f6, f5). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c4: Farms endpoint difference = 27,385,000 Thousands of dollars; difference(f8, f7). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c5: Forestry, fishing, and related activities endpoint difference = 26,085,000 Thousands of dollars; difference(f10, f9). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c6: Mining, quarrying, and oil and gas extraction endpoint difference = 57,344,000 Thousands of dollars; difference(f12, f11). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c7: Oil and gas extraction endpoint difference = 19,529,000 Thousands of dollars; difference(f14, f13). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c8: Mining (except oil and gas) endpoint difference = 9,821,000 Thousands of dollars; difference(f16, f15). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c9: Support activities for mining endpoint difference = 27,995,000 Thousands of dollars; difference(f18, f17). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c10: Utilities endpoint difference = 61,320,000 Thousands of dollars; difference(f20, f19). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c11: Construction endpoint difference = 5.70711e+08 Thousands of dollars; difference(f22, f21). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c12: Manufacturing endpoint difference = 5.70157e+08 Thousands of dollars; difference(f24, f23). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c13: Durable goods manufacturing endpoint difference = 3.7842e+08 Thousands of dollars; difference(f26, f25). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c14: Wood product manufacturing endpoint difference = 13,113,000 Thousands of dollars; difference(f28, f27). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c15: Nonmetallic mineral product manufacturing endpoint difference = 16,859,000 Thousands of dollars; difference(f30, f29). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c16: Primary metal manufacturing endpoint difference = 8,844,000 Thousands of dollars; difference(f32, f31). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c17: Fabricated metal product manufacturing endpoint difference = 57,298,000 Thousands of dollars; difference(f34, f33). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c18: Machinery manufacturing endpoint difference = 47,658,000 Thousands of dollars; difference(f36, f35). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c19: Computer and electronic product manufacturing endpoint difference = 77,644,000 Thousands of dollars; difference(f38, f37). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c20: Electrical equipment, appliance, and component manufacturing endpoint difference = 20,284,000 Thousands of dollars; difference(f40, f39). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c21: Motor vehicles, bodies and trailers, and parts manufacturing endpoint difference = 33,263,000 Thousands of dollars; difference(f42, f41). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c22: Other transportation equipment manufacturing endpoint difference = 59,767,000 Thousands of dollars; difference(f44, f43). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c23: Furniture and related product manufacturing endpoint difference = 5,529,000 Thousands of dollars; difference(f46, f45). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c24: Miscellaneous manufacturing endpoint difference = 38,162,000 Thousands of dollars; difference(f48, f47). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c25: Nondurable goods manufacturing endpoint difference = 1.91737e+08 Thousands of dollars; difference(f50, f49). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c26: Food and beverage and tobacco product manufacturing endpoint difference = 97,760,000 Thousands of dollars; difference(f52, f51). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c27: Textile mills and textile product mills endpoint difference = -7,646,000 Thousands of dollars; difference(f54, f53). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c28: Apparel, leather, and allied product manufacturing endpoint difference = -10,315,000 Thousands of dollars; difference(f56, f55). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c29: Paper manufacturing endpoint difference = 4,859,000 Thousands of dollars; difference(f58, f57). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c30: Printing and related support activities endpoint difference = -5,208,000 Thousands of dollars; difference(f60, f59). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c31: Petroleum and coal products manufacturing endpoint difference = 12,102,000 Thousands of dollars; difference(f62, f61). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c32: Chemical manufacturing endpoint difference = 72,498,000 Thousands of dollars; difference(f64, f63). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c33: Plastics and rubber products manufacturing endpoint difference = 27,688,000 Thousands of dollars; difference(f66, f65). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c34: Wholesale trade endpoint difference = 4.66903e+08 Thousands of dollars; difference(f68, f67). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c35: Retail trade endpoint difference = 5.07115e+08 Thousands of dollars; difference(f70, f69). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c36: Transportation and warehousing endpoint difference = 4.10295e+08 Thousands of dollars; difference(f72, f71). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c37: Air transportation endpoint difference = 58,347,000 Thousands of dollars; difference(f74, f73). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c38: Rail transportation endpoint difference = 11,091,000 Thousands of dollars; difference(f76, f75). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c39: Water transportation endpoint difference = 6,751,000 Thousands of dollars; difference(f78, f77). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c40: Truck transportation endpoint difference = 85,790,000 Thousands of dollars; difference(f80, f79). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c41: Transit and ground passenger transportation endpoint difference = 29,215,000 Thousands of dollars; difference(f82, f81). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c42: Pipeline transportation endpoint difference = 7,212,000 Thousands of dollars; difference(f84, f83). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c43: Other transportation and support activities endpoint difference = 1.07627e+08 Thousands of dollars; difference(f86, f85). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c44: Warehousing and storage endpoint difference = 1.04263e+08 Thousands of dollars; difference(f88, f87). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c45: Information endpoint difference = 4.2419e+08 Thousands of dollars; difference(f90, f89). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c46: Publishing industries (except Internet) endpoint difference = 1.33692e+08 Thousands of dollars; difference(f92, f91). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c47: Motion picture and sound recording industries endpoint difference = 23,803,000 Thousands of dollars; difference(f94, f93). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c48: Broadcasting (except Internet) and telecommunications endpoint difference = 52,292,000 Thousands of dollars; difference(f96, f95). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c49: Data processing, hosting, and other information services endpoint difference = 2.14403e+08 Thousands of dollars; difference(f98, f97). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c50: Finance, insurance, real estate, rental, and leasing endpoint difference = 9.62652e+08 Thousands of dollars; difference(f100, f99). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c51: Finance and insurance endpoint difference = 8.00495e+08 Thousands of dollars; difference(f102, f101). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c52: Monetary Authorities- central bank, credit intermediation, and related services endpoint difference = 2.44167e+08 Thousands of dollars; difference(f104, f103). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c53: Securities, commodity contracts, and other financial investments and related activities endpoint difference = 2.72844e+08 Thousands of dollars; difference(f106, f105). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c54: Insurance carriers and related activities endpoint difference = 2.77574e+08 Thousands of dollars; difference(f108, f107). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c55: Funds, trusts, and other financial vehicles endpoint difference = 5,912,000 Thousands of dollars; difference(f110, f109). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c56: Real estate and rental and leasing endpoint difference = 1.62157e+08 Thousands of dollars; difference(f112, f111). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c57: Real estate endpoint difference = 1.29797e+08 Thousands of dollars; difference(f114, f113). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c58: Rental and leasing services and lessors of nonfinancial intangible assets endpoint difference = 32,359,000 Thousands of dollars; difference(f116, f115). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c59: Professional and business services endpoint difference = 2.134768e+09 Thousands of dollars; difference(f118, f117). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c60: Professional, scientific, and technical services endpoint difference = 1.279392e+09 Thousands of dollars; difference(f120, f119). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c61: Legal services endpoint difference = 1.27883e+08 Thousands of dollars; difference(f122, f121). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c62: Computer systems design and related services endpoint difference = 3.81031e+08 Thousands of dollars; difference(f124, f123). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c63: Miscellaneous professional, scientific, and technical services endpoint difference = 7.70478e+08 Thousands of dollars; difference(f126, f125). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c64: Management of companies and enterprises endpoint difference = 3.7693e+08 Thousands of dollars; difference(f128, f127). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c65: Administrative and support and waste management and remediation services endpoint difference = 4.78446e+08 Thousands of dollars; difference(f130, f129). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c66: Administrative and support services endpoint difference = 4.41478e+08 Thousands of dollars; difference(f132, f131). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c67: Waste management and remediation services endpoint difference = 36,968,000 Thousands of dollars; difference(f134, f133). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c68: Educational services, health care, and social assistance endpoint difference = 1.564902e+09 Thousands of dollars; difference(f136, f135). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c69: Educational services endpoint difference = 2.08782e+08 Thousands of dollars; difference(f138, f137). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c70: Health care and social assistance endpoint difference = 1.356121e+09 Thousands of dollars; difference(f140, f139). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c71: Ambulatory health care services endpoint difference = 6.26886e+08 Thousands of dollars; difference(f142, f141). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c72: Hospitals endpoint difference = 4.2096e+08 Thousands of dollars; difference(f144, f143). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c73: Nursing and residential care facilities endpoint difference = 1.35424e+08 Thousands of dollars; difference(f146, f145). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c74: Social assistance endpoint difference = 1.7285e+08 Thousands of dollars; difference(f148, f147). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c75: Arts, entertainment, recreation, accommodation, and food services endpoint difference = 5.59849e+08 Thousands of dollars; difference(f150, f149). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c76: Arts, entertainment, and recreation endpoint difference = 1.28457e+08 Thousands of dollars; difference(f152, f151). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c77: Performing arts, spectator sports, museums, and related activities endpoint difference = 68,848,000 Thousands of dollars; difference(f154, f153). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c78: Amusement, gambling, and recreation industries endpoint difference = 59,609,000 Thousands of dollars; difference(f156, f155). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c79: Accommodation and food services endpoint difference = 4.31392e+08 Thousands of dollars; difference(f158, f157). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c80: Accommodation endpoint difference = 70,569,000 Thousands of dollars; difference(f160, f159). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c81: Food services and drinking places endpoint difference = 3.60823e+08 Thousands of dollars; difference(f162, f161). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c82: Other services (except government and government enterprises) endpoint difference = 2.96496e+08 Thousands of dollars; difference(f164, f163). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c83: Government and government enterprises endpoint difference = 1.69573e+09 Thousands of dollars; difference(f166, f165). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c84: Federal civilian endpoint difference = 3.05317e+08 Thousands of dollars; difference(f168, f167). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c85: Military endpoint difference = 1.44081e+08 Thousands of dollars; difference(f170, f169). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c86: State and local endpoint difference = 1.246334e+09 Thousands of dollars; difference(f172, f171). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c87: Natural resources and mining endpoint difference = 1.10815e+08 Thousands of dollars; difference(f174, f173). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c88: Trade endpoint difference = 9.74018e+08 Thousands of dollars; difference(f176, f175). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c89: Transportation and utilities endpoint difference = 4.71615e+08 Thousands of dollars; difference(f178, f177). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c90: Manufacturing and information endpoint difference = 9.94346e+08 Thousands of dollars; difference(f180, f179). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c91: Private goods-producing industries 2/ endpoint difference = 1.251683e+09 Thousands of dollars; difference(f182, f181). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c92: Private services-providing industries 3/ endpoint difference = 7.388489e+09 Thousands of dollars; difference(f184, f183). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c93: All industry total, overseas activity endpoint difference = 30,884,000 Thousands of dollars; difference(f186, f185). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c94: Government and government enterprises, overseas activity endpoint difference = 30,884,000 Thousands of dollars; difference(f188, f187). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c95: Federal civilian, overseas activity endpoint difference = 3,464,000 Thousands of dollars; difference(f190, f189). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c96: Military, overseas activity endpoint difference = 27,420,000 Thousands of dollars; difference(f192, f191). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Compare the local income or price context with your own documented spending rather than treating an area average as your income.
+Care delivery: Use the regional economic measure to assess affordability or workforce context; obtain actual care utilization separately.
+Payers and policy: Match units and geographic scope before using this benchmark. Separate observed economic scale from the illness-attribution and intervention-effect evidence still needed.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme or Long COVID patient indicator or causal burden estimate.
+No measured fraction of work loss or spending recoverable through a proposed intervention.
+Full-area and geographic subsets share observations; they are not independent estimates.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

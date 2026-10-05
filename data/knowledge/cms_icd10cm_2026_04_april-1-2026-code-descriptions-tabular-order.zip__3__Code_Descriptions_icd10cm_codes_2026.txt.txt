@@ -1,0 +1,113 @@
+april-1-2026-code-descriptions-tabular-order.zip
+SOURCE: cms/icd10cm_2026_04/april-1-2026-code-descriptions-tabular-order.zip :: Code Descriptions/icd10cm_codes_2026.txt
+SHA-256: 4fd9d8b37f02ab42827c7e7be30595c005b0cc3a6bae7a515e3f4c86b6918688
+CONDITION SCOPE: both
+ROLE: lyme_and_longcovid_coding_guidance
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+DOCUMENT IDENTITY AND SCOPE
+Code Descriptions/icd10cm_codes_2026.txt: this package retains ONLY the pages/sections that actually name Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 coding, out of 1868 total - 2 matched. A document with zero matches genuinely contains no Lyme- or Long-COVID-specific guidance, which is a real finding, not a missing extraction.
+
+WHAT NEEDS A DECISION
+These are real official coding rules or index entries, not a clinical outcome or cost figure - use them only to verify a diagnosis is coded per current federal guidance. A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+SOURCE PASSAGES SPECIFICALLY NAMING LYME OR LONG COVID CODING
+Every page/section of this document that actually names Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 - not a generic match on common words like "cost" or "work".
+location: lines 441-480 | source_text: A665    Gangosa
+A666    Bone and joint lesions of yaws
+A667    Other manifestations of yaws
+A668    Latent yaws
+A669    Yaws, unspecified
+A670    Primary lesions of pinta
+A671    Intermediate lesions of pinta
+A672    Late lesions of pinta
+A673    Mixed lesions of pinta
+A679    Pinta, unspecified
+A680    Louse-borne relapsing fever
+A681    Tick-borne relapsing fever
+A689    Relapsing fever, unspecified
+A690    Necrotizing ulcerative stomatitis
+A691    Other Vincent's infections
+A6920   Lyme disease, unspecified
+A6921   Meningitis due to Lyme disease
+A6922   Other neurologic disorders in Lyme disease
+A6923   Arthritis due to Lyme disease
+A6929   Other conditions associated with Lyme disease
+A698    Other specified spirochetal infections
+A699    Spirochetal infection, unspecified
+A70     Chlamydia psittaci infections
+A710    Initial stage of trachoma
+A711    Active stage of trachoma
+A719    Trachoma, unspecified
+A740    Chlamydial conjunctivitis
+A7481   Chlamydial peritonitis
+A7489   Other chlamydial diseases
+A749    Chlamydial infection, unspecified
+A750    Epidemic louse-borne typhus fever due to Rickettsia prowazekii
+A751    Recrudescent typhus [Brill's disease]
+A752    Typhus fever due to Rickettsia typhi
+A753    Typhus fever due to Rickettsia tsutsugamushi
+A759    Typhus fever, unspecified
+A770    Spotted fever due to Rickettsia rickettsii
+A771    Spotted fever due to Rickettsia conorii
+A772    Spotted fever due to Rickettsia siberica
+A773    Spotted fever due to Rickettsia australis
+A7740   Ehrlichiosis, unspecified
+location: lines 74681-74719 | source_text: Z9716   Presence of artificial legs, bilateral (complete) (partial)
+Z972    Presence of dental prosthetic device (complete) (partial)
+Z973    Presence of spectacles and contact lenses
+Z974    Presence of external hearing-aid
+Z975    Presence of (intrauterine) contraceptive device
+Z978    Presence of other specified devices
+Z980    Intestinal bypass and anastomosis status
+Z981    Arthrodesis status
+Z982    Presence of cerebrospinal fluid drainage device
+Z983    Post therapeutic collapse of lung status
+Z9841   Cataract extraction status, right eye
+Z9842   Cataract extraction status, left eye
+Z9849   Cataract extraction status, unspecified eye
+Z9851   Tubal ligation status
+Z9852   Vasectomy status
+Z9861   Coronary angioplasty status
+Z9862   Peripheral vascular angioplasty status
+Z98810  Dental sealant status
+Z98811  Dental restoration status
+Z98818  Other dental procedure status
+Z9882   Breast implant status
+Z9883   Filtering (vitreous) bleb after glaucoma surgery status
+Z9884   Bariatric surgery status
+Z9885   Transplanted organ removal status
+Z9886   Personal history of breast implant removal
+Z98870  Personal history of in utero procedure during pregnancy
+Z98871  Personal history of in utero procedure while a fetus
+Z98890  Other specified postprocedural states
+Z98891  History of uterine scar from previous surgery
+Z990    Dependence on aspirator
+Z9911   Dependence on respirator [ventilator] status
+Z9912   Encounter for respirator [ventilator] dependence during power failure
+Z992    Dependence on renal dialysis
+Z993    Dependence on wheelchair
+Z9981   Dependence on supplemental oxygen
+Z9989   Dependence on other enabling machines and devices
+U070    Vaping-related disorder
+U071    COVID-19
+U099    Post COVID-19 condition, unspecified
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No intervention effectiveness or avoided cost is supplied unless the source explicitly reports it.
+Unreviewed variables are not approved model inputs.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

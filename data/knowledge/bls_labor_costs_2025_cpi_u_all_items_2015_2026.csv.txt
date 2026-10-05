@@ -1,0 +1,64 @@
+cpi_u_all_items_2015_2026.csv
+SOURCE: bls/labor_costs_2025/cpi_u_all_items_2015_2026.csv
+SHA-256: 91f787b8ef6d07a606fc3ed00a6b1bbd3ee31a79df9aadc849907911e8f68b97
+CONDITION SCOPE: general
+ROLE: general_price_year_conversion
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+ECONOMIC USE
+The latest usable annual index in this retained file is 2025. Convert a documented origin-year dollar amount with target CPI/origin CPI. This changes purchasing-power units, not disease burden, insurance coverage or actual patient payment. Do not adjust an amount twice if its paper already reports target-year dollars.
+
+ANNUAL INDEX COMPLETENESS
+Published M13 is retained even if one monthly value is missing. Partial 2026 is not made into a full-year index.
+year: 2015 | valid_months: 12 | annual_index: 237.017 | method: published M13 annual average
+year: 2016 | valid_months: 12 | annual_index: 240.007 | method: published M13 annual average
+year: 2017 | valid_months: 12 | annual_index: 245.12 | method: published M13 annual average
+year: 2018 | valid_months: 12 | annual_index: 251.107 | method: published M13 annual average
+year: 2019 | valid_months: 12 | annual_index: 255.657 | method: published M13 annual average
+year: 2020 | valid_months: 12 | annual_index: 258.811 | method: published M13 annual average
+year: 2021 | valid_months: 12 | annual_index: 270.97 | method: published M13 annual average
+year: 2022 | valid_months: 12 | annual_index: 292.655 | method: published M13 annual average
+year: 2023 | valid_months: 12 | annual_index: 304.702 | method: published M13 annual average
+year: 2024 | valid_months: 12 | annual_index: 313.689 | method: published M13 annual average
+year: 2025 | valid_months: 11 | annual_index: 321.943 | method: published M13 annual average
+year: 2026 | valid_months: 7 | annual_index: None | method: unavailable: incomplete monthly coverage
+
+TRACEABLE FINDINGS
+f1: 2015 annual CPI-U = 237.017 index [CSV row 14; cpi_u; period=M13]
+f2: 2016 annual CPI-U = 240.007 index [CSV row 27; cpi_u; period=M13]
+f3: 2017 annual CPI-U = 245.12 index [CSV row 40; cpi_u; period=M13]
+f4: 2018 annual CPI-U = 251.107 index [CSV row 53; cpi_u; period=M13]
+f5: 2019 annual CPI-U = 255.657 index [CSV row 66; cpi_u; period=M13]
+f6: 2020 annual CPI-U = 258.811 index [CSV row 79; cpi_u; period=M13]
+f7: 2021 annual CPI-U = 270.97 index [CSV row 92; cpi_u; period=M13]
+f8: 2022 annual CPI-U = 292.655 index [CSV row 105; cpi_u; period=M13]
+f9: 2023 annual CPI-U = 304.702 index [CSV row 118; cpi_u; period=M13]
+f10: 2024 annual CPI-U = 313.689 index [CSV row 131; cpi_u; period=M13]
+f11: 2025 annual CPI-U = 321.943 index [CSV row 144; cpi_u; period=M13]
+c1: 2015 to 2025 price conversion = 1.3583119 multiplier; ratio(f11, f1). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c2: 2016 to 2025 price conversion = 1.34139 multiplier; ratio(f11, f2). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c3: 2017 to 2025 price conversion = 1.3134098 multiplier; ratio(f11, f3). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c4: 2018 to 2025 price conversion = 1.2820949 multiplier; ratio(f11, f4). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c5: 2019 to 2025 price conversion = 1.2592771 multiplier; ratio(f11, f5). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c6: 2020 to 2025 price conversion = 1.2439309 multiplier; ratio(f11, f6). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c7: 2021 to 2025 price conversion = 1.1881131 multiplier; ratio(f11, f7). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c8: 2022 to 2025 price conversion = 1.1000769 multiplier; ratio(f11, f8). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c9: 2023 to 2025 price conversion = 1.0565832 multiplier; ratio(f11, f9). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c10: 2024 to 2025 price conversion = 1.0263127 multiplier; ratio(f11, f10). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+c11: 2025 to 2025 price conversion = 1 multiplier; ratio(f11, f11). Apply to a cost expressed in the origin price year; not a future inflation forecast or medical-specific inflation measure.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Check the price year before comparing published dollar amounts.
+Care delivery: Put pathway unit costs in one stated price year before comparing resource use.
+Payers and policy: Use CPI-U for general purchasing-power comparisons; justify a medical-specific or wage-specific alternative when that is the decision question.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No original cost amount is supplied; no hypothetical cost was inserted.
+No forecast of future inflation or disease-specific medical price index.
+
+DO NOT USE FOR
+Treating partial-year averages as complete annual observations, or using general inflation as evidence of increased illness incidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

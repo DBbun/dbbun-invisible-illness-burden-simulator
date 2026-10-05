@@ -1,0 +1,780 @@
+april-1-2026-code-tables-tabular-index.zip
+SOURCE: cms/icd10cm_2026_04/april-1-2026-code-tables-tabular-index.zip :: Table and Index/icd10cm_tabular_2026.pdf
+SHA-256: c623e47143c156d1427fe7cd2bee7ac1ae6994bdd2196b9ec27d4a3219bcfd48
+CONDITION SCOPE: both
+ROLE: lyme_and_longcovid_coding_guidance
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+DOCUMENT IDENTITY AND SCOPE
+Table and Index/icd10cm_tabular_2026.pdf: this package retains ONLY the pages/sections that actually name Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 coding, out of 2069 total - 12 matched. A document with zero matches genuinely contains no Lyme- or Long-COVID-specific guidance, which is a real finding, not a missing extraction.
+
+WHAT NEEDS A DECISION
+These are real official coding rules or index entries, not a clinical outcome or cost figure - use them only to verify a diagnosis is coded per current federal guidance. A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+SOURCE PASSAGES SPECIFICALLY NAMING LYME OR LONG COVID CODING
+Every page/section of this document that actually names Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 - not a generic match on common words like "cost" or "work".
+location: page 29 | source_text: A67 Pinta [carate]
+ 
+A67.0 Primary lesions of pinta
+Chancre (primary) of pinta
+Papule (primary) of pinta
+ 
+A67.1 Intermediate lesions of pinta
+Erythematous plaques of pinta
+Hyperchromic lesions of pinta
+Hyperkeratosis of pinta
+Pintids
+ 
+A67.2 Late lesions of pinta
+Achromic skin lesions of pinta
+Cicatricial skin lesions of pinta
+Dyschromic skin lesions of pinta
+ 
+A67.3 Mixed lesions of pinta
+Achromic with hyperchromic skin lesions of pinta [carate]
+ 
+A67.9 Pinta, unspecified
+ 
+A68 Relapsing fevers
+ 
+Includes: recurrent fever
+ 
+Excludes2: Lyme disease (A69.2-)
+ 
+A68.0 Louse-borne relapsing fever
+Relapsing fever due to Borrelia recurrentis
+ 
+A68.1 Tick-borne relapsing fever
+Relapsing fever due to any Borrelia species other than Borrelia recurrentis
+ 
+A68.9 Relapsing fever, unspecified
+ 
+A69 Other spirochetal infections
+ 
+A69.0 Necrotizing ulcerative stomatitis
+Cancrum oris
+Fusospirochetal gangrene
+Noma
+Stomatitis gangrenosa
+ 
+A69.1 Other Vincent's infections
+Fusospirochetal pharyngitis
+Necrotizing ulcerative (acute) gingivitis
+Necrotizing ulcerative (acute) gingivostomatitis
+Spirochetal stomatitis
+Trench mouth
+Vincent's angina
+Vincent's gingivitis
+ 
+A69.2 Lyme disease
+Erythema chronicum migrans due to Borrelia burgdorferi
+ 
+A69.20 Lyme disease, unspecified
+ 
+A69.21 Meningitis due to Lyme disease
+ 
+A69.22 Other neurologic disorders in Lyme disease
+Cranial neuritis
+Meningoencephalitis
+location: page 30 | source_text: Polyneuropathy
+ 
+A69.23 Arthritis due to Lyme disease
+ 
+A69.29 Other conditions associated with Lyme disease
+Myopericarditis due to Lyme disease
+ 
+A69.8 Other specified spirochetal infections
+ 
+A69.9 Spirochetal infection, unspecified
+ 
+Other diseases caused by chlamydiae (A70-A74)
+ 
+Excludes1: sexually transmitted chlamydial diseases (A55-A56)
+ 
+A70 Chlamydia psittaci infections
+Ornithosis
+Parrot fever
+Psittacosis
+ 
+A71 Trachoma
+ 
+Excludes1: sequelae of trachoma (B94.0)
+ 
+A71.0 Initial stage of trachoma
+Trachoma dubium
+ 
+A71.1 Active stage of trachoma
+Granular conjunctivitis (trachomatous)
+Trachomatous follicular conjunctivitis
+Trachomatous pannus
+ 
+A71.9 Trachoma, unspecified
+ 
+A74 Other diseases caused by chlamydiae
+ 
+Excludes1: neonatal chlamydial conjunctivitis (P39.1)
+neonatal chlamydial pneumonia (P23.1)
+Reiter's disease (M02.3-)
+sexually transmitted chlamydial diseases (A55-A56)
+ 
+Excludes2: chlamydial pneumonia (J16.0)
+ 
+A74.0 Chlamydial conjunctivitis
+Paratrachoma
+ 
+A74.8 Other chlamydial diseases
+ 
+A74.81 Chlamydial peritonitis
+ 
+A74.89 Other chlamydial diseases
+ 
+A74.9 Chlamydial infection, unspecified
+Chlamydiosis NOS
+ 
+Rickettsioses (A75-A79)
+ 
+A75 Typhus fever
+ 
+Excludes1: rickettsiosis due to Ehrlichia sennetsu (A79.81)
+ 
+A75.0 Epidemic louse-borne typhus fever due to Rickettsia prowazekii
+Classical typhus (fever)
+location: page 63 | source_text: Excludes2: internal hirudiniasis (B83.4)
+ 
+B88.8 Other specified infestations
+Ichthyoparasitism due to Vandellia cirrhosa
+Linguatulosis
+Porocephaliasis
+ 
+B88.9 Infestation, unspecified
+Infestation (skin) NOS
+Infestation by mites NOS
+Skin parasites NOS
+ 
+B89 Unspecified parasitic disease
+ 
+Sequelae of infectious and parasitic diseases (B90-B94)
+ 
+Note: Categories B90-B94 are to be used to indicate conditions in categories A00-B89 as the cause of sequelae, which
+are themselves classified elsewhere. The 'sequelae' include conditions specified as such; they also include
+residuals of diseases classifiable to the above categories if there is evidence that the disease itself is no longer
+present. Codes from these categories are not to be used for chronic infections. Code chronic current infections
+to active infectious disease as appropriate.
+ 
+Code first condition resulting from (sequela) the infectious or parasitic disease
+ 
+B90 Sequelae of tuberculosis
+ 
+B90.0 Sequelae of central nervous system tuberculosis
+ 
+B90.1 Sequelae of genitourinary tuberculosis
+ 
+B90.2 Sequelae of tuberculosis of bones and joints
+ 
+B90.8 Sequelae of tuberculosis of other organs
+ 
+Excludes2: sequelae of respiratory tuberculosis (B90.9)
+ 
+B90.9 Sequelae of respiratory and unspecified tuberculosis
+Sequelae of tuberculosis NOS
+ 
+B91 Sequelae of poliomyelitis
+ 
+Excludes1: postpolio syndrome (G14)
+ 
+B92 Sequelae of leprosy
+ 
+B94 Sequelae of other and unspecified infectious and parasitic diseases
+ 
+B94.0 Sequelae of trachoma
+ 
+B94.1 Sequelae of viral encephalitis
+ 
+B94.2 Sequelae of viral hepatitis
+ 
+B94.8 Sequelae of other specified infectious and parasitic diseases
+ 
+B94.9 Sequelae of unspecified infectious and parasitic disease
+ 
+Excludes2: post COVID-19 condition (U09.9)
+ 
+Bacterial and viral infectious agents (B95-B97)
+ 
+Note: These categories are provided for use as supplementary or additional codes to identify the infectious agent(s) in
+diseases classified elsewhere.
+location: page 322 | source_text: Purulent meningitis NOS
+Pyogenic meningitis NOS
+Suppurative meningitis NOS
+ 
+G01 Meningitis in bacterial diseases classified elsewhere
+ 
+Code first underlying disease
+ 
+Excludes1: meningitis (in):
+gonococcal (A54.81)
+leptospirosis (A27.81)
+listeriosis (A32.11)
+Lyme disease (A69.21)
+meningococcal (A39.0)
+neurosyphilis (A52.13)
+tuberculosis (A17.0)
+meningoencephalitis and meningomyelitis in bacterial diseases classified elsewhere (G05)
+ 
+G02 Meningitis in other infectious and parasitic diseases classified elsewhere
+ 
+Code first underlying disease, such as:
+African trypanosomiasis (B56.-)
+poliovirus infection (A80.-)
+ 
+Excludes1: candidal meningitis (B37.5)
+coccidioidomycosis meningitis (B38.4)
+cryptococcal meningitis (B45.1)
+herpesviral [herpes simplex] meningitis (B00.3)
+infectious mononucleosis complicated by meningitis (B27.- with fifth character 2)
+measles complicated by meningitis (B05.1)
+meningoencephalitis and meningomyelitis in other infectious and parasitic diseases classified elsewhere
+(G05)
+mumps meningitis (B26.1)
+rubella meningitis (B06.02)
+varicella [chickenpox] meningitis (B01.0)
+zoster meningitis (B02.1)
+ 
+G03 Meningitis due to other and unspecified causes
+ 
+Includes: arachnoiditis NOS
+leptomeningitis NOS
+meningitis NOS
+pachymeningitis NOS
+ 
+Excludes1: meningoencephalitis (G04.-)
+meningomyelitis (G04.-)
+ 
+G03.0 Nonpyogenic meningitis
+Aseptic meningitis
+Nonbacterial meningitis
+ 
+G03.1 Chronic meningitis
+ 
+G03.2 Benign recurrent meningitis [Mollaret]
+ 
+G03.8 Meningitis due to other specified causes
+ 
+G03.9 Meningitis, unspecified
+Arachnoiditis (spinal) NOS
+ 
+G04 Encephalitis, myelitis and encephalomyelitis
+location: page 357 | source_text: G62.1 Alcoholic polyneuropathy
+ 
+G62.2 Polyneuropathy due to other toxic agents
+ 
+Code first (T51-T65) to identify toxic agent
+ 
+G62.8 Other specified polyneuropathies
+ 
+G62.81 Critical illness polyneuropathy
+Acute motor neuropathy
+ 
+G62.82 Radiation-induced polyneuropathy
+ 
+Use additional external cause code (W88-W90, X39.0-) to identify cause
+ 
+G62.89 Other specified polyneuropathies
+ 
+G62.9 Polyneuropathy, unspecified
+Neuropathy NOS
+ 
+G63 Polyneuropathy in diseases classified elsewhere
+ 
+Code first underlying disease, such as:
+amyloidosis (E85.-)
+endocrine disease, except diabetes (E00-E07, E15-E16, E20-E34)
+metabolic diseases (E70-E88)
+neoplasm (C00-D49)
+nutritional deficiency (E40-E64)
+ 
+Excludes1: polyneuropathy (in):
+diabetes mellitus (E08-E13 with .42)
+diphtheria (A36.83)
+infectious mononucleosis complicated by polyneuropathy (B27.0-B27.9 with fifth character 1)
+Lyme disease (A69.22)
+mumps (B26.84)
+postherpetic (B02.23)
+rheumatoid arthritis (M05.5-)
+scleroderma (M34.83)
+systemic lupus erythematosus (M32.19)
+ 
+G64 Other disorders of peripheral nervous system
+Disorder of peripheral nervous system NOS
+ 
+G65 Sequelae of inflammatory and toxic polyneuropathies
+ 
+Code first condition resulting from (sequela) of inflammatory and toxic polyneuropathies
+ 
+G65.0 Sequelae of Guillain-Barré syndrome
+ 
+G65.1 Sequelae of other inflammatory polyneuropathy
+ 
+G65.2 Sequelae of toxic polyneuropathy
+ 
+Diseases of myoneural junction and muscle (G70-G73)
+ 
+G70 Myasthenia gravis and other myoneural disorders
+ 
+Excludes1: botulism (A05.1, A48.51-A48.52)
+transient neonatal myasthenia gravis (P94.0)
+ 
+G70.0 Myasthenia gravis
+ 
+G70.00 Myasthenia gravis without (acute) exacerbation
+location: page 369 | source_text: G92.9 Unspecified toxic encephalopathy
+ 
+Code first poisoning due to drug or toxin, if applicable, (T36-T65 with fifth or sixth character 1-4)
+ 
+Use additional code for adverse effect, if applicable, to identify drug (T36-T50 with fifth or sixth character 5)
+ 
+G93 Other disorders of brain
+ 
+G93.0 Cerebral cysts
+Arachnoid cyst
+Porencephalic cyst, acquired
+ 
+Excludes1: acquired periventricular cysts of newborn (P91.1)
+congenital cerebral cysts (Q04.6)
+ 
+G93.1 Anoxic brain damage, not elsewhere classified
+ 
+Excludes1: cerebral anoxia due to anesthesia during labor and delivery (O74.3)
+cerebral anoxia due to anesthesia during the puerperium (O89.2)
+neonatal anoxia (P84)
+ 
+G93.2 Benign intracranial hypertension
+Pseudotumor
+ 
+Excludes1: hypertensive encephalopathy (I67.4)
+obstructive hydrocephalus (G91.1)
+ 
+G93.3 Postviral and related fatigue syndromes
+ 
+Use additional code, if applicable, for post COVID-19 condition, unspecified (U09.9)
+ 
+Excludes1: chronic fatigue NOS (R53.82)
+neurasthenia (F48.8)
+ 
+G93.31 Postviral fatigue syndrome
+ 
+G93.32 Myalgic encephalomyelitis/chronic fatigue syndrome
+Chronic fatigue syndrome
+ME/CFS
+Myalgic encephalomyelitis
+ 
+G93.39 Other post infection and related fatigue syndromes
+ 
+G93.4 Other and unspecified encephalopathy
+ 
+Excludes2: alcoholic encephalopathy (G31.2)
+encephalopathy in diseases classified elsewhere (G94)
+hypertensive encephalopathy (I67.4)
+toxic (metabolic) encephalopathy (G92.8)
+ 
+G93.40 Encephalopathy, unspecified
+ 
+G93.41 Metabolic encephalopathy
+Septic encephalopathy
+ 
+G93.42 Megalencephalic leukoencephalopathy with subcortical cysts
+ 
+G93.43 Leukoencephalopathy with calcifications and cysts
+ 
+G93.44 Adult-onset leukodystrophy with axonal spheroids
+Adult-onset leukoencephalopathy with axonal spheroids and pigmented glia
+ 
+G93.45 Developmental and epileptic encephalopathy
+location: page 733 | source_text: L43.3 Subacute (active) lichen planus
+Lichen planus tropicus
+ 
+L43.8 Other lichen planus
+ 
+L43.9 Lichen planus, unspecified
+ 
+L44 Other papulosquamous disorders
+ 
+L44.0 Pityriasis rubra pilaris
+ 
+L44.1 Lichen nitidus
+ 
+L44.2 Lichen striatus
+ 
+L44.3 Lichen ruber moniliformis
+ 
+L44.4 Infantile papular acrodermatitis [Gianotti-Crosti]
+ 
+L44.8 Other specified papulosquamous disorders
+ 
+L44.9 Papulosquamous disorder, unspecified
+ 
+L45 Papulosquamous disorders in diseases classified elsewhere
+ 
+Code first underlying disease.
+ 
+Urticaria and erythema (L49-L54)
+ 
+Excludes1: Lyme disease (A69.2-)
+rosacea (L71.-)
+ 
+L49 Exfoliation due to erythematous conditions according to extent of body surface involved
+ 
+Code first erythematous condition causing exfoliation, such as:
+Ritter's disease (L00)
+(Staphylococcal) scalded skin syndrome (L00)
+Stevens-Johnson syndrome (L51.1)
+Stevens-Johnson syndrome-toxic epidermal necrolysis overlap syndrome (L51.3)
+Toxic epidermal necrolysis (L51.2)
+ 
+L49.0 Exfoliation due to erythematous condition involving less than 10 percent of body surface
+Exfoliation due to erythematous condition NOS
+ 
+L49.1 Exfoliation due to erythematous condition involving 10-19 percent of body surface
+ 
+L49.2 Exfoliation due to erythematous condition involving 20-29 percent of body surface
+ 
+L49.3 Exfoliation due to erythematous condition involving 30-39 percent of body surface
+ 
+L49.4 Exfoliation due to erythematous condition involving 40-49 percent of body surface
+ 
+L49.5 Exfoliation due to erythematous condition involving 50-59 percent of body surface
+ 
+L49.6 Exfoliation due to erythematous condition involving 60-69 percent of body surface
+ 
+L49.7 Exfoliation due to erythematous condition involving 70-79 percent of body surface
+ 
+L49.8 Exfoliation due to erythematous condition involving 80-89 percent of body surface
+ 
+L49.9 Exfoliation due to erythematous condition involving 90 or more percent of body surface
+ 
+L50 Urticaria
+location: page 777 | source_text: Arthritis due to other bacteria, tarsus, metatarsus, and phalanges
+ 
+M00.871 Arthritis due to other bacteria, right ankle and foot
+ 
+M00.872 Arthritis due to other bacteria, left ankle and foot
+ 
+M00.879 Arthritis due to other bacteria, unspecified ankle and foot
+ 
+M00.88 Arthritis due to other bacteria, vertebrae
+ 
+M00.89 Polyarthritis due to other bacteria
+ 
+M00.9 Pyogenic arthritis, unspecified
+Infective arthritis NOS
+ 
+M01 Direct infections of joint in infectious and parasitic diseases classified elsewhere
+ 
+Code first underlying disease, such as:
+leprosy [Hansen's disease] (A30.-)
+mycoses (B35-B49)
+O'nyong-nyong fever (A92.1)
+paratyphoid fever (A01.1-A01.4)
+ 
+Excludes1: arthropathy in Lyme disease (A69.23)
+gonococcal arthritis (A54.42)
+meningococcal arthritis (A39.83)
+mumps arthritis (B26.85)
+postinfective arthropathy (M02.-)
+postmeningococcal arthritis (A39.84)
+reactive arthritis (M02.3)
+rubella arthritis (B06.82)
+sarcoidosis arthritis (D86.86)
+typhoid fever arthritis (A01.04)
+tuberculosis arthritis (A18.01-A18.02)
+ 
+M01.X Direct infection of joint in infectious and parasitic diseases classified elsewhere
+ 
+M01.X0 Direct infection of unspecified joint in infectious and parasitic diseases classified elsewhere
+ 
+M01.X1 Direct infection of shoulder joint in infectious and parasitic diseases classified elsewhere
+ 
+M01.X11 Direct infection of right shoulder in infectious and parasitic diseases classified
+elsewhere
+ 
+M01.X12 Direct infection of left shoulder in infectious and parasitic diseases classified
+elsewhere
+ 
+M01.X19 Direct infection of unspecified shoulder in infectious and parasitic diseases
+classified elsewhere
+ 
+M01.X2 Direct infection of elbow in infectious and parasitic diseases classified elsewhere
+ 
+M01.X21 Direct infection of right elbow in infectious and parasitic diseases classified
+elsewhere
+ 
+M01.X22 Direct infection of left elbow in infectious and parasitic diseases classified elsewhere
+ 
+M01.X29 Direct infection of unspecified elbow in infectious and parasitic diseases classified
+elsewhere
+ 
+M01.X3 Direct infection of wrist in infectious and parasitic diseases classified elsewhere
+Direct infection of carpal bones in infectious and parasitic diseases classified elsewhere
+location: page 877 | source_text: Excludes1: lupus panniculitis (L93.2)
+panniculitis NOS (M79.3-)
+ 
+M35.7 Hypermobility syndrome
+Familial ligamentous laxity
+ 
+Excludes1: ligamentous laxity, NOS (M24.2-)
+ 
+Excludes2: Ehlers-Danlos syndromes (Q79.6-)
+ 
+M35.8 Other specified systemic involvement of connective tissue
+ 
+M35.81 Multisystem inflammatory syndrome
+MIS-A
+MIS-C
+Multisystem inflammatory syndrome in adults
+Multisystem inflammatory syndrome in children
+Pediatric inflammatory multisystem syndrome
+PIMS
+ 
+Code first, if applicable, COVID-19 (U07.1)
+ 
+Code also any associated complications such as:
+acute hepatic failure (K72.0-)
+acute kidney failure (N17.-)
+acute myocarditis (I40.-)
+acute respiratory distress syndrome (J80)
+cardiac arrhythmia (I47-I49.-)
+pneumonia due to COVID-19 (J12.82)
+severe sepsis (R65.2-)
+viral cardiomyopathy (B33.24)
+viral pericarditis (B33.23)
+ 
+Use additional code, if applicable, for:
+exposure to COVID-19 or SARS-CoV-2 infection (Z20.822)
+personal history of COVID-19 (Z86.16)
+post COVID-19 condition (U09.9)
+ 
+M35.89 Other specified systemic involvement of connective tissue
+ 
+M35.9 Systemic involvement of connective tissue, unspecified
+Autoimmune disease (systemic) NOS
+Collagen (vascular) disease NOS
+ 
+M36 Systemic disorders of connective tissue in diseases classified elsewhere
+ 
+Excludes2: arthropathies in diseases classified elsewhere (M14.-)
+ 
+M36.0 Dermato(poly)myositis in neoplastic disease
+ 
+Code first underlying neoplasm (C00-D49)
+ 
+M36.1 Arthropathy in neoplastic disease
+ 
+Code first underlying neoplasm, such as:
+leukemia (C91-C95)
+malignant histiocytosis (C96.A)
+multiple myeloma (C90.0)
+ 
+M36.2 Hemophilic arthropathy
+Hemarthrosis in hemophilic arthropathy
+ 
+Code first underlying disease, such as:
+location: page 1067 | source_text: N91.3 Primary oligomenorrhea
+ 
+N91.4 Secondary oligomenorrhea
+ 
+N91.5 Oligomenorrhea, unspecified
+Hypomenorrhea NOS
+ 
+N92 Excessive, frequent and irregular menstruation
+ 
+Excludes1: postmenopausal bleeding (N95.0)
+precocious puberty (menstruation) (E30.1)
+ 
+N92.0 Excessive and frequent menstruation with regular cycle
+Heavy periods NOS
+Menorrhagia NOS
+Polymenorrhea
+ 
+N92.1 Excessive and frequent menstruation with irregular cycle
+Irregular intermenstrual bleeding
+Irregular, shortened intervals between menstrual bleeding
+Menometrorrhagia
+Metrorrhagia
+ 
+N92.2 Excessive menstruation at puberty
+Excessive bleeding associated with onset of menstrual periods
+Pubertal menorrhagia
+Puberty bleeding
+ 
+N92.3 Ovulation bleeding
+Regular intermenstrual bleeding
+ 
+N92.4 Excessive bleeding in the premenopausal period
+Climacteric menorrhagia or metrorrhagia
+Menopausal menorrhagia or metrorrhagia
+Perimenopausal bleeding
+Perimenopausal menorrhagia or metrorrhagia
+Preclimacteric menorrhagia or metrorrhagia
+Premenopausal menorrhagia or metrorrhagia
+ 
+N92.5 Other specified irregular menstruation
+ 
+N92.6 Irregular menstruation, unspecified
+Irregular bleeding NOS
+Irregular periods NOS
+ 
+Excludes1: irregular menstruation with:
+lengthened intervals or scanty bleeding (N91.3-N91.5)
+shortened intervals or excessive bleeding (N92.1)
+ 
+N93 Other abnormal uterine and vaginal bleeding
+ 
+Excludes1: neonatal vaginal hemorrhage (P54.6)
+precocious puberty (menstruation) (E30.1)
+pseudomenses (P54.6)
+ 
+N93.0 Postcoital and contact bleeding
+ 
+N93.1 Pre-pubertal vaginal bleeding
+ 
+N93.8 Other specified abnormal uterine and vaginal bleeding
+Dysfunctional or functional uterine or vaginal bleeding NOS
+ 
+N93.9 Abnormal uterine and vaginal bleeding, unspecified
+location: page 2048 | source_text: Z86.12 Personal history of poliomyelitis
+ 
+Z86.13 Personal history of malaria
+ 
+Z86.14 Personal history of Methicillin resistant Staphylococcus aureus infection
+Personal history of MRSA infection
+ 
+Z86.15 Personal history of latent tuberculosis infection
+ 
+Z86.16 Personal history of COVID-19
+ 
+Excludes1: post COVID-19 condition (U09.9)
+ 
+Z86.19 Personal history of other infectious and parasitic diseases
+ 
+Z86.2 Personal history of diseases of the blood and blood-forming organs and certain disorders involving the
+immune mechanism
+Conditions classifiable to D50-D89
+ 
+Z86.3 Personal history of endocrine, nutritional and metabolic diseases
+Conditions classifiable to E00-E88
+ 
+Z86.31 Personal history of diabetic foot ulcer
+ 
+Excludes2: current diabetic foot ulcer (E08.621, E09.621, E10.621, E11.621, E13.621)
+ 
+Z86.32 Personal history of gestational diabetes
+Personal history of conditions classifiable to O24.4-
+ 
+Excludes1: gestational diabetes mellitus in current pregnancy (O24.4-)
+ 
+Z86.39 Personal history of other endocrine, nutritional and metabolic disease
+ 
+Z86.5 Personal history of mental and behavioral disorders
+Conditions classifiable to F40-F59
+ 
+Z86.51 Personal history of combat and operational stress reaction
+ 
+Z86.59 Personal history of other mental and behavioral disorders
+ 
+Z86.6 Personal history of diseases of the nervous system and sense organs
+Conditions classifiable to G00-G99, H00-H95
+ 
+Z86.61 Personal history of infections of the central nervous system
+Personal history of encephalitis
+Personal history of meningitis
+ 
+Z86.69 Personal history of other diseases of the nervous system and sense organs
+ 
+Z86.7 Personal history of diseases of the circulatory system
+Conditions classifiable to I00-I99
+ 
+Excludes2: old myocardial infarction (I25.2)
+personal history of anaphylactic shock (Z87.892)
+postmyocardial infarction syndrome (I24.1)
+ 
+Z86.71 Personal history of venous thrombosis and embolism
+ 
+Z86.711 Personal history of pulmonary embolism
+ 
+Z86.718 Personal history of other venous thrombosis and embolism
+ 
+Z86.72 Personal history of thrombophlebitis
+location: page 2069 | source_text: Chapter 22 
+Codes for special purposes (U00-U85)
+ 
+This chapter contains the following blocks:
+U00-U49 Provisional assignment of new diseases of uncertain etiology or emergency use
+ 
+Provisional assignment of new diseases of uncertain etiology or emergency use (U00-U49)
+ 
+U07 Emergency use of U07
+ 
+U07.0 Vaping-related disorder
+Dabbing related lung damage
+Dabbing related lung injury
+E-cigarette, or vaping, product use associated lung injury [EVALI]
+Electronic cigarette related lung damage
+Electronic cigarette related lung injury
+ 
+Use additional code to identify manifestations, such as:
+abdominal pain (R10.84)
+acute respiratory distress syndrome (J80)
+diarrhea (R19.7)
+drug-induced interstitial lung disorder (J70.4)
+lipoid pneumonia (J69.1)
+weight loss (R63.4)
+ 
+U07.1 COVID-19
+ 
+Use additional code to identify pneumonia or other manifestations, such as:
+pneumonia due to COVID-19 (J12.82)
+ 
+Use additional code, if applicable, for associated conditions such as:
+COVID-19 associated coagulopathy (D68.8)
+disseminated intravascular coagulation (D65)
+hypercoagulable states (D68.69)
+thrombophilia (D68.69)
+ 
+Excludes2: coronavirus as the cause of diseases classified elsewhere (B97.2-)
+pneumonia due to SARS-associated coronavirus (J12.81)
+ 
+U09 Post COVID-19 condition
+ 
+U09.9 Post COVID-19 condition, unspecified
+Post-acute sequela of COVID-19
+ 
+Code first the specific condition related to COVID-19 if known, such as:
+chronic respiratory failure (J96.1-)
+loss of smell (R43.8)
+loss of taste (R43.8)
+multisystem inflammatory syndrome (M35.81)
+pulmonary embolism (I26.-)
+pulmonary fibrosis (J84.10)
+ 
+Note: This code enables establishment of a link with COVID-19.
+This code is not to be used in cases that are still presenting with active COVID-19. However, an
+exception is made in cases of re-infection with COVID-19, occurring with a condition related to prior
+COVID-19.
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No intervention effectiveness or avoided cost is supplied unless the source explicitly reports it.
+Unreviewed variables are not approved model inputs.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

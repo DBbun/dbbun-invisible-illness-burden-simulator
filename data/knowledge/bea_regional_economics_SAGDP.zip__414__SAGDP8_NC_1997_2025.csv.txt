@@ -1,0 +1,504 @@
+SAGDP.zip
+SOURCE: bea/regional_economics/SAGDP.zip :: SAGDP8_NC_1997_2025.csv
+SHA-256: 5a90e0e6e03082089048d8f78e8a4df9993465c4f34f9de471258fed2a908183
+CONDITION SCOPE: general
+ROLE: regional_economic_context
+
+PROCESSING AND INTERPRETATION STATUS
+focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Population, definitions, units and overlap need verification before modeling.
+
+FILE-SPECIFIC FINDING
+SAGDP8_NC_1997_2025.csv contains 92 geographic-measure records across 1 geographic identifiers. For North Carolina, All industry total moves from 62.285 Quantity index in 1997 to 124.795 in 2025. The accompanying measure table distinguishes the units rather than blending dollars, jobs, people and indexes.
+
+ECONOMIC INTERPRETATION
+GDP is production value, not a household wage or insurer payment. Current-dollar, real/chained-dollar, growth and contribution measures must remain distinct. Chained-dollar industry series are not generally additive. No fraction of GDP is attributed to either illness here.
+
+HOW TO USE THIS FILE
+Use the exact geography and 1997–2025 coverage in this file for context, not a live estimate. State-specific and ALL_AREAS members overlap; retrieving both must not double their economic totals. Ranges describe available rows and exclude nonnumeric disclosure/availability markers, not zero-valued observations.
+
+SELECTED WITHIN-FILE GEOGRAPHIC SERIES
+Focus: North Carolina. Years and units are preserved from each source row. Not disease-attributable amounts.
+geography: North Carolina | line_code: 1 | description: All industry total | unit: Quantity index | first_year: 1997 | first: 62.285 | last_year: 2025 | last: 124.795 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 2 | description: Private industries | unit: Quantity index | first_year: 1997 | first: 60.356 | last_year: 2025 | last: 127.566 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 3 | description: Agriculture, forestry, fishing and hunting | unit: Quantity index | first_year: 1997 | first: 85.851 | last_year: 2025 | last: 117.561 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 4 | description: Farms | unit: Quantity index | first_year: 1997 | first: 90.013 | last_year: 2024 | last: 103.506 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 5 | description: Forestry, fishing, and related activities | unit: Quantity index | first_year: 1997 | first: 67.851 | last_year: 2024 | last: 113.036 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 6 | description: Mining, quarrying, and oil and gas extraction | unit: Quantity index | first_year: 1997 | first: 132.327 | last_year: 2025 | last: 131.802 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 7 | description: Oil and gas extraction | unit: Quantity index | first_year: 1997 | first: 264.875 | last_year: 2024 | last: 46.89 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 8 | description: Mining (except oil and gas) | unit: Quantity index | first_year: 1997 | first: 137.63 | last_year: 2024 | last: 133.929 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 9 | description: Support activities for mining | unit: Quantity index | first_year: 1997 | first: 32.841 | last_year: 2024 | last: 185.917 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 10 | description: Utilities | unit: Quantity index | first_year: 1997 | first: 95.707 | last_year: 2025 | last: 135.641 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 11 | description: Construction | unit: Quantity index | first_year: 1997 | first: 111.357 | last_year: 2025 | last: 125.423 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 12 | description: Manufacturing | unit: Quantity index | first_year: 1997 | first: 77.31 | last_year: 2025 | last: 91.128 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 13 | description: Durable goods manufacturing | unit: Quantity index | first_year: 1997 | first: 43.292 | last_year: 2025 | last: 84.603 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 14 | description: Wood product manufacturing | unit: Quantity index | first_year: 1997 | first: 91.334 | last_year: 2024 | last: 93.525 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 15 | description: Nonmetallic mineral product manufacturing | unit: Quantity index | first_year: 1997 | first: 139.136 | last_year: 2024 | last: 82.248 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 16 | description: Primary metal manufacturing | unit: Quantity index | first_year: 1997 | first: 48.896 | last_year: 2024 | last: 199.944 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 17 | description: Fabricated metal product manufacturing | unit: Quantity index | first_year: 1997 | first: 95.136 | last_year: 2024 | last: 84.709 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 18 | description: Machinery manufacturing | unit: Quantity index | first_year: 1997 | first: 57.574 | last_year: 2024 | last: 106.005 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 19 | description: Computer and electronic product manufacturing | unit: Quantity index | first_year: 1997 | first: 10.045 | last_year: 2024 | last: 61.125 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 20 | description: Electrical equipment, appliance, and component manufacturing | unit: Quantity index | first_year: 1997 | first: 104.115 | last_year: 2024 | last: 59.362 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 21 | description: Motor vehicles, bodies and trailers, and parts manufacturing | unit: Quantity index | first_year: 1997 | first: 39.441 | last_year: 2024 | last: 113.954 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 22 | description: Other transportation equipment manufacturing | unit: Quantity index | first_year: 1997 | first: 9.136 | last_year: 2024 | last: 61.752 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 23 | description: Furniture and related product manufacturing | unit: Quantity index | first_year: 1997 | first: 156.578 | last_year: 2024 | last: 66.453 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 24 | description: Miscellaneous manufacturing | unit: Quantity index | first_year: 1997 | first: 70.309 | last_year: 2024 | last: 95.006 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 25 | description: Nondurable goods manufacturing | unit: Quantity index | first_year: 1997 | first: 112.652 | last_year: 2025 | last: 96.055 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 26 | description: Food and beverage and tobacco product manufacturing | unit: Quantity index | first_year: 1997 | first: 86.492 | last_year: 2024 | last: 84.231 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 27 | description: Textile mills and textile product mills | unit: Quantity index | first_year: 1997 | first: 237.766 | last_year: 2024 | last: 74.903 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 28 | description: Apparel, leather, and allied product manufacturing | unit: Quantity index | first_year: 1997 | first: 708.973 | last_year: 2024 | last: 98.968 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 29 | description: Paper manufacturing | unit: Quantity index | first_year: 1997 | first: 119.083 | last_year: 2024 | last: 93.333 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 30 | description: Printing and related support activities | unit: Quantity index | first_year: 1997 | first: 69.153 | last_year: 2024 | last: 93.479 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 31 | description: Petroleum and coal products manufacturing | unit: Quantity index | first_year: 1997 | first: 184.87 | last_year: 2024 | last: 73.547 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 32 | description: Chemical manufacturing | unit: Quantity index | first_year: 1997 | first: 115.829 | last_year: 2024 | last: 123.029 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 33 | description: Plastics and rubber products manufacturing | unit: Quantity index | first_year: 1997 | first: 85.357 | last_year: 2024 | last: 86.272 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 34 | description: Wholesale trade | unit: Quantity index | first_year: 1997 | first: 56.433 | last_year: 2025 | last: 108.899 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 35 | description: Retail trade | unit: Quantity index | first_year: 1997 | first: 62.255 | last_year: 2025 | last: 141.266 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 36 | description: Transportation and warehousing | unit: Quantity index | first_year: 1997 | first: 83.329 | last_year: 2025 | last: 122.735 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 37 | description: Air transportation | unit: Quantity index | first_year: 1997 | first: 86.924 | last_year: 2024 | last: 144.886 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 38 | description: Rail transportation | unit: Quantity index | first_year: 1997 | first: 101.673 | last_year: 2024 | last: 84.758 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 39 | description: Water transportation | unit: Quantity index | first_year: 1997 | first: 949.353 | last_year: 2024 | last: 606.881 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 40 | description: Truck transportation | unit: Quantity index | first_year: 1997 | first: 94.482 | last_year: 2024 | last: 104.577 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 41 | description: Transit and ground passenger transportation | unit: Quantity index | first_year: 1997 | first: 65.995 | last_year: 2024 | last: 196.496 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 42 | description: Pipeline transportation | unit: Quantity index | first_year: 1997 | first: 17.467 | last_year: 2024 | last: 74.996 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 43 | description: Other transportation and support activities | unit: Quantity index | first_year: 1997 | first: 95.726 | last_year: 2024 | last: 127.559 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 44 | description: Warehousing and storage | unit: Quantity index | first_year: 1997 | first: 36.918 | last_year: 2024 | last: 138.739 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 45 | description: Information | unit: Quantity index | first_year: 1997 | first: 27.824 | last_year: 2025 | last: 199.507 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 46 | description: Publishing industries (except Internet) | unit: Quantity index | first_year: 1997 | first: 22.691 | last_year: 2024 | last: 249.244 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 47 | description: Motion picture and sound recording industries | unit: Quantity index | first_year: 1997 | first: 34.484 | last_year: 2024 | last: 168.857 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 48 | description: Broadcasting (except Internet) and telecommunications | unit: Quantity index | first_year: 1997 | first: 33.317 | last_year: 2024 | last: 130.355 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 49 | description: Data processing, hosting, and other information services | unit: Quantity index | first_year: 1997 | first: 20.483 | last_year: 2024 | last: 202.36 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 50 | description: Finance, insurance, real estate, rental, and leasing | unit: Quantity index | first_year: 1997 | first: 47.198 | last_year: 2025 | last: 133.042 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 51 | description: Finance and insurance | unit: Quantity index | first_year: 1997 | first: 35.449 | last_year: 2025 | last: 129.097 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 52 | description: Monetary Authorities- central bank, credit intermediation, and related services | unit: Quantity index | first_year: 1997 | first: 30.236 | last_year: 2024 | last: 120.081 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 53 | description: Securities, commodity contracts, and other financial investments and related activities | unit: Quantity index | first_year: 1997 | first: 32.359 | last_year: 2024 | last: 122.734 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 54 | description: Insurance carriers and related activities | unit: Quantity index | first_year: 1997 | first: 48.753 | last_year: 2024 | last: 142.976 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 55 | description: Funds, trusts, and other financial vehicles | unit: Quantity index | first_year: 1997 | first: 12.954 | last_year: 2024 | last: 7.261 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 56 | description: Real estate and rental and leasing | unit: Quantity index | first_year: 1997 | first: 55.139 | last_year: 2025 | last: 136.009 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 57 | description: Real estate | unit: Quantity index | first_year: 1997 | first: 54.948 | last_year: 2024 | last: 131.669 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 58 | description: Rental and leasing services and lessors of nonfinancial intangible assets | unit: Quantity index | first_year: 1997 | first: 57.301 | last_year: 2024 | last: 126.402 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 59 | description: Professional and business services | unit: Quantity index | first_year: 1997 | first: 43.433 | last_year: 2025 | last: 164.718 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 60 | description: Professional, scientific, and technical services | unit: Quantity index | first_year: 1997 | first: 40.819 | last_year: 2025 | last: 185.628 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 61 | description: Legal services | unit: Quantity index | first_year: 1997 | first: 94.946 | last_year: 2024 | last: 115.116 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 62 | description: Computer systems design and related services | unit: Quantity index | first_year: 1997 | first: 11.787 | last_year: 2024 | last: 220.78 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 63 | description: Miscellaneous professional, scientific, and technical services | unit: Quantity index | first_year: 1997 | first: 47.606 | last_year: 2024 | last: 171.403 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 64 | description: Management of companies and enterprises | unit: Quantity index | first_year: 1997 | first: 48.946 | last_year: 2025 | last: 140.241 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 65 | description: Administrative and support and waste management and remediation services | unit: Quantity index | first_year: 1997 | first: 43.431 | last_year: 2025 | last: 143.31 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 66 | description: Administrative and support services | unit: Quantity index | first_year: 1997 | first: 43.276 | last_year: 2024 | last: 144.475 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 67 | description: Waste management and remediation services | unit: Quantity index | first_year: 1997 | first: 45.666 | last_year: 2024 | last: 104.346 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 68 | description: Educational services, health care, and social assistance | unit: Quantity index | first_year: 1997 | first: 52.177 | last_year: 2025 | last: 135.346 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 69 | description: Educational services | unit: Quantity index | first_year: 1997 | first: 48.588 | last_year: 2025 | last: 128.571 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 70 | description: Health care and social assistance | unit: Quantity index | first_year: 1997 | first: 52.635 | last_year: 2025 | last: 136.691 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 71 | description: Ambulatory health care services | unit: Quantity index | first_year: 1997 | first: 46.874 | last_year: 2024 | last: 134.332 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 72 | description: Hospitals | unit: Quantity index | first_year: 1997 | first: 53.491 | last_year: 2024 | last: 134.763 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 73 | description: Nursing and residential care facilities | unit: Quantity index | first_year: 1997 | first: 83.022 | last_year: 2024 | last: 104.711 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 74 | description: Social assistance | unit: Quantity index | first_year: 1997 | first: 52.946 | last_year: 2024 | last: 128.38 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 75 | description: Arts, entertainment, recreation, accommodation, and food services | unit: Quantity index | first_year: 1997 | first: 58.656 | last_year: 2025 | last: 107.924 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 76 | description: Arts, entertainment, and recreation | unit: Quantity index | first_year: 1997 | first: 53.117 | last_year: 2025 | last: 124.308 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 77 | description: Performing arts, spectator sports, museums, and related activities | unit: Quantity index | first_year: 1997 | first: 39.779 | last_year: 2024 | last: 117.839 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 78 | description: Amusement, gambling, and recreation industries | unit: Quantity index | first_year: 1997 | first: 73.833 | last_year: 2024 | last: 126 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 79 | description: Accommodation and food services | unit: Quantity index | first_year: 1997 | first: 60.568 | last_year: 2025 | last: 103.846 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 80 | description: Accommodation | unit: Quantity index | first_year: 1997 | first: 61.747 | last_year: 2024 | last: 100.349 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 81 | description: Food services and drinking places | unit: Quantity index | first_year: 1997 | first: 59.914 | last_year: 2024 | last: 108.243 | numeric_years: 28 | years_in_file: 29
+geography: North Carolina | line_code: 82 | description: Other services (except government and government enterprises) | unit: Quantity index | first_year: 1997 | first: 106.907 | last_year: 2025 | last: 105.75 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 83 | description: Government and government enterprises | unit: Quantity index | first_year: 1997 | first: 76.22 | last_year: 2025 | last: 106.808 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 84 | description: Federal civilian | unit: Quantity index | first_year: 1997 | first: 68.085 | last_year: 2025 | last: 116.248 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 85 | description: Military | unit: Quantity index | first_year: 1997 | first: 66.639 | last_year: 2025 | last: 102.229 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 86 | description: State and local | unit: Quantity index | first_year: 1997 | first: 80.53 | last_year: 2025 | last: 105.996 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 87 | description: Natural resources and mining | unit: Quantity index | first_year: 1997 | first: 94.097 | last_year: 2025 | last: 119.047 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 88 | description: Trade | unit: Quantity index | first_year: 1997 | first: 59.603 | last_year: 2025 | last: 124.51 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 89 | description: Transportation and utilities | unit: Quantity index | first_year: 1997 | first: 87.758 | last_year: 2025 | last: 127.531 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 90 | description: Manufacturing and information | unit: Quantity index | first_year: 1997 | first: 67.03 | last_year: 2025 | last: 107.673 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 91 | description: Private goods-producing industries 2/ | unit: Quantity index | first_year: 1997 | first: 83.006 | last_year: 2025 | last: 99.619 | numeric_years: 29 | years_in_file: 29
+geography: North Carolina | line_code: 92 | description: Private services-providing industries 3/ | unit: Quantity index | first_year: 1997 | first: 52.399 | last_year: 2025 | last: 137.053 | numeric_years: 29 | years_in_file: 29
+
+WITHIN-FILE VARIATION BY ECONOMIC MEASURE
+Unweighted ranges/medians of retained geography rows, not national estimates; national/state/county/metro records may overlap. Disclosure markers remain missing.
+line_code: 1 | description: All industry total | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 124.795 | maximum: 124.795 | unweighted_median: 124.795
+line_code: 2 | description: Private industries | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 127.566 | maximum: 127.566 | unweighted_median: 127.566
+line_code: 3 | description: Agriculture, forestry, fishing and hunting | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 117.561 | maximum: 117.561 | unweighted_median: 117.561
+line_code: 4 | description: Farms | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 103.506 | maximum: 103.506 | unweighted_median: 103.506
+line_code: 5 | description: Forestry, fishing, and related activities | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 113.036 | maximum: 113.036 | unweighted_median: 113.036
+line_code: 6 | description: Mining, quarrying, and oil and gas extraction | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 131.802 | maximum: 131.802 | unweighted_median: 131.802
+line_code: 7 | description: Oil and gas extraction | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 46.89 | maximum: 46.89 | unweighted_median: 46.89
+line_code: 8 | description: Mining (except oil and gas) | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 133.929 | maximum: 133.929 | unweighted_median: 133.929
+line_code: 9 | description: Support activities for mining | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 185.917 | maximum: 185.917 | unweighted_median: 185.917
+line_code: 10 | description: Utilities | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 135.641 | maximum: 135.641 | unweighted_median: 135.641
+line_code: 11 | description: Construction | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 125.423 | maximum: 125.423 | unweighted_median: 125.423
+line_code: 12 | description: Manufacturing | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 91.128 | maximum: 91.128 | unweighted_median: 91.128
+line_code: 13 | description: Durable goods manufacturing | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 84.603 | maximum: 84.603 | unweighted_median: 84.603
+line_code: 14 | description: Wood product manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 93.525 | maximum: 93.525 | unweighted_median: 93.525
+line_code: 15 | description: Nonmetallic mineral product manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 82.248 | maximum: 82.248 | unweighted_median: 82.248
+line_code: 16 | description: Primary metal manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 199.944 | maximum: 199.944 | unweighted_median: 199.944
+line_code: 17 | description: Fabricated metal product manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 84.709 | maximum: 84.709 | unweighted_median: 84.709
+line_code: 18 | description: Machinery manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 106.005 | maximum: 106.005 | unweighted_median: 106.005
+line_code: 19 | description: Computer and electronic product manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 61.125 | maximum: 61.125 | unweighted_median: 61.125
+line_code: 20 | description: Electrical equipment, appliance, and component manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 59.362 | maximum: 59.362 | unweighted_median: 59.362
+line_code: 21 | description: Motor vehicles, bodies and trailers, and parts manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 113.954 | maximum: 113.954 | unweighted_median: 113.954
+line_code: 22 | description: Other transportation equipment manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 61.752 | maximum: 61.752 | unweighted_median: 61.752
+line_code: 23 | description: Furniture and related product manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 66.453 | maximum: 66.453 | unweighted_median: 66.453
+line_code: 24 | description: Miscellaneous manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 95.006 | maximum: 95.006 | unweighted_median: 95.006
+line_code: 25 | description: Nondurable goods manufacturing | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 96.055 | maximum: 96.055 | unweighted_median: 96.055
+line_code: 26 | description: Food and beverage and tobacco product manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 84.231 | maximum: 84.231 | unweighted_median: 84.231
+line_code: 27 | description: Textile mills and textile product mills | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 74.903 | maximum: 74.903 | unweighted_median: 74.903
+line_code: 28 | description: Apparel, leather, and allied product manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 98.968 | maximum: 98.968 | unweighted_median: 98.968
+line_code: 29 | description: Paper manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 93.333 | maximum: 93.333 | unweighted_median: 93.333
+line_code: 30 | description: Printing and related support activities | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 93.479 | maximum: 93.479 | unweighted_median: 93.479
+line_code: 31 | description: Petroleum and coal products manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 73.547 | maximum: 73.547 | unweighted_median: 73.547
+line_code: 32 | description: Chemical manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 123.029 | maximum: 123.029 | unweighted_median: 123.029
+line_code: 33 | description: Plastics and rubber products manufacturing | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 86.272 | maximum: 86.272 | unweighted_median: 86.272
+line_code: 34 | description: Wholesale trade | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 108.899 | maximum: 108.899 | unweighted_median: 108.899
+line_code: 35 | description: Retail trade | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 141.266 | maximum: 141.266 | unweighted_median: 141.266
+line_code: 36 | description: Transportation and warehousing | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 122.735 | maximum: 122.735 | unweighted_median: 122.735
+line_code: 37 | description: Air transportation | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 144.886 | maximum: 144.886 | unweighted_median: 144.886
+line_code: 38 | description: Rail transportation | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 84.758 | maximum: 84.758 | unweighted_median: 84.758
+line_code: 39 | description: Water transportation | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 606.881 | maximum: 606.881 | unweighted_median: 606.881
+line_code: 40 | description: Truck transportation | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 104.577 | maximum: 104.577 | unweighted_median: 104.577
+line_code: 41 | description: Transit and ground passenger transportation | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 196.496 | maximum: 196.496 | unweighted_median: 196.496
+line_code: 42 | description: Pipeline transportation | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 74.996 | maximum: 74.996 | unweighted_median: 74.996
+line_code: 43 | description: Other transportation and support activities | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 127.559 | maximum: 127.559 | unweighted_median: 127.559
+line_code: 44 | description: Warehousing and storage | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 138.739 | maximum: 138.739 | unweighted_median: 138.739
+line_code: 45 | description: Information | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 199.507 | maximum: 199.507 | unweighted_median: 199.507
+line_code: 46 | description: Publishing industries (except Internet) | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 249.244 | maximum: 249.244 | unweighted_median: 249.244
+line_code: 47 | description: Motion picture and sound recording industries | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 168.857 | maximum: 168.857 | unweighted_median: 168.857
+line_code: 48 | description: Broadcasting (except Internet) and telecommunications | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 130.355 | maximum: 130.355 | unweighted_median: 130.355
+line_code: 49 | description: Data processing, hosting, and other information services | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 202.36 | maximum: 202.36 | unweighted_median: 202.36
+line_code: 50 | description: Finance, insurance, real estate, rental, and leasing | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 133.042 | maximum: 133.042 | unweighted_median: 133.042
+line_code: 51 | description: Finance and insurance | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 129.097 | maximum: 129.097 | unweighted_median: 129.097
+line_code: 52 | description: Monetary Authorities- central bank, credit intermediation, and related services | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 120.081 | maximum: 120.081 | unweighted_median: 120.081
+line_code: 53 | description: Securities, commodity contracts, and other financial investments and related activities | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 122.734 | maximum: 122.734 | unweighted_median: 122.734
+line_code: 54 | description: Insurance carriers and related activities | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 142.976 | maximum: 142.976 | unweighted_median: 142.976
+line_code: 55 | description: Funds, trusts, and other financial vehicles | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 7.261 | maximum: 7.261 | unweighted_median: 7.261
+line_code: 56 | description: Real estate and rental and leasing | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 136.009 | maximum: 136.009 | unweighted_median: 136.009
+line_code: 57 | description: Real estate | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 131.669 | maximum: 131.669 | unweighted_median: 131.669
+line_code: 58 | description: Rental and leasing services and lessors of nonfinancial intangible assets | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 126.402 | maximum: 126.402 | unweighted_median: 126.402
+line_code: 59 | description: Professional and business services | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 164.718 | maximum: 164.718 | unweighted_median: 164.718
+line_code: 60 | description: Professional, scientific, and technical services | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 185.628 | maximum: 185.628 | unweighted_median: 185.628
+line_code: 61 | description: Legal services | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 115.116 | maximum: 115.116 | unweighted_median: 115.116
+line_code: 62 | description: Computer systems design and related services | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 220.78 | maximum: 220.78 | unweighted_median: 220.78
+line_code: 63 | description: Miscellaneous professional, scientific, and technical services | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 171.403 | maximum: 171.403 | unweighted_median: 171.403
+line_code: 64 | description: Management of companies and enterprises | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 140.241 | maximum: 140.241 | unweighted_median: 140.241
+line_code: 65 | description: Administrative and support and waste management and remediation services | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 143.31 | maximum: 143.31 | unweighted_median: 143.31
+line_code: 66 | description: Administrative and support services | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 144.475 | maximum: 144.475 | unweighted_median: 144.475
+line_code: 67 | description: Waste management and remediation services | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 104.346 | maximum: 104.346 | unweighted_median: 104.346
+line_code: 68 | description: Educational services, health care, and social assistance | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 135.346 | maximum: 135.346 | unweighted_median: 135.346
+line_code: 69 | description: Educational services | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 128.571 | maximum: 128.571 | unweighted_median: 128.571
+line_code: 70 | description: Health care and social assistance | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 136.691 | maximum: 136.691 | unweighted_median: 136.691
+line_code: 71 | description: Ambulatory health care services | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 134.332 | maximum: 134.332 | unweighted_median: 134.332
+line_code: 72 | description: Hospitals | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 134.763 | maximum: 134.763 | unweighted_median: 134.763
+line_code: 73 | description: Nursing and residential care facilities | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 104.711 | maximum: 104.711 | unweighted_median: 104.711
+line_code: 74 | description: Social assistance | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 128.38 | maximum: 128.38 | unweighted_median: 128.38
+line_code: 75 | description: Arts, entertainment, recreation, accommodation, and food services | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 107.924 | maximum: 107.924 | unweighted_median: 107.924
+line_code: 76 | description: Arts, entertainment, and recreation | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 124.308 | maximum: 124.308 | unweighted_median: 124.308
+line_code: 77 | description: Performing arts, spectator sports, museums, and related activities | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 117.839 | maximum: 117.839 | unweighted_median: 117.839
+line_code: 78 | description: Amusement, gambling, and recreation industries | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 126 | maximum: 126 | unweighted_median: 126
+line_code: 79 | description: Accommodation and food services | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 103.846 | maximum: 103.846 | unweighted_median: 103.846
+line_code: 80 | description: Accommodation | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 100.349 | maximum: 100.349 | unweighted_median: 100.349
+line_code: 81 | description: Food services and drinking places | unit: Quantity index | latest_reported_year: 2024 | geography_rows: 1 | minimum: 108.243 | maximum: 108.243 | unweighted_median: 108.243
+line_code: 82 | description: Other services (except government and government enterprises) | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 105.75 | maximum: 105.75 | unweighted_median: 105.75
+line_code: 83 | description: Government and government enterprises | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 106.808 | maximum: 106.808 | unweighted_median: 106.808
+line_code: 84 | description: Federal civilian | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 116.248 | maximum: 116.248 | unweighted_median: 116.248
+line_code: 85 | description: Military | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 102.229 | maximum: 102.229 | unweighted_median: 102.229
+line_code: 86 | description: State and local | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 105.996 | maximum: 105.996 | unweighted_median: 105.996
+line_code: 87 | description: Natural resources and mining | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 119.047 | maximum: 119.047 | unweighted_median: 119.047
+line_code: 88 | description: Trade | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 124.51 | maximum: 124.51 | unweighted_median: 124.51
+line_code: 89 | description: Transportation and utilities | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 127.531 | maximum: 127.531 | unweighted_median: 127.531
+line_code: 90 | description: Manufacturing and information | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 107.673 | maximum: 107.673 | unweighted_median: 107.673
+line_code: 91 | description: Private goods-producing industries 2/ | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 99.619 | maximum: 99.619 | unweighted_median: 99.619
+line_code: 92 | description: Private services-providing industries 3/ | unit: Quantity index | latest_reported_year: 2025 | geography_rows: 1 | minimum: 137.053 | maximum: 137.053 | unweighted_median: 137.053
+
+TRACEABLE FINDINGS
+f1: North Carolina / All industry total 1997 = 62.285 Quantity index [CSV record 1; GeoFIPS=37000; LineCode=1; column=1997]
+f2: North Carolina / All industry total 2025 = 124.795 Quantity index [CSV record 1; GeoFIPS=37000; LineCode=1; column=2025]
+f3: North Carolina / Private industries 1997 = 60.356 Quantity index [CSV record 2; GeoFIPS=37000; LineCode=2; column=1997]
+f4: North Carolina / Private industries 2025 = 127.566 Quantity index [CSV record 2; GeoFIPS=37000; LineCode=2; column=2025]
+f5: North Carolina / Agriculture, forestry, fishing and hunting 1997 = 85.851 Quantity index [CSV record 3; GeoFIPS=37000; LineCode=3; column=1997]
+f6: North Carolina / Agriculture, forestry, fishing and hunting 2025 = 117.561 Quantity index [CSV record 3; GeoFIPS=37000; LineCode=3; column=2025]
+f7: North Carolina / Farms 1997 = 90.013 Quantity index [CSV record 4; GeoFIPS=37000; LineCode=4; column=1997]
+f8: North Carolina / Farms 2024 = 103.506 Quantity index [CSV record 4; GeoFIPS=37000; LineCode=4; column=2024]
+f9: North Carolina / Forestry, fishing, and related activities 1997 = 67.851 Quantity index [CSV record 5; GeoFIPS=37000; LineCode=5; column=1997]
+f10: North Carolina / Forestry, fishing, and related activities 2024 = 113.036 Quantity index [CSV record 5; GeoFIPS=37000; LineCode=5; column=2024]
+f11: North Carolina / Mining, quarrying, and oil and gas extraction 1997 = 132.327 Quantity index [CSV record 6; GeoFIPS=37000; LineCode=6; column=1997]
+f12: North Carolina / Mining, quarrying, and oil and gas extraction 2025 = 131.802 Quantity index [CSV record 6; GeoFIPS=37000; LineCode=6; column=2025]
+f13: North Carolina / Oil and gas extraction 1997 = 264.875 Quantity index [CSV record 7; GeoFIPS=37000; LineCode=7; column=1997]
+f14: North Carolina / Oil and gas extraction 2024 = 46.89 Quantity index [CSV record 7; GeoFIPS=37000; LineCode=7; column=2024]
+f15: North Carolina / Mining (except oil and gas) 1997 = 137.63 Quantity index [CSV record 8; GeoFIPS=37000; LineCode=8; column=1997]
+f16: North Carolina / Mining (except oil and gas) 2024 = 133.929 Quantity index [CSV record 8; GeoFIPS=37000; LineCode=8; column=2024]
+f17: North Carolina / Support activities for mining 1997 = 32.841 Quantity index [CSV record 9; GeoFIPS=37000; LineCode=9; column=1997]
+f18: North Carolina / Support activities for mining 2024 = 185.917 Quantity index [CSV record 9; GeoFIPS=37000; LineCode=9; column=2024]
+f19: North Carolina / Utilities 1997 = 95.707 Quantity index [CSV record 10; GeoFIPS=37000; LineCode=10; column=1997]
+f20: North Carolina / Utilities 2025 = 135.641 Quantity index [CSV record 10; GeoFIPS=37000; LineCode=10; column=2025]
+f21: North Carolina / Construction 1997 = 111.357 Quantity index [CSV record 11; GeoFIPS=37000; LineCode=11; column=1997]
+f22: North Carolina / Construction 2025 = 125.423 Quantity index [CSV record 11; GeoFIPS=37000; LineCode=11; column=2025]
+f23: North Carolina / Manufacturing 1997 = 77.31 Quantity index [CSV record 12; GeoFIPS=37000; LineCode=12; column=1997]
+f24: North Carolina / Manufacturing 2025 = 91.128 Quantity index [CSV record 12; GeoFIPS=37000; LineCode=12; column=2025]
+f25: North Carolina / Durable goods manufacturing 1997 = 43.292 Quantity index [CSV record 13; GeoFIPS=37000; LineCode=13; column=1997]
+f26: North Carolina / Durable goods manufacturing 2025 = 84.603 Quantity index [CSV record 13; GeoFIPS=37000; LineCode=13; column=2025]
+f27: North Carolina / Wood product manufacturing 1997 = 91.334 Quantity index [CSV record 14; GeoFIPS=37000; LineCode=14; column=1997]
+f28: North Carolina / Wood product manufacturing 2024 = 93.525 Quantity index [CSV record 14; GeoFIPS=37000; LineCode=14; column=2024]
+f29: North Carolina / Nonmetallic mineral product manufacturing 1997 = 139.136 Quantity index [CSV record 15; GeoFIPS=37000; LineCode=15; column=1997]
+f30: North Carolina / Nonmetallic mineral product manufacturing 2024 = 82.248 Quantity index [CSV record 15; GeoFIPS=37000; LineCode=15; column=2024]
+f31: North Carolina / Primary metal manufacturing 1997 = 48.896 Quantity index [CSV record 16; GeoFIPS=37000; LineCode=16; column=1997]
+f32: North Carolina / Primary metal manufacturing 2024 = 199.944 Quantity index [CSV record 16; GeoFIPS=37000; LineCode=16; column=2024]
+f33: North Carolina / Fabricated metal product manufacturing 1997 = 95.136 Quantity index [CSV record 17; GeoFIPS=37000; LineCode=17; column=1997]
+f34: North Carolina / Fabricated metal product manufacturing 2024 = 84.709 Quantity index [CSV record 17; GeoFIPS=37000; LineCode=17; column=2024]
+f35: North Carolina / Machinery manufacturing 1997 = 57.574 Quantity index [CSV record 18; GeoFIPS=37000; LineCode=18; column=1997]
+f36: North Carolina / Machinery manufacturing 2024 = 106.005 Quantity index [CSV record 18; GeoFIPS=37000; LineCode=18; column=2024]
+f37: North Carolina / Computer and electronic product manufacturing 1997 = 10.045 Quantity index [CSV record 19; GeoFIPS=37000; LineCode=19; column=1997]
+f38: North Carolina / Computer and electronic product manufacturing 2024 = 61.125 Quantity index [CSV record 19; GeoFIPS=37000; LineCode=19; column=2024]
+f39: North Carolina / Electrical equipment, appliance, and component manufacturing 1997 = 104.115 Quantity index [CSV record 20; GeoFIPS=37000; LineCode=20; column=1997]
+f40: North Carolina / Electrical equipment, appliance, and component manufacturing 2024 = 59.362 Quantity index [CSV record 20; GeoFIPS=37000; LineCode=20; column=2024]
+f41: North Carolina / Motor vehicles, bodies and trailers, and parts manufacturing 1997 = 39.441 Quantity index [CSV record 21; GeoFIPS=37000; LineCode=21; column=1997]
+f42: North Carolina / Motor vehicles, bodies and trailers, and parts manufacturing 2024 = 113.954 Quantity index [CSV record 21; GeoFIPS=37000; LineCode=21; column=2024]
+f43: North Carolina / Other transportation equipment manufacturing 1997 = 9.136 Quantity index [CSV record 22; GeoFIPS=37000; LineCode=22; column=1997]
+f44: North Carolina / Other transportation equipment manufacturing 2024 = 61.752 Quantity index [CSV record 22; GeoFIPS=37000; LineCode=22; column=2024]
+f45: North Carolina / Furniture and related product manufacturing 1997 = 156.578 Quantity index [CSV record 23; GeoFIPS=37000; LineCode=23; column=1997]
+f46: North Carolina / Furniture and related product manufacturing 2024 = 66.453 Quantity index [CSV record 23; GeoFIPS=37000; LineCode=23; column=2024]
+f47: North Carolina / Miscellaneous manufacturing 1997 = 70.309 Quantity index [CSV record 24; GeoFIPS=37000; LineCode=24; column=1997]
+f48: North Carolina / Miscellaneous manufacturing 2024 = 95.006 Quantity index [CSV record 24; GeoFIPS=37000; LineCode=24; column=2024]
+f49: North Carolina / Nondurable goods manufacturing 1997 = 112.652 Quantity index [CSV record 25; GeoFIPS=37000; LineCode=25; column=1997]
+f50: North Carolina / Nondurable goods manufacturing 2025 = 96.055 Quantity index [CSV record 25; GeoFIPS=37000; LineCode=25; column=2025]
+f51: North Carolina / Food and beverage and tobacco product manufacturing 1997 = 86.492 Quantity index [CSV record 26; GeoFIPS=37000; LineCode=26; column=1997]
+f52: North Carolina / Food and beverage and tobacco product manufacturing 2024 = 84.231 Quantity index [CSV record 26; GeoFIPS=37000; LineCode=26; column=2024]
+f53: North Carolina / Textile mills and textile product mills 1997 = 237.766 Quantity index [CSV record 27; GeoFIPS=37000; LineCode=27; column=1997]
+f54: North Carolina / Textile mills and textile product mills 2024 = 74.903 Quantity index [CSV record 27; GeoFIPS=37000; LineCode=27; column=2024]
+f55: North Carolina / Apparel, leather, and allied product manufacturing 1997 = 708.973 Quantity index [CSV record 28; GeoFIPS=37000; LineCode=28; column=1997]
+f56: North Carolina / Apparel, leather, and allied product manufacturing 2024 = 98.968 Quantity index [CSV record 28; GeoFIPS=37000; LineCode=28; column=2024]
+f57: North Carolina / Paper manufacturing 1997 = 119.083 Quantity index [CSV record 29; GeoFIPS=37000; LineCode=29; column=1997]
+f58: North Carolina / Paper manufacturing 2024 = 93.333 Quantity index [CSV record 29; GeoFIPS=37000; LineCode=29; column=2024]
+f59: North Carolina / Printing and related support activities 1997 = 69.153 Quantity index [CSV record 30; GeoFIPS=37000; LineCode=30; column=1997]
+f60: North Carolina / Printing and related support activities 2024 = 93.479 Quantity index [CSV record 30; GeoFIPS=37000; LineCode=30; column=2024]
+f61: North Carolina / Petroleum and coal products manufacturing 1997 = 184.87 Quantity index [CSV record 31; GeoFIPS=37000; LineCode=31; column=1997]
+f62: North Carolina / Petroleum and coal products manufacturing 2024 = 73.547 Quantity index [CSV record 31; GeoFIPS=37000; LineCode=31; column=2024]
+f63: North Carolina / Chemical manufacturing 1997 = 115.829 Quantity index [CSV record 32; GeoFIPS=37000; LineCode=32; column=1997]
+f64: North Carolina / Chemical manufacturing 2024 = 123.029 Quantity index [CSV record 32; GeoFIPS=37000; LineCode=32; column=2024]
+f65: North Carolina / Plastics and rubber products manufacturing 1997 = 85.357 Quantity index [CSV record 33; GeoFIPS=37000; LineCode=33; column=1997]
+f66: North Carolina / Plastics and rubber products manufacturing 2024 = 86.272 Quantity index [CSV record 33; GeoFIPS=37000; LineCode=33; column=2024]
+f67: North Carolina / Wholesale trade 1997 = 56.433 Quantity index [CSV record 34; GeoFIPS=37000; LineCode=34; column=1997]
+f68: North Carolina / Wholesale trade 2025 = 108.899 Quantity index [CSV record 34; GeoFIPS=37000; LineCode=34; column=2025]
+f69: North Carolina / Retail trade 1997 = 62.255 Quantity index [CSV record 35; GeoFIPS=37000; LineCode=35; column=1997]
+f70: North Carolina / Retail trade 2025 = 141.266 Quantity index [CSV record 35; GeoFIPS=37000; LineCode=35; column=2025]
+f71: North Carolina / Transportation and warehousing 1997 = 83.329 Quantity index [CSV record 36; GeoFIPS=37000; LineCode=36; column=1997]
+f72: North Carolina / Transportation and warehousing 2025 = 122.735 Quantity index [CSV record 36; GeoFIPS=37000; LineCode=36; column=2025]
+f73: North Carolina / Air transportation 1997 = 86.924 Quantity index [CSV record 37; GeoFIPS=37000; LineCode=37; column=1997]
+f74: North Carolina / Air transportation 2024 = 144.886 Quantity index [CSV record 37; GeoFIPS=37000; LineCode=37; column=2024]
+f75: North Carolina / Rail transportation 1997 = 101.673 Quantity index [CSV record 38; GeoFIPS=37000; LineCode=38; column=1997]
+f76: North Carolina / Rail transportation 2024 = 84.758 Quantity index [CSV record 38; GeoFIPS=37000; LineCode=38; column=2024]
+f77: North Carolina / Water transportation 1997 = 949.353 Quantity index [CSV record 39; GeoFIPS=37000; LineCode=39; column=1997]
+f78: North Carolina / Water transportation 2024 = 606.881 Quantity index [CSV record 39; GeoFIPS=37000; LineCode=39; column=2024]
+f79: North Carolina / Truck transportation 1997 = 94.482 Quantity index [CSV record 40; GeoFIPS=37000; LineCode=40; column=1997]
+f80: North Carolina / Truck transportation 2024 = 104.577 Quantity index [CSV record 40; GeoFIPS=37000; LineCode=40; column=2024]
+f81: North Carolina / Transit and ground passenger transportation 1997 = 65.995 Quantity index [CSV record 41; GeoFIPS=37000; LineCode=41; column=1997]
+f82: North Carolina / Transit and ground passenger transportation 2024 = 196.496 Quantity index [CSV record 41; GeoFIPS=37000; LineCode=41; column=2024]
+f83: North Carolina / Pipeline transportation 1997 = 17.467 Quantity index [CSV record 42; GeoFIPS=37000; LineCode=42; column=1997]
+f84: North Carolina / Pipeline transportation 2024 = 74.996 Quantity index [CSV record 42; GeoFIPS=37000; LineCode=42; column=2024]
+f85: North Carolina / Other transportation and support activities 1997 = 95.726 Quantity index [CSV record 43; GeoFIPS=37000; LineCode=43; column=1997]
+f86: North Carolina / Other transportation and support activities 2024 = 127.559 Quantity index [CSV record 43; GeoFIPS=37000; LineCode=43; column=2024]
+f87: North Carolina / Warehousing and storage 1997 = 36.918 Quantity index [CSV record 44; GeoFIPS=37000; LineCode=44; column=1997]
+f88: North Carolina / Warehousing and storage 2024 = 138.739 Quantity index [CSV record 44; GeoFIPS=37000; LineCode=44; column=2024]
+f89: North Carolina / Information 1997 = 27.824 Quantity index [CSV record 45; GeoFIPS=37000; LineCode=45; column=1997]
+f90: North Carolina / Information 2025 = 199.507 Quantity index [CSV record 45; GeoFIPS=37000; LineCode=45; column=2025]
+f91: North Carolina / Publishing industries (except Internet) 1997 = 22.691 Quantity index [CSV record 46; GeoFIPS=37000; LineCode=46; column=1997]
+f92: North Carolina / Publishing industries (except Internet) 2024 = 249.244 Quantity index [CSV record 46; GeoFIPS=37000; LineCode=46; column=2024]
+f93: North Carolina / Motion picture and sound recording industries 1997 = 34.484 Quantity index [CSV record 47; GeoFIPS=37000; LineCode=47; column=1997]
+f94: North Carolina / Motion picture and sound recording industries 2024 = 168.857 Quantity index [CSV record 47; GeoFIPS=37000; LineCode=47; column=2024]
+f95: North Carolina / Broadcasting (except Internet) and telecommunications 1997 = 33.317 Quantity index [CSV record 48; GeoFIPS=37000; LineCode=48; column=1997]
+f96: North Carolina / Broadcasting (except Internet) and telecommunications 2024 = 130.355 Quantity index [CSV record 48; GeoFIPS=37000; LineCode=48; column=2024]
+f97: North Carolina / Data processing, hosting, and other information services 1997 = 20.483 Quantity index [CSV record 49; GeoFIPS=37000; LineCode=49; column=1997]
+f98: North Carolina / Data processing, hosting, and other information services 2024 = 202.36 Quantity index [CSV record 49; GeoFIPS=37000; LineCode=49; column=2024]
+f99: North Carolina / Finance, insurance, real estate, rental, and leasing 1997 = 47.198 Quantity index [CSV record 50; GeoFIPS=37000; LineCode=50; column=1997]
+f100: North Carolina / Finance, insurance, real estate, rental, and leasing 2025 = 133.042 Quantity index [CSV record 50; GeoFIPS=37000; LineCode=50; column=2025]
+f101: North Carolina / Finance and insurance 1997 = 35.449 Quantity index [CSV record 51; GeoFIPS=37000; LineCode=51; column=1997]
+f102: North Carolina / Finance and insurance 2025 = 129.097 Quantity index [CSV record 51; GeoFIPS=37000; LineCode=51; column=2025]
+f103: North Carolina / Monetary Authorities- central bank, credit intermediation, and related services 1997 = 30.236 Quantity index [CSV record 52; GeoFIPS=37000; LineCode=52; column=1997]
+f104: North Carolina / Monetary Authorities- central bank, credit intermediation, and related services 2024 = 120.081 Quantity index [CSV record 52; GeoFIPS=37000; LineCode=52; column=2024]
+f105: North Carolina / Securities, commodity contracts, and other financial investments and related activities 1997 = 32.359 Quantity index [CSV record 53; GeoFIPS=37000; LineCode=53; column=1997]
+f106: North Carolina / Securities, commodity contracts, and other financial investments and related activities 2024 = 122.734 Quantity index [CSV record 53; GeoFIPS=37000; LineCode=53; column=2024]
+f107: North Carolina / Insurance carriers and related activities 1997 = 48.753 Quantity index [CSV record 54; GeoFIPS=37000; LineCode=54; column=1997]
+f108: North Carolina / Insurance carriers and related activities 2024 = 142.976 Quantity index [CSV record 54; GeoFIPS=37000; LineCode=54; column=2024]
+f109: North Carolina / Funds, trusts, and other financial vehicles 1997 = 12.954 Quantity index [CSV record 55; GeoFIPS=37000; LineCode=55; column=1997]
+f110: North Carolina / Funds, trusts, and other financial vehicles 2024 = 7.261 Quantity index [CSV record 55; GeoFIPS=37000; LineCode=55; column=2024]
+f111: North Carolina / Real estate and rental and leasing 1997 = 55.139 Quantity index [CSV record 56; GeoFIPS=37000; LineCode=56; column=1997]
+f112: North Carolina / Real estate and rental and leasing 2025 = 136.009 Quantity index [CSV record 56; GeoFIPS=37000; LineCode=56; column=2025]
+f113: North Carolina / Real estate 1997 = 54.948 Quantity index [CSV record 57; GeoFIPS=37000; LineCode=57; column=1997]
+f114: North Carolina / Real estate 2024 = 131.669 Quantity index [CSV record 57; GeoFIPS=37000; LineCode=57; column=2024]
+f115: North Carolina / Rental and leasing services and lessors of nonfinancial intangible assets 1997 = 57.301 Quantity index [CSV record 58; GeoFIPS=37000; LineCode=58; column=1997]
+f116: North Carolina / Rental and leasing services and lessors of nonfinancial intangible assets 2024 = 126.402 Quantity index [CSV record 58; GeoFIPS=37000; LineCode=58; column=2024]
+f117: North Carolina / Professional and business services 1997 = 43.433 Quantity index [CSV record 59; GeoFIPS=37000; LineCode=59; column=1997]
+f118: North Carolina / Professional and business services 2025 = 164.718 Quantity index [CSV record 59; GeoFIPS=37000; LineCode=59; column=2025]
+f119: North Carolina / Professional, scientific, and technical services 1997 = 40.819 Quantity index [CSV record 60; GeoFIPS=37000; LineCode=60; column=1997]
+f120: North Carolina / Professional, scientific, and technical services 2025 = 185.628 Quantity index [CSV record 60; GeoFIPS=37000; LineCode=60; column=2025]
+f121: North Carolina / Legal services 1997 = 94.946 Quantity index [CSV record 61; GeoFIPS=37000; LineCode=61; column=1997]
+f122: North Carolina / Legal services 2024 = 115.116 Quantity index [CSV record 61; GeoFIPS=37000; LineCode=61; column=2024]
+f123: North Carolina / Computer systems design and related services 1997 = 11.787 Quantity index [CSV record 62; GeoFIPS=37000; LineCode=62; column=1997]
+f124: North Carolina / Computer systems design and related services 2024 = 220.78 Quantity index [CSV record 62; GeoFIPS=37000; LineCode=62; column=2024]
+f125: North Carolina / Miscellaneous professional, scientific, and technical services 1997 = 47.606 Quantity index [CSV record 63; GeoFIPS=37000; LineCode=63; column=1997]
+f126: North Carolina / Miscellaneous professional, scientific, and technical services 2024 = 171.403 Quantity index [CSV record 63; GeoFIPS=37000; LineCode=63; column=2024]
+f127: North Carolina / Management of companies and enterprises 1997 = 48.946 Quantity index [CSV record 64; GeoFIPS=37000; LineCode=64; column=1997]
+f128: North Carolina / Management of companies and enterprises 2025 = 140.241 Quantity index [CSV record 64; GeoFIPS=37000; LineCode=64; column=2025]
+f129: North Carolina / Administrative and support and waste management and remediation services 1997 = 43.431 Quantity index [CSV record 65; GeoFIPS=37000; LineCode=65; column=1997]
+f130: North Carolina / Administrative and support and waste management and remediation services 2025 = 143.31 Quantity index [CSV record 65; GeoFIPS=37000; LineCode=65; column=2025]
+f131: North Carolina / Administrative and support services 1997 = 43.276 Quantity index [CSV record 66; GeoFIPS=37000; LineCode=66; column=1997]
+f132: North Carolina / Administrative and support services 2024 = 144.475 Quantity index [CSV record 66; GeoFIPS=37000; LineCode=66; column=2024]
+f133: North Carolina / Waste management and remediation services 1997 = 45.666 Quantity index [CSV record 67; GeoFIPS=37000; LineCode=67; column=1997]
+f134: North Carolina / Waste management and remediation services 2024 = 104.346 Quantity index [CSV record 67; GeoFIPS=37000; LineCode=67; column=2024]
+f135: North Carolina / Educational services, health care, and social assistance 1997 = 52.177 Quantity index [CSV record 68; GeoFIPS=37000; LineCode=68; column=1997]
+f136: North Carolina / Educational services, health care, and social assistance 2025 = 135.346 Quantity index [CSV record 68; GeoFIPS=37000; LineCode=68; column=2025]
+f137: North Carolina / Educational services 1997 = 48.588 Quantity index [CSV record 69; GeoFIPS=37000; LineCode=69; column=1997]
+f138: North Carolina / Educational services 2025 = 128.571 Quantity index [CSV record 69; GeoFIPS=37000; LineCode=69; column=2025]
+f139: North Carolina / Health care and social assistance 1997 = 52.635 Quantity index [CSV record 70; GeoFIPS=37000; LineCode=70; column=1997]
+f140: North Carolina / Health care and social assistance 2025 = 136.691 Quantity index [CSV record 70; GeoFIPS=37000; LineCode=70; column=2025]
+f141: North Carolina / Ambulatory health care services 1997 = 46.874 Quantity index [CSV record 71; GeoFIPS=37000; LineCode=71; column=1997]
+f142: North Carolina / Ambulatory health care services 2024 = 134.332 Quantity index [CSV record 71; GeoFIPS=37000; LineCode=71; column=2024]
+f143: North Carolina / Hospitals 1997 = 53.491 Quantity index [CSV record 72; GeoFIPS=37000; LineCode=72; column=1997]
+f144: North Carolina / Hospitals 2024 = 134.763 Quantity index [CSV record 72; GeoFIPS=37000; LineCode=72; column=2024]
+f145: North Carolina / Nursing and residential care facilities 1997 = 83.022 Quantity index [CSV record 73; GeoFIPS=37000; LineCode=73; column=1997]
+f146: North Carolina / Nursing and residential care facilities 2024 = 104.711 Quantity index [CSV record 73; GeoFIPS=37000; LineCode=73; column=2024]
+f147: North Carolina / Social assistance 1997 = 52.946 Quantity index [CSV record 74; GeoFIPS=37000; LineCode=74; column=1997]
+f148: North Carolina / Social assistance 2024 = 128.38 Quantity index [CSV record 74; GeoFIPS=37000; LineCode=74; column=2024]
+f149: North Carolina / Arts, entertainment, recreation, accommodation, and food services 1997 = 58.656 Quantity index [CSV record 75; GeoFIPS=37000; LineCode=75; column=1997]
+f150: North Carolina / Arts, entertainment, recreation, accommodation, and food services 2025 = 107.924 Quantity index [CSV record 75; GeoFIPS=37000; LineCode=75; column=2025]
+f151: North Carolina / Arts, entertainment, and recreation 1997 = 53.117 Quantity index [CSV record 76; GeoFIPS=37000; LineCode=76; column=1997]
+f152: North Carolina / Arts, entertainment, and recreation 2025 = 124.308 Quantity index [CSV record 76; GeoFIPS=37000; LineCode=76; column=2025]
+f153: North Carolina / Performing arts, spectator sports, museums, and related activities 1997 = 39.779 Quantity index [CSV record 77; GeoFIPS=37000; LineCode=77; column=1997]
+f154: North Carolina / Performing arts, spectator sports, museums, and related activities 2024 = 117.839 Quantity index [CSV record 77; GeoFIPS=37000; LineCode=77; column=2024]
+f155: North Carolina / Amusement, gambling, and recreation industries 1997 = 73.833 Quantity index [CSV record 78; GeoFIPS=37000; LineCode=78; column=1997]
+f156: North Carolina / Amusement, gambling, and recreation industries 2024 = 126 Quantity index [CSV record 78; GeoFIPS=37000; LineCode=78; column=2024]
+f157: North Carolina / Accommodation and food services 1997 = 60.568 Quantity index [CSV record 79; GeoFIPS=37000; LineCode=79; column=1997]
+f158: North Carolina / Accommodation and food services 2025 = 103.846 Quantity index [CSV record 79; GeoFIPS=37000; LineCode=79; column=2025]
+f159: North Carolina / Accommodation 1997 = 61.747 Quantity index [CSV record 80; GeoFIPS=37000; LineCode=80; column=1997]
+f160: North Carolina / Accommodation 2024 = 100.349 Quantity index [CSV record 80; GeoFIPS=37000; LineCode=80; column=2024]
+f161: North Carolina / Food services and drinking places 1997 = 59.914 Quantity index [CSV record 81; GeoFIPS=37000; LineCode=81; column=1997]
+f162: North Carolina / Food services and drinking places 2024 = 108.243 Quantity index [CSV record 81; GeoFIPS=37000; LineCode=81; column=2024]
+f163: North Carolina / Other services (except government and government enterprises) 1997 = 106.907 Quantity index [CSV record 82; GeoFIPS=37000; LineCode=82; column=1997]
+f164: North Carolina / Other services (except government and government enterprises) 2025 = 105.75 Quantity index [CSV record 82; GeoFIPS=37000; LineCode=82; column=2025]
+f165: North Carolina / Government and government enterprises 1997 = 76.22 Quantity index [CSV record 83; GeoFIPS=37000; LineCode=83; column=1997]
+f166: North Carolina / Government and government enterprises 2025 = 106.808 Quantity index [CSV record 83; GeoFIPS=37000; LineCode=83; column=2025]
+f167: North Carolina / Federal civilian 1997 = 68.085 Quantity index [CSV record 84; GeoFIPS=37000; LineCode=84; column=1997]
+f168: North Carolina / Federal civilian 2025 = 116.248 Quantity index [CSV record 84; GeoFIPS=37000; LineCode=84; column=2025]
+f169: North Carolina / Military 1997 = 66.639 Quantity index [CSV record 85; GeoFIPS=37000; LineCode=85; column=1997]
+f170: North Carolina / Military 2025 = 102.229 Quantity index [CSV record 85; GeoFIPS=37000; LineCode=85; column=2025]
+f171: North Carolina / State and local 1997 = 80.53 Quantity index [CSV record 86; GeoFIPS=37000; LineCode=86; column=1997]
+f172: North Carolina / State and local 2025 = 105.996 Quantity index [CSV record 86; GeoFIPS=37000; LineCode=86; column=2025]
+f173: North Carolina / Natural resources and mining 1997 = 94.097 Quantity index [CSV record 87; GeoFIPS=37000; LineCode=87; column=1997]
+f174: North Carolina / Natural resources and mining 2025 = 119.047 Quantity index [CSV record 87; GeoFIPS=37000; LineCode=87; column=2025]
+f175: North Carolina / Trade 1997 = 59.603 Quantity index [CSV record 88; GeoFIPS=37000; LineCode=88; column=1997]
+f176: North Carolina / Trade 2025 = 124.51 Quantity index [CSV record 88; GeoFIPS=37000; LineCode=88; column=2025]
+f177: North Carolina / Transportation and utilities 1997 = 87.758 Quantity index [CSV record 89; GeoFIPS=37000; LineCode=89; column=1997]
+f178: North Carolina / Transportation and utilities 2025 = 127.531 Quantity index [CSV record 89; GeoFIPS=37000; LineCode=89; column=2025]
+f179: North Carolina / Manufacturing and information 1997 = 67.03 Quantity index [CSV record 90; GeoFIPS=37000; LineCode=90; column=1997]
+f180: North Carolina / Manufacturing and information 2025 = 107.673 Quantity index [CSV record 90; GeoFIPS=37000; LineCode=90; column=2025]
+f181: North Carolina / Private goods-producing industries 2/ 1997 = 83.006 Quantity index [CSV record 91; GeoFIPS=37000; LineCode=91; column=1997]
+f182: North Carolina / Private goods-producing industries 2/ 2025 = 99.619 Quantity index [CSV record 91; GeoFIPS=37000; LineCode=91; column=2025]
+f183: North Carolina / Private services-providing industries 3/ 1997 = 52.399 Quantity index [CSV record 92; GeoFIPS=37000; LineCode=92; column=1997]
+f184: North Carolina / Private services-providing industries 3/ 2025 = 137.053 Quantity index [CSV record 92; GeoFIPS=37000; LineCode=92; column=2025]
+c1: All industry total endpoint difference = 62.51 Quantity index; difference(f2, f1). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c2: Private industries endpoint difference = 67.21 Quantity index; difference(f4, f3). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c3: Agriculture, forestry, fishing and hunting endpoint difference = 31.71 Quantity index; difference(f6, f5). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c4: Farms endpoint difference = 13.493 Quantity index; difference(f8, f7). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c5: Forestry, fishing, and related activities endpoint difference = 45.185 Quantity index; difference(f10, f9). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c6: Mining, quarrying, and oil and gas extraction endpoint difference = -0.525 Quantity index; difference(f12, f11). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c7: Oil and gas extraction endpoint difference = -217.985 Quantity index; difference(f14, f13). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c8: Mining (except oil and gas) endpoint difference = -3.701 Quantity index; difference(f16, f15). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c9: Support activities for mining endpoint difference = 153.076 Quantity index; difference(f18, f17). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c10: Utilities endpoint difference = 39.934 Quantity index; difference(f20, f19). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c11: Construction endpoint difference = 14.066 Quantity index; difference(f22, f21). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c12: Manufacturing endpoint difference = 13.818 Quantity index; difference(f24, f23). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c13: Durable goods manufacturing endpoint difference = 41.311 Quantity index; difference(f26, f25). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c14: Wood product manufacturing endpoint difference = 2.191 Quantity index; difference(f28, f27). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c15: Nonmetallic mineral product manufacturing endpoint difference = -56.888 Quantity index; difference(f30, f29). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c16: Primary metal manufacturing endpoint difference = 151.048 Quantity index; difference(f32, f31). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c17: Fabricated metal product manufacturing endpoint difference = -10.427 Quantity index; difference(f34, f33). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c18: Machinery manufacturing endpoint difference = 48.431 Quantity index; difference(f36, f35). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c19: Computer and electronic product manufacturing endpoint difference = 51.08 Quantity index; difference(f38, f37). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c20: Electrical equipment, appliance, and component manufacturing endpoint difference = -44.753 Quantity index; difference(f40, f39). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c21: Motor vehicles, bodies and trailers, and parts manufacturing endpoint difference = 74.513 Quantity index; difference(f42, f41). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c22: Other transportation equipment manufacturing endpoint difference = 52.616 Quantity index; difference(f44, f43). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c23: Furniture and related product manufacturing endpoint difference = -90.125 Quantity index; difference(f46, f45). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c24: Miscellaneous manufacturing endpoint difference = 24.697 Quantity index; difference(f48, f47). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c25: Nondurable goods manufacturing endpoint difference = -16.597 Quantity index; difference(f50, f49). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c26: Food and beverage and tobacco product manufacturing endpoint difference = -2.261 Quantity index; difference(f52, f51). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c27: Textile mills and textile product mills endpoint difference = -162.863 Quantity index; difference(f54, f53). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c28: Apparel, leather, and allied product manufacturing endpoint difference = -610.005 Quantity index; difference(f56, f55). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c29: Paper manufacturing endpoint difference = -25.75 Quantity index; difference(f58, f57). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c30: Printing and related support activities endpoint difference = 24.326 Quantity index; difference(f60, f59). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c31: Petroleum and coal products manufacturing endpoint difference = -111.323 Quantity index; difference(f62, f61). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c32: Chemical manufacturing endpoint difference = 7.2 Quantity index; difference(f64, f63). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c33: Plastics and rubber products manufacturing endpoint difference = 0.915 Quantity index; difference(f66, f65). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c34: Wholesale trade endpoint difference = 52.466 Quantity index; difference(f68, f67). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c35: Retail trade endpoint difference = 79.011 Quantity index; difference(f70, f69). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c36: Transportation and warehousing endpoint difference = 39.406 Quantity index; difference(f72, f71). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c37: Air transportation endpoint difference = 57.962 Quantity index; difference(f74, f73). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c38: Rail transportation endpoint difference = -16.915 Quantity index; difference(f76, f75). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c39: Water transportation endpoint difference = -342.472 Quantity index; difference(f78, f77). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c40: Truck transportation endpoint difference = 10.095 Quantity index; difference(f80, f79). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c41: Transit and ground passenger transportation endpoint difference = 130.501 Quantity index; difference(f82, f81). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c42: Pipeline transportation endpoint difference = 57.529 Quantity index; difference(f84, f83). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c43: Other transportation and support activities endpoint difference = 31.833 Quantity index; difference(f86, f85). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c44: Warehousing and storage endpoint difference = 101.821 Quantity index; difference(f88, f87). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c45: Information endpoint difference = 171.683 Quantity index; difference(f90, f89). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c46: Publishing industries (except Internet) endpoint difference = 226.553 Quantity index; difference(f92, f91). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c47: Motion picture and sound recording industries endpoint difference = 134.373 Quantity index; difference(f94, f93). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c48: Broadcasting (except Internet) and telecommunications endpoint difference = 97.038 Quantity index; difference(f96, f95). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c49: Data processing, hosting, and other information services endpoint difference = 181.877 Quantity index; difference(f98, f97). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c50: Finance, insurance, real estate, rental, and leasing endpoint difference = 85.844 Quantity index; difference(f100, f99). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c51: Finance and insurance endpoint difference = 93.648 Quantity index; difference(f102, f101). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c52: Monetary Authorities- central bank, credit intermediation, and related services endpoint difference = 89.845 Quantity index; difference(f104, f103). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c53: Securities, commodity contracts, and other financial investments and related activities endpoint difference = 90.375 Quantity index; difference(f106, f105). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c54: Insurance carriers and related activities endpoint difference = 94.223 Quantity index; difference(f108, f107). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c55: Funds, trusts, and other financial vehicles endpoint difference = -5.693 Quantity index; difference(f110, f109). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c56: Real estate and rental and leasing endpoint difference = 80.87 Quantity index; difference(f112, f111). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c57: Real estate endpoint difference = 76.721 Quantity index; difference(f114, f113). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c58: Rental and leasing services and lessors of nonfinancial intangible assets endpoint difference = 69.101 Quantity index; difference(f116, f115). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c59: Professional and business services endpoint difference = 121.285 Quantity index; difference(f118, f117). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c60: Professional, scientific, and technical services endpoint difference = 144.809 Quantity index; difference(f120, f119). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c61: Legal services endpoint difference = 20.17 Quantity index; difference(f122, f121). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c62: Computer systems design and related services endpoint difference = 208.993 Quantity index; difference(f124, f123). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c63: Miscellaneous professional, scientific, and technical services endpoint difference = 123.797 Quantity index; difference(f126, f125). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c64: Management of companies and enterprises endpoint difference = 91.295 Quantity index; difference(f128, f127). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c65: Administrative and support and waste management and remediation services endpoint difference = 99.879 Quantity index; difference(f130, f129). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c66: Administrative and support services endpoint difference = 101.199 Quantity index; difference(f132, f131). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c67: Waste management and remediation services endpoint difference = 58.68 Quantity index; difference(f134, f133). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c68: Educational services, health care, and social assistance endpoint difference = 83.169 Quantity index; difference(f136, f135). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c69: Educational services endpoint difference = 79.983 Quantity index; difference(f138, f137). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c70: Health care and social assistance endpoint difference = 84.056 Quantity index; difference(f140, f139). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c71: Ambulatory health care services endpoint difference = 87.458 Quantity index; difference(f142, f141). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c72: Hospitals endpoint difference = 81.272 Quantity index; difference(f144, f143). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c73: Nursing and residential care facilities endpoint difference = 21.689 Quantity index; difference(f146, f145). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c74: Social assistance endpoint difference = 75.434 Quantity index; difference(f148, f147). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c75: Arts, entertainment, recreation, accommodation, and food services endpoint difference = 49.268 Quantity index; difference(f150, f149). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c76: Arts, entertainment, and recreation endpoint difference = 71.191 Quantity index; difference(f152, f151). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c77: Performing arts, spectator sports, museums, and related activities endpoint difference = 78.06 Quantity index; difference(f154, f153). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c78: Amusement, gambling, and recreation industries endpoint difference = 52.167 Quantity index; difference(f156, f155). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c79: Accommodation and food services endpoint difference = 43.278 Quantity index; difference(f158, f157). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c80: Accommodation endpoint difference = 38.602 Quantity index; difference(f160, f159). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c81: Food services and drinking places endpoint difference = 48.329 Quantity index; difference(f162, f161). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c82: Other services (except government and government enterprises) endpoint difference = -1.157 Quantity index; difference(f164, f163). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c83: Government and government enterprises endpoint difference = 30.588 Quantity index; difference(f166, f165). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c84: Federal civilian endpoint difference = 48.163 Quantity index; difference(f168, f167). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c85: Military endpoint difference = 35.59 Quantity index; difference(f170, f169). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c86: State and local endpoint difference = 25.466 Quantity index; difference(f172, f171). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c87: Natural resources and mining endpoint difference = 24.95 Quantity index; difference(f174, f173). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c88: Trade endpoint difference = 64.907 Quantity index; difference(f176, f175). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c89: Transportation and utilities endpoint difference = 39.773 Quantity index; difference(f178, f177). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c90: Manufacturing and information endpoint difference = 40.643 Quantity index; difference(f180, f179). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c91: Private goods-producing industries 2/ endpoint difference = 16.613 Quantity index; difference(f182, f181). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+c92: Private services-providing industries 3/ endpoint difference = 84.654 Quantity index; difference(f184, f183). Same published series and geography; no causal attribution, inflation adjustment or summation across industries.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Compare the local income or price context with your own documented spending rather than treating an area average as your income.
+Care delivery: Use the regional economic measure to assess affordability or workforce context; obtain actual care utilization separately.
+Payers and policy: Match units and geographic scope before using this benchmark. Separate observed economic scale from the illness-attribution and intervention-effect evidence still needed.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme or Long COVID patient indicator or causal burden estimate.
+No measured fraction of work loss or spending recoverable through a proposed intervention.
+Full-area and geographic subsets share observations; they are not independent estimates.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

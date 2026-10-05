@@ -1,0 +1,51 @@
+cdc_post_covid_conditions_gsea-w83j.csv
+SOURCE: cdc/long_covid_aggregate_2022_2024/cdc_post_covid_conditions_gsea-w83j.csv
+SHA-256: fa75650677a9659fbf0f56d594c629c889b14272d205479e102de61f8c98118e
+CONDITION SCOPE: long_covid
+ROLE: published_long_covid_survey_aggregate
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+ECONOMIC INTERPRETATION
+The current-symptom and activity-limitation measures support different planning questions: scale of current need versus functional intensity. This file supplies no hourly wage, lost hours, caregiver burden or support-program effect. Estimates are self-reported survey quantities and overlap the retained Census HPS microdata; they are not an independent population to add to HPS.
+
+COVERAGE
+The file has 18,639 rows, 30 period-end dates and 9 distinct indicator descriptions. The latest national period ends 2024-09-16; subgroup and national records are kept separate.
+
+LATEST RETAINED NATIONAL INDICATORS
+Different denominators are stated verbatim in the indicator; current/ever and limitation subgroups overlap and must not be added.
+indicator: Ever experienced long COVID, as a percentage of all adults | percent: 17.9 | lower_95: 17.3 | upper_95: 18.6 | period: Aug 20 - Sep 16, 2024 | row: 17939
+indicator: Ever experienced long COVID, as a percentage of adults who ever had COVID | percent: 29.8 | lower_95: 28.7 | upper_95: 30.8 | period: Aug 20 - Sep 16, 2024 | row: 18017
+indicator: Currently experiencing long COVID, as a percentage of all adults | percent: 5.3 | lower_95: 4.9 | upper_95: 5.7 | period: Aug 20 - Sep 16, 2024 | row: 18095
+indicator: Currently experiencing long COVID, as a percentage of adults who ever had COVID | percent: 8.7 | lower_95: 8.1 | upper_95: 9.3 | period: Aug 20 - Sep 16, 2024 | row: 18173
+indicator: Ever had COVID | percent: 61.6 | lower_95: 60.5 | upper_95: 62.6 | period: Aug 20 - Sep 16, 2024 | row: 18251
+indicator: Any activity limitations from long COVID, as a percentage of adults who currently have long COVID | percent: 80.1 | lower_95: 77.1 | upper_95: 82.9 | period: Aug 20 - Sep 16, 2024 | row: 18329
+indicator: Any activity limitations from long COVID, as a percentage of all adults | percent: 4.4 | lower_95: 4 | upper_95: 4.7 | period: Aug 20 - Sep 16, 2024 | row: 18407
+indicator: Significant activity limitations from long COVID, as a percentage of adults who currently have long COVID | percent: 24.3 | lower_95: 21.7 | upper_95: 27.2 | period: Aug 20 - Sep 16, 2024 | row: 18485
+indicator: Significant activity limitations from long COVID, as a percentage of all adults | percent: 1.3 | lower_95: 1.2 | upper_95: 1.5 | period: Aug 20 - Sep 16, 2024 | row: 18563
+
+TRACEABLE FINDINGS
+f1: Ever experienced long COVID, as a percentage of all adults = 17.9 percent [CSV row 17939; value; Aug 20 - Sep 16, 2024]
+f2: Ever experienced long COVID, as a percentage of adults who ever had COVID = 29.8 percent [CSV row 18017; value; Aug 20 - Sep 16, 2024]
+f3: Currently experiencing long COVID, as a percentage of all adults = 5.3 percent [CSV row 18095; value; Aug 20 - Sep 16, 2024]
+f4: Currently experiencing long COVID, as a percentage of adults who ever had COVID = 8.7 percent [CSV row 18173; value; Aug 20 - Sep 16, 2024]
+f5: Ever had COVID = 61.6 percent [CSV row 18251; value; Aug 20 - Sep 16, 2024]
+f6: Any activity limitations from long COVID, as a percentage of adults who currently have long COVID = 80.1 percent [CSV row 18329; value; Aug 20 - Sep 16, 2024]
+f7: Any activity limitations from long COVID, as a percentage of all adults = 4.4 percent [CSV row 18407; value; Aug 20 - Sep 16, 2024]
+f8: Significant activity limitations from long COVID, as a percentage of adults who currently have long COVID = 24.3 percent [CSV row 18485; value; Aug 20 - Sep 16, 2024]
+f9: Significant activity limitations from long COVID, as a percentage of all adults = 1.3 percent [CSV row 18563; value; Aug 20 - Sep 16, 2024]
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the distinction between symptoms and activity limitation to describe your needs, not to calculate a personal bill.
+Care delivery: Use the appropriate population denominator for access and functional-support planning.
+Payers and policy: Keep survey uncertainty attached to the selected period and indicator. Obtain independently supported per-person costs before monetization.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No causal work-loss, uptake, treatment effect or price year for an economic projection.
+Published aggregate confidence intervals do not supply covariance for combined indicators.
+
+DO NOT USE FOR
+Summing overlapping current/ever/limitation percentages or treating self-report as clinician-coded U09.9.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

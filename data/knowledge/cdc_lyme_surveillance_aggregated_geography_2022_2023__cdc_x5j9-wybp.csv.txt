@@ -1,0 +1,95 @@
+aggregated_geography_2022_2023__cdc_x5j9-wybp.csv
+SOURCE: cdc/lyme_surveillance/aggregated_geography_2022_2023__cdc_x5j9-wybp.csv
+SHA-256: ad13b88597da3c7ca0665b1d6514e1d63d23652a1756f1ab41f55c22bd3bf2b8
+CONDITION SCOPE: lyme
+ROLE: lyme_surveillance_population_context
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+FINDING AND ECONOMIC INTERPRETATION
+This file contains 5,045 aggregate cells spanning 2022–2023. It supports reported-case workload and coverage analysis. A confirmed/probable surveillance case is not the same denominator as a diagnosed-and-treated insurance episode. It supplies no treatment cost, diagnostic delay, navigation uptake or preventable fraction. A growing count cannot by itself justify a growing causal cost estimate.
+
+COMPARABILITY DECISION
+Keep this file paired with its era-specific definition. The 2022 surveillance definition/reporting break must remain visible. The geographic and non-geographic releases overlap; choose one counting representation for each analysis. Do not add their totals or infer suppressed categories from differences.
+
+ANNUAL REPORTED-CASE ACCOUNTING
+Sum frequency once per aggregate row, or count line-list rows once. These two file formats describe overlapping surveillance cases, not independent samples.
+year: 2022 | case_status: Confirmed | retained_reported_cases: 2192
+year: 2022 | case_status: Probable | retained_reported_cases: 60357
+year: 2023 | case_status: Confirmed | retained_reported_cases: 3531
+year: 2023 | case_status: Probable | retained_reported_cases: 85938
+
+LATEST-YEAR REPORTED COUNTS BY RETAINED STATE
+Year=2023. Includes the source suppression category if present; no attempt to recover suppressed geography.
+state: NY | reported_cases: 22173
+state: PA | reported_cases: 16671
+state: MA | reported_cases: 9715
+state: NJ | reported_cases: 7224
+state: WI | reported_cases: 6283
+state: WV | reported_cases: 3242
+state: CT | reported_cases: 3239
+state: ME | reported_cases: 2942
+state: MN | reported_cases: 2938
+state: RI | reported_cases: 2852
+state: MD | reported_cases: 2470
+state: VA | reported_cases: 1747
+state: NH | reported_cases: 1573
+state: VT | reported_cases: 1445
+state: OH | reported_cases: 1307
+state: MI | reported_cases: 1150
+state: IL | reported_cases: 372
+state: DE | reported_cases: 349
+state: FL | reported_cases: 271
+state: IN | reported_cases: 257
+state: NC | reported_cases: 228
+state: IA | reported_cases: 212
+state: KY | reported_cases: 120
+state: CA | reported_cases: 109
+state: DC | reported_cases: 108
+state: OR | reported_cases: 61
+state: SC | reported_cases: 55
+state: Suppressed | reported_cases: 54
+state: TN | reported_cases: 50
+state: AL | reported_cases: 34
+state: CO | reported_cases: 29
+state: TX | reported_cases: 27
+state: WA | reported_cases: 25
+state: GA | reported_cases: 17
+state: UT | reported_cases: 16
+state: MO | reported_cases: 15
+state: NV | reported_cases: 14
+state: LA | reported_cases: 14
+state: ND | reported_cases: 12
+state: ID | reported_cases: 11
+state: AZ | reported_cases: 11
+state: KS | reported_cases: 8
+state: NM | reported_cases: 8
+state: MT | reported_cases: 6
+state: SD | reported_cases: 5
+
+REPORTING-COVERAGE CHECK
+Absence of a state-year is missing coverage, not zero incidence.
+year: 2022 | states_with_rows: 44 | MA_present: True
+year: 2023 | states_with_rows: 45 | MA_present: True
+
+TRACEABLE FINDINGS
+f1: Retained reported cases 2022 = 62549 reported cases [CSV all rows where year=2022; sum frequency]
+f2: Retained reported cases 2023 = 89469 reported cases [CSV all rows where year=2023; sum frequency]
+c1: First-to-last retained reported-case change = 0.43038258 relative change; relative_change(f1, f2). Reporting, definition and availability changes can drive this descriptive difference; not disease-incidence growth.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use as community-level context, not a diagnosis or estimate of your own costs.
+Care delivery: Check whether the catchment state and year are represented before using a reported-case workload benchmark.
+Payers and policy: Use reported surveillance counts only with an explicitly matched cost population; obtain a justified transport model before applying claims episode costs.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme-attributable expenditure, out-of-pocket cost or employment loss.
+Separate confirmation is needed for reporting completeness and changes across years.
+No causal evidence that a proposed intervention changes diagnosis stage.
+
+DO NOT USE FOR
+Adding aggregate and line-list totals; treating absent state-years as zero; converting reporting changes to infection growth.
+Recovering suppressed small cells or identifying patients.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

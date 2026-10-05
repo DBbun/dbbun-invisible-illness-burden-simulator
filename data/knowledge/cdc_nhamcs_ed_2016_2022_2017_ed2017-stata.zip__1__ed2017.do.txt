@@ -1,0 +1,358 @@
+ed2017-stata.zip
+SOURCE: cdc/nhamcs_ed_2016_2022/2017/ed2017-stata.zip :: ed2017.do
+SHA-256: 1c2ef8fb29e24d6e7ce2c455c830e9fa994e335dba139df30ff11bbfdb6162a4
+CONDITION SCOPE: both
+ROLE: documentation_or_literature_not_yet_parameterized
+
+PROCESSING AND INTERPRETATION STATUS
+extracted_requires_semantic_review. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Visits are not patients. Apply survey weights/design and small-sample presentation standards before national estimation; diagnoses alone do not establish attributable utilization.
+
+DOCUMENT IDENTITY AND SCOPE
+ed2017.do: infix using eddict2017.dct, using (ED2017) clear label variable VMONTH "Month of Visit" label variable VDAYR "Day of Week of Visit" label variable ARRTIME "Arrival time (military time)" label variable WAITTIME "Wait time to first provider (Physician/APRN/PA) contact, in minutes" label variable BLANK1 "Placeholder for Length of visit in minutes" label variable AGE "Patient age in years" label variable AGER "Age recode" label variable AGEDAYS "Age in days for patients less than one year" label var
+8 source passage blocks matched decision/definition concepts. This is a document-specific evidence extraction, not a completed study appraisal or an inferred financial model.
+
+WHAT NEEDS A DECISION
+Visits are not patients. Apply survey weights/design and small-sample presentation standards before national estimation; diagnoses alone do not establish attributable utilization. Resolve population, measured outcome, timeframe, comparison group and uncertainty from the cited passages before choosing any number. For a dictionary/import program, the decision is how to interpret another data file, not whether the program supplies a new observation. No source code is executed.
+
+SOURCE PASSAGES FOR TARGETED REVIEW
+Verbatim extraction with locators. No extracted number is approved as a model parameter; PDF table structure and context require review before numerical reuse.
+location: lines 1-40 | source_text: infix using eddict2017.dct, using (ED2017) clear
+
+label variable VMONTH "Month of Visit"
+label variable VDAYR "Day of Week of Visit"
+label variable ARRTIME "Arrival time (military time)"
+label variable WAITTIME "Wait time to first provider (Physician/APRN/PA) contact, in minutes"
+label variable BLANK1 "Placeholder for Length of visit in minutes"
+label variable AGE "Patient age in years"
+label variable AGER "Age recode"
+label variable AGEDAYS "Age in days for patients less than one year"
+label variable RESIDNCE "Patient residence"
+label variable SEX "Patient sex"
+label variable ETHUN "Unimputed ethnicity"
+label variable ETHIM "Imputed ethnicity"
+label variable RACEUN "Unimputed race"
+label variable RACER "White/Black/Other imputed race"
+label variable RACERETH "RACER and ETHNIC combination"
+label variable ARREMS "Arrival by ambulance"
+label variable AMBTRANSFER "Was the patient transferred from another hospital or urgent care facility?"
+label variable NOPAY "No answer to expected source of payment item"
+label variable PAYPRIV "Expected source(s) of payment for this visit: Private insurance"
+label variable PAYMCARE "Expected source(s) of payment for this visit: Medicare"
+label variable PAYMCAID "Expected source(s) of payment for this visit: Medicaid or CHIP or other state-based program"
+label variable PAYWKCMP "Expected source(s) of payment for this visit: Workers' compensation"
+label variable PAYSELF "Expected source(s) of payment for this visit: Self pay"
+label variable PAYNOCHG "Expected source(s) of payment for this visit: No charge/Charity"
+label variable PAYOTH "Expected source(s) of payment for this visit: Other"
+label variable PAYDK "Expected source(s) of payment for this visit: Unknown"
+label variable PAYTYPER "Recoded primary expected source of payment for this visit (based on hierarchy)"
+label variable TEMPF "Initial vital signs: Temperature (Fahrenheit)"
+label variable PULSE "Initial vital signs: Heart rate per minute"
+label variable RESPR "Initial vital signs: Respiratory rate per minute"
+label variable BPSYS "Initial vital signs: Blood pressure - Systolic"
+label variable BPDIAS "Initial vital signs: Blood pressure - Diastolic"
+label variable POPCT "Initial vital signs: Pulse oximetry (percent)"
+label variable IMMEDR "Immediacy with which patient should be seen (unimputed)"
+label variable PAINSCALE "Pain scale (0-10)"
+label variable SEEN72 "Was patient seen in this ED within the last 72 hours?"
+label variable RFV1 "Patient's complaint, symptom, or other reason for visit #1 - detailed category"
+label variable RFV2 "Patient's complaint, symptom, or other reason for visit #2 - detailed category"
+location: lines 281-320 | source_text: label variable ECTOEER "Does your ED have the computerized capability for ordering lab tests?"
+label variable ERESULTER "Does your ED have the computerized capability for viewing lab results?"
+label variable ERADIER "Does your ED have the computerized capability for ordering radiology tests?"
+label variable EIMGRESER "Does your ED have the computerized capability for viewing imaging results?"
+label variable EIDPTER "Does your ED have the computerized capability for identifying patients due for preventive or follow-up care in order to send patients reminders?"
+label variable EGENLISTER "Does your ED have the computerized capability for generating a list of patients with particular health conditions?"
+label variable EDATAREPER "Does your ED have the computerized capability of providing data to create reports on clinical care measures for patients with specific chronic conditions?"
+label variable ESUMER "Does your ED have the computerized capability for providing patients with clinical summaries for each visit?"
+label variable EMSGER "Does your ED have the computerized capability for exchanging secure messages with patients?"
+label variable ESHAREE "Does your hospital share any patient health information electronically?"
+label variable ESHARESE "Do you electronically send patient health information to another provider whose EHR system is different from your own?"
+label variable ESHARERE "Do you electronically receive patient health information from another provider whose EHR system is different from your own?"
+label variable EDISCHSRE1 "Send electronically hospital discharge summaries to providers outside of your medical organization"
+label variable EDISCHSRE2 "Receive electronically hospital discharge summaries from providers outside of your medical organization"
+label variable EDISCHSRE3 "Do not send electronically hospital discharge summaries to providers outside of your medical organization"
+label variable EEDSRE1 "Send electronically dept. notifications to providers outside of your medical organization"
+label variable EEDSRE2 "Receive electronically dept. notifications from providers outside of your medical organization"
+label variable EEDSRE3 "Do not send electronically dept. notifications to providers outside of your medical organization"
+label variable ESUMCSRE1 "Send electronically summary of care records for transitions of care or referrals to providers outside of your medical organization"
+label variable ESUMCSRE2 "Receive electronically summary of care records for transitions of care or referrals from providers outside of your medical organization"
+label variable ESUMCSRE3 "Do not send electronically summary of care records for transitions of care or referrals to providers outside of your medical organization"
+label variable PTONLINEE1 "Can patients seen at the reporting location view their medical records online?"
+label variable PTONLINEE2 "Can patients seen at the reporting location download and transmit health information from the electronic medical record to their personal files?"
+label variable PTONLINEE3 "Can patients seen at the reporting location request corrections to their electronic medical record?"
+label variable PTONLINEE4 "Can patients seen at the reporting location enter their health information online (e.g., weight, symptoms)?"
+label variable PTONLINEE5 "Can patients seen at the reporting location upload their data from self-monitoring devices (e.g., blood glucose readings)?"
+label variable PTONLINEE6 "Can patients seen at the reporting location do none of the above online activities?"
+label variable EDPRIM "When patients with identified primary care physicians (PCP) arrive at the ED, how often do you electronically send notifications to the patients' PCP?"
+label variable EDINFO "When patients arrive at the ED, are you able to query for patients' healthcare information electronically (e.g., medications, allergies) from outside sources?"
+label variable OBSCLIN "Does your ED have an observation or clinical decision unit?"
+label variable OBSSEP "Is this observation or clinical decision unit physically separate from the ED?"
+label variable OBSPHYSED "What type of physicians make decisions for patients in this observation or clinical decision unit? - ED physicians"
+label variable OBSHOSP "What type of physicians make decisions for patients in this observation or clinical decision unit? - Hospitalists"
+label variable OBSPHYSOT "What type of physicians make decisions for patients in this observation or clinical decision unit? - Other physicians"
+label variable OBSPHYSUN "What type of physicians make decisions for patients in this observation or clinical decision unit? - Unknown"
+label variable BOARD "Are admitted ED patients ever 'boarded' for more than 2 hours in the ED or observation unit while waiting for an inpatient bed?"
+label variable BOARDHOS "Does your ED allow some admitted patients to move from the ED to inpatient corridors while awaiting a bed ('boarding') - sometimes called 'full capacity protocol'?"
+label variable AMBDIV "Did your ED go on ambulance diversion in 2016?"
+label variable TOTHRDIVR "What is the total number of hours that your hospital's ED was on ambulance diversion in 2016?"
+label variable REGDIV "Is ambulance diversion actively managed on a regional level versus each hospital adopting diversion if and when it chooses?"
+location: lines 921-960 | source_text: label variable RX29V2C4 "For RX29, level 2 of MULTUM drug category #4 (intermediate level)"
+label variable RX29V3C1 "For RX29, level 3 of MULTUM drug category #1 (detailed level)"
+label variable RX29V3C2 "For RX29, level 3 of MULTUM drug category #2 (detailed level)"
+label variable RX29V3C3 "For RX29, level 3 of MULTUM drug category #3 (detailed level)"
+label variable RX29V3C4 "For RX29, level 3 of MULTUM drug category #4 (detailed level)"
+label variable DRUGID30 "Drug ID code for medication #30"
+label variable PRESCR30 "Prescription status code for medication #30"
+label variable CONTSUB30 "Controlled substance status code for medication #30"
+label variable COMSTAT30 "Composition status code for medication #30"
+label variable RX30CAT1 "For RX30, MULTUM drug category #1 - most detailed level (can be either Level 1,2 or 3)"
+label variable RX30CAT2 "For RX30, MULTUM drug category #2 - most detailed level (can be either Level 1,2 or 3)"
+label variable RX30CAT3 "For RX30, MULTUM drug category #3 - most detailed level (can be either Level 1,2 or 3)"
+label variable RX30CAT4 "For RX30, MULTUM drug category #4 - most detailed level (can be either Level 1,2 or 3)"
+label variable RX30V1C1 "For RX30, level 1 of MULTUM drug category #1 (broad level)"
+label variable RX30V1C2 "For RX30, level 1 of MULTUM drug category #2 (broad level)"
+label variable RX30V1C3 "For RX30, level 1 of MULTUM drug category #3 (broad level)"
+label variable RX30V1C4 "For RX30, level 1 of MULTUM drug category #4 (broad level)"
+label variable RX30V2C1 "For RX30, level 2 of MULTUM drug category #1 (intermediate level)"
+label variable RX30V2C2 "For RX30, level 2 of MULTUM drug category #2 (intermediate level)"
+label variable RX30V2C3 "For RX30, level 2 of MULTUM drug category #3 (intermediate level)"
+label variable RX30V2C4 "For RX30, level 2 of MULTUM drug category #4 (intermediate level)"
+label variable RX30V3C1 "For RX30, level 3 of MULTUM drug category #1 (detailed level)"
+label variable RX30V3C2 "For RX30, level 3 of MULTUM drug category #2 (detailed level)"
+label variable RX30V3C3 "For RX30, level 3 of MULTUM drug category #3 (detailed level)"
+label variable RX30V3C4 "For RX30, level 3 of MULTUM drug category #4 (detailed level)"
+label variable SETTYPE "Setting type"
+label variable YEAR "Survey year"
+label variable CSTRATM "Clustered CSTRATM -- masked"
+label variable CPSUM "Clustered CPSUM -- masked"
+label variable PATWT "Patient visit weight"
+label variable EDWT "ED weight"
+
+label define ADISPF 	-9 "Blank"  
+label define ADISPF 	-8 "Unknown (data not available)" , add
+label define ADISPF 	-7 "Not applicable" , add
+label define ADISPF 	 1 "Home/Residence" , add
+label define ADISPF 	 2 "Return/Transfer to nursing home" , add
+label define ADISPF 	 3 "Transfer to another facility (not usual place of residence)" , add
+label define ADISPF 4 "Other" , add
+label define ADMDIVF -9 "Blank"  
+location: lines 2321-2360 | source_text: label define MEDCODF 19375 "MILK OF MAGNESIA" , add
+label define MEDCODF 19445 "MINERAL OIL" , add
+label define MEDCODF 19455 "MINIPRESS" , add
+label define MEDCODF 19465 "MINOCYCLINE" , add
+label define MEDCODF 19478 "MINOXIDIL" , add
+label define MEDCODF 19635 "MICONAZOLE NITRATE" , add
+label define MEDCODF 19650 "MORPHINE" , add
+label define MEDCODF 19675 "MOTRIN" , add
+label define MEDCODF 19680 "MOUTHWASH" , add
+label define MEDCODF 19699 "MS CONTIN" , add
+label define MEDCODF 19715 "MUCOMYST" , add
+label define MEDCODF 19825 "MULTIPLE VITAMINS" , add
+label define MEDCODF 19840 "MULTIVITAMIN" , add
+label define MEDCODF 19853 "MULTIVITAMIN/FLUORIDE" , add
+label define MEDCODF 19870 "MULTIVITAMINS & MINERALS" , add
+label define MEDCODF 19948 "MUSCLE RELAXANT" , add
+label define MEDCODF 20035 "MYCITRACIN" , add
+label define MEDCODF 20060 "MYCOSTATIN" , add
+label define MEDCODF 20080 "MYLANTA" , add
+label define MEDCODF 20095 "MYLICON" , add
+label define MEDCODF 20175 "NAFCILLIN" , add
+label define MEDCODF 20285 "NAPROSYN" , add
+label define MEDCODF 20290 "NAPROXEN" , add
+label define MEDCODF 20310 "NARCAN" , add
+label define MEDCODF 20325 "NASAL DECONGESTANT" , add
+label define MEDCODF 20455 "NEBCIN" , add
+label define MEDCODF 20595 "NEO-SYNEPHRINE" , add
+label define MEDCODF 20690 "NEOMYCIN" , add
+label define MEDCODF 20730 "NEOSPORIN" , add
+label define MEDCODF 20885 "NIACIN" , add
+label define MEDCODF 21010 "NIFEREX" , add
+label define MEDCODF 21065 "NILSTAT" , add
+label define MEDCODF 21130 "NITRO-BID" , add
+label define MEDCODF 21143 "NITRO-DUR" , add
+label define MEDCODF 21145 "NITROFURANTOIN" , add
+label define MEDCODF 21160 "NITROGLYCERIN" , add
+label define MEDCODF 21165 "NITROGLYN" , add
+label define MEDCODF 21176 "NITROLINGUAL" , add
+label define MEDCODF 21185 "NITROSTAT" , add
+label define MEDCODF 21203 "NIZORAL" , add
+location: lines 3121-3160 | source_text: label define MEDCODF 99999 "ILLEGIBLE" , add
+label define MEDF 0 "No"  
+label define MEDF 1 "Yes" , add
+label define MEDF 2 "Entire item blank, including 'None' box" , add
+label define MSAF 1 "MSA (Metropolitan Statistical Area)"  
+label define MSAF 2 "Non-MSA" , add
+label define NODISPF 0 "One or more answers to the disposition item"  
+label define NODISPF 1 "No answer to the disposition item" , add
+label define NOPAYF 0 "At least one source of payment is recorded"  
+label define NOPAYF 1 "All sources of payment are blank" , add
+label define NOYESF 0 "No"  
+label define NOYESF 1 "Yes" , add
+label define NUMDISF 0 "None listed/listed drug given at ED only or unknown"  
+label define NUMGIVF 0 "None listed/listed drug Rx at discharge only or unknown"  
+label define OBSPHYSEDF -7 "Not applicable"  
+label define OBSPHYSEDF 0 "Box is not marked" , add
+label define OBSPHYSEDF 1 "Box is marked" , add
+label define OBSSEPF -9 "Blank"  
+label define OBSSEPF -8 "Unknown" , add
+label define OBSSEPF -7 "Not applicable" , add
+label define OBSSEPF 1 "Yes" , add
+label define OBSSEPF 2 "No" , add
+label define PAINSCALEF -9 "Blank"  
+label define PAINSCALEF -8 "Unknown" , add
+label define PAYTYPERF -9 "All sources of payment are blank"  
+label define PAYTYPERF -8 "Unknown" , add
+label define PAYTYPERF 1 "Private insurance" , add
+label define PAYTYPERF 2 "Medicare" , add
+label define PAYTYPERF 3 "Medicaid or CHIP or other state-based program" , add
+label define PAYTYPERF 4 "Worker's compensation" , add
+label define PAYTYPERF 5 "Self-pay" , add
+label define PAYTYPERF 6 "No charge/Charity" , add
+label define PAYTYPERF 7 "Other" , add
+label define POPCTF -9 "Blank"  
+label define PRDIAGF 	0 "No"  
+label define PRDIAGF 	1 "Yes" , add
+label define PRDIAGF -7 "Not applicable" , add
+label define PRESCRF 1 "Prescription drug"  
+label define PRESCRF 2 "Nonprescription drug" , add
+label define PRESCRF 3 "Undetermined" , add
+location: lines 3201-3240 | source_text: label define RFV3DF 1012 "Other symptoms of body temperature" , add
+label define RFV3DF 1015 "Tiredness, exhaustion" , add
+label define RFV3DF 1020 "General weakness" , add
+label define RFV3DF 1025 "General ill feeling" , add
+label define RFV3DF 1030 "Fainting (syncope)" , add
+label define RFV3DF 1035 "Symptoms of fluid abnormalities" , add
+label define RFV3DF 1040 "Weight gain" , add
+label define RFV3DF 1045 "Weight loss" , add
+label define RFV3DF 1046 "Symptoms of face, not elsewhere class..." , add
+label define RFV3DF 1050 "Chest pain and related symptoms (not ..." , add
+label define RFV3DF 1055 "Pain, site not referable to a specifi..." , add
+label define RFV3DF 1060 "Pain and related symptoms, general, s..." , add
+label define RFV3DF 1065 "Tumor or mass, site unspecified" , add
+label define RFV3DF 1066 "Lesion, internal, NOS (excludes brain and" , add
+label define RFV3DF 1070 "Bleeding, site unspecified" , add
+label define RFV3DF 1075 "Symptoms of growth and developmental ..." , add
+label define RFV3DF 1080 "General symptoms of infants, NEC" , add
+label define RFV3DF 1085 "General or unspecified nonviral infec..." , add
+label define RFV3DF 1090 "Allergy, NOS" , add
+label define RFV3DF 1095 "Disorders of motor functions" , add
+label define RFV3DF 1096 "Dyslexia, NOS" , add
+label define RFV3DF 1100 "Anxiety and nervousness" , add
+label define RFV3DF 1105 "Fears and phobias" , add
+label define RFV3DF 1110 "Depression" , add
+label define RFV3DF 1115 "Anger" , add
+label define RFV3DF 1120 "Problems with identity and self-esteem" , add
+label define RFV3DF 1125 "Restlessness" , add
+label define RFV3DF 1130 "Behavioral disturbances" , add
+label define RFV3DF 1135 "Disturbances of sleep" , add
+label define RFV3DF 1140 "Smoking problems" , add
+label define RFV3DF 1145 "Alcohol-related problems" , add
+label define RFV3DF 1150 "Abnormal drug usage" , add
+label define RFV3DF 1155 "Delusions or hallucinations" , add
+label define RFV3DF 1160 "Psychosexual disorders" , add
+label define RFV3DF 1165 "Oth sympt/prob relat psychological an..." , add
+label define RFV3DF 1200 "Abnormal involuntary movements" , add
+label define RFV3DF 1205 "Convulsions" , add
+label define RFV3DF 1207 "Symptoms of head, NEC" , add
+label define RFV3DF 1210 "Headache, pain in head" , add
+label define RFV3DF 1215 "Memory, disturbances of" , add
+location: lines 3641-3680 | source_text: label define RFV3DF 6400 "For radiological findings" , add
+label define RFV3DF 6500 "For results of EKG" , add
+label define RFV3DF 6600 "For results of skin tests" , add
+label define RFV3DF 6700 "For other and unspecified test results" , add
+label define RFV3DF 7100 "Physical examination required for sch..." , add
+label define RFV3DF 7120 "Driver's license examination" , add
+label define RFV3DF 7125 "Insurance examination" , add
+label define RFV3DF 7130 "Disability examination" , add
+label define RFV3DF 7131 "Worker's Compensation examination" , add
+label define RFV3DF 7135 "Premarital examination" , add
+label define RFV3DF 7137 "Direct admission to hospital" , add
+label define RFV3DF 7140 "Oth reas for visit requir by party ot..." , add
+label define RFV3DF 8990 "Problems, complaints, NEC" , add
+label define RFV3DF 8991 "Patient unable to speak English" , add
+label define RFV3DF 8993 "Patient (or spokesperson) refused care" , add
+label define RFV3DF 8997 "Entry of 'none' or 'no complaint'" , add
+label define RFV3DF 8998 "Inadequate data base" , add
+label define RFV3DF 8999 "Illegible entry" , add
+label define RFV3DF -9 "Blank" , add
+label define RFVF 10050 "Chills"  
+label define RFVF 10100 "Fever" , add
+label define RFVF 10120 "Other symptoms of body temperature" , add
+label define RFVF 10121 "Feeling cold" , add
+label define RFVF 10122 "Feeling hot" , add
+label define RFVF 10123 "Feeling hot and cold" , add
+label define RFVF 10150 "Tiredness, exhaustion" , add
+label define RFVF 10200 "General weakness" , add
+label define RFVF 10250 "General ill feeling" , add
+label define RFVF 10300 "Fainting (syncope)" , add
+label define RFVF 10350 "Symptoms of fluid abnormalities" , add
+label define RFVF 10351 "Edema" , add
+label define RFVF 10352 "Excessive sweating, perspiration" , add
+label define RFVF 10353 "Excessive thirst" , add
+label define RFVF 10400 "Weight gain" , add
+label define RFVF 10450 "Weight loss" , add
+label define RFVF 10451 "Recent weight loss" , add
+label define RFVF 10452 "Underweight" , add
+label define RFVF 10460 "Symptoms of face, not elsewhere class..." , add
+label define RFVF 10500 "Chest pain and related symptoms" , add
+label define RFVF 10501 "Chest pain" , add
+location: lines 4441-4480 | source_text: label define RFVF 59150 "Adverse effect of alcohol" , add
+label define RFVF 59160 "Alcohol poisoning" , add
+label define RFVF 59200 "Adverse effects of environment" , add
+label define RFVF 59210 "Adverse effects of secondhand smoke" , add
+label define RFVF 59220 "Adverse effects of terrorism and biot..." , add
+label define RFVF 59250 "Adverse effects, other and unspecified" , add
+label define RFVF 59300 "Surgical Complications due to any imp..." , add
+label define RFVF 59301 "Due to presence of any implant, inter..." , add
+label define RFVF 59302 "Post-operative Medical Complications" , add
+label define RFVF 61000 "For results of blood glucose tests" , add
+label define RFVF 61050 "For results of cholesterol and trigly..." , add
+label define RFVF 61060 "For results of test for human immunod..." , add
+label define RFVF 61100 "For other findings of blood tests" , add
+label define RFVF 62000 "For results of urine tests" , add
+label define RFVF 63000 "For cytology findings" , add
+label define RFVF 64000 "For radiological findings" , add
+label define RFVF 65000 "For results of EKG" , add
+label define RFVF 66000 "For results of skin tests" , add
+label define RFVF 67000 "For other and unspecified test results" , add
+label define RFVF 71000 "Physical examination required for sch..." , add
+label define RFVF 71001 "Physical examination required for emp..." , add
+label define RFVF 71002 "Executive physical examination" , add
+label define RFVF 71003 "Physical examination required for school" , add
+label define RFVF 71004 "Physical examination for extracurricu..." , add
+label define RFVF 71200 "Driver's license examination" , add
+label define RFVF 71250 "Insurance examination" , add
+label define RFVF 71300 "Disability examination" , add
+label define RFVF 71310 "Worker's Compensation examination" , add
+label define RFVF 71350 "Premarital examination" , add
+label define RFVF 71351 "Premarital blood test" , add
+label define RFVF 71370 "Direct admission to hospital" , add
+label define RFVF 71400 "Other reason for visit required by party" , add
+label define RFVF 89900 "Problems, complaints, NEC" , add
+label define RFVF 89910 "Patient unable to speak English" , add
+label define RFVF 89930 "Patient (or spokesperson) refused care" , add
+label define RFVF 89970 "Entry of 'none' or 'no complaint'" , add
+label define RFVF 89980 "Inadequate data base" , add
+label define RFVF 89990 "Illegible entry" , add
+label define RFVF -9 "Blank" , add
+label define SETTYPF 1 "NAMCS"  
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+Manual semantic review is still required: association versus causation, cost components, price year, denominator and uncertainty.
+No numerical model input is approved solely because it appears in an extracted passage.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

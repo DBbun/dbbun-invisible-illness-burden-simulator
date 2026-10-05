@@ -1,0 +1,100 @@
+april-1-2026-code-descriptions-tabular-order.zip
+SOURCE: cms/icd10cm_2026_04/april-1-2026-code-descriptions-tabular-order.zip :: Code Descriptions/icd10cm_order_2026.txt
+SHA-256: 4fd9d8b37f02ab42827c7e7be30595c005b0cc3a6bae7a515e3f4c86b6918688
+CONDITION SCOPE: both
+ROLE: lyme_and_longcovid_coding_guidance
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+DOCUMENT IDENTITY AND SCOPE
+Code Descriptions/icd10cm_order_2026.txt: this package retains ONLY the pages/sections that actually name Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 coding, out of 2455 total - 2 matched. A document with zero matches genuinely contains no Lyme- or Long-COVID-specific guidance, which is a real finding, not a missing extraction.
+
+WHAT NEEDS A DECISION
+These are real official coding rules or index entries, not a clinical outcome or cost figure - use them only to verify a diagnosis is coded per current federal guidance. A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+SOURCE PASSAGES SPECIFICALLY NAMING LYME OR LONG COVID CODING
+Every page/section of this document that actually names Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 - not a generic match on common words like "cost" or "work".
+location: lines 521-560 | source_text: 00521 A609    1 Anogenital herpesviral infection, unspecified                Anogenital herpesviral infection, unspecified
+00522 A63     0 Oth predominantly sexually transmitted diseases, NEC         Other predominantly sexually transmitted diseases, not elsewhere classified
+00523 A630    1 Anogenital (venereal) warts                                  Anogenital (venereal) warts
+00524 A638    1 Other specified predominantly sexually transmitted diseases  Other specified predominantly sexually transmitted diseases
+00525 A64     1 Unspecified sexually transmitted disease                     Unspecified sexually transmitted disease
+00526 A65     1 Nonvenereal syphilis                                         Nonvenereal syphilis
+00527 A66     0 Yaws                                                         Yaws
+00528 A660    1 Initial lesions of yaws                                      Initial lesions of yaws
+00529 A661    1 Multiple papillomata and wet crab yaws                       Multiple papillomata and wet crab yaws
+00530 A662    1 Other early skin lesions of yaws                             Other early skin lesions of yaws
+00531 A663    1 Hyperkeratosis of yaws                                       Hyperkeratosis of yaws
+00532 A664    1 Gummata and ulcers of yaws                                   Gummata and ulcers of yaws
+00533 A665    1 Gangosa                                                      Gangosa
+00534 A666    1 Bone and joint lesions of yaws                               Bone and joint lesions of yaws
+00535 A667    1 Other manifestations of yaws                                 Other manifestations of yaws
+00536 A668    1 Latent yaws                                                  Latent yaws
+00537 A669    1 Yaws, unspecified                                            Yaws, unspecified
+00538 A67     0 Pinta [carate]                                               Pinta [carate]
+00539 A670    1 Primary lesions of pinta                                     Primary lesions of pinta
+00540 A671    1 Intermediate lesions of pinta                                Intermediate lesions of pinta
+00541 A672    1 Late lesions of pinta                                        Late lesions of pinta
+00542 A673    1 Mixed lesions of pinta                                       Mixed lesions of pinta
+00543 A679    1 Pinta, unspecified                                           Pinta, unspecified
+00544 A68     0 Relapsing fevers                                             Relapsing fevers
+00545 A680    1 Louse-borne relapsing fever                                  Louse-borne relapsing fever
+00546 A681    1 Tick-borne relapsing fever                                   Tick-borne relapsing fever
+00547 A689    1 Relapsing fever, unspecified                                 Relapsing fever, unspecified
+00548 A69     0 Other spirochetal infections                                 Other spirochetal infections
+00549 A690    1 Necrotizing ulcerative stomatitis                            Necrotizing ulcerative stomatitis
+00550 A691    1 Other Vincent's infections                                   Other Vincent's infections
+00551 A692    0 Lyme disease                                                 Lyme disease
+00552 A6920   1 Lyme disease, unspecified                                    Lyme disease, unspecified
+00553 A6921   1 Meningitis due to Lyme disease                               Meningitis due to Lyme disease
+00554 A6922   1 Other neurologic disorders in Lyme disease                   Other neurologic disorders in Lyme disease
+00555 A6923   1 Arthritis due to Lyme disease                                Arthritis due to Lyme disease
+00556 A6929   1 Other conditions associated with Lyme disease                Other conditions associated with Lyme disease
+00557 A698    1 Other specified spirochetal infections                       Other specified spirochetal infections
+00558 A699    1 Spirochetal infection, unspecified                           Spirochetal infection, unspecified
+00559 A70     1 Chlamydia psittaci infections                                Chlamydia psittaci infections
+00560 A71     0 Trachoma                                                     Trachoma
+location: lines 98161-98186 | source_text: 98161 Z9882   1 Breast implant status                                        Breast implant status
+98162 Z9883   1 Filtering (vitreous) bleb after glaucoma surgery status      Filtering (vitreous) bleb after glaucoma surgery status
+98163 Z9884   1 Bariatric surgery status                                     Bariatric surgery status
+98164 Z9885   1 Transplanted organ removal status                            Transplanted organ removal status
+98165 Z9886   1 Personal history of breast implant removal                   Personal history of breast implant removal
+98166 Z9887   0 Personal history of in utero procedure                       Personal history of in utero procedure
+98167 Z98870  1 Personal history of in utero procedure during pregnancy      Personal history of in utero procedure during pregnancy
+98168 Z98871  1 Personal history of in utero procedure while a fetus         Personal history of in utero procedure while a fetus
+98169 Z9889   0 Other specified postprocedural states                        Other specified postprocedural states
+98170 Z98890  1 Other specified postprocedural states                        Other specified postprocedural states
+98171 Z98891  1 History of uterine scar from previous surgery                History of uterine scar from previous surgery
+98172 Z99     0 Dependence on enabling machines and devices, NEC             Dependence on enabling machines and devices, not elsewhere classified
+98173 Z990    1 Dependence on aspirator                                      Dependence on aspirator
+98174 Z991    0 Dependence on respirator                                     Dependence on respirator
+98175 Z9911   1 Dependence on respirator [ventilator] status                 Dependence on respirator [ventilator] status
+98176 Z9912   1 Encounter for respirator dependence during power failure     Encounter for respirator [ventilator] dependence during power failure
+98177 Z992    1 Dependence on renal dialysis                                 Dependence on renal dialysis
+98178 Z993    1 Dependence on wheelchair                                     Dependence on wheelchair
+98179 Z998    0 Dependence on other enabling machines and devices            Dependence on other enabling machines and devices
+98180 Z9981   1 Dependence on supplemental oxygen                            Dependence on supplemental oxygen
+98181 Z9989   1 Dependence on other enabling machines and devices            Dependence on other enabling machines and devices
+98182 U07     0 Emergency use of U07                                         Emergency use of U07
+98183 U070    1 Vaping-related disorder                                      Vaping-related disorder
+98184 U071    1 COVID-19                                                     COVID-19
+98185 U09     0 Post COVID-19 condition                                      Post COVID-19 condition
+98186 U099    1 Post COVID-19 condition, unspecified                         Post COVID-19 condition, unspecified
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No intervention effectiveness or avoided cost is supplied unless the source explicitly reports it.
+Unreviewed variables are not approved model inputs.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

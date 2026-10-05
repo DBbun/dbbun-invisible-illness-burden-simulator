@@ -1,0 +1,281 @@
+fy-2026-icd-10-cm-coding-guidelines.pdf
+SOURCE: cms/icd10cm_2026_04/fy-2026-icd-10-cm-coding-guidelines.pdf
+SHA-256: 2e87b3b088d6032edf6cda8c946cf342619df0c07237055a0e3be68410a0c267
+CONDITION SCOPE: both
+ROLE: lyme_and_longcovid_coding_guidance
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+DOCUMENT IDENTITY AND SCOPE
+fy-2026-icd-10-cm-coding-guidelines.pdf: this package retains ONLY the pages/sections that actually name Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 coding, out of 121 total - 5 matched. A document with zero matches genuinely contains no Lyme- or Long-COVID-specific guidance, which is a real finding, not a missing extraction.
+
+WHAT NEEDS A DECISION
+These are real official coding rules or index entries, not a clinical outcome or cost figure - use them only to verify a diagnosis is coded per current federal guidance. A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+SOURCE PASSAGES SPECIFICALLY NAMING LYME OR LONG COVID CODING
+Every page/section of this document that actually names Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 - not a generic match on common words like "cost" or "work".
+location: page 3 | source_text: ICD-10-CM Official Guidelines for Coding and Reporting 
+FY 2026 
+Page 3 of 121 
+ 
+ 
+a. Use of External Cause of Morbidity Codes .......................................................................... 17 
+b. Sequencing of External Causes of Morbidity Codes ............................................................ 18 
+c. Other External Causes of Morbidity Code Issues ................................................................. 18 
+d. Use of Z codes ...................................................................................................................... 18 
+C. Chapter-Specific Coding Guidelines ............................................................................................ 19 
+1. Chapter 1: Certain Infectious and Parasitic Diseases (A00-B99), U07.1, U09.9 ................... 19 
+a. Human Immunodeficiency Virus (HIV) Infections .............................................................. 19 
+b. Infectious agents as the cause of diseases classified to other chapters ................................. 22 
+c. Infections resistant to antibiotics .......................................................................................... 22 
+d. Sepsis, Severe Sepsis, and Septic Shock Infections resistant to antibiotics ......................... 23 
+e. Methicillin Resistant Staphylococcus aureus (MRSA) Conditions ...................................... 27 
+f. Zika virus infections ............................................................................................................. 28 
+g. Coronavirus infections .......................................................................................................... 28 
+2. Chapter 2: Neoplasms (C00-D49) .......................................................................................... 32 
+a. Admission/Encounter for treatment of primary site ............................................................. 33 
+b. Admission/Encounter for treatment of secondary site .......................................................... 33 
+c. Coding and sequencing of complications ............................................................................. 34 
+d. Primary malignancy previously excised ............................................................................... 34 
+e. Admissions/Encounters involving chemotherapy, immunotherapy and radiation therapy .. 35 
+f. Admission/encounter to determine extent of malignancy .................................................... 36 
+g. Symptoms, signs, and abnormal findings listed in Chapter 18 associated with neoplasms . 36 
+h. Admission/encounter for pain control/management ............................................................. 36 
+i. Malignancy in two or more noncontiguous sites .................................................................. 36 
+j. Disseminated malignant neoplasm, unspecified ................................................................... 36 
+k. Malignant neoplasm without specification of site ................................................................ 36 
+l. Sequencing of neoplasm codes ............................................................................................. 37 
+m. Current malignancy versus personal history of malignancy ................................................. 38 
+n. Leukemia, Multiple Myeloma, and Malignant Plasma Cell Neoplasms in remission versus 
+personal history .................................................................................................................... 38 
+o. Aftercare following surgery for neoplasm ............................................................................ 38 
+p. Follow-up care for completed treatment of a malignancy .................................................... 38 
+q. Prophylactic organ removal for prevention of malignancy .................................................. 38 
+r. Malignant neoplasm associated with transplanted organ...................................................... 38 
+s. Breast Implant Associated Anaplastic Large Cell Lymphoma ............................................. 39 
+t. Secondary malignant neoplasm of lymphoid tissue .................................................................. 39 
+3. Chapter 3: Disease of the blood and blood-forming organs and certain disorders involving the 
+immune mechanism (D50-D89) ............................................................................................. 39 
+Reserved for future guideline expansion ...................................................................................... 39 
+4. Chapter 4: Endocrine, Nutritional, and Metabolic Diseases (E00-E89) ................................. 39 
+a. Diabetes mellitus ................................................................................................................... 39 
+b. Obesity .................................................................................................................................. 42 
+5. Chapter 5: Mental, Behavioral and Neurodevelopmental disorders (F01 – F99) ................... 43 
+a. Pain disorders related to psychological factors ..................................................................... 43 
+b. Mental and behavioral disorders due to psychoactive substance use ................................... 43 
+c. Factitious Disorder ................................................................................................................ 44 
+6. Chapter 6: Diseases of the Nervous System (G00-G99) ........................................................ 45 
+a. Dominant/nondominant side ................................................................................................. 45 
+b. Pain - Category G89.............................................................................................................. 45 
+7. Chapter 7: Diseases of the Eye and Adnexa (H00-H59) ........................................................ 48 
+a. Glaucoma .............................................................................................................................. 48
+location: page 19 | source_text: ICD-10-CM Official Guidelines for Coding and Reporting 
+FY 2026 
+Page 19 of 121 
+ 
+between healthcare facilities, or provide additional information relevant to a patient 
+encounter. The ICD-10-CM Official Guidelines for Coding and Reporting identify 
+which codes maybe assigned as principal or first-listed diagnosis only, secondary 
+diagnosis only, or principal/first-listed or secondary (depending on the 
+circumstances). Possible applicable Z codes include: 
+ 
+Z59.0-, Homelessness 
+Z59.1, Inadequate housing 
+Z59.5, Extreme poverty 
+Z75.1, Person awaiting admission to adequate facility elsewhere 
+Z75.3, Unavailability and inaccessibility of health-care facilities 
+Z75.4, Unavailability and inaccessibility of other helping agencies 
+Z76.2, Encounter for health supervision and care of other healthy infant and 
+child 
+Z99.12, Encounter for respirator [ventilator] dependence during power 
+failure 
+ 
+The external cause of morbidity codes and the Z codes listed above are not 
+an all-inclusive list. Other codes may be applicable to the encounter based 
+upon the documentation. Assign as many codes as necessary to fully explain 
+each healthcare encounter. Since patient history information may be very 
+limited, use any available documentation to assign the appropriate external 
+cause of morbidity and Z codes.  
+20. Multiple Sites Coding 
+The classification defines “multiple” as involving two or more sites. Follow chapter-
+specific guidelines for assigning codes for “multiple sites.” In the absence of chapter-
+specific guidelines, assign codes describing specified sites individually when 
+documented. When the specified site(s) are not documented, assign the appropriate 
+code for “multiple sites.” 
+ 
+C. Chapter-Specific Coding Guidelines 
+In addition to general coding guidelines, there are guidelines for specific diagnoses and/or 
+conditions in the classification. Unless otherwise indicated, these guidelines apply to all health 
+care settings. Please refer to Section II for guidelines on the selection of principal diagnosis.  
+1. Chapter 1: Certain Infectious and Parasitic Diseases (A00-B99), U07.1, 
+U09.9 
+a. Human Immunodeficiency Virus (HIV) Infections 
+1) Code only confirmed cases 
+Code only confirmed cases of HIV infection/illness. This is an exception 
+to the hospital inpatient guideline Section II, H.
+location: page 31 | source_text: ICD-10-CM Official Guidelines for Coding and Reporting 
+FY 2026 
+Page 31 of 121 
+ 
+(h) Asymptomatic individuals who test positive for COVID-19 
+For asymptomatic individuals who test positive for COVID-19 
+and there is no provider documentation of a diagnosis of 
+COVID-19, query the provider as to whether or not the 
+individual has COVID-19. A false positive laboratory test is 
+possible, and it is the provider’s responsibility to confirm the 
+diagnosis and document accordingly. 
+(i) Personal history of COVID-19 
+For patients with a history of COVID-19, assign code Z86.16, 
+Personal history of COVID-19. 
+(j) Follow-up visits after COVID-19 infection has resolved 
+For individuals who previously had COVID-19, without residual 
+symptom(s) or condition(s), and are being seen for follow-up 
+evaluation, and COVID-19 test results are negative, assign codes 
+Z09, Encounter for follow-up examination after completed 
+treatment for conditions other than malignant neoplasm, and 
+Z86.16, Personal history of COVID-19. 
+ 
+For follow-up visits for individuals with symptom(s) or 
+condition(s) related to a previous COVID-19 infection, see 
+guideline I.C.1.g.1.m. 
+ 
+See Section I.C.21.c.8, Factors influencing health states and 
+contact with health services, Follow-up 
+(k) Encounter for antibody testing 
+For an encounter for antibody testing that is not being performed 
+to confirm a current COVID-19 infection, nor is a follow-up test 
+after resolution of COVID-19, assign Z01.84, Encounter for 
+antibody response examination. 
+ 
+Follow the applicable guidelines above if the individual is being 
+tested to confirm a current COVID-19 infection. 
+ 
+For follow-up testing after a COVID-19 infection, see guideline 
+I.C.1.g.1.j. 
+(l) Multisystem Inflammatory Syndrome 
+For individuals with multisystem inflammatory syndrome (MIS) 
+and COVID-19, assign code U07.1, COVID-19, as the 
+principal/first-listed diagnosis and assign code M35.81, 
+Multisystem inflammatory syndrome, as an additional diagnosis. 
+ 
+If an individual with a history of COVID-19 develops MIS, 
+assign codes M35.81, Multisystem inflammatory syndrome, and 
+U09.9, Post COVID-19 condition, unspecified.
+location: page 32 | source_text: ICD-10-CM Official Guidelines for Coding and Reporting 
+FY 2026 
+Page 32 of 121 
+ 
+ 
+If an individual with a known or suspected exposure to COVID-
+19, and no current COVID-19 infection or history of COVID-19, 
+develops MIS, assign codes M35.81, Multisystem inflammatory 
+syndrome, and Z20.822, Contact with and (suspected) exposure 
+to COVID-19. 
+ 
+Additional codes should be assigned for any associated 
+complications of MIS. 
+(m)  Post COVID-19 Condition 
+For sequela of COVID-19, or associated symptoms or    
+conditions that develop following a previous COVID-19 
+infection, assign a code(s) for the specific symptom(s) or 
+condition(s) related to the previous COVID-19 infection, if 
+known, and code U09.9, Post COVID-19 condition, unspecified. 
+ 
+Code U09.9 should not be assigned for manifestations of an 
+active (current) COVID-19 infection. 
+ 
+If a patient has a condition(s) associated with a previous 
+COVID-19 infection and develops a new active (current) 
+COVID-19 infection, code U09.9 may be assigned in 
+conjunction with code U07.1, COVID-19, to identify that the 
+patient also has a condition(s) associated with a previous 
+COVID-19 infection. Code(s) for the specific condition(s) 
+associated with the previous COVID-19 infection and code(s) 
+for manifestation(s) of the new active (current) COVID-19 
+infection should also be assigned. 
+(n) Underimmunization for COVID-19 Status  
+Code Z28.310, Unvaccinated for COVID-19, may be assigned 
+when the patient has not received a COVID-19 vaccine of any 
+type. Code Z28.311, Partially vaccinated for COVID-19, may be 
+assigned when the patient has been partially vaccinated for 
+COVID-19 as per the recommendations of the Centers for 
+Disease Control and Prevention (CDC) in place at the time of 
+the encounter. For information, visit the CDC’s website 
+https://www.cdc.gov/covidschedule.  
+ 
+See Section I.B.14. for underimmunization documentation by 
+clinicians other than patient's provider. 
+ 
+2. Chapter 2: Neoplasms (C00-D49 ) 
+ 
+General Guidelines 
+Chapter 2 of the ICD-10-CM contains the codes for most benign and all malignant 
+neoplasms. Certain benign neoplasms, such as prostatic adenomas, may be found in the
+location: page 107 | source_text: ICD-10-CM Official Guidelines for Coding and Reporting 
+FY 2026 
+Page 107 of 121 
+ 
+indicating the patient is experiencing homelessness would support 
+assignment of a code from subcategory Z59.0-, Homelessness. 
+ 
+For social determinants of health classified to chapter 21, such as 
+information found in categories Z55-Z65, Persons with potential health 
+hazards related to socioeconomic and psychosocial circumstances, code 
+assignment may be based on medical record documentation from 
+clinicians involved in the care of the patient who are not the patient’s 
+provider since this information represents social information, rather than 
+medical diagnoses. For example, coding professionals may utilize 
+documentation of social information from social workers, community 
+health workers, case managers, or nurses, if their documentation is 
+included in the official medical record. 
+ 
+Patient self-reported documentation may be used to assign codes for 
+social determinants of health, as long as the patient self-reported 
+information is signed-off by and incorporated into the medical record by 
+either a clinician or provider. 
+ 
+Social determinants of health codes are located primarily in these Z code 
+categories: 
+ 
+Z55 Problems related to education and literacy 
+Z56 Problems related to employment and unemployment 
+Z57 Occupational exposure to risk factors 
+Z58 Problems related to physical environment 
+Z59 Problems related to housing and economic circumstances 
+Z60 Problems related to social environment 
+Z62 Problems related to upbringing 
+Z63 Other problems related to primary support group, including 
+family circumstances 
+Z64 Problems related to certain psychosocial circumstances 
+Z65 Problems related to other psychosocial circumstances 
+ 
+See Section I.B.14. Documentation by Clinicians Other than the Patient's 
+Provider. 
+22. Chapter 22: Codes for Special Purposes (U00-U85) 
+ 
+U07.0 Vaping- related disorder (see Section I.C.10.e., Vaping-related disorders) 
+U07.1 COVID-19 (see Section I.C.1.g.1., COVID-19 infection) 
+U09.9 Post COVID-19 condition, unspecified (see Section I.C.1.g.1.m.) 
+ 
+Section II. Selection of Principal Diagnosis 
+The circumstances of inpatient admission always govern the selection of principal diagnosis. The principal 
+diagnosis is defined in the Uniform Hospital Discharge Data Set (UHDDS) as “that condition established 
+after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care.”
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No intervention effectiveness or avoided cost is supplied unless the source explicitly reports it.
+Unreviewed variables are not approved model inputs.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

@@ -1,0 +1,31 @@
+april-1-2026-code-descriptions-tabular-order.zip
+SOURCE: cms/icd10cm_2026_04/april-1-2026-code-descriptions-tabular-order.zip :: Code Descriptions/icd10cmCodesFile.pdf
+SHA-256: 4fd9d8b37f02ab42827c7e7be30595c005b0cc3a6bae7a515e3f4c86b6918688
+CONDITION SCOPE: both
+ROLE: lyme_and_longcovid_coding_guidance
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+DOCUMENT IDENTITY AND SCOPE
+Code Descriptions/icd10cmCodesFile.pdf: this package retains ONLY the pages/sections that actually name Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 coding, out of 1 total - 0 matched. A document with zero matches genuinely contains no Lyme- or Long-COVID-specific guidance, which is a real finding, not a missing extraction.
+
+WHAT NEEDS A DECISION
+These are real official coding rules or index entries, not a clinical outcome or cost figure - use them only to verify a diagnosis is coded per current federal guidance. A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No intervention effectiveness or avoided cost is supplied unless the source explicitly reports it.
+Unreviewed variables are not approved model inputs.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

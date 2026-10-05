@@ -1,0 +1,56 @@
+april-1-2026-code-tables-tabular-index.zip
+SOURCE: cms/icd10cm_2026_04/april-1-2026-code-tables-tabular-index.zip :: Table and Index/icd10cm_index_2026.xml
+SHA-256: c623e47143c156d1427fe7cd2bee7ac1ae6994bdd2196b9ec27d4a3219bcfd48
+CONDITION SCOPE: both
+ROLE: lyme_and_longcovid_icd10cm_index_lookup
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+DOCUMENT IDENTITY AND SCOPE
+Table and Index/icd10cm_index_2026.xml: the ICD-10-CM alphabetic index (diagnosis-name to code lookup). This package retains ONLY entries whose own code is a Lyme disease (A69.2x) or Long COVID/post-COVID condition (U09) code, out of the full alphabetic index - 22 such entries were found by walking the complete real index tree.
+
+WHAT NEEDS A DECISION
+A code-index entry is not a patient count, cost, or diagnostic algorithm - it only confirms the correct code and its indexed cross-references. A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+LYME/LONG COVID INDEX ENTRIES (REAL A69.2X / U09 CODE MATCHES)
+Every entry in this file whose own listed code is a Lyme (A69.2x) or Long COVID (U09) code, with its full alphabetic-index breadcrumb path - the complete real set of matches in this file, not a keyword-triggered excerpt.
+path: Arthritis, arthritic(acute) (chronic) (nonpyogenic) (subacute) > due to or associated with > Lyme disease | code: A69.23
+path: Arthritis, arthritic(acute) (chronic) (nonpyogenic) (subacute) > in(due to) > Lyme disease | code: A69.23
+path: Condition > post COVID-19 | code: U09.9
+path: COVID-19 > condition post | code: U09.9
+path: COVID-19 > long(haul) | code: U09.9
+path: COVID-19 > sequelae(post acute) | code: U09.9
+path: Disease, diseased > Lyme | code: A69.20
+path: Erythema, erythematous(infectional) (inflammation) > chronicum migrans(Borrelia burgdorferi) | code: A69.20
+path: Erythema, erythematous(infectional) (inflammation) > migrans > chronicum | code: A69.20
+path: Infection, infected, infective(opportunistic) > Borrelia bergdorfi | code: A69.20
+path: Long > COVID(-19) | code: U09.9
+path: Lyme disease | code: A69.20
+path: Meningitis(basal) (basic) (brain) (cerebral) (cervical) (congestive) (diffuse) (hemorrhagic) (infantile) (membranous) (metastatic) (nonspecific) (pontine) (progressive) (simple) (spinal) (subacute) (sympathetic) (toxic) > in(due to) > Lyme disease | code: A69.21
+path: Meningoencephalitis > in(due to) > Lyme disease | code: A69.22
+path: Myocarditis(with arteriosclerosis)(chronic)(fibroid) (interstitial) (old) (progressive) (senile) > in(due to) > Lyme disease | code: A69.29
+path: Neuritis(rheumatoid) > cranial nerve > due to Lyme disease | code: A69.22
+path: Polyneuropathy(peripheral) > in(due to) > Lyme disease | code: A69.22
+path: Post COVID-19 condition, unspecified | code: U09.9
+path: SARS-CoV-2 > sequelae(post acute) | code: U09.9
+path: Sequelae(of) > COVID-19(post acute) | code: U09.9
+path: Sequelae(of) > SARS-CoV-2(post acute) | code: U09.9
+path: Syndrome > post-COVID(-19) | code: U09.9
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No intervention effectiveness or avoided cost is supplied unless the source explicitly reports it.
+Unreviewed variables are not approved model inputs.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

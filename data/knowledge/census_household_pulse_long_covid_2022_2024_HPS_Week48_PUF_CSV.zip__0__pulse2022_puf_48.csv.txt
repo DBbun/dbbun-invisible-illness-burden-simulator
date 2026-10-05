@@ -1,0 +1,75 @@
+HPS_Week48_PUF_CSV.zip
+SOURCE: census/household_pulse_long_covid_2022_2024/HPS_Week48_PUF_CSV.zip :: pulse2022_puf_48.csv
+SHA-256: 85353908b53a9cd651175cc96c9885f20bd9cf2832d6c7a1b246e4a20b5aca60
+CONDITION SCOPE: long_covid
+ROLE: weighted_long_covid_population_and_function
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+RELEASE-SPECIFIC FINDING
+HPS_Week48_PUF_CSV.zip contains 46,801 respondent records; 3,232 meet the current-case coding rule. The weighted proportion is 7.4109%, with a design-based approximate 95% interval 6.9417% to 7.8802%. This is measured prevalence, not the fraction whose work loss was caused by Long COVID.
+
+ECONOMIC DECISION VALUE
+This release can establish the population scale and observed functional-impact mix for a support-planning scenario. It cannot supply a wage, recoverable work hours, program uptake or intervention effectiveness. Do not multiply this prevalence by a national published total cost as though the latter were per person. Activity limitation supports assessment of accessibility needs; it is not equivalent to employment exit or eligibility for benefits.
+
+DEFINITION AND MISSINGNESS
+LONGCOVID yes codes are [1]. Phase 4.1 expanded yes into duration categories; previous binary codes cannot be reused unchanged. Negative response codes and skipped items are retained in the all-adult denominator, not reclassified as observed no. No SYMPTMIMPCT field exists here; functional-impact results are unavailable, not zero.
+
+RELEASE-SPECIFIC DICTIONARY ENTRIES
+Verbatim source definitions and response codes, retained from pulse2022_data.dictionary_CSV_48.xlsx
+row: 306 | text: PASC2 | LONGCOVID | Description | COVID-19 or coronavirus symptoms lasting 3 months or longer | Did you have any symptoms lasting 3 months or longer that you did not have prior to having coronavirus or COVID-19? Long term symptoms may include: tiredness or fatigue, difficulty thinking, concentrating, forgetfulness, or memory problems (sometimes referred to as "brain fog", difficulty breathing or shortness of breath, joint or muscle pain, fast-beating or pounding heart (also known as heart palpitations), chest pain, dizziness on standing, menstrual changes, changes to taste/smell, or inability to exercise. | 1:2 | 3.5
+row: 307 | text: Values | 1) Yes
+2) No
+-99) Question seen but category not selected
+-88) Missing / Did not report | New for Phase 3.5
+row: 308 | text: Universe | HADCOVIDRV = 1
+row: 309 | text: Internal Notes
+row: 310 | text: PASC3 | SYMPTMNOW | Description | Currently have COVID-19 or coronavirus symptoms | Do you have symptoms now? | 1:2 | 3.5
+row: 311 | text: Values | 1) Yes
+2) No
+-99) Question seen but category not selected
+-88) Missing / Did not report | New for Phase 3.5
+row: 312 | text: Universe | HADCOVIDRV = 1
+row: 313 | text: Internal Notes
+row: 318 | text: EMP2 | ANYWORK | Description | Employment status for last 7 days | Now we are going to ask about your employment._x000D_
+In the last 7 days, did you do ANY_x000D_ work for either pay or profit? Select only one answer. | 1:2 | 1, 2, 3, 3.1, 3.2, 3.3, 3.4, 3.5
+row: 319 | text: Values | 1) Yes
+2) No
+-99) Question seen but category not selected
+-88) Missing / Did not report
+row: 320 | text: Universe | All persons born before 2004
+row: 321 | text: Internal Notes
+row: 930 | text: - | PWEIGHT | Description | Person level weight | TBD | 1, 2, 3, 3.1, 3.2, 3.3, 3.4, 3.5
+row: 931 | text: Values | TBD
+row: 932 | text: Universe
+row: 933 | text: Internal Notes
+row: 950 | text: - | SCRAM | Description | Record identifier | - | Varying | 1, 2, 3, 3.1, 3.2, 3.3, 3.4, 3.5
+row: 951 | text: Values | Varying
+row: 952 | text: Universe | All persons
+row: 953 | text: Internal Notes | Unique record ID for linking replicate weights. Was also used for longitudinal linking for cycles 1-12. 
+
+WEIGHTED RESULTS AND PRECISION
+Each release is a separate cross-sectional survey; these are not repeat measurements of identified patients.
+measure: current_long_covid_all_adults | unweighted_numerator: 3232 | unweighted_denominator: 46801 | weighted_numerator: 18,711,225 | weighted_denominator: 2.5248101e+08 | proportion: 0.074109433 | standard_error: 0.0023940481 | lower_95: 0.069417099 | upper_95: 0.078801768
+
+TRACEABLE FINDINGS
+f1: Weighted current-case numerator = 18,711,225 weighted adults [pulse2022_puf_48.csv; LONGCOVID in [1] AND SYMPTMNOW=1; sum PWEIGHT]
+f2: All-adult weighted denominator = 2.5248101e+08 weighted adults [pulse2022_puf_48.csv; all rows; sum PWEIGHT]
+c1: Current Long COVID proportion = 0.074109433 fraction of adult population; ratio(f1, f2). Survey-weighted self-report; missing items remain in denominator. Not clinician-confirmed disease or incident cases.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use prevalence to contextualize experiences, not to predict your wages or recovery. Functional impact is a separate question from having symptoms.
+Care delivery: Plan accessible follow-up using the functional-impact categories where present. Collect work hours and care needs separately.
+Payers and policy: Use this release-specific denominator and uncertainty for population planning; obtain independent evidence for costs and effects before claiming savings.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No identified causal effect of workplace support or earlier recognition.
+Work-loss attribution, wage valuation and unpaid-care hours are not estimated here.
+Missing-item denominator sensitivity and alternative survey definitions should be reviewed before model promotion.
+
+DO NOT USE FOR
+Pooling releases as independent unique people, interpreting a prevalence change as recovery, or inferring personal disability from population proportions.
+Adding this microdata estimate and the CDC HPS dashboard estimate as independent populations.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

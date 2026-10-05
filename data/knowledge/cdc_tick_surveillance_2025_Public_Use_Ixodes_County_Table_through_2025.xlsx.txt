@@ -1,0 +1,40 @@
+Public_Use_Ixodes_County_Table_through_2025.xlsx
+SOURCE: cdc/tick_surveillance_2025/Public_Use_Ixodes_County_Table_through_2025.xlsx
+SHA-256: e35a5066a7c77b2e79c50f315a18e042405ab7baa8a414a1a907792bb25d2adc
+CONDITION SCOPE: lyme
+ROLE: Vector presence and pathogen surveillance
+
+PROCESSING AND INTERPRETATION STATUS
+extracted_requires_semantic_review. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+Detection status is not a human infection rate. No detection may mean limited surveillance; pathogen-tested ticks are not a representative sample of exposed people.
+
+SOURCE-SPECIFIC ANALYTICAL COVERAGE
+{"sheets": [{"sheet": "Data Use Agreement", "rows": 15, "columns": 1}, {"sheet": "Classification Terms", "rows": 8, "columns": 2}, {"sheet": "Ixodes records 2025", "rows": 3113, "columns": 7}]}
+
+DECISION USE AND LIMIT
+Detection status is not a human infection rate. No detection may mean limited surveillance; pathogen-tested ticks are not a representative sample of exposed people. Retained tables/field coverage identify which modeling question this file can support. Units and survey/design denominators that remain unresolved are blockers to numerical promotion, not an invitation to estimate them.
+
+RETAINED TABLE CONTENT
+Exact labels and source cells; numerical values are not recombined across ambiguous multi-level headings.
+sheet: Data Use Agreement | rows: [{'row': 1, 'cells': {'A': 'Tick surveillance data reported to the CDC ArboNET (Tick Module): Data release guidelines'}}, {'row': 2, 'cells': {'A': 'a. Access to ArboNET Tick Module data is limited to the “Requestor” who downloads these data. These data should not be provided to other persons. All other requests for access to ArboNET Tick Module data should be directed to the tick surveillance website where the requestor can agree to data usage terms and to download the data (https://www.cdc.gov/ticks/surveillance/TickSurveillanceData.html)'}}, {'row': 3, 'cells': {'A': 'b. The ArboNET Tick Module will be appropriately referenced in any publications or presentations derived from these data. A final copy of the publications or presentations resulting from these data will be provided to the CDC Division of Vector-Borne Diseases (ticksurveillance@cdc.gov).'}}, {'row': 4, 'cells': {'A': 'Limitations of ArboNET Tick Module data'}}, {'row': 5, 'cells': {'A': '1.\xa0\xa0 ArboNET is a passive surveillance system that relies on jurisdictions to voluntarily collect and report non-human, vector-borne infection and ecologic data.'}}, {'row': 6, 'cells': {'A': '2.\xa0\xa0 Vector-borne disease awareness, pathogen testing capacity, and reporting varies substantially by county, state, region, and from year-to-year. Therefore, ArboNET Tick Module data may not be representative of true differences in tick presence and abundance or pathogen presence and prevalence in ticks by jurisdiction, or over time.'}}, {'row': 7, 'cells': {}}, {'row': 8, 'cells': {'A': 'Guidelines for the surveillance for Ixodes scapularis and pathogens found in this tick species in the United States '}}, {'row': 9, 'cells': {'A': 'https://www.cdc.gov/ticks/resources/TickSurveillance_Iscapularis-P.pdf'}}, {'row': 10, 'cells': {}}, {'row': 11, 'cells': {'A': 'Guidelines for the surveillance for Ixodes pacificus and pathogens found in this tick species in the United States '}}, {'row': 12, 'cells': {'A': 'https://www.cdc.gov/ticks/resources/TickSurveillance_Ipacificus-P.pdf'}}, {'row': 13, 'cells': {}}, {'row': 14, 'cells': {'A': 'To view maps of Ixodes scapularis and Ixodes pacificus status by continental United States county, 2025 (through Dec. 31, 2025) see the link below:'}}, {'row': 15, 'cells': {'A': 'https://www.cdc.gov/ticks/data-research/facts-stats/index.html'}}]
+sheet: Classification Terms | rows: [{'row': 1, 'cells': {'A': 'County Classification', 'B': 'Definition'}}, {'row': 2, 'cells': {'A': 'Established', 'B': 'Six or more I. scapularis or I. pacificus of a single life stage, or more than one life stage of the tick collected in the county within a 12-month period.'}}, {'row': 3, 'cells': {'A': 'Reported', 'B': 'Less than six I. scapularis or I. pacificus of a single life stage collected in the county within a 12-month period.'}}, {'row': 4, 'cells': {'A': 'No Records', 'B': 'Counties classified as “no records” should not be interpreted as ticks being absent.  No records could arise either from a lack of: sampling efforts, tick collection, reporting or publishing the results of sampling efforts.'}}, {'row': 5, 'cells': {}}, {'row': 6, 'cells': {'A': 'Data Source Classification', 'B': 'Definition'}}, {'row': 7, 'cells': {'A': 'CDC ArboNET Tick Module historical data', 'B': 'Data for county classification derived from peer-reviewed literature, and/or reports from academic and public health agencies in the county/state; previous year testing submissions to the CDC Division of Vector-Borne Disease, Bacterial Diseases Branch, Ecology and Entomology Program, Fort Collins, CO.'}}, {'row': 8, 'cells': {'A': 'CDC ArboNET Tick Module [year] submission', 'B': 'Data for county classification derived from local, state, and federal partner agency tick identification and testing submissions to the CDC Division of Vector-Borne Disease, Bacterial Diseases Branch, Ecology and Entomology Program, Fort Collins, CO.'}}]
+sheet: Ixodes records 2025 | header_rows: [['Ixodes scapularis and Ixodes pacificus status by continental United States county, 2025 (through Dec. 31, 2025)', '', '', '', '', '', ''], ['FIPSCode', 'State', 'County', 'Ixodes_scapularis_County_Status', 'Ixodes_scapularis_data_source', 'Ixodes_pacificus_county_status', 'Ixodes_pacificus_data_source'], ['01001', 'AL', 'Autauga County', 'Established', 'CDC ArboNET Tick Module historic data', 'No records', 'CDC ArboNET Tick Module historic data'], ['01003', 'AL', 'Baldwin County', 'Established', 'CDC ArboNET Tick Module 2016 submission', 'No records', 'CDC ArboNET Tick Module historic data'], ['01005', 'AL', 'Barbour County', 'Established', 'CDC ArboNET Tick Module 2016 submission', 'No records', 'CDC ArboNET Tick Module historic data'], ['01007', 'AL', 'Bibb County', 'Established', 'CDC ArboNET Tick Module historic data', 'No records', 'CDC ArboNET Tick Module historic data'], ['01009', 'AL', 'Blount County', 'No records', 'CDC ArboNET Tick Module historic data', 'No records', 'CDC ArboNET Tick Module historic data'], ['01011', 'AL', 'Bullock County', 'Established', 'CDC ArboNET Tick Module historic data', 'No records', 'CDC ArboNET Tick Module historic data']] | selection: Header interpretation required; data rows not reproduced.
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+Table-specific unit/universe and missing-code interpretation is not complete for every field.
+No causal monetary burden is computed from descriptive field coverage.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

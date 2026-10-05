@@ -1,0 +1,1354 @@
+april-1-2026-code-tables-tabular-index.zip
+SOURCE: cms/icd10cm_2026_04/april-1-2026-code-tables-tabular-index.zip :: Table and Index/icd10cm_index_2026.pdf
+SHA-256: c623e47143c156d1427fe7cd2bee7ac1ae6994bdd2196b9ec27d4a3219bcfd48
+CONDITION SCOPE: both
+ROLE: lyme_and_longcovid_coding_guidance
+
+SPECIFIC ROLE AND DECISION BOUNDARY
+A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+DOCUMENT IDENTITY AND SCOPE
+Table and Index/icd10cm_index_2026.pdf: this package retains ONLY the pages/sections that actually name Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 coding, out of 1362 total - 22 matched. A document with zero matches genuinely contains no Lyme- or Long-COVID-specific guidance, which is a real finding, not a missing extraction.
+
+WHAT NEEDS A DECISION
+These are real official coding rules or index entries, not a clinical outcome or cost figure - use them only to verify a diagnosis is coded per current federal guidance. A code definition is not a patient count, cost or diagnostic algorithm. Keep code-system edition/effective date and inclusion/exclusion notes; U09.9 and A69.2-family code presence does not make datasets clinically interchangeable.
+
+SOURCE PASSAGES SPECIFICALLY NAMING LYME OR LONG COVID CODING
+Every page/section of this document that actually names Lyme disease/A69.2 or Long COVID/post-COVID condition/U09.9 - not a generic match on common words like "cost" or "work".
+location: page 119 | source_text: Artery, arterial -see also condition
+- abscess I77.89
+- single umbilical Q27.0
+Arthralgia (allergic) -see also Pain, joint
+- in caisson disease T70.3
+- temporomandibular M26.62-
+Arthritis, arthritic (acute) (chronic) (nonpyogenic) (subacute) M19.90
+- allergic -see Arthritis, specified form NEC
+- ankylosing (crippling) (spine) -see also Spondylitis, ankylosing
+- - sites other than spine -see Arthritis, specified form NEC
+- atrophic -see Osteoarthritis
+- - spine -see Spondylitis, ankylosing
+- back -see Spondylopathy, inflammatory
+- blennorrhagic (gonococcal) A54.42
+- Charcot's -see Arthropathy, neuropathic
+- - diabetic -see Diabetes, arthropathy, neuropathic
+- - syringomyelic G95.0
+- chylous (filarial) -see also category M01 B74.9
+- climacteric (any site) NEC -see Arthritis, specified form NEC
+- crystal (-induced) -see Arthritis, in, crystals
+- deformans -see Osteoarthritis
+- degenerative -see Osteoarthritis
+- due to or associated with
+- - acromegaly E22.0
+- - brucellosis -see Brucellosis
+- - caisson disease T70.3
+- - diabetes -see Diabetes, arthropathy
+- - dracontiasis -see also category M01 B72
+- - enteritis NEC
+- - - regional -see Enteritis, regional
+- - erysipelas -see also category M01 A46
+- - erythema
+- - - epidemic A25.1
+- - - nodosum L52
+- - filariasis NOS B74.9
+- - glanders A24.0
+- - helminthiasis -see also category M01 B83.9
+- - hemophilia D66 [M36.2]
+- - Henoch- (Schönlein) purpura D69.0 [M36.4]
+- - human parvovirus -see also category M01 B97.6
+- - infectious disease NEC -see category M01
+- - leprosy (see also category M01) -see also Leprosy A30.9
+- - Lyme disease A69.23
+- - mycobacteria -see also category M01 A31.8
+- - parasitic disease NEC -see also category M01 B89
+- - paratyphoid fever (see also category M01) -see also Fever, paratyphoid A01.4
+- - rat bite fever -see also category M01 A25.1
+- - regional enteritis -see Enteritis, regional
+- - respiratory disorder NOS J98.9
+- - serum sickness -see also Reaction, serum T80.69
+- - syringomyelia G95.0
+- - typhoid fever A01.04
+- epidemic erythema A25.1
+- facet joint -see also Spondylosis M47.819
+- febrile -see Fever, rheumatic
+- gonococcal A54.42
+- gouty (acute) -see Gout
+- in (due to)
+- - acromegaly -see also subcategory M14.8- E22.0
+- - amyloidosis -see also subcategory M14.8- E85.4
+location: page 120 | source_text: - - bacterial disease -see also subcategory M01 A49.9
+- - Behçet's syndrome M35.2
+- - caisson disease -see also subcategory M14.8- T70.3
+- - coliform bacilli (Escherichia coli) -see Arthritis, in, pyogenic organism NEC
+- - crystals M11.9
+- - - dicalcium phosphate -see Arthritis, in, crystals, specified type NEC
+- - - hydroxyapatite M11.0-
+- - - pyrophosphate -see Arthritis, in, crystals, specified type NEC
+- - - specified type NEC M11.80
+- - - - ankle M11.87-
+- - - - elbow M11.82-
+- - - - foot joint M11.87-
+- - - - hand joint M11.84-
+- - - - hip M11.85-
+- - - - knee M11.86-
+- - - - multiple sites M11.89
+- - - - shoulder M11.81-
+- - - - vertebrae M11.88
+- - - - wrist M11.83-
+- - dermatoarthritis, lipoid E78.81
+- - dracontiasis (dracunculiasis) -see also category M01 B72
+- - endocrine disorder NEC -see also subcategory M14.8- E34.9
+- - enteritis, infectious NEC -see also category M01 A09
+- - - specified organism NEC -see also category M01 A08.8
+- - erythema
+- - - multiforme -see also subcategory M14.8- L51.9
+- - - nodosum -see also subcategory M14.8- L52
+- - gout -see Gout
+- - helminthiasis NEC -see also category M01 B83.9
+- - hemochromatosis -see also subcategory M14.8- E83.118
+- - hemoglobinopathy NEC D58.2 [M36.3]
+- - hemophilia NEC D66 [M36.2]
+- - Hemophilus influenzae M00.8- [B96.3]
+- - Henoch (-Schönlein) purpura D69.0 [M36.4]
+- - hyperparathyroidism NEC -see also subcategory M14.8- E21.3
+- - hypersensitivity reaction NEC T78.49 [M36.4]
+- - hypogammaglobulinemia -see also subcategory M14.8- D80.1
+- - hypothyroidism NEC -see also subcategory M14.8- E03.9
+- - infection -see Arthritis, pyogenic or pyemic
+- - - spine -see Spondylopathy, infective
+- - infectious disease NEC -see category M01
+- - leprosy -see also category M01 A30.9
+- - leukemia NEC C95.9- [M36.1]
+- - lipoid dermatoarthritis E78.81
+- - Lyme disease A69.23
+- - Mediterranean fever, familial -see also subcategory M14.8- M04.1
+- - Meningococcus A39.83
+- - metabolic disorder NEC -see also subcategory M14.8- E88.9
+- - multiple myelomatosis C90.0- [M36.1]
+- - mumps B26.85
+- - mycosis NEC -see also category M01 B49
+- - myelomatosis (multiple) C90.0- [M36.1]
+- - neurological disorder NEC G98.0
+- - ochronosis -see also subcategory M14.8- E70.29
+- - O'nyong-nyong -see also category M01 A92.1
+- - parasitic disease NEC -see also category M01 B89
+- - paratyphoid fever -see also category M01 A01.4
+- - Pseudomonas -see Arthritis, pyogenic, bacterial NEC
+- - psoriasis L40.50
+- - pyogenic organism NEC -see Arthritis, pyogenic, bacterial NEC
+location: page 281 | source_text: Compulsion, compulsive
+- gambling F63.0
+- neurosis F42.8
+- personality F60.5
+- states F42.8
+- swearing F42.8
+- - in Gilles de la Tourette's syndrome F95.2
+- tics and spasms F95.9
+Concato's disease (pericardial polyserositis) A19.9
+- nontubercular I31.1
+- pleural -see Pleurisy, with effusion
+Concavity chest wall M95.4
+Concealed penis Q55.64
+Concern (normal) about sick person in family Z63.6
+Concrescence (teeth) K00.2
+Concretio cordis I31.1
+- rheumatic I09.2
+Concretion -see also Calculus
+- appendicular K38.1
+- canaliculus -see Dacryolith
+- clitoris N90.89
+- conjunctiva H11.12-
+- eyelid -see Disorder, eyelid, specified type NEC
+- lacrimal passages -see Dacryolith
+- prepuce (male) N47.8
+- salivary gland (any) K11.5
+- seminal vesicle N50.89
+- tonsil J35.8
+Concussion (brain) (cerebral) (current) S06.0X9
+- with
+- - loss of consciousness
+- - - 30 minutes or less S06.0X1
+- - - brief S06.0X1
+- - - status unknown S06.0XA
+- - - unspecified duration S06.0X9
+- - no loss of consciousness S06.0X0
+- blast (air) (hydraulic) (immersion) (underwater)
+- - abdomen or thorax -see Injury, blast, by site
+- - ear with acoustic nerve injury -see Injury, nerve, acoustic, specified type NEC
+- cauda equina S34.3
+- conus medullaris S34.02
+- ocular S05.8X-
+- spinal (cord)
+- - cervical S14.0
+- - lumbar S34.01
+- - sacral S34.02
+- - thoracic S24.0
+- syndrome F07.81
+- without loss of consciousness S06.0X0
+Condition -see also Disease
+- Fontan-associated, specified NEC I27.848
+- post COVID-19 U09.9
+Conditions arising in the perinatal period -see Newborn, affected by
+Conduct disorder -see Disorder, conduct
+Condyloma A63.0
+- acuminatum A63.0
+- gonorrheal A54.09
+- latum A51.31
+- syphilitic A51.31
+- - congenital A50.07
+location: page 312 | source_text: - - on behalf of third party Z70.2
+- - specified reason NEC Z70.8
+- socioeconomic factors Z71.88
+- specified reason NEC Z71.89
+- spiritual Z71.81
+- spousal abuse (perpetrator) Z69.12
+- - victim Z69.11
+- substance abuse Z71.89
+- - alcohol Z71.41
+- - drug Z71.51
+- - tobacco Z71.6
+- tobacco use Z71.6
+- travel (international) Z71.84
+- use (of)
+- - insulin pump Z46.81
+- vaccine product safety Z71.85
+- victim (of)
+- - abuse Z69.81
+- - child abuse
+- - - by parent Z69.010
+- - - non-parental Z69.020
+- - rape NEC Z69.81
+Coupled rhythm R00.8
+Couvelaire syndrome or uterus (complicating delivery) O45.8X-
+COVID-19 U07.1
+- condition post U09.9
+- contact (with) Z20.822
+- exposure (to) Z20.822
+- history of (personal) Z86.16
+- long (haul) U09.9
+- partially vaccinated (for) Z28.311
+- pneumonia J12.82
+- screening Z11.52
+- sequelae (post acute) U09.9
+- unvaccinated (for) Z28.310
+Cowperitis -see Urethritis
+Cowper's gland -see condition
+Cowpox B08.010
+- due to vaccination T88.1
+Coxa
+- magna M91.4-
+- plana M91.2-
+- valga (acquired) -see also Deformity, limb, specified type NEC, thigh
+- - congenital Q65.81
+- - sequelae (late effect) of rickets E64.3
+- vara (acquired) -see also Deformity, limb, specified type NEC, thigh
+- - congenital Q65.82
+- - sequelae (late effect) of rickets E64.3
+Coxalgia, coxalgic (nontuberculous) -see also Pain, joint, hip
+- tuberculous A18.02
+Coxitis -see Monoarthritis, hip
+Coxsackie (virus) (infection) B34.1
+- as cause of disease classified elsewhere B97.11
+- carditis B33.20
+- central nervous system NEC A88.8
+- endocarditis B33.21
+- enteritis A08.39
+- meningitis (aseptic) A87.0
+- myocarditis B33.22
+- pericarditis B33.23
+location: page 339 | source_text: - diaphragm
+- - with elevation, eventration or hernia -see Hernia, diaphragm
+- - congenital Q79.1
+- - - with hernia Q79.0
+- - - gross (with hernia) Q79.0
+- ectodermal, congenital Q82.9
+- Eisenmenger's Q21.8
+- enzyme
+- - catalase E80.3
+- - peroxidase E80.3
+- esophagus, congenital Q39.9
+- extensor retinaculum M62.89
+- fibrin polymerization D68.2
+- filling
+- - bladder R93.41
+- - kidney R93.42-
+- - renal pelvis R93.41
+- - stomach R93.3
+- - ureter R93.41
+- - urinary organs, specified NEC R93.49
+- GABA (gamma aminobutyric acid) metabolic E72.81
+- Gerbode Q21.0
+- glucose transport, blood-brain barrier E74.810
+- glycoprotein degradation E77.1
+- Hageman (factor) D68.2
+- hearing -see Deafness
+- high grade F70
+- home, technical, preventing adequate care Z59.19
+- interatrial septal Q21.19
+- interauricular septal Q21.19
+- interventricular septal Q21.0
+- - with dextroposition of aorta, pulmonary stenosis and hypertrophy of right ventricle Q21.3
+- - in tetralogy of Fallot Q21.3
+- intervertebral annular fibrosis -see also Disease, intervertebral disc, by site M51.9
+- - lumbar M51.A0
+- - - large M51.A2
+- - - small M51.A1
+- - lumbosacral M51.A3
+- - - large M51.A5
+- - - small M51.A4
+- learning (specific) -see Disorder, learning
+- lymphocyte function antigen-1 (LFA-1) D84.0
+- lysosomal enzyme, post-translational modification E77.0
+- major osseous M89.70
+- - ankle M89.77-
+- - carpus M89.74-
+- - clavicle M89.71-
+- - femur M89.75-
+- - fibula M89.76-
+- - fingers M89.74-
+- - foot M89.77-
+- - forearm M89.73-
+- - hand M89.74-
+- - humerus M89.72-
+- - lower leg M89.76-
+- - metacarpus M89.74-
+- - metatarsus M89.77-
+- - multiple sites M89.79
+- - pelvic region M89.75-
+- - pelvis M89.75-
+location: page 432 | source_text: - - - congenital Q33.0
+- - dabbing (related) U07.0
+- - electronic cigarette (related) U07.0
+- - fibroid (chronic) -see Fibrosis, lung
+- - fluke B66.4
+- - - oriental B66.4
+- - in
+- - - amyloidosis E85.4 [J99]
+- - - sarcoidosis D86.0
+- - - Sjögren's syndrome M35.02
+- - - systemic
+- - - - lupus erythematosus M32.13
+- - - - sclerosis M34.81
+- - interstitial J84.9
+- - - with progressive fibrotic phenotype, in diseases classified elsewhere J84.170
+- - - drug-induced -see Disorder, lung, interstitial, drug-induced
+- - - of childhood, specified NEC J84.848
+- - - - drug-induced -see Disorder, lung, interstitial, drug-induced
+- - - respiratory bronchiolitis J84.115
+- - - specified NEC J84.89
+- - obstructive (chronic) J44.9
+- - - with
+- - - - acute
+- - - - - bronchitis J44.0
+- - - - - exacerbation NEC J44.1
+- - - - - lower respiratory infection J44.0
+- - - - alveolitis, allergic J67.9
+- - - - asthma J44.89
+- - - - bronchiectasis J47.9
+- - - - - with
+- - - - - - exacerbation (acute) J47.1
+- - - - - - lower respiratory infection J47.0
+- - - - bronchitis J44.89
+- - - - - with
+- - - - - - exacerbation (acute) J44.1
+- - - - - - lower respiratory infection J44.0
+- - - - emphysema J43.9
+- - - - hypersensitivity pneumonitis J67.9
+- - - decompensated J44.1
+- - - - with
+- - - - - exacerbation (acute) J44.1
+- - polycystic J98.4
+- - - congenital Q33.0
+- - rheumatoid (diffuse) (interstitial) -see Rheumatoid, lung
+- - vaping (associated) (device) (product) (use) U07.0
+- Lutembacher's (atrial septal defect with mitral stenosis) Q21.19
+- Lyme A69.20
+- lymphatic (gland) (system) (channel) (vessel) I89.9
+- lymphoproliferative D47.9
+- - specified NEC D47.Z9
+- - T-gamma D47.Z9
+- - X-linked D82.3
+- Magitot's M27.2
+- malarial -see Malaria
+- malignant -see also Neoplasm, malignant, by site
+- Manson's B65.1
+- maple bark J67.6
+- maple-syrup-urine E71.0
+- Marburg (virus) A98.3
+- Marion's (bladder neck obstruction) N32.0
+location: page 569 | source_text: - external ear A46 [H62.4-]
+- puerperal, postpartum O86.89
+Erysipeloid A26.9
+- cutaneous (Rosenbach's) A26.0
+- disseminated A26.8
+- sepsis A26.7
+- specified NEC A26.8
+Erythema, erythematous (infectional) (inflammation) L53.9
+- ab igne L59.0
+- annulare (centrifugum) (rheumaticum) L53.1
+- arthriticum epidemicum A25.1
+- brucellum -see Brucellosis
+- chronic figurate NEC L53.3
+- chronicum migrans (Borrelia burgdorferi) A69.20
+- diaper L22
+- due to
+- - chemical NEC L53.0
+- - - in contact with skin L24.5
+- - drug (internal use) -see Dermatitis, due to, drugs
+- elevatum diutinum L95.1
+- endemic E52
+- epidemic, arthritic A25.1
+- figuratum perstans L53.3
+- gluteal L22
+- heat - code by site under Burn, first degree
+- ichthyosiforme congenitum bullous Q80.3
+- in diseases classified elsewhere L54
+- induratum (nontuberculous) L52
+- - tuberculous A18.4
+- infectiosum B08.3
+- intertrigo L30.4
+- iris L51.9
+- marginatum L53.2
+- - in (due to) acute rheumatic fever I00
+- medicamentosum -see Dermatitis, due to, drugs
+- migrans A26.0
+- - chronicum A69.20
+- - tongue K14.1
+- multiforme (major) (minor) L51.9
+- - bullous, bullosum L51.1
+- - conjunctiva L51.1
+- - nonbullous L51.0
+- - pemphigoides L12.0
+- - specified NEC L51.8
+- napkin L22
+- neonatorum P83.88
+- - toxic P83.1
+- nodosum L52
+- - tuberculous A18.4
+- palmar L53.8
+- pernio T69.1
+- rash, newborn P83.88
+- scarlatiniform (recurrent) (exfoliative) L53.8
+- solare L55.0
+- specified NEC L53.8
+- toxic, toxicum NEC L53.0
+- - newborn P83.1
+- tuberculous (primary) A18.4
+Erythematous, erythematosus -see condition
+Erythermalgia (primary) I73.81
+location: page 760 | source_text: - - - A A01.1
+- - - B A01.2
+- - - C A01.3
+- - typhosum A01.00
+- Bacteroides NEC A49.8
+- - fragilis, as cause of disease classified elsewhere B96.6
+- Balantidium coli A07.0
+- Bartholin's gland N75.8
+- Basidiobolus B46.8
+- bile duct (common) (hepatic) -see Cholangitis
+- bladder -see Cystitis
+- Blastomyces, blastomycotic -see also Blastomycosis
+- - brasiliensis -see Paracoccidioidomycosis
+- - dermatitidis -see Blastomycosis
+- - European -see Cryptococcosis
+- - Loboi B48.0
+- - North American B40.9
+- - South American -see Paracoccidioidomycosis
+- bleb, postprocedure -see Blebitis
+- bone -see Osteomyelitis
+- Bordetella -see Whooping cough
+- Borrelia bergdorfi A69.20
+- brain -see also Encephalitis G04.90
+- - membranes -see Meningitis
+- - septic G06.0
+- - - meninges -see Meningitis, bacterial
+- branchial cyst Q18.0
+- breast -see Mastitis
+- bronchus -see Bronchitis
+- Brucella A23.9
+- - abortus A23.1
+- - canis A23.3
+- - melitensis A23.0
+- - mixed A23.8
+- - specified NEC A23.8
+- - suis A23.2
+- Brugia (malayi) B74.1
+- - timori B74.2
+- bursa -see Bursitis, infective
+- buttocks (skin) L08.9
+- Campylobacter, intestinal A04.5
+- - as cause of disease classified elsewhere B96.81
+- Candida (albicans) (tropicalis) -see Candidiasis
+- candiru B88.8
+- Capillaria (intestinal) B81.1
+- - hepatica B83.8
+- - philippinensis B81.1
+- cartilage -see Disorder, cartilage, specified type NEC
+- catheter-related bloodstream (CRBSI) T80.211
+- cat liver fluke B66.0
+- cellulitis - code by site under Cellulitis
+- central line-associated T80.219
+- - bloodstream (CLABSI) T80.211
+- - specified NEC T80.218
+- Cephalosporium falciforme B47.0
+- cerebrospinal -see Meningitis
+- cervical gland (lymph) L04.0
+- cervix -see Cervicitis
+- cesarean delivery wound (puerperal) O86.00
+- cestodes -see Infestation, cestodes
+location: page 881 | source_text: - joint -see Derangement, joint, specified type NEC
+- - knee -see Derangement, knee
+Lockjaw -see Tetanus
+Löffler's
+- endocarditis I42.3
+- eosinophilia J82.89
+- pneumonia J82.89
+- syndrome (eosinophilic pneumonitis) J82.89
+Loiasis (with conjunctival infestation) (eyelid) B74.3
+Lone Star fever A77.0
+Long
+- COVID (-19) -see also COVID-19 U09.9
+- labor O63.9
+- - first stage O63.0
+- - second stage O63.1
+- QT syndrome I45.81
+Long-term (current) (prophylactic) drug therapy (use of)
+- 5-fluorouracil Z79.631
+- 6-mercaptopurine Z79.631
+- adalimumab Z79.620
+- agents affecting estrogen receptors and estrogen levels NEC Z79.818
+- alkylating agent Z79.630
+- anastrozole (Arimidex) Z79.811
+- antibiotics Z79.2
+- - short-term use - omit code
+- anticoagulants Z79.01
+- antidiabetic drugs, injectable, non-insulin Z79.85
+- anti-inflammatory, non-steroidal (NSAID) Z79.1
+- antimetabolite agent Z79.631
+- antiplatelet Z79.02
+- antithrombotics Z79.02
+- antitumor antibiotic Z79.632
+- apremilast Z79.61
+- aromatase inhibitors Z79.811
+- aspirin Z79.82
+- azathioprine Z79.624
+- birth control pill or patch Z79.3
+- bisphosphonates Z79.83
+- bleomycin Z79.632
+- calcineurin inhibitor Z79.621
+- chlorambucil Z79.630
+- cisplatin Z79.630
+- contraceptive, oral Z79.3
+- cyclophosphamide Z79.630
+- cyclosporine Z79.621
+- cytarabine Z79.631
+- doxorubicin Z79.632
+- drug, specified NEC Z79.899
+- estrogen receptor downregulators Z79.818
+- etanercept Z79.620
+- etoposide Z79.634
+- Evista Z79.810
+- exemestane (Aromasin) Z79.811
+- Fareston Z79.810
+- fulvestrant (Faslodex) Z79.818
+- gonadotropin-releasing hormone (GnRH) agonist Z79.818
+- goserelin acetate (Zoladex) Z79.818
+- hormone replacement Z79.890
+- hydroxyurea Z79.64
+- immunomodulators, unspecified Z79.60
+location: page 887 | source_text: - - - inhibitor (presence of) D68.62
+- - - - with
+- - - - - hemorrhagic disorder D68.312
+- - - - - hypercoagulable state D68.62
+- - - - finding without diagnosis R76.0
+- - - specified NEC M32.8
+- exedens A18.4
+- hydralazine M32.0
+- - correct substance properly administered -see Table of Drugs and Chemicals, by drug, adverse effect
+- - overdose or wrong substance given or taken -see Table of Drugs and Chemicals, by drug, poisoning
+- nephritis (chronic) M32.14
+- nontuberculous, not disseminated L93.0
+- panniculitis L93.2
+- pernio (Besnier) D86.3
+- systemic -see Lupus, erythematosus, systemic
+- tuberculous A18.4
+- - eyelid A18.4
+- vulgaris A18.4
+- - eyelid A18.4
+Luteinoma D27.-
+Lutembacher's disease or syndrome (atrial septal defect with mitral stenosis) Q21.19
+Luteoma D27.-
+Lutz (-Splendore-de Almeida) disease -see Paracoccidioidomycosis
+Luxation -see also Dislocation
+- eyeball (nontraumatic) -see Luxation, globe
+- - birth injury P15.3
+- globe, nontraumatic H44.82-
+- lacrimal gland -see Dislocation, lacrimal gland
+- lens (old) (partial) (spontaneous)
+- - congenital Q12.1
+- - - syphilitic A50.39
+Lycanthropy F22
+Lyell's syndrome L51.2
+- due to drug L51.2
+- - correct substance properly administered -see Table of Drugs and Chemicals, by drug, adverse effect
+- - overdose or wrong substance given or taken -see Table of Drugs and Chemicals, by drug, poisoning
+Lyme disease A69.20
+Lymph
+- gland or node -see condition
+- scrotum -see Infestation, filarial
+Lymphadenitis I88.9
+- with ectopic or molar pregnancy O08.0
+- acute L04.9
+- - axilla L04.2
+- - face L04.0
+- - head L04.0
+- - hip L04.3
+- - limb
+- - - lower L04.3
+- - - upper L04.2
+- - neck L04.0
+- - shoulder L04.2
+- - specified site NEC L04.8
+- - trunk L04.1
+- anthracosis (occupational) J60
+- any site, except mesenteric I88.9
+- - chronic I88.1
+- - subacute I88.1
+- breast
+- - gestational -see Mastitis, obstetric
+location: page 917 | source_text: Meningism -see Meningismus
+Meningismus (infectional) (pneumococcal) R29.1
+- due to serum or vaccine R29.1
+- influenzal -see Influenza, with, manifestations NEC
+Meningitis (basal) (basic) (brain) (cerebral) (cervical) (congestive) (diffuse) (hemorrhagic) (infantile)
+(membranous) (metastatic) (nonspecific) (pontine) (progressive) (simple) (spinal) (subacute) (sympathetic) (toxic)
+ G03.9
+- abacterial G03.0
+- actinomycotic A42.81
+- adenoviral A87.1
+- arbovirus A87.8
+- aseptic (acute) G03.0
+- bacterial G00.9
+- - Escherichia coli (E. coli) G00.8
+- - Friedländer (bacillus) G00.8
+- - gram-negative G00.9
+- - H. influenzae G00.0
+- - Klebsiella G00.8
+- - pneumococcal G00.1
+- - specified organism NEC G00.8
+- - staphylococcal G00.3
+- - streptococcal (acute) G00.2
+- benign recurrent (Mollaret) G03.2
+- candidal B37.5
+- caseous (tuberculous) A17.0
+- cerebrospinal A39.0
+- chronic NEC G03.1
+- clear cerebrospinal fluid NEC G03.0
+- coxsackievirus A87.0
+- cryptococcal B45.1
+- diplococcal (gram positive) A39.0
+- echovirus A87.0
+- enteroviral A87.0
+- eosinophilic B83.2
+- epidemic NEC A39.0
+- Escherichia coli (E. coli) G00.8
+- fibrinopurulent G00.9
+- - specified organism NEC G00.8
+- Friedländer (bacillus) G00.8
+- gonococcal A54.81
+- gram-negative cocci G00.9
+- gram-positive cocci G00.9
+- Haemophilus (influenzae) G00.0
+- H. influenzae G00.0
+- in (due to)
+- - adenovirus A87.1
+- - African trypanosomiasis B56.9 [G02]
+- - anthrax A22.8
+- - bacterial disease NEC A48.8 [G01]
+- - Chagas' disease (chronic) B57.41
+- - chickenpox B01.0
+- - coccidioidomycosis B38.4
+- - Diplococcus pneumoniae G00.1
+- - enterovirus A87.0
+- - herpes (simplex) virus B00.3
+- - - zoster B02.1
+- - infectious mononucleosis B27.92
+- - leptospirosis A27.81
+- - Listeria monocytogenes A32.11
+- - Lyme disease A69.21
+location: page 919 | source_text: - with hydrocephalus -see Spina bifida, by site, with hydrocephalus
+- acquired (traumatic) G96.198
+- cerebral -see Encephalocele
+Meningocerebritis -see Meningoencephalitis
+Meningococcemia A39.4
+- acute A39.2
+- chronic A39.3
+Meningococcus, meningococcal -see also condition A39.9
+- adrenalitis, hemorrhagic A39.1
+- carrier (suspected) of Z22.31
+- meningitis (cerebrospinal) A39.0
+Meningoencephalitis -see also Encephalitis G04.90
+- acute NEC -see also Encephalitis, viral A86
+- bacterial NEC G04.2
+- California A83.5
+- diphasic A84.1
+- eosinophilic B83.2
+- epidemic A39.81
+- herpesviral, herpetic B00.4
+- - due to herpesvirus 6 B10.01
+- - due to herpesvirus 7 B10.09
+- - specified NEC B10.09
+- in (due to)
+- - blastomycosis NEC B40.81
+- - diseases classified elsewhere G05.3
+- - free-living amebae B60.2
+- - Hemophilus influenzae (H. influenzae) G00.0
+- - herpes B00.4
+- - - due to herpesvirus 6 B10.01
+- - - due to herpesvirus 7 B10.09
+- - - specified NEC B10.09
+- - H. influenzae G00.0
+- - Lyme disease A69.22
+- - mercury -see subcategory T56.1
+- - mumps B26.2
+- - Naegleria (amebae) (organisms) (fowleri) B60.2
+- - Parastrongylus cantonensis B83.2
+- - toxoplasmosis (acquired) B58.2
+- - - congenital P37.1
+- infectious (acute) (viral) A86
+- influenzal (H. influenzae) G00.0
+- Listeria monocytogenes A32.12
+- lymphocytic (serous) A87.2
+- mumps B26.2
+- parasitic NEC B89 [G05.3]
+- pneumococcal G04.2
+- primary amebic B60.2
+- specific (syphilitic) A52.14
+- specified organism NEC G04.81
+- staphylococcal G04.2
+- streptococcal G04.2
+- syphilitic A52.14
+- toxic NEC G92.8
+- - due to mercury -see subcategory T56.1
+- tuberculous A17.82
+- virus NEC A86
+Meningoencephalocele -see also Encephalocele
+- syphilitic A52.19
+- - congenital A50.49
+Meningoencephalomyelitis -see also Meningoencephalitis
+location: page 941 | source_text: - Coxsackie (virus) B33.22
+- diphtheritic A36.81
+- eosinophilic I40.1
+- epidemic of newborn (Coxsackie) B33.22
+- Fiedler's (acute) (isolated) I40.1
+- giant cell (acute) (subacute) I40.1
+- gonococcal A54.83
+- granulomatous (idiopathic) (isolated) (nonspecific) I40.1
+- hypertensive -see Hypertension, heart
+- idiopathic (granulomatous) I40.1
+- in (due to)
+- - diphtheria A36.81
+- - epidemic louse-borne typhus A75.0 [I41]
+- - Lyme disease A69.29
+- - sarcoidosis D86.85
+- - scarlet fever A38.1
+- - toxoplasmosis (acquired) B58.81
+- - typhoid A01.02
+- - typhus NEC A75.9 [I41]
+- infective I40.0
+- influenzal -see Influenza, with, myocarditis
+- isolated (acute) I40.1
+- meningococcal A39.52
+- mumps B26.82
+- nonrheumatic, active I40.9
+- parenchymatous I40.9
+- pneumococcal I40.0
+- rheumatic (chronic) (inactive) (with chorea) I09.0
+- - active or acute I01.2
+- - - with chorea (acute) (rheumatic) (Sydenham's) I02.0
+- rheumatoid -see Rheumatoid, carditis
+- septic I40.0
+- staphylococcal I40.0
+- suppurative I40.0
+- syphilitic (chronic) A52.06
+- toxic I40.8
+- - rheumatic -see Myocarditis, acute, rheumatic
+- tuberculous A18.84
+- typhoid A01.02
+- valvular -see Endocarditis
+- virus, viral B33.22
+- - of newborn (Coxsackie) B33.22
+Myocardium, myocardial -see condition
+Myocardosis -see Cardiomyopathy
+Myoclonus, myoclonic, myoclonia (familial) (essential) (multifocal) (simplex) G25.3
+- drug-induced G25.3
+- epilepsy -see also Epilepsy, generalized, specified NEC G40.4-
+- - familial (progressive) -see Epilepsy, myoclonus
+- - Lafora -see Epilepsy, myoclonus, progressive, Lafora
+- epileptica -see also Epilepsy, myoclonus G40.409
+- - with status epilepticus G40.401
+- facial G51.3-
+- familial progressive G25.3
+- - epilepsy -see Epilepsy, myoclonus, progressive
+- Friedreich's G25.3
+- jerks G25.3
+- massive G25.3
+- palatal G25.3
+- pharyngeal G25.3
+Myocytolysis I51.5
+location: page 957 | source_text: - nose G52.0
+- occipital M54.81
+- olfactory G52.0
+- penis N48.9
+- perineum R10.20
+- - bilateral R10.23
+- - left R10.22
+- - right R10.21
+- postherpetic NEC B02.29
+- - trigeminal B02.22
+- pubic region R10.20
+- - bilateral R10.23
+- - left R10.22
+- - right R10.21
+- scrotum R10.20
+- Sluder's G44.89
+- specified nerve NEC G58.8
+- spermatic cord R10.20
+- sphenopalatine (ganglion) G90.09
+- trifacial -see Neuralgia, trigeminal
+- trigeminal G50.0
+- - postherpetic, postzoster B02.22
+- vagus (nerve) G52.2
+- writer's F48.8
+- - organic G25.89
+Neurapraxia -see Injury, nerve
+Neurasthenia F48.8
+- cardiac F45.8
+- gastric F45.8
+- heart F45.8
+Neurilemmoma -see also Neoplasm, nerve, benign
+- acoustic (nerve) D33.3
+- malignant -see also Neoplasm, nerve, malignant
+- - acoustic (nerve) C72.4-
+Neurilemmosarcoma -see Neoplasm, nerve, malignant
+Neurinoma -see Neoplasm, nerve, benign
+Neurinomatosis -see Neoplasm, nerve, uncertain behavior
+Neuritis (rheumatoid) M79.2
+- abducens (nerve) -see Strabismus, paralytic, sixth nerve
+- accessory (nerve) G52.8
+- acoustic (nerve) -see also subcategory H93.3
+- - in (due to)
+- - - infectious disease NEC B99 [H94.0-]
+- - - parasitic disease NEC B89 [H94.0-]
+- - syphilitic A52.15
+- alcoholic G62.1
+- - with psychosis -see Psychosis, alcoholic
+- amyloid, any site E85.4 [G63]
+- auditory (nerve) -see subcategory H93.3
+- brachial -see Radiculopathy
+- - due to displacement, intervertebral disc -see Disorder, disc, cervical, with neuritis
+- cranial nerve
+- - due to Lyme disease A69.22
+- - eighth or acoustic or auditory -see subcategory H93.3
+- - eleventh or accessory G52.8
+- - fifth or trigeminal G50.-
+- - first or olfactory G52.0
+- - fourth or trochlear -see Strabismus, paralytic, fourth nerve
+- - second or optic -see Neuritis, optic
+- - seventh or facial G51.8
+location: page 1060 | source_text: - - acute J70.2
+- - chronic J70.3
+- cholesterol J84.89
+- crack (cocaine) J68.0
+- chronic -see Fibrosis, lung
+- congenital rubella P35.0
+- due to
+- - beryllium J68.0
+- - cadmium J68.0
+- - crack (cocaine) J68.0
+- - detergent J69.8
+- - fluorocarbon-polymer J68.0
+- - food, vomit (aspiration) J69.0
+- - fumes or vapors J68.0
+- - gases, fumes or vapors (inhalation) J68.0
+- - inhalation
+- - - blood J69.8
+- - - essences J69.1
+- - - food (regurgitated), milk, vomit J69.0
+- - - oils, essences J69.1
+- - - saliva J69.0
+- - - solids, liquids NEC J69.8
+- - manganese J68.0
+- - nitrogen dioxide J68.0
+- - oils, essences J69.1
+- - solids, liquids NEC J69.8
+- - toxoplasmosis (acquired) B58.3
+- - - congenital P37.1
+- - vanadium J68.0
+- - ventilator J95.851
+- eosinophilic J82.81
+- - acute J82.82
+- - chronic J82.81
+- hypersensitivity J67.9
+- - air conditioner lung J67.7
+- - bagassosis J67.1
+- - bird fancier's lung J67.2
+- - farmer's lung J67.0
+- - maltworker's lung J67.4
+- - maple bark-stripper's lung J67.6
+- - mushroom worker's lung J67.5
+- - specified organic dust NEC J67.8
+- - suberosis J67.3
+- interstitial (chronic) J84.89
+- - acute J84.114
+- - lymphoid J84.2
+- - non-specific J84.89
+- - - idiopathic J84.113
+- lymphoid, interstitial J84.2
+- meconium P24.01
+- noninfectious J98.4
+- postanesthetic J95.4
+- - correct substance properly administered -see Table of Drugs and Chemicals, by drug, adverse effect
+- - in labor and delivery O74.0
+- - in pregnancy O29.01-
+- - obstetric O74.0
+- - overdose or wrong substance given or taken (by accident) -see Table of Drugs and Chemicals, by drug, poisoning
+- - postpartum, puerperal O89.01
+- postoperative J95.4
+- - obstetric O74.0
+location: page 1065 | source_text: - syndrome E31.8
+Polyhydramnios O40.-
+Polymastia Q83.1
+Polymenorrhea N92.0
+Polymyalgia M35.3
+- arteritica, giant cell M31.5
+- rheumatica M35.3
+- - with giant cell arteritis M31.5
+Polymyositis (acute) (chronic) (hemorrhagic) M33.20
+- with
+- - myopathy M33.22
+- - respiratory involvement M33.21
+- - skin involvement -see Dermatopolymyositis
+- - specified organ involvement NEC M33.29
+- ossificans (generalisata) (progressiva) -see Myositis, ossificans, progressiva
+Polyneuritis, polyneuritic -see also Polyneuropathy
+- acute (post-) infective G61.0
+- alcoholic G62.1
+- cranialis G52.7
+- demyelinating, chronic inflammatory (CIDP) G61.81
+- diabetic -see Diabetes, polyneuropathy
+- diphtheritic A36.83
+- due to lack of vitamin NEC E56.9 [G63]
+- endemic E51.11
+- erythredema -see subcategory T56.1
+- febrile, acute G61.0
+- hereditary ataxic G60.1
+- idiopathic, acute G61.0
+- infective (acute) G61.0
+- inflammatory, chronic demyelinating (CIDP) G61.81
+- nutritional E63.9 [G63]
+- postinfective (acute) G61.0
+- specified NEC G62.89
+Polyneuropathy (peripheral) G62.9
+- alcoholic G62.1
+- amyloid (Portuguese) E85.1 [G63]
+- - transthyretin-related (ATTR) familial E85.1 [G63]
+- arsenical G62.2
+- critical illness G62.81
+- demyelinating, chronic inflammatory (CIDP) G61.81
+- diabetic -see Diabetes, polyneuropathy
+- drug-induced G62.0
+- hereditary G60.9
+- - specified NEC G60.8
+- idiopathic G60.9
+- - progressive G60.3
+- in (due to)
+- - alcohol G62.1
+- - - sequelae G65.2
+- - amyloidosis, familial (Portuguese) E85.1 [G63]
+- - antitetanus serum G61.1
+- - arsenic G62.2
+- - - sequelae G65.2
+- - avitaminosis NEC E56.9 [G63]
+- - beriberi E51.11
+- - collagen vascular disease NEC M35.9 [G63]
+- - deficiency (of)
+- - - B (-complex) vitamins E53.9 [G63]
+- - - vitamin B6 E53.1 [G63]
+- - diabetes -see Diabetes, polyneuropathy
+location: page 1066 | source_text: - - diphtheria A36.83
+- - drug or medicament G62.0
+- - - correct substance properly administered -see Table of Drugs and Chemicals, by drug, adverse effect
+- - - overdose or wrong substance given or taken -see Table of Drugs and Chemicals, by drug, poisoning
+- - endocrine disease NEC E34.9 [G63]
+- - herpes zoster B02.23
+- - hypoglycemia E16.2 [G63]
+- - infectious
+- - - disease NEC B99 [G63]
+- - - mononucleosis B27.91
+- - lack of vitamin NEC E56.9 [G63]
+- - lead G62.2
+- - - sequelae G65.2
+- - leprosy A30.9 [G63]
+- - Lyme disease A69.22
+- - metabolic disease NEC E88.9 [G63]
+- - microscopic polyangiitis M31.7 [G63]
+- - mumps B26.84
+- - neoplastic disease -see also Neoplasm D49.9 [G63]
+- - nutritional deficiency NEC E63.9 [G63]
+- - organophosphate compounds G62.2
+- - - sequelae G65.2
+- - parasitic disease NEC B89 [G63]
+- - pellagra E52 [G63]
+- - polyarteritis nodosa M30.0
+- - porphyria E80.20 [G63]
+- - radiation G62.82
+- - rheumatoid arthritis -see Rheumatoid, polyneuropathy
+- - sarcoidosis D86.89
+- - serum G61.1
+- - syphilis (late) A52.15
+- - - congenital A50.43
+- - systemic
+- - - connective tissue disorder M35.9 [G63]
+- - - lupus erythematosus M32.19
+- - toxic agent NEC G62.2
+- - - sequelae G65.2
+- - transthyretin-related (ATTR) familial amyloid E85.1
+- - triorthocresyl phosphate G62.2
+- - - sequelae G65.2
+- - tuberculosis A17.89
+- - uremia N18.9 [G63]
+- - vitamin B12 deficiency E53.8 [G63]
+- - - with anemia (pernicious) D51.0 [G63]
+- - - - due to dietary deficiency D51.3 [G63]
+- - zoster B02.23
+- inflammatory G61.9
+- - chronic demyelinating (CIDP) G61.81
+- - sequelae G65.1
+- - specified NEC G61.89
+- lead G62.2
+- - sequelae G65.2
+- nutritional NEC E63.9 [G63]
+- postherpetic (zoster) B02.23
+- progressive G60.3
+- radiation-induced G62.82
+- sensory (hereditary) (idiopathic) G60.8
+- specified NEC G62.89
+- syphilitic (late) A52.15
+- - congenital A50.43
+location: page 1070 | source_text: - variegata E80.20
+Porphyrinuria -see Porphyria
+Porphyruria -see Porphyria
+Portal -see condition
+Port wine nevus, mark, or stain Q82.5
+Posadas-Wernicke disease B38.9
+Positive
+- culture (nonspecific)
+- - blood R78.81
+- - bronchial washings R84.5
+- - cerebrospinal fluid R83.5
+- - cervix uteri R87.5
+- - nasal secretions R84.5
+- - nipple discharge R89.5
+- - nose R84.5
+- - - staphylococcus (Methicillin susceptible) Z22.321
+- - - - Methicillin resistant Z22.322
+- - peritoneal fluid R85.5
+- - pleural fluid R84.5
+- - prostatic secretions R86.5
+- - saliva R85.5
+- - seminal fluid R86.5
+- - sputum R84.5
+- - synovial fluid R89.5
+- - throat scrapings R84.5
+- - urine R82.79
+- - vagina R87.5
+- - vulva R87.5
+- - wound secretions R89.5
+- PPD (skin test) R76.11
+- serology for syphilis A53.0
+- - false R76.89
+- - with signs or symptoms - code as Syphilis, by site and stage
+- skin test, tuberculin (without active tuberculosis) R76.11
+- test, human immunodeficiency virus (HIV) R75
+- VDRL A53.0
+- - with signs or symptoms - code by site and stage under Syphilis A53.9
+- Wassermann reaction A53.0
+Postcardiotomy syndrome I97.0
+Postcaval ureter Q62.62
+Postcholecystectomy syndrome K91.5
+Postclimacteric bleeding N95.0
+Postcommissurotomy syndrome I97.0
+Postconcussional syndrome F07.81
+Postcontusional syndrome F07.81
+Post COVID-19 condition, unspecified U09.9
+Postcricoid region -see condition
+Post-dates (40-42 weeks) (pregnancy) (mother) O48.0
+- more than 42 weeks gestation O48.1
+Postencephalitic syndrome F07.89
+Posterior -see condition
+Posterolateral sclerosis (spinal cord) -see Degeneration, combined
+Postexanthematous -see condition
+Postfebrile -see condition
+Postgastrectomy dumping syndrome K91.1
+Posthemiplegic chorea -see Monoplegia
+Posthemorrhagic anemia (chronic) D50.0
+- acute D62
+- newborn P61.3
+Postherpetic neuralgia (zoster) B02.29
+location: page 1157 | source_text: - - isthmus C54.0
+- synovial -see also Neoplasm, connective tissue, malignant
+- - biphasic -see Neoplasm, connective tissue, malignant
+- - epithelioid cell -see Neoplasm, connective tissue, malignant
+- - spindle cell -see Neoplasm, connective tissue, malignant
+Sarcomatosis
+- meningeal -see Neoplasm, meninges, malignant
+- specified site NEC -see Neoplasm, connective tissue, malignant
+- unspecified site C80.1
+Sarcopenia (age-related) M62.84
+Sarcosinemia E72.59
+Sarcosporidiosis (intestinal) A07.8
+SARS-CoV-2 -see also COVID-19
+- sequelae (post acute) U09.9
+Satiety, early R68.81
+Saturnine -see condition
+Saturnism
+- overdose or wrong substance given or taken -see Table of Drugs and Chemicals, by drug, poisoning
+Satyriasis F52.8
+Sauriasis -see Ichthyosis
+SBE (subacute bacterial endocarditis) I33.0
+Scabs R23.4
+Scabies (any site) B86
+Scaglietti-Dagnini syndrome E22.0
+Scald -see Burn
+Scalenus anticus (anterior) syndrome G54.0
+Scales R23.4
+Scaling, skin R23.4
+Scalp -see condition
+Scapegoating affecting child Z62.3
+Scaphocephaly, non-deformational Q75.01
+Scapulalgia M89.8X1
+Scapulohumeral myopathy G71.02
+Scar, scarring -see also Cicatrix L90.5
+- adherent L90.5
+- atrophic L90.5
+- cervix
+- - in pregnancy or childbirth -see Pregnancy, complicated by, abnormal cervix
+- cheloid L91.0
+- chorioretinal H31.00-
+- - posterior pole macula H31.01-
+- - postsurgical H59.81-
+- - solar retinopathy H31.02-
+- - specified type NEC H31.09-
+- choroid -see Scar, chorioretinal
+- conjunctiva H11.24-
+- cornea H17.9
+- - xerophthalmic -see also Opacity, cornea
+- - - vitamin A deficiency E50.6
+- defect (isthmocele) O34.22
+- duodenum, obstructive K31.5
+- hypertrophic L91.0
+- keloid L91.0
+- labia N90.89
+- lung (base) J98.4
+- macula -see Scar, chorioretinal, posterior pole
+- muscle M62.89
+- myocardium, myocardial I25.2
+- painful L90.5
+- posterior pole (eye) -see Scar, chorioretinal, posterior pole
+location: page 1175 | source_text: - abscess, intracranial or intraspinal (conditions in G06) G09
+- amputation -- code to injury with seventh character S
+- burn and corrosion -- code to injury with seventh character S
+- calcium deficiency E64.8
+- cerebrovascular disease -see Sequelae, disease, cerebrovascular
+- childbirth O94
+- contusion -- code to injury with seventh character S
+- corrosion -see Sequelae, burn and corrosion
+- COVID-19 (post acute) U09.9
+- crushing injury -- code to injury with seventh character S
+- disease
+- - cerebrovascular I69.90
+- - - alteration of sensation I69.998
+- - - aphasia I69.920
+- - - apraxia I69.990
+- - - ataxia I69.993
+- - - cognitive deficits I69.91
+- - - disturbance of vision I69.998
+- - - dysarthria I69.922
+- - - dysphagia I69.991
+- - - dysphasia I69.921
+- - - facial droop I69.992
+- - - facial weakness I69.992
+- - - fluency disorder I69.923
+- - - hemiplegia I69.95-
+- - - hemorrhage
+- - - - intracerebral -see Sequelae, hemorrhage, intracerebral
+- - - - intracranial, nontraumatic NEC -see Sequelae, hemorrhage, intracranial, nontraumatic
+- - - - subarachnoid -see Sequelae, hemorrhage, subarachnoid
+- - - language deficit I69.928
+- - - monoplegia
+- - - - lower limb I69.94-
+- - - - upper limb I69.93-
+- - - paralytic syndrome I69.96-
+- - - specified effect NEC I69.998
+- - - specified type NEC I69.80
+- - - - alteration of sensation I69.898
+- - - - aphasia I69.820
+- - - - apraxia I69.890
+- - - - ataxia I69.893
+- - - - cognitive deficits I69.81
+- - - - disturbance of vision I69.898
+- - - - dysarthria I69.822
+- - - - dysphagia I69.891
+- - - - dysphasia I69.821
+- - - - facial droop I69.892
+- - - - facial weakness I69.892
+- - - - fluency disorder I69.823
+- - - - hemiplegia I69.85-
+- - - - language deficit I69.828
+- - - - monoplegia
+- - - - - lower limb I69.84-
+- - - - - upper limb I69.83-
+- - - - paralytic syndrome I69.86-
+- - - - specified effect NEC I69.898
+- - - speech deficit I69.928
+- - - - speech deficit I69.828
+- - - stroke NOS -see Sequelae, stroke NOS
+- dislocation -- code to injury with seventh character S
+- encephalitis or encephalomyelitis (conditions in G04) G09
+location: page 1177 | source_text: - - - facial droop I69.092
+- - - facial weakness I69.092
+- - - fluency disorder I69.023
+- - - hemiplegia I69.05-
+- - - language deficit NEC I69.028
+- - - monoplegia
+- - - - lower limb I69.04-
+- - - - upper limb I69.03-
+- - - paralytic syndrome I69.06-
+- - - specified effect NEC I69.098
+- - - speech deficit NEC I69.028
+- hepatitis, viral B94.2
+- hyperalimentation E68
+- infarction
+- - cerebral I69.30
+- - - alteration of sensation I69.398
+- - - aphasia I69.320
+- - - apraxia I69.390
+- - - ataxia I69.393
+- - - cognitive deficits I69.31
+- - - disturbance of vision I69.398
+- - - dysarthria I69.322
+- - - dysphagia I69.391
+- - - dysphasia I69.321
+- - - facial droop I69.392
+- - - facial weakness I69.392
+- - - fluency disorder I69.323
+- - - hemiplegia I69.35-
+- - - language deficit NEC I69.328
+- - - monoplegia
+- - - - lower limb I69.34-
+- - - - upper limb I69.33-
+- - - paralytic syndrome I69.36-
+- - - specified effect NEC I69.398
+- - - speech deficit NEC I69.328
+- infection, pyogenic, intracranial or intraspinal G09
+- infectious disease B94.9
+- - specified NEC B94.8
+- injury -- code to injury with seventh character S
+- leprosy B92
+- meningitis
+- - bacterial (conditions in G00) G09
+- - other or unspecified cause (conditions in G03) G09
+- muscle (and tendon) injury -- code to injury with seventh character S
+- myelitis -see Sequelae, encephalitis
+- niacin deficiency E64.8
+- nutritional deficiency E64.9
+- - specified NEC E64.8
+- obstetrical condition O94
+- parasitic disease B94.9
+- phlebitis or thrombophlebitis of intracranial or intraspinal venous sinuses and veins (conditions in G08) G09
+- poisoning -- code to poisoning with seventh character S
+- - nonmedicinal substance -see Sequelae, toxic effect, nonmedicinal substance
+- poliomyelitis (acute) B91
+- pregnancy O94
+- protein-energy malnutrition E64.0
+- puerperium O94
+- rickets E64.3
+- SARS-CoV-2 (post acute) U09.9
+- selenium deficiency E64.8
+location: page 1251 | source_text: - Phelan-McDermid Q93.52
+- Pick's -see Disease, Pick's
+- Pickwickian E66.2
+- PIE (pulmonary infiltration with eosinophilia) -see also Eosinophilia, pulmonary J82.89
+- pigmentary pallidal degeneration (progressive) G23.0
+- pineal E34.8
+- pituitary E22.0
+- plantar fascia M72.2
+- placental transfusion -see Pregnancy, complicated by, placental transfusion syndromes
+- plateau iris (post-iridectomy) (postprocedural) H21.82
+- Plummer-Vinson D50.1
+- pluricarential of infancy E40
+- plurideficiency E40
+- pluriglandular (compensatory) E31.8
+- - autoimmune E31.0
+- pneumatic hammer T75.21
+- polyangiitis overlap M30.8
+- polycarential of infancy E40
+- polyglandular E31.8
+- - autoimmune E31.0
+- polysplenia Q89.09
+- pontine NEC G93.89
+- popliteal
+- - artery entrapment I77.89
+- - web Q87.89
+- postbacterial fatigue G93.39
+- postcardiac injury
+- - postcardiotomy I97.0
+- - postmyocardial infarction I24.1
+- postcardiotomy I97.0
+- post chemoembolization - code to associated conditions
+- postcholecystectomy K91.5
+- postcommissurotomy I97.0
+- postconcussional F07.81
+- postcontusional F07.81
+- post-COVID (-19) U09.9
+- postencephalitic F07.89
+- post endometrial ablation N99.85
+- posterior
+- - cervical sympathetic M53.0
+- - cord G83.83
+- - fossa compression G93.5
+- - reversible encephalopathy (PRES) I67.83
+- postgastrectomy (dumping) K91.1
+- postgastric surgery K91.1
+- postinfarction I24.1
+- postinfectious fatigue G93.39
+- postlaminectomy NEC M96.1
+- postleukotomy F07.0
+- postmastectomy lymphedema I97.2
+- postmyocardial infarction I24.1
+- postoperative NEC T81.9
+- - blind loop K90.2
+- postpartum panhypopituitary (Sheehan) E23.0
+- postpolio (myelitic) G14
+- postthrombotic I87.009
+- - with
+- - - inflammation I87.02-
+- - - - with ulcer I87.03-
+- - - specified complication NEC I87.09-
+
+TRACEABLE FINDINGS
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use the source-defined population and units to frame questions; these aggregates do not predict an individual bill or entitlement.
+Care delivery: Verify that the measured service, workforce or functional dimension matches the proposed care pathway before using it.
+Payers and policy: Use the named evidence only within its population, time and cost perspective. Keep overlapping data representations separate.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No intervention effectiveness or avoided cost is supplied unless the source explicitly reports it.
+Unreviewed variables are not approved model inputs.
+
+DO NOT USE FOR
+Treating a file rank as an evidence weight or filling absent costs/effects with invented values.
+Counting alternative formats and supporting documentation as independent evidence.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

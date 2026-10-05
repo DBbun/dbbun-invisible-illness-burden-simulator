@@ -1,0 +1,86 @@
+HPS_Week52_PUF_CSV.zip
+SOURCE: census/household_pulse_long_covid_2022_2024/HPS_Week52_PUF_CSV.zip :: pulse2022_puf_52.csv
+SHA-256: 5c45b81672778e01e59310a4f7f10cd49923ddf31f3771c2415a1d2db7359e5e
+CONDITION SCOPE: long_covid
+ROLE: weighted_long_covid_population_and_function
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+RELEASE-SPECIFIC FINDING
+HPS_Week52_PUF_CSV.zip contains 70,685 respondent records; 4,028 meet the current-case coding rule. The weighted proportion is 5.6228%, with a design-based approximate 95% interval 5.3251% to 5.9204%. This is measured prevalence, not the fraction whose work loss was caused by Long COVID.
+
+ECONOMIC DECISION VALUE
+This release can establish the population scale and observed functional-impact mix for a support-planning scenario. It cannot supply a wage, recoverable work hours, program uptake or intervention effectiveness. Do not multiply this prevalence by a national published total cost as though the latter were per person. Activity limitation supports assessment of accessibility needs; it is not equivalent to employment exit or eligibility for benefits.
+
+DEFINITION AND MISSINGNESS
+LONGCOVID yes codes are [1]. Phase 4.1 expanded yes into duration categories; previous binary codes cannot be reused unchanged. Negative response codes and skipped items are retained in the all-adult denominator, not reclassified as observed no. Functional impact is measured separately among current cases with valid impact responses.
+
+RELEASE-SPECIFIC DICTIONARY ENTRIES
+Verbatim source definitions and response codes, retained from pulse2022_data.dictionary_CSV_52.xlsx
+row: 230 | text: PASC2 | LONGCOVID | Description | COVID-19 or coronavirus symptoms lasting 3 months or longer | Did you have any symptoms lasting 3 months or longer that you did not have prior to having coronavirus or COVID-19? Long term symptoms may include: tiredness or fatigue, difficulty thinking, or concentrating, forgetfulness, or memory problems (sometimes referred to as "brain fog"), difficulty breathing or shortness of breath, joint or muscle pain, fast-beating or pounding heart (also known as heart palpitations), chest pain, dizziness on standing, changes to your menstrual cycle, changes to taste/smell, or inability to exercise. | 1:2 | 3.5, 3.6, 3.7
+row: 231 | text: Values | 1) Yes
+2) No
+-99) Question seen but category not selected
+-88) Missing / Did not report
+row: 232 | text: Universe | HADCOVIDRV = 1
+row: 233 | text: Internal Notes
+row: 234 | text: PASC3 | SYMPTMNOW | Description | Currently have COVID-19 or coronavirus symptoms | Do you have symptoms now? | 1:2 | 3.5, 3.6, 3.7
+row: 235 | text: Values | 1) Yes
+2) No
+-99) Question seen but category not selected
+-88) Missing / Did not report
+row: 236 | text: Universe | HADCOVIDRV = 1
+row: 237 | text: Internal Notes
+row: 238 | text: PASC4 | SYMPTMIMPCT | Description | Long-term COVID-19 symptoms and day-to-day activities | Do these long-term symptoms reduce your ability to carry out day-to-day activities compared with the time before you had COVID-19? | 1:3 | 3.5, 3.6, 3.7
+row: 239 | text: Values | 1) Yes, a lot
+2) Yes, a little 
+3) Not at all   
+-99) Question seen but category not selected
+ -88) Missing / Did not report
+row: 240 | text: Universe | SYMPTOMS in (2,3,4) OR LONGCOVID = 1
+row: 241 | text: Internal Notes
+row: 246 | text: EMP2 | ANYWORK | Description | Employment status for last 7 days | Now we are going to ask about your employment._x000D_
+In the last 7 days, did you do ANY_x000D_ work for either pay or profit? Select only one answer. | 1:2 | 1, 2, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7
+row: 247 | text: Values | 1) Yes
+2) No
+-99) Question seen but category not selected
+-88) Missing / Did not report
+row: 248 | text: Universe | All persons born before 2004
+row: 249 | text: Internal Notes
+row: 950 | text: - | PWEIGHT | Description | Person level weight | TBD | 1, 2, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7
+row: 951 | text: Values | TBD
+row: 952 | text: Universe
+row: 953 | text: Internal Notes
+row: 970 | text: - | SCRAM | Description | Record identifier | - | Varying | 1, 2, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7
+row: 971 | text: Values | Varying
+row: 972 | text: Universe | All persons
+row: 973 | text: Internal Notes | Unique record ID for linking replicate weights. Was also used for longitudinal linking for cycles 1-12. 
+
+WEIGHTED RESULTS AND PRECISION
+Each release is a separate cross-sectional survey; these are not repeat measurements of identified patients.
+measure: current_long_covid_all_adults | unweighted_numerator: 4028 | unweighted_denominator: 70685 | weighted_numerator: 14,196,410 | weighted_denominator: 2.5248101e+08 | proportion: 0.056227634 | standard_error: 0.0015184964 | lower_95: 0.053251381 | upper_95: 0.059203887
+measure: activities_reduced_a_lot | unweighted_numerator: 824 | unweighted_denominator: 4020 | weighted_numerator: 3,583,612 | weighted_denominator: 14,162,435 | proportion: 0.25303643 | standard_error: 0.011399264 | lower_95: 0.23069387 | upper_95: 0.27537898
+measure: activities_reduced_a_little | unweighted_numerator: 2318 | unweighted_denominator: 4020 | weighted_numerator: 7,809,228.7 | weighted_denominator: 14,162,435 | proportion: 0.55140437 | standard_error: 0.012932607 | lower_95: 0.52605646 | upper_95: 0.57675228
+measure: activities_not_reduced | unweighted_numerator: 878 | unweighted_denominator: 4020 | weighted_numerator: 2,769,594.5 | weighted_denominator: 14,162,435 | proportion: 0.1955592 | standard_error: 0.0088666438 | lower_95: 0.17818058 | upper_95: 0.21293782
+
+TRACEABLE FINDINGS
+f1: Weighted current-case numerator = 14,196,410 weighted adults [pulse2022_puf_52.csv; LONGCOVID in [1] AND SYMPTMNOW=1; sum PWEIGHT]
+f2: All-adult weighted denominator = 2.5248101e+08 weighted adults [pulse2022_puf_52.csv; all rows; sum PWEIGHT]
+c1: Current Long COVID proportion = 0.056227634 fraction of adult population; ratio(f1, f2). Survey-weighted self-report; missing items remain in denominator. Not clinician-confirmed disease or incident cases.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use prevalence to contextualize experiences, not to predict your wages or recovery. Functional impact is a separate question from having symptoms.
+Care delivery: Plan accessible follow-up using the functional-impact categories where present. Collect work hours and care needs separately.
+Payers and policy: Use this release-specific denominator and uncertainty for population planning; obtain independent evidence for costs and effects before claiming savings.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No identified causal effect of workplace support or earlier recognition.
+Work-loss attribution, wage valuation and unpaid-care hours are not estimated here.
+Missing-item denominator sensitivity and alternative survey definitions should be reviewed before model promotion.
+
+DO NOT USE FOR
+Pooling releases as independent unique people, interpreting a prevalence change as recovery, or inferring personal disability from population proportions.
+Adding this microdata estimate and the CDC HPS dashboard estimate as independent populations.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

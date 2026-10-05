@@ -1,0 +1,140 @@
+aggregated_geography_2008_2021__cdc_qtbi-xd4i.csv
+SOURCE: cdc/lyme_surveillance/aggregated_geography_2008_2021__cdc_qtbi-xd4i.csv
+SHA-256: c9b3ddedf8e5c913a832b7146fb4bf685e3dbbf6dd12d23f53c3af4bdf403bb7
+CONDITION SCOPE: lyme
+ROLE: lyme_surveillance_population_context
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+FINDING AND ECONOMIC INTERPRETATION
+This file contains 40,468 aggregate cells spanning 2008–2021. It supports reported-case workload and coverage analysis. A confirmed/probable surveillance case is not the same denominator as a diagnosed-and-treated insurance episode. It supplies no treatment cost, diagnostic delay, navigation uptake or preventable fraction. A growing count cannot by itself justify a growing causal cost estimate.
+
+COMPARABILITY DECISION
+Keep this file paired with its era-specific definition. The 2022 surveillance definition/reporting break must remain visible. The geographic and non-geographic releases overlap; choose one counting representation for each analysis. Do not add their totals or infer suppressed categories from differences.
+
+ANNUAL REPORTED-CASE ACCOUNTING
+Sum frequency once per aggregate row, or count line-list rows once. These two file formats describe overlapping surveillance cases, not independent samples.
+year: 2008 | case_status: Confirmed | retained_reported_cases: 28921
+year: 2008 | case_status: Probable | retained_reported_cases: 6277
+year: 2009 | case_status: Confirmed | retained_reported_cases: 29959
+year: 2009 | case_status: Probable | retained_reported_cases: 8509
+year: 2010 | case_status: Confirmed | retained_reported_cases: 22561
+year: 2010 | case_status: Probable | retained_reported_cases: 7597
+year: 2011 | case_status: Confirmed | retained_reported_cases: 24364
+year: 2011 | case_status: Probable | retained_reported_cases: 8733
+year: 2012 | case_status: Confirmed | retained_reported_cases: 22014
+year: 2012 | case_status: Probable | retained_reported_cases: 8817
+year: 2013 | case_status: Confirmed | retained_reported_cases: 27203
+year: 2013 | case_status: Probable | retained_reported_cases: 9104
+year: 2014 | case_status: Confirmed | retained_reported_cases: 25359
+year: 2014 | case_status: Probable | retained_reported_cases: 8102
+year: 2015 | case_status: Confirmed | retained_reported_cases: 28453
+year: 2015 | case_status: Probable | retained_reported_cases: 9616
+year: 2016 | case_status: Confirmed | retained_reported_cases: 26203
+year: 2016 | case_status: Probable | retained_reported_cases: 10226
+year: 2017 | case_status: Confirmed | retained_reported_cases: 29513
+year: 2017 | case_status: Probable | retained_reported_cases: 13230
+year: 2018 | case_status: Confirmed | retained_reported_cases: 23558
+year: 2018 | case_status: Probable | retained_reported_cases: 10108
+year: 2019 | case_status: Confirmed | retained_reported_cases: 23453
+year: 2019 | case_status: Probable | retained_reported_cases: 11492
+year: 2020 | case_status: Confirmed | retained_reported_cases: 12123
+year: 2020 | case_status: Probable | retained_reported_cases: 5877
+year: 2021 | case_status: Confirmed | retained_reported_cases: 16213
+year: 2021 | case_status: Probable | retained_reported_cases: 8398
+
+LATEST-YEAR REPORTED COUNTS BY RETAINED STATE
+Year=2021. Includes the source suppression category if present; no attempt to recover suppressed geography.
+state: NJ | reported_cases: 3518
+state: NY | reported_cases: 3006
+state: PA | reported_cases: 2900
+state: WI | reported_cases: 2193
+state: MN | reported_cases: 1902
+state: WV | reported_cases: 1792
+state: ME | reported_cases: 1510
+state: RI | reported_cases: 980
+state: MD | reported_cases: 916
+state: MI | reported_cases: 860
+state: VA | reported_cases: 705
+state: OH | reported_cases: 590
+state: CT | reported_cases: 541
+state: IL | reported_cases: 540
+state: NH | reported_cases: 397
+state: IA | reported_cases: 359
+state: NC | reported_cases: 338
+state: IN | reported_cases: 314
+state: FL | reported_cases: 193
+state: DE | reported_cases: 140
+state: VT | reported_cases: 115
+state: CA | reported_cases: 106
+state: DC | reported_cases: 91
+state: SC | reported_cases: 76
+state: OR | reported_cases: 74
+state: TN | reported_cases: 57
+state: AL | reported_cases: 51
+state: WA | reported_cases: 43
+state: KY | reported_cases: 41
+state: Suppressed | reported_cases: 36
+state: GA | reported_cases: 35
+state: ND | reported_cases: 34
+state: TX | reported_cases: 32
+state: MA | reported_cases: 27
+state: UT | reported_cases: 17
+state: NV | reported_cases: 17
+state: SD | reported_cases: 16
+state: KS | reported_cases: 16
+state: AR | reported_cases: 11
+state: MT | reported_cases: 10
+state: NE | reported_cases: 7
+state: MO | reported_cases: 5
+
+REPORTING-COVERAGE CHECK
+Absence of a state-year is missing coverage, not zero incidence.
+year: 2008 | states_with_rows: 43 | MA_present: True
+year: 2009 | states_with_rows: 39 | MA_present: True
+year: 2010 | states_with_rows: 36 | MA_present: True
+year: 2011 | states_with_rows: 40 | MA_present: True
+year: 2012 | states_with_rows: 40 | MA_present: True
+year: 2013 | states_with_rows: 43 | MA_present: True
+year: 2014 | states_with_rows: 41 | MA_present: True
+year: 2015 | states_with_rows: 42 | MA_present: True
+year: 2016 | states_with_rows: 44 | MA_present: True
+year: 2017 | states_with_rows: 46 | MA_present: True
+year: 2018 | states_with_rows: 44 | MA_present: True
+year: 2019 | states_with_rows: 47 | MA_present: False
+year: 2020 | states_with_rows: 38 | MA_present: True
+year: 2021 | states_with_rows: 42 | MA_present: True
+
+TRACEABLE FINDINGS
+f1: Retained reported cases 2008 = 35198 reported cases [CSV all rows where year=2008; sum frequency]
+f2: Retained reported cases 2009 = 38468 reported cases [CSV all rows where year=2009; sum frequency]
+f3: Retained reported cases 2010 = 30158 reported cases [CSV all rows where year=2010; sum frequency]
+f4: Retained reported cases 2011 = 33097 reported cases [CSV all rows where year=2011; sum frequency]
+f5: Retained reported cases 2012 = 30831 reported cases [CSV all rows where year=2012; sum frequency]
+f6: Retained reported cases 2013 = 36307 reported cases [CSV all rows where year=2013; sum frequency]
+f7: Retained reported cases 2014 = 33461 reported cases [CSV all rows where year=2014; sum frequency]
+f8: Retained reported cases 2015 = 38069 reported cases [CSV all rows where year=2015; sum frequency]
+f9: Retained reported cases 2016 = 36429 reported cases [CSV all rows where year=2016; sum frequency]
+f10: Retained reported cases 2017 = 42743 reported cases [CSV all rows where year=2017; sum frequency]
+f11: Retained reported cases 2018 = 33666 reported cases [CSV all rows where year=2018; sum frequency]
+f12: Retained reported cases 2019 = 34945 reported cases [CSV all rows where year=2019; sum frequency]
+f13: Retained reported cases 2020 = 18000 reported cases [CSV all rows where year=2020; sum frequency]
+f14: Retained reported cases 2021 = 24611 reported cases [CSV all rows where year=2021; sum frequency]
+c1: First-to-last retained reported-case change = -0.30078414 relative change; relative_change(f1, f14). Reporting, definition and availability changes can drive this descriptive difference; not disease-incidence growth.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Use as community-level context, not a diagnosis or estimate of your own costs.
+Care delivery: Check whether the catchment state and year are represented before using a reported-case workload benchmark.
+Payers and policy: Use reported surveillance counts only with an explicitly matched cost population; obtain a justified transport model before applying claims episode costs.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No Lyme-attributable expenditure, out-of-pocket cost or employment loss.
+Separate confirmation is needed for reporting completeness and changes across years.
+No causal evidence that a proposed intervention changes diagnosis stage.
+
+DO NOT USE FOR
+Adding aggregate and line-list totals; treating absent state-years as zero; converting reporting changes to infection growth.
+Recovering suppressed small cells or identifying patients.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.

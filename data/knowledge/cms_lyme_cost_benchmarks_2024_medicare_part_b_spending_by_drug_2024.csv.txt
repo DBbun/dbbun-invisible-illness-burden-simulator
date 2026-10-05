@@ -1,0 +1,55 @@
+medicare_part_b_spending_by_drug_2024.csv
+SOURCE: cms/lyme_cost_benchmarks_2024/medicare_part_b_spending_by_drug_2024.csv
+SHA-256: 986deefa094dca8f4e50abde43263910eeb667de305366f397f7af04d8a8734e
+CONDITION SCOPE: lyme
+ROLE: observed_all_indication_drug_spending_benchmark
+
+PROCESSING AND INTERPRETATION STATUS
+baseline_focused_analysis. Calculated findings, extracted passages and raw-code profiles are different products. This package is not independently scientifically reviewed or automatically approved for simulation.
+
+J0696 FINANCIAL SIGNAL
+Between 2020 and 2024, retained gross spending moved from $1,487,511.69 to $1,074,671.75, claims from 624,122 to 576,627, and computed spending per claim from $2.3834 to $1.8637. These components should be examined separately: a lower per-claim amount can coexist with greater service volume. No part of the change is attributed here to Lyme, treatment effectiveness or a price intervention.
+
+SCOPE AND OVERLAP
+The complete drug file is preserved, but this analysis deliberately filters the named antibiotic ingredients; other drugs are not analytically interpreted. A drug can be used for multiple indications. Part D gross expenditures include payer and beneficiary components and exclude undisclosed rebates. Medicaid aggregates are not a household cash price. Ceftriaxone J0696 is a 250 mg billing unit; no dose or course length is assumed.
+
+SELECTED PRODUCT HISTORY
+Part D/Medicaid manufacturer=Overall only; manufacturer subrows are excluded to avoid double counting. Years are nominal, not inflation-adjusted.
+product: J0696 | year: 2020 | spending_usd: 1,487,511.7 | claims: 624,122 | usd_per_claim: 2.3833669 | csv_row: 134
+product: J0696 | year: 2021 | spending_usd: 1,304,779.6 | claims: 575,680 | usd_per_claim: 2.2665015 | csv_row: 134
+product: J0696 | year: 2022 | spending_usd: 1,212,129.8 | claims: 592,301 | usd_per_claim: 2.046476 | csv_row: 134
+product: J0696 | year: 2023 | spending_usd: 1,249,318.4 | claims: 602,935 | usd_per_claim: 2.0720615 | csv_row: 134
+product: J0696 | year: 2024 | spending_usd: 1,074,671.8 | claims: 576,627 | usd_per_claim: 1.8637208 | csv_row: 134
+
+TRACEABLE FINDINGS
+f1: J0696 2020 gross spending = 1,487,511.7 nominal USD [CSV row 134; Tot_Spndng_2020]
+f2: J0696 2020 claims = 624,122 claims [CSV row 134; Tot_Clms_2020]
+f3: J0696 2021 gross spending = 1,304,779.6 nominal USD [CSV row 134; Tot_Spndng_2021]
+f4: J0696 2021 claims = 575,680 claims [CSV row 134; Tot_Clms_2021]
+f5: J0696 2022 gross spending = 1,212,129.8 nominal USD [CSV row 134; Tot_Spndng_2022]
+f6: J0696 2022 claims = 592,301 claims [CSV row 134; Tot_Clms_2022]
+f7: J0696 2023 gross spending = 1,249,318.4 nominal USD [CSV row 134; Tot_Spndng_2023]
+f8: J0696 2023 claims = 602,935 claims [CSV row 134; Tot_Clms_2023]
+f9: J0696 2024 gross spending = 1,074,671.8 nominal USD [CSV row 134; Tot_Spndng_2024]
+f10: J0696 2024 claims = 576,627 claims [CSV row 134; Tot_Clms_2024]
+c1: J0696 2020 spending per claim = 2.3833669 USD/claim; ratio(f1, f2). All indications; a claim is not a treatment course, patient or dose.
+c2: J0696 2021 spending per claim = 2.2665015 USD/claim; ratio(f3, f4). All indications; a claim is not a treatment course, patient or dose.
+c3: J0696 2022 spending per claim = 2.046476 USD/claim; ratio(f5, f6). All indications; a claim is not a treatment course, patient or dose.
+c4: J0696 2023 spending per claim = 2.0720615 USD/claim; ratio(f7, f8). All indications; a claim is not a treatment course, patient or dose.
+c5: J0696 2024 spending per claim = 1.8637208 USD/claim; ratio(f9, f10). All indications; a claim is not a treatment course, patient or dose.
+
+DECISIONS BY AUDIENCE
+Patients and caregivers: Ask your insurer/pharmacist for your own covered payment; the national average per claim is not your bill.
+Care delivery: Use the exact product, route and billing unit for costing an already justified care pathway; do not choose treatment from spending data.
+Payers and policy: Compare spending, volume and per-claim changes separately. Apply a condition-attribution fraction only if supported by a separate compatible study.
+
+MISSING EVIDENCE / NEXT ANALYSIS
+No disease indication, patient-specific benefits or causal effectiveness in this table.
+No net-rebate adjustment or personal out-of-pocket decomposition.
+Long COVID-specific medication use cannot be inferred from an antibiotic benchmark.
+
+DO NOT USE FOR
+Adding manufacturer rows to Overall, combining the full and focused file as additional spending, or adding out-of-pocket amounts to gross spending.
+Treating a claim as a full treatment episode or prescribing a regimen from this table.
+
+Analysis is source-backed but has not had independent scientific review. No modeled savings or assumed effects are supplied.
