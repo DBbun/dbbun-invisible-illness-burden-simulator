@@ -1,11 +1,17 @@
 # DBbun Invisible Illness Burden Simulator: public read-only demo
 
-An independent entry in the TOPx HHS Tech Sprint (Cost of Illness track) by DBbun LLC. It is not endorsed by, and does
-not use the logos of, HHS or NIH.
+**Open the demo: https://dbbun.github.io/dbbun-invisible-illness-burden-simulator/**
 
-This site turns published research papers on Lyme disease and Long COVID into simulators you can adjust. Open the
-site, choose a simulator from the library, change its assumptions, read the forecast, sensitivity and evidence
-tabs, and download its files. 25 simulators are included, each built from one published paper.
+This page only describes the project. The demo itself is the website at the link above; the files in this repository are
+what that website is made of.
+
+An independent entry in the TOPx HHS Tech Sprint (Cost of Illness track) by DBbun LLC. DBbun was a Phase 1 winner and is
+participating in Phase 2. It is not endorsed by, and does not use the logos of, HHS or NIH.
+
+On the website, the Simulation library lists 25 simulators for Lyme disease and Long COVID, each built from one published
+paper. Open one, change its assumptions, and read the forecast, sensitivity and evidence tabs; each simulator's files can be
+downloaded. The library also shows saved cross-pollination analyses, which compare one Lyme disease paper with one Long COVID
+paper; open them from the links under each paper.
 
 What it is not: medical, financial or legal advice. The simulators are illustrative models built from the figures
 in each paper, with federal data used to check them. They are not forecasts and not statistical confidence intervals.
