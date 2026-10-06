@@ -19,6 +19,9 @@ in each paper, with federal data used to check them. They are not forecasts and 
 This copy is read-only. Generating new simulators, deleting, and administration are available only in the full
 tool, which is not part of this site. No personal data is collected here.
 
+The full tool also has an API for calling a finished simulator from another system or submitting papers to be processed
+later; the guide is [API.md](API.md). The API runs only in the full tool, on your own computer, not on this site.
+
 Each simulator's download contains its documentation, an Excel export, figures, and the data behind it. The original
 papers are linked from each simulator rather than copied.
 

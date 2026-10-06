@@ -51,6 +51,7 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .controlInputGroup{display:flex;align-items:center;gap:8px;flex:0 0 auto}
 .controlInput{width:110px;padding:8px 10px;font-size:16px;border:1px solid var(--line);border-radius:8px;font-variant-numeric:tabular-nums;text-align:right;background:#fff;color:var(--ink)}
 .controlInput:focus{outline:3px solid #666;outline-offset:1px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
 .controlUnit{font-size:14px;color:var(--muted);white-space:nowrap}
 .controlRange{flex:0 0 auto;font-size:13px;color:var(--muted);white-space:nowrap}
 .controlLockedValue{font-size:16px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -195,6 +196,19 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .valueBubble.verify .dot{background:#2a78d63d;border-color:#2a78d6}
 .valueBubble.context .dot{background:#1baf7a3d;border-color:#1baf7a}
 .valueBubble.limited .dot{background:#9a9a9a33;border-color:#9a9a9a;border-style:dashed}
+.evidenceMap h3{margin:18px 0 2px;font-size:17px}
+.evidenceMap h3:first-child{margin-top:4px}
+.valueBubble.ev_observed .dot{background:#3b3b3b;border-color:#3b3b3b;color:#fff}
+.valueBubble.ev_assumed .dot{background:transparent;border-color:#7a7a7a;border-style:dashed}
+.valueBubble.ev_projected .dot{background:#2a78d63d;border-color:#2a78d6}
+.valueBubble.ev_computed .dot{background:#1baf7a3d;border-color:#1baf7a}
+.valueBubble.ev_agree .dot{background:#e3f4e6;border-color:#7fc08c}
+.valueBubble.ev_differ .dot{background:#fdeadb;border-color:#e19a6a}
+.valueBubble.ev_context .dot{background:#eef0f3;border-color:#b5bbc4}
+.valueBubble.ev_dataset .dot{background:#2a78d63d;border-color:#2a78d6}
+.valueBubble.ev_scenario .dot{background:#1baf7a3d;border-color:#1baf7a}
+.valueBubble.ev_empty .dot{background:transparent;border-color:#b5b5b5;border-style:dashed;color:#9a9a9a}
+.valueBubble .dot{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .valueBubble:hover .dot,.valueBubble:focus-visible .dot,.valueBubble.sel .dot{transform:scale(1.07)}
 .valueBubble.sel .dot{outline:3px solid #9bb8e6;outline-offset:2px}
 .valueBubble .lbl{margin-top:6px;font-weight:700}
@@ -258,6 +272,51 @@ button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}b
 .crossThemeEvidence{margin:10px 0 0;padding-left:20px;color:var(--muted);font-size:16px}.crossThemeEvidence li{margin:4px 0}
 .crossAnalysisSection{margin:20px 0 0}.crossAnalysisSection h3{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
 .crossAnalysisResults .libraryActions{margin-top:20px}
+.crossLearn{margin:22px 0 6px}
+.crossLearn h3{margin:0 0 4px;font-size:20px;text-transform:none;letter-spacing:0;color:inherit}
+.crossLearnGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(310px,100%),1fr));gap:14px;margin:12px 0 0}
+.learnCard{border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.learnCard h4{margin:2px 0 0;font-size:18px;line-height:1.3}
+.learnDir{align-self:flex-start;font-size:13px;font-weight:700;border-radius:999px;padding:3px 10px;border:2px solid}
+.learnDir.lyme{background:#cfe0f7;border-color:#2a78d6;color:#14305a}
+.learnDir.covid{background:#fbdcbc;border-color:#d9822b;color:#5a3208}
+.learnCard p{margin:0;font-size:15.5px;line-height:1.45}
+.learnCard .learnLabel{display:block;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.learnAsk{border-radius:10px;background:#3b3b3b;color:#fff;padding:10px 12px;margin-top:4px}
+.learnAsk .learnLabel{color:#d8d8d8}
+.learnAsk p{color:#fff;font-weight:600}
+.learnAsk,.learnDir,.learnCard{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.crossFill{margin:22px 0 6px}
+.crossFill h3{margin:0 0 4px;font-size:20px;text-transform:none;letter-spacing:0;color:inherit}
+.fillHoles{border:2px dashed #8a8a8a;border-radius:12px;padding:12px 14px;margin:10px 0;font-size:16px;line-height:1.45}
+.fillRow{display:grid;grid-template-columns:190px 1fr;gap:6px 14px;padding:10px 0;border-top:1px solid var(--line);align-items:start}
+.fillRow b{font-size:15.5px}
+.fillChips{display:flex;flex-wrap:wrap;gap:6px}
+.fillChip{width:auto;font-size:13.5px;padding:4px 10px;border-radius:999px;border:1.5px solid;background:none;cursor:pointer;text-align:left;line-height:1.3}
+.fillChip.lyme{border-color:#2a78d6;color:#14305a;background:#e8f0fb}
+.fillChip.covid{border-color:#d9822b;color:#5a3208;background:#fdf0e1}
+.fillNone{font-size:14px;color:var(--muted)}
+@media (max-width:640px){.fillRow{grid-template-columns:1fr}}
+@media (max-width:700px){.crossVizScroll,.crossVizDetail,.crossViz .burdenKey{display:none}.crossViz{padding:14px 12px}.crossAnalysisResults{padding:16px 12px}}
+.crossViz{margin:18px 0 6px;padding:18px 18px 12px;border:1px solid var(--line);border-radius:14px}
+.crossViz h3{margin:0 0 4px;font-size:20px;text-transform:none;letter-spacing:0;color:inherit}
+.crossVizLead{margin:0 0 12px;font-size:17px;line-height:1.45}
+.crossVizStats{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 10px}
+.crossVizStat{flex:1 1 140px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-align:center}
+.crossVizStat b{display:block;font-size:30px;line-height:1.1}
+.crossVizStat span{font-size:13.5px;color:var(--muted)}
+.crossVizScroll{overflow-x:auto}
+.crossVizSvg{display:block;width:100%;min-width:640px;height:auto}
+.crossVizSvg text{font-family:Arial,sans-serif}
+.crossVizSvg .vizBubble{cursor:pointer}
+.crossVizSvg .vizBubble circle{transition:transform .15s;transform-box:fill-box;transform-origin:center}
+.crossVizSvg .vizBubble:hover circle,.crossVizSvg .vizBubble:focus circle,.crossVizSvg .vizBubble.sel circle{transform:scale(1.08)}
+.crossVizSvg .vizBubble.sel circle{stroke-width:4}
+.crossVizSvg .vizBubble:focus{outline:none}
+.crossVizDetail{margin:10px 0 0;padding:12px 14px;border-radius:10px;background:var(--panel,#f4f4f4);font-size:16px;line-height:1.45}
+.crossVizDetail .cited{display:block;margin-top:4px}
+@media print{.crossVizDetail{display:none}}
+
 .figureCard{margin:0 0 18px}.figureCard figure{margin:0 0 14px}.figureCard img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:12px}.figureCaption{font-size:16px;color:var(--muted);margin:8px 2px 0;line-height:1.55}.figureCaption b{color:var(--ink)}
 .figureValuesTable{margin:8px 2px 0;font-size:16px}
 .figureValuesTable summary{cursor:pointer;color:#285f8b;font-weight:600;padding:4px 0}
@@ -301,11 +360,11 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <details class="whatThisAdds" open><summary>Which federal resources are the most valuable, and why?</summary>
 <p>This ranking is <b>overall</b>, across the whole library: <b><span class="libraryCountText">the simulations in the library</span></b>. Resources are ranked by what each one lets the system do for a simulator, not by size. Some apply to one condition only; the label under each bubble says which. The "informs N of 25" numbers are a snapshot taken on 2026-10-05, when the library had 25 simulations (12 Lyme disease, 13 Long COVID). "Shown" means offered to the AI model as background.</p>
 <div class="scenarioTableWrap fedValueTable"></div>
-<p>Two patterns stand out. Value is concentrated in a few small, checkable sources (CDC surveillance, the inflation index, the health-center visit survey, the Long COVID prevalence survey) rather than in the size of the corpus. And "shown" is not "used": only a computed cross-check proves a federal number was compared with the document, so those counts are a floor on usefulness, not a measure of it.</p></details>
+<p>Two patterns stand out. Value is concentrated in a few small, checkable sources (CDC surveillance, the inflation index, the health-center visit survey, the Long COVID prevalence survey) rather than in the size of the corpus. And "shown" is not "used": only a computed cross-check proves a federal number was compared with the document, so the number on each bubble says how many of the 25 simulators the source was shown to, listed beside, or checked against. It is not a measure of how much the source shaped a result.</p></details>
 
 <details class="whatThisAdds" open><summary>How does the simulator actually work?</summary><ul>
 <li>You upload a document. DBbun extracts its text and, separately, a local machine-learning classifier decides whether it's about Lyme disease, Long COVID, or both - no manual tagging needed.</li>
-<li>That classification drives a retrieval step over a 1,490-unit federal knowledge library (CDC, CDC/NCHS, CMS, AHRQ, Census, BLS, BEA, HRSA, SSA, NOAA): the most relevant pre-processed federal evidence packages are selected and included alongside your document.</li>
+<li>That classification drives a retrieval step over a federal knowledge library of about 1,454 units from 12 agencies (including CDC, CDC/NCHS, CMS, AHRQ, Census, BLS, BEA, HRSA, SSA and NOAA): the most relevant pre-processed federal evidence packages are selected and included alongside your document.</li>
 <li>Four AI (Claude/Sonnet) calls then run in sequence, matching the checklist you see while a simulation is generating:
   <ol>
   <li><b>Cost-of-illness analysis</b> - reads your document(s) plus the retrieved federal evidence and extracts the scientific findings (a plain-language summary, which costs/burdens the document actually reports, and limitations like claims-undercounting or a funding gap).</li>
@@ -317,7 +376,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <li>Nothing here queries a live database or a live internet search at generation time - every federal fact came from the pre-built local library, and every document-specific fact came from what you uploaded.</li>
 </ul></details>
 
-<details class="whatThisAdds" open><summary>What does combining the paper, federal data and the simulator reveal?</summary><p>Each piece alone leaves something hidden; together they show more. The diagram shows what each adds and what each overlap means. Hover any region for its meaning, or read the seven cases below, one per region, with a real example.</p><div class="vennFig"><svg viewBox="0 0 560 480" role="img" aria-labelledby="vennTitle vennDesc"><title id="vennTitle">What the paper, federal data and the simulator each add, and what they add together</title><desc id="vennDesc">Three overlapping circles. The paper alone gives its own figures. Federal data alone gives national context. The simulator alone gives what-ifs and forecasts. Paper and federal data together check and restate the figures. Paper and simulator together show which burdens the paper never measures. Federal data and simulator together put benchmarks beside results. All three together give an adjustable, checked model with its gaps stated.</desc><circle cx="200" cy="185" r="125" fill="#2a78d6" fill-opacity=".26" stroke="#2a78d6" stroke-width="2"/><circle cx="360" cy="185" r="125" fill="#eb6834" fill-opacity=".26" stroke="#eb6834" stroke-width="2"/><circle cx="280" cy="318" r="125" fill="#1baf7a" fill-opacity=".26" stroke="#1baf7a" stroke-width="2"/><text x="70" y="40" font-size="15" font-weight="700">The paper (PDF)</text><text x="490" y="40" font-size="15" font-weight="700" text-anchor="end">Federal data</text><text x="280" y="470" font-size="15" font-weight="700" text-anchor="middle">The simulator</text><text x="160" y="141.0" text-anchor="middle" font-size="12.5"><title>Paper alone: its own figures, in one price year and one place</title><tspan x="160" dy="0">Its own figures,</tspan><tspan x="160" dy="1.25em">in one price year</tspan><tspan x="160" dy="1.25em">and one place</tspan></text><text x="400" y="141.0" text-anchor="middle" font-size="12.5"><title>Federal data alone: national context, but nothing about this paper</title><tspan x="400" dy="0">National context,</tspan><tspan x="400" dy="1.25em">not this paper</tspan><tspan x="400" dy="1.25em">in particular</tspan></text><text x="280" y="360.5" text-anchor="middle" font-size="12.5"><title>Simulator alone: adjustable what-ifs, forecasts and the 16 burden types</title><tspan x="280" dy="0">What-ifs, forecasts,</tspan><tspan x="280" dy="1.25em">16 burden types</tspan></text><text x="280" y="146.5" text-anchor="middle" font-size="12"><title>Paper and federal data: figures checked against federal counts and restated in current dollars</title><tspan x="280" dy="0">Checked</tspan><tspan x="280" dy="1.25em">and restated</tspan></text><text x="214" y="251.0" text-anchor="middle" font-size="12"><title>Paper and simulator: shows which burdens the paper never measures</title><tspan x="214" dy="0">Burdens the</tspan><tspan x="214" dy="1.25em">paper never</tspan><tspan x="214" dy="1.25em">measures</tspan></text><text x="346" y="251.0" text-anchor="middle" font-size="12"><title>Federal data and simulator: benchmarks shown beside the results</title><tspan x="346" dy="0">Benchmarks</tspan><tspan x="346" dy="1.25em">beside your</tspan><tspan x="346" dy="1.25em">results</tspan></text><text x="280" y="220.5" text-anchor="middle" font-size="11.5"><title>All three: an adjustable model, checked against federal data, with its gaps stated</title><tspan x="280" dy="0">Adjustable</tspan><tspan x="280" dy="1.25em">& checked</tspan></text></svg></div><div class="vennLegend"><div class="vl"><span class="dots" aria-hidden="true"><i class="p"></i></span><p><b>The paper alone: its own figures, in one price year and one place.</b> The numbers exactly as the PDF prints them, for example a cost of $1,965 per patient in 2000 dollars, from one region. You cannot adjust them, compare them with today's prices, or see what they leave out.</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="f"></i></span><p><b>Federal data alone: national context, not this paper in particular.</b> Federal sources describe the country, for example about 35,000 Lyme cases reported to CDC in a typical year. They cannot tell you what a particular paper's patients cost, and some cannot identify Lyme at all (MEPS).</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="s"></i></span><p><b>The simulator alone: what-ifs, forecasts and 16 burden types.</b> The tool's machinery: sliders, named scenarios, a forecast, and the 16 burden categories. On its own it is empty; it needs a paper's evidence to fill it.</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="p"></i><i class="f"></i></span><p><b>Paper and federal data: checked and restated.</b> The system takes figures the paper reports and compares them with federal data, in code. A dollar amount is restated in current dollars ($1,965 in 2000 is about $3,674 today, so the paper alone understates today's burden by 1.87 times). A case count is compared with CDC's (that paper's 23,763 national cases equal CDC's reported count).</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="p"></i><i class="s"></i></span><p><b>Paper and simulator: burdens the paper never measures.</b> Once a paper's results are sorted into the 16 burden categories, the empty categories show what the paper leaves out. Across the 25 simulations (12 Lyme disease, 13 Long COVID) the average paper measures 1.6 of the 16 and none measures more than 4, so most of the burden is invisible in any single paper.</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="f"></i><i class="s"></i></span><p><b>Federal data and simulator: benchmarks beside your results.</b> Each simulator's Evidence tab lists federal figures that fit it, for example the 15.9% of U.S. adults who cared for a friend or family member in the past 30 days. They let you read the paper's numbers against national context. They are context only: they do not feed the simulator's numbers.</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="p"></i><i class="f"></i><i class="s"></i></span><p><b>All three: adjustable and checked, with the gaps stated.</b> <i>Adjustable</i> means you can change the paper's assumptions with sliders and watch the results move. <i>Checked</i> means the paper's figures were compared with federal data by code, not by the AI model. <i>Gaps stated</i> means the caveats and the unmeasured burdens are shown, not hidden. Example: a paper's 35,000 reported Lyme cases matched CDC's 34,973 (within 0.1%), and its 476,000 claims-based estimate is 13.6 times the reported count; in the simulator you can change the assumptions behind that gap and see what moves.</p></div></div><p>These are examples from real runs, not a controlled study. Only some papers report figures that federal data can check (5 of the 12 simulators built with the cross-check engine computed at least one comparison), and the burden categories are assigned by an AI model, with at most one category per result.</p></details>
+<details class="whatThisAdds" open><summary>What does combining the paper, federal data and the simulator reveal?</summary><p>Each piece alone leaves something hidden; together they show more. The diagram shows what each adds and what each overlap means. Hover any region for its meaning, or read the seven cases below, one per region, with a real example.</p><div class="vennFig"><svg viewBox="0 0 560 480" role="img" aria-labelledby="vennTitle vennDesc"><title id="vennTitle">What the paper, federal data and the simulator each add, and what they add together</title><desc id="vennDesc">Three overlapping circles. The paper alone gives its own figures. Federal data alone gives national context. The simulator alone gives what-ifs and forecasts. Paper and federal data together check and restate the figures. Paper and simulator together show which burdens the paper never measures. Federal data and simulator together put benchmarks beside results. All three together give an adjustable, checked model with its gaps stated.</desc><circle cx="200" cy="185" r="125" fill="#2a78d6" fill-opacity=".26" stroke="#2a78d6" stroke-width="2"/><circle cx="360" cy="185" r="125" fill="#eb6834" fill-opacity=".26" stroke="#eb6834" stroke-width="2"/><circle cx="280" cy="318" r="125" fill="#1baf7a" fill-opacity=".26" stroke="#1baf7a" stroke-width="2"/><text x="70" y="40" font-size="15" font-weight="700">The paper (PDF)</text><text x="490" y="40" font-size="15" font-weight="700" text-anchor="end">Federal data</text><text x="280" y="470" font-size="15" font-weight="700" text-anchor="middle">The simulator</text><text x="160" y="141.0" text-anchor="middle" font-size="12.5"><title>Paper alone: its own figures, in one price year and one place</title><tspan x="160" dy="0">Its own figures,</tspan><tspan x="160" dy="1.25em">in one price year</tspan><tspan x="160" dy="1.25em">and one place</tspan></text><text x="400" y="141.0" text-anchor="middle" font-size="12.5"><title>Federal data alone: national context, but nothing about this paper</title><tspan x="400" dy="0">National context,</tspan><tspan x="400" dy="1.25em">not this paper</tspan><tspan x="400" dy="1.25em">in particular</tspan></text><text x="280" y="360.5" text-anchor="middle" font-size="12.5"><title>Simulator alone: adjustable what-ifs, forecasts and the 16 burden types</title><tspan x="280" dy="0">What-ifs, forecasts,</tspan><tspan x="280" dy="1.25em">16 burden types</tspan></text><text x="280" y="146.5" text-anchor="middle" font-size="12"><title>Paper and federal data: figures checked against federal counts and restated in current dollars</title><tspan x="280" dy="0">Checked</tspan><tspan x="280" dy="1.25em">and restated</tspan></text><text x="214" y="251.0" text-anchor="middle" font-size="12"><title>Paper and simulator: shows which burdens the paper never measures</title><tspan x="214" dy="0">Burdens the</tspan><tspan x="214" dy="1.25em">paper never</tspan><tspan x="214" dy="1.25em">measures</tspan></text><text x="346" y="251.0" text-anchor="middle" font-size="12"><title>Federal data and simulator: benchmarks shown beside the results</title><tspan x="346" dy="0">Benchmarks</tspan><tspan x="346" dy="1.25em">beside your</tspan><tspan x="346" dy="1.25em">results</tspan></text><text x="280" y="220.5" text-anchor="middle" font-size="11.5"><title>All three: an adjustable model, checked against federal data, with its gaps stated</title><tspan x="280" dy="0">Adjustable</tspan><tspan x="280" dy="1.25em">& checked</tspan></text></svg></div><div class="vennLegend"><div class="vl"><span class="dots" aria-hidden="true"><i class="p"></i></span><p><b>The paper alone: its own figures, in one price year and one place.</b> The numbers exactly as the PDF prints them, for example a cost of $1,965 per patient in 2000 dollars, from one region. You cannot adjust them, compare them with today's prices, or see what they leave out.</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="f"></i></span><p><b>Federal data alone: national context, not this paper in particular.</b> Federal sources describe the country, for example about 35,000 Lyme cases reported to CDC in a typical year. They cannot tell you what a particular paper's patients cost, and some cannot identify Lyme at all (MEPS).</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="s"></i></span><p><b>The simulator alone: what-ifs, forecasts and 16 burden types.</b> The tool's machinery: adjustable assumptions, named scenarios, a forecast, and the 16 burden categories. On its own it is empty; it needs a paper's evidence to fill it.</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="p"></i><i class="f"></i></span><p><b>Paper and federal data: checked and restated.</b> The system takes figures the paper reports and compares them with federal data, in code. A dollar amount is restated in current dollars ($1,965 in 2000 is about $3,674 today, so the paper alone understates today's burden by 1.87 times). A case count is compared with CDC's (that paper's 23,763 national cases equal CDC's reported count).</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="p"></i><i class="s"></i></span><p><b>Paper and simulator: burdens the paper never measures.</b> Once a paper's results are sorted into the 16 burden categories, the empty categories show what the paper leaves out. Across the 25 simulations (12 Lyme disease, 13 Long COVID) the average paper measures 1.6 of the 16 and none measures more than 4, so most of the burden is invisible in any single paper.</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="f"></i><i class="s"></i></span><p><b>Federal data and simulator: benchmarks beside your results.</b> Each simulator's Evidence tab lists federal figures that fit it, for example the 15.9% of U.S. adults who cared for a friend or family member in the past 30 days. They let you read the paper's numbers against national context. They are context only: they do not feed the simulator's numbers.</p></div><div class="vl"><span class="dots" aria-hidden="true"><i class="p"></i><i class="f"></i><i class="s"></i></span><p><b>All three: adjustable and checked, with the gaps stated.</b> <i>Adjustable</i> means you can change the paper's assumptions in the number boxes and watch the results move. <i>Checked</i> means the paper's figures were compared with federal data by code, not by the AI model. <i>Gaps stated</i> means the caveats and the unmeasured burdens are shown, not hidden. Example: a paper's 35,000 reported Lyme cases matched CDC's 34,973 (within 0.1%), and its 476,000 claims-based estimate is 13.6 times the reported count; in the simulator you can change the assumptions behind that gap and see what moves.</p></div></div><p>These are examples from real runs, not a controlled study. Only some papers report figures that federal data can check (14 of the 25 simulators computed at least one federal check, and 9 of those compared a figure with federal data; the others only restated dollar amounts in current dollars), and the burden categories are assigned by an AI model, with at most one category per result.</p></details>
 
 <details class="whatThisAdds" open><summary>What do "observed," "assumed," and "projected" mean?</summary><ul>
 <li><b>Observed</b> - a value the source document actually reported or measured.</li>
@@ -337,9 +396,17 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <div class="burdenKey"><span><i style="background:#2a78d61f;border:2px solid #2a78d6;box-sizing:border-box"></i>lived experience</span><span><i style="background:#eb68341f;border:2px solid #eb6834;box-sizing:border-box"></i>expert or federal guidance</span></div><div class="shapeFlow"><details open class="shapeRow lived"><summary><span class="voice">A Long COVID patient who also does health research</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Undercounting check</span><span class="pill">Surveillance-undercount category</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> One-on-one interview.</p><p><b>What was heard:</b> Diagnosis codes miss much of real Long COVID (no code for post-exertional malaise; symptoms often coded as psychiatric); the same illness severity leads to very different money outcomes depending on occupation; a large monthly out-of-pocket cost that insurance does not cover.</p><p><b>What changed in the product:</b> The system checks every document for claims and diagnosis-code undercounting and flags it, and a "surveillance undercount" category exists.</p></div></details><details open class="shapeRow lived"><summary><span class="voice">Lyme and Long COVID patients and advocates</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Medical disbelief category</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Interviews, email, and public posts on the LymeX Healthathon discussion board.</p><p><b>What was heard:</b> Being dismissed, or told symptoms are anxiety, is a cost of its own.</p><p><b>What changed in the product:</b> A "medical disbelief" category, so harm from dismissal shows up as a result and not only as a number of dollars.</p></div></details><details open class="shapeRow lived"><summary><span class="voice">Caregivers and advocates for Long COVID</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Care continuity risk</span><span class="pill">Administrative burden</span><span class="pill">Longer-term opportunity costs</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Interviews.</p><p><b>What was heard:</b> One caregiver often holds all the knowledge of the care routine, and care collapses if that person is unavailable; insurance churn and paperwork interrupt care; years of remote schooling in place of school.</p><p><b>What changed in the product:</b> "Care continuity risk", "administrative burden" and "longer-term opportunity costs" categories.</p></div></details><details open class="shapeRow lived"><summary><span class="voice">Firsthand Lyme patients on the LymeX Healthathon discussion board</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Parent-to-child transmission</span><span class="pill">Harm from misdiagnosis-driven treatment</span><span class="pill">Fragmented care</span><span class="pill">System-gap caveat</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> All 80 public stories and ideas shared in the LymeX Healthathon were analyzed, and 17 questions were posted on its public discussion board; 15 replied.</p><p><b>What was heard:</b> Illness passing from parent to child; harm from treatment given for the wrong diagnosis; care spread across many uncoordinated providers.</p><p><b>What changed in the product:</b> "Congenital and parent-to-child transmission", "harm from misdiagnosis-driven treatment" and "uncoordinated, fragmented care" categories, plus a caveat for gaps in the healthcare system itself (for example clinicians not trained to recognize the illness).</p></div></details><details open class="shapeRow lived"><summary><span class="voice">A parent who is also a Lyme patient</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">School and milestone examples</span><span class="pill">"Does not recommend treatments" answer</span><span class="pill">Household boundary</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> A public reply on the LymeX Healthathon discussion board.</p><p><b>What was heard:</b> A child's missed school and milestones, tutoring and accommodations, more than one family member affected, and a strong expectation that 'simulators' recommend treatments.</p><p><b>What changed in the product:</b> School and milestone examples in the opportunity-cost category; a plain answer (below) that the simulator never recommends, ranks or evaluates treatments; household burden stated as something the simulators do not model yet.</p></div></details><details open class="shapeRow lived"><summary><span class="voice">A state health-policy official</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">9-sheet Excel export</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Call.</p><p><b>What was heard:</b> Exploring scenarios on screen is not useful to a budget analyst; data that can be plugged into their own Excel models is.</p><p><b>What changed in the product:</b> A structured Excel export (9 sheets, including parameters, data, results, evidence and limits) beside the PDF and bundle.</p></div></details><details open class="shapeRow expert"><summary><span class="voice">Federal reviewers and data stewards (expert feedback, not lived experience)</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Observed / assumed / projected labels</span><span class="pill">Sex and gender findings</span><span class="pill">Provenance lines</span><span class="pill">MEPS Lyme cost limit</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Sprint feedback sessions and office hours.</p><p><b>What was heard:</b> Show what is real data versus assumption; be intentional about sex and gender differences; provenance matters (source, self-report versus clinical, when, modeled versus measured); MEPS cannot support Lyme costs.</p><p><b>What changed in the product:</b> Every value is labeled observed, assumed or projected; sex and gender findings are stated whenever the evidence reports them; every federal figure carries a provenance line; the Lyme cost limit of MEPS is documented.</p></div></details><details open class="shapeRow expert"><summary><span class="voice">Federal sprint leads for the cost-of-illness track (expert feedback, not lived experience)</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Federal-source value ranking</span><span class="pill">Scenarios and forecast bands</span><span class="pill">Cross-Pollination Analysis</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Sprint kickoff and the Alpha and Beta demo feedback sessions.</p><p><b>What was heard:</b> Which federal resources matter most, and why; show a variety of what-if scenarios and how much the results vary, not a single answer; compare Lyme disease and Long COVID to learn from each ("cross-pollination").</p><p><b>What changed in the product:</b> A ranked list of the federal sources, with the reason for each rank; named scenarios with a stated goal, sensitivity charts, and a forecast band showing the middle 80% of 500 random draws (labeled illustrative, not a confidence interval); and a Cross-Pollination Analysis that compares a Lyme disease and a Long COVID simulator side by side.</p></div></details><details open class="shapeRow expert"><summary><span class="voice">Federal sprint leads: labels, uncertainty and consent (expert feedback, not lived experience)</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Time and price-year labels</span><span class="pill">Who bears the cost</span><span class="pill">Burden map</span><span class="pill">What leaves the machine</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Alpha and Beta demo feedback sessions.</p><p><b>What was heard:</b> Label the time period of every number and keep dollar figures comparable across years; break cost out by who pays (health system, out of pocket, indirect); show where data are incomplete or only partly measured; make clear where uncertainty comes from; review consent and transparency expectations for health data.</p><p><b>What changed in the product:</b> Data-period and price-year labels on numbers; a "Who bears the cost" table; a burden map showing which of 16 burdens a paper measured and which it left out; and plain statements of what leaves the machine, with every model call recorded in each download.</p></div></details></div></details>
 
 <details class="whatThisAdds" open><summary>Does the simulator recommend or evaluate treatments?</summary>
-<p><b>No.</b> It turns one uploaded paper's own evidence into an interactive model of burden and cost: what an illness costs in money, time, work, schooling and care. It never recommends, ranks, scores or compares treatments, protocols, supplements or providers, and it does not tell anyone what to do about their own health.</p>
+<p><b>No.</b> It turns one uploaded paper's own evidence into an interactive model of burden and cost: what an illness costs in money, time, work, schooling and care. It never recommends, ranks or scores treatments, protocols, supplements or providers on its own, and it does not tell anyone what to do about their own health.</p>
 <p>"Simulator" here means a what-if model of cost and burden that you can adjust (for example, what if diagnosis took a year less), not a treatment simulator. If a paper reports what a treatment costs or what it did, the simulator shows that as the paper's own reported evidence, labeled observed, assumed or projected, never as advice. For care decisions, talk with a clinician.</p></details>
 
+<details class="whatThisAdds" open><summary>Can I use the simulators from another system or script (API)?</summary>
+<p>Yes. The full tool, run on your own computer, has a small programming interface (API) so another system can call a finished simulator or submit papers without a browser. The read-only public demo cannot run it.</p>
+<ul>
+<li><b>Run a finished simulator.</b> Send your own assumptions and get every output and forecast back at once. It uses the same arithmetic as this page, costs nothing, and rejects values outside an input's own range or inputs the source paper fixes.</li>
+<li><b>Submit papers and come back later.</b> Papers join a first-in, first-out line and run one at a time (about 4 to 9 minutes and roughly $0.25 to $0.85 in model fees each). A script then collects the finished bundles.</li>
+<li><b>Access.</b> Every call needs a key made on your own machine, and by default the interface answers only on your own computer.</li>
+</ul>
+<p>Steps and examples are in the <a href="/api/v1/docs" target="_blank" rel="noopener">API guide</a> (the file API.md); the machine-readable description is at /api/v1/openapi.json. Results are illustrative simulations built from the source papers, not clinical advice or statistical forecasts.</p></details>
 <details class="whatThisAdds" open><summary>What is a cross-pollination analysis?</summary><p>It compares two simulators side by side: one built from a Lyme disease paper and one from a Long COVID paper. In the Simulation library, tick one of each and choose "Cross-pollination analysis". After about a minute it shows a table of what each simulator says about the same questions (cost, work, diagnostic delay, access to care, how official counts undercount), which of the 16 burdens each paper measures, and the key figures copied from each simulator. Once it exists, a link "Cross-pollination analysis available" appears under both papers, and choosing the same pair again opens the saved comparison.</p><p>The numbers are copied from the simulators. The wording is written by an AI model and checked in code against the simulators, and any number it cannot match is flagged. The two papers differ in population, year and method, so the comparison gives context; it does not measure a difference between the diseases. Comparing more than two papers at once is planned.</p></details>
 
 <details class="whatThisAdds" open><summary>What role do federal data play in creating a simulator?</summary>
@@ -364,9 +431,9 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <p>DBbun is a local tool that turns an uploaded paper into a simulator. It does not connect to any health-record network, and it does not claim alignment with a standard it does not implement. Its downloads are PDF, Excel, CSV, JSON and Python source, not FHIR resources. Here is where it stands with each:</p>
 <ul>
 <li><b>Blue Button 2.0 (CMS):</b> a credible next step, planned and not built. It lets a Medicare beneficiary authorize an app to pull their own claims. In DBbun, a user could someday connect their own claims, with consent, as an input alongside an uploaded paper.</li>
-<li><b>TEFCA and FHIR networks:</b> designed for exchanging identified clinical records between care institutions. DBbun refuses documents that contain real personal identifiers and is not a care-coordination system, so it does not connect to them.</li>
+<li><b>TEFCA and FHIR networks:</b> designed for exchanging identified clinical records between care institutions. DBbun refuses uploads that contain Social Security numbers or medical-record-number and date-of-birth labels (it does not detect other kinds of identifiers), and it is not a care-coordination system, so it does not connect to them.</li>
 <li><b>USCDI+:</b> at the last check (August 2026) it had no cost-of-illness domain. A small, honest step would be tagging extracted diagnoses with their ICD-10-CM codes; that is not built.</li>
-<li><b>CMS Interoperability Framework:</b> DBbun echoes its consent and transparency criteria at its own scale. Only a text excerpt of your document reaches the model, no generated code executes, and every model call is recorded in the download. It claims no formal alignment.</li>
+<li><b>CMS Interoperability Framework:</b> DBbun echoes its consent and transparency criteria at its own scale. The extracted text, table captions and figures of your document reach the model (never the original file), no generated code executes, and every model call is recorded in the download. It claims no formal alignment.</li>
 </ul></details>
 
 <details class="whatThisAdds" open><summary>What are the limitations ("Gaps and Boundaries")?</summary>
@@ -390,7 +457,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 </ul></details>
 
 <details class="whatThisAdds" open><summary>What happens to my uploaded document? Is my data private?</summary><ul>
-<li>Only a text excerpt of your document is sent to the AI model - the original file itself is never uploaded to the model provider.</li>
+<li>The extracted text, table captions and figures of your document are sent to the AI model. The original file itself is never uploaded to the model provider.</li>
 <li>No generated code executes on your machine or DBbun's server - the downloadable Python source is for you to run yourself, not something DBbun runs on your behalf.</li>
 <li>Every model call made for your simulation - what was sent, to which provider, and when - is recorded and disclosed, visible in the "Generation details and API usage" panel and the downloadable bundle's provenance file.</li>
 </ul></details>
@@ -449,7 +516,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <details class="whatThisAdds" open><summary>Which federal resources are the most valuable, and why?</summary>
 <p>This ranking is <b>overall</b>, across the whole library: <b><span class="libraryCountText">the simulations in the library</span></b>. Resources are ranked by what each one lets the system do for a simulator, not by size. Some apply to one condition only; the label under each bubble says which. The "informs N of 25" numbers are a snapshot taken on 2026-10-05, when the library had 25 simulations (12 Lyme disease, 13 Long COVID). "Shown" means offered to the AI model as background.</p>
 <div class="scenarioTableWrap fedValueTable"></div>
-<p>Two patterns stand out. Value is concentrated in a few small, checkable sources (CDC surveillance, the inflation index, the health-center visit survey, the Long COVID prevalence survey) rather than in the size of the corpus. And "shown" is not "used": only a computed cross-check proves a federal number was compared with the document, so those counts are a floor on usefulness, not a measure of it.</p></details>
+<p>Two patterns stand out. Value is concentrated in a few small, checkable sources (CDC surveillance, the inflation index, the health-center visit survey, the Long COVID prevalence survey) rather than in the size of the corpus. And "shown" is not "used": only a computed cross-check proves a federal number was compared with the document, so the number on each bubble says how many of the 25 simulators the source was shown to, listed beside, or checked against. It is not a measure of how much the source shaped a result.</p></details>
 
 <details class="whatThisAdds" open><summary>Raw file, dataset, and review unit - what's the difference?</summary><ul>
 <li><b>Raw file</b> - a file exactly as downloaded from the federal agency (a spreadsheet, PDF, zip archive, etc.), stored on this computer under <code>databases/raw/</code>. The summary line at the top of this page shows how many there are.</li>
@@ -547,12 +614,12 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 </div>
 <div class="tabPanel" data-tab="flow">
 <div class="docSummary"><h4>What this tab shows</h4>
-<p>How this specific simulation was actually built, step by step - the same six-stage pipeline runs for every document, but the numbers below (documents, federal units, model calls, cost) are this simulation's own, not generic figures.</p></div>
+<p>How this specific simulation was actually built, step by step - the same seven-stage pipeline runs for every document, but the numbers below (documents, federal units, model calls, cost) are this simulation's own, not generic figures.</p></div>
 <div id="operationFlow" class="operationFlow"></div>
 </div>
 <div class="tabPanel" data-tab="explore">
 <div class="docSummary"><h4>What this tab does</h4>
-<p>This is the interactive core of the simulator: every number below recomputes live, by ordinary arithmetic, the instant you pick a scenario or move a slider - unlike the fixed charts on the Sensitivity tab. Pick one of the named scenarios below for a ready-made what-if combination with its own plain-language conclusion, or adjust individual assumptions yourself further down and watch the outputs update.</p></div>
+<p>This is the interactive core of the simulator: every number below recomputes live, by ordinary arithmetic, the instant you pick a scenario or change an assumption - unlike the fixed charts on the Sensitivity tab. If this simulator has named scenarios, pick one below for a ready-made what-if combination with its own plain-language conclusion. You can also change individual assumptions yourself further down and watch the outputs update.</p></div>
 <div id="scenarios" hidden><h3>Try a scenario</h3><div id="scenarioButtons" class="scenarioCards"></div></div>
 <div class="simGrid"><div><h3>What changes?</h3><div id="activeScenarioBanner" class="activeScenarioBanner" hidden><span class="activeScenarioEyebrow">Now showing</span><span id="activeScenarioTitle" class="activeScenarioTitle"></span><span id="activeScenarioConclusion" class="activeScenarioConclusion"></span></div><div id="whatYouChanged" class="whatYouChanged" hidden></div><div id="outputs"></div></div><div><h3>Adjust the assumptions</h3><div id="controls" class="controlsPanel"></div><div id="controlsIntro" class="docSummary" hidden></div></div></div>
 <div id="scenarioTableSection" hidden><h3>Compare scenarios</h3><div id="scenarioTableWrap" class="scenarioTableWrap"><table id="scenarioTable" class="scenarioTable"></table></div></div>
@@ -561,7 +628,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <div id="trajectories" hidden>
 <div class="docSummary"><h4>What "forecast" means here</h4>
 <p id="forecastIntro">Each chart projects one output forward over time, assuming the document's own reported per-period rate of change continues unchanged - a straight-line trend, not a prediction that real-world change will actually be steady.</p>
-<p>Unlike the Sensitivity tab, the <b>"Current assumptions" line here is live</b>: it redraws as you adjust sliders on the Explore tab. The other lines (Default, and any named scenarios) stay fixed for comparison.</p></div>
+<p>Unlike the Sensitivity tab, the <b>"Current assumptions" line here is live</b>: it redraws as you change the assumptions on the Explore tab. The other lines (Default, and any named scenarios) stay fixed for comparison.</p></div>
 <h3>Forecast over time</h3><div id="trajectoryCharts"></div></div>
 <p id="noTrajectories" class="emptyTabNote" hidden>This document does not describe a cost, burden, or quantity that accumulates or changes across multiple time periods, so no forecast-over-time chart was generated for it. This is expected for some documents (e.g. a methodology or single-point-in-time estimate), not a missing feature.</p>
 </div>
@@ -569,13 +636,14 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <div id="figuresPanel" hidden>
 <div class="docSummary"><h4>What "sensitivity" means here</h4>
 <p>Each chart below takes <b>one assumption at a time</b> and moves it across its full possible range, while holding every other assumption at the document's own default value - showing which single assumption would change the result the most if it had been reported differently.</p>
-<p>These charts are <b>fixed, not live</b>: they were computed once when this simulation was generated, using the document's own default assumptions - not your current slider positions on the Explore tab. Adjusting a slider there will not change what's shown here.</p></div>
+<p>These charts are <b>fixed, not live</b>: they were computed once when this simulation was generated, using the document's own default assumptions - not your current assumption values on the Explore tab. Changing an assumption there will not change what's shown here.</p></div>
 <h3>How each result changes across its full range</h3><div id="figures"></div></div>
 <p id="noFigures" class="emptyTabNote" hidden>No sensitivity figures are available for this simulation.</p>
 </div>
 <div class="tabPanel" data-tab="evidence">
 <div class="docSummary"><h4>What this tab is for</h4>
 <p>This tab is for auditing, not everyday use: which federal reference datasets (if any) were consulted while generating this simulation, and the raw generated model itself (the full input/output specification and the federal-knowledge context sent to the model) for technical inspection.</p></div>
+<div id="evidenceMap" class="evidenceMap" hidden></div>
 <details id="federalBenchmarksPanel" open hidden><summary>Federal benchmarks that fit this simulator</summary><div id="federalBenchmarksBody"></div></details>
 <details id="federalKnowledgePanel" hidden><summary>Federal knowledge referenced in this simulation</summary><div id="federalKnowledgeBody"></div></details>
 <h2>Technical details for this simulation</h2><details><summary>Inspect this simulation's generated model</summary><pre id="spec"></pre><pre id="evidence"></pre></details>
@@ -618,6 +686,21 @@ function setActiveTab(tabName){
   if(tabName==='forecast'&&redrawForecastTab)redrawForecastTab();
 }
 for(const btn of document.querySelectorAll('.tabBtn'))btn.onclick=()=>setActiveTab(btn.dataset.tab);
+document.querySelectorAll('.tabNav').forEach(nav=>{
+  nav.setAttribute('role','tablist');
+  nav.addEventListener('keydown',e=>{
+    const tabs=[...nav.querySelectorAll('.tabBtn')].filter(b=>b.offsetParent!==null);
+    const at=tabs.indexOf(document.activeElement);
+    if(at<0)return;
+    let to=null;
+    if(e.key==='ArrowRight')to=(at+1)%tabs.length;
+    else if(e.key==='ArrowLeft')to=(at-1+tabs.length)%tabs.length;
+    else if(e.key==='Home')to=0;
+    else if(e.key==='End')to=tabs.length-1;
+    if(to===null)return;
+    e.preventDefault();tabs[to].focus();tabs[to].click();
+  });
+});
 const audienceLabels={patient:'Patients & advocates',care:'Care delivery teams',policy:'Payers & policy teams'};
 let currentLens='patient';
 function text(tag,value,parent){const e=document.createElement(tag);e.textContent=value;parent.appendChild(e);return e}
@@ -698,14 +781,14 @@ const FEDERAL_VALUE=[
 ];
 const FEDERAL_BUBBLES=[
   {label:'Lyme disease surveillance (Centers for Disease Control and Prevention)',n:12,role:'verify',scope:'Lyme'},
-  {label:'Consumer price index (inflation)',n:7,role:'verify',scope:'Both conditions'},
+  {label:'Consumer price index (inflation)',n:15,role:'verify',scope:'Both conditions'},
   {label:'Long COVID prevalence survey (Household Pulse)',n:13,role:'verify',scope:'Long COVID'},
   {label:'Diagnosis codes (International Classification of Diseases)',n:23,role:'context',scope:'Both conditions'},
   {label:'National Ambulatory Medical Care Survey: health-center visits',n:25,role:'context',scope:'Both conditions'},
   {label:'Medical Expenditure Panel Survey: time costs, 2024',n:5,role:'context',scope:'Both conditions'},
   {label:'Medicare and Medicaid agency cost benchmarks and national health expenditures',n:4,role:'context',scope:'Both conditions'},
   {label:'Tick surveillance and regional economics',n:19,role:'context',scope:'Both conditions'},
-  {label:'Medical Expenditure Panel Survey for Lyme costs; emergency department survey',n:25,role:'limited',scope:'Both conditions'}
+  {label:'Medical Expenditure Panel Survey for Lyme costs; emergency department survey',n:8,role:'limited',scope:'Both conditions'}
 ];
 const FEDERAL_SIMULATOR_COUNT=25;
 function renderFederalValue(){
@@ -713,7 +796,7 @@ function renderFederalValue(){
   document.querySelectorAll('.fedValueTable').forEach(box=>{
     box.replaceChildren();
     const key=document.createElement('div');key.className='burdenKey';
-    key.innerHTML='<span><i style="background:#2a78d63d;border:2px solid #2a78d6;box-sizing:border-box"></i>checks a paper\'s figures</span><span><i style="background:#1baf7a3d;border:2px solid #1baf7a;box-sizing:border-box"></i>adds context</span><span><i style="background:#9a9a9a33;border:2px dashed #9a9a9a;box-sizing:border-box"></i>limited use</span>';
+    key.innerHTML='<span><i style="background:#2a78d63d;border:2px solid #2a78d6;box-sizing:border-box"></i>checks or restates a paper\'s figures</span><span><i style="background:#1baf7a3d;border:2px solid #1baf7a;box-sizing:border-box"></i>adds context</span><span><i style="background:#9a9a9a33;border:2px dashed #9a9a9a;box-sizing:border-box"></i>limited use</span>';
     box.appendChild(key);
     const row=document.createElement('div');row.className='valueBubbles';
     const detail=document.createElement('p');detail.className='burdenDetail';
@@ -726,7 +809,7 @@ function renderFederalValue(){
       const dot=document.createElement('span');dot.className='dot';dot.style.width=d+'px';dot.style.height=d+'px';dot.textContent=(r[0]==='Least'?'!':r[0]);
       const wrap=document.createElement('span');wrap.className='dotWrap';wrap.style.display='flex';wrap.style.alignItems='center';wrap.style.justifyContent='center';wrap.appendChild(dot);
       const lbl=document.createElement('span');lbl.className='lbl';lbl.textContent=b.label;
-      const sub=document.createElement('span');sub.className='sub';sub.textContent=(b.role==='limited'?'background only for ':'informs ')+b.n+' of '+FEDERAL_SIMULATOR_COUNT+' · '+b.scope;
+      const sub=document.createElement('span');sub.className='sub';sub.textContent=(b.role==='limited'?'context only, listed or shown for ':'informs ')+b.n+' of '+FEDERAL_SIMULATOR_COUNT+' · '+b.scope;
       btn.appendChild(wrap);btn.appendChild(lbl);btn.appendChild(sub);
       btn.setAttribute('aria-label',(r[0]==='Least'?'Least valuable: ':'Rank '+r[0]+': ')+b.label+', informs '+b.n+' of '+FEDERAL_SIMULATOR_COUNT+' simulators');
       btn.onclick=()=>{
@@ -842,6 +925,87 @@ async function loadFederalBenchmarks(id){
   }
   panel.hidden=false;
 }
+const FEDERAL_DATASET_NAMES={
+  'cdc/lyme_surveillance':'CDC Lyme disease surveillance','cdc/tick_surveillance_2025':'CDC tick surveillance',
+  'cdc/long_covid_aggregate_2022_2024':'CDC Long COVID estimates','cdc/nhamcs_ed_2016_2022':'CDC emergency department survey',
+  'cdc_nchs/mortality_2016_2024':'CDC mortality statistics','census/household_pulse_long_covid_2022_2024':'Census Household Pulse Survey',
+  'cms/icd10cm_2026_04':'CMS ICD-10-CM diagnosis codes','cms/lyme_cost_benchmarks_2024':'CMS Lyme drug spending','cms/nhea_2024':'CMS national health expenditures',
+  'bea/regional_economics':'BEA regional economics','bls/labor_costs_2025':'BLS prices and labor costs'
+};
+function federalDatasetName(key){
+  return FEDERAL_DATASET_NAMES[key]||String(key||'').split('/').pop().replace(/_/g,' ').replace(/\b\w/,c=>c.toUpperCase());
+}
+function renderEvidenceRow(box,title,note,items,emptyText){
+  text('h3',title,box);
+  text('p',note,box).className='changeNote';
+  if(!items.length){text('p',emptyText,box).className='changeNote';return}
+  const max=Math.max(...items.map(i=>i.n),1);
+  const row=document.createElement('div');row.className='valueBubbles';
+  const detail=document.createElement('p');detail.className='burdenDetail';
+  detail.textContent='Tap a bubble to see what is inside it.';
+  let selected=null;
+  for(const it of items){
+    const d=Math.round(40+54*Math.sqrt(it.n/max));
+    const btn=document.createElement('button');btn.type='button';btn.className='valueBubble '+it.cls;
+    const dot=document.createElement('span');dot.className='dot';dot.style.width=d+'px';dot.style.height=d+'px';dot.textContent=String(it.n);
+    const wrap=document.createElement('span');wrap.className='dotWrap';wrap.style.display='flex';wrap.style.alignItems='center';wrap.style.justifyContent='center';wrap.appendChild(dot);
+    btn.appendChild(wrap);text('span',it.label,btn).className='lbl';
+    btn.setAttribute('aria-label',it.label+': '+it.n);
+    btn.onclick=()=>{
+      if(selected)selected.classList.remove('sel');selected=btn;btn.classList.add('sel');
+      detail.replaceChildren();
+      const b=document.createElement('b');b.textContent=it.label+' ('+it.n+'). ';detail.appendChild(b);
+      detail.appendChild(document.createTextNode(it.detail));
+    };
+    row.appendChild(btn);
+  }
+  box.appendChild(row);box.appendChild(detail);
+}
+function renderEvidenceMap(job){
+  const box=$('evidenceMap');if(!box)return;
+  box.replaceChildren();box.hidden=true;
+  const spec=job&&job.spec;if(!spec)return;
+  const trim=(a,n)=>{const l=a.slice(0,n).join('; ');return a.length>n?l+'; and '+(a.length-n)+' more':l};
+  const inputs=spec.inputs||[],outputs=spec.outputs||[],trajs=spec.trajectories||[];
+  const byStatus=k=>inputs.filter(i=>i.evidence_status===k).map(i=>i.label);
+  const obs=byStatus('observed'),ass=byStatus('assumed'),proj=byStatus('projected');
+  const unl=inputs.filter(i=>!i.evidence_status).map(i=>i.label);
+  const kinds=[];
+  if(obs.length)kinds.push({label:'Observed in the paper',n:obs.length,cls:'ev_observed',detail:'Inputs the paper itself reports: '+trim(obs,6)+'.'});
+  if(ass.length)kinds.push({label:'Assumed',n:ass.length,cls:'ev_assumed',detail:"Inputs the paper does not report; the simulator supplies an illustrative value: "+trim(ass,6)+'.'});
+  if(proj.length)kinds.push({label:'Projected inputs',n:proj.length,cls:'ev_projected',detail:'Inputs extended beyond the period the paper measured: '+trim(proj,6)+'.'});
+  if(unl.length)kinds.push({label:'Not labeled',n:unl.length,cls:'ev_empty',detail:'Inputs without an observed or assumed label (simulators generated before the labels existed): '+trim(unl,6)+'.'});
+  if(trajs.length)kinds.push({label:'Forecast lines',n:trajs.length,cls:'ev_projected',detail:"Forecasts that carry the paper's own rate of change forward: "+trim(trajs.map(t=>t.label||t.id),6)+'.'});
+  if(outputs.length)kinds.push({label:'Computed results',n:outputs.length,cls:'ev_computed',detail:'Results the simulator calculates from the inputs by ordinary arithmetic: '+trim(outputs.map(o=>o.label),6)+'.'});
+  renderEvidenceRow(box,'Where the numbers come from','Each bubble counts the quantities of one kind in this simulator. Bubble size is the count.',kinds,'This simulator has no quantities to classify.');
+  const groups=new Map();
+  for(const u of (job.condition_knowledge&&job.condition_knowledge.selected)||[]){
+    if(!groups.has(u.dataset))groups.set(u.dataset,{n:0,roles:new Set(),scope:u.condition_scope});
+    const g=groups.get(u.dataset);g.n++;if(u.role)g.roles.add(String(u.role).replace(/_/g,' '));
+  }
+  const cited=new Map();
+  for(const u of (job.scientific_analysis&&job.scientific_analysis.federal_evidence_used)||[])if(u.review_unit_id)cited.set(u.review_unit_id.split('/').slice(0,2).join('/'),u.how_used);
+  const fed=[...groups.entries()].sort((a,b)=>b[1].n-a[1].n).map(([k,g])=>({
+    label:federalDatasetName(k),n:g.n,cls:'ev_dataset',
+    detail:g.n+' excerpt'+(g.n===1?'':'s')+' of this dataset '+(g.n===1?'was':'were')+' offered to the model as background'+(g.roles.size?' ('+[...g.roles].join(', ')+')':'')+'. '+(cited.get(k)?'How it was used: '+cited.get(k):"It was not cited, so it did not shape the simulator's numbers.")
+  }));
+  renderEvidenceRow(box,'Federal datasets consulted',"Each bubble is one federal dataset; its number and size are how many excerpts were offered to the model. Federal data checks and contextualizes a paper; it does not supply this simulator's numbers.",fed,'No federal dataset excerpts were retrieved for this document.');
+  const checks=job.federal_crosschecks||[];
+  const derive=c=>c.agreement||(c.status==='not_computed'?'not_checked':c.status==='context'?'context':c.kind==='usd_amount'?'restated':/^(within|inside)/.test(c.verdict||'')?'agrees':c.verdict?'differs':'context');
+  const buckets={agrees:[],differs:[],context:[],restated:[],not_checked:[]};
+  for(const c of checks)(buckets[derive(c)]||buckets.context).push(c.label);
+  const ccDefs=[
+    ['agrees','Agrees with federal data','ev_agree',"The paper's figure falls in the same range as the federal data"],
+    ['differs','Differs from federal data','ev_differ',"The paper's figure sits outside the federal range (worth reading with care)"],
+    ['restated','Restated in current dollars','ev_context','Dollar amounts converted with the consumer price index'],
+    ['context','Context only','ev_context','Compared as background, not a like-for-like match'],
+    ['not_checked','Not checked','ev_empty','Could not be checked against a federal file']];
+  const cc=ccDefs.filter(d=>buckets[d[0]].length).map(d=>({label:d[1],n:buckets[d[0]].length,cls:d[2],detail:d[3]+': '+trim(buckets[d[0]],5)+'.'}));
+  renderEvidenceRow(box,"How the paper's figures compare with federal data",'Computed in code, not by the model. A comparison shows whether numbers sit in the same range, not that either one is right.',cc,'No dollar amounts, case counts or prevalence figures were extracted, so there was nothing to cross-check.');
+  const sc=(spec.scenarios||[]).map(x=>({label:x.label,n:Object.keys(x.overrides||{}).length||1,cls:'ev_scenario',detail:(x.goal||'')+' '+(x.description||'')+' (The number is how many assumptions this scenario changes.)'}));
+  renderEvidenceRow(box,'What-if conclusions','Each bubble is a named scenario this simulator can run. Open the Explore tab to see its results.',sc,'This simulator has no named scenarios.');
+  box.hidden=false;
+}
 function renderFederalKnowledge(ck,federalEvidenceUsed,crossChecks){
   const panel=$('federalKnowledgePanel'),body=$('federalKnowledgeBody');
   body.replaceChildren();
@@ -932,7 +1096,7 @@ function renderFederalKnowledge(ck,federalEvidenceUsed,crossChecks){
     filesTd.appendChild(summaryLink);
     tr.appendChild(filesTd);
     text('td',roleSentence(u.role),tr);
-    text('td',howUsedById[u.review_unit_id]||relevanceSentence(u.matched_terms),tr);
+    text('td',plainFieldNames(howUsedById[u.review_unit_id]||relevanceSentence(u.matched_terms)),tr);
     tbody.appendChild(tr);
   }
   table.appendChild(tbody);
@@ -998,6 +1162,7 @@ function showReview(job){
   if(current.unresolved_findings?.length){text('h3','Issues to review before exploration',$('reviewbody'));for(const finding of current.unresolved_findings){const item=text('p',`${finding.severity.toUpperCase()}: ${finding.issue} Next: ${finding.requested_change}`,$('reviewbody'));item.className='warning'}}
   if(current.detected_condition){const names={lyme:'Lyme disease',longCovid:'Long COVID',cross:'Lyme disease and Long COVID'};text('h3','Confirmed evidence focus',$('reviewbody'));text('p',names[current.detected_condition]||current.detected_condition,$('reviewbody'));if(current.condition_rationale)text('p',current.condition_rationale,$('reviewbody'))}
   renderFederalKnowledge(current.condition_knowledge,current.scientific_analysis?.federal_evidence_used,current.federal_crosschecks);
+  renderEvidenceMap(current);
   loadFederalBenchmarks(jobId);
   renderCategoryCoverage(current.spec);
   renderOperationFlow(current);
@@ -1115,6 +1280,27 @@ function renderVideoButton(){
     btn.title='Link a companion video (e.g. made with NotebookLM) for this simulation.';
     btn.onclick=setVideoLink;
   }
+}
+function wireVideoButton(btn,job,id){
+  const refresh=()=>{
+    if(window.DBBUN_STATIC&&!job.video_url){btn.style.display='none';return}
+    if(job.video_url){
+      btn.textContent='▶ Watch video';
+      btn.title='Opens the companion video in a new tab.'+(window.DBBUN_STATIC?'':' Click again to change or remove the link.');
+      btn.onclick=async()=>{
+        if(window.DBBUN_STATIC||confirm('Open the companion video in a new tab?\n\nChoose Cancel instead to change or remove its link.')){window.open(job.video_url,'_blank','noopener')}
+        else await change();
+      };
+    }else{
+      btn.textContent='Watch video';btn.title='Link a companion video (e.g. made with NotebookLM) for this analysis.';btn.onclick=change;
+    }
+  };
+  async function change(){
+    const url=prompt("Paste this analysis's YouTube video URL (leave blank to remove):",job.video_url||'');
+    if(url===null)return;
+    try{const r=await post('/api/set-video-url',{id,url:url.trim()});job.video_url=r.video_url;refresh()}catch(e){alert(e.message)}
+  }
+  refresh();
 }
 async function setVideoLink(){
   const url=prompt("Paste this simulation's YouTube video URL (leave blank to remove):",current?.video_url||'');
@@ -1400,7 +1586,7 @@ async function loadBrowse(resources){
   if(sel.value)loadBrowseUnits(sel.value);
   try{
     const a=await(await fetch('/api/admin/audit')).json();
-    $('browseAudit').innerHTML=a.missing?'Quality audit has not been run yet.':'<b>Quality audit</b> (recomputed from the raw files by code, no AI model): '+a.units_audited+' units checked. Files and hashes: '+a.integrity.problems+' problems across '+a.integrity.raw_files_hashed+' raw files. Arithmetic: '+a.arithmetic.calculations_recomputed.toLocaleString()+' stored calculations recomputed, '+a.arithmetic.mismatches+' mismatches. CDC Lyme case tables: '+a.recount.rows_checked+' year-and-status rows recounted from the raw CSVs, '+a.recount.mismatches+' mismatches. Table-of-contents pages kept as evidence: '+a.noise.passages_flagged+' of '+a.noise.passage_units+' passage units checked. A clean audit shows the summaries copy their sources faithfully; it does not show the source is right, and every unit is still marked not independently reviewed.';
+    $('browseAudit').innerHTML=a.missing?'Quality audit has not been run yet.':'<b>Quality audit</b> (checked by code, no AI model): '+a.units_audited+' units checked (this count includes the 49 PubMed papers kept for testing only, so it is higher than the corpus size). Files and hashes: '+a.integrity.problems+' problems across '+a.integrity.raw_files_hashed+' raw files. Arithmetic: '+a.arithmetic.calculations_recomputed.toLocaleString()+' stored calculations re-checked against their stored facts, '+a.arithmetic.mismatches+' mismatches; this does not re-read the raw files. CDC Lyme case tables: '+a.recount.rows_checked+' year-and-status rows recounted from the raw CSVs, '+a.recount.mismatches+' mismatches. Table-of-contents pages kept as evidence: '+a.noise.passages_flagged+' of '+a.noise.passage_units+' passage units checked. A clean audit shows the summaries copy their sources faithfully; it does not show the source is right, and every unit is still marked not independently reviewed.';
   }catch(e){}
   try{
     const cards=await(await fetch('/api/evidence-cards')).json();
@@ -1609,6 +1795,177 @@ function renderCrossAnalysisBar(){
     : 'Tick one Lyme disease simulation and one Long COVID simulation below to compare them side by side.'+(picked.length?` Selected so far: ${lymeN} Lyme disease, ${covidN} Long COVID.`:'');
   $('crossAnalysisRun').disabled=!ready||crossAnalysisBusy;
 }
+const CROSS_SHORT_LABELS={direct_costs:'Out-of-pocket costs',employment:'Work and income',opportunity_costs:'Long-term costs',caregiving:'Caregiving',
+  care_continuity_risk:'Care continuity',congenital_transmission:'Parent to child',diagnostic_delay:'Diagnostic delay',iatrogenic_harm:'Treatment harm',
+  access_barriers:'Access barriers',medical_disbelief:'Medical disbelief',administrative:'Paperwork burden',cognitive:'Cognitive impact',
+  psychological_burden:'Psychological',quality_of_life:'Quality of life',surveillance_undercount:'Undercounting',care_fragmentation:'Fragmented care'};
+const SVGNS='http://www.w3.org/2000/svg';
+function svgEl(tag,attrs,parent){const e=document.createElementNS(SVGNS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+function renderCrossBubbleChart(box,job,titles){
+  const lf=job.library_fill;
+  if(!lf?.landscape?.length)return;
+  const nm=k=>BURDEN_CATEGORY_LABELS[k],short=k=>CROSS_SHORT_LABELS[k]||nm(k);
+  const items=lf.landscape.map(r=>({category:r.category,lyme:r.lyme,covid:r.longCovid,pairL:r.pair_lyme,pairC:r.pair_longCovid,total:r.lyme+r.longCovid}));
+  const plotted=items.filter(i=>i.total>0),gapItems=items.filter(i=>!i.total);
+  const both=plotted.filter(i=>i.lyme&&i.covid),onlyL=plotted.filter(i=>i.lyme&&!i.covid),onlyC=plotted.filter(i=>!i.lyme&&i.covid);
+  const sec=document.createElement('div');sec.className='crossViz';
+  text('h3','Where this pair sits in the evidence on all '+lf.library_size+' simulators',sec);
+  const lead='Across the library, '+both.length+' of the 16 burdens are measured for both Lyme disease and Long COVID, '+onlyL.length+' only for Lyme disease, '+onlyC.length+' only for Long COVID, and '+gapItems.length+' by no simulator at all. The rings show what the two papers you are comparing cover.';
+  text('p',lead,sec).className='crossVizLead';
+  const stats=document.createElement('div');stats.className='crossVizStats';
+  for(const [n,label] of [[both.length,'measured for both conditions'],[onlyL.length,'measured only for Lyme disease'],[onlyC.length,'measured only for Long COVID'],[gapItems.length,'measured by no simulator (a gap)']]){
+    const c=document.createElement('div');c.className='crossVizStat';text('b',String(n),c);text('span',(n===1?'burden ':'burdens ')+label,c);stats.appendChild(c);
+  }
+  sec.appendChild(stats);
+  const maxL=Math.max(1,...plotted.map(i=>i.lyme)),maxC=Math.max(1,...plotted.map(i=>i.covid));
+  const W=900,PL=92,PR=24,PT=34,PB=70,gapRows=gapItems.length>9?2:(gapItems.length?1:0);
+  const plotW=W-PL-PR,plotH=470,H=PT+plotH+PB+(gapItems.length?70+gapRows*70:0);
+  const xOf=v=>PL+(v+0.5)/(maxL+1)*plotW,yOf=v=>PT+plotH-(v+0.5)/(maxC+1)*plotH;
+  const scroll=document.createElement('div');scroll.className='crossVizScroll';
+  const svg=svgEl('svg',{viewBox:'0 0 '+W+' '+H,class:'crossVizSvg',role:'img','aria-label':'Evidence landscape: each of the 16 burdens placed by how many Lyme disease and how many Long COVID simulators measure it.'},scroll);
+  svgEl('rect',{x:PL,y:PT,width:plotW,height:plotH,fill:'currentColor','fill-opacity':.03,stroke:'currentColor','stroke-opacity':.25},svg);
+  const diag=svgEl('line',{x1:xOf(-0.5),y1:yOf(-0.5),x2:PL+plotW,y2:PT,stroke:'currentColor','stroke-opacity':.3,'stroke-dasharray':'6 5'},svg);
+  const cap=(x,y,t,anchor,fill)=>{const e=svgEl('text',{x,y,'text-anchor':anchor||'start','font-size':13.5,'font-weight':700,fill:fill||'currentColor','fill-opacity':fill?1:.7},svg);e.textContent=t};
+  cap(PL+8,PT+20,'\u2191 more Long COVID evidence','start','#a85d12');
+  for(let v=0;v<=maxL;v++){const x=xOf(v);svgEl('line',{x1:x,y1:PT+plotH,x2:x,y2:PT+plotH+5,stroke:'currentColor','stroke-opacity':.5},svg);const t=svgEl('text',{x,y:PT+plotH+20,'text-anchor':'middle','font-size':13,fill:'currentColor','fill-opacity':.75},svg);t.textContent=String(v)}
+  for(let v=0;v<=maxC;v++){const y=yOf(v);svgEl('line',{x1:PL-5,y1:y,x2:PL,y2:y,stroke:'currentColor','stroke-opacity':.5},svg);const t=svgEl('text',{x:PL-10,y:y+4.5,'text-anchor':'end','font-size':13,fill:'currentColor','fill-opacity':.75},svg);t.textContent=String(v)}
+  const xt=svgEl('text',{x:PL+plotW/2,y:PT+plotH+46,'text-anchor':'middle','font-size':14,'font-weight':700,fill:'currentColor'},svg);xt.textContent='Lyme disease simulators that measure the burden';
+  const yt=svgEl('text',{transform:'translate(26 '+(PT+plotH/2)+') rotate(-90)','text-anchor':'middle','font-size':14,'font-weight':700,fill:'currentColor'},svg);yt.textContent='Long COVID simulators that measure it';
+  const R=i=>Math.min(54,33+4.6*Math.sqrt(i.total)),placed=[];
+  for(const it of [...plotted].sort((a,b)=>b.total-a.total)){
+    const r=R(it),ix=xOf(it.lyme),iy=yOf(it.covid);let spot=null;
+    for(let k=0;k<3000&&!spot;k++){
+      const ang=k*0.62,rad=2.6*Math.sqrt(k)*3;
+      const x=ix+rad*Math.cos(ang),y=iy+rad*Math.sin(ang);
+      if(x-r<PL+2||x+r>PL+plotW-2||y-r<PT+2||y+r>PT+plotH-2)continue;
+      if(placed.every(q=>Math.hypot(q.x-x,q.y-y)>=q.r+r+3))spot={x,y,r,item:it};
+    }
+    if(spot)placed.push(spot);
+  }
+  const detail=document.createElement('p');detail.className='crossVizDetail';
+  detail.textContent='Tap a bubble to see how many simulators measure that burden and what each of your two papers reports.';
+  let selected=null;
+  const tables=job.cross_tables||{};
+  const STY={l:{fill:'#cfe0f7',stroke:'#2a78d6',ink:'#14305a'},c:{fill:'#fbdcbc',stroke:'#d9822b',ink:'#5a3208'},b:{fill:'#d9d9d9',stroke:'#6a6a6a',ink:'#222'},n:{fill:'#f2f2f2',stroke:'#8a8a8a',ink:'#555'}};
+  const draw=(q,kind,dashed)=>{
+    const it=q.item,st=STY[kind],inPair=it.pairL||it.pairC;
+    const g=svgEl('g',{class:'vizBubble',tabindex:0,role:'button','aria-label':nm(it.category)+': '+it.lyme+' Lyme disease and '+it.covid+' Long COVID simulators'+(inPair?'; covered by one of the two compared papers':'')},svg);
+    if(inPair)svgEl('circle',{cx:q.x,cy:q.y,r:q.r+6,fill:'none',stroke:'#111','stroke-width':3},g);
+    svgEl('circle',{cx:q.x,cy:q.y,r:q.r,fill:st.fill,stroke:st.stroke,'stroke-width':2.5,'stroke-dasharray':dashed?'5 4':'0'},g);
+    const words=short(it.category).split(' ');const lines=[];let cur='';
+    for(const w of words){if((cur+' '+w).trim().length>(q.r<38?10:12)&&cur){lines.push(cur);cur=w}else cur=(cur+' '+w).trim()}
+    lines.push(cur);
+    const t=svgEl('text',{x:q.x,y:q.y-(lines.length-1)*6.2+4,'text-anchor':'middle','font-size':q.r<38?11:12,'font-weight':700,fill:st.ink},g);
+    lines.forEach((ln,i)=>{const ts=svgEl('tspan',{x:q.x,dy:i?12.5:0},t);ts.textContent=ln});
+    const pick=()=>{
+      if(selected)selected.classList.remove('sel');selected=g;g.classList.add('sel');
+      detail.replaceChildren();
+      const b=document.createElement('b');b.textContent=nm(it.category)+'. ';detail.appendChild(b);
+      detail.appendChild(document.createTextNode('Measured by '+it.lyme+' of the Lyme disease simulators and '+it.covid+' of the Long COVID simulators in the library. '+(BURDEN_CATEGORY_EXPLANATIONS[it.category]||'')+' '));
+      const figs=tables.figures_by_category?.[it.category]||{};
+      for(const [grp,name] of [['lyme','The Lyme disease paper'],['longCovid','The Long COVID paper']]){
+        const f=(figs[grp]||[])[0];
+        const line=document.createElement('span');line.className='cited';
+        line.textContent=f?name+': '+fmtOutputValue(f.value)+' '+f.unit+' - '+f.label:name+': does not measure this.';
+        detail.appendChild(line);
+      }
+    };
+    g.addEventListener('click',pick);
+    g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});
+  };
+  for(const q of placed){const it=q.item;draw(q,it.lyme&&it.covid?(Math.abs(it.lyme-it.covid)<=1?'b':it.lyme>it.covid?'l':'c'):it.lyme?'l':'c',false)}
+  if(gapItems.length){
+    const gy=PT+plotH+PB+10;
+    const gt=svgEl('text',{x:W/2,y:gy,'text-anchor':'middle','font-size':15,'font-weight':700,fill:'currentColor'},svg);
+    gt.textContent='No simulator in the library measures these '+gapItems.length+': the biggest evidence gap';
+    const perRow=gapRows>1?Math.ceil(gapItems.length/2):gapItems.length,gap=Math.min(104,(W-80)/perRow);
+    gapItems.forEach((it,i)=>{
+      const row=Math.floor(i/perRow),inRow=Math.min(perRow,gapItems.length-row*perRow),col=i%perRow;
+      draw({x:W/2+(col-(inRow-1)/2)*gap,y:gy+44+row*(gap+4),r:Math.min(36,gap/2-3),item:it},'n',true);
+    });
+  }
+  sec.appendChild(scroll);sec.appendChild(detail);
+  const mine=lf.landscape.filter(r=>r.pair_lyme||r.pair_longCovid).map(r=>nm(r.category).toLowerCase());
+  const key=document.createElement('div');key.className='burdenKey';
+  key.innerHTML='<span><i style="background:#cfe0f7;border:2px solid #2a78d6;box-sizing:border-box"></i>more Lyme disease evidence</span><span><i style="background:#fbdcbc;border:2px solid #d9822b;box-sizing:border-box"></i>more Long COVID evidence</span><span><i style="background:#d9d9d9;border:2px solid #6a6a6a;box-sizing:border-box"></i>about equal</span><span><i style="background:#fff;border:3px solid #111;border-radius:50%;box-sizing:border-box"></i>covered by the two papers compared</span>';
+  sec.appendChild(key);
+  text('p','The two papers compared here cover: '+(mine.length?mine.join(', '):'none of the 16 burdens')+'. Bubble size is how many simulators measure the burden. A burden in the gap row is missing from the evidence, which is not proof that it does not exist. This compares simulators built from published papers; it does not describe either condition in general.',sec).className='changeNote';
+  const list=document.createElement('details');text('summary','Read as a list',list);
+  list.open=window.innerWidth<=700;
+  const ul=document.createElement('ul');
+  for(const [label,arr] of [['Measured for both conditions',both],['Only for Lyme disease',onlyL],['Only for Long COVID',onlyC],['Measured by no simulator',gapItems]])
+    text('li',label+': '+(arr.length?arr.map(i=>nm(i.category)+(i.total?' ('+i.lyme+' Lyme, '+i.covid+' Long COVID)':'')).join('; '):'none')+'.',ul);
+  list.appendChild(ul);sec.appendChild(list);
+  box.appendChild(sec);
+}
+async function openSimulationById(id){
+  try{
+    const job=await(await fetch('/api/jobs/'+id)).json();
+    if(job.status==='missing'){alert('This simulation record could not be found.');return}
+    closeCrossAnalysis();jobId=id;bundle=null;showReview(job);
+  }catch(e){alert(e.message)}
+}
+function renderCrossLearning(box,job){
+  const L=job.learning;
+  if(!L?.learning_cards?.length)return;
+  const sec=document.createElement('div');sec.className='crossLearn';
+  text('h3','What each condition could learn from the other',sec);
+  if(L.takeaway)text('p',plainCrossText(L.takeaway),sec).style.cssText='font-size:17px;line-height:1.5;margin:0';
+  const grid=document.createElement('div');grid.className='crossLearnGrid';
+  for(const c of L.learning_cards){
+    const card=document.createElement('div');card.className='learnCard';
+    const fromLyme=c.direction==='lyme_to_long_covid';
+    text('span',fromLyme?'Lyme disease paper \u2192 Long COVID':'Long COVID paper \u2192 Lyme disease',card).className='learnDir '+(fromLyme?'lyme':'covid');
+    text('h4',plainCrossText(c.headline),card);
+    if(c.category&&BURDEN_CATEGORY_LABELS[c.category]){const t=text('span',BURDEN_CATEGORY_LABELS[c.category],card);t.className='libraryItemTag';t.style.alignSelf='flex-start'}
+    const part=(label,value,cls)=>{const d=document.createElement('div');if(cls)d.className=cls;text('span',label,d).className='learnLabel';text('p',plainCrossText(value),d);card.appendChild(d)};
+    part('What it found',c.what_it_found);
+    part('What the other paper cannot say',c.gap_on_other_side);
+    part('A question worth asking',c.question_to_ask,'learnAsk');
+    grid.appendChild(card);
+  }
+  sec.appendChild(grid);
+  if(L.unverified_numbers?.length)text('p','Some numbers above could not be matched to the simulators\' data and should be checked before use: '+L.unverified_numbers.join(', ')+'.',sec).className='crossWarn';
+  text('p','These are questions to ask, not conclusions. The two papers differ in population, year and method, so neither condition is shown to be better or worse off.',sec).className='changeNote';
+  box.appendChild(sec);
+}
+function renderCrossLibraryFill(box,job){
+  const lf=job.library_fill;
+  if(!lf)return;
+  const sec=document.createElement('div');sec.className='crossFill';
+  text('h3','What the rest of the library adds',sec);
+  text('p','This pair is two of '+lf.library_size+' simulators. The other simulators measure some of the burdens that these two papers leave open. Choose one to open it.',sec).className='changeNote';
+  const nm=k=>BURDEN_CATEGORY_LABELS[k]||k;
+  const holes=lf.holes?.neither_condition||[];
+  if(holes.length){
+    const d=document.createElement('div');d.className='fillHoles';
+    text('b','The biggest evidence gap: ',d);
+    d.append('no simulator in the library measures '+holes.map(k=>nm(k).toLowerCase()).join(', ')+', for Lyme disease or for Long COVID ('+holes.length+' of 16 burdens). These are open questions for both conditions.');
+    sec.appendChild(d);
+  }
+  const one=[...(lf.holes?.only_lyme||[])].map(nm),two=[...(lf.holes?.only_longCovid||[])].map(nm);
+  if(one.length||two.length){
+    const d=text('p',(one.length?'Measured only for Lyme disease across the whole library: '+one.join(', ').toLowerCase()+'. ':'')+(two.length?'Measured only for Long COVID: '+two.join(', ').toLowerCase()+'.':''),sec);
+    d.style.cssText='font-size:15.5px;margin:6px 0';
+  }
+  for(const row of [...(lf.fill||[])].sort((x,y)=>BURDEN_CATEGORY_ORDER.indexOf(x.category)-BURDEN_CATEGORY_ORDER.indexOf(y.category))){
+    const r=document.createElement('div');r.className='fillRow';
+    text('b',nm(row.category),r);
+    const chips=document.createElement('div');chips.className='fillChips';
+    for(const [side,cls,label] of [['lyme','lyme','Lyme disease'],['longCovid','covid','Long COVID']]){
+      for(const item of row[side]||[]){
+        const b=document.createElement('button');b.type='button';b.className='fillChip '+cls;
+        const short=item.title.replace(/ \(.*$/,'');b.textContent=label+': '+(short.length>62?short.slice(0,60).trim()+'...':short);b.title=item.title;
+        b.onclick=()=>openSimulationById(item.id);chips.appendChild(b);
+      }
+      const extra=(row[side+'_total']||0)-(row[side]||[]).length;
+      if(extra>0)text('span','+'+extra+' more '+label,chips).className='fillNone';
+    }
+    if(!chips.children.length)text('span','No other simulator measures this.',chips).className='fillNone';
+    r.appendChild(chips);sec.appendChild(r);
+  }
+  box.appendChild(sec);
+}
 function printCrossAnalysis(){
   const originalTitle=document.title;
   const now=new Date(),pad=n=>String(n).padStart(2,'0');
@@ -1619,6 +1976,13 @@ function printCrossAnalysis(){
   window.print();
 }
 const LIMITATION_LABELS={claims_undercounting_caveat:'Counts from claims or diagnosis codes undercount cases',subgroup_disaggregation_caveat:'Results pooled across sex or gender',funding_gap_caveat:'Research funding gap noted',systemic_gap_caveat:'System-level gap noted'};
+const FIELD_NAME_WORDS={claims_undercounting_caveat:'claims-undercounting limitation',subgroup_disaggregation_caveat:'subgroup limitation',
+  funding_gap_caveat:'funding-gap limitation',systemic_gap_caveat:'system-level gap limitation',sex_gender_findings:'sex and gender findings',
+  modeled_issues:'modeled figures',real_stats:'the counts',economic_burden_scope:'economic burden scope',decision_relevance:'decision relevance'};
+function plainFieldNames(t){
+  return String(t||'').replace(/\b[a-z]+(?:_[a-z]+)+\b/g,m=>FIELD_NAME_WORDS[m]||m.replace(/_/g,' '));
+}
+function plainCrossText(t){return plainFieldNames(t).replace(/covers exactly one Lyme disease paper and one Long COVID paper/gi,'covers two papers: one on Lyme disease and one on Long COVID').replace(/covers exactly (two|2) /gi,'covers two ').replace(/\bexactly two papers\b/gi,'two papers').replace(/\bexactly 2 papers\b/gi,'two papers').replace(/exactly (one|two|1|2) /gi,'$1 ')}
 function renderCrossTables(box,job,ca,titles){
   const tables=job.cross_tables||{},sizes=tables.group_sizes||{lyme:0,longCovid:0};
   const section=(heading,note)=>{
@@ -1629,11 +1993,11 @@ function renderCrossTables(box,job,ca,titles){
   if(ca.headline_findings?.length){
     const sec=section('What stands out');
     const ul=document.createElement('ul');ul.className='crossHeadline';
-    for(const h of ca.headline_findings)text('li',h,ul);
+    for(const h of ca.headline_findings)text('li',plainCrossText(h),ul);
     sec.appendChild(ul);
   }
   if(ca.comparison_rows?.length){
-    const sec=section('Lyme disease and Long COVID, side by side',`Based on ${sizes.lyme} Lyme disease and ${sizes.longCovid} Long COVID simulator${sizes.lyme+sizes.longCovid===1?'':'s'}. Each simulator is built from one published paper.`);
+    const sec=section('Lyme disease and Long COVID, side by side',(sizes.lyme===1&&sizes.longCovid===1?'Based on one Lyme disease paper and one Long COVID paper.':`Based on ${sizes.lyme} Lyme disease and ${sizes.longCovid} Long COVID simulators. Each simulator is built from one published paper.`));
     const wrap=document.createElement('div');wrap.style.overflowX='auto';
     const table=document.createElement('table');table.className='crossTable';
     const head=table.createTHead().insertRow();
@@ -1645,13 +2009,13 @@ function renderCrossTables(box,job,ca,titles){
       const dim=text('td',row.dimension,tr);dim.className='dim';
       if(row.category&&BURDEN_CATEGORY_LABELS[row.category]){const t=text('span',BURDEN_CATEGORY_LABELS[row.category],dim);t.className='libraryItemTag';t.style.display='block'}
       for(const side of ['lyme','long_covid']){
-        const td=text('td',row[side]?.finding||'',tr);
+        const td=text('td',plainCrossText(row[side]?.finding||''),tr);
         const ids=row[side]?.job_ids||[];
         if(ids.length)text('span','From: '+ids.map(i=>titles[i]||i).join('; '),td).className='cited';
       }
       const verdictTd=tr.insertCell();
       text('span',VERDICT_LABELS[row.verdict]||row.verdict,verdictTd).className='crossVerdict '+row.verdict;
-      if(row.why_it_matters)text('span',row.why_it_matters,verdictTd).className='cited';
+      if(row.why_it_matters)text('span',plainCrossText(row.why_it_matters),verdictTd).className='cited';
     }
     wrap.appendChild(table);sec.appendChild(wrap);
     if(ca.unverified_numbers?.length)text('p','Some numbers in the text above could not be matched to the simulators\' data and should be checked before use: '+ca.unverified_numbers.join(', ')+'.',sec).className='crossWarn';
@@ -1661,7 +2025,7 @@ function renderCrossTables(box,job,ca,titles){
     const wrap=document.createElement('div');wrap.style.overflowX='auto';
     const table=document.createElement('table');table.className='crossTable';
     const head=table.createTHead().insertRow();
-    for(const h of ['Burden',`Lyme disease (of ${sizes.lyme})`,`Long COVID (of ${sizes.longCovid})`,'Gap'])text('th',h,head);
+    for(const h of ['Burden',sizes.lyme>1?`Lyme disease (of ${sizes.lyme})`:'Lyme disease',sizes.longCovid>1?`Long COVID (of ${sizes.longCovid})`:'Long COVID','Gap'])text('th',h,head);
     const body=table.createTBody();
     const byKey=new Map(tables.coverage.map(r=>[r.category,r]));
     for(const key of BURDEN_CATEGORY_ORDER){
@@ -1706,7 +2070,7 @@ function renderCrossTables(box,job,ca,titles){
     wrap.appendChild(table);sec.appendChild(wrap);
   }
   if(tables.limitations?.length){
-    const sec=section('How often each limitation applies',`Limitations flagged in the simulators' own analyses (of ${sizes.lyme} Lyme disease and ${sizes.longCovid} Long COVID).`);
+    const sec=section('How often each limitation applies',(sizes.lyme>1||sizes.longCovid>1?`Limitations flagged in the simulators' own analyses (of ${sizes.lyme} Lyme disease and ${sizes.longCovid} Long COVID).`:"Limitations flagged in each paper's own analysis."));
     const table=document.createElement('table');table.className='crossTable';
     const head=table.createTHead().insertRow();
     for(const h of ['Limitation','Lyme disease','Long COVID'])text('th',h,head);
@@ -1714,9 +2078,10 @@ function renderCrossTables(box,job,ca,titles){
     for(const l of tables.limitations){
       const tr=body.insertRow();
       text('td',LIMITATION_LABELS[l.limitation]||l.limitation,tr).className='dim';
-      text('td',`${l.lyme} of ${sizes.lyme}`,tr);text('td',`${l.longCovid} of ${sizes.longCovid}`,tr);
+      text('td',sizes.lyme>1?`${l.lyme} of ${sizes.lyme}`:(l.lyme?'Yes':'No'),tr);text('td',sizes.longCovid>1?`${l.longCovid} of ${sizes.longCovid}`:(l.longCovid?'Yes':'No'),tr);
     }
-    sec.appendChild(table);
+    const limitWrap=document.createElement('div');limitWrap.style.overflowX='auto';limitWrap.appendChild(table);
+    sec.appendChild(limitWrap);
   }
   const ag=tables.crosscheck_agreement||{};
   if(Object.values(ag).some(g=>Object.keys(g).length)){
@@ -1736,9 +2101,17 @@ function renderCrossAnalysisResult(job,id){
   box.dataset.jobId=id||'';
   box.replaceChildren();
   $('libraryMain').hidden=true;
+  const header=document.createElement('div');header.className='resultsHeader';header.style.display='flex';
   const backButton=document.createElement('button');backButton.type='button';backButton.className='secondary';
   backButton.textContent='← Back to the library';backButton.onclick=closeCrossAnalysis;
-  box.appendChild(backButton);
+  header.appendChild(backButton);
+  const headerRight=document.createElement('div');headerRight.className='resultsHeaderRight';
+  const headerPdf=document.createElement('button');headerPdf.type='button';headerPdf.className='secondary';
+  headerPdf.textContent='Print / save as PDF';headerPdf.onclick=printCrossAnalysis;
+  const headerVideo=document.createElement('button');headerVideo.type='button';headerVideo.className='secondary';
+  headerRight.append(headerPdf,headerVideo);header.appendChild(headerRight);
+  wireVideoButton(headerVideo,job,id);
+  box.appendChild(header);
   text('h2','Cross-pollination analysis: Lyme disease and Long COVID',box).style.marginTop='14px';
   const stats=document.createElement('div');stats.className='crossAnalysisStats';
   const counts=job.job_counts||{};
@@ -1753,7 +2126,10 @@ function renderCrossAnalysisResult(job,id){
     text('b','Papers compared: ',pair);
     pair.append(job.selected_ids.map(i=>titles[i]||i).join('  and  '));
   }
-  if(ca.summary)text('p',ca.summary,box).style.cssText='font-size:17px;line-height:1.5;font-weight:500;margin:0 0 4px';
+  if(ca.summary)text('p',plainCrossText(ca.summary),box).style.cssText='font-size:17px;line-height:1.5;font-weight:500;margin:0 0 4px';
+  renderCrossBubbleChart(box,job,titles);
+  renderCrossLearning(box,job);
+  renderCrossLibraryFill(box,job);
   renderCrossTables(box,job,ca,titles);
   const renderThemeSection=(heading,items,showCondition)=>{
     if(!items?.length)return;
@@ -1770,7 +2146,7 @@ function renderCrossAnalysisResult(job,id){
       if(item.evidence?.length){
         const ul=document.createElement('ul');ul.className='crossThemeEvidence';
         for(const ev of item.evidence){
-          text('li',`${titles[ev.job_id]||ev.job_id}: ${ev.note||''}`,ul);
+          text('li',plainCrossText(`${titles[ev.job_id]||ev.job_id}: ${ev.note||''}`),ul);
         }
         card.appendChild(ul);
       }
@@ -1784,19 +2160,16 @@ function renderCrossAnalysisResult(job,id){
     const sec=document.createElement('div');sec.className='crossAnalysisSection';
     text('h3','Evidence gaps shared across conditions',sec);
     const ul=document.createElement('ul');ul.style.cssText='margin:0;padding-left:20px;color:var(--muted);font-size:16px';
-    for(const gap of ca.evidence_gaps_shared)text('li',gap,ul);
+    for(const gap of ca.evidence_gaps_shared)text('li',plainCrossText(gap),ul);
     sec.appendChild(ul);box.appendChild(sec);
   }
   if(ca.limitations){
     const sec=document.createElement('div');sec.className='crossAnalysisSection';
     text('h3','Limitations',sec);
-    text('p',ca.limitations,sec).style.cssText='font-size:16px;color:var(--muted)';
+    text('p',plainCrossText(ca.limitations),sec).style.cssText='font-size:16px;color:var(--muted)';
     box.appendChild(sec);
   }
   const actions=document.createElement('div');actions.className='libraryActions';
-  const pdfBtn=document.createElement('button');pdfBtn.textContent='Print as PDF';pdfBtn.className='secondary';pdfBtn.type='button';
-  pdfBtn.onclick=printCrossAnalysis;
-  actions.appendChild(pdfBtn);
   const deleteBtn=document.createElement('button');deleteBtn.textContent='Delete this analysis';deleteBtn.className='secondary danger';deleteBtn.type='button';
   deleteBtn.onclick=async()=>{
     if(!confirm('Delete this cross-pollination analysis? This cannot be undone.'))return;
@@ -1820,6 +2193,8 @@ $('crossAnalysisRun').onclick=async()=>{
   if(crossAnalysisBusy)return;
   const ids=[...librarySelected];
   if(ids.length!==2)return;
+  const saved=libraryAllRows.some(r=>r.id===ids[0]&&(r.cross_analyses||[]).some(c=>c.partner_id===ids[1]));
+  if(!saved&&!confirm('This pair has not been compared before. Creating the comparison uses the AI model: about a minute, and roughly $0.30 to $0.40 in model fees. Continue?'))return;
   crossAnalysisBusy=true;$('crossAnalysisRun').disabled=true;
   $('crossAnalysisStatus').hidden=false;$('crossAnalysisStatus').textContent='Starting…';
   try{
@@ -2327,6 +2702,7 @@ function render(){
       const input=document.createElement('input');
       Object.assign(input,{type:'number',min:i.min,max:i.max,step:i.step,value:i.default});
       input.className='controlInput';
+      input.style.width=Math.min(240,Math.max(110,String(Math.round(i.max)).length*12+44))+'px';
       input.setAttribute('aria-label',i.label);
       group.appendChild(input);
       text('span',i.unit,group).className='controlUnit';
@@ -2619,7 +2995,7 @@ function render(){
       const scenarioFig=document.createElement('figure');
       const img=document.createElement('img');img.src='data:image/png;base64,'+fig.png_base64;img.alt=o.label+' swept one input at a time';
       scenarioFig.appendChild(img);
-      addFigCaption(scenarioFig,`Each bar shows what "${o.label}" (${o.unit}) equals when one assumption is moved to a specific value across its full range, with every other assumption held at its default - this is NOT one of the named what-if scenarios below, and not the sliders above. This is a snapshot computed when the simulation was generated, not a live view of your current slider positions.`);
+      addFigCaption(scenarioFig,`Each bar shows what "${o.label}" (${o.unit}) equals when one assumption is moved to a specific value across its full range, with every other assumption held at its default - this is NOT one of the named what-if scenarios below, and not the assumptions above. This is a snapshot computed when the simulation was generated, not a live view of your current slider positions.`);
       appendPointsTable(scenarioFig,fig.points,o.unit);
       card.appendChild(scenarioFig);
       if(fig.tornado_png_base64){

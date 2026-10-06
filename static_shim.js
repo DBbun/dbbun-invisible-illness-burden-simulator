@@ -46,6 +46,9 @@
     } else if (url.pathname === '/api/evidence-card') {
       link.setAttribute('href', 'data/evidence_card/' + safe(url.searchParams.get('id')) + '.json');
       link.setAttribute('target', '_blank');
+    } else if (url.pathname === '/api/v1/docs') {
+      link.setAttribute('href', 'API.md');
+      link.setAttribute('target', '_blank');
     } else if (url.pathname === '/api/federal-source') {
       event.preventDefault();
       alert('The original federal data file is not included in the public demo because of its size. It is available from the agency that publishes it, and in the full tool.');
@@ -64,6 +67,14 @@
       'Generating new simulators, deleting and administration are turned off here. These are research prototypes built from published papers, not medical or financial advice. Independent entry by DBbun LLC; not endorsed by HHS or NIH.';
     const main = document.querySelector('main');
     main.insertBefore(banner, main.firstChild);
+    // The Export tab describes the full bundle; say plainly what this public copy leaves out.
+    const exportPanel = document.querySelector('.tabPanel[data-tab="export"]');
+    if (exportPanel) {
+      const note = document.createElement('p');
+      note.className = 'docSummary';
+      note.innerHTML = '<b>This public demo\'s download is a trimmed copy.</b> It leaves out the uploaded source paper (it may be copyrighted; the Evidence tab links to it), the raw federal data files (too large; each agency publishes them), the application source code and the full model-call audit trail. The processed federal summaries the model saw are included. The full tool, run on your own machine, produces the complete bundle with every part listed below.';
+      exportPanel.insertBefore(note, exportPanel.firstChild);
+    }
     // Write controls that would be dead ends in a read-only copy.
     const prune = () => {
       document.querySelectorAll('#libraryList button, #libraryPanel .libTabNav button, #libraryBulkBar').forEach((el) => {

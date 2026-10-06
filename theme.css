@@ -18,3 +18,6 @@ input[type=range],input[type=checkbox]{accent-color:#444}a:focus,button:focus,in
 #conditioncheck{display:none}#conditionchoices button{background:#fff;color:var(--ink);border:1px solid var(--line);font-weight:600}#conditionchoices button:hover{background:#f0f0f0;color:#111}
 @media(max-width:1080px){main{margin:0 20px 35px!important;max-width:none}}
 @media(max-width:650px){header{padding:12px 20px;grid-template-columns:auto 1fr}.header-caption{font-size:12px}.header-caption{grid-column:2}.header-caption+#libraryToggle,#libraryToggle{grid-column:1/-1;grid-row:2;justify-self:center}.intro{padding:24px 20px 20px}h1{white-space:normal}main{margin:0 12px 25px!important;padding:22px 18px}.choices label{padding:9px 12px}.intro-text{font-size:15px}}
+/* Phone width (2026-10-06 review): the three header buttons now sit in .headerButtons, so the older #libraryToggle rule no
+   longer moved them; without this the row ran off the right edge and "Administrator" was clipped. */
+@media(max-width:650px){.headerButtons{grid-column:1/-1;grid-row:2;justify-self:center;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.header-caption{min-width:0;overflow-wrap:anywhere}}
