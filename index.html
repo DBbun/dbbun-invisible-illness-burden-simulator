@@ -202,6 +202,39 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .catDetail{margin-top:10px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:15px;line-height:1.45;min-height:3.2em}
 .catDetail h5{margin:0 0 4px;font-size:16px}.catDetail p{margin:0 0 6px}.catDetail .catFamChip{display:inline-block;font-size:12px;font-weight:700;padding:1px 9px;border-radius:999px;border:2px solid var(--c);margin-bottom:6px}
 @media (max-width:720px){.catMapSvg{display:none}.catMapList{display:block}}
+.srOnly{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.coverageMap{margin:0 0 22px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:#fff}.coverageMap h3{margin:0 0 4px;font-size:18px}.covNote{font-size:14px;margin:0 0 10px;max-width:none}
+.covWrap{overflow-x:auto;padding-bottom:4px}.covWrap:focus-visible{outline:2px solid #242424;outline-offset:2px}
+.covTable{border-collapse:separate;border-spacing:2px;font-size:12.5px;table-layout:fixed;width:calc(100% - 150px);min-width:900px;margin-right:150px}.covTable col.cSim{width:290px}.covTable col.cBur{width:34px}.covTable col.cEnd{width:84px}
+.covTable th,.covTable td{padding:0}.covCorner,.covEnd{font-size:12px;font-weight:700;text-align:left;padding:2px 6px!important;vertical-align:bottom;color:#242424}
+.covFam{font-size:12px;font-weight:700;text-align:center;padding:4px 4px!important;border-bottom:3px solid var(--c);color:#242424}
+.covBurden{height:150px;width:34px;position:relative;vertical-align:bottom;border-bottom:1px solid #e3e3e3}.covBurden div{position:absolute;left:50%;bottom:6px;transform-origin:0 100%;transform:rotate(-45deg);white-space:nowrap;font-size:12px;font-weight:400;color:#242424;line-height:1.2;text-align:left;margin-left:-4px}
+.covGroup th{text-align:left;font-size:12.5px;padding:7px 6px 3px!important;color:#242424;border-bottom:1px solid #d6d6d6;background:#fcfcfb}
+.covName{text-align:left;font-weight:400;overflow:hidden;padding:0 6px!important}.covName .linkButton{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;font-size:12.5px;padding:3px 0;background:none;border:0;color:#242424;text-decoration:underline;text-decoration-color:#bdbdbd;cursor:pointer;width:auto}
+.covName .linkButton:hover{text-decoration-color:#242424}tfoot .covName{font-weight:700;font-size:12px;border-top:1px solid #d6d6d6;padding-top:5px!important}
+.covOn{height:24px;text-align:center}.covOff{height:24px;background:#f3f3f2;border-radius:4px}
+.covCell{display:block;width:100%;height:24px;border:2px solid var(--c);border-radius:5px;background:var(--c);color:#fff;font-size:12px;font-weight:700;cursor:pointer;padding:0;line-height:1}.covCell:hover,.covCell:focus-visible{outline:2px solid #242424;outline-offset:1px}
+.covEnd{white-space:nowrap;color:#242424;font-size:12px;text-align:left}.covTotal{text-align:center;font-weight:700;font-size:12px;padding-top:5px!important;border-top:1px solid #d6d6d6;color:#242424}
+.covTotal.covGap{background:repeating-linear-gradient(45deg,#fff,#fff 3px,#e9e9e8 3px,#e9e9e8 5px);border:1.5px dashed #6b6b6b;border-radius:4px;color:#242424}
+.atGlance{margin:0 0 16px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.agTiles{display:grid;grid-template-columns:.8fr .8fr 1.3fr 1.3fr;gap:10px}.agTile{padding:10px 12px;border:1px solid #e6e6e6;border-radius:10px;background:var(--surface)}
+.agBig{font-size:30px;font-weight:700;line-height:1.1;color:#242424;letter-spacing:-.5px}.agUnit{font-size:14px;font-weight:700;letter-spacing:0}.agLabel{font-size:13px;line-height:1.35;color:#4a4a4a;margin-top:4px}
+.agDots{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}.agDots i{display:block;width:11px;height:11px;border-radius:50%;border:2px dashed #b5b5b5;box-sizing:border-box}.agDots i.on{background:var(--c);border:2px solid var(--c)}
+.agCap{margin:12px 0 5px;font-size:13px;color:#242424}.agLegend{display:inline-flex;flex-wrap:wrap;gap:4px 14px;margin-left:8px;color:#4a4a4a}.agLegend span{white-space:nowrap}.agLegend .sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1.5px solid #242424;box-sizing:border-box}
+.agBar{display:flex;height:26px;border-radius:7px;overflow:hidden;border:1.5px solid #242424;background:#fff}.agSeg{display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;min-width:26px}
+.agSeg.observed,.sw.observed{background:#242424;color:#fff}.agSeg.assumed,.sw.assumed{background:repeating-linear-gradient(45deg,#fff,#fff 3px,#bdbdbd 3px,#bdbdbd 5px);color:#242424}.agSeg.projected,.sw.projected{background:#e8e8e8;color:#242424}.agSeg.other{background:#fff;color:#242424}
+.agSeg+.agSeg{border-left:1.5px solid #242424}
+@media (max-width:760px){.agTiles{grid-template-columns:repeat(2,minmax(0,1fr))}.agBig{font-size:26px}}
+.fedCompare{margin:14px 0 6px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}.fedCompare h4{margin:0 0 4px;font-size:16px}
+.fcRow{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,1.3fr) minmax(0,.75fr);gap:12px;align-items:center;padding:7px 0;border-top:1px solid #efefef}.fcRow.fcAxis{border-top:0;padding:0}
+.fcLabel{font-size:13px;line-height:1.35;color:#242424}.fcLabel b{display:block;font-weight:700}.fcLabel span{display:block;color:#4a4a4a;margin-top:1px}
+.fcRow svg{width:100%;height:auto;display:block}.fcAxis text{font-size:16px;fill:#4a4a4a;font-family:Arial,Helvetica,sans-serif}
+.fcTick{stroke:#d4d4d4;stroke-width:1}.fcMid{stroke:#242424;stroke-width:2}
+.fcDot{stroke:#fff;stroke-width:1.5}.fcDot.agrees{fill:#17956a}.fcDot.differs{fill:#d9531e}.fcDot.context{fill:#6b6b6b}
+.fcResult{font-size:13px;line-height:1.35;color:#242424}.fcResult span{display:block}.fcChip{display:table;font-size:11.5px;font-weight:700;border-radius:999px;padding:0 8px;border:2px solid #6b6b6b;margin-bottom:2px}.fcChip.agrees{border-color:#17956a}.fcChip.differs{border-color:#d9531e}
+.fcRest{padding:8px 0;border-top:1px solid #efefef;font-size:13px}.fcRest b{display:block;margin-bottom:4px}.fcBarLine{display:grid;grid-template-columns:110px minmax(0,1fr) 90px;gap:8px;align-items:center;margin:2px 0}.fcBarLab{color:#4a4a4a}
+.fcBarTrack{display:block;height:11px;background:#f1f1f0;border-radius:3px}.fcBarTrack i{display:block;height:11px;border-radius:3px}.fcBarTrack i.then{background:#9a9a9a}.fcBarTrack i.now{background:#242424}.fcBarVal{font-weight:700;text-align:right}.fcFactor{display:inline-block;font-size:12px;font-weight:700;border:1.5px solid #242424;border-radius:999px;padding:0 8px;margin-top:3px}
+@media (max-width:760px){.fcRow{grid-template-columns:1fr}.fcRow.fcAxis>div:first-child,.fcRow.fcAxis>div:last-child{display:none}.fcBarLine{grid-template-columns:90px minmax(0,1fr) 80px}}
 .vennFig{max-width:600px;margin:10px auto}
 .vennFig svg{width:100%;height:auto;display:block}
 .vennFig text{font-family:Arial,Helvetica,sans-serif;fill:#242424}
@@ -364,6 +397,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 </style><link rel="stylesheet" href="theme.css"></head><body><header><a class="brand" href="https://www.dbbun.com" target="_blank" rel="noopener noreferrer" aria-label="Visit DBbun.com"><span class="brand-logo"><img src="dbbun-logo.png" alt="DBbun"></span></a><div class="headerButtons"><button id="libraryToggle" class="secondary" type="button">Simulation library</button><button id="faqToggle" class="secondary" type="button">FAQ</button><button id="adminToggle" class="secondary" type="button">Administrator</button></div><div class="header-caption"><strong>Cost of Illness track</strong><span>TOPx HHS Tech Sprint for AI and Invisible Illness</span><span>Lyme disease &amp; Long COVID</span></div></header><div id="readyNotice" role="status"><span id="readyNoticeText"></span><span class="actions"><button id="readyNoticeView" type="button">View it</button><button id="readyNoticeDismiss" class="secondary" type="button">Dismiss</button></span></div><div class="intro"><h1>DBbun Invisible Illness Burden Simulator</h1></div><main>
 <section id="libraryPanel" style="display:none"><h2>Simulation Library</h2>
 <div id="libraryMain">
+<div id="coverageMap" class="coverageMap" hidden></div>
 <div id="libraryBulkBar" class="libraryBulkBar" hidden><label><input type="checkbox" id="librarySelectAll"> Select all</label><span id="librarySelectedCount"></span><button id="libraryDeleteSelected" class="secondary danger" type="button">Delete selected</button></div>
 <div class="crossAnalysisBar"><div><h3>Cross-pollination analysis</h3><p id="crossAnalysisDesc"></p><p id="crossAnalysisStatus" hidden></p></div><button id="crossAnalysisRun" type="button">Cross-pollination analysis</button></div>
 <div id="libraryTagFilter" class="libraryTagFilter" hidden></div><div id="libraryList"></div>
@@ -413,7 +447,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <div class="scenarioTableWrap"><table class="scenarioTable categoryTable"><thead><tr><th>Category</th><th>What it measures</th><th>Easily confused with</th><th>Example measure</th></tr></thead><tbody><tr><td data-label="Category" class="scenarioTableName">Direct costs of care</td><td data-label="What it measures">Money paid directly for treatment, equipment, travel to appointments, or accessibility needs.</td><td data-label="Easily confused with">Administrative burden (time and paperwork, not money); Work and income (money not earned, not money spent).</td><td data-label="Example measure">Yearly out-of-pocket spending; cost per visit</td></tr><tr><td data-label="Category" class="scenarioTableName">Work and income</td><td data-label="What it measures">Lost employment, reduced hours, or work capacity that changes over time.</td><td data-label="Easily confused with">Longer-term opportunity costs (a changed life path, not this year's pay); Cognitive impact (a symptom, not an income loss).</td><td data-label="Example measure">Work hours lost; share unable to work</td></tr><tr><td data-label="Category" class="scenarioTableName">Longer-term opportunity costs</td><td data-label="What it measures">Lost education, career advancement, or future earnings, broader than a loss of current income; for a child, disrupted schooling such as a school change, home tutoring or missed milestones.</td><td data-label="Easily confused with">Work and income: if the quantity is present-day pay, use that; if a path changed (years of remote-only schooling, a lost career), use this one.</td><td data-label="Example measure">Years of schooling disrupted; tutoring hours; projected career earnings lost</td></tr><tr><td data-label="Category" class="scenarioTableName">Caregiving and household labor</td><td data-label="What it measures">Unpaid caregiving or household work that shifts onto family members.</td><td data-label="Easily confused with">Care continuity risk (who holds the knowledge, not the hours); the caregiver's own lost pay can also appear under Work and income.</td><td data-label="Example measure">Caregiver hours per week</td></tr><tr><td data-label="Category" class="scenarioTableName">Care continuity risk</td><td data-label="What it measures">Care that could collapse because one undocumented caregiver holds all the care-routine knowledge.</td><td data-label="Easily confused with">Caregiving and household labor (hours of work, not fragility).</td><td data-label="Example measure">Share of care that depends on one person</td></tr><tr><td data-label="Category" class="scenarioTableName">Congenital/parent-to-child transmission</td><td data-label="What it measures">The disease itself passing from a parent to a child, a burden landing on someone with no exposure event of their own.</td><td data-label="Easily confused with">Caregiving (labor, not transmission).</td><td data-label="Example measure">Transmission rate; number of children affected</td></tr><tr><td data-label="Category" class="scenarioTableName">Diagnostic delay</td><td data-label="What it measures">The delay and repeated consultations before an accurate diagnosis.</td><td data-label="Easily confused with">Medical disbelief (dismissal can cause delay, but this counts the time lost); Harm from misdiagnosis-driven treatment (active harm, not lost time). A cost gap between disease stages is severity, not delay.</td><td data-label="Example measure">Months to diagnosis; visits before diagnosis</td></tr><tr><td data-label="Category" class="scenarioTableName">Harm from misdiagnosis-driven treatment</td><td data-label="What it measures">Active harm from a treatment whose benefit for the diagnosis being treated is not supported by the evidence.</td><td data-label="Easily confused with">Diagnostic delay (passive time lost).</td><td data-label="Example measure">Treatment-related adverse-event rate</td></tr><tr><td data-label="Category" class="scenarioTableName">Barriers to reaching care</td><td data-label="What it measures">Costs from being unable to reach or obtain appropriate care: distance, provider scarcity, a setting that cannot accommodate accessibility needs.</td><td data-label="Easily confused with">Uncoordinated, fragmented care (people who are being seen, but by uncoordinated providers); Administrative burden (paperwork and insurance).</td><td data-label="Example measure">Travel distance; wait for a specialist</td></tr><tr><td data-label="Category" class="scenarioTableName">Medical disbelief and dismissal</td><td data-label="What it measures">Harm from being dismissed or told real symptoms are not real.</td><td data-label="Easily confused with">Diagnostic delay and Psychological burden are often the effects; disbelief is the cause being counted.</td><td data-label="Example measure">Share reporting being dismissed</td></tr><tr><td data-label="Category" class="scenarioTableName">Administrative burden</td><td data-label="What it measures">Disability applications, paperwork, or care disruption from an outside system such as insurance coverage churn or a legal dispute.</td><td data-label="Easily confused with">Barriers to reaching care (physical or supply barriers); Uncoordinated, fragmented care (providers not coordinating).</td><td data-label="Example measure">Appeals filed; months of coverage gaps</td></tr><tr><td data-label="Category" class="scenarioTableName">Cognitive impact</td><td data-label="What it measures">Limitations that make ordinary tasks take longer or require assistance.</td><td data-label="Easily confused with">Psychological burden (emotional, not thinking or task limits); Overall quality of life (a broad score).</td><td data-label="Example measure">Task completion time; share needing help</td></tr><tr><td data-label="Category" class="scenarioTableName">Psychological burden</td><td data-label="What it measures">The emotional and psychological cost to patients or caregivers, including from the care-seeking process itself.</td><td data-label="Easily confused with">Cognitive impact (thinking and tasks); Overall quality of life (a composite score that may include mood).</td><td data-label="Example measure">Anxiety or depression prevalence</td></tr><tr><td data-label="Category" class="scenarioTableName">Overall quality of life</td><td data-label="What it measures">A general health-related quality-of-life or functional-status loss (EQ-5D utility, QALYs or QALMs, SF-36-type scores).</td><td data-label="Easily confused with">Any specific category above: use this only when the result is the composite score itself.</td><td data-label="Example measure">Utility score gap; quality-adjusted life-months lost</td></tr><tr><td data-label="Category" class="scenarioTableName">Undercounted by official surveillance</td><td data-label="What it measures">The gap between a disease's true frequency or burden and what surveillance, claims coding, or public reporting captures.</td><td data-label="Easily confused with">Diagnostic delay (one patient's timeline); this one is a population-level measurement gap.</td><td data-label="Example measure">Estimated true cases versus reported cases</td></tr><tr><td data-label="Category" class="scenarioTableName">Uncoordinated, fragmented care</td><td data-label="What it measures">The burden of navigating several uncoordinated providers or specialists with no single point of coordination.</td><td data-label="Easily confused with">Barriers to reaching care (cannot get in at all); Care continuity risk (one caregiver's knowledge).</td><td data-label="Example measure">Number of specialists; hand-offs between them</td></tr></tbody></table></div></details>
 
 <details class="whatThisAdds" open><summary>How did real people shape this simulator?</summary>
-<p>DBbun was created by Dr. Uri Kartoun, founder of DBbun LLC. It was built by listening as well as reading: people who live with these illnesses, care for someone who does, or work on them were contacted, interviewed or asked questions, and the product changed because of what they said. Since August 2026, more than 100 people were contacted online and 8 in-depth interviews were held (Long COVID patients, caregivers and advocates, researchers, and two government officials). All 80 public stories and ideas shared in the <a href="https://www.nih.gov/challenges/lymex-healthathon" target="_blank" rel="noopener">LymeX Healthathon</a>, a national Lyme storytelling challenge, were analyzed, and 17 questions about hidden costs were posted on its public discussion board; 15 received replies from firsthand Lyme patients (among them a nurse practitioner, an epidemiologist, a medical-anthropology researcher and a former federal working-group member). Below, each person or group points to what changed; open one to read what was heard. Everyone is described by role only; nobody is named, and nobody has endorsed the product.</p>
+<p>DBbun was created by Dr. Uri Kartoun, founder of DBbun LLC, who wrote its design, code and text. It was shaped by listening as well as reading: people who live with these illnesses, care for someone who does, or work on them were contacted, interviewed or asked questions, and the product changed after what they said. Many of the most significant changes followed feedback from three government officials (two federal program leads and one government deputy director), who questioned and reviewed the product throughout the 10-week sprint. During the sprint, more than 100 people were contacted online and 8 in-depth interviews were held (six patient advocates, one Long COVID patient and one government deputy director). All 80 public stories and ideas shared in the <a href="https://www.nih.gov/challenges/lymex-healthathon" target="_blank" rel="noopener">LymeX Healthathon</a>, a national Lyme storytelling challenge, were analyzed, and 17 questions about hidden costs were posted on its public discussion board; 15 received replies from firsthand Lyme patients (among them a nurse practitioner, an epidemiologist, a medical-anthropology researcher and a former federal working-group member). Below, each person or group points to what changed; open one to read what was heard. Everyone is described by role only; nobody is named. People who gave feedback are not authors, co-developers or sponsors of the product, and nobody has endorsed it.</p>
 <div class="burdenKey"><span><i style="background:#2a78d61f;border:2px solid #2a78d6;box-sizing:border-box"></i>lived experience</span><span><i style="background:#eb68341f;border:2px solid #eb6834;box-sizing:border-box"></i>expert or federal guidance</span></div><div class="shapeFlow"><details open class="shapeRow lived"><summary><span class="voice">A Long COVID patient who also does health research</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Undercounting check</span><span class="pill">Surveillance-undercount category</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> One-on-one interview.</p><p><b>What was heard:</b> Diagnosis codes miss much of real Long COVID (no code for post-exertional malaise; symptoms often coded as psychiatric); the same illness severity leads to very different money outcomes depending on occupation; a large monthly out-of-pocket cost that insurance does not cover.</p><p><b>What changed in the product:</b> The system checks every document for claims and diagnosis-code undercounting and flags it, and a "surveillance undercount" category exists.</p></div></details><details open class="shapeRow lived"><summary><span class="voice">Lyme and Long COVID patients and advocates</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Medical disbelief category</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Interviews, email, and public posts on the LymeX Healthathon discussion board.</p><p><b>What was heard:</b> Being dismissed, or told symptoms are anxiety, is a cost of its own.</p><p><b>What changed in the product:</b> A "medical disbelief" category, so harm from dismissal shows up as a result and not only as a number of dollars.</p></div></details><details open class="shapeRow lived"><summary><span class="voice">Caregivers and advocates for Long COVID</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Care continuity risk</span><span class="pill">Administrative burden</span><span class="pill">Longer-term opportunity costs</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Interviews.</p><p><b>What was heard:</b> One caregiver often holds all the knowledge of the care routine, and care collapses if that person is unavailable; insurance churn and paperwork interrupt care; years of remote schooling in place of school.</p><p><b>What changed in the product:</b> "Care continuity risk", "administrative burden" and "longer-term opportunity costs" categories.</p></div></details><details open class="shapeRow lived"><summary><span class="voice">Firsthand Lyme patients on the LymeX Healthathon discussion board</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Parent-to-child transmission</span><span class="pill">Harm from misdiagnosis-driven treatment</span><span class="pill">Fragmented care</span><span class="pill">System-gap caveat</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> All 80 public stories and ideas shared in the LymeX Healthathon were analyzed, and 17 questions were posted on its public discussion board; 15 replied.</p><p><b>What was heard:</b> Illness passing from parent to child; harm from treatment given for the wrong diagnosis; care spread across many uncoordinated providers.</p><p><b>What changed in the product:</b> "Congenital and parent-to-child transmission", "harm from misdiagnosis-driven treatment" and "uncoordinated, fragmented care" categories, plus a caveat for gaps in the healthcare system itself (for example clinicians not trained to recognize the illness).</p></div></details><details open class="shapeRow lived"><summary><span class="voice">A parent who is also a Lyme patient</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">School and milestone examples</span><span class="pill">"Does not recommend treatments" answer</span><span class="pill">Household boundary</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> A public reply on the LymeX Healthathon discussion board.</p><p><b>What was heard:</b> A child's missed school and milestones, tutoring and accommodations, more than one family member affected, and a strong expectation that 'simulators' recommend treatments.</p><p><b>What changed in the product:</b> School and milestone examples in the opportunity-cost category; a plain answer (below) that the simulator never recommends, ranks or evaluates treatments; household burden stated as something the simulators do not model yet.</p></div></details><details open class="shapeRow lived"><summary><span class="voice">A state health-policy official</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">9-sheet Excel export</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Call.</p><p><b>What was heard:</b> Exploring scenarios on screen is not useful to a budget analyst; data that can be plugged into their own Excel models is.</p><p><b>What changed in the product:</b> A structured Excel export (9 sheets, including parameters, data, results, evidence and limits) beside the PDF and bundle.</p></div></details><details open class="shapeRow expert"><summary><span class="voice">Federal reviewers and data stewards (expert feedback, not lived experience)</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Observed / assumed / projected labels</span><span class="pill">Sex and gender findings</span><span class="pill">Provenance lines</span><span class="pill">MEPS Lyme cost limit</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Sprint feedback sessions and office hours.</p><p><b>What was heard:</b> Show what is real data versus assumption; be intentional about sex and gender differences; provenance matters (source, self-report versus clinical, when, modeled versus measured); MEPS cannot support Lyme costs.</p><p><b>What changed in the product:</b> Every value is labeled observed, assumed or projected; sex and gender findings are stated whenever the evidence reports them; every federal figure carries a provenance line; the Lyme cost limit of MEPS is documented.</p></div></details><details open class="shapeRow expert"><summary><span class="voice">Federal reviewers for the cost-of-illness track (expert feedback, not lived experience)</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Federal-source value ranking</span><span class="pill">Scenarios and forecast bands</span><span class="pill">Cross-Pollination Analysis</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Sprint kickoff and the Alpha and Beta demo feedback sessions.</p><p><b>What was heard:</b> Which federal resources matter most, and why; show a variety of what-if scenarios and how much the results vary, not a single answer; compare Lyme disease and Long COVID to learn from each ("cross-pollination").</p><p><b>What changed in the product:</b> A ranked list of the federal sources, with the reason for each rank; named scenarios with a stated goal, sensitivity charts, and a forecast band showing the middle 80% of 500 random draws (labeled illustrative, not a confidence interval); and a Cross-Pollination Analysis that compares a Lyme disease and a Long COVID simulator side by side.</p></div></details><details open class="shapeRow expert"><summary><span class="voice">Federal reviewers: labels, uncertainty and consent (expert feedback, not lived experience)</span><span class="arrowSym" aria-hidden="true">&rarr;</span><span class="pills"><span class="pill">Time and price-year labels</span><span class="pill">Who bears the cost</span><span class="pill">Burden map</span><span class="pill">What leaves the machine</span></span><span class="hint">How this was gathered and what was heard</span></summary><div class="more"><p><b>How:</b> Alpha and Beta demo feedback sessions.</p><p><b>What was heard:</b> Label the time period of every number and keep dollar figures comparable across years; break cost out by who pays (health system, out of pocket, indirect); show where data are incomplete or only partly measured; make clear where uncertainty comes from; review consent and transparency expectations for health data.</p><p><b>What changed in the product:</b> Data-period and price-year labels on numbers; a "Who bears the cost" table; a burden map showing which of 16 burdens a paper measured and which it left out; and plain statements of what leaves the machine, with every model call recorded in each download.</p></div></details></div></details>
 
 <details class="whatThisAdds" open><summary>Does the simulator recommend or evaluate treatments?</summary>
@@ -617,6 +651,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 </nav>
 <div class="tabPanel active" data-tab="overview">
 <h2 id="title"></h2>
+<div id="atGlance" class="atGlance" hidden></div>
 <div id="sourceRefsBox" class="docSummary" hidden></div>
 <div id="reviewbody"></div>
 <p id="boundary"></p>
@@ -1025,6 +1060,7 @@ function renderEvidenceMap(job){
     ['not_checked','Not checked','ev_empty','Could not be checked against a federal file']];
   const cc=ccDefs.filter(d=>buckets[d[0]].length).map(d=>({label:d[1],n:buckets[d[0]].length,cls:d[2],detail:d[3]+': '+trim(buckets[d[0]],5)+'.'}));
   renderEvidenceRow(box,"How the paper's figures compare with federal data",'Computed in code, not by the model. A comparison shows whether numbers sit in the same range, not that either one is right.',cc,'No dollar amounts, case counts or prevalence figures were extracted, so there was nothing to cross-check.');
+  renderFederalCompareChart(box,job);
   const sc=(spec.scenarios||[]).map(x=>({label:x.label,n:Object.keys(x.overrides||{}).length||1,cls:'ev_scenario',detail:(x.goal||'')+' '+(x.description||'')+' (The number is how many assumptions this scenario changes.)'}));
   renderEvidenceRow(box,'What-if conclusions','Each bubble is a named scenario this simulator can run. Open the Explore tab to see its results.',sc,'This simulator has no named scenarios.');
   box.hidden=false;
@@ -1188,6 +1224,7 @@ function showReview(job){
   renderEvidenceMap(current);
   loadFederalBenchmarks(jobId);
   renderCategoryCoverage(current.spec);
+  renderAtAGlance(current);
   renderOperationFlow(current);
   const sa=current.scientific_analysis,dr=sa?.decision_relevance;
   if(sa?.plain_language_summary||dr){
@@ -1363,6 +1400,7 @@ async function poll(id){
       renderFederalKnowledge(job.condition_knowledge,job.scientific_analysis?.federal_evidence_used,job.federal_crosschecks);
       loadFederalBenchmarks(jobId);
       renderCategoryCoverage(job.spec);
+      renderAtAGlance(job);
       $('auditpanel').hidden=!job.model_calls;
       $('audit').textContent=JSON.stringify({calls:job.model_calls,reviews:job.review_history?.map(r=>({round:r.round,review:r.review,deterministic_errors:r.deterministic_errors,generator_response:r.package?.revision_response}))},null,2);
     }
@@ -1582,7 +1620,8 @@ async function loadReuseTests(){
 }
 async function loadLibrary(){
   loadReuseTests();
-  libraryAllRows=await(await fetch('/api/library')).json();
+  libraryAllRows=(await(await fetch('/api/library')).json()).sort(libraryCompare);
+  renderCoverageMap(libraryAllRows);
   document.querySelectorAll('.libraryCountText').forEach(e=>{e.textContent=simulationCountText(libraryAllRows)});
   renderLibraryList();
   loadCrossAnalysisRuns();
@@ -2307,6 +2346,15 @@ const BURDEN_CATEGORY_EXPLANATIONS={
   surveillance_undercount:'The gap between a disease\'s true frequency or burden and what official surveillance, insurance-claims coding, or public reporting captures - a population-level measurement gap, not one patient\'s diagnostic delay.',
   care_fragmentation:'The burden of navigating multiple uncoordinated providers or specialists with no single point of coordination, distinct from one caregiver\'s knowledge being at risk of collapsing, and from being unable to reach or obtain care at all.',
 };
+const BURDEN_FAMILIES=[
+  {id:'money',name:'Money and livelihood',color:'#2a78d6',items:['direct_costs','employment','opportunity_costs']},
+  {id:'home',name:'Who carries it at home',color:'#17956a',items:['caregiving','care_continuity_risk','congenital_transmission']},
+  {id:'person',name:'Effects on the person',color:'#7a5bd6',items:['cognitive','psychological_burden','quality_of_life']},
+  {id:'path',name:'Getting a diagnosis and care',color:'#a87d00',items:['diagnostic_delay','access_barriers','administrative','care_fragmentation']},
+  {id:'harm',name:'Harm from the system',color:'#d9531e',items:['medical_disbelief','iatrogenic_harm']},
+  {id:'gap',name:'A measurement gap',color:'#c2418c',items:['surveillance_undercount']},
+];
+const BURDEN_SHORT_LABELS={direct_costs:'Direct costs of care',employment:'Work and income',opportunity_costs:'Longer-term opportunity costs',caregiving:'Caregiving and household labor',care_continuity_risk:'Care continuity risk',congenital_transmission:'Parent-to-child transmission',diagnostic_delay:'Diagnostic delay',iatrogenic_harm:'Harm from wrong treatment',access_barriers:'Barriers to reaching care',medical_disbelief:'Disbelief and dismissal',administrative:'Administrative burden',cognitive:'Cognitive impact',psychological_burden:'Psychological burden',quality_of_life:'Overall quality of life',surveillance_undercount:'Undercounted by surveillance',care_fragmentation:'Fragmented care'};
 function evaluate(n,v,depth=0){
   if(depth>20)throw Error('Expression too deep');
   if(typeof n==='number'){if(!Number.isFinite(n))throw Error('Non-finite calculation');return n}
@@ -3078,15 +3126,16 @@ function buildCategoryMap(){
     const key=byLabel[cells[0].textContent.trim()];if(!key)return;
     info[key]={confused:cells[2].textContent.trim(),example:cells[3].textContent.trim()};
   });
-  const FAMILIES=[
-    {id:'money',name:'Money and livelihood',color:'#2a78d6',box:[10,24,290,206],items:['direct_costs','employment','opportunity_costs'],xs:[57,151,245],y:140},
-    {id:'home',name:'Who carries it at home',color:'#17956a',box:[315,24,290,206],items:['caregiving','care_continuity_risk','congenital_transmission'],xs:[362,456,550],y:140},
-    {id:'person',name:'Effects on the person',color:'#7a5bd6',box:[620,24,270,206],items:['cognitive','psychological_burden','quality_of_life'],xs:[662,754,846],y:140},
-    {id:'path',name:'Getting a diagnosis and care',color:'#a87d00',box:[10,250,400,206],items:['diagnostic_delay','access_barriers','administrative','care_fragmentation'],xs:[57,151,245,339],y:366},
-    {id:'harm',name:'Harm from the system',color:'#d9531e',box:[425,250,200,206],items:['medical_disbelief','iatrogenic_harm'],xs:[472,566],y:366},
-    {id:'gap',name:'A measurement gap',color:'#c2418c',box:[640,250,250,206],items:['surveillance_undercount'],xs:[765],y:366},
-  ];
-  const SHORT={direct_costs:'Direct costs of care',employment:'Work and income',opportunity_costs:'Longer-term opportunity costs',caregiving:'Caregiving and household labor',care_continuity_risk:'Care continuity risk',congenital_transmission:'Parent-to-child transmission',diagnostic_delay:'Diagnostic delay',iatrogenic_harm:'Harm from wrong treatment',access_barriers:'Barriers to reaching care',medical_disbelief:'Disbelief and dismissal',administrative:'Administrative burden',cognitive:'Cognitive impact',psychological_burden:'Psychological burden',quality_of_life:'Overall quality of life',surveillance_undercount:'Undercounted by surveillance',care_fragmentation:'Fragmented care'};
+  const LAYOUT={
+    money:{box:[10,24,290,206],xs:[57,151,245],y:140},
+    home:{box:[315,24,290,206],xs:[362,456,550],y:140},
+    person:{box:[620,24,270,206],xs:[662,754,846],y:140},
+    path:{box:[10,250,400,206],xs:[57,151,245,339],y:366},
+    harm:{box:[425,250,200,206],xs:[472,566],y:366},
+    gap:{box:[640,250,250,206],xs:[765],y:366},
+  };
+  const FAMILIES=BURDEN_FAMILIES.map(f=>Object.assign({},f,LAYOUT[f.id]));
+  const SHORT=BURDEN_SHORT_LABELS;
   const PAIRS=[
     ['direct_costs','administrative','confused','Money versus time and paperwork. Dollars spent on care are direct costs; hours and hassle with forms or insurance are administrative burden.'],
     ['direct_costs','employment','confused','Money spent versus money not earned.'],
@@ -3204,6 +3253,237 @@ function buildCategoryMap(){
     }
   }
 }
+
+function openSimulationById(id){
+  jobId=id;bundle=null;
+  return fetch('/api/jobs/'+id).then(r=>r.json()).then(job=>{
+    if(job.status==='missing'){alert('This simulation record could not be found.');return}
+    showReview(job);
+  });
+}
+function authorLabel(row){
+  const c=(row.references&&row.references[0]&&row.references[0].citation)||'';
+  const fmt=a=>{const m=a.trim().match(/^(.+?)\s+([A-Z]{1,4})$/);return m?m[1]+', '+m[2][0]:a.trim()};
+  const year=(c.match(/\b(19|20)\d\d\b(?!.*\b(19|20)\d\d\b)/)||[''])[0];
+  let out=null,m=c.match(/^(.+?)\s+et al\./);
+  if(m)out=fmt(m[1])+' et al.';
+  else{
+    m=c.match(/^([^.]+?)\.\s/);
+    if(m){const parts=m[1].split(/,\s*/);
+      if(parts.length>=3)out=fmt(parts[0])+' et al.';
+      else if(parts.length===2)out=fmt(parts[0])+', and '+fmt(parts[1]);
+      else if(/^\S+ [A-Z]{1,4}$/.test(parts[0]))out=fmt(parts[0]);}
+  }
+  return out?out+(year?' ('+year+')':''):row.title;
+}
+function publicationYear(row){
+  const c=(row.references&&row.references[0]&&row.references[0].citation)||'';
+  const years=c.match(/(?:19|20)[0-9][0-9]/g);
+  return years?Number(years[years.length-1]):0;
+}
+function libraryCompare(a,b){return publicationYear(b)-publicationYear(a)||authorLabel(a).localeCompare(authorLabel(b))}
+function renderCoverageMap(rows){
+  const box=$('coverageMap');if(!box)return;
+  box.replaceChildren();
+  if(!rows||!rows.length){box.hidden=true;return}
+  const cols=[];for(const f of BURDEN_FAMILIES)for(const k of f.items)cols.push({key:k,fam:f});
+  const countOf=(r,k)=>(r.category_counts&&r.category_counts[k])||((r.categories||[]).includes(k)?1:0);
+  const totals={};for(const c of cols)totals[c.key]=rows.reduce((n,r)=>n+(countOf(r,c.key)?1:0),0);
+  const gaps=cols.filter(c=>!totals[c.key]);
+  text('h3','What the '+rows.length+' simulators measure, at a glance',box);
+  text('p','Each row is one simulator and each column one of the 16 burden categories. A colored cell means the simulator has at least one result for that burden (the number is how many results). A blank column means no simulator here measures it: '+(gaps.length?gaps.length+' of 16 burdens are measured by none ('+gaps.map(c=>BURDEN_CATEGORY_LABELS[c.key].toLowerCase()).join(', ')+')':'every burden is measured by at least one simulator')+'. Rows run from the newest publication year to the oldest, in the same order as the list below. Select a cell to open that simulator. A blank cell is a gap in what the simulator covers, not proof that the burden is absent.',box).className='covNote';
+  const wrap=document.createElement('div');wrap.className='covWrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Table of which burden categories each simulator measures');
+  const table=document.createElement('table');table.className='covTable';
+  const thead=document.createElement('thead');
+  const r1=document.createElement('tr');
+  const corner=document.createElement('th');corner.rowSpan=2;corner.className='covCorner';corner.textContent='Simulator';r1.appendChild(corner);
+  const FAM_SHORT={money:'Money and livelihood',home:'Carried at home',person:'Effects on the person',path:'Getting a diagnosis and care',harm:'System harm',gap:'Gap'};
+  for(const f of BURDEN_FAMILIES){const th=document.createElement('th');th.colSpan=f.items.length;th.className='covFam';th.style.setProperty('--c',f.color);th.textContent=FAM_SHORT[f.id]||f.name;th.title=f.name;r1.appendChild(th)}
+  const endTh=document.createElement('th');endTh.rowSpan=2;endTh.className='covEnd';endTh.textContent='Burdens measured';r1.appendChild(endTh);
+  thead.appendChild(r1);
+  const r2=document.createElement('tr');
+  for(const c of cols){const th=document.createElement('th');th.className='covBurden';th.style.setProperty('--c',c.fam.color);const d=document.createElement('div');d.textContent=BURDEN_SHORT_LABELS[c.key];th.title=BURDEN_CATEGORY_LABELS[c.key]+': '+BURDEN_CATEGORY_EXPLANATIONS[c.key];th.appendChild(d);r2.appendChild(th)}
+  thead.appendChild(r2);table.appendChild(thead);
+  const colgroup=document.createElement('colgroup');
+  {const c0=document.createElement('col');c0.className='cSim';colgroup.appendChild(c0)}
+  for(const c of cols){const cc=document.createElement('col');cc.className='cBur';colgroup.appendChild(cc)}
+  {const ce=document.createElement('col');ce.className='cEnd';colgroup.appendChild(ce)}
+  table.insertBefore(colgroup,thead);
+  const tbody=document.createElement('tbody');
+  const groups=[['lyme','Lyme disease'],['longCovid','Long COVID']];
+  for(const [cond,label] of groups){
+    const part=rows.filter(r=>r.condition===cond).map(r=>({r,n:cols.filter(c=>countOf(r,c.key)).length}));
+    if(!part.length)continue;
+    part.sort((a,b)=>libraryCompare(a.r,b.r));
+    const gr=document.createElement('tr');gr.className='covGroup';const gt=document.createElement('th');gt.colSpan=cols.length+2;gt.scope='colgroup';gt.textContent=label+' ('+part.length+')';gr.appendChild(gt);tbody.appendChild(gr);
+    for(const {r,n} of part){
+      const tr=document.createElement('tr');
+      const nameTh=document.createElement('th');nameTh.scope='row';nameTh.className='covName';
+      const nb=document.createElement('button');nb.type='button';nb.className='linkButton';nb.textContent=authorLabel(r);nb.title=r.title;nb.setAttribute('aria-label',r.title+' ('+authorLabel(r)+')');nb.onclick=()=>openSimulationById(r.id);nameTh.appendChild(nb);tr.appendChild(nameTh);
+      for(const c of cols){
+        const td=document.createElement('td');const k=countOf(r,c.key);
+        if(k){
+          td.className='covOn';td.style.setProperty('--c',c.fam.color);
+          const b=document.createElement('button');b.type='button';b.className='covCell';b.textContent=String(k);
+          b.title=r.title+': '+BURDEN_CATEGORY_LABELS[c.key]+', '+k+' result'+(k===1?'':'s');
+          b.setAttribute('aria-label',r.title+', '+BURDEN_CATEGORY_LABELS[c.key]+', '+k+' result'+(k===1?'':'s')+'. Open this simulator.');
+          b.onclick=()=>openSimulationById(r.id);td.appendChild(b);
+        }else{td.className='covOff';const s=document.createElement('span');s.className='srOnly';s.textContent='none';td.appendChild(s)}
+        tr.appendChild(td);
+      }
+      const end=document.createElement('td');end.className='covEnd';end.textContent=n+' of '+cols.length;tr.appendChild(end);
+      tbody.appendChild(tr);
+    }
+  }
+  table.appendChild(tbody);
+  const tfoot=document.createElement('tfoot');const fr=document.createElement('tr');
+  const fh=document.createElement('th');fh.scope='row';fh.className='covName';fh.textContent='Simulators that measure it';fr.appendChild(fh);
+  for(const c of cols){const td=document.createElement('td');td.className='covTotal'+(totals[c.key]?'':' covGap');td.textContent=String(totals[c.key]);if(!totals[c.key])td.title='No simulator in this library measures '+BURDEN_CATEGORY_LABELS[c.key].toLowerCase();fr.appendChild(td)}
+  fr.appendChild(document.createElement('td'));tfoot.appendChild(fr);table.appendChild(tfoot);
+  wrap.appendChild(table);box.appendChild(wrap);
+  const none=rows.filter(r=>!cols.some(c=>countOf(r,c.key)));
+  if(none.length)text('p',none.length+' row'+(none.length===1?'':'s')+' with "0 of 16": the results of '+(none.length===1?'that simulator were':'those simulators were')+' not tagged to any of the 16 burden categories.',box).className='covNote';
+  box.hidden=false;
+}
+
+function renderAtAGlance(job){
+  const box=$('atGlance');if(!box)return;
+  box.replaceChildren();box.hidden=true;
+  const spec=job&&job.spec;if(!spec)return;
+  const inputs=spec.inputs||[],outputs=spec.outputs||[],traj=spec.trajectories||[],scen=spec.scenarios||[];
+  const editable=inputs.filter(i=>i.editable!==false).length;
+  const measured=new Set();
+  for(const o of outputs)if(o.category)measured.add(o.category);
+  for(const t of traj)if(t.category)measured.add(t.category);
+  const checks=job.federal_crosschecks||[];
+  const kindOf=c=>c.agreement||(c.status==='not_computed'?'not_checked':c.status==='context'?'context':c.kind==='usd_amount'?'restated':'context');
+  const tally={agrees:0,differs:0,context:0,restated:0,not_checked:0};
+  for(const c of checks){const k=kindOf(c);tally[k in tally?k:'context']++}
+  const tile=(big,unit,label,extra)=>{
+    const t=document.createElement('div');t.className='agTile';
+    const n=document.createElement('div');n.className='agBig';n.textContent=big;if(unit){const u=document.createElement('span');u.className='agUnit';u.textContent=' '+unit;n.appendChild(u)}
+    t.appendChild(n);const l=document.createElement('div');l.className='agLabel';l.textContent=label;t.appendChild(l);
+    if(extra)t.appendChild(extra);return t;
+  };
+  const tiles=document.createElement('div');tiles.className='agTiles';
+  tiles.appendChild(tile(String(editable),'inputs','you can change, each labeled by how well the paper supports it'));
+  tiles.appendChild(tile(String(outputs.length),outputs.length===1?'result':'results',(traj.length?traj.length+' forecast'+(traj.length===1?'':'s')+', ':'no forecast, ')+scen.length+' named scenario'+(scen.length===1?'':'s')));
+  const dots=document.createElement('div');dots.className='agDots';dots.setAttribute('role','img');
+  const names=[];
+  for(const f of BURDEN_FAMILIES)for(const k of f.items){
+    const d=document.createElement('i');const on=measured.has(k);
+    d.className=on?'on':'';d.style.setProperty('--c',f.color);d.title=BURDEN_CATEGORY_LABELS[k]+(on?': measured here':': not measured here');
+    if(on)names.push(BURDEN_CATEGORY_LABELS[k]);dots.appendChild(d);
+  }
+  dots.setAttribute('aria-label',measured.size+' of 16 burden categories measured'+(names.length?': '+names.join(', '):''));
+  tiles.appendChild(tile(String(measured.size),'of 16','burdens measured (filled dots)',dots));
+  const checked=tally.agrees+tally.differs+tally.context+tally.restated;
+  const parts=[];
+  if(tally.agrees)parts.push(tally.agrees+' agree'+(tally.agrees===1?'s':''));
+  if(tally.differs)parts.push(tally.differs+' differ');
+  if(tally.context)parts.push(tally.context+' context only');
+  if(tally.restated)parts.push(tally.restated+' restated in current dollars');
+  if(tally.not_checked)parts.push(tally.not_checked+' not checkable');
+  tiles.appendChild(tile(String(checks.length),checks.length===1?'figure checked':'figures checked',checks.length?'against federal data, in code: '+parts.join('; '):'no figure in this paper could be checked against federal data'));
+  box.appendChild(tiles);
+  const st={observed:0,assumed:0,projected:0,other:0};
+  for(const i of inputs){const s=i.evidence_status;if(s in st)st[s]++;else st.other++}
+  const total=inputs.length||1;
+  const bar=document.createElement('div');bar.className='agBar';bar.setAttribute('role','img');
+  const desc=[];
+  for(const [k,label] of [['observed','observed in the paper'],['assumed','assumed'],['projected','projected'],['other','unlabeled']]){
+    if(!st[k])continue;
+    const seg=document.createElement('span');seg.className='agSeg '+k;seg.style.flex=st[k]+' 1 0';seg.textContent=st[k];seg.title=st[k]+' '+label;bar.appendChild(seg);
+    desc.push(st[k]+' '+label);
+  }
+  bar.setAttribute('aria-label','How the '+inputs.length+' inputs are labeled: '+desc.join(', '));
+  const cap=document.createElement('div');cap.className='agCap';
+  cap.innerHTML='<b>How the '+inputs.length+' inputs are labeled</b> ';
+  const leg=document.createElement('span');leg.className='agLegend';
+  for(const [k,label] of [['observed','observed in the paper'],['assumed','assumed'],['projected','projected']]){if(!st[k])continue;const s=document.createElement('span');const sw=document.createElement('i');sw.className='sw '+k;s.appendChild(sw);s.appendChild(document.createTextNode(label+' ('+st[k]+')'));leg.appendChild(s)}
+  cap.appendChild(leg);
+  box.appendChild(cap);box.appendChild(bar);
+  box.hidden=false;
+}
+
+function renderFederalCompareChart(box,job){
+  const fmt=(v,d)=>Number(v).toLocaleString('en-US',{maximumFractionDigits:d==null?(Math.abs(v)<10?2:0):d});
+  const usable=(job.federal_crosschecks||[]).filter(c=>c.status!=='not_computed'&&typeof c.paper_value==='number'&&typeof c.federal_value==='number'&&c.paper_value>0&&c.federal_value>0);
+  const cmp=usable.filter(c=>['agrees','differs','context'].includes(c.agreement));
+  const rest=usable.filter(c=>c.agreement==='restated');
+  if(!cmp.length&&!rest.length)return;
+  const wrap=document.createElement('div');wrap.className='fedCompare';
+  if(cmp.length){
+    text('h4','The paper\'s figure set against the federal figure',wrap);
+    text('p','Each row divides the paper\'s number by the federal number. The line in the middle means identical. A dot far from the middle is not an error: the two may count different things (for example claims-based estimates against reported cases), and a match does not prove that either number is right. Computed in code, not by the model.',wrap).className='changeNote';
+    const LO=-1,HI=1.5,W=420,H=30;
+    const xOf=r=>26+(Math.max(LO,Math.min(HI,Math.log10(r)))-LO)/(HI-LO)*(W-52);
+    const ticks=[[0.1,'0.1×'],[0.3,'0.3×'],[1,'same'],[3,'3×'],[10,'10×'],[30,'30×']];
+    const NS='http://www.w3.org/2000/svg';
+    const axis=document.createElement('div');axis.className='fcRow fcAxis';
+    axis.appendChild(document.createElement('div'));
+    const asvg=document.createElementNS(NS,'svg');asvg.setAttribute('viewBox','0 0 '+W+' 20');asvg.setAttribute('aria-hidden','true');
+    for(const [r,l] of ticks){const t=document.createElementNS(NS,'text');t.setAttribute('x',xOf(r));t.setAttribute('y',14);t.setAttribute('text-anchor','middle');t.textContent=l;if(r===1)t.setAttribute('font-weight','700');asvg.appendChild(t)}
+    const axcell=document.createElement('div');axcell.appendChild(asvg);axis.appendChild(axcell);axis.appendChild(document.createElement('div'));
+    wrap.appendChild(axis);
+    for(const c of cmp){
+      const ratio=c.paper_value/c.federal_value;
+      const row=document.createElement('div');row.className='fcRow';
+      const lab=document.createElement('div');lab.className='fcLabel';
+      const t1=document.createElement('b');t1.textContent=(c.label||'').length>95?c.label.slice(0,92)+'...':c.label;lab.appendChild(t1);
+      const t2=document.createElement('span');t2.textContent='Paper: '+fmt(c.paper_value)+(c.unit?' '+c.unit:'')+(c.year?' ('+c.year+')':'')+'. Federal: '+(c.federal_text||fmt(c.federal_value))+'.';lab.appendChild(t2);
+      row.appendChild(lab);
+      const cell=document.createElement('div');
+      const svg=document.createElementNS(NS,'svg');svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.setAttribute('aria-hidden','true');
+      for(const [r] of ticks){const l=document.createElementNS(NS,'line');l.setAttribute('x1',xOf(r));l.setAttribute('x2',xOf(r));l.setAttribute('y1',3);l.setAttribute('y2',H-3);l.setAttribute('class',r===1?'fcMid':'fcTick');svg.appendChild(l)}
+      const x=xOf(ratio),y=H/2,kind=c.agreement;
+      let m;
+      if(kind==='agrees'){m=document.createElementNS(NS,'circle');m.setAttribute('cx',x);m.setAttribute('cy',y);m.setAttribute('r',7)}
+      else if(kind==='differs'){m=document.createElementNS(NS,'path');m.setAttribute('d','M'+x+' '+(y-9)+' L'+(x+9)+' '+y+' L'+x+' '+(y+9)+' L'+(x-9)+' '+y+' Z')}
+      else{m=document.createElementNS(NS,'rect');m.setAttribute('x',x-6.5);m.setAttribute('y',y-6.5);m.setAttribute('width',13);m.setAttribute('height',13)}
+      m.setAttribute('class','fcDot '+kind);svg.appendChild(m);
+      cell.appendChild(svg);row.appendChild(cell);
+      const res=document.createElement('div');res.className='fcResult';
+      const chip=document.createElement('span');chip.className='fcChip '+kind;chip.textContent=kind==='agrees'?'Agrees':kind==='differs'?'Differs':'Context only';res.appendChild(chip);
+      const rt=document.createElement('span');rt.textContent=Math.abs(ratio-1)<0.01?'within 1% of the federal figure':(ratio>=1?fmt(ratio,ratio<100?1:0)+'× the federal figure':fmt(ratio,2)+'× the federal figure');res.appendChild(rt);
+      row.appendChild(res);wrap.appendChild(row);
+    }
+    const key=document.createElement('div');key.className='burdenKey';
+    key.innerHTML='<span><svg width="14" height="14" aria-hidden="true"><circle class="fcDot agrees" cx="7" cy="7" r="6"/></svg>agrees</span><span><svg width="14" height="14" aria-hidden="true"><path d="M7 1 L13 7 L7 13 L1 7 Z" class="fcDot differs"/></svg>differs</span><span><svg width="14" height="14" aria-hidden="true"><rect x="2" y="2" width="10" height="10" class="fcDot context"/></svg>context only (not a like-for-like match)</span>';
+    wrap.appendChild(key);
+  }
+  if(rest.length){
+    text('h4','Dollar amounts restated in current prices',wrap).style.marginTop='16px';
+    text('p','The same amount in the price year the paper used and in today\'s dollars (consumer price index). This is a conversion, not a comparison.',wrap).className='changeNote';
+    for(const c of rest){
+      const row=document.createElement('div');row.className='fcRest';
+      const t=document.createElement('b');t.textContent=(c.label||'').length>110?c.label.slice(0,107)+'...':c.label;row.appendChild(t);
+      const hi=Math.max(c.paper_value,c.federal_value);
+      for(const [lab,val,cls] of [[(c.year?c.year+' dollars':'Paper dollars'),c.paper_value,'then'],[((c.target_year||'Current')+' dollars'),c.federal_value,'now']]){
+        const line=document.createElement('div');line.className='fcBarLine';
+        const l=document.createElement('span');l.className='fcBarLab';l.textContent=lab;line.appendChild(l);
+        const tr=document.createElement('span');tr.className='fcBarTrack';const b=document.createElement('i');b.className=cls;b.style.width=Math.max(2,val/hi*100)+'%';tr.appendChild(b);line.appendChild(tr);
+        const v=document.createElement('span');v.className='fcBarVal';v.textContent='$'+fmt(val,0);line.appendChild(v);row.appendChild(line);
+      }
+      if(c.factor){const f=document.createElement('span');f.className='fcFactor';f.textContent='×'+Number(c.factor).toFixed(2);row.appendChild(f)}
+      wrap.appendChild(row);
+    }
+  }
+  const det=document.createElement('details');const sum=document.createElement('summary');sum.textContent='Read as a table';det.appendChild(sum);
+  const tw=document.createElement('div');tw.className='scenarioTableWrap';
+  const tb=document.createElement('table');tb.className='scenarioTable';
+  tb.innerHTML='<thead><tr><th>Figure</th><th>Paper</th><th>Federal</th><th>Result</th></tr></thead>';
+  const tbody=document.createElement('tbody');
+  for(const c of [...cmp,...rest]){
+    const tr=document.createElement('tr');
+    const cells=[c.label,fmt(c.paper_value)+(c.unit?' '+c.unit:'')+(c.year?' ('+c.year+')':''),c.federal_text||fmt(c.federal_value),c.agreement==='restated'?'restated'+(c.factor?' (×'+Number(c.factor).toFixed(2)+')':''):(c.agreement==='agrees'?'agrees':c.agreement==='differs'?'differs':'context only')+', '+fmt(c.paper_value/c.federal_value,2)+'×'];
+    for(const x of cells){const td=document.createElement('td');td.textContent=x;tr.appendChild(td)}
+    tbody.appendChild(tr);
+  }
+  tb.appendChild(tbody);tw.appendChild(tb);det.appendChild(tw);wrap.appendChild(det);
+  box.appendChild(wrap);
+}
+
 buildCategoryMap();
 </script></body></html>
 
