@@ -292,7 +292,7 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .decisionSupport{margin:26px 0 0;padding-top:22px;border-top:1px solid var(--line)}.decisionSupport h3{margin:0 0 12px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}.decisionSupport>p{font-size:19px;line-height:1.45;color:var(--ink);font-weight:500;margin:0 0 14px}.decisionSupport ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}.decisionSupport li{margin:6px 0}
 button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}button.secondary:hover:not(:disabled){background:var(--surface)}
 #libraryToggle,#faqToggle,#adminToggle{width:auto;padding:10px 16px;font-size:15px}
-.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
+.faqGroup{margin:22px 0 6px;font-size:15px;letter-spacing:.6px;text-transform:uppercase;color:#4a4a4a;border-bottom:1px solid var(--line);padding-bottom:4px}.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
 .libraryItem{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 12px;display:flex;gap:14px;align-items:flex-start}.libraryItem h4{margin:0 0 4px}.libraryItemBody{flex:1;min-width:0}.libraryItemCheck{flex:0 0 auto;margin-top:3px;width:18px;height:18px}.libraryMeta{font-size:14px;margin:0 0 10px;color:var(--muted)}.libraryActions{display:flex;gap:10px;flex-wrap:wrap}.libraryActions button{padding:9px 14px;font-size:15px;width:auto}.libraryActions button.danger{color:#b23b2e;border:1px solid #b23b2e;background:#fff}
 .libraryBulkBar{display:flex;align-items:center;gap:16px;margin:0 0 16px;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;flex-wrap:wrap}.libraryBulkBar label{display:flex;align-items:center;gap:8px;margin:0;font-size:15px;font-weight:600}.libraryBulkBar input[type=checkbox]{width:18px;height:18px}#librarySelectedCount{color:var(--muted);font-size:14px;flex:1}.libraryBulkBar button{width:auto;padding:9px 14px;font-size:15px}
 .libraryBulkBar[hidden],.libraryTagFilter[hidden]{display:none}
@@ -415,6 +415,86 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <div class="docSummary"><h4>What this page covers</h4>
 <p>A general reference for how DBbun works and how to read what it produces, independent of any one document. When you're reviewing a specific simulation, its own Operation Flow tab shows that simulation's real numbers at each step described below.</p></div>
 
+<h3 class="faqGroup">Start here</h3>
+
+<details class="whatThisAdds" open><summary>What can I do with this, and what is it worth?</summary>
+<p>DBbun turns a published paper on Lyme disease or Long COVID (or a few related documents together, up to five) into a working, checkable <b>what-if model</b>. In a few minutes you can:</p>
+<ul>
+<li><b>See what the paper measured, what it only assumed, and what it never measured.</b> Every number is labeled observed, assumed or projected, and a map of 16 kinds of burden shows which ones the paper covers.</li>
+<li><b>Change an assumption and watch the results move.</b> Pick a ready-made scenario or type your own numbers; every result recalculates instantly.</li>
+<li><b>Check the paper against federal data.</b> Figures such as case counts and dollar amounts are compared with CDC, labor-statistics and survey data in code, not by the AI model, and the result is shown, including when they do not match.</li>
+<li><b>Find out which assumptions matter most</b> (Sensitivity) and, where the paper reports a per-period rate, look ahead (Forecast).</li>
+<li><b>Compare a Lyme paper with a Long COVID paper</b> side by side and see what each condition's researchers could ask the other (cross-pollination).</li>
+<li><b>Read it in your own terms.</b> One switch rewrites the summary and next steps for patients and advocates, care teams, or payers and policy teams. The numbers never change.</li>
+<li><b>Take it with you:</b> a PDF, a nine-sheet Excel workbook, CSV files, Python code that re-runs the same arithmetic, and a prototype FHIR export with provenance.</li>
+</ul>
+<p><b>Why it matters.</b> A cost-of-illness paper is normally a static PDF. A patient cannot ask "what if my costs are 30% higher", an analyst cannot easily tell one study's figure from a population estimate, and the burdens a paper never measured are invisible. DBbun makes all three visible, and shows where each number came from.</p>
+<p><b>What it is not.</b> It is not medical advice, it never recommends or ranks treatments, and its results describe published studies, not what will happen to any one person.</p></details>
+
+<details class="whatThisAdds" open><summary>Is this just a simulator? What makes it different?</summary>
+<p>A simulator on its own is a set of adjustable formulas. DBbun adds the parts that make the numbers trustworthy and useful:</p>
+<ul>
+<li><b>Evidence labels on every number</b>: observed, assumed or projected, plus the period, the price year and who bears the cost where the paper says.</li>
+<li><b>Code-computed federal checks</b>: the arithmetic and the comparisons with federal data are done by ordinary code you can inspect; the AI model reads the paper and writes wording, and does not compute.</li>
+<li><b>A gap map</b>: across the library, six of the 16 burdens are measured by no simulator for either condition, and each paper covers only a few. That absence is shown instead of hidden.</li>
+<li><b>Cross-paper comparison</b>: saved Lyme-versus-Long COVID comparisons turn each mismatch into a question worth asking.</li>
+<li><b>Three readings of the same evidence</b>, for patients, care teams and policy teams.</li>
+<li><b>Provenance and portability</b>: every download records which model calls produced it, and the Excel, Python and FHIR-shaped files let other tools reuse the model.</li>
+<li><b>A repeatable pipeline</b> that builds a new model from a new paper, with its own checks, tests and quality log.</li>
+</ul>
+<p>"Simulator" is the short name used on the page: a calculator built from published research (usually one paper, or a few related documents), where you change a number and see what changes.</p></details>
+
+<details class="whatThisAdds"><summary>What is the difference between the public demo and the full tool?</summary>
+<p>The <a href="https://dbbun.github.io/dbbun-invisible-illness-burden-simulator/" target="_blank" rel="noopener">public demo</a> is read-only. You can open all of the simulators, change assumptions, read every tab, read the saved comparisons and download bundles. Generating a new simulator from your own document, deleting, the administrator tab and the programming interface run in the full tool on the owner's computer. The public bundles are trimmed: they leave out the uploaded source paper (it may be copyrighted; the Evidence tab links to it), the large raw federal files, the application source code and the full model-call audit trail.</p></details>
+
+<h3 class="faqGroup">Using the library</h3>
+
+<details class="whatThisAdds"><summary>How do I read the library map (25 simulators by 16 burdens)?</summary>
+<p>Each row is one simulator, shown as its paper's first author and year, newest first, in two groups (Lyme disease and Long COVID). Each column is one of the 16 burden categories, grouped into six families (money and livelihood, carried at home, effects on the person, getting a diagnosis and care, system harm, and a measurement gap). A colored cell means the simulator has at least one result for that burden; the number is how many. A blank cell means that simulator does not measure it, which is a gap in what it covers and not proof the burden is absent. The bottom row counts how many simulators measure each burden, and a column marked 0 is measured by none. Hover or tab onto any number for a card with the actual results behind it, and select a cell to open that simulator.</p></details>
+
+<details class="whatThisAdds"><summary>What does "Read this simulator as" change?</summary>
+<p>Only the wording. Choose patients and advocates (plain language, per-person figures), care delivery teams (workflow and resourcing questions) or payers and policy teams (budget impact and population totals) and the summary, discussion prompts and next steps are rewritten for that reader. The inputs, formulas, results and charts are identical in all three, so no audience sees different numbers.</p></details>
+
+<h3 class="faqGroup">Using each tab of a simulator</h3>
+
+<details class="whatThisAdds"><summary>Overview: what do I see first?</summary>
+<p>The title, then an "at a glance" strip: how many inputs you can change, how many results are calculated, how many of the 16 burdens are measured, how many figures were checked against federal data, and a bar showing how the inputs are labeled. Hover any tile for the detail. Below it are the original source with links, a plain-language summary of the paper, why it could be useful and what you could do with it, which assumptions move the results most, the 16-burden map for this simulator, and, where the paper reports it, who bears the cost.</p></details>
+
+<details class="whatThisAdds"><summary>Operation Flow: what happened to my document?</summary>
+<p>It shows how this particular simulator was built, step by step: the upload, local text extraction, the classifier that decides which condition the paper concerns, the retrieval of federal evidence, the AI model calls, and the automatic checks. The numbers on each step (documents, federal units offered, model calls, cost) are this simulator's own. It is there so that nothing about how the result was produced is hidden.</p></details>
+
+<details class="whatThisAdds"><summary>Explore: how do the what-ifs work?</summary>
+<p>This is the interactive core. Under "Try a scenario" you can pick a ready-made what-if; under "Adjust the assumptions" you can type your own numbers. Every result recalculates immediately, in your browser, by ordinary arithmetic. Each result card shows the Default value beside the Selected value with the percentage change, and a "What changes?" panel lists which inputs differ from the default and which results they feed. A comparison table lays all scenarios side by side. Nothing you type is saved or sent anywhere.</p></details>
+
+<details class="whatThisAdds"><summary>What are the inputs (parameters), and which can I change?</summary>
+<p>An input is one number the model starts from: a figure the paper reports, or an assumption added to make a what-if possible. Each input shows its default, the range you can test, and its label: <b>observed</b> (the paper reported it, with the page or table), <b>assumed</b> (an assumption, with the range stated), or <b>projected</b> (a projection beyond what the paper reports). Where the paper gives them, the period, the price year of a dollar amount and who bears the cost are shown too. A few inputs, such as a price index, are fixed and locked. The test range is an exploration bound, not evidence: moving an input outside what the paper supports is your own assumption, and the "What each control represents" notes explain what each input stands for.</p></details>
+
+<details class="whatThisAdds"><summary>What is a named scenario?</summary>
+<p>A ready-made combination of changed inputs with a one-sentence goal, such as testing a case mix with more late-stage patients, or the longest waits and farthest travel. The AI model proposes the scenarios, but the code applies and calculates them, and they are labeled illustrative. A scenario is not a prediction; it shows what the model does when those assumptions are true. "Default assumptions" resets everything to the paper's own values.</p></details>
+
+<details class="whatThisAdds"><summary>Forecast: what does it show, and why do only some simulators have it?</summary>
+<p>A forecast projects one result forward over time, but only where the paper reports a per-period rate, for example visits per year. It assumes that rate repeats unchanged, so the line is straight. It is a reading aid, not a prediction. The darker band is the middle 80% of 500 random draws taken within each assumption's range, and the lighter band is the outer range if every assumption sat at its minimum or maximum at once; both are labeled illustrative and are not a confidence interval. The "Current assumptions" line is live: it redraws as you change inputs on the Explore tab. Many papers do not report a per-period rate, so many simulators have no Forecast content, and that is correct, not broken.</p></details>
+
+<details class="whatThisAdds"><summary>Sensitivity: which assumptions matter most?</summary>
+<p>It moves one input at a time across its supported range while every other input stays at its default, and shows how far each result moves. The summary chart ranks the inputs by their effect, and the sweep charts show the result at each step. It is a stress test of the model's own assumptions, not a measure of real-world uncertainty. These charts are a snapshot made when the simulator was generated, not a live view; use the Explore tab for live changes. Each chart has a "Show exact values" table.</p></details>
+
+<details class="whatThisAdds"><summary>Evidence &amp; Sources: where do the numbers come from?</summary>
+<p>This tab is the audit. Bubble rows count where the numbers come from (observed in the paper, forecast lines, computed results), which federal datasets were offered to the model, how the paper's figures compare with federal data, and the named what-if conclusions. Below that are federal benchmarks that fit this simulator, computed by code from federal files and shown for context only, the federal knowledge summaries offered to the model, and the raw specification and generation details for technical inspection. Federal data checks and contextualizes a paper; it never supplies the simulator's numbers.</p></details>
+
+<details class="whatThisAdds"><summary>How do I read the "paper versus federal" chart?</summary>
+<p>Each row divides the paper's number by the matching federal number. The line in the middle means identical, a dot to the right means the paper's number is larger, and a dot to the left means it is smaller. A circle means they agree, a diamond means they differ, and a square means the comparison is context only, not a like-for-like match. A dot far from the middle is not an error: the two may count different things, such as claims-based estimates against reported cases, and a match does not prove either is right. Dollar amounts appear separately, as the same amount in the paper's price year and in today's prices; that is a conversion, not a comparison.</p></details>
+
+<details class="whatThisAdds"><summary>Export: what can I download?</summary>
+<p>The bundle contains the formatted PDF documentation, a nine-sheet Excel workbook with parameters, data, results, evidence and limits, the figures and CSV files (including 500 random draws), the specification (Spec.json), Python code that re-runs the same arithmetic, a prototype FHIR file of the inputs and results with provenance and the definitions it needs, and a README and notice. The full tool adds the model-call audit trail. "Print / save as PDF" at the top makes a printable copy of what you are viewing.</p></details>
+
+<h3 class="faqGroup">Comparing Lyme disease and Long COVID</h3>
+
+<details class="whatThisAdds"><summary>What is a cross-pollination analysis, and what do I get?</summary>
+<p>It sets one Lyme disease simulator beside one Long COVID simulator and asks what each condition's researchers could learn from the other. In the full tool you tick one of each in the library and choose "Cross-pollination analysis"; on the public demo you can read the saved comparisons. A comparison shows what each paper says about the same questions (cost, work, diagnostic delay, access to care, how official counts undercount), which of the 16 burdens each paper measures, the key figures copied from each simulator, and "a question worth asking" cards, such as whether Long COVID researchers could measure the time to diagnosis the way the Lyme paper did. A chart places the pair among all the simulators, and a list shows which other simulators fill the gaps the pair leaves.</p>
+<p>The numbers are copied from the simulators. The wording is written by an AI model and checked in code, and any number it cannot match is flagged. The two papers differ in population, year and method, so the comparison gives context and questions; it does not measure a difference between the diseases.</p></details>
+
+<h3 class="faqGroup">How it works and how far to trust it</h3>
+
 <details class="whatThisAdds" open><summary>Which federal resources are the most valuable, and why?</summary>
 <p>This ranking is <b>overall</b>, across the whole library: <b><span class="libraryCountText">the simulations in the library</span></b>. Resources are ranked by what each one lets the system do for a simulator, not by size. Some apply to one condition only; the label under each bubble says which. The "informs N of 25" numbers are a snapshot taken on 2026-10-05, when the library had 25 simulations (12 Lyme disease, 13 Long COVID). "Shown" means offered to the AI model as background.</p>
 <div class="scenarioTableWrap fedValueTable"></div>
@@ -466,7 +546,6 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <li><b>Access.</b> Every call needs a key made on your own machine, and by default the interface answers only on your own computer.</li>
 </ul>
 <p>Steps and examples are in the <a href="/api/v1/docs" target="_blank" rel="noopener">API guide</a> (the file API.md); the machine-readable description is at /api/v1/openapi.json. Results are illustrative simulations built from the source papers, not clinical advice or statistical forecasts.</p></details>
-<details class="whatThisAdds" open><summary>What is a cross-pollination analysis?</summary><p>It compares two simulators side by side: one built from a Lyme disease paper and one from a Long COVID paper. In the Simulation library, tick one of each and choose "Cross-pollination analysis". After about a minute it shows a table of what each simulator says about the same questions (cost, work, diagnostic delay, access to care, how official counts undercount), which of the 16 burdens each paper measures, and the key figures copied from each simulator. Once it exists, a link "Cross-pollination analysis available" appears under both papers, and choosing the same pair again opens the saved comparison.</p><p>The numbers are copied from the simulators. The wording is written by an AI model and checked in code against the simulators, and any number it cannot match is flagged. The two papers differ in population, year and method, so the comparison gives context; it does not measure a difference between the diseases. Comparing more than two papers at once is planned.</p></details>
 
 <details class="whatThisAdds" open><summary>What role do federal data play in creating a simulator?</summary>
 <p>The simulator's numbers come from <b>your uploaded document</b>. Federal data plays four supporting roles:</p>
@@ -508,12 +587,6 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <ul>
 <li><b>Household burden.</b> Each simulator describes one person or one cohort, as the uploaded paper does. Where several members of a household are affected, for example a parent and children, it does not add up the burden across them.</li>
 <li><b>Care the paper does not price.</b> Non-covered tests, supplements and other out-of-pocket care are counted only when the uploaded paper itself reports what they cost.</li>
-</ul></details>
-
-<details class="whatThisAdds" open><summary>What is Cross-Pollination Analysis?</summary><ul>
-<li>A separate mode, run from the Library, that synthesizes findings across multiple of your own past simulations at once - not within a single document, across several.</li>
-<li>It identifies which cost-of-illness themes are shared between Lyme disease and Long COVID versus specific to one, turning isolated single-document extractions into a genuine cross-condition comparison.</li>
-<li>You choose which past simulations to include - there's no implicit "use everything" default.</li>
 </ul></details>
 
 <details class="whatThisAdds" open><summary>What happens to my uploaded document? Is my data private?</summary><ul>
