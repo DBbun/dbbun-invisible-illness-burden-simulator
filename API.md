@@ -25,7 +25,7 @@ curl -X POST -H "Authorization: Bearer $KEY" -H "Content-Type: application/json"
 
 `GET /api/v1/simulations/ID/fhir` returns the same model as a FHIR R4-shaped demonstration `Bundle` (`application/fhir+json`): an
 `Observation` for each input and default output, a `DocumentReference` for the source paper and a `Provenance` resource. It contains no patient, is not
-clinical data, uses DBbun's own identifiers, and is not certified or checked by the official HL7 validator.
+clinical data, uses DBbun's own identifiers, and is not certified. The file passes the official HL7 FHIR validator (R4) with no errors; see `FHIR_VALIDATION.md`.
 
 `run` uses the same arithmetic as the browser. Inputs not supplied keep their default, values must sit inside the
 input's own range, and inputs fixed by the source document cannot be changed. The reply has every output and every
