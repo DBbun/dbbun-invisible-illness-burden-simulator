@@ -1,0 +1,150 @@
+{
+  "environment": "CMS Blue Button 2.0 sandbox (synthetic beneficiary, not a real person)",
+  "claims_total": 155,
+  "coverage_records": null,
+  "years": [
+    {
+      "year": 2015,
+      "claims": 19,
+      "medicare_paid": 145987.0,
+      "patient_share": 5264.0,
+      "patient_share_claims": 19,
+      "by_type": {
+        "Hospital inpatient": 1,
+        "Hospital outpatient": 14,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Skilled nursing facility": 1,
+        "Prescription drug fills (Part D)": 1
+      }
+    },
+    {
+      "year": 2016,
+      "claims": 23,
+      "medicare_paid": 154898.0,
+      "patient_share": 1170.0,
+      "patient_share_claims": 23,
+      "by_type": {
+        "Hospital outpatient": 19,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Prescription drug fills (Part D)": 2
+      }
+    },
+    {
+      "year": 2017,
+      "claims": 23,
+      "medicare_paid": 21985.0,
+      "patient_share": 1221.0,
+      "patient_share_claims": 23,
+      "by_type": {
+        "Hospital outpatient": 15,
+        "Doctor and other professional visits (Part B)": 1,
+        "Prescription drug fills (Part D)": 7
+      }
+    },
+    {
+      "year": 2018,
+      "claims": 11,
+      "medicare_paid": 7056.0,
+      "patient_share": 1436.0,
+      "patient_share_claims": 11,
+      "by_type": {
+        "Hospital outpatient": 4,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Prescription drug fills (Part D)": 5
+      }
+    },
+    {
+      "year": 2019,
+      "claims": 13,
+      "medicare_paid": 17779.0,
+      "patient_share": 1697.0,
+      "patient_share_claims": 13,
+      "by_type": {
+        "Hospital outpatient": 5,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Prescription drug fills (Part D)": 6
+      }
+    },
+    {
+      "year": 2020,
+      "claims": 14,
+      "medicare_paid": 7537.0,
+      "patient_share": 1985.0,
+      "patient_share_claims": 14,
+      "by_type": {
+        "Hospital outpatient": 6,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Prescription drug fills (Part D)": 6
+      }
+    },
+    {
+      "year": 2021,
+      "claims": 14,
+      "medicare_paid": 13264.0,
+      "patient_share": 1671.0,
+      "patient_share_claims": 14,
+      "by_type": {
+        "Hospital outpatient": 6,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Prescription drug fills (Part D)": 6
+      }
+    },
+    {
+      "year": 2022,
+      "claims": 12,
+      "medicare_paid": 7225.0,
+      "patient_share": 1578.0,
+      "patient_share_claims": 12,
+      "by_type": {
+        "Hospital outpatient": 4,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Prescription drug fills (Part D)": 6
+      }
+    },
+    {
+      "year": 2023,
+      "claims": 13,
+      "medicare_paid": 10193.0,
+      "patient_share": 1310.0,
+      "patient_share_claims": 13,
+      "by_type": {
+        "Hospital outpatient": 5,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Prescription drug fills (Part D)": 6
+      }
+    },
+    {
+      "year": 2024,
+      "claims": 12,
+      "medicare_paid": 5175.0,
+      "patient_share": 1635.0,
+      "patient_share_claims": 12,
+      "by_type": {
+        "Hospital outpatient": 4,
+        "Doctor and other professional visits (Part B)": 1,
+        "Medical equipment": 1,
+        "Prescription drug fills (Part D)": 6
+      }
+    },
+    {
+      "year": 2025,
+      "claims": 1,
+      "medicare_paid": 1366.0,
+      "patient_share": 0.0,
+      "patient_share_claims": 1,
+      "by_type": {
+        "Hospital outpatient": 1
+      }
+    }
+  ],
+  "patient_share_note": "Patient cost-sharing was found on some claims.",
+  "example_note": "Example from a real run against the CMS Blue Button 2.0 sandbox on 7 October 2026, using the synthetic test beneficiary BBUser00000. The public demo cannot run the live sign-in."
+}

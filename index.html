@@ -214,6 +214,7 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .covName .linkButton:hover{text-decoration-color:#242424}tfoot .covName{font-weight:700;font-size:12px;border-top:1px solid #d6d6d6;padding-top:5px!important}
 .covOn{height:24px;text-align:center}.covOff{height:24px;background:#f3f3f2;border-radius:4px}
 .covCell{display:block;width:100%;height:24px;border:2px solid var(--c);border-radius:5px;background:var(--c);color:#fff;font-size:12px;font-weight:700;cursor:pointer;padding:0;line-height:1}.covCell:hover,.covCell:focus-visible{outline:2px solid #242424;outline-offset:1px}
+.bbPanel{margin:16px 0;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}.bbPanel h4{margin:0 0 6px;font-size:16px}.bbNotice{font-weight:700;color:#242424;border:1.5px solid #242424;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:14px}.bbPanel button{width:auto;padding:10px 16px;font-size:15px;margin:4px 8px 4px 0}
 .covTip{position:fixed;z-index:50;max-width:380px;padding:10px 12px;background:#fff;color:#242424;border:1.5px solid #242424;border-radius:10px;box-shadow:0 6px 22px #00000026;font-size:13px;line-height:1.4;pointer-events:none}
 .covTip p{margin:0 0 5px;color:#242424}.covTip ul{margin:0 0 6px;padding-left:18px}.covTip li{margin:0 0 2px}.covTipHead{font-weight:700;font-size:14px;margin:0 0 6px;padding-bottom:4px;border-bottom:3px solid var(--c)}.covTipHint{color:#4a4a4a!important;font-size:12px}
 .covEnd[tabindex]:focus-visible,.covTotal[tabindex]:focus-visible{outline:2px solid #242424;outline-offset:1px}
@@ -566,9 +567,9 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 </ul></details>
 
 <details class="whatThisAdds" open><summary>How does DBbun relate to federal health-data standards (Blue Button 2.0, FHIR, TEFCA)?</summary>
-<p>DBbun is a local tool that turns an uploaded paper into a simulator. It does not connect to any health-record network, and it does not claim alignment with a standard it does not implement. Its downloads are PDF, Excel, CSV, JSON and Python source, plus a FHIR R4-shaped demonstration export (<code>fhir_demonstration.json</code>) of each model's inputs and default outputs, with the source paper and provenance. That export is a demonstration: it contains no patient, is not clinical data, uses DBbun's own identifiers, is not profiled to US Core or USCDI+, and has gone through no certification. Every simulator's file passes the official HL7 FHIR validator (R4) with no errors; terminology checking was switched off, and best-practice warnings remain because there is no patient. The definitions of DBbun's own extensions ship beside it in <code>fhir_definitions.json</code>. Here is where it stands with each:</p>
+<p>DBbun is a local tool that turns an uploaded paper into a simulator. It does not connect to any real health-record network (its Blue Button 2.0 demonstration uses the CMS sandbox, which holds only synthetic people), and it does not claim alignment with a standard it does not implement. Its downloads are PDF, Excel, CSV, JSON and Python source, plus a FHIR R4-shaped demonstration export (<code>fhir_demonstration.json</code>) of each model's inputs and default outputs, with the source paper and provenance. That export is a demonstration: it contains no patient, is not clinical data, uses DBbun's own identifiers, is not profiled to US Core or USCDI+, and has gone through no certification. Every simulator's file passes the official HL7 FHIR validator (R4) with no errors; terminology checking was switched off, and best-practice warnings remain because there is no patient. The definitions of DBbun's own extensions ship beside it in <code>fhir_definitions.json</code>. Here is where it stands with each:</p>
 <ul>
-<li><b>Blue Button 2.0 (CMS):</b> a credible next step, planned and not built. It lets a Medicare beneficiary authorize an app to pull their own claims. In DBbun, a user could someday connect their own claims, with consent, as an input alongside an uploaded paper.</li>
+<li><b>Blue Button 2.0 (CMS):</b> demonstrated against the CMS sandbox, with synthetic test beneficiaries only. A working sign-in (OAuth 2.0 with PKCE) lets a person share their claims; DBbun reads Coverage and ExplanationOfBenefit as FHIR R4, reduces them to yearly totals held in memory, and shows them beside a simulator in the Evidence &amp; Sources tab. It has no access to real Medicare data and has not been through CMS production review. The public demo shows a saved example from a real sandbox run, because the live sign-in runs in the full tool.</li>
 <li><b>TEFCA and FHIR networks:</b> designed for exchanging identified clinical records between care institutions. DBbun refuses uploads that contain Social Security numbers or medical-record-number and date-of-birth labels (it does not detect other kinds of identifiers), and it is not a care-coordination system, so it does not connect to them.</li>
 <li><b>USCDI+:</b> at the last check (August 2026) it had no cost-of-illness domain. A small, honest step would be tagging extracted diagnoses with their ICD-10-CM codes; that is not built.</li>
 <li><b>CMS Interoperability Framework:</b> DBbun echoes its consent and transparency criteria at its own scale. The extracted text, table captions and figures of your document reach the model (never the original file), no generated code executes, and every model call is recorded in the download. It claims no formal alignment.</li>
@@ -778,6 +779,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <div class="docSummary"><h4>What this tab is for</h4>
 <p>This tab is for auditing, not everyday use: which federal reference datasets (if any) were consulted while generating this simulation, and the raw generated model itself (the full input/output specification and the federal-knowledge context sent to the model) for technical inspection.</p></div>
 <div id="evidenceMap" class="evidenceMap" hidden></div>
+<div id="blueButtonPanel" class="bbPanel" hidden></div>
 <details id="federalBenchmarksPanel" open hidden><summary>Federal benchmarks that fit this simulator</summary><div id="federalBenchmarksBody"></div></details>
 <details id="federalKnowledgePanel" hidden><summary>Federal knowledge referenced in this simulation</summary><div id="federalKnowledgeBody"></div></details>
 <h2>Technical details for this simulation</h2><details><summary>Inspect this simulation's generated model</summary><pre id="spec"></pre><pre id="evidence"></pre></details>
@@ -1309,6 +1311,7 @@ function showReview(job){
   loadFederalBenchmarks(jobId);
   renderCategoryCoverage(current.spec);
   renderAtAGlance(current);
+  renderBlueButton(current);
   renderOperationFlow(current);
   const sa=current.scientific_analysis,dr=sa?.decision_relevance;
   if(sa?.plain_language_summary||dr){
@@ -3663,6 +3666,83 @@ function renderFederalCompareChart(box,job){
   box.appendChild(wrap);
 }
 
+function bbBoot(){
+  try{
+    const q=new URLSearchParams(location.search);
+    if(q.get('bb')){
+      sessionStorage.setItem('bbSession',q.get('bb'));history.replaceState(null,'','/');
+      const back=sessionStorage.getItem('bbReturn');
+      if(back){sessionStorage.removeItem('bbReturn');
+        setTimeout(()=>openSimulationById(back).then(()=>{const t=[...document.querySelectorAll('[role=tab]')].find(x=>/Evidence/.test(x.textContent));if(t)t.click()}),400)}
+    }
+    else if(q.get('bb_error')){sessionStorage.setItem('bbError',q.get('bb_error'));history.replaceState(null,'','/')}
+  }catch(e){}
+}
+
+function bbShowSummary(box,sum,job,status){
+  status.textContent=sum.environment+': '+sum.claims_total+' claims'+(sum.truncated?' (first pages only)':'')+'.';
+  const fmt=v=>'$'+Number(v).toLocaleString('en-US',{maximumFractionDigits:0});
+  const wrap=document.createElement('div');wrap.className='scenarioTableWrap';
+  const tb=document.createElement('table');tb.className='scenarioTable';
+  tb.innerHTML='<thead><tr><th>Year</th><th>Claims</th><th>Medicare paid</th><th>Patient share</th><th>Kinds of claims</th></tr></thead>';
+  const body=document.createElement('tbody');
+  for(const y of sum.years){
+    const tr=document.createElement('tr');
+    const types=Object.entries(y.by_type).map(([k,v])=>k+' ('+v+')').join('; ');
+    for(const c of [String(y.year),String(y.claims),fmt(y.medicare_paid),y.patient_share_claims?fmt(y.patient_share):'not found in these claims',types]){const td=document.createElement('td');td.textContent=c;tr.appendChild(td)}
+    body.appendChild(tr);
+  }
+  tb.appendChild(body);wrap.appendChild(tb);box.appendChild(wrap);
+  text('p',sum.patient_share_note,box).className='changeNote';
+  const full=sum.years.filter(y=>y.claims>=5&&y.patient_share_claims).map(y=>y.patient_share).sort((a,b)=>a-b);
+  if(full.length){
+    const med=full.length%2?full[(full.length-1)/2]:(full[full.length/2-1]+full[full.length/2])/2;
+    text('p','Across the '+full.length+' years with at least five claims, this record\'s patient share ran from '+fmt(full[0])+' to '+fmt(full[full.length-1])+' a year (median '+fmt(med)+'). Dollar amounts are as billed in each year, not adjusted for price changes.',box).style.marginTop='8px';
+  }
+  const money=[...(job.spec.inputs||[]),...(job.spec.outputs||[])].filter(i=>/usd|dollar|\$/i.test(i.unit||'')&&typeof (job.computed&&job.computed.baseline||{})[i.id]==='number');
+  if(money.length){
+    text('p','This simulator\'s own dollar figures, at their default values:',box).style.marginTop='10px';
+    const ul=document.createElement('ul');
+    for(const m of money.slice(0,6)){const li=document.createElement('li');li.textContent=(m.label||m.id)+': '+fmt(job.computed.baseline[m.id])+(m.price_year?' ('+m.price_year+' dollars)':'');ul.appendChild(li)}
+    box.appendChild(ul);
+  }
+  text('p','A synthetic sandbox beneficiary is not a patient with Lyme disease or Long COVID, and claims in the sandbox are not filtered by diagnosis. This shows how a person\'s own record would sit beside a paper\'s numbers. It is not a comparison of real patients and not medical advice.',box).className='changeNote';
+}
+async function renderBlueButton(job){
+  const box=$('blueButtonPanel');if(!box)return;
+  box.replaceChildren();box.hidden=false;
+  text('h4','Bring your own claims: Medicare Blue Button 2.0 (sandbox demo)',box);
+  text('p','Blue Button 2.0 is the CMS interface that lets a Medicare beneficiary share their own claims with an app, with their consent. This demonstration connects to the CMS sandbox, which holds synthetic beneficiaries (not real people), reads their claims as FHIR R4, and shows yearly totals beside this simulator\'s dollar figures. The connection lives in memory only: nothing is stored, and nothing is sent to an AI model.',box).className='changeNote';
+  const bbNotice=text('p','This product uses the Blue Button APIs but is not endorsed or certified by the Centers for Medicare & Medicaid Services or the U.S. Department of Health and Human Services.',box);bbNotice.className='bbNotice';
+  let st=null;
+  try{st=await(await fetch('/api/bluebutton/status')).json()}catch(e){}
+  if(!st||st.error||st.configured===undefined){
+    text('p','The live sign-in runs in the full tool on the owner\'s computer; it cannot run in this public copy. Below is a saved example from a real run.',box);
+    try{
+      const r=await fetch('data/bluebutton_example.json');
+      if(r.ok){const ex=await r.json();const status=text('p','',box);bbShowSummary(box,ex,job,status);if(ex.example_note)text('p',ex.example_note,box).className='changeNote'}
+    }catch(e){}
+    return}
+  if(!st.configured){text('p','Not configured on this computer: it needs a registered Blue Button sandbox app (see the README, "Blue Button 2.0 sandbox demo").',box);return}
+  let err=null,sess=null;
+  try{err=sessionStorage.getItem('bbError');sess=sessionStorage.getItem('bbSession');if(err)sessionStorage.removeItem('bbError')}catch(e){}
+  if(err)text('p','The sign-in at CMS was not completed ('+err+'). You can try again.',box).className='warning';
+  if(!sess){
+    const b=text('button','Connect a Medicare sandbox account',box);b.type='button';b.onclick=()=>{try{sessionStorage.setItem('bbReturn',jobId)}catch(e){}location.href='/api/bluebutton/start'};
+    text('p','You will be sent to the CMS sandbox, where you choose a synthetic test beneficiary and approve sharing. You come back here with yearly totals only.',box).className='changeNote';
+    return;
+  }
+  const status=text('p','Reading the synthetic claims from CMS...',box);
+  let sum=null;
+  try{const r=await fetch('/api/bluebutton/summary?session='+encodeURIComponent(sess));sum=await r.json();if(!r.ok)throw Error(sum.error||'failed')}
+  catch(e){status.textContent='The connection ended ('+e.message+'). Connect again.';try{sessionStorage.removeItem('bbSession')}catch(x){}
+    const b=text('button','Connect again',box);b.type='button';b.onclick=()=>{try{sessionStorage.setItem('bbReturn',jobId)}catch(e){}location.href='/api/bluebutton/start'};return}
+  bbShowSummary(box,sum,job,status);
+  const d=text('button','Disconnect and forget',box);d.className='secondary';d.type='button';
+  d.onclick=async()=>{try{await post('/api/bluebutton/disconnect',{session:sess})}catch(e){}try{sessionStorage.removeItem('bbSession')}catch(e){}renderBlueButton(job)};
+}
+
+bbBoot();
 buildCategoryMap();
 </script></body></html>
 
