@@ -186,6 +186,22 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .burdenBubble .dot,.burdenKey i{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 @media print{#categoryCoverage{break-inside:avoid;page-break-inside:avoid}.burdenDetail{display:none}.burdenBubble .dotWrap{height:84px}.burdenBubble{width:96px}.burdenBubble.on .dot{background:#3b3b3b!important;color:#fff!important}}
 .burdenDetail{min-height:2.6em;text-align:center;margin:6px auto 10px;max-width:640px}
+.catMap{margin:16px 0 22px}.catMap h4{margin:0 0 4px;font-size:17px}.catMap .catNote{font-size:14px;margin:0 0 10px}
+.catMapSvg svg{width:100%;height:auto;display:block}.catMapSvg text{font-family:Arial,Helvetica,sans-serif;fill:#242424;pointer-events:none}
+.catFamBox{fill:#fcfcfb;stroke:#d6d6d6;stroke-width:1.2}.catFamLabel{font-size:13px;font-weight:700}
+.catBubble{cursor:pointer;outline:none}.catBubble circle{fill-opacity:.17;stroke-width:2.4;transition:fill-opacity .12s}
+.catBubble:hover circle,.catBubble:focus-visible circle{fill-opacity:.34}.catBubble:focus-visible circle{stroke-width:4.4}
+.catBubble text{font-size:11.4px}.catBubble.sel circle{fill-opacity:.42;stroke-width:4.6}.catBubble.near circle{stroke-width:3.6;fill-opacity:.3}
+.catMap.hasSel .catBubble:not(.sel):not(.near){opacity:.36}
+.catLink{stroke:#4a4a4a;stroke-width:1.7;stroke-dasharray:5 4;fill:none;pointer-events:none}.catLink.on{stroke-width:3.2}.catLink.cause{stroke-dasharray:none;stroke-width:2.2}.catLink.overlap{stroke-dasharray:1.5 4;stroke-width:3;stroke-linecap:round}
+.catLinkHit{stroke:transparent;stroke-width:16;fill:none;pointer-events:stroke;cursor:help}.catLinkNote{min-height:1.4em;margin:6px 2px 0;font-size:14px;color:#242424}
+.catPairs{margin:2px 0 0;padding-left:18px}.catPairs li{margin:0 0 5px}.catKind{display:inline-block;margin:0 6px;padding:0 7px;border:1px solid #9a9a9a;border-radius:999px;font-size:11.5px;color:#242424}.catKind.cause{border-color:#242424;font-weight:700}
+.catMapList{display:none}.catMapList .catFamList{margin:0 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fcfcfb}
+.catMapList .catFamList b{display:block;margin:0 0 6px;font-size:14px}.catMapList button{margin:0 6px 6px 0;padding:7px 11px;font-size:14px;width:auto;border-radius:999px;border:2px solid var(--c);background:#fff;color:#242424;cursor:pointer}
+.catMapList button.sel{background:var(--c);color:#fff}
+.catDetail{margin-top:10px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:15px;line-height:1.45;min-height:3.2em}
+.catDetail h5{margin:0 0 4px;font-size:16px}.catDetail p{margin:0 0 6px}.catDetail .catFamChip{display:inline-block;font-size:12px;font-weight:700;padding:1px 9px;border-radius:999px;border:2px solid var(--c);margin-bottom:6px}
+@media (max-width:720px){.catMapSvg{display:none}.catMapList{display:block}}
 .vennFig{max-width:600px;margin:10px auto}
 .vennFig svg{width:100%;height:auto;display:block}
 .vennFig text{font-family:Arial,Helvetica,sans-serif;fill:#242424}
@@ -259,7 +275,7 @@ button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}b
 .libTabPanel{display:none}
 .libTabPanel.active{display:block}
 .crossAnalysisBar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin:0 0 20px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
-.crossAnalysisBar h3{margin:0 0 4px;font-size:16px}.crossAnalysisBar p{margin:0;font-size:16px;color:var(--muted);max-width:60ch}
+.crossAnalysisBar h3{margin:0 0 4px;font-size:16px}.crossAnalysisBar>div{flex:1 1 0;min-width:240px}.crossAnalysisBar p{margin:0;font-size:16px;color:var(--muted);max-width:none}
 .crossAnalysisBar button{width:auto;padding:10px 16px;font-size:15px;flex:0 0 auto}
 #crossAnalysisStatus{font-size:16px;color:var(--muted);margin:8px 0 0;width:100%}
 .crossAnalysisRuns{margin:0 0 20px}.crossAnalysisRunItem{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 8px}
@@ -393,6 +409,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <p>When a result clearly represents one of these kinds of burden, DBbun optionally tags it so the Explore tab can group it into a named section. A document is never forced to touch every category - most won't, and that's expected.</p>
 <p><b>These categories overlap as ideas, and that is expected.</b> One real situation can touch several: a delayed diagnosis can cost a job and lead to uncovered spending. Each result (an output or a forecast) gets at most <b>one</b> tag, the best fit for the quantity it measures, so one simulator can have results in several categories.</p>
 <p>Tags group results; they do not split a burden into shares that add up. Do not add numbers across categories or results unless the document itself does, because the same cost or hour can appear in more than one place (double counting). To choose between neighbors, ask what is being counted (money, time, harm, a score, or a gap) and who bears it.</p>
+<div id="categoryMap" class="catMap" role="region" aria-label="Map of the 16 burden categories"><h4>The 16 categories at a glance</h4><p class="catNote">Related categories sit together. Colors group ideas; they do not rank them, and all bubbles are the same size because the categories are not ordered. Select one to see what it measures. A dashed line joins two categories that are easily mistaken for each other; hover or focus a line, or read &ldquo;Told apart from&rdquo; below, for the rule that separates them. A line with an arrow marks the two places where the table says one is often the cause of the other (being dismissed leads to delay and to emotional harm); that is a reading aid, not a finding from data. A thicker dotted line marks categories that can double count. Line length means nothing. The full table follows.</p><div class="catMapSvg" id="catMapSvg"></div><p class="catLinkNote" id="catLinkNote" aria-live="polite"></p><div class="catMapList" id="catMapList"></div><div class="catDetail" id="catDetail" aria-live="polite"><p>Select a category to read what it measures.</p></div></div>
 <div class="scenarioTableWrap"><table class="scenarioTable categoryTable"><thead><tr><th>Category</th><th>What it measures</th><th>Easily confused with</th><th>Example measure</th></tr></thead><tbody><tr><td data-label="Category" class="scenarioTableName">Direct costs of care</td><td data-label="What it measures">Money paid directly for treatment, equipment, travel to appointments, or accessibility needs.</td><td data-label="Easily confused with">Administrative burden (time and paperwork, not money); Work and income (money not earned, not money spent).</td><td data-label="Example measure">Yearly out-of-pocket spending; cost per visit</td></tr><tr><td data-label="Category" class="scenarioTableName">Work and income</td><td data-label="What it measures">Lost employment, reduced hours, or work capacity that changes over time.</td><td data-label="Easily confused with">Longer-term opportunity costs (a changed life path, not this year's pay); Cognitive impact (a symptom, not an income loss).</td><td data-label="Example measure">Work hours lost; share unable to work</td></tr><tr><td data-label="Category" class="scenarioTableName">Longer-term opportunity costs</td><td data-label="What it measures">Lost education, career advancement, or future earnings, broader than a loss of current income; for a child, disrupted schooling such as a school change, home tutoring or missed milestones.</td><td data-label="Easily confused with">Work and income: if the quantity is present-day pay, use that; if a path changed (years of remote-only schooling, a lost career), use this one.</td><td data-label="Example measure">Years of schooling disrupted; tutoring hours; projected career earnings lost</td></tr><tr><td data-label="Category" class="scenarioTableName">Caregiving and household labor</td><td data-label="What it measures">Unpaid caregiving or household work that shifts onto family members.</td><td data-label="Easily confused with">Care continuity risk (who holds the knowledge, not the hours); the caregiver's own lost pay can also appear under Work and income.</td><td data-label="Example measure">Caregiver hours per week</td></tr><tr><td data-label="Category" class="scenarioTableName">Care continuity risk</td><td data-label="What it measures">Care that could collapse because one undocumented caregiver holds all the care-routine knowledge.</td><td data-label="Easily confused with">Caregiving and household labor (hours of work, not fragility).</td><td data-label="Example measure">Share of care that depends on one person</td></tr><tr><td data-label="Category" class="scenarioTableName">Congenital/parent-to-child transmission</td><td data-label="What it measures">The disease itself passing from a parent to a child, a burden landing on someone with no exposure event of their own.</td><td data-label="Easily confused with">Caregiving (labor, not transmission).</td><td data-label="Example measure">Transmission rate; number of children affected</td></tr><tr><td data-label="Category" class="scenarioTableName">Diagnostic delay</td><td data-label="What it measures">The delay and repeated consultations before an accurate diagnosis.</td><td data-label="Easily confused with">Medical disbelief (dismissal can cause delay, but this counts the time lost); Harm from misdiagnosis-driven treatment (active harm, not lost time). A cost gap between disease stages is severity, not delay.</td><td data-label="Example measure">Months to diagnosis; visits before diagnosis</td></tr><tr><td data-label="Category" class="scenarioTableName">Harm from misdiagnosis-driven treatment</td><td data-label="What it measures">Active harm from a treatment whose benefit for the diagnosis being treated is not supported by the evidence.</td><td data-label="Easily confused with">Diagnostic delay (passive time lost).</td><td data-label="Example measure">Treatment-related adverse-event rate</td></tr><tr><td data-label="Category" class="scenarioTableName">Barriers to reaching care</td><td data-label="What it measures">Costs from being unable to reach or obtain appropriate care: distance, provider scarcity, a setting that cannot accommodate accessibility needs.</td><td data-label="Easily confused with">Uncoordinated, fragmented care (people who are being seen, but by uncoordinated providers); Administrative burden (paperwork and insurance).</td><td data-label="Example measure">Travel distance; wait for a specialist</td></tr><tr><td data-label="Category" class="scenarioTableName">Medical disbelief and dismissal</td><td data-label="What it measures">Harm from being dismissed or told real symptoms are not real.</td><td data-label="Easily confused with">Diagnostic delay and Psychological burden are often the effects; disbelief is the cause being counted.</td><td data-label="Example measure">Share reporting being dismissed</td></tr><tr><td data-label="Category" class="scenarioTableName">Administrative burden</td><td data-label="What it measures">Disability applications, paperwork, or care disruption from an outside system such as insurance coverage churn or a legal dispute.</td><td data-label="Easily confused with">Barriers to reaching care (physical or supply barriers); Uncoordinated, fragmented care (providers not coordinating).</td><td data-label="Example measure">Appeals filed; months of coverage gaps</td></tr><tr><td data-label="Category" class="scenarioTableName">Cognitive impact</td><td data-label="What it measures">Limitations that make ordinary tasks take longer or require assistance.</td><td data-label="Easily confused with">Psychological burden (emotional, not thinking or task limits); Overall quality of life (a broad score).</td><td data-label="Example measure">Task completion time; share needing help</td></tr><tr><td data-label="Category" class="scenarioTableName">Psychological burden</td><td data-label="What it measures">The emotional and psychological cost to patients or caregivers, including from the care-seeking process itself.</td><td data-label="Easily confused with">Cognitive impact (thinking and tasks); Overall quality of life (a composite score that may include mood).</td><td data-label="Example measure">Anxiety or depression prevalence</td></tr><tr><td data-label="Category" class="scenarioTableName">Overall quality of life</td><td data-label="What it measures">A general health-related quality-of-life or functional-status loss (EQ-5D utility, QALYs or QALMs, SF-36-type scores).</td><td data-label="Easily confused with">Any specific category above: use this only when the result is the composite score itself.</td><td data-label="Example measure">Utility score gap; quality-adjusted life-months lost</td></tr><tr><td data-label="Category" class="scenarioTableName">Undercounted by official surveillance</td><td data-label="What it measures">The gap between a disease's true frequency or burden and what surveillance, claims coding, or public reporting captures.</td><td data-label="Easily confused with">Diagnostic delay (one patient's timeline); this one is a population-level measurement gap.</td><td data-label="Example measure">Estimated true cases versus reported cases</td></tr><tr><td data-label="Category" class="scenarioTableName">Uncoordinated, fragmented care</td><td data-label="What it measures">The burden of navigating several uncoordinated providers or specialists with no single point of coordination.</td><td data-label="Easily confused with">Barriers to reaching care (cannot get in at all); Care continuity risk (one caregiver's knowledge).</td><td data-label="Example measure">Number of specialists; hand-offs between them</td></tr></tbody></table></div></details>
 
 <details class="whatThisAdds" open><summary>How did real people shape this simulator?</summary>
@@ -3049,5 +3066,144 @@ $('download').onclick=async()=>{try{if(!bundle)bundle=await(await post('/api/bun
 function exportFailed(e){alert('The download did not work: '+(e&&e.message?e.message:e)+'. If the server was restarted since this page opened, refresh the page (F5) and try again.')}
 $('downloadExcel').onclick=()=>downloadStructuredExport(jobId,current?.documents?.map(d=>d.name)).catch(exportFailed);
 models();
+
+function buildCategoryMap(){
+  const box=document.getElementById('categoryMap');
+  if(!box||box.dataset.built)return;
+  box.dataset.built='1';
+  const byLabel={};for(const k of Object.keys(BURDEN_CATEGORY_LABELS))byLabel[BURDEN_CATEGORY_LABELS[k]]=k;
+  const info={};
+  document.querySelectorAll('.categoryTable tbody tr').forEach(tr=>{
+    const cells=tr.querySelectorAll('td');if(cells.length<4)return;
+    const key=byLabel[cells[0].textContent.trim()];if(!key)return;
+    info[key]={confused:cells[2].textContent.trim(),example:cells[3].textContent.trim()};
+  });
+  const FAMILIES=[
+    {id:'money',name:'Money and livelihood',color:'#2a78d6',box:[10,24,290,206],items:['direct_costs','employment','opportunity_costs'],xs:[57,151,245],y:140},
+    {id:'home',name:'Who carries it at home',color:'#17956a',box:[315,24,290,206],items:['caregiving','care_continuity_risk','congenital_transmission'],xs:[362,456,550],y:140},
+    {id:'person',name:'Effects on the person',color:'#7a5bd6',box:[620,24,270,206],items:['cognitive','psychological_burden','quality_of_life'],xs:[662,754,846],y:140},
+    {id:'path',name:'Getting a diagnosis and care',color:'#a87d00',box:[10,250,400,206],items:['diagnostic_delay','access_barriers','administrative','care_fragmentation'],xs:[57,151,245,339],y:366},
+    {id:'harm',name:'Harm from the system',color:'#d9531e',box:[425,250,200,206],items:['medical_disbelief','iatrogenic_harm'],xs:[472,566],y:366},
+    {id:'gap',name:'A measurement gap',color:'#c2418c',box:[640,250,250,206],items:['surveillance_undercount'],xs:[765],y:366},
+  ];
+  const SHORT={direct_costs:'Direct costs of care',employment:'Work and income',opportunity_costs:'Longer-term opportunity costs',caregiving:'Caregiving and household labor',care_continuity_risk:'Care continuity risk',congenital_transmission:'Parent-to-child transmission',diagnostic_delay:'Diagnostic delay',iatrogenic_harm:'Harm from wrong treatment',access_barriers:'Barriers to reaching care',medical_disbelief:'Disbelief and dismissal',administrative:'Administrative burden',cognitive:'Cognitive impact',psychological_burden:'Psychological burden',quality_of_life:'Overall quality of life',surveillance_undercount:'Undercounted by surveillance',care_fragmentation:'Fragmented care'};
+  const PAIRS=[
+    ['direct_costs','administrative','confused','Money versus time and paperwork. Dollars spent on care are direct costs; hours and hassle with forms or insurance are administrative burden.'],
+    ['direct_costs','employment','confused','Money spent versus money not earned.'],
+    ['employment','opportunity_costs','confused','This year\'s pay versus a changed life path. Present-day pay is work and income; a lost career or years of disrupted schooling belongs under longer-term opportunity costs.'],
+    ['employment','cognitive','confused','A symptom versus an income loss. Cognitive impact is the limitation itself; work and income counts the pay or hours lost.'],
+    ['employment','caregiving','overlap','A caregiver\'s own lost pay can appear under work and income, while the unpaid care hours are caregiving. The same loss can be counted twice if both are added.'],
+    ['caregiving','care_continuity_risk','confused','Hours of work versus fragility. Caregiving counts the hours; continuity risk counts how much care depends on one person\'s knowledge.'],
+    ['caregiving','congenital_transmission','confused','Labor versus transmission. Caregiving is work done; transmission is the disease itself passing to a child.'],
+    ['care_continuity_risk','care_fragmentation','confused','One caregiver\'s knowledge versus many providers who do not coordinate.'],
+    ['medical_disbelief','diagnostic_delay','cause','Dismissal can cause delay, but diagnostic delay counts the time lost and disbelief counts the harm of being dismissed.','medical_disbelief'],
+    ['diagnostic_delay','iatrogenic_harm','confused','Passive time lost versus active harm from a treatment.'],
+    ['diagnostic_delay','surveillance_undercount','confused','One patient\'s timeline versus a population-level gap in what gets counted.'],
+    ['access_barriers','care_fragmentation','confused','Cannot get in at all versus being seen by providers who do not coordinate.'],
+    ['access_barriers','administrative','confused','Physical or supply barriers such as distance or scarce providers versus paperwork and insurance.'],
+    ['administrative','care_fragmentation','confused','An outside system such as insurance or paperwork versus providers not coordinating with each other.'],
+    ['medical_disbelief','psychological_burden','cause','Being dismissed is often a cause of emotional harm. Disbelief is the cause being counted; psychological burden is the effect.','medical_disbelief'],
+    ['cognitive','psychological_burden','confused','Thinking and task limits versus emotional cost.'],
+    ['cognitive','quality_of_life','confused','A specific limitation versus a broad composite score.'],
+    ['psychological_burden','quality_of_life','confused','An emotional cost versus a composite score that may include mood.'],
+  ];
+  const KIND_LABEL={confused:'Easily confused',overlap:'Possible double counting',cause:'Often a cause, per the table'};
+  const pairInfo={};for(const q of PAIRS){pairInfo[q[0]+'|'+q[1]]=q;pairInfo[q[1]+'|'+q[0]]=q}
+  const near={};for(const [x,y] of PAIRS.map(q=>[q[0],q[1]])){(near[x]=near[x]||new Set()).add(y);(near[y]=near[y]||new Set()).add(x)}
+  const pos={},famOf={};
+  for(const f of FAMILIES)f.items.forEach((k,i)=>{pos[k]={x:f.xs[i],y:f.y};famOf[k]=f});
+  const NS='http://www.w3.org/2000/svg',R=42;
+  const svg=document.createElementNS(NS,'svg');
+  svg.setAttribute('viewBox','0 0 900 470');svg.setAttribute('role','group');svg.setAttribute('aria-label','The 16 burden categories, grouped into six families');
+  const defs=document.createElementNS(NS,'defs');
+  defs.innerHTML='<marker id="catArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4a4a4a"/></marker>';
+  svg.appendChild(defs);
+  const linkLayer=document.createElementNS(NS,'g');
+  const bubbles={};
+  for(const f of FAMILIES){
+    const r=document.createElementNS(NS,'rect');r.setAttribute('class','catFamBox');r.setAttribute('x',f.box[0]);r.setAttribute('y',f.box[1]);r.setAttribute('width',f.box[2]);r.setAttribute('height',f.box[3]);r.setAttribute('rx',14);svg.appendChild(r);
+    const t=document.createElementNS(NS,'text');t.setAttribute('class','catFamLabel');t.setAttribute('x',f.box[0]+14);t.setAttribute('y',f.box[1]+24);t.textContent=f.name;svg.appendChild(t);
+  }
+  svg.appendChild(linkLayer);
+  for(const f of FAMILIES)for(const k of f.items){
+    const g=document.createElementNS(NS,'g');g.setAttribute('class','catBubble');g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-pressed','false');
+    g.setAttribute('aria-label',BURDEN_CATEGORY_LABELS[k]+', in the group '+f.name+'. Press Enter for details.');
+    const back=document.createElementNS(NS,'circle');back.setAttribute('cx',pos[k].x);back.setAttribute('cy',pos[k].y);back.setAttribute('r',R);back.setAttribute('fill','#fff');g.appendChild(back);
+    const c=document.createElementNS(NS,'circle');c.setAttribute('cx',pos[k].x);c.setAttribute('cy',pos[k].y);c.setAttribute('r',R);c.setAttribute('fill',f.color);c.setAttribute('stroke',f.color);g.appendChild(c);
+    const words=SHORT[k].split(' ');const lines=[];let cur='';
+    for(const w of words){if((cur+' '+w).trim().length>12&&cur){lines.push(cur);cur=w}else cur=(cur+' '+w).trim()}
+    if(cur)lines.push(cur);
+    const tx=document.createElementNS(NS,'text');tx.setAttribute('text-anchor','middle');tx.setAttribute('x',pos[k].x);
+    lines.forEach((ln,i)=>{const ts=document.createElementNS(NS,'tspan');ts.setAttribute('x',pos[k].x);ts.setAttribute('y',pos[k].y+4-((lines.length-1)*6.5)+i*13);ts.textContent=ln;tx.appendChild(ts)});
+    g.appendChild(tx);
+    const tt=document.createElementNS(NS,'title');tt.textContent=BURDEN_CATEGORY_LABELS[k]+': '+BURDEN_CATEGORY_EXPLANATIONS[k];g.appendChild(tt);
+    g.onclick=()=>select(k);
+    g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(k)}else if(e.key==='Escape')select(null)};
+    svg.appendChild(g);bubbles[k]=g;
+  }
+  document.getElementById('catMapSvg').appendChild(svg);
+  const list=document.getElementById('catMapList'),listButtons={};
+  for(const f of FAMILIES){
+    const d=document.createElement('div');d.className='catFamList';d.style.setProperty('--c',f.color);
+    const b=document.createElement('b');b.textContent=f.name;d.appendChild(b);
+    for(const k of f.items){const bt=document.createElement('button');bt.type='button';bt.textContent=BURDEN_CATEGORY_LABELS[k];bt.style.setProperty('--c',f.color);bt.setAttribute('aria-pressed','false');bt.onclick=()=>select(k);d.appendChild(bt);listButtons[k]=bt}
+    list.appendChild(d);
+  }
+  const detail=document.getElementById('catDetail');
+  const note=document.getElementById('catLinkNote');
+  let selected=null;
+  function select(k){
+    selected=(k===selected)?null:k;
+    linkLayer.textContent='';
+    box.classList.toggle('hasSel',!!selected);
+    for(const key of Object.keys(bubbles)){
+      const on=key===selected,nr=!!selected&&near[selected]&&near[selected].has(key);
+      bubbles[key].classList.toggle('sel',on);bubbles[key].classList.toggle('near',nr);bubbles[key].setAttribute('aria-pressed',on?'true':'false');
+      listButtons[key].classList.toggle('sel',on);listButtons[key].setAttribute('aria-pressed',on?'true':'false');
+    }
+    detail.textContent='';
+    if(!selected){const p=document.createElement('p');p.textContent='Select a category to read what it measures.';detail.appendChild(p);return}
+    const items=[];
+    for(const other of (near[selected]||[])){
+      const q=pairInfo[selected+'|'+other],kind=q[2];
+      let a=pos[selected],b=pos[other];
+      if(kind==='cause'&&q[4]===other){const t=a;a=b;b=t}
+      const dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1;
+      let d;
+      if(Math.abs(dy)<1){
+        const up=a.y<250?-1:1,x1=a.x+Math.sign(dx)*R*0.7,x2=b.x-Math.sign(dx)*R*0.7,y0=a.y+up*R*0.7;
+        d='M'+x1+' '+y0+' Q'+((x1+x2)/2)+' '+(a.y+up*Math.min(R+Math.abs(dx)*0.46,112))+' '+x2+' '+y0;
+      }else{
+        d='M'+(a.x+dx/len*R)+' '+(a.y+dy/len*R)+' L'+(b.x-dx/len*(R+(kind==='cause'?5:0)))+' '+(b.y-dy/len*(R+(kind==='cause'?5:0)));
+      }
+      const ln=document.createElementNS(NS,'path');ln.setAttribute('class','catLink'+(kind==='cause'?' cause':'')+(kind==='overlap'?' overlap':''));ln.setAttribute('d',d);
+      if(kind==='cause')ln.setAttribute('marker-end','url(#catArrow)');
+      const hit=document.createElementNS(NS,'path');hit.setAttribute('class','catLinkHit');hit.setAttribute('d',d);
+      const text=BURDEN_CATEGORY_LABELS[selected]+' / '+BURDEN_CATEGORY_LABELS[other]+' ['+KIND_LABEL[kind].toLowerCase()+']: '+q[3];
+      const tt=document.createElementNS(NS,'title');tt.textContent=text;hit.appendChild(tt);
+      items.push({other,kind,rule:q[3],ln,hit});
+      hit.onmouseenter=()=>{ln.classList.add('on');note.textContent=text};
+      hit.onmouseleave=()=>{ln.classList.remove('on');note.textContent=''};
+      linkLayer.appendChild(ln);linkLayer.appendChild(hit);
+    }
+    const f=famOf[selected];
+    const chip=document.createElement('span');chip.className='catFamChip';chip.style.setProperty('--c',f.color);chip.textContent=f.name;detail.appendChild(chip);
+    const h=document.createElement('h5');h.textContent=BURDEN_CATEGORY_LABELS[selected];detail.appendChild(h);
+    const add=(label,text)=>{if(!text)return;const p=document.createElement('p');const bb=document.createElement('b');bb.textContent=label+' ';p.appendChild(bb);p.appendChild(document.createTextNode(text));detail.appendChild(p)};
+    add('What it measures:',BURDEN_CATEGORY_EXPLANATIONS[selected]);
+    add('Easily confused with:',(info[selected]||{}).confused);
+    add('Example measure:',(info[selected]||{}).example);
+    if(items.length){
+      const h2=document.createElement('p');const hb=document.createElement('b');hb.textContent='Told apart from:';h2.appendChild(hb);detail.appendChild(h2);
+      const ul=document.createElement('ul');ul.className='catPairs';
+      for(const it of items){const li=document.createElement('li');const kb=document.createElement('b');kb.textContent=BURDEN_CATEGORY_LABELS[it.other];li.appendChild(kb);
+        const tag=document.createElement('span');tag.className='catKind '+it.kind;tag.textContent=KIND_LABEL[it.kind];li.appendChild(tag);
+        li.appendChild(document.createTextNode(' '+it.rule));
+        li.onmouseenter=()=>it.ln.classList.add('on');li.onmouseleave=()=>it.ln.classList.remove('on');ul.appendChild(li)}
+      detail.appendChild(ul);
+    }
+  }
+}
+buildCategoryMap();
 </script></body></html>
 
