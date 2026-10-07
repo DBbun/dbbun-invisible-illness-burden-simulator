@@ -214,10 +214,13 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .covName .linkButton:hover{text-decoration-color:#242424}tfoot .covName{font-weight:700;font-size:12px;border-top:1px solid #d6d6d6;padding-top:5px!important}
 .covOn{height:24px;text-align:center}.covOff{height:24px;background:#f3f3f2;border-radius:4px}
 .covCell{display:block;width:100%;height:24px;border:2px solid var(--c);border-radius:5px;background:var(--c);color:#fff;font-size:12px;font-weight:700;cursor:pointer;padding:0;line-height:1}.covCell:hover,.covCell:focus-visible{outline:2px solid #242424;outline-offset:1px}
+.covTip{position:fixed;z-index:50;max-width:380px;padding:10px 12px;background:#fff;color:#242424;border:1.5px solid #242424;border-radius:10px;box-shadow:0 6px 22px #00000026;font-size:13px;line-height:1.4;pointer-events:none}
+.covTip p{margin:0 0 5px;color:#242424}.covTip ul{margin:0 0 6px;padding-left:18px}.covTip li{margin:0 0 2px}.covTipHead{font-weight:700;font-size:14px;margin:0 0 6px;padding-bottom:4px;border-bottom:3px solid var(--c)}.covTipHint{color:#4a4a4a!important;font-size:12px}
+.covEnd[tabindex]:focus-visible,.covTotal[tabindex]:focus-visible{outline:2px solid #242424;outline-offset:1px}
 .covEnd{white-space:nowrap;color:#242424;font-size:12px;text-align:left}.covTotal{text-align:center;font-weight:700;font-size:12px;padding-top:5px!important;border-top:1px solid #d6d6d6;color:#242424}
 .covTotal.covGap{background:repeating-linear-gradient(45deg,#fff,#fff 3px,#e9e9e8 3px,#e9e9e8 5px);border:1.5px dashed #6b6b6b;border-radius:4px;color:#242424}
 .atGlance{margin:0 0 16px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
-.agTiles{display:grid;grid-template-columns:.8fr .8fr 1.3fr 1.3fr;gap:10px}.agTile{padding:10px 12px;border:1px solid #e6e6e6;border-radius:10px;background:var(--surface)}
+.agHover{cursor:help}.agHover:hover,.agHover:focus-visible,.agSeg:focus-visible{outline:2px solid #242424;outline-offset:1px}.agTiles{display:grid;grid-template-columns:.8fr .8fr 1.3fr 1.3fr;gap:10px}.agTile{padding:10px 12px;border:1px solid #e6e6e6;border-radius:10px;background:var(--surface)}
 .agBig{font-size:30px;font-weight:700;line-height:1.1;color:#242424;letter-spacing:-.5px}.agUnit{font-size:14px;font-weight:700;letter-spacing:0}.agLabel{font-size:13px;line-height:1.35;color:#4a4a4a;margin-top:4px}
 .agDots{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}.agDots i{display:block;width:11px;height:11px;border-radius:50%;border:2px dashed #b5b5b5;box-sizing:border-box}.agDots i.on{background:var(--c);border:2px solid var(--c)}
 .agCap{margin:12px 0 5px;font-size:13px;color:#242424}.agLegend{display:inline-flex;flex-wrap:wrap;gap:4px 14px;margin-left:8px;color:#4a4a4a}.agLegend span{white-space:nowrap}.agLegend .sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1.5px solid #242424;box-sizing:border-box}
@@ -379,7 +382,8 @@ button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}b
 .sourceUnitMeta{font-size:14px;color:var(--muted);margin-top:4px}
 .sourceFilesCell{display:flex;flex-direction:column;gap:6px;white-space:nowrap}
 .changeNote{font-size:16px;color:var(--muted);margin:6px 0 0}
-.resultsHeader{display:none;justify-content:space-between;align-items:center;margin:8px 0 0}.resultsHeader button{width:auto;padding:10px 16px;font-size:15px}.resultsHeaderRight{display:flex;gap:8px;align-items:center}
+.resultsHeader{display:none;flex-wrap:wrap;justify-content:space-between;align-items:center;margin:8px 0 0}.simHeadline{flex:0 0 100%;order:-1;margin:2px 0 16px;text-align:center;font-size:clamp(26px,3.2vw,40px);line-height:1.2;letter-spacing:-.6px;color:#242424;text-wrap:balance}
+.tabPanel[data-tab="overview"]>h2#title{display:none}@media print{.tabPanel[data-tab="overview"]>h2#title{display:block!important}}.resultsHeader button{width:auto;padding:10px 16px;font-size:15px}.resultsHeaderRight{display:flex;gap:8px;align-items:center}
 #resultsSection{display:none}#auditpanel{display:none!important}
 #readyNotice{display:none;align-items:center;gap:14px;justify-content:space-between;margin:16px 5% 0;padding:14px 18px;border-radius:12px;background:var(--surface);border:1px solid var(--line);color:var(--ink)}#readyNotice.active{display:flex}#readyNotice .actions{display:flex;gap:8px;flex:0 0 auto}#readyNotice button{width:auto;padding:9px 14px;font-size:15px}.warning{color:#805500}#progress{display:none;margin:16px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font-weight:bold}#progress.active{display:flex;align-items:center;gap:12px}#progress small{display:block;color:var(--muted);font-weight:normal}.spinner{width:22px;height:22px;border:3px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite;flex:0 0 auto}#progress.error{border-color:#b25a4b;color:#7b2d24}#progress.error .spinner{display:none}@keyframes spin{to{transform:rotate(360deg)}}a:focus,button:focus,input:focus,select:focus,textarea:focus{outline:3px solid #666;outline-offset:3px}@media(max-width:650px){main{margin-top:30px}.grid{grid-template-columns:1fr}h1{font-size:32px}}
 .printAllLenses{display:none}
@@ -637,7 +641,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <button id="generate" disabled>Generate</button><div id="progress" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><span><span id="status"></span><ul id="callProgress" class="callProgress"></ul><p id="progressDetail" class="progressDetail"></p></span></div>
 <details id="auditpanel" hidden><summary>Generation details and API usage</summary><pre id="audit"></pre></details>
 </section>
-<div id="resultsHeader" class="resultsHeader"><button id="backButton" class="secondary" type="button">← Back</button><div class="resultsHeaderRight"><button id="printButton" class="secondary" type="button">Print / save as PDF</button><button id="videoButton" class="secondary" type="button"></button></div></div>
+<div id="resultsHeader" class="resultsHeader"><h2 id="simHeadline" class="simHeadline"></h2><button id="backButton" class="secondary" type="button">← Back</button><div class="resultsHeaderRight"><button id="printButton" class="secondary" type="button">Print / save as PDF</button><button id="videoButton" class="secondary" type="button"></button></div></div>
 <section id="resultsSection">
 <div id="lensBar" class="lensBar" role="group" aria-label="Choose who this simulator is explained for" hidden></div>
 <nav class="tabNav" role="tablist">
@@ -2774,7 +2778,7 @@ function render(){
   const s=current.spec,values={},sliderEls={};
   const {byInput:inputDependents}=buildDependencyMaps(s.inputs,s.outputs);
   const outputLabelById=new Map(s.outputs.map(o=>[o.id,o.label]));
-  $('title').textContent=s.title;$('boundary').textContent=s.boundary;
+  $('title').textContent=s.title;$('simHeadline').textContent=s.title;$('boundary').textContent=s.boundary;
   $('controls').replaceChildren();
   const interpretedInputs=s.inputs.filter(i=>i.interpretation);
   const controlsIntro=$('controlsIntro');controlsIntro.replaceChildren();
@@ -3282,6 +3286,30 @@ function publicationYear(row){
   return years?Number(years[years.length-1]):0;
 }
 function libraryCompare(a,b){return publicationYear(b)-publicationYear(a)||authorLabel(a).localeCompare(authorLabel(b))}
+
+const covTip=(()=>{
+  let el=null;
+  const get=()=>{if(!el){el=document.createElement('div');el.className='covTip';el.setAttribute('role','tooltip');el.hidden=true;document.body.appendChild(el)}return el};
+  const fmtVal=(v)=>Number(v).toLocaleString('en-US',{maximumFractionDigits:Math.abs(v)<10?2:0});
+  return {
+    show(target,build){
+      const t=get();t.replaceChildren();build(t);t.hidden=false;
+      const r=target.getBoundingClientRect(),w=t.offsetWidth,h=t.offsetHeight;
+      let left=Math.min(Math.max(8,r.left+r.width/2-w/2),window.innerWidth-w-8);
+      let top=r.bottom+8;if(top+h>window.innerHeight-8)top=Math.max(8,r.top-h-8);
+      t.style.left=left+'px';t.style.top=top+'px';
+    },
+    hide(){if(el)el.hidden=true},
+    fmtVal,
+    attach(node,build){
+      node.addEventListener('mouseenter',()=>covTip.show(node,build));
+      node.addEventListener('focus',()=>covTip.show(node,build));
+      node.addEventListener('mouseleave',()=>covTip.hide());
+      node.addEventListener('blur',()=>covTip.hide());
+    }
+  };
+})();
+function covTipLine(parent,label,text){const p=document.createElement('p');if(label){const b=document.createElement('b');b.textContent=label+' ';p.appendChild(b)}p.appendChild(document.createTextNode(text));parent.appendChild(p);return p}
 function renderCoverageMap(rows){
   const box=$('coverageMap');if(!box)return;
   box.replaceChildren();
@@ -3325,20 +3353,53 @@ function renderCoverageMap(rows){
         if(k){
           td.className='covOn';td.style.setProperty('--c',c.fam.color);
           const b=document.createElement('button');b.type='button';b.className='covCell';b.textContent=String(k);
-          b.title=r.title+': '+BURDEN_CATEGORY_LABELS[c.key]+', '+k+' result'+(k===1?'':'s');
+          const results=(r.category_results&&r.category_results[c.key])||[];
+          covTip.attach(b,tip=>{
+            const hd=document.createElement('div');hd.className='covTipHead';hd.style.setProperty('--c',c.fam.color);hd.textContent=BURDEN_CATEGORY_LABELS[c.key];tip.appendChild(hd);
+            covTipLine(tip,'Simulator:',authorLabel(r)+' - '+r.title);
+            covTipLine(tip,k+' result'+(k===1?'':'s')+' measured here:','');
+            const ul=document.createElement('ul');
+            for(const q of results.slice(0,4)){
+              const li=document.createElement('li');
+              let txt=q.label;
+              if(q.value!==null&&q.value!==undefined)txt+=' - default '+covTip.fmtVal(q.value)+(q.unit?' '+q.unit:'');
+              else if(q.forecast_periods)txt+=' - a '+q.forecast_periods+'-period forecast';
+              li.textContent=txt;ul.appendChild(li);
+            }
+            if(results.length>4){const li=document.createElement('li');li.textContent='and '+(results.length-4)+' more';ul.appendChild(li)}
+            if(results.length)tip.appendChild(ul);
+            covTipLine(tip,'What this burden covers:',BURDEN_CATEGORY_EXPLANATIONS[c.key]||'');
+            const hint=document.createElement('p');hint.className='covTipHint';hint.textContent='Select to open this simulator.';tip.appendChild(hint);
+          });
           b.setAttribute('aria-label',r.title+', '+BURDEN_CATEGORY_LABELS[c.key]+', '+k+' result'+(k===1?'':'s')+'. Open this simulator.');
           b.onclick=()=>openSimulationById(r.id);td.appendChild(b);
         }else{td.className='covOff';const s=document.createElement('span');s.className='srOnly';s.textContent='none';td.appendChild(s)}
         tr.appendChild(td);
       }
-      const end=document.createElement('td');end.className='covEnd';end.textContent=n+' of '+cols.length;tr.appendChild(end);
+      const end=document.createElement('td');end.className='covEnd';end.textContent=n+' of '+cols.length;end.tabIndex=0;
+      covTip.attach(end,tip=>{
+        const hd=document.createElement('div');hd.className='covTipHead';hd.style.setProperty('--c','#242424');hd.textContent=authorLabel(r);tip.appendChild(hd);
+        covTipLine(tip,'',r.title);
+        const have=cols.filter(c=>countOf(r,c.key));
+        covTipLine(tip,have.length+' of '+cols.length+' burdens measured:',have.length?have.map(c=>BURDEN_CATEGORY_LABELS[c.key]).join('; ')+'.':'none of its results were tagged to a burden.');
+        covTipLine(tip,'The other '+(cols.length-have.length)+':','not measured by this simulator. The paper may still discuss them.');
+      });
+      tr.appendChild(end);
       tbody.appendChild(tr);
     }
   }
   table.appendChild(tbody);
   const tfoot=document.createElement('tfoot');const fr=document.createElement('tr');
   const fh=document.createElement('th');fh.scope='row';fh.className='covName';fh.textContent='Simulators that measure it';fr.appendChild(fh);
-  for(const c of cols){const td=document.createElement('td');td.className='covTotal'+(totals[c.key]?'':' covGap');td.textContent=String(totals[c.key]);if(!totals[c.key])td.title='No simulator in this library measures '+BURDEN_CATEGORY_LABELS[c.key].toLowerCase();fr.appendChild(td)}
+  for(const c of cols){const td=document.createElement('td');td.className='covTotal'+(totals[c.key]?'':' covGap');td.textContent=String(totals[c.key]);td.tabIndex=0;
+    covTip.attach(td,tip=>{
+      const hd=document.createElement('div');hd.className='covTipHead';hd.style.setProperty('--c',c.fam.color);hd.textContent=BURDEN_CATEGORY_LABELS[c.key];tip.appendChild(hd);
+      const who=rows.filter(r=>countOf(r,c.key));
+      if(!who.length){covTipLine(tip,'','No simulator in this library measures this burden. That is a gap in the evidence, not proof that the burden is absent.')}
+      else{covTipLine(tip,who.length+' simulator'+(who.length===1?'':'s')+' measure'+(who.length===1?'s':'')+' it:','');const ul=document.createElement('ul');for(const r of who.slice(0,10)){const li=document.createElement('li');li.textContent=authorLabel(r)+' - '+r.title;ul.appendChild(li)}if(who.length>10){const li=document.createElement('li');li.textContent='and '+(who.length-10)+' more';ul.appendChild(li)}tip.appendChild(ul)}
+      covTipLine(tip,'What this burden covers:',BURDEN_CATEGORY_EXPLANATIONS[c.key]||'');
+    });
+    fr.appendChild(td)}
   fr.appendChild(document.createElement('td'));tfoot.appendChild(fr);table.appendChild(tfoot);
   wrap.appendChild(table);box.appendChild(wrap);
   const none=rows.filter(r=>!cols.some(c=>countOf(r,c.key)));
@@ -3359,15 +3420,32 @@ function renderAtAGlance(job){
   const kindOf=c=>c.agreement||(c.status==='not_computed'?'not_checked':c.status==='context'?'context':c.kind==='usd_amount'?'restated':'context');
   const tally={agrees:0,differs:0,context:0,restated:0,not_checked:0};
   for(const c of checks){const k=kindOf(c);tally[k in tally?k:'context']++}
-  const tile=(big,unit,label,extra)=>{
+  const baseline=(job.computed&&job.computed.baseline)||{};
+  const word=st=>({observed:'observed in the paper',assumed:'assumed',projected:'projected'}[st]||'not labeled');
+  const val=(v,u)=>(typeof v==='number'?covTip.fmtVal(v)+(u?' '+u:''):'');
+  const head=(tip,text)=>{const hd=document.createElement('div');hd.className='covTipHead';hd.style.setProperty('--c','#242424');hd.textContent=text;tip.appendChild(hd)};
+  const list=(tip,items,cap)=>{const ul=document.createElement('ul');for(const x of items.slice(0,cap||8)){const li=document.createElement('li');li.textContent=x;ul.appendChild(li)}if(items.length>(cap||8)){const li=document.createElement('li');li.textContent='and '+(items.length-(cap||8))+' more';ul.appendChild(li)}tip.appendChild(ul)};
+  const tile=(big,unit,label,extra,builder)=>{
     const t=document.createElement('div');t.className='agTile';
+    if(builder){t.tabIndex=0;t.classList.add('agHover');covTip.attach(t,builder)}
     const n=document.createElement('div');n.className='agBig';n.textContent=big;if(unit){const u=document.createElement('span');u.className='agUnit';u.textContent=' '+unit;n.appendChild(u)}
     t.appendChild(n);const l=document.createElement('div');l.className='agLabel';l.textContent=label;t.appendChild(l);
     if(extra)t.appendChild(extra);return t;
   };
   const tiles=document.createElement('div');tiles.className='agTiles';
-  tiles.appendChild(tile(String(editable),'inputs','you can change, each labeled by how well the paper supports it'));
-  tiles.appendChild(tile(String(outputs.length),outputs.length===1?'result':'results',(traj.length?traj.length+' forecast'+(traj.length===1?'':'s')+', ':'no forecast, ')+scen.length+' named scenario'+(scen.length===1?'':'s')));
+  tiles.appendChild(tile(String(editable),'inputs','you can change, each labeled by how well the paper supports it',null,tip=>{
+    head(tip,'Inputs: the numbers you can change');
+    covTipLine(tip,'','Each input is one number the simulator starts from: a figure taken from the paper, or an assumption. Change one on the Explore tab and every result recalculates.');
+    list(tip,inputs.map(i=>(i.label||i.id)+(typeof i.default==='number'?' - default '+val(i.default,i.unit):'')+' ('+word(i.evidence_status)+(i.editable===false?', fixed':'')+')'),8);
+    covTipLine(tip,'Observed','means the paper reported it; assumed means an assumption (the range you can test is stated); projected means a projection beyond what the paper reports.');
+  }));
+  tiles.appendChild(tile(String(outputs.length),outputs.length===1?'result':'results',(traj.length?traj.length+' forecast'+(traj.length===1?'':'s')+', ':'no forecast, ')+scen.length+' named scenario'+(scen.length===1?'':'s'),null,tip=>{
+    head(tip,'Results: the numbers the simulator calculates');
+    covTipLine(tip,'','Each result is worked out from the inputs by ordinary arithmetic, and it moves when you change an input. These are the large numbers on the Explore tab.');
+    list(tip,outputs.map(o=>(o.label||o.id)+(typeof baseline[o.id]==='number'?' - default '+val(baseline[o.id],o.unit):'')),6);
+    if(traj.length){covTipLine(tip,'Forecasts:','');list(tip,traj.map(t=>t.label||t.id),4)}else covTipLine(tip,'Forecast:','none. The paper reports no per-period rate to project.');
+    if(scen.length){covTipLine(tip,'Named scenarios (ready-made what-ifs):','');list(tip,scen.map(x=>x.label||x.id),7)}
+  }));
   const dots=document.createElement('div');dots.className='agDots';dots.setAttribute('role','img');
   const names=[];
   for(const f of BURDEN_FAMILIES)for(const k of f.items){
@@ -3376,7 +3454,14 @@ function renderAtAGlance(job){
     if(on)names.push(BURDEN_CATEGORY_LABELS[k]);dots.appendChild(d);
   }
   dots.setAttribute('aria-label',measured.size+' of 16 burden categories measured'+(names.length?': '+names.join(', '):''));
-  tiles.appendChild(tile(String(measured.size),'of 16','burdens measured (filled dots)',dots));
+  tiles.appendChild(tile(String(measured.size),'of 16','burdens measured (filled dots)',dots,tip=>{
+    head(tip,'Burdens measured: '+measured.size+' of 16');
+    covTipLine(tip,'','The 16 burden categories are the kinds of burden DBbun tracks (costs, work, caregiving, diagnosis delay and so on). A filled dot means this simulator has at least one result in that category.');
+    const counts=new Map();for(const x of [...outputs,...traj])if(x.category)counts.set(x.category,(counts.get(x.category)||0)+1);
+    const have=BURDEN_CATEGORY_ORDER.filter(k=>counts.has(k));
+    if(have.length){covTipLine(tip,'Measured here:','');list(tip,have.map(k=>BURDEN_CATEGORY_LABELS[k]+' - '+counts.get(k)+' result'+(counts.get(k)===1?'':'s')),8)}
+    covTipLine(tip,'Not measured here ('+(16-have.length)+'):','the paper may still discuss them. That is a gap in what this simulator covers, not proof that the burden is absent.');
+  }));
   const checked=tally.agrees+tally.differs+tally.context+tally.restated;
   const parts=[];
   if(tally.agrees)parts.push(tally.agrees+' agree'+(tally.agrees===1?'s':''));
@@ -3384,7 +3469,13 @@ function renderAtAGlance(job){
   if(tally.context)parts.push(tally.context+' context only');
   if(tally.restated)parts.push(tally.restated+' restated in current dollars');
   if(tally.not_checked)parts.push(tally.not_checked+' not checkable');
-  tiles.appendChild(tile(String(checks.length),checks.length===1?'figure checked':'figures checked',checks.length?'against federal data, in code: '+parts.join('; '):'no figure in this paper could be checked against federal data'));
+  tiles.appendChild(tile(String(checks.length),checks.length===1?'figure checked':'figures checked',checks.length?'against federal data, in code: '+parts.join('; '):'no figure in this paper could be checked against federal data',null,tip=>{
+    head(tip,'Figures checked against federal data');
+    covTipLine(tip,'','A figure is a number taken from the paper, such as a dollar amount or a case count. The system compared it with a federal source in code; the AI model does not do this comparison.');
+    if(!checks.length){covTipLine(tip,'','No figure in this paper was a kind the system can check: dollar amounts, Lyme case counts, or national Long COVID prevalence.');return}
+    const verdict={agrees:'agrees with',differs:'differs from',context:'compared as context only with',restated:'restated in current dollars:',not_checked:'could not be checked against'};
+    list(tip,checks.map(c=>{const k=kindOf(c);const lab=String(c.label||'').length>80?String(c.label).slice(0,77)+'...':c.label;return lab+' - '+(k==='restated'?(c.federal_text?(typeof c.paper_value==='number'?covTip.fmtVal(c.paper_value)+(c.year?' in '+c.year:'')+' becomes ':'')+c.federal_text:'restated in current dollars'):(verdict[k]||'compared with')+' '+(c.federal_text||'federal data'))}),6);
+  }));
   box.appendChild(tiles);
   const st={observed:0,assumed:0,projected:0,other:0};
   for(const i of inputs){const s=i.evidence_status;if(s in st)st[s]++;else st.other++}
@@ -3393,7 +3484,9 @@ function renderAtAGlance(job){
   const desc=[];
   for(const [k,label] of [['observed','observed in the paper'],['assumed','assumed'],['projected','projected'],['other','unlabeled']]){
     if(!st[k])continue;
-    const seg=document.createElement('span');seg.className='agSeg '+k;seg.style.flex=st[k]+' 1 0';seg.textContent=st[k];seg.title=st[k]+' '+label;bar.appendChild(seg);
+    const seg=document.createElement('span');seg.className='agSeg '+k;seg.style.flex=st[k]+' 1 0';seg.textContent=st[k];seg.tabIndex=0;
+    covTip.attach(seg,tip=>{head(tip,st[k]+' '+label);list(tip,inputs.filter(i=>(k==='other'?!(i.evidence_status in st):i.evidence_status===k)).map(i=>(i.label||i.id)+(typeof i.default==='number'?' - '+val(i.default,i.unit):'')),8)});
+    bar.appendChild(seg);
     desc.push(st[k]+' '+label);
   }
   bar.setAttribute('aria-label','How the '+inputs.length+' inputs are labeled: '+desc.join(', '));
