@@ -23,6 +23,10 @@ curl -X POST -H "Authorization: Bearer $KEY" -H "Content-Type: application/json"
      http://127.0.0.1:8765/api/v1/simulations/ID/run
 ```
 
+`GET /api/v1/simulations/ID/fhir` returns the same model as a FHIR R4-shaped demonstration `Bundle` (`application/fhir+json`): an
+`Observation` for each input and default output, a `DocumentReference` for the source paper and a `Provenance` resource. It contains no patient, is not
+clinical data, uses DBbun's own identifiers, and is not certified or checked by the official HL7 validator.
+
 `run` uses the same arithmetic as the browser. Inputs not supplied keep their default, values must sit inside the
 input's own range, and inputs fixed by the source document cannot be changed. The reply has every output and every
 forecast series. Results are illustrative simulations built from the source document, not clinical advice or

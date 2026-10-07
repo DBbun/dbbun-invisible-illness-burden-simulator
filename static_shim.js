@@ -26,6 +26,7 @@
     }
     const query = url.searchParams;
     if (path === '/api/library') return realFetch('data/library.json');
+    if (path === '/api/reuse-tests') return realFetch('data/reuse_tests.json');
     if (path.startsWith('/api/jobs/')) return realFetch('data/jobs/' + safe(path.split('/').pop()) + '.json');
     if (path === '/api/references') return realFetch('data/references/' + safe(query.get('job')) + '.json');
     if (path === '/api/benchmarks') return realFetch('data/benchmarks/' + safe(query.get('job')) + '.json');

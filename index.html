@@ -240,6 +240,7 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .decisionSupport{margin:26px 0 0;padding-top:22px;border-top:1px solid var(--line)}.decisionSupport h3{margin:0 0 12px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}.decisionSupport>p{font-size:19px;line-height:1.45;color:var(--ink);font-weight:500;margin:0 0 14px}.decisionSupport ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}.decisionSupport li{margin:6px 0}
 button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}button.secondary:hover:not(:disabled){background:var(--surface)}
 #libraryToggle,#faqToggle,#adminToggle{width:auto;padding:10px 16px;font-size:15px}
+.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
 .libraryItem{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 12px;display:flex;gap:14px;align-items:flex-start}.libraryItem h4{margin:0 0 4px}.libraryItemBody{flex:1;min-width:0}.libraryItemCheck{flex:0 0 auto;margin-top:3px;width:18px;height:18px}.libraryMeta{font-size:14px;margin:0 0 10px;color:var(--muted)}.libraryActions{display:flex;gap:10px;flex-wrap:wrap}.libraryActions button{padding:9px 14px;font-size:15px;width:auto}.libraryActions button.danger{color:#b23b2e;border:1px solid #b23b2e;background:#fff}
 .libraryBulkBar{display:flex;align-items:center;gap:16px;margin:0 0 16px;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;flex-wrap:wrap}.libraryBulkBar label{display:flex;align-items:center;gap:8px;margin:0;font-size:15px;font-weight:600}.libraryBulkBar input[type=checkbox]{width:18px;height:18px}#librarySelectedCount{color:var(--muted);font-size:14px;flex:1}.libraryBulkBar button{width:auto;padding:9px 14px;font-size:15px}
 .libraryBulkBar[hidden],.libraryTagFilter[hidden]{display:none}
@@ -350,6 +351,9 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <div id="libraryBulkBar" class="libraryBulkBar" hidden><label><input type="checkbox" id="librarySelectAll"> Select all</label><span id="librarySelectedCount"></span><button id="libraryDeleteSelected" class="secondary danger" type="button">Delete selected</button></div>
 <div class="crossAnalysisBar"><div><h3>Cross-pollination analysis</h3><p id="crossAnalysisDesc"></p><p id="crossAnalysisStatus" hidden></p></div><button id="crossAnalysisRun" type="button">Cross-pollination analysis</button></div>
 <div id="libraryTagFilter" class="libraryTagFilter" hidden></div><div id="libraryList"></div>
+<section id="reuseSection" class="reuseSection" hidden aria-labelledby="reuseHeading"><h3 id="reuseHeading">Reuse demonstration: a third condition</h3>
+<p>The 25 simulators above are Lyme disease and Long COVID, the two conditions the tool was built and checked for. To see whether the same pipeline works on something else, one paper on a different condition was run through the same pipeline, with only a label and the scope sentence in the instructions changed. It is kept apart on purpose: no federal evidence was curated for it, so it has no federal checks, and it has not been validated for that condition. The paper is a published study of chronic pain and numbness after lung surgery.</p>
+<div id="reuseList"></div></section>
 </div>
 <div id="crossAnalysisResults" class="crossAnalysisResults" hidden></div>
 </section>
@@ -428,7 +432,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 </ul></details>
 
 <details class="whatThisAdds" open><summary>How does DBbun relate to federal health-data standards (Blue Button 2.0, FHIR, TEFCA)?</summary>
-<p>DBbun is a local tool that turns an uploaded paper into a simulator. It does not connect to any health-record network, and it does not claim alignment with a standard it does not implement. Its downloads are PDF, Excel, CSV, JSON and Python source, not FHIR resources. Here is where it stands with each:</p>
+<p>DBbun is a local tool that turns an uploaded paper into a simulator. It does not connect to any health-record network, and it does not claim alignment with a standard it does not implement. Its downloads are PDF, Excel, CSV, JSON and Python source, plus a FHIR R4-shaped demonstration export (<code>fhir_demonstration.json</code>) of each model's inputs and default outputs, with the source paper and provenance. That export is a demonstration: it contains no patient, is not clinical data, uses DBbun's own identifiers and has not been checked by the official HL7 validator or profiled to US Core or USCDI+. Here is where it stands with each:</p>
 <ul>
 <li><b>Blue Button 2.0 (CMS):</b> a credible next step, planned and not built. It lets a Medicare beneficiary authorize an app to pull their own claims. In DBbun, a user could someday connect their own claims, with consent, as an input alongside an uploaded paper.</li>
 <li><b>TEFCA and FHIR networks:</b> designed for exchanging identified clinical records between care institutions. DBbun refuses uploads that contain Social Security numbers or medical-record-number and date-of-birth labels (it does not detect other kinds of identifiers), and it is not a care-coordination system, so it does not connect to them.</li>
@@ -436,6 +440,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <li><b>CMS Interoperability Framework:</b> DBbun echoes its consent and transparency criteria at its own scale. The extracted text, table captions and figures of your document reach the model (never the original file), no generated code executes, and every model call is recorded in the download. It claims no formal alignment.</li>
 </ul></details>
 
+<details class="whatThisAdds" open><summary>Does it work for conditions other than Lyme disease and Long COVID?</summary><p>The tool was built and checked for Lyme disease and Long COVID. To see whether the pipeline reaches further, one published paper on a different condition (chronic chest pain and numbness after keyhole surgery for a collapsed lung, Cattoni et al. 2021) was run through the same four-step pipeline; only a label naming the condition and the scope sentence in the instructions were changed. It produced a working simulator, with every number from the paper labeled and the Excel, PDF and FHIR-shaped exports. It is shown in its own labeled section at the bottom of the Simulation library, outside the 25 simulators and the 13 comparisons.</p><p>What that does not show: no federal evidence was curated for this condition, so it has no federal checks, and nobody has validated the result for it. It reports clinical outcome rates, not costs, and the paper has no cost data. It is one example, not a claim that the tool works for every condition. Adding a condition properly means curating its federal evidence.</p></details>
 <details class="whatThisAdds" open><summary>What are the limitations ("Gaps and Boundaries")?</summary>
 <p>Four checks DBbun runs against every document, each only flagged when the document itself supports it - never inferred from general outside knowledge or from the condition's identity alone.</p>
 <ul>
@@ -653,6 +658,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <details class="whatThisAdds" open><summary>What this adds on top of a search, a read, or a chat</summary><ul><li>A web search returns a blended, unsourced answer from many pages; every number here traces to one page, table, or section of this specific document.</li><li>Reading the source yourself gets the same numbers, not a live model - here, changing one assumption recomputes every downstream figure correctly.</li><li>This does not replace your care team: it is a decision-support model for interpreting this document's own evidence, not a diagnosis or an individual treatment plan.</li><li>A chat assistant regenerates a fresh answer each time, not guaranteed to reproduce the same numbers twice or to recalculate consistently when adjusted. Every value here comes from one fixed, validated specification, recomputed by ordinary arithmetic each time an assumption changes, and is downloadable as a standalone spreadsheet, PDF, and source file you can reuse or audit.</li></ul></details>
 <details class="whatThisAdds" open><summary>What's in the downloadable simulation bundle</summary><ul>
 <li><b>Spec.json</b> - the interactive model itself: every input, output, formula, and scenario.</li>
+<li><b>fhir_demonstration.json</b> - the inputs and default outputs as a FHIR R4-shaped bundle (Observations, the source paper, provenance). A demonstration of interoperability, not clinical data and not a certified implementation.</li>
 <li><b>Documentation.pdf</b> - a formatted write-up of this simulation, including the same charts shown here.</li>
 <li><b>The exported Excel workbook</b> (named after your source document, e.g. "DeLong 2012_export_20260916_161855.xlsx") - the same spreadsheet as the "Export all data (Excel)" button, included in the bundle too.</li>
 <li><b>input/</b> - everything actually sent to the model: your original uploaded document(s), plus <b>input/federal_knowledge/</b> - the processed federal-knowledge summaries an excerpt of each was drawn from.</li>
@@ -1116,7 +1122,7 @@ function renderOperationFlow(job){
   const citedCount=(job.scientific_analysis?.federal_evidence_used||[]).length;
   const crossChecks=job.federal_crosschecks||[];
   const conditionNames={lyme:'Lyme disease',longCovid:'Long COVID',cross:'Lyme disease and Long COVID'};
-  const conditionLabel=conditionNames[job.detected_condition]||'unconfirmed';
+  const conditionLabel=job.reuse_demonstration?`a labeled reuse demonstration (${job.condition_label||'another condition'}, outside the curated scope)`:(conditionNames[job.detected_condition]||'unconfirmed');
   const truncatedAny=(job.documents||[]).some(d=>d.truncated);
   const steps=[
     {title:'1. Upload',
@@ -1160,7 +1166,7 @@ function showReview(job){
   $('reviewbody').replaceChildren();
   {const note=(current.downloadable_source_status==='ready'?'':(current.review_note||'')).replace('Your interactive simulation is ready. Review the assumptions below and adjust them in the simulator.','').trim();if(note)text('p',note,$('reviewbody'))}
   if(current.unresolved_findings?.length){text('h3','Issues to review before exploration',$('reviewbody'));for(const finding of current.unresolved_findings){const item=text('p',`${finding.severity.toUpperCase()}: ${finding.issue} Next: ${finding.requested_change}`,$('reviewbody'));item.className='warning'}}
-  if(current.detected_condition){const names={lyme:'Lyme disease',longCovid:'Long COVID',cross:'Lyme disease and Long COVID'};text('h3','Confirmed evidence focus',$('reviewbody'));text('p',names[current.detected_condition]||current.detected_condition,$('reviewbody'));if(current.condition_rationale)text('p',current.condition_rationale,$('reviewbody'))}
+  if(current.detected_condition){const names={lyme:'Lyme disease',longCovid:'Long COVID',cross:'Lyme disease and Long COVID'};text('h3','Confirmed evidence focus',$('reviewbody'));text('p',current.reuse_demonstration?`Reuse demonstration: ${current.condition_label||'another condition'} (outside Lyme disease and Long COVID)`:(names[current.detected_condition]||current.detected_condition),$('reviewbody'));if(current.condition_rationale)text('p',current.condition_rationale,$('reviewbody'))}
   renderFederalKnowledge(current.condition_knowledge,current.scientific_analysis?.federal_evidence_used,current.federal_crosschecks);
   renderEvidenceMap(current);
   loadFederalBenchmarks(jobId);
@@ -1534,7 +1540,31 @@ function renderLibraryList(){
     }
   }
 }
+async function loadReuseTests(){
+  const box=$('reuseList'),section=$('reuseSection');
+  if(!box||!section)return;
+  let rows=[];
+  try{rows=await(await fetch('/api/reuse-tests')).json()}catch(e){}
+  box.textContent='';section.hidden=!rows.length;
+  for(const row of rows){
+    const item=document.createElement('div');item.className='libraryItem';
+    const body=document.createElement('div');body.className='libraryItemBody';
+    text('h4',row.title,body);
+    text('p',`Reuse demonstration · ${row.condition_label} · ${row.documents.join(', ')||'No documents on record'} · ${fmtWhen(row.created)}`,body).className='libraryMeta';
+    if(row.references?.length){const rp=document.createElement('div');rp.className='libraryMeta';text('strong','Original source: ',rp);renderReferenceLinks(row.references,rp);body.appendChild(rp)}
+    text('p',`Model: ${row.models?.length?row.models.join(', '):'not recorded'} · Federal sources: none (no evidence pack curated for this condition)`,body).className='libraryMeta';
+    const actions=document.createElement('div');actions.className='libraryActions';
+    const openBtn=document.createElement('button');openBtn.textContent='Open';openBtn.className='secondary';openBtn.type='button';
+    openBtn.onclick=async()=>{jobId=row.id;bundle=null;const job=await(await fetch('/api/jobs/'+row.id)).json();if(job.status==='missing'){alert('This simulation record could not be found.');return}showReview(job)};
+    const dlBtn=document.createElement('button');dlBtn.textContent='Download simulation bundle';dlBtn.className='secondary';dlBtn.type='button';
+    dlBtn.onclick=()=>downloadBundle(row.id,row.documents).catch(e=>alert(e.message));
+    const xlsxBtn=document.createElement('button');xlsxBtn.textContent='Export all data (Excel)';xlsxBtn.className='secondary';xlsxBtn.type='button';
+    xlsxBtn.onclick=()=>downloadStructuredExport(row.id,row.documents).catch(e=>alert(e.message));
+    actions.append(openBtn,dlBtn,xlsxBtn);body.appendChild(actions);item.appendChild(body);box.appendChild(item);
+  }
+}
 async function loadLibrary(){
+  loadReuseTests();
   libraryAllRows=await(await fetch('/api/library')).json();
   document.querySelectorAll('.libraryCountText').forEach(e=>{e.textContent=simulationCountText(libraryAllRows)});
   renderLibraryList();
