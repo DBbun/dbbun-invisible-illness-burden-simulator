@@ -1260,7 +1260,7 @@ function showAdminView(){
   loadAdminResources();
   pollAdminStatus();
 }
-$('backButton').onclick=showGenerateView;
+$('backButton').onclick=()=>showGenerateView();
 function printWithMeaningfulTitle(){
   const originalTitle=document.title;
   document.title=bundleBaseName(current?.documents?.map(d=>d.name));

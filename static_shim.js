@@ -59,6 +59,10 @@
   window.addEventListener('load', function () {
     const hide = (id) => { const el = document.getElementById(id); if (el) el.style.display = 'none'; };
     hide('adminToggle');
+    // Generating is off in this copy: the upload form must never be reachable, whichever button leads to it.
+    const noGenerate = document.createElement('style');
+    noGenerate.textContent = '#generateView{display:none !important}';
+    document.head.appendChild(noGenerate);
     hide('libraryToggle');
     window.showGenerateView = function () { window.showLibraryView(); };
     const banner = document.createElement('div');
