@@ -598,7 +598,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 
 <details class="whatThisAdds" open><summary>Can I trust the numbers?</summary><ul>
 <li>Every number traces to either your uploaded document, a named federal source, or an explicitly labeled assumption - never an unexplained figure.</li>
-<li>DBbun does not diagnose, recommend treatment, or replace your care team - it is a decision-support model for interpreting a document's own evidence.</li>
+<li>DBbun does not diagnose, recommend treatment, or replace your care team - it is a what-if model for interpreting a document's own evidence.</li>
 <li>Real defects found through live testing get fixed with a regression test, not just a one-off patch - the current automated test suite has 50+ tests and passes before every change ships.</li>
 </ul></details>
 
@@ -786,7 +786,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 </div>
 <div class="tabPanel" data-tab="export">
 <button id="download">Download simulation bundle</button> <button id="downloadExcel" class="secondary" type="button">Export all data (Excel)</button>
-<details class="whatThisAdds" open><summary>What this adds on top of a search, a read, or a chat</summary><ul><li>A web search returns a blended, unsourced answer from many pages; every number here traces to one page, table, or section of this specific document.</li><li>Reading the source yourself gets the same numbers, not a live model - here, changing one assumption recomputes every downstream figure correctly.</li><li>This does not replace your care team: it is a decision-support model for interpreting this document's own evidence, not a diagnosis or an individual treatment plan.</li><li>A chat assistant regenerates a fresh answer each time, not guaranteed to reproduce the same numbers twice or to recalculate consistently when adjusted. Every value here comes from one fixed, validated specification, recomputed by ordinary arithmetic each time an assumption changes, and is downloadable as a standalone spreadsheet, PDF, and source file you can reuse or audit.</li></ul></details>
+<details class="whatThisAdds" open><summary>What this adds on top of a search, a read, or a chat</summary><ul><li>A web search returns a blended, unsourced answer from many pages; every number here traces to one page, table, or section of this specific document.</li><li>Reading the source yourself gets the same numbers, not a live model - here, changing one assumption recomputes every downstream figure correctly.</li><li>This does not replace your care team: it is a what-if model for interpreting this document's own evidence, not a diagnosis or an individual treatment plan.</li><li>A chat assistant regenerates a fresh answer each time, not guaranteed to reproduce the same numbers twice or to recalculate consistently when adjusted. Every value here comes from one fixed, validated specification, recomputed by ordinary arithmetic each time an assumption changes, and is downloadable as a standalone spreadsheet, PDF, and source file you can reuse or audit.</li></ul></details>
 <details class="whatThisAdds" open><summary>What's in the downloadable simulation bundle</summary><ul>
 <li><b>Spec.json</b> - the interactive model itself: every input, output, formula, and scenario.</li>
 <li><b>fhir_demonstration.json</b> - the inputs and default outputs as a FHIR R4-shaped bundle (Observations, the source paper, provenance). A demonstration of interoperability, not clinical data and not a certified implementation.</li>
