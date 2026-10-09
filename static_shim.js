@@ -69,7 +69,7 @@
     banner.setAttribute('role', 'note');
     banner.style.cssText = 'margin:0 0 14px;padding:12px 16px;border:1px solid #bdbdbd;border-radius:10px;background:#f2f2f2;color:#242424;font:16px/1.4 Arial,sans-serif';
     banner.innerHTML = '<b>Public read-only demo.</b> A "simulator" here is a calculator built from published research: change a number and see what changes. Open any one below, change its assumptions, read the forecast and evidence tabs, or download its files. ' +
-      'This GitHub version is read-only. The interactive tool, where you upload a document and watch it being processed, runs in a private setting; the FAQ shows how it looks. These are research prototypes built from published papers, not medical or financial advice. Independent entry by DBbun LLC; not endorsed by HHS or NIH.';
+      'This GitHub version is read-only. The interactive tool, where you upload a document and watch it being processed, runs in a private setting; the FAQ shows how it looks. These are research prototypes built from published papers and reports, not medical or financial advice. Independent entry by DBbun LLC; not endorsed by HHS or NIH.';
     const main = document.querySelector('main');
     main.insertBefore(banner, main.firstChild);
     // The Export tab describes the full bundle; say plainly what this public copy leaves out.

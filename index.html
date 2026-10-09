@@ -425,7 +425,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <h3 class="faqGroup">Start here</h3>
 
 <details class="whatThisAdds" open><summary>What can I do with this, and what is it worth?</summary>
-<p>DBbun turns a published paper on Lyme disease or Long COVID (or a few related documents together, up to five) into a working, checkable <b>what-if model</b>. In a few minutes you can:</p>
+<p>DBbun turns a published paper or report on Lyme disease or Long COVID (or a few related documents together, up to five) into a working, checkable <b>what-if model</b>. In a few minutes you can:</p>
 <ol class="stepFlow" style="--n:4" aria-label="The path in four steps"><li><b>Upload a paper</b>A PDF, Word, text or spreadsheet file; up to five related files together.</li><li><b>See what it measured</b>Every number is labeled observed, assumed or projected, with a map of 16 burdens.</li><li><b>Change an assumption</b>Pick a ready-made scenario or type your own numbers; every result recalculates.</li><li><b>Check it, take it with you</b>Federal checks run in code. Download PDF, Excel, CSV, Python and a FHIR export.</li></ol>
 <ul>
 <li><b>See what the paper measured, what it only assumed, and what it never measured.</b> Every number is labeled observed, assumed or projected, and a map of 16 kinds of burden shows which ones the paper covers.</li>
@@ -437,7 +437,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <li><b>Take it with you:</b> a PDF, a nine-sheet Excel workbook, CSV files, Python code that re-runs the same arithmetic, and a prototype FHIR export with provenance.</li>
 </ul>
 <p><b>Why it matters.</b> A cost-of-illness paper is normally a static PDF. A patient cannot ask "what if my costs are 30% higher", an analyst cannot easily tell one study's figure from a population estimate, and the burdens a paper never measured are invisible. DBbun makes all three visible, and shows where each number came from.</p>
-<p><b>What it is not.</b> It is not medical advice, it never recommends or ranks treatments, and its results describe published studies, not what will happen to any one person.</p></details>
+<p><b>What it is not.</b> It is not medical advice, it never recommends or ranks treatments, and its results describe published studies and reports, not what will happen to any one person.</p></details>
 
 <details class="whatThisAdds" open><summary>Walkthrough: change one assumption and see what happens (one study, step by step)</summary><p>This example uses the Maryland Lyme disease cost study (Zhang et al., 2006). Every number below is what the simulator itself computes.</p><ol class="stepFlow vertical" aria-label="The walkthrough in six steps"><li><b>Open it.</b> In the Simulation library, press the &ldquo;Lyme disease&rdquo; button near the top of the list, find &ldquo;Lyme Disease Economic Burden Simulator (Maryland Eastern Shore, 1997-2000)&rdquo;, and press Open.</li><li><b>See what the paper measured.</b> The Overview tab shows five inputs, all labeled observed: they come from the paper.</li><li><b>Read the starting result.</b> In the Explore tab, &ldquo;Recomputed nationwide economic impact&rdquo; starts at about <b>$194 million</b>: a combined cost of $8,172 per patient times 23,763 reported cases, in the paper&rsquo;s year-2000 dollars.</li><li><b>Change one number.</b> Move &ldquo;Per-patient direct medical cost&rdquo; from $2,970 up to $4,000, the top of its range. The combined cost per patient becomes $9,202 and the nationwide figure rises to about <b>$218.7 million</b>. The late-versus-early cost results do not move, because they do not depend on that input.</li><li><b>Or try a ready-made scenario.</b> &ldquo;Combined worst-case underestimate&rdquo; raises the cost per patient to $11,000 and the case count to 35,000 (the authors caution that both may be understated). The nationwide figure becomes about <b>$385 million</b>, roughly twice the starting value.</li><li><b>See what the paper was checked against.</b> The Evidence &amp; Sources tab shows that the paper&rsquo;s case count equals CDC&rsquo;s reported count and restates its dollars in 2025 prices.</li></ol><p>These are illustrative what-if results from one published paper, not forecasts, and not advice for any person.</p></details>
 <details class="whatThisAdds" open><summary>Is this just a simulator? What makes it different?</summary>
@@ -2108,7 +2108,7 @@ function renderCrossBubbleChart(box,job,titles){
   const key=document.createElement('div');key.className='burdenKey';
   key.innerHTML='<span><i style="background:#cfe0f7;border:2px solid #2a78d6;box-sizing:border-box"></i>more Lyme disease evidence</span><span><i style="background:#fbdcbc;border:2px solid #d9822b;box-sizing:border-box"></i>more Long COVID evidence</span><span><i style="background:#d9d9d9;border:2px solid #6a6a6a;box-sizing:border-box"></i>about equal</span><span><i style="background:#fff;border:3px solid #111;border-radius:50%;box-sizing:border-box"></i>covered by the two papers compared</span>';
   sec.appendChild(key);
-  text('p','The two papers compared here cover: '+(mine.length?mine.join(', '):'none of the 16 burdens')+'. Bubble size is how many simulators measure the burden. A burden in the gap row is missing from the evidence, which is not proof that it does not exist. This compares simulators built from published papers; it does not describe either condition in general.',sec).className='changeNote';
+  text('p','The two papers compared here cover: '+(mine.length?mine.join(', '):'none of the 16 burdens')+'. Bubble size is how many simulators measure the burden. A burden in the gap row is missing from the evidence, which is not proof that it does not exist. This compares simulators built from published papers and reports; it does not describe either condition in general.',sec).className='changeNote';
   const list=document.createElement('details');text('summary','Read as a list',list);
   list.open=window.innerWidth<=700;
   const ul=document.createElement('ul');
@@ -2216,7 +2216,7 @@ function renderCrossTables(box,job,ca,titles){
     sec.appendChild(ul);
   }
   if(ca.comparison_rows?.length){
-    const sec=section('Lyme disease and Long COVID, side by side',(sizes.lyme===1&&sizes.longCovid===1?'Based on one Lyme disease paper and one Long COVID paper.':`Based on ${sizes.lyme} Lyme disease and ${sizes.longCovid} Long COVID simulators. Each simulator is built from one published paper.`));
+    const sec=section('Lyme disease and Long COVID, side by side',(sizes.lyme===1&&sizes.longCovid===1?'Based on one Lyme disease paper and one Long COVID paper.':`Based on ${sizes.lyme} Lyme disease and ${sizes.longCovid} Long COVID simulators. Each simulator is built from one published source (a paper or a report), sometimes with its supplement.`));
     const wrap=document.createElement('div');wrap.style.overflowX='auto';
     const table=document.createElement('table');table.className='crossTable';
     const head=table.createTHead().insertRow();
