@@ -120,12 +120,6 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .whatThisAdds code{background:#f1f5f7;padding:2px 6px;border-radius:4px;font:14px/1.5 Consolas,'SFMono-Regular',monospace;color:var(--ink);overflow-wrap:anywhere}
 .whatThisAdds li:last-child{margin-bottom:0}
 .emptyTabNote{padding:16px 18px;border:1px dashed var(--line);border-radius:12px;background:var(--surface);color:var(--muted);font-size:15px}
-.whoThisHelps{margin:20px 0 0;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.whoThisHelps summary{font-weight:700;cursor:pointer}
-.personaGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:14px}
-.personaGrid h4{margin:0 0 6px;font-size:15px}
-.personaGrid p{margin:0;font-size:16px;color:var(--muted);line-height:1.55}
-@media(max-width:650px){.personaGrid{grid-template-columns:1fr}}
 #resultsSection{padding:0;overflow:hidden}
 .tabNav{display:flex;flex-wrap:wrap;gap:4px;padding:14px 14px 0;border-bottom:1px solid var(--line);background:var(--surface)}
 .tabBtn{width:auto;background:transparent;color:var(--muted);border:1px solid transparent;border-bottom:none;border-radius:10px 10px 0 0;padding:11px 18px;font-size:15px;font-weight:600;cursor:pointer;margin-bottom:-1px}
@@ -766,15 +760,6 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <div id="payerSummary" class="docSummary" hidden></div>
 <div id="biggestDrivers" class="docSummary" hidden></div>
 <div id="categoryCoverage" class="docSummary" hidden></div>
-<details class="whoThisHelps"><summary id="whoThisHelpsSummary">This could also help</summary>
-<div class="personaGrid" id="personaGrid">
-<div data-audience="patient"><h4>Patients &amp; advocates</h4><p>Switch "What this could support" above to the patient view for plain language and per-person figures instead of population totals or unexplained health-economics terms - named scenarios show what a specific change (earlier diagnosis, a coverage decision) could mean for someone like you.</p></div>
-<div data-audience="care"><h4>Care delivery teams</h4><p>Every extracted figure traces to an exact page, table, or section of the source document, useful for grounding a workflow or resourcing discussion in the document's own reported evidence rather than its summary conclusion alone. This does not replace clinical judgment for an individual patient.</p></div>
-<div><h4>Researchers &amp; clinicians</h4><p>Every extracted figure traces to an exact page, table, or section of the source document, and the tool explicitly checks for and discloses real gaps - claims/diagnosis-code undercounting, missing subgroup breakdowns, undisclosed funding disparities, and what would be needed to model the burden more completely - a fast way to audit a paper's own quantitative claims.</p></div>
-<div><h4>Data analysts &amp; statisticians</h4><p>The downloadable Excel workbook (Overview, Parameters, Outputs with every formula spelled out, the full sweep data table, Results, Evidence and Assumptions, Gaps and Boundaries, Limitations, and Federal Sources) is a ready-to-use, fully cited dataset - no re-transcribing numbers out of a PDF or a chart.</p></div>
-<div data-audience="policy"><h4>Payers &amp; policy teams</h4><p>This particular document contains no cost, budget, or multi-year trend data, so it cannot support budget-impact or payer-forecast modeling directly - but the structured Excel export (every formula spelled out, fully cited) is a ready-to-use dataset for your own downstream analysis. When a source document does report costs or trends, DBbun's scenario and forecast comparisons are built to support exactly those budget-impact and investment-tradeoff questions - the same request a real state health-policy official made of this tool. Fits public health commission staff and similar governmental roles too.</p></div>
-</div>
-</details>
 </div>
 <div class="tabPanel" data-tab="flow">
 <div class="docSummary"><h4>What this tab shows</h4>
@@ -2919,10 +2904,6 @@ function renderDecisionSupport(s){
 function renderPersonaGrid(){
   const isDict=current.spec?.takeaway&&typeof current.spec.takeaway==='object'&&!Array.isArray(current.spec.takeaway);
   const activeLens=isDict?currentLens:null;
-  for(const el of document.querySelectorAll('#personaGrid>div'))el.hidden=(el.dataset.audience===activeLens);
-  $('whoThisHelpsSummary').textContent=activeLens&&audienceLabels[activeLens]
-    ?`Beyond ${audienceLabels[activeLens].toLowerCase()}, this could also help`
-    :'This could also help';
 }
 function render(){
   const s=current.spec,values={},sliderEls={};
@@ -3222,14 +3203,6 @@ function render(){
   const hasForecast=(s.trajectories?.length||0)>0;
   const hasCostData=((current.scientific_analysis?.economic_burden_scope?.modeled_issues)?.length||0)>0;
   const hasScenarios=(s.scenarios?.length||0)>0;
-  const careP=document.querySelector('#personaGrid [data-audience="care"] p');
-  if(careP)careP.textContent=hasScenarios
-    ?"Named what-if scenarios compare the source document's own reported figures under different assumptions, useful for framing a workflow or resourcing discussion grounded in the document's own evidence. This does not replace clinical judgment for an individual patient."
-    :"Every extracted figure traces to an exact page, table, or section of the source document, useful for grounding a workflow or resourcing discussion in the document's own reported evidence rather than its summary conclusion alone. This does not replace clinical judgment for an individual patient.";
-  const policyP=document.querySelector('#personaGrid [data-audience="policy"] p');
-  if(policyP)policyP.textContent=(hasForecast&&hasCostData)
-    ?"Scenario and multi-year forecast comparisons support budget-impact and investment-tradeoff questions, and the structured Excel export is built to plug directly into your own forecasting models - the same request a real state health-policy official made of this tool. Fits public health commission staff and similar governmental roles too."
-    :"This particular document contains no cost, budget, or multi-year trend data, so it cannot support budget-impact or payer-forecast modeling directly - but the structured Excel export (every formula spelled out, fully cited) is a ready-to-use dataset for your own downstream analysis. When a source document does report costs or trends, DBbun's scenario and forecast comparisons are built to support exactly those budget-impact and investment-tradeoff questions - the same request a real state health-policy official made of this tool. Fits public health commission staff and similar governmental roles too.";
   const figures=current.computed?.figures;
   $('figures').replaceChildren();
   const hasFigures=figures&&Object.keys(figures).length;
