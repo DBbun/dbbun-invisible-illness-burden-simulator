@@ -68,8 +68,20 @@
     const banner = document.createElement('div');
     banner.setAttribute('role', 'note');
     banner.style.cssText = 'margin:0 0 14px;padding:12px 16px;border:1px solid #bdbdbd;border-radius:10px;background:#f2f2f2;color:#242424;font:16px/1.4 Arial,sans-serif';
-    banner.innerHTML = '<b>Public read-only demo.</b> A "simulator" here is a calculator built from published research: change a number and see what changes. Open any one below, change its assumptions, read the forecast and evidence tabs, or download its files. ' +
-      'This GitHub version is read-only. The interactive tool, where you upload a document and watch it being processed, runs in a private setting; the FAQ shows how it looks. These are research prototypes built from published papers and reports, not medical or financial advice. Independent entry by DBbun LLC; not endorsed by HHS or NIH.';
+    banner.innerHTML = '<b>Public read-only demo.</b> <b>What this is:</b> each simulator turns one published study into a what-if model: change an assumption and see what changes. ' +
+      '<b>What it is not:</b> a calculator for your own costs, or medical advice. Open any one in the list below.' +
+      '<div style="margin-top:8px"><a href="#" data-faq="What does combining the paper">See how it works (diagram)</a> &nbsp;&middot;&nbsp; <a href="#" data-faq="What is the difference between the public demo">See how the interactive tool looks (pictures)</a></div>' +
+      '<div style="margin-top:8px;font-size:14px;color:#4a4a4a">This GitHub version is read-only. The interactive tool, where you upload a document and watch it being processed, runs in a private setting. Research prototypes built from published papers and reports. Independent entry by DBbun LLC; not endorsed by HHS or NIH.</div>';
+    banner.querySelectorAll('a[data-faq]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (typeof showFaqView === 'function') showFaqView();
+        setTimeout(function () {
+          const d = Array.from(document.querySelectorAll('#faqPanel details')).find(function (x) { return x.querySelector('summary').textContent.indexOf(a.getAttribute('data-faq')) === 0; });
+          if (d) { d.open = true; d.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        }, 200);
+      });
+    });
     const main = document.querySelector('main');
     main.insertBefore(banner, main.firstChild);
     // The Export tab describes the full bundle; say plainly what this public copy leaves out.

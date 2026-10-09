@@ -299,7 +299,7 @@ button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}b
 .tileFlow{list-style:none;margin:12px 0 16px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
 .tileFlow>li{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:10px 12px;font-size:14px;line-height:1.4;color:var(--ink)}
 .tileFlow>li>b{display:block;font-size:14.5px;margin-bottom:3px}
-.covToggle{margin:0 0 12px}.shotGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px;margin:12px 0}.shotGrid figure{margin:0}.shotGrid img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}.shotGrid figcaption{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.35}.faqGroup{margin:22px 0 6px;font-size:15px;letter-spacing:.6px;text-transform:uppercase;color:#4a4a4a;border-bottom:1px solid var(--line);padding-bottom:4px}.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
+.covToggle{margin:0 0 12px}.libSummary{margin:2px 0 6px;font-size:15px;line-height:1.4;color:var(--ink)}.shotGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px;margin:12px 0}.shotGrid figure{margin:0}.shotGrid img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}.shotGrid figcaption{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.35}.faqGroup{margin:22px 0 6px;font-size:15px;letter-spacing:.6px;text-transform:uppercase;color:#4a4a4a;border-bottom:1px solid var(--line);padding-bottom:4px}.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
 .libraryItem{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 12px;display:flex;gap:14px;align-items:flex-start}.libraryItem h4{margin:0 0 4px}.libraryItemBody{flex:1;min-width:0}.libraryItemCheck{flex:0 0 auto;margin-top:3px;width:18px;height:18px}.libraryMeta{font-size:14px;margin:0 0 10px;color:var(--muted)}.libraryActions{display:flex;gap:10px;flex-wrap:wrap}.libraryActions button{padding:9px 14px;font-size:15px;width:auto}.libraryActions button.danger{color:#b23b2e;border:1px solid #b23b2e;background:#fff}
 .libraryBulkBar{display:flex;align-items:center;gap:16px;margin:0 0 16px;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;flex-wrap:wrap}.libraryBulkBar label{display:flex;align-items:center;gap:8px;margin:0;font-size:15px;font-weight:600}.libraryBulkBar input[type=checkbox]{width:18px;height:18px}#librarySelectedCount{color:var(--muted);font-size:14px;flex:1}.libraryBulkBar button{width:auto;padding:9px 14px;font-size:15px}
 .libraryBulkBar[hidden],.libraryTagFilter[hidden]{display:none}
@@ -1626,7 +1626,7 @@ function renderLibraryTagFilter(){
     chip.onclick=()=>{libraryConditionFilter=key;renderLibraryList()};
     bar.appendChild(chip);
   }
-  text('span','Filter by burden tag:',bar).style.cssText='font-size:13px;color:var(--muted);font-weight:600;margin-left:10px';
+  text('span','Find studies by the burden they measure:',bar).style.cssText='font-size:13px;color:var(--muted);font-weight:600;margin-left:10px';
   for(const key of BURDEN_CATEGORY_ORDER){
     const count=libraryAllRows.filter(r=>(r.categories||[]).includes(key)).length;
     const chip=document.createElement('button');chip.type='button';
@@ -1678,6 +1678,7 @@ function renderLibraryList(){
       item.appendChild(check);
       const body=document.createElement('div');body.className='libraryItemBody';
       text('h4',row.title,body);
+      if(row.summary)text('p',row.summary,body).className='libSummary';
       text('p',`${LIBRARY_GROUP_LABELS[libraryGroupKey(row)]} · ${row.documents.join(', ')||'No documents on record'} · ${fmtWhen(row.created)}`,body).className='libraryMeta';
       const modelText=row.models?.length?row.models.join(', '):'not recorded';
       const citedText=row.federal_sources?.length?row.federal_sources.join(', '):'none';
