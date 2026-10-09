@@ -539,6 +539,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <p><b>No.</b> It turns one uploaded paper's own evidence into an interactive model of burden and cost: what an illness costs in money, time, work, schooling and care. It never recommends, ranks or scores treatments, protocols, supplements or providers on its own, and it does not tell anyone what to do about their own health.</p>
 <p>"Simulator" here means a what-if model of cost and burden that you can adjust (for example, what if diagnosis took a year less), not a treatment simulator. If a paper reports what a treatment costs or what it did, the simulator shows that as the paper's own reported evidence, labeled observed, assumed or projected, never as advice. For care decisions, talk with a clinician.</p></details>
 
+<details class="whatThisAdds" open><summary>Which AI model does it use, and can that be changed?</summary><p>The default is Claude (Anthropic). In the full tool, an administrator chooses the model in the Administrator tab: any configured model with a key on the server can be selected for the next simulation, and an OpenAI model is supported as well. Keys are never typed into the page; each stays in a private file on the server. Every simulator records which model made it, and the library shows that model on each row. The public demo is read-only, so it does not show the Administrator tab. The model only writes the wording and the specification: code does every calculation and every federal check, whichever model is chosen.</p></details>
 <details class="whatThisAdds" open><summary>Can I use the simulators from another system or script (API)?</summary>
 <p>Yes. The full tool, run on your own computer, has a small programming interface (API) so another system can call a finished simulator or submit papers without a browser. The read-only public demo cannot run it.</p>
 <ul>
@@ -615,6 +616,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 </ul></details>
 </section>
 <section id="adminPanel" style="display:none"><h2>Administrator</h2>
+<div class="docSummary" id="adminModelBox" hidden><h3>AI model</h3><p class="scenarioTableDesc">The model that reads papers and writes each simulator. The default is Claude. Choose another configured model for the next simulation; simulators already made keep the model recorded in them. Keys are never entered here: each stays in a private file on the server.</p><div id="adminModelList"></div><p id="adminModelNote" class="changeNote" aria-live="polite"></p></div>
 <p id="adminSummaryLine" class="scenarioTableDesc"></p>
 <p class="scenarioTableDesc">Agencies below are ranked by how many of their <b>review units</b> are specifically about Lyme or Long COVID (not just general background data); the most relevant agencies to this project are listed first. A review unit is one processed evidence package built from a single raw file, or from one part of it (for example one tab of a spreadsheet); the definitions are just below the table.</p>
 <div class="scenarioTableWrap"><table id="adminTable" class="scenarioTable">
@@ -1385,6 +1387,26 @@ function showFaqView(){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 let adminPollTimer=null,adminSelected=new Set();
+async function loadAdminModels(){
+  const box=$('adminModelBox'),list=$('adminModelList');
+  let data=null;
+  try{const r=await fetch('/api/admin/models');if(r.ok)data=await r.json()}catch(e){}
+  if(!data||!data.models||!data.models.length){box.hidden=true;return}
+  box.hidden=false;list.textContent='';
+  for(const m of data.models){
+    const row=document.createElement('label');row.style.cssText='display:flex;gap:10px;align-items:center;padding:6px 0';
+    const rb=document.createElement('input');rb.type='radio';rb.name='adminModel';rb.checked=!!m.active;rb.disabled=!m.selectable;
+    rb.onchange=async()=>{
+      $('adminModelNote').textContent='';
+      try{await post('/api/admin/model',{name:m.name});$('adminModelNote').textContent='Next simulation will use '+m.model+'.';loadAdminModels()}
+      catch(e){$('adminModelNote').textContent=e.message;loadAdminModels()}
+    };
+    const label=document.createElement('span');
+    const price=(m.input_usd_per_million!=null&&m.output_usd_per_million!=null)?' (about $'+m.input_usd_per_million+' in / $'+m.output_usd_per_million+' out per million tokens)':'';
+    label.textContent=m.model+' ['+({anthropic:'Anthropic',openai:'OpenAI'}[m.kind]||m.kind)+']'+price+(m.active?' - active':'')+(m.selectable?'':(m.supported?' - no key on the server':' - not supported'));
+    row.appendChild(rb);row.appendChild(label);list.appendChild(row);
+  }
+}
 function showAdminView(){
   $('generateView').style.display='none';
   $('resultsSection').style.display='none';
@@ -1400,6 +1422,7 @@ function showAdminView(){
   window.scrollTo({top:0,behavior:'smooth'});
   loadAdminResources();
   pollAdminStatus();
+  loadAdminModels();
 }
 $('backButton').onclick=()=>showGenerateView();
 function printWithMeaningfulTitle(){
