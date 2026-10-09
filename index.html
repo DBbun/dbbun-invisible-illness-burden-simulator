@@ -293,7 +293,7 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .decisionSupport{margin:26px 0 0;padding-top:22px;border-top:1px solid var(--line)}.decisionSupport h3{margin:0 0 12px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}.decisionSupport>p{font-size:19px;line-height:1.45;color:var(--ink);font-weight:500;margin:0 0 14px}.decisionSupport ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}.decisionSupport li{margin:6px 0}
 button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}button.secondary:hover:not(:disabled){background:var(--surface)}
 #libraryToggle,#faqToggle,#adminToggle{width:auto;padding:10px 16px;font-size:15px}
-.faqGroup{margin:22px 0 6px;font-size:15px;letter-spacing:.6px;text-transform:uppercase;color:#4a4a4a;border-bottom:1px solid var(--line);padding-bottom:4px}.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
+.covSkip{margin:0 0 10px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);max-width:none}.covToggle{margin:0 0 12px}.faqGroup{margin:22px 0 6px;font-size:15px;letter-spacing:.6px;text-transform:uppercase;color:#4a4a4a;border-bottom:1px solid var(--line);padding-bottom:4px}.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
 .libraryItem{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 12px;display:flex;gap:14px;align-items:flex-start}.libraryItem h4{margin:0 0 4px}.libraryItemBody{flex:1;min-width:0}.libraryItemCheck{flex:0 0 auto;margin-top:3px;width:18px;height:18px}.libraryMeta{font-size:14px;margin:0 0 10px;color:var(--muted)}.libraryActions{display:flex;gap:10px;flex-wrap:wrap}.libraryActions button{padding:9px 14px;font-size:15px;width:auto}.libraryActions button.danger{color:#b23b2e;border:1px solid #b23b2e;background:#fff}
 .libraryBulkBar{display:flex;align-items:center;gap:16px;margin:0 0 16px;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;flex-wrap:wrap}.libraryBulkBar label{display:flex;align-items:center;gap:8px;margin:0;font-size:15px;font-weight:600}.libraryBulkBar input[type=checkbox]{width:18px;height:18px}#librarySelectedCount{color:var(--muted);font-size:14px;flex:1}.libraryBulkBar button{width:auto;padding:9px 14px;font-size:15px}
 .libraryBulkBar[hidden],.libraryTagFilter[hidden]{display:none}
@@ -432,6 +432,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <p><b>Why it matters.</b> A cost-of-illness paper is normally a static PDF. A patient cannot ask "what if my costs are 30% higher", an analyst cannot easily tell one study's figure from a population estimate, and the burdens a paper never measured are invisible. DBbun makes all three visible, and shows where each number came from.</p>
 <p><b>What it is not.</b> It is not medical advice, it never recommends or ranks treatments, and its results describe published studies, not what will happen to any one person.</p></details>
 
+<details class="whatThisAdds" open><summary>Walkthrough: change one assumption and see what happens (one study, step by step)</summary><p>This example uses the Maryland Lyme disease cost study (Zhang et al., 2006). Every number below is what the simulator itself computes.</p><ol><li><b>Open it.</b> In the Simulation library, press the &ldquo;Lyme disease&rdquo; button near the top of the list, find &ldquo;Lyme Disease Economic Burden Simulator (Maryland Eastern Shore, 1997-2000)&rdquo;, and press Open.</li><li><b>See what the paper measured.</b> The Overview tab shows five inputs, all labeled observed: they come from the paper.</li><li><b>Read the starting result.</b> In the Explore tab, &ldquo;Recomputed nationwide economic impact&rdquo; starts at about <b>$194 million</b>: a combined cost of $8,172 per patient times 23,763 reported cases, in the paper&rsquo;s year-2000 dollars.</li><li><b>Change one number.</b> Move &ldquo;Per-patient direct medical cost&rdquo; from $2,970 up to $4,000, the top of its range. The combined cost per patient becomes $9,202 and the nationwide figure rises to about <b>$218.7 million</b>. The late-versus-early cost results do not move, because they do not depend on that input.</li><li><b>Or try a ready-made scenario.</b> &ldquo;Combined worst-case underestimate&rdquo; raises the cost per patient to $11,000 and the case count to 35,000 (the authors caution that both may be understated). The nationwide figure becomes about <b>$385 million</b>, roughly twice the starting value.</li><li><b>See what the paper was checked against.</b> The Evidence &amp; Sources tab shows that the paper&rsquo;s case count equals CDC&rsquo;s reported count and restates its dollars in 2025 prices.</li></ol><p>These are illustrative what-if results from one published paper, not forecasts, and not advice for any person.</p></details>
 <details class="whatThisAdds" open><summary>Is this just a simulator? What makes it different?</summary>
 <p>A simulator on its own is a set of adjustable formulas. DBbun adds the parts that make the numbers trustworthy and useful:</p>
 <ul>
@@ -528,7 +529,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <p>When a result clearly represents one of these kinds of burden, DBbun optionally tags it so the Explore tab can group it into a named section. A document is never forced to touch every category - most won't, and that's expected.</p>
 <p><b>These categories overlap as ideas, and that is expected.</b> One real situation can touch several: a delayed diagnosis can cost a job and lead to uncovered spending. Each result (an output or a forecast) gets at most <b>one</b> tag, the best fit for the quantity it measures, so one simulator can have results in several categories.</p>
 <p>Tags group results; they do not split a burden into shares that add up. Do not add numbers across categories or results unless the document itself does, because the same cost or hour can appear in more than one place (double counting). To choose between neighbors, ask what is being counted (money, time, harm, a score, or a gap) and who bears it.</p>
-<div id="categoryMap" class="catMap" role="region" aria-label="Map of the 16 burden categories"><h4>The 16 categories at a glance</h4><p class="catNote">Related categories sit together. Colors group ideas; they do not rank them, and all bubbles are the same size because the categories are not ordered. Select one to see what it measures. A dashed line joins two categories that are easily mistaken for each other; hover or focus a line, or read &ldquo;Told apart from&rdquo; below, for the rule that separates them. A line with an arrow marks the two places where the table says one is often the cause of the other (being dismissed leads to delay and to emotional harm); that is a reading aid, not a finding from data. A thicker dotted line marks categories that can double count. Line length means nothing. The full table follows.</p><div class="catMapSvg" id="catMapSvg"></div><p class="catLinkNote" id="catLinkNote" aria-live="polite"></p><div class="catMapList" id="catMapList"></div><div class="catDetail" id="catDetail" aria-live="polite"><p>Select a category to read what it measures. Eight of the 16 carry a blue dot: they were added after people with lived experience described them.</p></div></div>
+<div id="categoryMap" class="catMap" role="region" aria-label="Map of the 16 burden categories"><h4>The 16 categories at a glance</h4><p class="catNote">Related categories sit together. Colors group ideas; they do not rank them, and all bubbles are the same size because the categories are not ordered. Select one to see what it measures. A dashed line joins two categories that are easily mistaken for each other; hover or focus a line, or read &ldquo;Told apart from&rdquo; below, for the rule that separates them. A line with an arrow marks the two places where the table says one is often the cause of the other (being dismissed leads to delay and to emotional harm); that is a reading aid, not a finding from data. A thicker dotted line marks categories that can double count. Line length means nothing. The full table follows.</p><div class="catMapSvg" id="catMapSvg"></div><p class="catLinkNote" id="catLinkNote" aria-live="polite"></p><div class="catMapList" id="catMapList"></div><div class="catDetail" id="catDetail" aria-live="polite"><p>Select a category to read what it measures. Eight of the 16 carry a blue dot: people with lived experience described them or confirmed them.</p></div></div>
 <div class="scenarioTableWrap"><table class="scenarioTable categoryTable"><thead><tr><th>Category</th><th>What it measures</th><th>Easily confused with</th><th>Example measure</th></tr></thead><tbody><tr><td data-label="Category" class="scenarioTableName">Direct costs of care</td><td data-label="What it measures">Money paid directly for treatment, equipment, travel to appointments, or accessibility needs.</td><td data-label="Easily confused with">Administrative burden (time and paperwork, not money); Work and income (money not earned, not money spent).</td><td data-label="Example measure">Yearly out-of-pocket spending; cost per visit</td></tr><tr><td data-label="Category" class="scenarioTableName">Work and income</td><td data-label="What it measures">Lost employment, reduced hours, or work capacity that changes over time.</td><td data-label="Easily confused with">Longer-term opportunity costs (a changed life path, not this year's pay); Cognitive impact (a symptom, not an income loss).</td><td data-label="Example measure">Work hours lost; share unable to work</td></tr><tr><td data-label="Category" class="scenarioTableName">Longer-term opportunity costs</td><td data-label="What it measures">Lost education, career advancement, or future earnings, broader than a loss of current income; for a child, disrupted schooling such as a school change, home tutoring or missed milestones.</td><td data-label="Easily confused with">Work and income: if the quantity is present-day pay, use that; if a path changed (years of remote-only schooling, a lost career), use this one.</td><td data-label="Example measure">Years of schooling disrupted; tutoring hours; projected career earnings lost</td></tr><tr><td data-label="Category" class="scenarioTableName">Caregiving and household labor</td><td data-label="What it measures">Unpaid caregiving or household work that shifts onto family members.</td><td data-label="Easily confused with">Care continuity risk (who holds the knowledge, not the hours); the caregiver's own lost pay can also appear under Work and income.</td><td data-label="Example measure">Caregiver hours per week</td></tr><tr><td data-label="Category" class="scenarioTableName">Care continuity risk</td><td data-label="What it measures">Care that could collapse because one undocumented caregiver holds all the care-routine knowledge.</td><td data-label="Easily confused with">Caregiving and household labor (hours of work, not fragility).</td><td data-label="Example measure">Share of care that depends on one person</td></tr><tr><td data-label="Category" class="scenarioTableName">Congenital/parent-to-child transmission</td><td data-label="What it measures">The disease itself passing from a parent to a child, a burden landing on someone with no exposure event of their own.</td><td data-label="Easily confused with">Caregiving (labor, not transmission).</td><td data-label="Example measure">Transmission rate; number of children affected</td></tr><tr><td data-label="Category" class="scenarioTableName">Diagnostic delay</td><td data-label="What it measures">The delay and repeated consultations before an accurate diagnosis.</td><td data-label="Easily confused with">Medical disbelief (dismissal can cause delay, but this counts the time lost); Harm from misdiagnosis-driven treatment (active harm, not lost time). A cost gap between disease stages is severity, not delay.</td><td data-label="Example measure">Months to diagnosis; visits before diagnosis</td></tr><tr><td data-label="Category" class="scenarioTableName">Harm from misdiagnosis-driven treatment</td><td data-label="What it measures">Active harm from a treatment whose benefit for the diagnosis being treated is not supported by the evidence.</td><td data-label="Easily confused with">Diagnostic delay (passive time lost).</td><td data-label="Example measure">Treatment-related adverse-event rate</td></tr><tr><td data-label="Category" class="scenarioTableName">Barriers to reaching care</td><td data-label="What it measures">Costs from being unable to reach or obtain appropriate care: distance, provider scarcity, a setting that cannot accommodate accessibility needs.</td><td data-label="Easily confused with">Uncoordinated, fragmented care (people who are being seen, but by uncoordinated providers); Administrative burden (paperwork and insurance).</td><td data-label="Example measure">Travel distance; wait for a specialist</td></tr><tr><td data-label="Category" class="scenarioTableName">Medical disbelief and dismissal</td><td data-label="What it measures">Harm from being dismissed or told real symptoms are not real.</td><td data-label="Easily confused with">Diagnostic delay and Psychological burden are often the effects; disbelief is the cause being counted.</td><td data-label="Example measure">Share reporting being dismissed</td></tr><tr><td data-label="Category" class="scenarioTableName">Administrative burden</td><td data-label="What it measures">Disability applications, paperwork, or care disruption from an outside system such as insurance coverage churn or a legal dispute.</td><td data-label="Easily confused with">Barriers to reaching care (physical or supply barriers); Uncoordinated, fragmented care (providers not coordinating).</td><td data-label="Example measure">Appeals filed; months of coverage gaps</td></tr><tr><td data-label="Category" class="scenarioTableName">Cognitive impact</td><td data-label="What it measures">Limitations that make ordinary tasks take longer or require assistance.</td><td data-label="Easily confused with">Psychological burden (emotional, not thinking or task limits); Overall quality of life (a broad score).</td><td data-label="Example measure">Task completion time; share needing help</td></tr><tr><td data-label="Category" class="scenarioTableName">Psychological burden</td><td data-label="What it measures">The emotional and psychological cost to patients or caregivers, including from the care-seeking process itself.</td><td data-label="Easily confused with">Cognitive impact (thinking and tasks); Overall quality of life (a composite score that may include mood).</td><td data-label="Example measure">Anxiety or depression prevalence</td></tr><tr><td data-label="Category" class="scenarioTableName">Overall quality of life</td><td data-label="What it measures">A general health-related quality-of-life or functional-status loss (EQ-5D utility, QALYs or QALMs, SF-36-type scores).</td><td data-label="Easily confused with">Any specific category above: use this only when the result is the composite score itself.</td><td data-label="Example measure">Utility score gap; quality-adjusted life-months lost</td></tr><tr><td data-label="Category" class="scenarioTableName">Undercounted by official surveillance</td><td data-label="What it measures">The gap between a disease's true frequency or burden and what surveillance, claims coding, or public reporting captures.</td><td data-label="Easily confused with">Diagnostic delay (one patient's timeline); this one is a population-level measurement gap.</td><td data-label="Example measure">Estimated true cases versus reported cases</td></tr><tr><td data-label="Category" class="scenarioTableName">Uncoordinated, fragmented care</td><td data-label="What it measures">The burden of navigating several uncoordinated providers or specialists with no single point of coordination.</td><td data-label="Easily confused with">Barriers to reaching care (cannot get in at all); Care continuity risk (one caregiver's knowledge).</td><td data-label="Example measure">Number of specialists; hand-offs between them</td></tr></tbody></table></div></details>
 
 <details class="whatThisAdds" open><summary>How did real people shape this simulator?</summary>
@@ -1594,12 +1595,27 @@ function renderLibraryBulkBar(rows){
 let libraryAllRows=[];
 let libraryActiveTab='list';
 const libraryActiveFilters=new Set();
+let libraryConditionFilter='';
+function libraryVisibleRows(){
+  return libraryAllRows.filter(r=>(!libraryConditionFilter||r.condition===libraryConditionFilter)
+    &&(!libraryActiveFilters.size||r.categories?.some(c=>libraryActiveFilters.has(c))));
+}
 function renderLibraryTagFilter(){
   const bar=$('libraryTagFilter');
   bar.hidden=!libraryAllRows.length;
   bar.replaceChildren();
   if(!libraryAllRows.length)return;
-  text('span','Filter by burden tag:',bar).style.cssText='font-size:13px;color:var(--muted);font-weight:600';
+  text('span','Show:',bar).style.cssText='font-size:13px;color:var(--muted);font-weight:600';
+  for(const [key,label] of [['','All'],['lyme','Lyme disease'],['longCovid','Long COVID']]){
+    const n=key?libraryAllRows.filter(r=>r.condition===key).length:libraryAllRows.length;
+    const chip=document.createElement('button');chip.type='button';
+    chip.className='libraryTagChip'+(libraryConditionFilter===key?' active':'');
+    chip.setAttribute('aria-pressed',String(libraryConditionFilter===key));
+    chip.textContent=`${label} (${n})`;chip.disabled=key!==''&&!n;
+    chip.onclick=()=>{libraryConditionFilter=key;renderLibraryList()};
+    bar.appendChild(chip);
+  }
+  text('span','Filter by burden tag:',bar).style.cssText='font-size:13px;color:var(--muted);font-weight:600;margin-left:10px';
   for(const key of BURDEN_CATEGORY_ORDER){
     const count=libraryAllRows.filter(r=>(r.categories||[]).includes(key)).length;
     const chip=document.createElement('button');chip.type='button';
@@ -1622,15 +1638,13 @@ function renderLibraryTagFilter(){
 }
 function renderLibraryList(){
   renderLibraryTagFilter();
-  const rows=libraryActiveFilters.size
-    ?libraryAllRows.filter(r=>r.categories?.some(c=>libraryActiveFilters.has(c)))
-    :libraryAllRows;
+  const rows=libraryVisibleRows();
   const liveIds=new Set(libraryAllRows.map(r=>r.id));
   for(const id of [...librarySelected])if(!liveIds.has(id))librarySelected.delete(id);
   const list=$('libraryList');list.replaceChildren();
   renderLibraryBulkBar(rows);
   if(!libraryAllRows.length){text('p','No simulations have been created yet.',list);return}
-  if(!rows.length){text('p','No simulations match the selected tag filter.',list);return}
+  if(!rows.length){text('p','No simulations match the selected filters.',list);return}
   const byGroup=new Map();
   for(const row of rows){
     const key=libraryGroupKey(row);
@@ -1737,9 +1751,7 @@ async function loadLibrary(){
   loadCrossAnalysisRuns();
 }
 $('librarySelectAll').onchange=()=>{
-  const visible=libraryActiveFilters.size
-    ?libraryAllRows.filter(r=>r.categories?.some(c=>libraryActiveFilters.has(c)))
-    :libraryAllRows;
+  const visible=libraryVisibleRows();
   if($('librarySelectAll').checked)for(const r of visible)librarySelected.add(r.id);
   else for(const r of visible)librarySelected.delete(r.id);
   renderLibraryList();
@@ -3260,7 +3272,7 @@ function buildCategoryMap(){
     opportunity_costs:'Caregivers and advocates for Long COVID, and a parent who is also a Lyme patient, described lost schooling and changed life paths. The category and its school and milestone examples followed.',
     congenital_transmission:'Firsthand Lyme patients on the public LymeX Healthathon discussion board described the illness passing from parent to child. This category followed.',
     iatrogenic_harm:'Firsthand Lyme patients on the public LymeX Healthathon discussion board described harm from treatment driven by a wrong diagnosis. This category followed.',
-    care_fragmentation:'Firsthand Lyme patients on the public LymeX Healthathon discussion board described many providers who do not coordinate. This category followed.',
+    care_fragmentation:'This category came from published research on care coordination. A firsthand Lyme patient on the public LymeX Healthathon discussion board then described the cost of coordinating many specialists and clinics, which confirmed it.',
   };
   const PAIRS=[
     ['direct_costs','administrative','confused','Money versus time and paperwork. Dollars spent on care are direct costs; hours and hassle with forms or insurance are administrative burden.'],
@@ -3312,7 +3324,7 @@ function buildCategoryMap(){
     lines.forEach((ln,i)=>{const ts=document.createElementNS(NS,'tspan');ts.setAttribute('x',pos[k].x);ts.setAttribute('y',pos[k].y+4-((lines.length-1)*6.5)+i*13);ts.textContent=ln;tx.appendChild(ts)});
     g.appendChild(tx);
     if(LIVED_ORIGIN[k]){const dot=document.createElementNS(NS,'circle');dot.setAttribute('class','catLivedDot');dot.setAttribute('cx',pos[k].x+R*0.72);dot.setAttribute('cy',pos[k].y-R*0.72);dot.setAttribute('r',8);dot.setAttribute('fill','#2a78d6');dot.setAttribute('stroke','#fff');dot.setAttribute('stroke-width',2);g.appendChild(dot)}
-    const tt=document.createElementNS(NS,'title');tt.textContent=BURDEN_CATEGORY_LABELS[k]+': '+BURDEN_CATEGORY_EXPLANATIONS[k]+(LIVED_ORIGIN[k]?' (Added after lived-experience input; select to read where it came from.)':'');g.appendChild(tt);
+    const tt=document.createElementNS(NS,'title');tt.textContent=BURDEN_CATEGORY_LABELS[k]+': '+BURDEN_CATEGORY_EXPLANATIONS[k]+(LIVED_ORIGIN[k]?' (Shaped or confirmed by lived-experience input; select to read where it came from.)':'');g.appendChild(tt);
     g.onclick=()=>select(k);
     g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(k)}else if(e.key==='Escape')select(null)};
     svg.appendChild(g);bubbles[k]=g;
@@ -3338,7 +3350,7 @@ function buildCategoryMap(){
       listButtons[key].classList.toggle('sel',on);listButtons[key].setAttribute('aria-pressed',on?'true':'false');
     }
     detail.textContent='';
-    if(!selected){const p=document.createElement('p');p.textContent='Select a category to read what it measures. '+Object.keys(LIVED_ORIGIN).length+' of the 16 carry a blue dot: they were added after people with lived experience described them.';detail.appendChild(p);return}
+    if(!selected){const p=document.createElement('p');p.textContent='Select a category to read what it measures. '+Object.keys(LIVED_ORIGIN).length+' of the 16 carry a blue dot: people with lived experience described them or confirmed them.';detail.appendChild(p);return}
     const items=[];
     for(const other of (near[selected]||[])){
       const q=pairInfo[selected+'|'+other],kind=q[2];
@@ -3434,6 +3446,7 @@ const covTip=(()=>{
   };
 })();
 function covTipLine(parent,label,text){const p=document.createElement('p');if(label){const b=document.createElement('b');b.textContent=label+' ';p.appendChild(b)}p.appendChild(document.createTextNode(text));parent.appendChild(p);return p}
+let coverageMapOpen=false;
 function renderCoverageMap(rows){
   const box=$('coverageMap');if(!box)return;
   box.replaceChildren();
@@ -3442,6 +3455,7 @@ function renderCoverageMap(rows){
   const countOf=(r,k)=>(r.category_counts&&r.category_counts[k])||((r.categories||[]).includes(k)?1:0);
   const totals={};for(const c of cols)totals[c.key]=rows.reduce((n,r)=>n+(countOf(r,c.key)?1:0),0);
   const gaps=cols.filter(c=>!totals[c.key]);
+  const skip=text('p','',box);skip.className='covSkip';skip.appendChild(Object.assign(document.createElement('b'),{textContent:'New here? '}));skip.appendChild(document.createTextNode('You do not need the map. Scroll down to the list and press Open on any one simulator. The map of what each study measured is behind the button below.'));
   text('h3','What the '+rows.length+' simulators measure, at a glance',box);
   text('p','Each row is one simulator and each column one of the 16 burden categories. A colored cell means the simulator has at least one result for that burden (the number is how many results). A blank column means no simulator here measures it: '+(gaps.length?gaps.length+' of 16 burdens are measured by none ('+gaps.map(c=>BURDEN_CATEGORY_LABELS[c.key].toLowerCase()).join(', ')+')':'every burden is measured by at least one simulator')+'. Rows run from the newest publication year to the oldest, in the same order as the list below. Select a cell to open that simulator. A blank cell is a gap in what the simulator covers, not proof that the burden is absent.',box).className='covNote';
   const wrap=document.createElement('div');wrap.className='covWrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Table of which burden categories each simulator measures');
@@ -3528,6 +3542,14 @@ function renderCoverageMap(rows){
   wrap.appendChild(table);box.appendChild(wrap);
   const none=rows.filter(r=>!cols.some(c=>countOf(r,c.key)));
   if(none.length)text('p',none.length+' row'+(none.length===1?'':'s')+' with "0 of 16": the results of '+(none.length===1?'that simulator were':'those simulators were')+' not tagged to any of the 16 burden categories.',box).className='covNote';
+  const body=document.createElement('div');body.id='covBody';
+  for(const node of [...box.childNodes])if(node!==skip)body.appendChild(node);
+  body.hidden=!coverageMapOpen;
+  const toggle=document.createElement('button');toggle.type='button';toggle.className='secondary covToggle';toggle.id='covToggle';
+  const label=()=>coverageMapOpen?'Hide the map of what each study measured':'Show the map of what each study measured';
+  toggle.textContent=label();toggle.setAttribute('aria-expanded',String(coverageMapOpen));toggle.setAttribute('aria-controls','covBody');
+  toggle.onclick=()=>{coverageMapOpen=!coverageMapOpen;body.hidden=!coverageMapOpen;toggle.textContent=label();toggle.setAttribute('aria-expanded',String(coverageMapOpen))};
+  box.appendChild(toggle);box.appendChild(body);
   box.hidden=false;
 }
 
