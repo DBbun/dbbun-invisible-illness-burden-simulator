@@ -20,7 +20,7 @@
     "file": "12_Zhang_2006__Lyme_Disease_Economic_Burden_Simulator__audio-overview"
   },
   "eNaB4wjgekjmRLzc8_lcuTqi": {
-    "minutes": 11,
+    "minutes": 10,
     "voice": "Kokoro-82M text-to-speech",
     "file": "04_Johnson_2025__Persistent_Lyme_Disease_Trial_Eligibility_and__audio-overview"
   },
@@ -35,12 +35,12 @@
     "file": "23_NCHS_Data_Brief_480_2023__2022_NHIS_Long_COVID_Prevalence_Explorer__audio-overview"
   },
   "AnDZ4jDzaULinMPYQiFkS9Eu": {
-    "minutes": 11,
+    "minutes": 10,
     "voice": "Kokoro-82M text-to-speech",
     "file": "19_Mandel_2025__Long_COVID_Incidence_and_Risk_Factor_Explorer__audio-overview"
   },
   "0UNjOE1fjWuDaUVisqqr2sQk": {
-    "minutes": 12,
+    "minutes": 11,
     "voice": "Kokoro-82M text-to-speech",
     "file": "13_Tian_2026__Long_COVID_Phenotyping_vs_Diagnosis_Code_Surveillance__audio-overview"
   },
@@ -75,7 +75,7 @@
     "file": "02_Yu_2026__Lyme_Disease_Direct_Health_Care_Cost_Explorer__audio-overview"
   },
   "sgx1UxHhyd9Q3mC6fqIRhMWz": {
-    "minutes": 12,
+    "minutes": 11,
     "voice": "Kokoro-82M text-to-speech",
     "file": "08_Kugeler_2021__Lyme_Disease_Diagnosis_Frequency_Claims_Based_Estimate__audio-overview"
   },
@@ -85,12 +85,12 @@
     "file": "06_Geebelen_2022__Belgian_Lyme_Borreliosis_Cost_of_Illness_Explorer__audio-overview"
   },
   "kUy-GpCLhfMw4IXjN2rW6cgd": {
-    "minutes": 12,
+    "minutes": 11,
     "voice": "Kokoro-82M text-to-speech",
     "file": "11_Johnson_2011__Chronic_Lyme_Disease_Diagnostic_Delay_and_Care_Access__audio-overview"
   },
   "ZjULONFTPMLtBI66Ek91EdeG": {
-    "minutes": 11,
+    "minutes": 10,
     "voice": "Kokoro-82M text-to-speech",
     "file": "14_Tomaskovic_2026__Long_COVID_Occupational_Disability_Cohort_CPET_and__audio-overview"
   },
@@ -105,7 +105,7 @@
     "file": "20_Ozawa_2026__Long_COVID_Symptom_Patterns_and_Self_Reported_Work__audio-overview"
   },
   "jIAiRshBMu-sXlOAz85AfRbi": {
-    "minutes": 10,
+    "minutes": 9,
     "voice": "Kokoro-82M text-to-speech",
     "file": "01_Halsby_2026__BOLD_Study_Lyme_Borreliosis_Diagnostic_Delay_Severity__audio-overview"
   },
@@ -130,7 +130,7 @@
     "file": "Comparison__Johnson_2014__vs__Carlile_2024__audio-overview"
   },
   "mZ9BZ_V99N5-P0Xus2hxZuL6": {
-    "minutes": 12,
+    "minutes": 11,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Comparison__MyLymeData_2025__vs__Tian_2026__audio-overview"
   },
@@ -160,17 +160,17 @@
     "file": "Comparison__Johnson_2025__vs__Ozawa_2026__audio-overview"
   },
   "OE3YqGqypyK26_m1GxqvM2es": {
-    "minutes": 11,
+    "minutes": 10,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Comparison__Johnson_2011__vs__Mandel_2025__audio-overview"
   },
   "Bbb-4TZzLoip7zmez9PTs5pe": {
-    "minutes": 12,
+    "minutes": 11,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Comparison__Zhang_2006__vs__Azhir_2025__audio-overview"
   },
   "YT5eZN3z05wr4-X5-vPzOFoE": {
-    "minutes": 12,
+    "minutes": 11,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Comparison__Geebelen_2022__vs__Liu_Galvin_2025__audio-overview"
   },
@@ -185,8 +185,23 @@
     "file": "Comparison__Johnson_2023__vs__Tomaskovic_2026__audio-overview"
   },
   "aCfsZa_FtSJC5glMXuMq-9TU": {
-    "minutes": 10,
+    "minutes": 9,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Comparison__Halsby_2026__vs__NCHS_Data_Brief_480_2023__audio-overview"
+  },
+  "tool_home": {
+    "minutes": 14,
+    "voice": "Kokoro-82M text-to-speech",
+    "file": "Tool_Overview__Main_Page__audio-overview"
+  },
+  "tool_faq": {
+    "minutes": 10,
+    "voice": "Kokoro-82M text-to-speech",
+    "file": "Tool_Overview__FAQ_Page__audio-overview"
+  },
+  "tool_admin": {
+    "minutes": 8,
+    "voice": "Kokoro-82M text-to-speech",
+    "file": "Tool_Overview__Administrator_Tab__audio-overview"
   }
 }

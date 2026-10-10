@@ -42,6 +42,6 @@ python batch_generate.py papers_folder results_folder --key $KEY --collect      
 
 Or directly: `POST /api/v1/simulations` with `{"documents": [{"name": "paper.pdf", "content_base64": "..."}]}` returns
 `202` and an id at once. Jobs wait in a first-in, first-out line (up to 10 waiting) and run one at a time. Poll
-`GET /api/v1/simulations/ID` until `state` is `ready` (generation takes about 4 to 9 minutes and costs roughly $0.25
-to $0.85 in model fees, reported as `cost_usd`), then fetch `/bundle`. The waiting line is held in memory, so a server
+`GET /api/v1/simulations/ID` until `state` is `ready` (generation takes about 4 to 9 minutes and costs $0.40
+to $0.96 in model fees (25 runs; staff time, hosting and maintenance not included), reported as `cost_usd`), then fetch `/bundle`. The waiting line is held in memory, so a server
 restart drops jobs that had not started yet; they are reported as failed and can be submitted again.
