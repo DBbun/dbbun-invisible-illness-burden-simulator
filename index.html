@@ -299,7 +299,7 @@ button.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}b
 .tileFlow{list-style:none;margin:12px 0 16px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
 .tileFlow>li{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:10px 12px;font-size:14px;line-height:1.4;color:var(--ink)}
 .tileFlow>li>b{display:block;font-size:14.5px;margin-bottom:3px}
-.covToggle{margin:0 0 12px}.libSummary{margin:2px 0 6px;font-size:15px;line-height:1.4;color:var(--ink)}.shotGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px;margin:12px 0}.shotGrid figure{margin:0}.shotGrid img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}.shotGrid figcaption{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.35}.faqGroup{margin:22px 0 6px;font-size:15px;letter-spacing:.6px;text-transform:uppercase;color:#4a4a4a;border-bottom:1px solid var(--line);padding-bottom:4px}.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
+.libAudio{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:2px 0 8px}.libAudioLabel{font-size:14px;color:var(--ink)}.libAudio audio{height:36px;max-width:100%}.libAudio a{font-size:14px}.covToggle{margin:0 0 12px}.libSummary{margin:2px 0 6px;font-size:15px;line-height:1.4;color:var(--ink)}.shotGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px;margin:12px 0}.shotGrid figure{margin:0}.shotGrid img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}.shotGrid figcaption{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.35}.faqGroup{margin:22px 0 6px;font-size:15px;letter-spacing:.6px;text-transform:uppercase;color:#4a4a4a;border-bottom:1px solid var(--line);padding-bottom:4px}.reuseSection{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}.reuseSection p{max-width:none}
 .libraryItem{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 12px;display:flex;gap:14px;align-items:flex-start}.libraryItem h4{margin:0 0 4px}.libraryItemBody{flex:1;min-width:0}.libraryItemCheck{flex:0 0 auto;margin-top:3px;width:18px;height:18px}.libraryMeta{font-size:14px;margin:0 0 10px;color:var(--muted)}.libraryActions{display:flex;gap:10px;flex-wrap:wrap}.libraryActions button{padding:9px 14px;font-size:15px;width:auto}.libraryActions button.danger{color:#b23b2e;border:1px solid #b23b2e;background:#fff}
 .libraryBulkBar{display:flex;align-items:center;gap:16px;margin:0 0 16px;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;flex-wrap:wrap}.libraryBulkBar label{display:flex;align-items:center;gap:8px;margin:0;font-size:15px;font-weight:600}.libraryBulkBar input[type=checkbox]{width:18px;height:18px}#librarySelectedCount{color:var(--muted);font-size:14px;flex:1}.libraryBulkBar button{width:auto;padding:9px 14px;font-size:15px}
 .libraryBulkBar[hidden],.libraryTagFilter[hidden]{display:none}
@@ -738,7 +738,8 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <button id="generate" disabled>Generate</button><div id="progress" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><span><span id="status"></span><ul id="callProgress" class="callProgress"></ul><p id="progressDetail" class="progressDetail"></p></span></div>
 <details id="auditpanel" hidden><summary>Generation details and API usage</summary><pre id="audit"></pre></details>
 </section>
-<div id="resultsHeader" class="resultsHeader"><h2 id="simHeadline" class="simHeadline"></h2><button id="backButton" class="secondary" type="button">← Back</button><div class="resultsHeaderRight"><button id="printButton" class="secondary" type="button">Print / save as PDF</button><button id="videoButton" class="secondary" type="button"></button></div></div>
+<div id="resultsHeader" class="resultsHeader"><h2 id="simHeadline" class="simHeadline"></h2><button id="backButton" class="secondary" type="button">← Back</button><div class="resultsHeaderRight"><button id="printButton" class="secondary" type="button">Print / save as PDF</button><button id="audioButton" class="secondary" type="button" hidden>&#127911; Listen</button><button id="videoButton" class="secondary" type="button"></button></div></div>
+<div id="audioBox" class="changeNote" hidden style="margin:8px 0 12px"><p id="audioNote" style="margin:0 0 8px"></p><audio id="audioPlayer" controls preload="none" style="width:100%"></audio><p id="audioLinks" style="margin:8px 0 0"></p></div>
 <section id="resultsSection">
 <div id="lensBar" class="lensBar" role="group" aria-label="Choose who this simulator is explained for" hidden></div>
 <nav class="tabNav" role="tablist">
@@ -1344,6 +1345,7 @@ function showReview(job){
   $('adminPanel').style.display='none';
   $('resultsHeader').style.display='flex';
   renderVideoButton();
+  renderAudioButton();
   $('resultsSection').style.display='block';
   setActiveTab('overview');
   $('libraryToggle').textContent='Simulation library';
@@ -1356,7 +1358,7 @@ function showReview(job){
 }
 function showGenerateView(){
   $('resultsSection').style.display='none';
-  $('resultsHeader').style.display='none';
+  $('resultsHeader').style.display='none';{const ap=$('audioPlayer');if(ap)ap.pause()}
   $('libraryPanel').style.display='none';
   $('faqPanel').style.display='none';
   $('adminPanel').style.display='none';
@@ -1371,7 +1373,7 @@ function showGenerateView(){
 function showLibraryView(){
   $('generateView').style.display='none';
   $('resultsSection').style.display='none';
-  $('resultsHeader').style.display='none';
+  $('resultsHeader').style.display='none';{const ap=$('audioPlayer');if(ap)ap.pause()}
   $('faqPanel').style.display='none';
   $('adminPanel').style.display='none';
   $('libraryPanel').style.display='block';
@@ -1387,7 +1389,7 @@ function showLibraryView(){
 function showFaqView(){
   $('generateView').style.display='none';
   $('resultsSection').style.display='none';
-  $('resultsHeader').style.display='none';
+  $('resultsHeader').style.display='none';{const ap=$('audioPlayer');if(ap)ap.pause()}
   $('libraryPanel').style.display='none';
   $('adminPanel').style.display='none';
   $('faqPanel').style.display='block';
@@ -1422,7 +1424,7 @@ async function loadAdminModels(){
 function showAdminView(){
   $('generateView').style.display='none';
   $('resultsSection').style.display='none';
-  $('resultsHeader').style.display='none';
+  $('resultsHeader').style.display='none';{const ap=$('audioPlayer');if(ap)ap.pause()}
   $('libraryPanel').style.display='none';
   $('faqPanel').style.display='none';
   $('adminPanel').style.display='block';
@@ -1445,6 +1447,28 @@ function printWithMeaningfulTitle(){
   window.print();
 }
 $('printButton').onclick=printWithMeaningfulTitle;
+let audioManifest=null;
+async function ensureAudioManifest(){
+  if(audioManifest===null){try{audioManifest=await (await fetch('audio/manifest.json')).json()}catch(e){audioManifest={}}}
+  return audioManifest;
+}
+document.addEventListener('play',e=>{document.querySelectorAll('audio').forEach(a=>{if(a!==e.target)a.pause()})},true);
+async function renderAudioButton(){
+  const btn=$('audioButton'),box=$('audioBox'),player=$('audioPlayer');
+  player.pause();box.hidden=true;btn.hidden=true;
+  await ensureAudioManifest();
+  const info=audioManifest[jobId];
+  if(!info)return;
+  btn.hidden=false;
+  btn.onclick=()=>{
+    if(!box.hidden){player.pause();box.hidden=true;return}
+    player.src='audio/'+jobId+'.mp3';
+    $('audioNote').textContent='Audio overview, about '+info.minutes+' minutes. It is read by a synthetic voice ('+info.voice+'); the script was checked against this simulator\u2019s document. Educational what-if model, not medical advice.';
+    const links=$('audioLinks');links.textContent='';
+    const a=document.createElement('a');a.href='audio/'+jobId+'.txt';a.target='_blank';a.rel='noopener';a.textContent='Read the transcript';links.appendChild(a);
+    box.hidden=false;
+  };
+}
 function renderVideoButton(){
   const btn=$('videoButton');
   if(current?.video_url){
@@ -1648,6 +1672,7 @@ function renderLibraryTagFilter(){
   }
 }
 function renderLibraryList(){
+  if(audioManifest===null){ensureAudioManifest().then(()=>renderLibraryList());return}
   renderLibraryTagFilter();
   const rows=libraryVisibleRows();
   const liveIds=new Set(libraryAllRows.map(r=>r.id));
@@ -1679,6 +1704,14 @@ function renderLibraryList(){
       const body=document.createElement('div');body.className='libraryItemBody';
       text('h4',row.title,body);
       if(row.summary)text('p',row.summary,body).className='libSummary';
+      const audioInfo=audioManifest&&audioManifest[row.id];
+      if(audioInfo){
+        const ab=document.createElement('div');ab.className='libAudio';
+        const lab=text('span','\u{1F3A7} Audio overview, about '+audioInfo.minutes+' min (synthetic voice)',ab);lab.className='libAudioLabel';
+        const au=document.createElement('audio');au.controls=true;au.preload='none';au.src='audio/'+row.id+'.mp3';au.setAttribute('aria-label','Audio overview of '+row.title);ab.appendChild(au);
+        const tr=document.createElement('a');tr.href='audio/'+row.id+'.txt';tr.target='_blank';tr.rel='noopener';tr.textContent='Transcript';ab.appendChild(tr);
+        body.appendChild(ab);
+      }
       text('p',`${LIBRARY_GROUP_LABELS[libraryGroupKey(row)]} · ${row.documents.join(', ')||'No documents on record'} · ${fmtWhen(row.created)}`,body).className='libraryMeta';
       const modelText=row.models?.length?row.models.join(', '):'not recorded';
       const citedText=row.federal_sources?.length?row.federal_sources.join(', '):'none';
