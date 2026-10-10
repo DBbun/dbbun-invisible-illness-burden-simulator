@@ -2821,7 +2821,7 @@ function chartBars(baseline,value){
   }
   return wrap;
 }
-const PAYER_LABELS={patient_out_of_pocket:'Patient out of pocket',insurer_or_health_system:'Insurer or health system',employer_or_productivity:'Employer or lost productivity',informal_caregiver:'Family caregiver',public_program:'Public program',unclear:'Payer unclear'};
+const PAYER_LABELS={patient_out_of_pocket:'Patient out of pocket',insurer_or_health_system:'Insurer or health system',employer_or_productivity:'Employer or lost productivity',informal_caregiver:'Family caregiver',public_program:'Public program',unclear:'Payer not stated in the paper'};
 const PAYER_ORDER=['patient_out_of_pocket','insurer_or_health_system','public_program','employer_or_productivity','informal_caregiver','unclear'];
 function qualityTagParts(item,{isOutput=false,isForecast=false}={}){
   const parts=[];
@@ -2856,8 +2856,9 @@ function renderPayerSummary(s){
     if(!rows.has(item.payer))rows.set(item.payer,[]);
     rows.get(item.payer).push({item,value});
   };
+  const repeatsInput=o=>{const r=o.expression&&o.expression.ref;const i=r&&s.inputs.find(x=>x.id===r);return !!i&&i.unit===o.unit&&!!i.payer&&!!PAYER_LABELS[i.payer]&&isMoneyUnit(i.unit)};
   for(const i of s.inputs)add(i,i.default);
-  for(const o of s.outputs)add(o,current.baseline?.[o.id]);
+  for(const o of s.outputs)if(!repeatsInput(o))add(o,current.baseline?.[o.id]);
   box.hidden=!rows.size;
   if(!rows.size)return;
   text('h4','Who bears the cost',box);
