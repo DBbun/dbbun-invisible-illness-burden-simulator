@@ -739,7 +739,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <details id="auditpanel" hidden><summary>Generation details and API usage</summary><pre id="audit"></pre></details>
 </section>
 <div id="resultsHeader" class="resultsHeader"><h2 id="simHeadline" class="simHeadline"></h2><button id="backButton" class="secondary" type="button">← Back</button><div class="resultsHeaderRight"><button id="printButton" class="secondary" type="button">Print / save as PDF</button><button id="audioButton" class="secondary" type="button" hidden>&#127911; Listen</button><button id="videoButton" class="secondary" type="button"></button></div></div>
-<div id="audioBox" class="changeNote" hidden style="margin:8px 0 12px"><p id="audioNote" style="margin:0 0 8px"></p><audio id="audioPlayer" controls preload="none" style="width:100%"></audio><p id="audioLinks" style="margin:8px 0 0"></p></div>
+<div id="audioBox" class="changeNote" hidden style="margin:8px 0 12px"><p id="audioNote" style="margin:0 0 8px"></p><audio id="audioPlayer" controls preload="metadata" style="width:100%"></audio><p id="audioLinks" style="margin:8px 0 0"></p></div>
 <section id="resultsSection">
 <div id="lensBar" class="lensBar" role="group" aria-label="Choose who this simulator is explained for" hidden></div>
 <nav class="tabNav" role="tablist">
@@ -1714,7 +1714,7 @@ function renderLibraryList(){
       if(audioInfo){
         const ab=document.createElement('div');ab.className='libAudio';
         const lab=text('span','\u{1F3A7} Audio overview, about '+audioInfo.minutes+' min (synthetic voice)',ab);lab.className='libAudioLabel';
-        const au=document.createElement('audio');au.controls=true;au.preload='none';au.src='audio/'+(audioInfo.file||row.id)+'.mp3';au.setAttribute('aria-label','Audio overview of '+row.title);ab.appendChild(au);
+        const au=document.createElement('audio');au.controls=true;au.preload='metadata';au.src='audio/'+(audioInfo.file||row.id)+'.mp3';au.setAttribute('aria-label','Audio overview of '+row.title);ab.appendChild(au);
         addAudioLinks(ab,audioInfo.file||row.id,'Transcript');
         body.appendChild(ab);
       }
@@ -2392,7 +2392,7 @@ function renderCrossAnalysisResult(job,id){
     const info=m[id];
     if(!info||box.dataset.jobId!==id)return;
     text('span','\u{1F3A7} Audio overview of this comparison, about '+info.minutes+' min (synthetic voice)',crossAudio).className='libAudioLabel';
-    const au=document.createElement('audio');au.controls=true;au.preload='none';au.src='audio/'+(info.file||id)+'.mp3';au.setAttribute('aria-label','Audio overview of this comparison');crossAudio.appendChild(au);
+    const au=document.createElement('audio');au.controls=true;au.preload='metadata';au.src='audio/'+(info.file||id)+'.mp3';au.setAttribute('aria-label','Audio overview of this comparison');crossAudio.appendChild(au);
     addAudioLinks(crossAudio,info.file||id,'Transcript');
     crossAudio.hidden=false;
   });
