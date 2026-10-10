@@ -1448,6 +1448,11 @@ function printWithMeaningfulTitle(){
 }
 $('printButton').onclick=printWithMeaningfulTitle;
 let audioManifest=null;
+function addAudioLinks(box,fileBase,transcriptLabel){
+  const t=document.createElement('a');t.href='audio/'+fileBase+'.txt';t.target='_blank';t.rel='noopener';t.textContent=transcriptLabel;
+  const d=document.createElement('a');d.href='audio/'+fileBase+'.mp3';d.download=fileBase+'.mp3';d.textContent='Download (MP3)';
+  box.append(t,' \u00b7 ',d);
+}
 async function ensureAudioManifest(){
   if(audioManifest===null){try{audioManifest=await (await fetch('audio/manifest.json')).json()}catch(e){audioManifest={}}}
   return audioManifest;
@@ -1462,10 +1467,11 @@ async function renderAudioButton(){
   btn.hidden=false;
   btn.onclick=()=>{
     if(!box.hidden){player.pause();box.hidden=true;return}
-    player.src='audio/'+jobId+'.mp3';
+    const fileBase=info.file||jobId;
+    player.src='audio/'+fileBase+'.mp3';
     $('audioNote').textContent='Audio overview, about '+info.minutes+' minutes. It is read by a synthetic voice ('+info.voice+'); the script was checked against this simulator\u2019s document. Educational what-if model, not medical advice.';
     const links=$('audioLinks');links.textContent='';
-    const a=document.createElement('a');a.href='audio/'+jobId+'.txt';a.target='_blank';a.rel='noopener';a.textContent='Read the transcript';links.appendChild(a);
+    addAudioLinks(links,fileBase,'Read the transcript');
     box.hidden=false;
   };
 }
@@ -1708,8 +1714,8 @@ function renderLibraryList(){
       if(audioInfo){
         const ab=document.createElement('div');ab.className='libAudio';
         const lab=text('span','\u{1F3A7} Audio overview, about '+audioInfo.minutes+' min (synthetic voice)',ab);lab.className='libAudioLabel';
-        const au=document.createElement('audio');au.controls=true;au.preload='none';au.src='audio/'+row.id+'.mp3';au.setAttribute('aria-label','Audio overview of '+row.title);ab.appendChild(au);
-        const tr=document.createElement('a');tr.href='audio/'+row.id+'.txt';tr.target='_blank';tr.rel='noopener';tr.textContent='Transcript';ab.appendChild(tr);
+        const au=document.createElement('audio');au.controls=true;au.preload='none';au.src='audio/'+(audioInfo.file||row.id)+'.mp3';au.setAttribute('aria-label','Audio overview of '+row.title);ab.appendChild(au);
+        addAudioLinks(ab,audioInfo.file||row.id,'Transcript');
         body.appendChild(ab);
       }
       text('p',`${LIBRARY_GROUP_LABELS[libraryGroupKey(row)]} · ${row.documents.join(', ')||'No documents on record'} · ${fmtWhen(row.created)}`,body).className='libraryMeta';
@@ -2386,8 +2392,8 @@ function renderCrossAnalysisResult(job,id){
     const info=m[id];
     if(!info||box.dataset.jobId!==id)return;
     text('span','\u{1F3A7} Audio overview of this comparison, about '+info.minutes+' min (synthetic voice)',crossAudio).className='libAudioLabel';
-    const au=document.createElement('audio');au.controls=true;au.preload='none';au.src='audio/'+id+'.mp3';au.setAttribute('aria-label','Audio overview of this comparison');crossAudio.appendChild(au);
-    const tr=document.createElement('a');tr.href='audio/'+id+'.txt';tr.target='_blank';tr.rel='noopener';tr.textContent='Transcript';crossAudio.appendChild(tr);
+    const au=document.createElement('audio');au.controls=true;au.preload='none';au.src='audio/'+(info.file||id)+'.mp3';au.setAttribute('aria-label','Audio overview of this comparison');crossAudio.appendChild(au);
+    addAudioLinks(crossAudio,info.file||id,'Transcript');
     crossAudio.hidden=false;
   });
   if(ca.summary)text('p',plainCrossText(ca.summary),box).style.cssText='font-size:17px;line-height:1.5;font-weight:500;margin:0 0 4px';
