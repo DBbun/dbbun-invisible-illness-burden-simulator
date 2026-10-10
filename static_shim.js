@@ -70,7 +70,7 @@
     banner.style.cssText = 'margin:0 0 14px;padding:12px 16px;border:1px solid #bdbdbd;border-radius:10px;background:#f2f2f2;color:#242424;font:16px/1.4 Arial,sans-serif';
     banner.innerHTML = '<b>Public read-only demo.</b> <b>What this is:</b> each simulator turns one published study into a what-if model: change an assumption and see what changes. ' +
       '<b>What it is not:</b> a calculator for your own costs, or medical advice. Open any one in the list below.' +
-      '<div style="margin-top:8px"><a href="#" data-faq="What does combining the paper">See how it works (diagram)</a> &nbsp;&middot;&nbsp; <a href="#" data-faq="What is the difference between the public demo">See how the interactive tool looks (pictures)</a></div>' +
+      '<div style="margin-top:8px"><a href="#" data-faq="What does combining the paper">See how it works (diagram)</a> &nbsp;&middot;&nbsp; <a href="#" data-faq="What is the difference between the public demo">See how the interactive tool looks (pictures)</a> &nbsp;&middot;&nbsp; <a href="#" data-faq="Who built this">Who built this?</a></div>' +
       '<div style="margin-top:8px;font-size:14px;color:#4a4a4a">This GitHub version is read-only. The interactive tool, where you upload a document and watch it being processed, runs in a private setting. Research prototypes built from published papers and reports. Independent entry by DBbun LLC; not endorsed by HHS or NIH.</div>';
     banner.querySelectorAll('a[data-faq]').forEach(function (a) {
       a.addEventListener('click', function (e) {
