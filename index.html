@@ -738,7 +738,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <button id="generate" disabled>Generate</button><div id="progress" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><span><span id="status"></span><ul id="callProgress" class="callProgress"></ul><p id="progressDetail" class="progressDetail"></p></span></div>
 <details id="auditpanel" hidden><summary>Generation details and API usage</summary><pre id="audit"></pre></details>
 </section>
-<div id="resultsHeader" class="resultsHeader"><h2 id="simHeadline" class="simHeadline"></h2><button id="backButton" class="secondary" type="button">← Back</button><div class="resultsHeaderRight"><button id="printButton" class="secondary" type="button">Print / save as PDF</button><button id="audioButton" class="secondary" type="button" hidden>&#127911; Listen</button><button id="videoButton" class="secondary" type="button"></button></div></div>
+<div id="resultsHeader" class="resultsHeader"><h2 id="simHeadline" class="simHeadline"></h2><button id="backButton" class="secondary" type="button">← Back</button><div class="resultsHeaderRight"><button id="printButton" class="secondary" type="button">Print / save as PDF</button><button id="audioButton" class="secondary" type="button" hidden>&#127911; Listen</button></div></div>
 <div id="audioBox" class="changeNote" hidden style="margin:8px 0 12px"><p id="audioNote" style="margin:0 0 8px"></p><audio id="audioPlayer" controls preload="metadata" style="width:100%"></audio><p id="audioLinks" style="margin:8px 0 0"></p></div>
 <section id="resultsSection">
 <div id="lensBar" class="lensBar" role="group" aria-label="Choose who this simulator is explained for" hidden></div>
@@ -1344,7 +1344,6 @@ function showReview(job){
   $('faqPanel').style.display='none';
   $('adminPanel').style.display='none';
   $('resultsHeader').style.display='flex';
-  renderVideoButton();
   renderAudioButton();
   $('resultsSection').style.display='block';
   setActiveTab('overview');
@@ -1474,54 +1473,6 @@ async function renderAudioButton(){
     addAudioLinks(links,fileBase,'Read the transcript');
     box.hidden=false;
   };
-}
-function renderVideoButton(){
-  const btn=$('videoButton');
-  if(current?.video_url){
-    btn.textContent='▶ Watch video';
-    btn.title='Opens the companion video in a new tab. Click again to change or remove the link.';
-    btn.onclick=async()=>{
-      if(confirm('Open the companion video in a new tab?\n\nChoose Cancel instead to change or remove its link.')){
-        window.open(current.video_url,'_blank','noopener');
-      }else{
-        await setVideoLink();
-      }
-    };
-  }else{
-    btn.textContent='Watch video';
-    btn.title='Link a companion video (e.g. made with NotebookLM) for this simulation.';
-    btn.onclick=setVideoLink;
-  }
-}
-function wireVideoButton(btn,job,id){
-  const refresh=()=>{
-    if(window.DBBUN_STATIC&&!job.video_url){btn.style.display='none';return}
-    if(job.video_url){
-      btn.textContent='▶ Watch video';
-      btn.title='Opens the companion video in a new tab.'+(window.DBBUN_STATIC?'':' Click again to change or remove the link.');
-      btn.onclick=async()=>{
-        if(window.DBBUN_STATIC||confirm('Open the companion video in a new tab?\n\nChoose Cancel instead to change or remove its link.')){window.open(job.video_url,'_blank','noopener')}
-        else await change();
-      };
-    }else{
-      btn.textContent='Watch video';btn.title='Link a companion video (e.g. made with NotebookLM) for this analysis.';btn.onclick=change;
-    }
-  };
-  async function change(){
-    const url=prompt("Paste this analysis's YouTube video URL (leave blank to remove):",job.video_url||'');
-    if(url===null)return;
-    try{const r=await post('/api/set-video-url',{id,url:url.trim()});job.video_url=r.video_url;refresh()}catch(e){alert(e.message)}
-  }
-  refresh();
-}
-async function setVideoLink(){
-  const url=prompt("Paste this simulation's YouTube video URL (leave blank to remove):",current?.video_url||'');
-  if(url===null)return;
-  try{
-    const r=await post('/api/set-video-url',{id:jobId,url:url.trim()});
-    if(current)current.video_url=r.video_url;
-    renderVideoButton();
-  }catch(e){alert(e.message)}
 }
 function showReadyNotice(job,failed){
   pendingJob=job;
@@ -1708,7 +1659,7 @@ function renderLibraryList(){
       };
       item.appendChild(check);
       const body=document.createElement('div');body.className='libraryItemBody';
-      text('h4',row.title,body);
+      text('h4',(row.number?row.number+'. ':'')+row.title,body);
       if(row.summary)text('p',row.summary,body).className='libSummary';
       const audioInfo=audioManifest&&audioManifest[row.id];
       if(audioInfo){
@@ -1738,7 +1689,7 @@ function renderLibraryList(){
         for(const ca of row.cross_analyses){
           const partner=(ca.partner_title||'the other paper');
           const link=document.createElement('button');link.type='button';link.className='linkButton';
-          link.textContent='Cross-pollination analysis available: with '+(partner.length>80?partner.slice(0,77)+'...':partner);
+          link.textContent='Cross-pollination analysis available: with '+(ca.partner_number?ca.partner_number+'. ':'')+(partner.length>80?partner.slice(0,77)+'...':partner);
           link.onclick=()=>openCrossAnalysis(ca.id);
           links.appendChild(link);
         }
@@ -2369,9 +2320,7 @@ function renderCrossAnalysisResult(job,id){
   const headerRight=document.createElement('div');headerRight.className='resultsHeaderRight';
   const headerPdf=document.createElement('button');headerPdf.type='button';headerPdf.className='secondary';
   headerPdf.textContent='Print / save as PDF';headerPdf.onclick=printCrossAnalysis;
-  const headerVideo=document.createElement('button');headerVideo.type='button';headerVideo.className='secondary';
-  headerRight.append(headerPdf,headerVideo);header.appendChild(headerRight);
-  wireVideoButton(headerVideo,job,id);
+  headerRight.append(headerPdf);header.appendChild(headerRight);
   box.appendChild(header);
   text('h2','Cross-pollination analysis: Lyme disease and Long COVID',box).style.marginTop='14px';
   const stats=document.createElement('div');stats.className='crossAnalysisStats';
@@ -2385,7 +2334,7 @@ function renderCrossAnalysisResult(job,id){
   if(job.selected_ids?.length===2){
     const pair=text('p','',box);pair.style.cssText='margin:0 0 12px;font-size:16px';
     text('b','Papers compared: ',pair);
-    pair.append(job.selected_ids.map(i=>titles[i]||i).join('  and  '));
+    pair.append(job.selected_ids.map(i=>simNumberPrefix(i)+(titles[i]||i)).join('  and  '));
   }
   const crossAudio=document.createElement('div');crossAudio.className='libAudio';crossAudio.hidden=true;box.appendChild(crossAudio);
   ensureAudioManifest().then(m=>{
@@ -2958,7 +2907,7 @@ function render(){
   const s=current.spec,values={},sliderEls={};
   const {byInput:inputDependents}=buildDependencyMaps(s.inputs,s.outputs);
   const outputLabelById=new Map(s.outputs.map(o=>[o.id,o.label]));
-  $('title').textContent=s.title;$('simHeadline').textContent=s.title;$('boundary').textContent=s.boundary;
+  $('title').textContent=s.title;$('simHeadline').textContent=simNumberPrefix(jobId)+s.title;$('boundary').textContent=s.boundary;
   $('controls').replaceChildren();
   const interpretedInputs=s.inputs.filter(i=>i.interpretation);
   const controlsIntro=$('controlsIntro');controlsIntro.replaceChildren();
@@ -3469,6 +3418,7 @@ function publicationYear(row){
   const years=c.match(/(?:19|20)[0-9][0-9]/g);
   return years?Number(years[years.length-1]):0;
 }
+function simNumberPrefix(id){const r=libraryAllRows.find(x=>x.id===id);return r&&r.number?r.number+'. ':''}
 function libraryCompare(a,b){return publicationYear(b)-publicationYear(a)||authorLabel(a).localeCompare(authorLabel(b))}
 
 const covTip=(()=>{
