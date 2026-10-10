@@ -1106,22 +1106,23 @@ function renderEvidenceRow(box,title,note,items,emptyText){
   text('h3',title,box);
   text('p',note,box).className='changeNote';
   if(!items.length){text('p',emptyText,box).className='changeNote';return}
-  const max=Math.max(...items.map(i=>i.n),1);
+  const sizeOf=i=>i.size!=null?i.size:i.n;
+  const max=Math.max(...items.map(sizeOf),1e-9);
   const row=document.createElement('div');row.className='valueBubbles';
   const detail=document.createElement('p');detail.className='burdenDetail';
   detail.textContent='Tap a bubble to see what is inside it.';
   let selected=null;
   for(const it of items){
-    const d=Math.round(40+54*Math.sqrt(it.n/max));
+    const d=Math.round(40+54*Math.sqrt(sizeOf(it)/max));
     const btn=document.createElement('button');btn.type='button';btn.className='valueBubble '+it.cls;
-    const dot=document.createElement('span');dot.className='dot';dot.style.width=d+'px';dot.style.height=d+'px';dot.textContent=String(it.n);
+    const dot=document.createElement('span');dot.className='dot';dot.style.width=d+'px';dot.style.height=d+'px';dot.textContent=it.text!=null?it.text:String(it.n);
     const wrap=document.createElement('span');wrap.className='dotWrap';wrap.style.display='flex';wrap.style.alignItems='center';wrap.style.justifyContent='center';wrap.appendChild(dot);
     btn.appendChild(wrap);text('span',it.label,btn).className='lbl';
-    btn.setAttribute('aria-label',it.label+': '+it.n);
+    btn.setAttribute('aria-label',it.label+': '+(it.text!=null?it.text:it.n));
     btn.onclick=()=>{
       if(selected)selected.classList.remove('sel');selected=btn;btn.classList.add('sel');
       detail.replaceChildren();
-      const b=document.createElement('b');b.textContent=it.label+' ('+it.n+'). ';detail.appendChild(b);
+      const b=document.createElement('b');b.textContent=it.label+' ('+(it.text!=null?it.text:it.n)+'). ';detail.appendChild(b);
       detail.appendChild(document.createTextNode(it.detail));
     };
     row.appendChild(btn);
@@ -1170,8 +1171,25 @@ function renderEvidenceMap(job){
   const cc=ccDefs.filter(d=>buckets[d[0]].length).map(d=>({label:d[1],n:buckets[d[0]].length,cls:d[2],detail:d[3]+': '+trim(buckets[d[0]],5)+'.'}));
   renderEvidenceRow(box,"How the paper's figures compare with federal data",'Computed in code, not by the model. A comparison shows whether numbers sit in the same range, not that either one is right.',cc,'No dollar amounts, case counts or prevalence figures were extracted, so there was nothing to cross-check.');
   renderFederalCompareChart(box,job);
-  const sc=(spec.scenarios||[]).map(x=>({label:x.label,n:Object.keys(x.overrides||{}).length||1,cls:'ev_scenario',detail:(x.goal||'')+' '+(x.description||'')+' (The number is how many assumptions this scenario changes.)'}));
-  renderEvidenceRow(box,'What-if conclusions','Each bubble is a named scenario this simulator can run. Open the Explore tab to see its results.',sc,'This simulator has no named scenarios.');
+  const defaults={};for(const i of inputs)defaults[i.id]=i.default;
+  const evalAll=ov=>{const v={...defaults,...(ov||{})};for(const o of outputs){try{v[o.id]=evaluate(o.expression,v)}catch(e){v[o.id]=null}}return v};
+  const baseVals=evalAll(null);
+  const fmtIn=(i,v)=>fmtOutputValue(v)+(i.unit&&i.unit!=='count'&&i.unit!=='ratio'?' '+i.unit:'');
+  const sc=(spec.scenarios||[]).map(x=>{
+    const vals=evalAll(x.overrides);
+    const moved=outputs.find(o=>typeof vals[o.id]==='number'&&typeof baseVals[o.id]==='number'&&Math.abs(vals[o.id]-baseVals[o.id])>1e-9);
+    const changes=Object.entries(x.overrides||{}).map(([id,v])=>{const inp=inputs.find(i=>i.id===id);return inp?inp.label+' from '+fmtIn(inp,inp.default)+' to '+fmtIn(inp,v):null}).filter(Boolean);
+    let text='0',size=0.02,effect='It does not change any computed result.';
+    if(moved){
+      const delta=vals[moved.id]-baseVals[moved.id];
+      text=(delta>0?'+':'\u2212')+(Math.abs(delta)>=100?Math.round(Math.abs(delta)).toLocaleString('en-US'):fmtOutputValue(Math.abs(delta)));
+      size=Math.max(Math.abs(delta)/(Math.abs(baseVals[moved.id])||1),0.05);
+      effect=moved.label+' moves from '+fmtOutputValue(baseVals[moved.id])+' to '+fmtOutputValue(vals[moved.id])+(moved.unit?' '+moved.unit:'')+'.';
+    }
+    return {label:x.label,n:Object.keys(x.overrides||{}).length||1,text,size,cls:'ev_scenario',
+      detail:(x.goal||'')+' '+(changes.length?'It sets '+changes.join('; ')+'. ':'')+effect+' '+(x.description||'')};
+  });
+  renderEvidenceRow(box,'What-if conclusions','Each bubble is a named scenario this simulator can run. The number is how far the scenario moves the first result it changes (in that result\'s own unit); the bubble size shows how large that move is compared with the default. Tap a bubble for the details, and open the Explore tab to see every result.',sc,'This simulator has no named scenarios.');
   box.hidden=false;
 }
 function renderFederalKnowledge(ck,federalEvidenceUsed,crossChecks){
@@ -1393,6 +1411,36 @@ function showLibraryView(){
   closeCrossAnalysis();
   loadLibrary();
 }
+let faqTocBuilt=false;
+function buildFaqToc(){
+  if(faqTocBuilt)return;
+  const panel=$('faqPanel'),anchor=panel&&panel.querySelector('.docSummary');
+  if(!anchor)return;
+  faqTocBuilt=true;
+  const nav=document.createElement('nav');nav.id='faqToc';nav.setAttribute('aria-label','Questions in this FAQ');
+  nav.style.cssText='margin:14px 0 18px;padding:14px 18px;border:1px solid var(--line,#d0d7de);border-radius:12px';
+  const head=document.createElement('h4');head.textContent='In this FAQ';head.style.margin='0 0 10px';nav.appendChild(head);
+  const cols=document.createElement('div');cols.style.cssText='column-width:300px;column-gap:28px';nav.appendChild(cols);
+  let list=null;
+  const open=d=>{d.open=true;d.scrollIntoView({behavior:'smooth',block:'start'})};
+  for(const el of Array.from(panel.children)){
+    if(el.matches('h3.faqGroup')){
+      const g=document.createElement('div');g.style.cssText='break-inside:avoid;margin:0 0 12px';
+      const t=document.createElement('div');t.textContent=el.textContent;t.style.cssText='font-weight:700;margin:0 0 4px';g.appendChild(t);
+      list=document.createElement('ul');list.style.cssText='margin:0;padding-left:20px';g.appendChild(list);cols.appendChild(g);
+    }else if(el.matches('details')&&list){
+      const li=document.createElement('li');li.style.margin='0 0 3px';
+      const a=document.createElement('a');a.href='#';a.textContent=el.querySelector('summary').textContent;
+      a.onclick=e=>{e.preventDefault();open(el)};
+      li.appendChild(a);list.appendChild(li);
+      const back=document.createElement('p');back.style.cssText='margin:8px 0 0;text-align:right;font-size:14px';
+      const b=document.createElement('a');b.href='#';b.textContent='\u2191 Back to the list of questions';
+      b.onclick=e=>{e.preventDefault();nav.scrollIntoView({behavior:'smooth',block:'start'})};
+      back.appendChild(b);el.appendChild(back);
+    }
+  }
+  anchor.insertAdjacentElement('afterend',nav);
+}
 function showFaqView(){
   $('generateView').style.display='none';
   $('resultsSection').style.display='none';
@@ -1400,6 +1448,7 @@ function showFaqView(){
   $('libraryPanel').style.display='none';
   $('adminPanel').style.display='none';
   $('faqPanel').style.display='block';
+  buildFaqToc();
   $('libraryToggle').textContent='Simulation library';
   $('faqToggle').textContent='← Back to simulator';
   $('adminToggle').textContent='Administrator';
