@@ -9,9 +9,13 @@ An independent entry in the TOPx HHS Tech Sprint (Cost of Illness track) by DBbu
 participating in Phase 2. It is not endorsed by, and does not use the logos of, HHS or NIH.
 
 On the website, the Simulation library lists 25 simulators for Lyme disease and Long COVID, each built from one published
-paper. Open one, change its assumptions, and read the forecast, sensitivity and evidence tabs; each simulator's files can be
-downloaded. The library also shows saved cross-pollination analyses, which compare one Lyme disease paper with one Long COVID
-paper; open them from the links under each paper.
+paper or report. Open one, change its assumptions, and read the forecast, sensitivity and evidence tabs; each simulator's files can be
+downloaded. The library also shows saved cross-pollination analyses, which compare one Lyme disease source with one Long COVID
+source; open them from the links under each paper.
+
+Each simulator and each comparison also has a spoken overview (a synthetic voice, with a transcript) that you can play
+from the library; the audio files are in the audio folder, and four supporting documents (a one-page log of feedback and
+changes, a quality assurance log, an interoperability status and a policy brief) are in the docs folder.
 
 What it is not: medical, financial or legal advice. The simulators are illustrative models built from the figures
 in each paper, with federal data used to check them. They are not forecasts and not statistical confidence intervals.
