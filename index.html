@@ -2381,6 +2381,15 @@ function renderCrossAnalysisResult(job,id){
     text('b','Papers compared: ',pair);
     pair.append(job.selected_ids.map(i=>titles[i]||i).join('  and  '));
   }
+  const crossAudio=document.createElement('div');crossAudio.className='libAudio';crossAudio.hidden=true;box.appendChild(crossAudio);
+  ensureAudioManifest().then(m=>{
+    const info=m[id];
+    if(!info||box.dataset.jobId!==id)return;
+    text('span','\u{1F3A7} Audio overview of this comparison, about '+info.minutes+' min (synthetic voice)',crossAudio).className='libAudioLabel';
+    const au=document.createElement('audio');au.controls=true;au.preload='none';au.src='audio/'+id+'.mp3';au.setAttribute('aria-label','Audio overview of this comparison');crossAudio.appendChild(au);
+    const tr=document.createElement('a');tr.href='audio/'+id+'.txt';tr.target='_blank';tr.rel='noopener';tr.textContent='Transcript';crossAudio.appendChild(tr);
+    crossAudio.hidden=false;
+  });
   if(ca.summary)text('p',plainCrossText(ca.summary),box).style.cssText='font-size:17px;line-height:1.5;font-weight:500;margin:0 0 4px';
   renderCrossBubbleChart(box,job,titles);
   renderCrossLearning(box,job);
