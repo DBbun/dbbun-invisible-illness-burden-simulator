@@ -195,7 +195,7 @@
     "file": "Tool_Overview__Main_Page__audio-overview"
   },
   "tool_faq": {
-    "minutes": 10,
+    "minutes": 11,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Tool_Overview__FAQ_Page__audio-overview"
   },
