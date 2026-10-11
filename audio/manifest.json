@@ -203,5 +203,10 @@
     "minutes": 9,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Tool_Overview__Administrator_Tab__audio-overview"
+  },
+  "tool_supporting": {
+    "minutes": 12,
+    "voice": "Kokoro-82M text-to-speech",
+    "file": "Tool_Overview__Supporting_Documents__audio-overview"
   }
 }
