@@ -623,7 +623,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <ol class="stepFlow" style="--n:4" aria-label="What happens to your document"><li><b>Your file</b>The original file is never sent to the model provider.</li><li><b>Text extracted</b>The text, table captions and figures are read out of it.</li><li><b>Only that goes to the model</b>No generated code runs on your machine or on DBbun's server.</li><li><b>Every call recorded</b>A fingerprint, the provider and the time, never the text itself.</li></ol>
 <ul>
 <li>The extracted text, table captions and figures of your document are sent to the AI model. The original file itself is never uploaded to the model provider.</li>
-<li>No generated code executes on your machine or DBbun's server - the downloadable Python source is for you to run yourself, not something DBbun runs on your behalf.</li>
+<li>The app does not execute generated code on your machine or DBbun's server - the downloadable Python source is for you to run yourself, not something DBbun runs on your behalf.</li>
 <li>Every model call made for your simulation - a fingerprint of what was sent (not the text itself), to which provider, and when - is recorded and disclosed, visible in the "Generation details and API usage" panel and the downloadable bundle's provenance file.</li>
 <li><b>What it accepts.</b> Published papers and reports as PDF, Word, Excel or CSV, text, Markdown or JSON files. It does not accept videos, photos or scans such as CT or MRI, or medical records. It works from published research on cost and burden, not from any one person's health data, and it gives no diagnosis or medical advice. It refuses files that contain Social Security numbers or medical-record-number and date-of-birth labels (it does not detect other kinds of identifiers).</li>
 </ul></details>
@@ -636,8 +636,7 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 
 <details class="whatThisAdds" open><summary>Is the text written by AI, and is it watermarked?</summary><ul>
 <li>Yes. The analysis, documentation, takeaways and downloadable Python source are written by an AI model (Claude Sonnet); the numbers you can change are computed by the simulator itself.</li>
-<li>From September 30, 2026 the model provider applies an imperceptible statistical watermark to that model's text output, as required by the EU AI Act's transparency rules. It does not change the meaning, quality or numbers, and it contains no information about you or your document.</li>
-<li>Simulators generated before that date are not watermarked. The bundle's NOTICE.txt carries the same statement.</li>
+<li>Anthropic, the provider of the Claude models, has said publicly that it embeds an invisible watermark in text from its Claude models to meet the European Union AI Act's transparency rules, and that the mark does not change the meaning, quality or readability of the text. DBbun has not checked which of its generated texts carry the mark. The bundle's NOTICE.txt carries the same statement.</li>
 </ul></details>
 
 <details class="whatThisAdds" open><summary>What does the AI model already know on its own?</summary><ul>

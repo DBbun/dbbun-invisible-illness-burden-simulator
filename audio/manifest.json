@@ -195,12 +195,12 @@
     "file": "Tool_Overview__Main_Page__audio-overview"
   },
   "tool_faq": {
-    "minutes": 11,
+    "minutes": 10,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Tool_Overview__FAQ_Page__audio-overview"
   },
   "tool_admin": {
-    "minutes": 8,
+    "minutes": 9,
     "voice": "Kokoro-82M text-to-speech",
     "file": "Tool_Overview__Administrator_Tab__audio-overview"
   }
