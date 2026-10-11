@@ -50,7 +50,7 @@ There is also a cross-pollination analysis. It sets one Lyme disease simulator b
 
 What can you take with you, and how does it connect to other systems?
 
-The download bundle includes a formatted document, a nine-sheet Excel workbook with the parameters, data, results, evidence and limits, comma-separated files, the model's specification, and Python code that re-runs the same arithmetic. Because the results are in Excel and comma-separated files, they can be opened by statistical software and by languages such as R or Python, for further analysis. Every download records which model calls produced it.
+The download bundle includes a formatted document, a nine-sheet Excel workbook with the parameters, data, results, evidence and limits, comma-separated files, the model's specification, and Python code that re-runs the same arithmetic. Because the results are in Excel and comma-separated files, they can be opened by statistical software and by languages such as R, S A S, which stands for Statistical Analysis System, Stata, or Python, for further analysis. Every download records which model calls produced it.
 
 There is also a small Application Programming Interface in the full tool, which runs on Dr. Kartoun's computer. Another system or script can send its own assumptions to a finished simulator and get every output and forecast back at once, using the same arithmetic as the screen and rejecting values outside an input's allowed range. It can also submit papers and collect the finished simulators later. Every call needs a key made on Dr. Kartoun's own machine.
 
