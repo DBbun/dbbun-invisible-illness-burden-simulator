@@ -513,8 +513,8 @@ body.printCrossOnly .libTabNav,body.printCrossOnly .crossAnalysisBar,body.printC
 <h3 class="faqGroup">Comparing Lyme disease and Long COVID</h3>
 
 <details class="whatThisAdds"><summary>What is a cross-pollination analysis, and what do I get?</summary>
-<ol class="stepFlow" style="--n:4" aria-label="How a cross-pollination analysis works"><li><b>Pick a pair</b>Tick one Lyme disease and one Long COVID simulator in the full tool. The public demo has saved pairs to read.</li><li><b>Run the comparison</b>Choose "Cross-pollination analysis". Numbers are copied from the simulators; wording is checked in code.</li><li><b>Read both papers side by side</b>Cost, work, diagnostic delay, access to care and undercounting, and which of the 16 burdens each measures.</li><li><b>See the questions worth asking</b>Cards, a chart of where the pair sits, and the other simulators that fill the gaps.</li></ol>
-<p>It sets one Lyme disease simulator beside one Long COVID simulator and asks what each condition's researchers could learn from the other. In the full tool you tick one of each in the library and choose "Cross-pollination analysis"; on the public demo you can read the saved comparisons. A comparison shows what each paper says about the same questions (cost, work, diagnostic delay, access to care, how official counts undercount), which of the 16 burdens each paper measures, the key figures copied from each simulator, and "a question worth asking" cards, such as whether Long COVID researchers could measure the time to diagnosis the way the Lyme paper did. A chart places the pair among all the simulators, and a list shows which other simulators fill the gaps the pair leaves.</p>
+<ol class="stepFlow" style="--n:4" aria-label="How a cross-pollination analysis works"><li><b>Pick a pair</b>Tick one Lyme disease and one Long COVID simulator in the full tool. The public demo has saved pairs to read.</li><li><b>Run the comparison</b>Choose "Cross-pollination analysis". Numbers are copied from the simulators; wording is checked in code.</li><li><b>Read both papers side by side</b>Cost, work, diagnostic delay, access to care and undercounting, and which of the 16 burdens each measures.</li><li><b>See the questions worth asking</b>Cards, a chart of the two papers side by side, burden by burden, a chart of where the pair sits among all the simulators, and the other simulators that fill the gaps.</li></ol>
+<p>It sets one Lyme disease simulator beside one Long COVID simulator and asks what each condition's researchers could learn from the other. In the full tool you tick one of each in the library and choose "Cross-pollination analysis"; on the public demo you can read the saved comparisons. A comparison shows what each paper says about the same questions (cost, work, diagnostic delay, access to care, how official counts undercount), which of the 16 burdens each paper measures, the key figures copied from each simulator, and "a question worth asking" cards, such as whether Long COVID researchers could measure the time to diagnosis the way the Lyme paper did. One chart sets the two papers side by side, burden by burden, counting each paper's tagged results, and marks the burdens where only one paper has a result. A second chart places the pair among all the simulators, and a list shows which other simulators fill the gaps the pair leaves.</p>
 <p>The numbers are copied from the simulators. The wording is written by an AI model and checked in code, and any number it cannot match is flagged. The two papers differ in population, year and method, so the comparison gives context and questions; it does not measure a difference between the diseases.</p></details>
 
 <h3 class="faqGroup">How it works and how far to trust it</h3>
@@ -2087,16 +2087,88 @@ const CROSS_SHORT_LABELS={direct_costs:'Direct costs',employment:'Work and incom
   psychological_burden:'Psychological',quality_of_life:'Quality of life',surveillance_undercount:'Undercounting',care_fragmentation:'Fragmented care'};
 const SVGNS='http://www.w3.org/2000/svg';
 function svgEl(tag,attrs,parent){const e=document.createElementNS(SVGNS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+function renderCrossPairChart(box,job){
+  const tables=job.cross_tables||{},fb=tables.figures_by_category||{};
+  const cards=(job.learning&&job.learning.learning_cards)||[];
+  const countOf=(k,grp)=>((fb[k]||{})[grp]||[]).length;
+  const rowsOf=[];for(const fam of BURDEN_FAMILIES)for(const k of fam.items)rowsOf.push({k,fam,L:countOf(k,'lyme'),C:countOf(k,'longCovid')});
+  const paperName=grp=>{for(const k in fb){const f=((fb[k]||{})[grp]||[])[0];if(f&&f.job_title)return f.job_title}return null};
+  const nameL=paperName('lyme'),nameC=paperName('longCovid');
+  const trim=(t,n)=>t&&t.length>n?t.slice(0,n-1)+'\u2026':(t||'');
+  const maxN=Math.max(1,...rowsOf.map(r=>Math.max(r.L,r.C)));
+  const sec=document.createElement('div');sec.className='crossViz';
+  text('h3','The two papers side by side, burden by burden',sec);
+  const bothN=rowsOf.filter(r=>r.L&&r.C).length,onlyL=rowsOf.filter(r=>r.L&&!r.C).length,onlyC=rowsOf.filter(r=>!r.L&&r.C).length,noneN=rowsOf.filter(r=>!r.L&&!r.C).length;
+  text('p','Each row is one of the 16 burdens. A bar counts how many tagged results each of the two papers has for that burden. For this pair, '+bothN+' burdens have results in both papers, '+onlyL+' only in the Lyme disease paper, '+onlyC+' only in the Long COVID paper, and '+noneN+' in neither. A burden with results in only one paper is where one condition could learn from the other. Hover over a row for the results behind it.',sec).className='crossVizLead';
+  const W=900,PT=64,ROW=29,FAM=24,MID=450,HALF=122,BAR=300;
+  let y=PT;const placed=[];
+  for(const fam of BURDEN_FAMILIES){placed.push({head:fam,y});y+=FAM;for(const k of fam.items){placed.push({row:rowsOf.find(r=>r.k===k),y});y+=ROW}}
+  const H=y+10;
+  const scroll=document.createElement('div');scroll.className='crossVizScroll';
+  const svg=svgEl('svg',{viewBox:'0 0 '+W+' '+H,class:'crossVizSvg',role:'img','aria-label':'The two compared papers side by side: for each of the 16 burdens, how many tagged results each paper has.'},scroll);
+  const label=(x,yy,t,anchor,fill,weight,size)=>{const e=svgEl('text',{x,y:yy,'text-anchor':anchor,'font-size':size||13,'font-weight':weight||700,fill},svg);e.textContent=t};
+  label(MID-HALF-8,22,'Lyme disease paper','end','#1f5fae');
+  label(MID-HALF-8,40,trim(nameL||'no Lyme disease paper',52),'end','currentColor',400,12);
+  label(MID+HALF+8,22,'Long COVID paper','start','#a85d12');
+  label(MID+HALF+8,40,trim(nameC||'no Long COVID paper',52),'start','currentColor',400,12);
+  const unit=BAR/maxN;
+  for(const it of placed){
+    if(it.head){
+      const f=it.head;
+      svgEl('rect',{x:20,y:it.y+3,width:W-40,height:FAM-6,rx:4,fill:f.color,'fill-opacity':.1},svg);
+      label(28,it.y+17,f.name,'start',f.color,700,12.5);
+      continue;
+    }
+    const r=it.row,cy=it.y+ROW/2;
+    const g=svgEl('g',{class:'vizBubble',tabindex:0,role:'button','aria-label':BURDEN_SHORT_LABELS[r.k]+': '+r.L+(r.L===1?' tagged result':' tagged results')+' in the Lyme disease paper and '+r.C+' in the Long COVID paper'},svg);
+    svgEl('rect',{x:20,y:it.y,width:W-40,height:ROW,fill:'transparent'},g);
+    const one=(!r.L!==!r.C),card=cards.find(c=>c.category===r.k);
+    const none=!r.L&&!r.C;
+    if(r.L)svgEl('rect',{x:MID-HALF-r.L*unit,y:cy-9,width:r.L*unit,height:18,rx:3,fill:'#cfe0f7',stroke:'#2a78d6','stroke-width':1.8},g);
+    if(r.C)svgEl('rect',{x:MID+HALF,y:cy-9,width:r.C*unit,height:18,rx:3,fill:'#fbdcbc',stroke:'#d9822b','stroke-width':1.8},g);
+    const lt=svgEl('text',{x:MID-HALF-(r.L?r.L*unit+6:6),y:cy+4.5,'text-anchor':'end','font-size':12.5,'font-weight':700,fill:r.L?'#14305a':'currentColor','fill-opacity':r.L?1:.35},g);lt.textContent=r.L?String(r.L):'\u2013';
+    const ct=svgEl('text',{x:MID+HALF+(r.C?r.C*unit+6:6),y:cy+4.5,'text-anchor':'start','font-size':12.5,'font-weight':700,fill:r.C?'#5a3208':'currentColor','fill-opacity':r.C?1:.35},g);ct.textContent=r.C?String(r.C):'\u2013';
+    const mt=svgEl('text',{x:MID,y:cy+4.5,'text-anchor':'middle','font-size':13,'font-weight':none?400:700,fill:'currentColor','fill-opacity':none?.45:1},g);
+    mt.textContent=(one&&card?'\u25C6 ':'')+BURDEN_SHORT_LABELS[r.k];
+    covTip.attach(g,tip=>{
+      const hd=document.createElement('div');hd.className='covTipHead';hd.style.setProperty('--c',r.fam.color);hd.textContent=BURDEN_CATEGORY_LABELS[r.k];tip.appendChild(hd);
+      if(BURDEN_CATEGORY_EXPLANATIONS[r.k])covTipLine(tip,'',BURDEN_CATEGORY_EXPLANATIONS[r.k]);
+      if(none){covTipLine(tip,'','Neither of the two papers has a tagged result for this burden: a gap for this pair.');return}
+      for(const [grp,name,n] of [['lyme','Lyme disease paper',r.L],['longCovid','Long COVID paper',r.C]]){
+        if(!n){covTipLine(tip,name+':','no tagged result for this burden.');continue}
+        covTipLine(tip,name+':',n+(n===1?' tagged result':' tagged results'));
+        const ul=document.createElement('ul');
+        for(const f of (fb[r.k][grp]||[]).slice(0,4)){const li=document.createElement('li');li.textContent=fmtOutputValue(f.value)+' '+f.unit+(f.price_year?' ('+f.price_year+' dollars)':'')+' - '+trim(f.label,120);ul.appendChild(li)}
+        tip.appendChild(ul);
+      }
+      if(one&&card&&card.question_to_ask)covTipLine(tip,'A question worth asking:',card.question_to_ask);
+    });
+  }
+  svgEl('line',{x1:MID-HALF,y1:PT,x2:MID-HALF,y2:H-8,stroke:'currentColor','stroke-opacity':.2},svg);
+  svgEl('line',{x1:MID+HALF,y1:PT,x2:MID+HALF,y2:H-8,stroke:'currentColor','stroke-opacity':.2},svg);
+  sec.appendChild(scroll);
+  const key=document.createElement('div');key.className='burdenKey';
+  key.innerHTML='<span><i style="background:#cfe0f7;border:2px solid #2a78d6;box-sizing:border-box"></i>Lyme disease paper: tagged results</span><span><i style="background:#fbdcbc;border:2px solid #d9822b;box-sizing:border-box"></i>Long COVID paper: tagged results</span><span>\u25C6 only one paper has a result; a question worth asking is in the cards below</span><span>\u2013 no tagged result</span>';
+  sec.appendChild(key);
+  text('p','This chart is about these two papers only; the chart further down places them among all 25 simulators. A burden with no tagged result here means no numeric result in that simulator was assigned that category, not that the paper never mentions it.',sec).className='changeNote';
+  const list=document.createElement('details');text('summary','Read as a list',list);
+  list.open=window.innerWidth<=700;
+  const ul=document.createElement('ul');
+  for(const r of rowsOf)text('li',BURDEN_SHORT_LABELS[r.k]+': Lyme disease paper '+r.L+', Long COVID paper '+r.C+(r.L&&!r.C?' (only the Lyme disease paper)':!r.L&&r.C?' (only the Long COVID paper)':!r.L&&!r.C?' (neither)':'')+'.',ul);
+  list.appendChild(ul);sec.appendChild(list);
+  box.appendChild(sec);
+}
+
 function renderCrossBubbleChart(box,job,titles){
   const lf=job.library_fill;
   if(!lf?.landscape?.length)return;
   const nm=k=>BURDEN_CATEGORY_LABELS[k],short=k=>CROSS_SHORT_LABELS[k]||nm(k);
-  const items=lf.landscape.map(r=>({category:r.category,lyme:r.lyme,covid:r.longCovid,pairL:r.pair_lyme,pairC:r.pair_longCovid,total:r.lyme+r.longCovid}));
+  const items=lf.landscape.map(r=>({category:r.category,lyme:r.lyme,covid:r.longCovid,pairL:r.pair_lyme,pairC:r.pair_longCovid,total:r.lyme+r.longCovid,lymeSims:r.lyme_sims||[],covidSims:r.longCovid_sims||[]}));
   const plotted=items.filter(i=>i.total>0),gapItems=items.filter(i=>!i.total);
   const both=plotted.filter(i=>i.lyme&&i.covid),onlyL=plotted.filter(i=>i.lyme&&!i.covid),onlyC=plotted.filter(i=>!i.lyme&&i.covid);
   const sec=document.createElement('div');sec.className='crossViz';
   text('h3','Where this pair sits in the evidence on all '+lf.library_size+' simulators',sec);
-  const lead='Across the library, '+both.length+' of the 16 burdens are measured for both Lyme disease and Long COVID, '+onlyL.length+' only for Lyme disease, '+onlyC.length+' only for Long COVID, and '+gapItems.length+' by no simulator at all. The rings show what the two papers you are comparing cover.';
+  const lead='Across the library, '+both.length+' of the 16 burdens are measured for both Lyme disease and Long COVID, '+onlyL.length+' only for Lyme disease, '+onlyC.length+' only for Long COVID, and '+gapItems.length+' by no simulator at all. The rings show what the two papers you are comparing cover. A bubble is blue when more Lyme disease simulators than Long COVID simulators measure it, and orange when more Long COVID simulators do, so a burden measured for both conditions can be either colour.';
   text('p',lead,sec).className='crossVizLead';
   const stats=document.createElement('div');stats.className='crossVizStats';
   for(const [n,label] of [[both.length,'measured for both conditions'],[onlyL.length,'measured only for Lyme disease'],[onlyC.length,'measured only for Long COVID'],[gapItems.length,'measured by no simulator (a gap)']]){
@@ -2112,7 +2184,8 @@ function renderCrossBubbleChart(box,job,titles){
   svgEl('rect',{x:PL,y:PT,width:plotW,height:plotH,fill:'currentColor','fill-opacity':.03,stroke:'currentColor','stroke-opacity':.25},svg);
   const diag=svgEl('line',{x1:xOf(-0.5),y1:yOf(-0.5),x2:PL+plotW,y2:PT,stroke:'currentColor','stroke-opacity':.3,'stroke-dasharray':'6 5'},svg);
   const cap=(x,y,t,anchor,fill)=>{const e=svgEl('text',{x,y,'text-anchor':anchor||'start','font-size':13.5,'font-weight':700,fill:fill||'currentColor','fill-opacity':fill?1:.7},svg);e.textContent=t};
-  cap(PL+8,PT+20,'\u2191 more Long COVID evidence','start','#a85d12');
+  cap(PL,PT-12,'\u2191 more Long COVID evidence','start','#a85d12');
+  cap(PL+plotW,PT+plotH+46,'more Lyme disease evidence \u2192','end','#1f5fae');
   for(let v=0;v<=maxL;v++){const x=xOf(v);svgEl('line',{x1:x,y1:PT+plotH,x2:x,y2:PT+plotH+5,stroke:'currentColor','stroke-opacity':.5},svg);const t=svgEl('text',{x,y:PT+plotH+20,'text-anchor':'middle','font-size':13,fill:'currentColor','fill-opacity':.75},svg);t.textContent=String(v)}
   for(let v=0;v<=maxC;v++){const y=yOf(v);svgEl('line',{x1:PL-5,y1:y,x2:PL,y2:y,stroke:'currentColor','stroke-opacity':.5},svg);const t=svgEl('text',{x:PL-10,y:y+4.5,'text-anchor':'end','font-size':13,fill:'currentColor','fill-opacity':.75},svg);t.textContent=String(v)}
   const xt=svgEl('text',{x:PL+plotW/2,y:PT+plotH+46,'text-anchor':'middle','font-size':14,'font-weight':700,fill:'currentColor'},svg);xt.textContent='Lyme disease simulators that measure the burden';
@@ -2129,7 +2202,7 @@ function renderCrossBubbleChart(box,job,titles){
     if(spot)placed.push(spot);
   }
   const detail=document.createElement('p');detail.className='crossVizDetail';
-  detail.textContent='Tap a bubble to see how many simulators measure that burden and what each of your two papers reports.';
+  detail.textContent='Hover over, or tap, a bubble to see how many simulators measure that burden, which ones, and what each of your two papers reports.';
   let selected=null;
   const tables=job.cross_tables||{};
   const STY={l:{fill:'#cfe0f7',stroke:'#2a78d6',ink:'#14305a'},c:{fill:'#fbdcbc',stroke:'#d9822b',ink:'#5a3208'},b:{fill:'#d9d9d9',stroke:'#6a6a6a',ink:'#222'},n:{fill:'#f2f2f2',stroke:'#8a8a8a',ink:'#555'}};
@@ -2158,6 +2231,20 @@ function renderCrossBubbleChart(box,job,titles){
     };
     g.addEventListener('click',pick);
     g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});
+    const simList=arr=>arr.length?arr.map(s=>(s.number?s.number+'. ':'')+(s.title.length>46?s.title.slice(0,44)+'...':s.title)).join('; '):'none';
+    covTip.attach(g,tip=>{
+      const hd=document.createElement('div');hd.className='covTipHead';hd.style.setProperty('--c',st.stroke);hd.textContent=nm(it.category);tip.appendChild(hd);
+      covTipLine(tip,'Measured by:',it.lyme+' Lyme disease and '+it.covid+' Long COVID simulators in the library.');
+      if(BURDEN_CATEGORY_EXPLANATIONS[it.category])covTipLine(tip,'',BURDEN_CATEGORY_EXPLANATIONS[it.category]);
+      if(it.lymeSims.length)covTipLine(tip,'Lyme disease simulators:',simList(it.lymeSims));
+      if(it.covidSims.length)covTipLine(tip,'Long COVID simulators:',simList(it.covidSims));
+      const figs=tables.figures_by_category?.[it.category]||{};
+      for(const [grp,name] of [['lyme','The Lyme disease paper'],['longCovid','The Long COVID paper']]){
+        const f=(figs[grp]||[])[0];
+        covTipLine(tip,name+':',f?fmtOutputValue(f.value)+' '+f.unit+' - '+f.label:'does not measure this.');
+      }
+      const hint=covTipLine(tip,'','Click to keep these details below the chart.');hint.className='covTipHint';
+    });
   };
   for(const q of placed){const it=q.item;draw(q,it.lyme&&it.covid?(Math.abs(it.lyme-it.covid)<=1?'b':it.lyme>it.covid?'l':'c'):it.lyme?'l':'c',false)}
   if(gapItems.length){
@@ -2173,9 +2260,9 @@ function renderCrossBubbleChart(box,job,titles){
   sec.appendChild(scroll);sec.appendChild(detail);
   const mine=lf.landscape.filter(r=>r.pair_lyme||r.pair_longCovid).map(r=>nm(r.category).toLowerCase());
   const key=document.createElement('div');key.className='burdenKey';
-  key.innerHTML='<span><i style="background:#cfe0f7;border:2px solid #2a78d6;box-sizing:border-box"></i>more Lyme disease evidence</span><span><i style="background:#fbdcbc;border:2px solid #d9822b;box-sizing:border-box"></i>more Long COVID evidence</span><span><i style="background:#d9d9d9;border:2px solid #6a6a6a;box-sizing:border-box"></i>about equal</span><span><i style="background:#fff;border:3px solid #111;border-radius:50%;box-sizing:border-box"></i>covered by the two papers compared</span>';
+  key.innerHTML='<span><i style="background:#cfe0f7;border:2px solid #2a78d6;box-sizing:border-box"></i>more Lyme disease than Long COVID simulators measure it</span><span><i style="background:#fbdcbc;border:2px solid #d9822b;box-sizing:border-box"></i>more Long COVID than Lyme disease simulators measure it</span><span><i style="background:#d9d9d9;border:2px solid #6a6a6a;box-sizing:border-box"></i>about equal</span><span><i style="background:#fff;border:3px solid #111;border-radius:50%;box-sizing:border-box"></i>covered by the two papers compared</span>';
   sec.appendChild(key);
-  text('p','The two papers compared here cover: '+(mine.length?mine.join(', '):'none of the 16 burdens')+'. Bubble size is how many simulators measure the burden. A burden in the gap row is missing from the evidence, which is not proof that it does not exist. This compares simulators built from published papers and reports; it does not describe either condition in general.',sec).className='changeNote';
+  text('p','The two papers compared here cover: '+(mine.length?mine.join(', '):'none of the 16 burdens')+'. Bubble size is how many simulators measure the burden. Bubbles are nudged apart so they do not overlap, so read the exact counts in the hover card or the list below. A burden in the gap row is missing from the evidence, which is not proof that it does not exist. This compares simulators built from published papers and reports; it does not describe either condition in general.',sec).className='changeNote';
   const list=document.createElement('details');text('summary','Read as a list',list);
   list.open=window.innerWidth<=700;
   const ul=document.createElement('ul');
@@ -2433,6 +2520,7 @@ function renderCrossAnalysisResult(job,id){
     crossAudio.hidden=false;
   });
   if(ca.summary)text('p',plainCrossText(ca.summary),box).style.cssText='font-size:17px;line-height:1.5;font-weight:500;margin:0 0 4px';
+  renderCrossPairChart(box,job);
   renderCrossBubbleChart(box,job,titles);
   renderCrossLearning(box,job);
   renderCrossLibraryFill(box,job);
