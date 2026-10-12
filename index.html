@@ -69,6 +69,27 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .crossTable th{background:var(--surface);font-size:14px;text-transform:uppercase;letter-spacing:.03em}
 .crossTable td.dim{font-weight:700;min-width:150px}
 .crossTable .cited{display:block;margin-top:4px;font-size:13px;color:var(--muted)}
+.cmpStrip{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 14px}
+.cmpChip{width:auto;display:inline-flex;align-items:baseline;gap:8px;padding:7px 14px;border:2px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);font:inherit;font-size:15px;cursor:pointer}
+.cmpChip .cmpNum{font-size:20px}
+.cmpChip.one_sided{border-style:dashed}.cmpChip.unclear{border-color:var(--muted);color:var(--muted)}
+.cmpChip[aria-pressed=true]{background:var(--ink);color:#fff}
+.cmpCards{display:flex;flex-direction:column;gap:14px}
+.cmpCards [hidden]{display:none}
+.cmpCard{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--surface)}
+.cmpTop{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;margin:0 0 10px}
+.cmpTitle{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.cmpTitle h4{margin:0;font-size:19px}
+.cmpPanels{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cmpPanel{border:2px solid;border-radius:10px;padding:10px 13px}
+.cmpPanel.lyme{background:#e8f0fb;border-color:#2a78d6;color:#14305a}
+.cmpPanel.cov{background:#fdf0e1;border-color:#d9822b;color:#5a3208}
+.cmpPanel.empty{background:transparent;border-style:dashed;opacity:.85}
+.cmpPanel p{margin:4px 0 0;font-size:16px;line-height:1.45}
+.cmpPanel .cited{display:block;margin-top:6px;font-size:13px;opacity:.8}
+.cmpSide{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.cmpWhy{margin:10px 0 0;padding:9px 13px;border-left:4px solid var(--ink);background:rgba(127,127,127,.08);font-size:16px;line-height:1.45}
+@media(max-width:700px){.cmpPanels{grid-template-columns:1fr}}
 .crossVerdict{display:inline-block;padding:2px 9px;border-radius:999px;font-size:13px;font-weight:700;border:2px solid var(--ink);white-space:nowrap}
 .crossVerdict.different{background:var(--ink);color:#fff}
 .crossVerdict.one_sided{border-style:dashed}
@@ -2302,12 +2323,64 @@ function renderCrossLearning(box,job){
   text('p','These are questions to ask, not conclusions. The two papers differ in population, year and method, so neither condition is shown to be better or worse off.',sec).className='changeNote';
   box.appendChild(sec);
 }
+function renderCrossFillMatrix(sec,lf){
+  const sims=lf.simulators||[];
+  if(!sims.length)return;
+  const lyme=sims.filter(x=>x.condition==='lyme'),cov=sims.filter(x=>x.condition==='longCovid'),cols=[...lyme,...cov];
+  const W=900,LABEL=214,RIGHT=76,PT=62,ROW=25,FAM=22,cw=(W-LABEL-RIGHT)/cols.length;
+  const xOf=i=>LABEL+cw*(i+0.5);
+  let y=PT;const lines=[];
+  for(const fam of BURDEN_FAMILIES){lines.push({head:fam,y});y+=FAM;for(const k of fam.items){lines.push({k,fam,y});y+=ROW}}
+  const H=y+8;
+  const scroll=document.createElement('div');scroll.className='crossVizScroll';
+  const svg=svgEl('svg',{viewBox:'0 0 '+W+' '+H,class:'crossVizSvg',role:'img','aria-label':'Which of the '+sims.length+' simulators measure each of the 16 burdens. A dot means the simulator has at least one tagged result for the burden.'},scroll);
+  const label=(x,yy,t,anchor,fill,weight,size,opacity)=>{const e=svgEl('text',{x,y:yy,'text-anchor':anchor,'font-size':size||12.5,'font-weight':weight||400,fill:fill||'currentColor','fill-opacity':opacity==null?1:opacity},svg);e.textContent=t;return e};
+  const trim=(t,n)=>t&&t.length>n?t.slice(0,n-1)+'\u2026':(t||'');
+  cols.forEach((c,i)=>{if(c.in_pair)svgEl('rect',{x:LABEL+cw*i,y:PT-24,width:cw,height:H-PT+24,fill:'currentColor','fill-opacity':.09,rx:3},svg)});
+  const band=(from,n,txt,fill,stroke)=>{if(!n)return;svgEl('rect',{x:LABEL+cw*from+1,y:6,width:cw*n-2,height:20,rx:4,fill,stroke,'stroke-width':1.5},svg);label(LABEL+cw*(from+n/2),20,txt,'middle',stroke==='#2a78d6'?'#14305a':'#5a3208',700,12.5)};
+  band(0,lyme.length,'Lyme disease simulators','#cfe0f7','#2a78d6');band(lyme.length,cov.length,'Long COVID simulators','#fbdcbc','#d9822b');
+  cols.forEach((c,i)=>{
+    const g=svgEl('g',{class:'vizBubble',tabindex:0,role:'button','aria-label':'Simulator '+c.number+': '+c.title},svg);
+    svgEl('rect',{x:LABEL+cw*i,y:30,width:cw,height:22,fill:'transparent'},g);
+    const t=svgEl('text',{x:xOf(i),y:46,'text-anchor':'middle','font-size':11.5,'font-weight':c.in_pair?800:500,fill:'currentColor'},g);t.textContent=String(c.number);
+    covTip.attach(g,tip=>{covTipLine(tip,(c.condition==='lyme'?'Lyme disease':'Long COVID')+' simulator '+c.number+':',c.title.replace(/ \(.*$/,''));
+      covTipLine(tip,'Measures:',c.categories.length?c.categories.map(k=>BURDEN_SHORT_LABELS[k]).join(', '):'no burden category has a tagged result.');
+      if(c.in_pair)covTipLine(tip,'','One of the two papers compared on this page.');covTipLine(tip,'','Click to open it.')});
+    g.addEventListener('click',()=>openSimulationById(c.id));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openSimulationById(c.id)}});
+  });
+  label(W-RIGHT+8,46,'Lyme / Long COVID','start','currentColor',700,10.5,.7);
+  for(const ln of lines){
+    if(ln.head){
+      svgEl('rect',{x:6,y:ln.y+2,width:LABEL-12,height:FAM-4,rx:4,fill:ln.head.color,'fill-opacity':.12},svg);
+      label(12,ln.y+16,ln.head.name,'start',ln.head.color,700,11.5);
+      continue;
+    }
+    const cy=ln.y+ROW/2,nL=lyme.filter(c=>c.categories.includes(ln.k)).length,nC=cov.filter(c=>c.categories.includes(ln.k)).length,none=!nL&&!nC;
+    svgEl('line',{x1:6,y1:ln.y+ROW,x2:W-6,y2:ln.y+ROW,stroke:'currentColor','stroke-opacity':.07},svg);
+    label(LABEL-10,cy+4.5,BURDEN_SHORT_LABELS[ln.k],'end','currentColor',none?400:600,12.5,none?.5:1);
+    cols.forEach((c,i)=>{
+      if(!c.categories.includes(ln.k)){svgEl('circle',{cx:xOf(i),cy,r:1.8,fill:'currentColor','fill-opacity':.18},svg);return}
+      const lymeSide=c.condition==='lyme',g=svgEl('g',{class:'vizBubble',tabindex:0,role:'button','aria-label':BURDEN_SHORT_LABELS[ln.k]+': simulator '+c.number+', '+trim(c.title,60)},svg);
+      svgEl('circle',{cx:xOf(i),cy,r:Math.min(8.5,cw/2-1.5),fill:lymeSide?'#cfe0f7':'#fbdcbc',stroke:lymeSide?'#2a78d6':'#d9822b','stroke-width':2},g);
+      covTip.attach(g,tip=>{const hd=document.createElement('div');hd.className='covTipHead';hd.style.setProperty('--c',ln.fam.color);hd.textContent=BURDEN_CATEGORY_LABELS[ln.k];tip.appendChild(hd);
+        covTipLine(tip,(lymeSide?'Lyme disease':'Long COVID')+' simulator '+c.number+':',c.title.replace(/ \(.*$/,''));
+        if(c.in_pair)covTipLine(tip,'','One of the two papers compared on this page.');covTipLine(tip,'','Click to open it.')});
+      g.addEventListener('click',()=>openSimulationById(c.id));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openSimulationById(c.id)}});
+    });
+    label(W-RIGHT+8,cy+4.5,none?'none':nL+' / '+nC,'start','currentColor',none?400:700,12,none?.5:1);
+  }
+  sec.appendChild(scroll);
+  const key=document.createElement('div');key.className='burdenKey';
+  key.innerHTML='<span><i style="background:#cfe0f7;border:2px solid #2a78d6;border-radius:50%;box-sizing:border-box"></i>a Lyme disease simulator has a tagged result</span><span><i style="background:#fbdcbc;border:2px solid #d9822b;border-radius:50%;box-sizing:border-box"></i>a Long COVID simulator has a tagged result</span><span><i style="background:#0000001a;border-radius:3px"></i>shaded column: the two papers compared here</span><span>a small grey dot: no tagged result</span>';
+  sec.appendChild(key);
+}
 function renderCrossLibraryFill(box,job){
   const lf=job.library_fill;
   if(!lf)return;
   const sec=document.createElement('div');sec.className='crossFill';
   text('h3','What the rest of the library adds',sec);
-  text('p','This pair is two of '+lf.library_size+' simulators. The other simulators measure some of the burdens that these two papers leave open. Choose one to open it.',sec).className='changeNote';
+  text('p','This pair is two of '+lf.library_size+' simulators. The grid shows, for every simulator, which of the 16 burdens it has a tagged result for. Hover over a dot for the simulator, click to open it. The shaded columns are the two papers compared on this page.',sec).className='changeNote';
+  renderCrossFillMatrix(sec,lf);
   const nm=k=>BURDEN_CATEGORY_LABELS[k]||k;
   const holes=lf.holes?.neither_condition||[];
   if(holes.length){
@@ -2321,6 +2394,7 @@ function renderCrossLibraryFill(box,job){
     const d=text('p',(one.length?'Measured only for Lyme disease across the whole library: '+one.join(', ').toLowerCase()+'. ':'')+(two.length?'Measured only for Long COVID: '+two.join(', ').toLowerCase()+'.':''),sec);
     d.style.cssText='font-size:15.5px;margin:6px 0';
   }
+  const listBox=document.createElement('details');text('summary','Read as a list: the other simulators for each burden the pair leaves open',listBox);listBox.open=window.innerWidth<=700;
   for(const row of [...(lf.fill||[])].sort((x,y)=>BURDEN_CATEGORY_ORDER.indexOf(x.category)-BURDEN_CATEGORY_ORDER.indexOf(y.category))){
     const r=document.createElement('div');r.className='fillRow';
     text('b',nm(row.category),r);
@@ -2335,8 +2409,9 @@ function renderCrossLibraryFill(box,job){
       if(extra>0)text('span','+'+extra+' more '+label,chips).className='fillNone';
     }
     if(!chips.children.length)text('span','No other simulator measures this.',chips).className='fillNone';
-    r.appendChild(chips);sec.appendChild(r);
+    r.appendChild(chips);listBox.appendChild(r);
   }
+  sec.appendChild(listBox);
   box.appendChild(sec);
 }
 function printCrossAnalysis(){
@@ -2371,12 +2446,54 @@ function renderCrossTables(box,job,ca,titles){
   }
   if(ca.comparison_rows?.length){
     const sec=section('Lyme disease and Long COVID, side by side',(sizes.lyme===1&&sizes.longCovid===1?'Based on one Lyme disease paper and one Long COVID paper.':`Based on ${sizes.lyme} Lyme disease and ${sizes.longCovid} Long COVID simulators. Each simulator is built from one published source (a paper or a report), sometimes with its supplement.`));
+    const VERDICT_LABELS={similar:'Similar',different:'Different',one_sided:'Only one condition',unclear:'Unclear'};
+    const VERDICT_GLYPH={similar:'\u2248',different:'\u2260',one_sided:'\u25D0',unclear:'?'};
+    const VERDICT_PLAIN={similar:'The two papers point the same way.',different:'The two papers point different ways.',one_sided:'Only one of the two papers has a finding.',unclear:'The two papers cannot be compared on this point.'};
+    const rows=ca.comparison_rows;
+    const strip=document.createElement('div');strip.className='cmpStrip';
+    const cards=document.createElement('div');cards.className='cmpCards';
+    let active='all';
+    const applyFilter=()=>{for(const c of cards.children)c.hidden=active!=='all'&&c.dataset.verdict!==active;for(const b of strip.children)b.setAttribute('aria-pressed',String(b.dataset.verdict===active))};
+    const kinds=['all',...['similar','different','one_sided','unclear'].filter(v=>rows.some(r=>r.verdict===v))];
+    for(const v of kinds){
+      const n=v==='all'?rows.length:rows.filter(r=>r.verdict===v).length;
+      const b=document.createElement('button');b.type='button';b.className='cmpChip '+v;b.dataset.verdict=v;
+      const num=text('b',String(n),b);num.className='cmpNum';
+      text('span',v==='all'?'dimensions compared':VERDICT_LABELS[v],b);
+      b.addEventListener('click',()=>{active=active===v&&v!=='all'?'all':v;applyFilter()});
+      strip.appendChild(b);
+    }
+    applyFilter();
+    sec.appendChild(strip);
+    for(const row of rows){
+      const card=document.createElement('article');card.className='cmpCard '+row.verdict;card.dataset.verdict=row.verdict;
+      const top=document.createElement('div');top.className='cmpTop';
+      const ttl=document.createElement('div');ttl.className='cmpTitle';text('h4',row.dimension,ttl);
+      if(row.category&&BURDEN_CATEGORY_LABELS[row.category])text('span',BURDEN_CATEGORY_LABELS[row.category],ttl).className='libraryItemTag';
+      top.appendChild(ttl);
+      const vb=document.createElement('span');vb.className='crossVerdict '+row.verdict;
+      text('span',VERDICT_GLYPH[row.verdict]||'',vb).setAttribute('aria-hidden','true');vb.append(' '+(VERDICT_LABELS[row.verdict]||row.verdict));
+      top.appendChild(vb);card.appendChild(top);
+      const panels=document.createElement('div');panels.className='cmpPanels';
+      for(const [side,name,cls] of [['lyme','Lyme disease','lyme'],['long_covid','Long COVID','cov']]){
+        const f=row[side]?.finding||'',ids=row[side]?.job_ids||[];
+        const pn=document.createElement('div');pn.className='cmpPanel '+cls+(ids.length?'':' empty');
+        text('div',name,pn).className='cmpSide';
+        text('p',plainCrossText(f),pn);
+        if(ids.length)text('span','From: '+ids.map(i=>titles[i]||i).join('; '),pn).className='cited';
+        panels.appendChild(pn);
+      }
+      card.appendChild(panels);
+      if(row.why_it_matters){const w=document.createElement('p');w.className='cmpWhy';text('b','What this means: ',w);w.append(plainCrossText(row.why_it_matters));card.appendChild(w)}
+      cards.appendChild(card);
+    }
+    sec.appendChild(cards);
+    text('p','Tap a count above to show only that kind of pattern; tap it again to show everything. '+kinds.filter(v=>v!=='all').map(v=>VERDICT_LABELS[v]+': '+VERDICT_PLAIN[v]).join(' '),sec).className='changeNote';
     const wrap=document.createElement('div');wrap.style.overflowX='auto';
     const table=document.createElement('table');table.className='crossTable';
     const head=table.createTHead().insertRow();
     for(const h of ['What is compared','Lyme disease','Long COVID','Pattern'])text('th',h,head);
     const body=table.createTBody();
-    const VERDICT_LABELS={similar:'Similar',different:'Different',one_sided:'Only one condition',unclear:'Unclear'};
     for(const row of ca.comparison_rows){
       const tr=body.insertRow();
       const dim=text('td',row.dimension,tr);dim.className='dim';
@@ -2390,7 +2507,7 @@ function renderCrossTables(box,job,ca,titles){
       text('span',VERDICT_LABELS[row.verdict]||row.verdict,verdictTd).className='crossVerdict '+row.verdict;
       if(row.why_it_matters)text('span',plainCrossText(row.why_it_matters),verdictTd).className='cited';
     }
-    wrap.appendChild(table);sec.appendChild(wrap);
+    wrap.appendChild(table);const asTable=document.createElement('details');text('summary','Read as a table',asTable);asTable.appendChild(wrap);sec.appendChild(asTable);
     if(ca.unverified_numbers?.length)text('p','Some numbers in the text above could not be matched to the simulators\' data and should be checked before use: '+ca.unverified_numbers.join(', ')+'.',sec).className='crossWarn';
   }
   if(tables.coverage?.length){
