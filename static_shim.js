@@ -56,13 +56,15 @@
     }
   }, true);
 
-  window.addEventListener('load', function () {
+  // The upload form must never flash: hide it from the first paint, and switch to the library as soon as the page is parsed
+  // (waiting for the 'load' event meant waiting for every image and font first).
+  const noGenerate = document.createElement('style');
+  noGenerate.textContent = '#generateView{display:none !important}';
+  document.head.appendChild(noGenerate);
+
+  document.addEventListener('DOMContentLoaded', function () {
     const hide = (id) => { const el = document.getElementById(id); if (el) el.style.display = 'none'; };
     hide('adminToggle');
-    // Generating is off in this copy: the upload form must never be reachable, whichever button leads to it.
-    const noGenerate = document.createElement('style');
-    noGenerate.textContent = '#generateView{display:none !important}';
-    document.head.appendChild(noGenerate);
     hide('libraryToggle');
     window.showGenerateView = function () { window.showLibraryView(); };
     const banner = document.createElement('div');
