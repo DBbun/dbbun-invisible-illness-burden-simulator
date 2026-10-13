@@ -90,6 +90,8 @@ fieldset{border:0;padding:0;margin:12px 0;min-width:0}legend{font-weight:bold;ma
 .cmpSide{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
 .cmpWhy{margin:10px 0 0;padding:9px 13px;border-left:4px solid var(--ink);background:rgba(127,127,127,.08);font-size:16px;line-height:1.45}
 @media(max-width:700px){.cmpPanels{grid-template-columns:1fr}}
+
+@media(max-width:650px){main{margin:0 6px 25px!important;padding:18px 10px!important}main section{padding:14px 10px}.crossAnalysisResults{padding:12px 8px}.cmpCard{padding:12px 10px}.cmpPanel{padding:9px 10px}.cmpTitle h4{font-size:17px}}
 .crossVerdict{display:inline-block;padding:2px 9px;border-radius:999px;font-size:13px;font-weight:700;border:2px solid var(--ink);white-space:nowrap}
 .crossVerdict.different{background:var(--ink);color:#fff}
 .crossVerdict.one_sided{border-style:dashed}
@@ -2430,7 +2432,17 @@ const FIELD_NAME_WORDS={claims_undercounting_caveat:'claims-undercounting limita
 function plainFieldNames(t){
   return String(t||'').replace(/\b[a-z]+(?:_[a-z]+)+\b/g,m=>FIELD_NAME_WORDS[m]||m.replace(/_/g,' '));
 }
-function plainCrossText(t){return plainFieldNames(t).replace(/\bboth papers independently (find|describe|report|identify|show)\b/gi,'The two papers separately $1').replace(/\bcovers exactly one Lyme disease paper and one Long COVID paper\b/gi,'covers two papers: one on Lyme disease and one on Long COVID').replace(/\bcovers exactly (two|2) /gi,'covers two ').replace(/\bexactly two papers\b/gi,'two papers').replace(/\bexactly 2 papers\b/gi,'two papers').replace(/exactly (one|two|1|2) /gi,'$1 ')}
+function plainBigNumbers(t){
+  const compact=n=>{
+    const unit=n>=1e9?[1e9,'billion']:[1e6,'million'];
+    const v=n/unit[0],r=Math.round(v*10)/10,txt=(Number.isInteger(r)?String(r):r.toFixed(1))+' '+unit[1];
+    return (Math.abs(r*unit[0]-n)/n>1e-6?'about ':'')+'$'+txt;
+  };
+  return String(t||'')
+    .replace(/(?<![\d,.$])(\d{7,})(\.\d+)?\s*USD(\s*(?:\/|per\s)\s*year)?/g,(m,a,b,per)=>compact(Number(a+(b||'')))+(per?' per year':''))
+    .replace(/(?<![\d,.$])(\d{7,})(\.\d+)?(?![\d,])/g,(m,a,b)=>Number(a+(b||'')).toLocaleString('en-US',{maximumFractionDigits:b&&/[1-9]/.test(b)?1:0}));
+}
+function plainCrossText(t){return plainBigNumbers(plainFieldNames(t)).replace(/\bboth papers independently (find|describe|report|identify|show)\b/gi,'The two papers separately $1').replace(/\bcovers exactly one Lyme disease paper and one Long COVID paper\b/gi,'covers two papers: one on Lyme disease and one on Long COVID').replace(/\bcovers exactly (two|2) /gi,'covers two ').replace(/\bexactly two papers\b/gi,'two papers').replace(/\bexactly 2 papers\b/gi,'two papers').replace(/exactly (one|two|1|2) /gi,'$1 ')}
 function renderCrossTables(box,job,ca,titles){
   const tables=job.cross_tables||{},sizes=tables.group_sizes||{lyme:0,longCovid:0};
   const section=(heading,note)=>{
